@@ -8,6 +8,15 @@ footer {
   text-align: center;
 }
 
+a[href] {
+  color: #5e81ac;
+}
+
+body {
+ background-color: #242933;
+ color: #E5E9F0";
+}
+
 /*navegation bar*/
 nav {
   text-align: center;
@@ -23,7 +32,7 @@ nav>a>div {
   display: inline-block;
 
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 10px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
@@ -37,29 +46,32 @@ nav>a>div:hover {
   background-color: #d8dee9;
 }
 
+
+
 /*divs*/
 .container {
   display: flex;
   flex-wrap: wrap;
-}
-
-.center_card {
-  position: relative;
-  width: 80vw;
-  left: 50%;
-  transform: translate(-50%);
+  justify-content: center;
 }
 
 .card {
   background-color: #3b4252;
+  font-family: sans-serif;
+  max-width: 80vw;
   color: #E5E9F0;
-  padding: 20px;
+  padding: 15px;
   margin: 10px;
+
 }
 
-.card .profile-img {
-  max-width: 100%;
-  max-height: 250px;
-  height: auto;
-  display: block;
+.card>p {
+  text-align: justify;
+}
+
+.card>h3 {
+  text-align: center;
+}
+.card>h5 {
+  text-align: center;
 }
