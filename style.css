@@ -13,21 +13,19 @@ footer>img{
   image-rendering: pixelated;
   image-rendering: auto;
   image-rendering: crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
 }
 footer>a>img{
   image-rendering: pixelated;
   image-rendering: auto;
   image-rendering: crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
 }
 footer>img:hover{
-  scale: 2;
+  transform: scale(2);
   transition: 100ms;
 }
 
 footer>a>img:hover{
-  scale: 2;
+  transform: scale(2);
   transition: 100ms;
 }
 
