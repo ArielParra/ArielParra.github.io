@@ -6,10 +6,11 @@ hr {
 
 footer {
   text-align: center;
+  image-rendering: pixelated;
 }
 
 a[href] {
-  color: #5e81ac;
+  color: #88c0d0;
 }
 
 body {
@@ -46,8 +47,6 @@ nav>a>div:hover {
   background-color: #d8dee9;
 }
 
-
-
 /*divs*/
 .container {
   display: flex;
@@ -74,4 +73,10 @@ nav>a>div:hover {
 }
 .card>h5 {
   text-align: center;
+}
+
+.card>img{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
 }
