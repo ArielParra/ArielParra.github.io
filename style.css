@@ -4,6 +4,11 @@ hr {
   margin: 10px 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 footer {
   padding: 10px;
   text-align: center;  
