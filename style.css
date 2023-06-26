@@ -56,7 +56,6 @@ nav>a>div {
   background-color: #3b4252;
   text-decoration: none;
   display: inline-block;
-
   padding: 10px 20px;
   margin: 10px;
   border-radius: 5px;
@@ -82,10 +81,10 @@ nav>a>div:hover {
 .card {
   background-color: #3b4252;
   font-family: sans-serif;
-  max-width: 80vw;
   color: #E5E9F0;
   padding: 15px;
   margin: 10px;
+  border-radius: 5px;
 
 }
 
