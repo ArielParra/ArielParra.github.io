@@ -26,13 +26,13 @@
 
     <div class="card">
       <img src="./static/foto.webp" alt="Fotografia del autor" title="yo"  width="250" height="250" >
-      <p style="text-align: center;">Mi foto</p>
+      <div class="center">Mi foto</div>
     </div>
 
-    <div class="card">
+    <div class="card" style="max-width: 60ch;">
       <h3>Presentacion</h3>
       <hr>
-      <div style="max-width: 60ch;">
+      <div class="justify">
         Hola soy Ariel Parra, tengo 19 años y soy un estudiante de ingeneria en
         sistemas computacionales (ISC) en la UAA. Me gusta la programacion,
         especialmente los lenguajes de C y C++, llevo ya dos años usando Linux.
@@ -42,10 +42,10 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" style="max-width: 70ch;">
       <h3>Gustos</h3>
       <hr>
-      <div style="max-width: 70ch;">
+      <div class="justify">
         Mi interés por los sistemas operativos me ha llevado a investigar y experimentar con
         varios sistemas, partiendo de Windows cuando era niño, despues macOS, para al
         ultimo especializarme en linux, aunque tambien me gustan los sistemas BSD
@@ -57,12 +57,16 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" style="max-width: 168ch;">
       <h3>Mis habilidades y conocimientos</h3>
       <hr>
-      <div style="max-width: 168ch;">
-        "El conocimiento es poder" -Sir Francis Bacon        
-        <p></p> 
+      
+      <div>
+        "El conocimiento es poder" -Sir Francis Bacon
+        <p></p>
+      </div>
+      
+      <div class="column" >
         Programación:
         <ul>
           <li>c</li> 
@@ -74,6 +78,9 @@
           <li>vim</li>
           <li>docker</li>
         </ul>
+      </div>
+
+      <div class="column" >
         Sistemas operativos:
         <ul>
           <li>linux</li>

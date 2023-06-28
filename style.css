@@ -1,7 +1,8 @@
 /*html elements*/
 hr {
   border-color: #d8dee9;
-  margin: 10px 0;
+  height: 0%;
+  width: 100%;
 }
 
 img {
@@ -41,6 +42,7 @@ a[href] {
 body {
  background-color: #242933;
  color: #E5E9F0;
+ font-family: sans-serif;
 }
 
 /*navegation bar*/
@@ -74,22 +76,41 @@ nav>a>div:hover {
 /*divs*/
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   justify-content: center;
 }
 
 .card {
   background-color: #3b4252;
-  font-family: sans-serif;
-  color: #E5E9F0;
-  padding: 15px;
+  padding: 10px;
   margin: 10px;
   border-radius: 5px;
-
+  min-width: 10em;
 }
 
-.card>div {
+#grid .card{
+  display: grid;
+  
+}
+
+.center {
+  margin-top: auto;
+  text-align: center;
+}
+
+.justify {
   text-align: justify;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .card>p {
@@ -104,7 +125,8 @@ nav>a>div:hover {
 }
 
 .card>img{
-  display: block; 
+  display: grid; 
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
 }
