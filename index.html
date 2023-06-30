@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
+
 
 <head>
+  <style>.lang.es{display: none;}</style> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Ariel Parra,website, blog">
@@ -9,70 +12,94 @@
   <meta name="author" content="Ariel Parra">
   <link rel="icon" href="./static/siteicon.gif" type="image/gif">
   <link rel="preload" href="style.css" as="style">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="language.js" as="script">
+  <script defer src="./language.js"></script>
+  <link rel="stylesheet" href="./style.css">
   <title>~/Home</title>
 </head>
 
 <body>
+
+    <nav>
+    <button type="button" onclick="langbutton()" class="lang es">es</button>
+    <button type="button" onclick="langbutton()" class="lang en">en</button>
+
+      <a href="./index.html"><div class="current"><span>~/</span></div></a>
+      <a href="./proyectos.html"><div class="lang en">projects</div><div class="lang es">proyectos</div></a>
+      <a href="./contacto.html"><div class="lang en">contact</div><div class="lang es">contacto</div></a>
+      <a href="./blog/index.html"><div>blog</div></a>  
+    </nav>
   
-  <nav>
-    <a href="./index.html"><div class="current">~/</div></a>
-    <a href="./proyectos.html"><div>proyectos</div></a>
-    <a href="./contacto.html"><div>contacto</div></a>
-    <a href="./blog/index.html"><div>blog</div></a>
-  </nav>
 
   <div class="container">
 
     <div class="card">
-      <img src="./static/foto.webp" alt="Fotografia del autor" title="yo"  width="250" height="250" >
-      <div class="center">Mi foto</div>
+      <img src="./static/foto.webp" alt="photo" title="yo"  width="250" height="250" >
+      <div id="center">Mi foto</div>
     </div>
 
     <div class="card" style="max-width: 60ch;">
-      <h3>Presentacion</h3>
+      <div class="lang es"><h3>presentacion</h3></div>
+      <div class="lang en"><h3>presentation</h3></div>     
       <hr>
+    
       <div class="justify">
+        <div class="lang es">
         Hola soy Ariel Parra, tengo 19 años y soy un estudiante de ingeneria en
         sistemas computacionales (ISC) en la UAA. Me gusta la programacion,
         especialmente los lenguajes de C y C++, llevo ya dos años usando Linux.
-        <p></p> 
+        <p></p>
         Tengo un servidor de Linux en casa para poder hosetar mis proyectos,
         como por ejemplo esta pagina web.
+        </div>
+        <div class="lang en">
+        Hi I'm Ariel Parra, I'm 19 years old and I'm a engineering student in
+        Computer systems at UAA. I like the program, Especially the languages
+        of C and C++, I have been using Linux for two years.
+        <p></p>
+        I have a Linux server at home so I can stick my projects, for example this
+        website. 
+        </div>
       </div>
     </div>
 
     <div class="card" style="max-width: 70ch;">
-      <h3>Gustos</h3>
+      <div class="lang es"><h3>gustos</h3></div>
+      <div class="lang en"><h3>likes</h3></div>     
       <hr>
       <div class="justify">
-        Mi interés por los sistemas operativos me ha llevado a investigar y experimentar con
-        varios sistemas, partiendo de Windows cuando era niño, despues macOS, para al
-        ultimo especializarme en linux, aunque tambien me gustan los sistemas BSD
-        especialmente OpenBSD.
+        <div class="lang es">
+        Me gustan los programas de codigo abierto y de ser posible utilizo cualquier alternativa "libre",
+        en lugar de las apliciones con codigo cerrado, las cuales tienen la capacidad de no trabajar como dicen.
         <p></p>
-        Me gusta la filosfia de programacion "KISS" Keep It Simple Stupid, ya que los
+        Tambien me gusta la filosfia de programacion "KISS" (Keep It Simple Stupid), ya que los
         proyectos "simples" suelen ser los que usan menos recursos y suelen ser más
         costumizables.
+        </div>
+        <div class="lang en">
+          I like open source programs and if possible I use any "free" alternative, instead of the applications with closed code, which they might not work as they say.
+          <p></p>
+          I also like the "KISS" program philosophies (Keep It Simple Stupid), as the "simple" projects are often the ones that use the least resources and are usually more costumizable. 
+        </div>
       </div>
     </div>
 
     <div class="card" style="max-width: 168ch;">
-      <h3>Mis habilidades y conocimientos</h3>
+      <div class="lang es"><h3>habilidades</h3></div>
+      <div class="lang en"><h3>skills</h3></div>      
       <hr>
-      
+      <div class="lang es">
       <div>
-        "El conocimiento es poder" -Sir Francis Bacon
+        "Knowledge is power" -Sir Francis Bacon
         <p></p>
       </div>
-      
       <div class="column" >
-        Programación:
+        Programming: 
         <ul>
           <li>c</li> 
           <li>c++</li>
         </ul>
-        Desarrollo de software:
+        Software development:
         <ul>
           <li>git</li>
           <li>vim</li>
@@ -81,21 +108,58 @@
       </div>
 
       <div class="column" >
-        Sistemas operativos:
+        Operating systems:
         <ul>
           <li>linux</li>
           <li>openBSD</li>
           <li>macOS</li>
           <li>windows</li>
         </ul>
-        Desarrollo web:  
+        Web development:   
         <ul>
           <li>css</li> 
           <li>html</li>
           <li>cloudflare tunnels</li>
         </ul>
-
       </div>
+      </div>
+
+      <div class="lang en">
+        <div>
+          "El conocimiento es poder" -Sir Francis Bacon
+          <p></p>
+        </div>
+        <div class="column" >
+          Programación:
+          <ul>
+            <li>c</li> 
+            <li>c++</li>
+          </ul>
+          Desarrollo de software:
+          <ul>
+            <li>git</li>
+            <li>vim</li>
+            <li>docker</li>
+          </ul>
+        </div>
+  
+        <div class="column" >
+          Sistemas operativos:
+          <ul>
+            <li>linux</li>
+            <li>openBSD</li>
+            <li>macOS</li>
+            <li>windows</li>
+          </ul>
+          Desarrollo web:  
+          <ul>
+            <li>css</li> 
+            <li>html</li>
+            <li>cloudflare tunnels</li>
+          </ul>
+        </div>
+        </div>
+
     </div>
 
   </div><!-- container -->
@@ -106,10 +170,11 @@
     <a href="mailto:correo@arielparra.tech"><img src="./static/88x31_email.png" alt="email" title="correo@arielparra.tech" width="88" height="31"></a>
     <a href="https://www.nordtheme.com/" target="_blank"><img src="./static/88x31_nord.png" alt="Nord color pallete" title="nordtheme website" width="88" height="31"></a>
     <img src="./static/88x31_nocookies.png" alt="No cookies" title="0% cookies" width="88" height="31">
-    <img src="./static/88x31_Mexico.png" alt="Hecho en Mexico" title="Hecho en Mexico" width="88" height="31">
+    <img src="./static/88x31_Mexico.png" alt="Hecho en Mexico!" title="Hecho en Mexico" width="88" height="31">
     <img src="./static/88x31_host-linux.png" alt="self Host on linux" title="arm linux!" width="88" height="31">
     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farielparra.tech&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><img src="./static/88x31_valid-css.png" alt="Valid css" title="Valid css" width="88" height="31"></a>
     <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.tech" target="_blank"><img src="./static/88x31_valid-html.png" alt="Valid html" title="Valid html" width="88" height="31"></a>
+    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="./static/88x31_CC_BY.png" alt="CC BY" title="creative commons BY" width="88" height="31"></a>
   </footer>
 
 </body>
