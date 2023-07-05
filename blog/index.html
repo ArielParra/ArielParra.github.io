@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
+  <style>.lang.es{display: none;}</style> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Ariel Parra,website, blog">
   <meta name="description" content="Ariel Parra Website!">
   <meta name="author" content="Ariel Parra">
-  <link rel="shortcut icon" href="../static/siteicon.gif" type="image/gif">
+  <link rel="icon" href="../static/siteicon.gif" type="image/gif">
   <link rel="preload" href="../style.css" as="style">
+  <link rel="preload" href="../language.js" as="script">
+  <script defer src="../language.js"></script>
   <link rel="stylesheet" href="../style.css">
   <title>blog</title>
 </head>
@@ -16,19 +19,19 @@
 <body>
 
   <nav>
-    <a href="../index.html"><div>~/</div></a>
-    <a href="../proyectos.html"><div>proyectos</div></a>
-    <a href="../contacto.html"><div>contacto</div></a>
-    <a href="./index.html"><div class="current">blog</div></a>
+    <a href="../"><div>~/</div></a>
+    <a href="../proyectos"><div class="lang en">projects</div><div class="lang es">proyectos</div></a>
+    <a href="../blog"><div class="lang en">contact</div><div class="lang es">contacto</div></a>
+    <a href="."><div class="current">blog</div></a>
   </nav>
-  
+
   <div class="container">
 
     <div class="card">
       <div class="center">
         2023/06/20
         <p></p>
-        <a href="./2023/06/20.html"> Linux>windows </a> 
+        <a href="./2023/06/20"> Linux>windows </a> 
       </div>
     </div>
 
