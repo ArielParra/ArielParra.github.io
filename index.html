@@ -8,7 +8,7 @@
   <meta name="keywords" content="Ariel Parra,website, blog">
   <meta name="description" content="Ariel Parra Website!">
   <meta name="author" content="Ariel Parra">
-  <link rel="icon" href="static/siteicon.gif" type="image/gif">
+  <link rel=" icon" href="static/siteicon.gif" type="image/gif">
   <link rel="preload" href="style.css" as="style">
   <link rel="preload" href="language.js" as="script">
   <script defer src="language.js"></script>
@@ -18,23 +18,56 @@
 
 <body>
 
-    <nav>
-      <a href="."><div class="current"><span>~/</span></div></a>
-      <a href="proyectos"><div class="lang en">projects</div><div class="lang es">proyectos</div></a>
-      <a href="contacto"><div class="lang en">contact</div><div class="lang es">contacto</div></a>
-      <a href="blog"><div>blog</div></a>  
-    </nav>
+  <nav>
+    <a href="." class="current"><div><span>~/</span></div></a>
+    <a href="proyectos"><div class="lang en">projects</div><div class="lang es">proyectos</div></a>
+    <a href="contacto"><div class="lang en">contact</div><div class="lang es">contacto</div></a>
+    <a href="blog"><div>blog</div></a>  
+  </nav>
 
+  <!-- 
+    
+  <style>
+  /*lang button*/
+    button{
+      color: #fff;
+      font-family: sans-serif;
+      background-color: #3b4252;
+      padding: 10px 20px;
+      margin: 0px;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      }
+    
+    button:hover{
+      color: #4c566a;
+      background-color: #d8dee9;
+    }
+    </style>
+    <script>    
+    function langbutton(){
+        if (currentlanguage=='es') {
+            currentlanguage = 'en';
+        }
+        else {
+            currentlanguage = 'es';
+        }
+    changeLanguage(currentlanguage);
+    }
+  </script>
   <div class="container">
     <button type="button" onclick="langbutton()" class="lang es">es</button>
     <button type="button" onclick="langbutton()" class="lang en">en</button>
   </div>
+  
+  -->
 
   <div class="container">
 
     <div class="card">
       <img src="./static/foto.webp" alt="photo" title="yo"  width="250" height="250" >
-      <div id="center">Mi foto</div>
+      <div class="center">Mi foto</div>
     </div>
 
     <div class="card" style="max-width: 60ch;">
