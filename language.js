@@ -18,3 +18,12 @@ function changeLanguage(currentlanguage) {
     });
 }
 
+function langbutton(){
+    if (currentlanguage=='es') {
+        currentlanguage = 'en';
+    }else{
+        currentlanguage = 'es';
+    }
+    changeLanguage(currentlanguage);
+}
+
