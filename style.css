@@ -58,19 +58,20 @@ nav{
   text-align: center;
   justify-content: center;
   padding: 10px;
+  min-width: 20em;
 }
 
-
 nav>a{
-  display:inline-block;
+  display: inline-block;
   text-decoration: none;  
   font-family: sans-serif;
   background-color: #3b4252;
-  padding: 10px 8px;
+  padding: 1em 2em;
   margin: 5px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
+
 nav>a>div{
   color: #fff;
 }
@@ -87,11 +88,22 @@ nav>a:hover>div{
   color: #4c566a;
 }
 
+@media screen and (max-width: 40em) {
+  nav>a{
+    width: calc(50% - 10px); 
+    padding: 10px 2em;
+    margin: 5px;
+    border-radius: 5px;
+  }
+}
+
 /*divs*/
 .container{
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
+  max-width: 60em;
+  margin: 0 auto;
 }
 
 .card{
@@ -99,7 +111,8 @@ nav>a:hover>div{
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  min-width: 10em;
+  min-width: 15em;
+  max-width: 20em; 
 }
 
 #grid .card{
@@ -118,12 +131,13 @@ nav>a:hover>div{
 .column{
   float: left;
   width: 50%;
+  box-sizing: border-box;
 }
 
 .row:after{
   content: "";
   display: table;
-  clear: both;
+  clear:   both;
 }
 
 .card>p{
@@ -137,5 +151,3 @@ nav>a:hover>div{
   margin-right: auto;
   padding: 10px;
 }
-
-
