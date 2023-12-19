@@ -1,29 +1,26 @@
-var currentlanguage;
-if (navigator.language.startsWith('es')) {
-    currentlanguage = 'es';
-    console.log('default lang es');
-}else{
-    currentlanguage = 'en';
-    console.log('default lang en');
-}
-changeLanguage(currentlanguage);
+let currentLanguage;
 
-function changeLanguage(currentlanguage) {
-    Array.from(document.getElementsByClassName('lang')).forEach(function(elem){
-        if (elem.classList.contains(currentlanguage)) {
-            elem.style.display = 'initial';
-        }else{
-            elem.style.display = 'none';
-        }
-    });
+if (window.location.pathname.startsWith('./es') || navigator.language.startsWith('es') ) {
+    currentLanguage = 'es';
+} else {
+    currentLanguage = 'en';
 }
+console.log('default lang ' + currentLanguage);
 
-function langbutton(){
-    if (currentlanguage=='es') {
-        currentlanguage = 'en';
-    }else{
-        currentlanguage = 'es';
+function changeLanguage(currentLanguage) {
+    if (currentLanguage === 'es') {
+        window.location.href = './es';
+    } else {
+        window.location.href = './';
     }
-    changeLanguage(currentlanguage);
 }
 
+function langButton() {
+    if (currentLanguage === 'es') {
+        currentLanguage = 'en';
+    } else {
+        currentLanguage = 'es';
+    }
+    changeLanguage(currentLanguage);
+    console.log('current lang ' + currentLanguage);
+}

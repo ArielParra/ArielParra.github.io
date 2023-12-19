@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <style>.lang.es{display: none;}</style> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Ariel Parra,website, blog">
@@ -12,43 +11,44 @@
   <link rel="apple-touch-icon" sizes="180x180" href="static/foto.webp" type="image/webp">
   <link rel="preload" href="style.css" as="style">
   <link rel="preload" href="language.js" as="script">
+  <link rel="preload" href="navButton.js" as="script">
   <script defer src="language.js"></script>
+  <script defer src="navButton.js"></script>
   <link rel="stylesheet" href="style.css">
   <title> arielparra.tech</title>
 </head>
 
 <body>
 
-  <nav>
-    <a href="." class="current"><div><span>~/</span></div></a>
-    <a href="./projects/"><div class="lang en">projects</div><div class="lang es">proyectos</div></a>
-    <a href="./contact/"><div class="lang en">contact</div><div class="lang es">contacto</div></a>
-    <a href="./blog/"><div>blog</div></a>  
-  </nav>
+  <div class="container" >
+    
+    <div class="mobile">
+      <button type="button" onclick="toggleNavigation(this)">Toggle Navigation bar</button>
+    </div>
+
+    <nav>
+      <a href="."           class="current">   <div><span>~/</span></div></a>
+      <a href="./projects/" class="NotCurrent"><div>projects</div></a>
+      <a href="./contact/"  class="NotCurrent"><div>contact</div></a>
+      <a href="./blog/"     class="NotCurrent"><div>blog</div></a>  
+    </nav>
+  
+  </div><!-- container -->
   
   <div class="container">
 
     <div class="card">
-      <img src="./static/foto.webp" alt="photo" title="yo"  width="250" height="250" >
-      <div class="center">Mi foto</div>
-    </div>
+      <hr>
+      <img src="./static/foto.webp" alt="photo" title="me"  width="270" height="270" >
+      <div class="center">My Photo</div>
+      <hr>
+    </div><!-- card -->
 
     <div class="card">
-      <div class="lang es"><h3>presentacion</h3></div>
-      <div class="lang en"><h3>presentation</h3></div>     
       <hr>
-    
+        <h3>presentation</h3>    
+      <hr>
       <div class="justify">
-        <div class="lang es">
-        Hola soy Ariel Parra, tengo 19 años y soy un estudiante de ingeneria en
-        sistemas computacionales (ISC) en la UAA. Me gusta la programacion,
-        especialmente los lenguajes de C y C++, aunque usualmente suelo hacer
-        scripts de bash y llevo ya dos años usando Linux.
-        <p></p>
-        Tengo un servidor de Linux en casa para poder hosetar mis proyectos,
-        como por ejemplo esta pagina web.
-        </div>
-        <div class="lang en">
         Hi I'm Ariel Parra, I'm 19 years old and I'm a engineering student in
         Computer systems at UAA. I like programming, especially with languages
         like C and C++, but usually I like making bash scripts and I have been
@@ -56,41 +56,30 @@
         <p></p>
         I have a Linux server at home so I can host my projects, for example this
         website. 
-        </div>
       </div>
-    </div>
+    </div><!-- card -->
 
     <div class="card">
-      <div class="lang es"><h3>gustos</h3></div>
-      <div class="lang en"><h3>likes</h3></div>     
+      <hr>
+        <h3>likes</h3>     
       <hr>
       <div class="justify">
-        <div class="lang es">
-        Me gustan los programas de codigo abierto y de ser posible utilizo cualquier alternativa "libre",
-        en lugar de las apliciones con codigo cerrado, las cuales tienen la capacidad de no trabajar como dicen.
+        I like open source programs and if possible I use any "free" alternative, instead of the applications with closed code, which they might not work as they say.
         <p></p>
-        Tambien me gusta la filosfia de programacion "KISS" (Keep It Simple Stupid), ya que los
-        proyectos "simples" suelen ser los que usan menos recursos y suelen ser más
-        costumizables.
-        </div>
-        <div class="lang en">
-          I like open source programs and if possible I use any "free" alternative, instead of the applications with closed code, which they might not work as they say.
-          <p></p>
-          I also like the "KISS" program philosophies (Keep It Simple Stupid), as the "simple" projects are often the ones that use the least resources and are usually more costumizable. 
-        </div>
+        I also like the "KISS" program philosophies (Keep It Simple Stupid), as the "simple" projects are often the ones that use the least resources and are usually more costumizable. 
       </div>
-    </div>
+    </div><!-- card -->
+
 
     <div class="card">
-      <div class="lang es"><h3>habilidades</h3></div>
-      <div class="lang en"><h3>skills</h3></div>      
+      <hr>
+        <h3>skills</h3>      
       <hr>
 
-      <div class="lang en">
-      <div>
-        "Knowledge is power" -Sir Francis Bacon
-        <p></p>
-      </div>
+      "Knowledge is power" 
+      -Francis Bacon
+      <p></p>
+
       <div class="column" >
         Programming: 
         <ul>
@@ -103,7 +92,7 @@
           <li>vim</li>
           <li>docker</li>
         </ul>
-      </div>
+      </div><!-- 1 colum -->
 
       <div class="column" >
         Operating systems:
@@ -119,48 +108,9 @@
           <li>html</li>
           <li>cloudflare tunnels</li>
         </ul>
-      </div>
-      
-      </div>
+      </div><!-- 2 colum -->
 
-      <div class="lang es">
-        <div>
-          "El conocimiento es poder" -Sir Francis Bacon
-          <p></p>
-        </div>
-        <div class="column" >
-          Programación:
-          <ul>
-            <li>c</li> 
-            <li>c++</li>
-          </ul>
-          Desarrollo de software:
-          <ul>
-            <li>git</li>
-            <li>vim</li>
-            <li>docker</li>
-          </ul>
-        </div>
-  
-        <div class="column" >
-          Sistemas operativos:
-          <ul>
-            <li>linux</li>
-            <li>openBSD</li>
-            <li>macOS</li>
-            <li>windows</li>
-          </ul>
-          Desarrollo web:  
-          <ul>
-            <li>css</li> 
-            <li>html</li>
-            <li>cloudflare tunnels</li>
-          </ul>
-        </div>
-
-        </div>
-
-    </div>
+    </div><!-- card -->
 
   </div><!-- container -->
 
@@ -175,32 +125,13 @@
     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farielparra.tech&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><img src="./static/88x31_valid-css.png" alt="Valid css" title="Valid css" width="88" height="31"></a>
     <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.tech" target="_blank"><img src="./static/88x31_valid-html.png" alt="Valid html" title="Valid html" width="88" height="31"></a>
   </footer>
+  
   <!-- 
-  
-  <style>
-  /*lang button*/
-    button{
-      color: #fff;
-      font-family: sans-serif;
-      background-color: #3b4252;
-      padding: 10px 20px;
-      margin: 0px;
-      border: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      }
-    
-    button:hover{
-      color: #4c566a;
-      background-color: #d8dee9;
-    }
-  </style>
   <div class="container">
-    <button type="button" onclick="langbutton()" class="lang es">es</button>
-    <button type="button" onclick="langbutton()" class="lang en">en</button>
+    <button type="button" onclick="langButton()">lang</button>
   </div>
-  
   -->
+  
 </body>
 
 </html>
