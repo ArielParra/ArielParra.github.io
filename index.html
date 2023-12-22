@@ -22,7 +22,7 @@
   <script defer                  src="./navButton.js"></script>
 </head>
   
-<body>
+<body onload="checkCookie()">
 
   <div class="container">
   </div>
@@ -32,16 +32,14 @@
       <button type="button" onclick="toggleNavigation(this)">Toggle Navigation bar</button>
     </div>
     <button type="button" onclick="langButton()" title="change language to">Spanish</button>
-
-    <nav>
-      <a href="./"             class="current" title="Home Page"><span>~/         </span></a>
-      <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
-      <a href="./achivements/" class="NotCurrent">                     <span>achivements</span></a>  
-      <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
-      <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
-    </nav>
-    
   </div><!-- container -->
+  <nav>
+    <a href="./"             class="current" title="Home Page"><span>~/         </span></a>
+    <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
+    <a href="./achivements/" class="NotCurrent">                     <span>achivements</span></a>  
+    <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
+    <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
+  </nav>
 
   <div class="container">
 
@@ -130,7 +128,6 @@
     <a href="https://github.com/ArielParra/" target="_blank"><img src="./static/88x31_github.png"      class="img-88x31" alt="Github"             title="Github">                </a>
     <a href="mailto:correo@arielparra.tech">                 <img src="./static/88x31_email.png"       class="img-88x31" alt="email"              title="correo@arielparra.tech"></a>
     <a href="https://www.nordtheme.com/"     target="_blank"><img src="./static/88x31_nord.png"        class="img-88x31" alt="Nord color pallete" title="Nord theme website">    </a>
-                                                             <img src="./static/88x31_nocookies.png"   class="img-88x31" alt="No cookies"         title="0% cookies">
                                                              <img src="./static/88x31_Mexico.png"      class="img-88x31" alt="Made in Mexico!"    title="Made in Mexico">
                                                              <img src="./static/88x31_host-linux.png"  class="img-88x31" alt="self Host on linux" title="arm linux!">
     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farielparra.tech&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
