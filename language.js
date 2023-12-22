@@ -1,18 +1,28 @@
+const currentPath = window.location.pathname;
+const defaultLanguage = navigator.language.substring(0, 2);
+console.log('default browser lang ' + defaultLanguage);
 let currentLanguage;
 
-if (window.location.pathname.startsWith('./es') || navigator.language.startsWith('es') ) {
-    currentLanguage = 'es';
-} else {
-    currentLanguage = 'en';
+function detectLanguage() {
+    if (defaultLanguage==='es' || currentPath.endsWith('/es') || 
+        currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html') ) {
+        currentLanguage = 'es';
+    } else {
+        currentLanguage = 'en';
+    }
+    console.log('current lang ' + currentLanguage);
 }
-console.log('default lang ' + currentLanguage);
 
 function changeLanguage(currentLanguage) {
+    let newPath;
     if (currentLanguage === 'es') {
-        window.location.href = './es';
+        newPath = currentPath.replace(/\/index\.html$/, '/es');
+        newPath = newPath.replace(/\/es\/es$/, '/es');
     } else {
-        window.location.href = './';
+        newPath = currentPath.replace(/\/es(\/index\.html)?$/, '');
     }
+
+    window.location.href = newPath;
 }
 
 function langButton() {
@@ -22,5 +32,8 @@ function langButton() {
         currentLanguage = 'es';
     }
     changeLanguage(currentLanguage);
-    console.log('current lang ' + currentLanguage);
+    console.log('change lang with button to lang ' + currentLanguage);
 }
+
+/*main driver code*/
+detectLanguage();

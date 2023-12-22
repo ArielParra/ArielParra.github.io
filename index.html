@@ -2,44 +2,52 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Ariel Parra,website, blog">
-  <meta name="description" content="Ariel Parra Website!">
-  <meta name="author" content="Ariel Parra">
-  <link rel="icon" href="static/siteicon.gif" type="image/gif">
-  <link rel="apple-touch-icon" sizes="180x180" href="static/foto.webp" type="image/webp">
-  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="language.js" as="script">
-  <link rel="preload" href="navButton.js" as="script">
-  <script defer src="language.js"></script>
-  <script defer src="navButton.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title> arielparra.tech</title>
+  <!-- Info -->
+  <meta   charset="UTF-8">
+  <meta   name="viewport"        content="width=device-width, initial-scale=1">
+  <meta   name="keywords"        content="Ariel Parra,website, blog">
+  <meta   name="description"     content="Ariel Parra Website!">
+  <meta   name="author"          content="Ariel Parra">
+  <title> arielparra.tech </title>
+  <!-- Favicons -->  
+  <link   rel="icon"             href="./static/siteicon.gif" type="image/gif">
+  <link   rel="apple-touch-icon" href="./static/foto.webp"    type="image/webp" sizes="180x180">
+  <!-- CSS stylesheet -->
+  <link   rel="preload"          href="./style.css"    as="style">
+  <link   rel="stylesheet"       href="./style.css">
+  <!-- Java Scripts -->
+  <link   rel="preload"          href="./language.js"  as="script">
+  <link   rel="preload"          href="./navButton.js" as="script">
+  <script defer                  src="./language.js"> </script>
+  <script defer                  src="./navButton.js"></script>
 </head>
-
+  
 <body>
 
-  <div class="container" >
-    
+  <div class="container">
+  </div>
+
+  <div class="container">
     <div class="mobile">
       <button type="button" onclick="toggleNavigation(this)">Toggle Navigation bar</button>
     </div>
+    <button type="button" onclick="langButton()" title="change language to">Spanish</button>
 
     <nav>
-      <a href="."           class="current">   <div><span>~/</span></div></a>
-      <a href="./projects/" class="NotCurrent"><div>projects</div></a>
-      <a href="./contact/"  class="NotCurrent"><div>contact</div></a>
-      <a href="./blog/"     class="NotCurrent"><div>blog</div></a>  
+      <a href="./"             class="current" title="Home Page"><span>~/         </span></a>
+      <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
+      <a href="./achivements/" class="NotCurrent">                     <span>achivements</span></a>  
+      <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
+      <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
     </nav>
-  
+    
   </div><!-- container -->
-  
+
   <div class="container">
 
     <div class="card">
       <hr>
-      <img src="./static/foto.webp" alt="photo" title="me"  width="270" height="270" >
+      <img src="./static/foto.webp" alt="Photo of me" title="me" width="270" height="270">
       <div class="center">My Photo</div>
       <hr>
     </div><!-- card -->
@@ -72,13 +80,16 @@
 
 
     <div class="card">
+
       <hr>
         <h3>skills</h3>      
       <hr>
 
-      "Knowledge is power" 
-      -Francis Bacon
-      <p></p>
+      <div>
+        "Knowledge is power" 
+        -Francis Bacon
+        <p></p>
+      </div>
 
       <div class="column" >
         Programming: 
@@ -115,22 +126,18 @@
   </div><!-- container -->
 
   <footer>
-    <a href="https://arielparra.tech/"><img src="./static/88x31_linkback.png" alt="Linkback" title="https" width="88" height="31"></a>
-    <a href="https://github.com/ArielParra/" target="_blank"><img src="./static/88x31_github.png" alt="github" title="github" width="88" height="31"></a>
-    <a href="mailto:correo@arielparra.tech"><img src="./static/88x31_email.png" alt="email" title="correo@arielparra.tech" width="88" height="31"></a>
-    <a href="https://www.nordtheme.com/" target="_blank"><img src="./static/88x31_nord.png" alt="Nord color pallete" title="nordtheme website" width="88" height="31"></a>
-    <img src="./static/88x31_nocookies.png" alt="No cookies" title="0% cookies" width="88" height="31">
-    <img src="./static/88x31_Mexico.png" alt="Hecho en Mexico!" title="Hecho en Mexico" width="88" height="31">
-    <img src="./static/88x31_host-linux.png" alt="self Host on linux" title="arm linux!" width="88" height="31">
-    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farielparra.tech&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><img src="./static/88x31_valid-css.png" alt="Valid css" title="Valid css" width="88" height="31"></a>
-    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.tech" target="_blank"><img src="./static/88x31_valid-html.png" alt="Valid html" title="Valid html" width="88" height="31"></a>
+    <a href="https://arielparra.tech/">                      <img src="./static/88x31_linkback.png"    class="img-88x31" alt="Linkback"           title="HTTP Secure = HTTPS">   </a>
+    <a href="https://github.com/ArielParra/" target="_blank"><img src="./static/88x31_github.png"      class="img-88x31" alt="Github"             title="Github">                </a>
+    <a href="mailto:correo@arielparra.tech">                 <img src="./static/88x31_email.png"       class="img-88x31" alt="email"              title="correo@arielparra.tech"></a>
+    <a href="https://www.nordtheme.com/"     target="_blank"><img src="./static/88x31_nord.png"        class="img-88x31" alt="Nord color pallete" title="Nord theme website">    </a>
+                                                             <img src="./static/88x31_nocookies.png"   class="img-88x31" alt="No cookies"         title="0% cookies">
+                                                             <img src="./static/88x31_Mexico.png"      class="img-88x31" alt="Made in Mexico!"    title="Made in Mexico">
+                                                             <img src="./static/88x31_host-linux.png"  class="img-88x31" alt="self Host on linux" title="arm linux!">
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farielparra.tech&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                                                             <img src="./static/88x31_valid-css.png"   class="img-88x31" alt="Valid CSS"          title="Valid CSS">             </a>
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.tech" target="_blank">
+                                                             <img src="./static/88x31_valid-html.png"  class="img-88x31" alt="Valid HTML"         title="Valid HTML">            </a>
   </footer>
-  
-  <!-- 
-  <div class="container">
-    <button type="button" onclick="langButton()">lang</button>
-  </div>
-  -->
   
 </body>
 

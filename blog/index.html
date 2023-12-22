@@ -2,39 +2,71 @@
 <html lang="en">
 
 <head>
-  <style>.lang.es{display: none;}</style> 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Ariel Parra,website, blog">
-  <meta name="description" content="Ariel Parra Website!">
-  <meta name="author" content="Ariel Parra">
-  <link rel="icon" href="../static/siteicon.gif" type="image/gif">
-  <link rel="apple-touch-icon" sizes="180x180" href="../static/foto.webp" type="image/webp">
-  <link rel="preload" href="../style.css" as="style">
-  <link rel="preload" href="../language.js" as="script">
-  <script defer src="../language.js"></script>
-  <link rel="stylesheet" href="../style.css">
-  <title>blog</title>
+<!--
+  <base href="https://arielparra.tech/">
+-->
+  <base href="../index.html">
+  <!-- Info -->
+  <meta   charset="UTF-8">
+  <meta   name="viewport"        content="width=device-width, initial-scale=1">
+  <meta   name="keywords"        content="Ariel Parra,website, blog">
+  <meta   name="description"     content="Ariel Parra Website!">
+  <meta   name="author"          content="Ariel Parra">
+  <title> blog </title>
+  <!-- Favicons -->  
+  <link   rel="icon"             href="./static/siteicon.gif" type="image/gif">
+  <link   rel="apple-touch-icon" href="./static/foto.webp"    type="image/webp" sizes="180x180">
+  <!-- CSS stylesheet -->
+  <link   rel="preload"          href="./style.css"    as="style">
+  <link   rel="stylesheet"       href="./style.css">
+  <!-- Java Scripts -->
+  <link   rel="preload"          href="./language.js"  as="script">
+  <link   rel="preload"          href="./navButton.js" as="script">
+  <script defer                  src="./language.js"> </script>
+  <script defer                  src="./navButton.js"></script>
 </head>
-
+  
 <body>
 
-  <nav>
-    <a href="../"><div><span>~/</span></div></a>
-    <a href="../projects/"><div class="lang en">projects</div><div class="lang es">proyectos</div></a>
-    <a href="../contact/"><div class="lang en">contact</div><div class="lang es">contacto</div></a>
-    <a href="." class="current"><div>blog</div></a>
-  </nav>
-
   <div class="container">
-
-    <div class="card">
-      <div class="center">
-        <div>no blogs yet</div>
-      </div>
+    <div class="mobile">
+      <button type="button" onclick="toggleNavigation(this)">Toggle Navigation bar</button>
     </div>
 
+    <nav>
+      <a href="./"             class="NotCurrent" title="Home Page"><span>~/         </span></a>
+      <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
+      <a href="./achivements/" class="NotCurrent">                  <span>achivements</span></a>  
+      <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
+      <a href="./blog/"        class="current">                     <span>blog       </span></a>  
+    </nav>
   </div><!-- container -->
+
+    </div><!-- container -->
+
+    <div class="container">
+      <div class="card">
+        <div class="center">Simple HTML + CSS + JS</div>
+      </div>
+    </div><!-- container -->
+
+    <div class="container">
+      <div class="card">
+        <div class="center">Competitve programming in C++</div>
+      </div>
+    </div><!-- container -->
+
+    <div class="container">
+      <div class="card">
+        <div class="center">Linux</div>
+      </div>
+    </div><!-- container -->
+
+    <div class="container">
+      <div class="card">
+        <div class="center">Servers And Hosting</div>
+      </div>
+    </div><!-- container -->
 
 </body>
 
