@@ -5,9 +5,7 @@ I like small websites without the need for bloated webframes.
 
 # Todo List:
 
-- [ ] FIX spanish!
-- [ ] toggle nav bar button -> show/hide nav bar
-- [ ] dark/light button 
+- [ ] FIX spanish pages!
 - [ ] 404 page
 - [ ] achivements section
     - [ ] upload some certs

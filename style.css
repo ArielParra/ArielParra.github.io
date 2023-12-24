@@ -8,32 +8,67 @@
   --blue:    #5e81ac;
   --cyan:    #81a1c1;
   --green:   #a3be8c;
-  /*dark*/
-  --nord00:  #242933; /*html background*/
-  --nord01:  #373e4d; /*border color*/
-  --nord02:  #4c566a; /*higlight background*/
-  --nord03:  #3b4252; /*card background*/
-  --nord04:  #d8dee9; /*text color*/
-  --nord05:  #323a48; /*shadow color*/
-  /*light*/
-  --nord10:  #81a1c1; /*html background*/
-  --nord11:  #3b4252; /*border color*/
-  --nord12:  #373e4d; /*higlight background*/
-  --nord13:  #5e81ac; /*card background*/
-  --nord14:  #242933; /*text color*/
-  --nord15:  #323a48; /*shadow color*/
+}  
+.theme-dark {
+  --HTML_BG:      #242933; 
+  --border:       #373e4d; 
+  --highlight_BG: #4c566a;
+  --card_BG:      #3b4252; 
+  --text:         #d8dee9; 
+  --shadow:       #323a48;
+}
+.theme-light {
+/*@media (prefers-color-scheme: light) {*/ 
+  /*needs fixing*/
+  --HTML_BG:      #81a1c1;
+  --border:       #3b4252; 
+  --highlight_BG: #373e4d; 
+  --card_BG:      #5e81ac; 
+  --text:         #242933; 
+  --shadow:       #323a48;
+
+  /*Default style is dark mode, only needs to be rewriten the light colors*/
+  hr{
+    border-color: var(--border) !important;
+  }
+  button{  
+    background-color:           var(--card_BG) !important;
+    border: 2px solid           var(--border) !important; 
+    color:             #caccd1 !important;
+  }
+  button:hover{
+    border: 2px solid  var(--card_BG) !important; 
+    background-color:  var(--highlight_BG) !important;
+    color:             #d8dee9 !important;
+  }
+  a:focus {
+    outline: 2px solid #242933 !important; /*outline when tab is pressed*/
+  }
+  nav>a>span{
+    color: var(--text) !important;
+  }
+
+  nav>a.current{
+    background-color: #4b5f82 !important;
+  }
+  nav>a:hover{
+    background-color: var(--highlight_BG) !important;
+  }
+  nav>a:hover>span{
+    color: #d8dee9 !important;
+  }
 }
 
 /*general html*/
 html {
-  background-color: var(--nord00);
+  background-color: var(--HTML_BG);
   font-family: sans-serif !important; 
 }
 
 body{
-  color: var(--nord04);
+  color: var(--text);
   opacity: 0;
-  transform: translateY(20px); 
+  transform: translateY(-20px); 
   animation: fadeInFromBottom 500ms ease forwards;
 }
 
@@ -45,7 +80,7 @@ body{
 }
 
 hr{
-  border-color: var(--nord04);
+  border-color: var(--text);
   border-style: solid;
   height: 0%;
   width: 100%;
@@ -63,8 +98,6 @@ a:focus {
   outline: 2px solid var(--nord10); /*outline when tab is pressed*/
 }
 
-/*footer*/
-
 footer{
   padding: 10px;
   text-align: center;  
@@ -77,17 +110,9 @@ footer{
 
 footer>a{
   text-decoration: none;
-}
-
-.img-88x31{
-  box-shadow: 2px 2px 2px 1px var(--nord05);
-  image-rendering: pixelated;
-  width:  88px;
+  /*for tab selection*/
+  width: 88px;
   height: 31px;
-}
-.img-88x31:hover{
-  transform: scale(2);
-  transition: 200ms;
 }
 
 /*navegation bar*/
@@ -101,8 +126,8 @@ nav{
 }
 
 nav>a{
-  background-color:           var(--nord03);
-  box-shadow: 4px 4px 2px 1px var(--nord05);
+  background-color:           var(--card_BG);
+  box-shadow: 4px 4px 2px 1px var(--shadow);
   text-decoration: none;  
   padding: 1rem 2rem;
   margin: 5px;
@@ -111,30 +136,30 @@ nav>a{
   transition: background-color 300ms;
 }
 nav>a>span{
-  color: var(--nord04);
+  color: var(--text);
 }
 
 nav>a.current{
-  background-color: var(--nord02);
+  background-color: var(--highlight_BG);
 }
 
 nav>a:hover{
-  background-color: var(--nord04);
+  background-color: var(--text);
   transition: 200ms;
 }
 
 nav>a:hover>span{
-  color: var(--nord03);
+  color: var(--card_BG);
 }
 
 /*button*/
 
 button{  
-  background-color:           var(--nord02);
-  border: 2px solid           var(--nord03); 
-  color:                      var(--nord04);
-  box-shadow: 4px 4px 2px 1px var(--nord05);
-  margin: 10px;
+  background-color:           var(--highlight_BG);
+  border: 2px solid           var(--card_BG); 
+  color:                      var(--text);
+  box-shadow: 4px 4px 2px 1px var(--shadow);
+  margin: 5px;
   padding: 15px;
   margin-top: 0%;
   border-radius: 35px;
@@ -148,18 +173,22 @@ button:active{
 }
 
 button:hover{
-  border: 2px solid var(--nord02); 
-  background-color: var(--nord03);
+  border: 2px solid var(--highlight_BG); 
+  background-color: var(--card_BG);
   transition: 200ms;
 }
 
-
-
-
 /*divs classes*/
 
-.mobile{
-  display: none;
+.img-88x31{
+  box-shadow: 2px 2px 2px 1px var(--shadow);
+  image-rendering: pixelated;
+  width:  88px;
+  height: 31px;
+}
+.img-88x31:hover{
+  transform: scale(2);
+  transition: 200ms;
 }
 
 .container{
@@ -171,8 +200,8 @@ button:hover{
 }
 
 .card{
-  background-color: var(--nord03);
-  box-shadow: 4px 4px 2px 1px var(--nord05);
+  background-color: var(--card_BG);
+  box-shadow: 4px 4px 2px 1px var(--shadow);
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
@@ -221,71 +250,17 @@ button:hover{
   clear:   both;
 }
 
-/*Default style is dark mode, only needs to be rewriten the light colors*/
-
-@media (prefers-color-scheme: light) { 
-  html {
-    background-color: var(--nord10) !important;
-  }
-  body {
-    color: var(--nord14) !important;
-  }
-  hr{
-    border-color: var(--nord11) !important;
-  }
-  .card{
-    background-color: var(--nord13) !important;
-  }
-  button{  
-    background-color:           var(--nord13) !important;
-    border: 2px solid           var(--nord11) !important; 
-    color:                      var(--nord14) !important;
-  }
-  button:hover{
-    border: 2px solid  var(--nord13) !important; 
-    background-color:  var(--nord12) !important;
-    color:             var(--nord13) !important;
-  }
-  a:focus {
-    outline: 2px solid var(--nord00) !important; /*outline when tab is pressed*/
-  }
-  nav>a{
-    background-color:           var(--nord13) !important;
-  }
-  nav>a>span{
-    color: var(--nord14) !important;
-  }
-  nav>a.current{
-    background-color: #4b5f82 !important;
-  }
-  nav>a:hover{
-    background-color: var(--nord12) !important;
-    transition: 200ms;
-  }
-  nav>a:hover>span{
-    color: var(--nord13) !important;
-  }
-}
-
 /*resonsiveness on mobile*/
 
 @media screen and (max-width: 40rem) {
   nav>a{
     width: calc(50% + 3rem);
   }
-  .mobile{
-    display: inline-block !important;
-  }
   .card{
     min-width: calc(70% + 3rem) !important;
     max-width: calc(70% + 3rem) !important;
   }
-  img{
-    max-width: 90% !important;
-  }
-  button{
-    border-radius: 50px !important;
-  }
+
 }
 
 

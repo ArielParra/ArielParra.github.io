@@ -23,9 +23,13 @@ function toggleNavigation(button) {
     }
   }
 
+  if (navShown) {
+    button.textContent = 'Show Nav Bar';
+  } else {
+    button.textContent = 'Hide Nav Bar';
+  }
   setTimeout(function() {
     navShown = !navShown;
     button.disabled = false;
   }, 500);
 }
-    

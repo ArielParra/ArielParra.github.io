@@ -10,28 +10,33 @@
   <meta   name="author"          content="Ariel Parra">
   <title> arielparra.tech </title>
   <!-- Favicons -->  
-  <link   rel="icon"             href="./static/siteicon.gif" type="image/gif">
-  <link   rel="apple-touch-icon" href="./static/foto.webp"    type="image/webp" sizes="180x180">
+  <link   rel="icon"             href="./static/favicon.gif" type="image/gif"> <!-- Firefox -->
+  <link   rel="apple-touch-icon" href="./static/foto.webp"   type="image/webp" sizes="180x180">
   <!-- CSS stylesheet -->
-  <link   rel="preload"          href="./style.css"    as="style">
+  <link   rel="preload"          href="./style.css"      as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts -->
-  <link   rel="preload"          href="./language.js"  as="script">
-  <link   rel="preload"          href="./navButton.js" as="script">
-  <script defer                  src="./language.js"> </script>
-  <script defer                  src="./navButton.js"></script>
+  <link   rel="preload"          href="./js/language.js"    as="script">
+  <link   rel="preload"          href="./js/cookies.js"     as="script">
+  <link   rel="preload"          href="./js/dynFavicon.js"  as="script">
+  <link   rel="preload"          href="./js/navButton.js"   as="script">
+  <link   rel="preload"          href="./js/colorTheme.js"  as="script">
+  <link   rel="preload"          href="./main.js"        as="script">
+  <script defer                  src="./js/language.js">    </script>
+  <script defer                  src="./js/cookies.js">     </script>
+  <script defer                  src="./js/dynFavicon.js">  </script>
+  <script defer                  src="./js/navButton.js">   </script>
+  <script defer                  src="./js/colorTheme.js">  </script>
+  <script defer                  src="./main.js">        </script>
+
 </head>
-  
-<body onload="checkCookie()">
+
+<body>
 
   <div class="container">
-  </div>
-
-  <div class="container">
-    <div class="mobile">
-      <button type="button" onclick="toggleNavigation(this)">Toggle Navigation bar</button>
-    </div>
-    <button type="button" onclick="langButton()" title="change language to">Spanish</button>
+    <button type="button" onclick="toggleNavigation(this)">Hide Nav Bar</button>
+    <button type="button" onclick="langButton()"      title="Change language to"> Spanish</button>
+    <button type="button" onclick="toggleTheme(this)" title="Change color theme to" id="themeButton"></button>
   </div><!-- container -->
   <nav>
     <a href="./"             class="current" title="Home Page"><span>~/         </span></a>
@@ -45,7 +50,7 @@
 
     <div class="card">
       <hr>
-      <img src="./static/foto.webp" alt="Photo of me" title="me" width="270" height="270">
+      <img src="./static/foto.webp" alt="Photo of me" title="me">
       <div class="center">My Photo</div>
       <hr>
     </div><!-- card -->
