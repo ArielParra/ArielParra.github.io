@@ -24,13 +24,13 @@ function toggleNavigation(button) {
   }
 
   if (navShown) {
-    if(currentLanguage === 'es'){
+    if(currentLanguageSite === 'es'){
       button.textContent = 'Mostrar Barra';
     }else {
       button.textContent = 'Show Nav Bar';
     }
   } else {
-    if(currentLanguage === 'es'){
+    if(currentLanguageSite === 'es'){
       button.textContent = 'Ocultar Barra';
     }else {
       button.textContent = 'Hide Nav Bar';

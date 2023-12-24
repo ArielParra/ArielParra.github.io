@@ -26,7 +26,7 @@ function main() {
     const defaultLanguage = navigator.language.substring(0, 2);
     let currentLanguageSite;
 
-    if ( currentPath.endsWith('/es') || currentPath.endsWith('/es/index.html') ) {
+    if ( currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html') ) {
       currentLanguage = 'es';
       currentLanguageSite = 'es';
     }else{
