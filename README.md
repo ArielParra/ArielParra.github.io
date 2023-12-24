@@ -5,6 +5,9 @@ I like small websites without the need for bloated webframes.
 
 # Todo List:
 
+- [ ] FIX ALL HEADERS
+- [ ] style cookie
+- [ ] debug flag/file
 - [ ] FIX spanish pages!
 - [ ] 404 page
 - [ ] achivements section

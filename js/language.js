@@ -1,11 +1,6 @@
-let currentPath = window.location.pathname;
+const currentPath = window.location.pathname;
 const defaultLanguage = navigator.language.substring(0, 2);
 let currentLanguage;
-
-console.log('default lang = ' + defaultLanguage);
-console.log('lang cookie = ' + getCookie('language') );
-console.log('current path = ' + currentPath);
-
 
 function detectLanguage() {
     const storedLanguage = getCookie('language');
@@ -20,6 +15,7 @@ function detectLanguage() {
     }
     console.log('current lang  = ' + currentLanguage);
 }
+
 function changeLanguage(language) {
     setCookie('language', language, 365);
     let newPath;
@@ -29,7 +25,6 @@ function changeLanguage(language) {
         newPath = currentPath.replace(/\/es(\/index\.html)?$/, '');
     }
     console.log('lang cookie = ' + getCookie('language') );
-
  //   window.location.href = newPath;
 }
 
