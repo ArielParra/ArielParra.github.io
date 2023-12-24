@@ -1,53 +1,64 @@
-/*Nord color palette*/
 :root {
-  /*colors*/
-  --yellow:  #ebcb8b;
-  --orange:  #d08770;
-  --red:     #bf616a;
-  --magenta: #b48ead;
-  --blue:    #5e81ac;
-  --cyan:    #81a1c1;
-  --green:   #a3be8c;
+  /*color pallete*/
+  --yellow:       #ebcb8b;
+  --orange:       #d08770;
+  --red:          #bf616a;
+  --magenta:      #b48ead;
+  --blue:         #5e81ac;
+  --cyan:         #81a1c1;
+  --green:        #a3be8c;
+  --white:        #d8dee9;
+  --black:        #242933;
+  --gray1:        #323a48; 
+  --gray2:        #373e4d;
+  --gray3:        #3b4252;
+  --gray4:        #4c566a;
+
+  /*default theme*/
+  --shadow:       var(--gray1); 
+  --HTML_BG:      var(--black); 
+  --border:       var(--gray2); 
+  --highlight_BG: var(--gray4); 
+  --card_BG:      var(--gray3);  
+  --text:         var(--white); 
 }  
+
 .theme-dark {
-  --HTML_BG:      #242933; 
-  --border:       #373e4d; 
-  --highlight_BG: #4c566a;
-  --card_BG:      #3b4252; 
-  --text:         #d8dee9; 
-  --shadow:       #323a48;
+  --HTML_BG:      var(--black); 
+  --border:       var(--gray2); 
+  --highlight_BG: var(--gray4); 
+  --card_BG:      var(--gray3);  
+  --text:         var(--white); 
 }
 .theme-light {
 /*@media (prefers-color-scheme: light) {*/ 
   /*needs fixing*/
-  --HTML_BG:      #81a1c1;
-  --border:       #3b4252; 
-  --highlight_BG: #373e4d; 
-  --card_BG:      #5e81ac; 
-  --text:         #242933; 
-  --shadow:       #323a48;
+  --HTML_BG:      var(--cyan);
+  --border:       var(--gray3); 
+  --highlight_BG: var(--gray2); 
+  --card_BG:      var(--blue);
+  --text:         var(--black); 
 
   /*Default style is dark mode, only needs to be rewriten the light colors*/
   hr{
     border-color: var(--border) !important;
   }
   button{  
-    background-color:           var(--card_BG) !important;
-    border: 2px solid           var(--border) !important; 
-    color:             #caccd1 !important;
+    background-color:  var(--card_BG) !important;
+    border: 2px solid  var(--border)  !important; 
+    color:             var(--white)   !important;
   }
   button:hover{
-    border: 2px solid  var(--card_BG) !important; 
+    border: 2px solid  var(--card_BG)      !important; 
     background-color:  var(--highlight_BG) !important;
-    color:             #d8dee9 !important;
+    color:             var(--white)        !important
   }
   a:focus {
-    outline: 2px solid #242933 !important; /*outline when tab is pressed*/
+    outline: 2px solid var(--black) !important; /*outline when tab is pressed*/
   }
   nav>a>span{
     color: var(--text) !important;
   }
-
   nav>a.current{
     background-color: #4b5f82 !important;
   }
@@ -62,11 +73,12 @@
 /*general html*/
 html {
   background-color: var(--HTML_BG);
+  color: var(--text);
   font-family: sans-serif !important; 
+  transition: all 1s ease;  /*color theme transition*/
 }
 
 body{
-  color: var(--text);
   opacity: 0;
   transform: translateY(-20px); 
   animation: fadeInFromBottom 500ms ease forwards;
@@ -220,13 +232,20 @@ button:hover{
   margin-right: auto; /*centers image, needs grid*/
 }
 
-#grid .card{/*Fixes text alignent with images on cards*/  
+#grid .card{
+  /*Fixes text alignent with images on cards*/  
   display: grid;
 }
 
 #blog .card{
   display: block;
   width: 20rem;
+}
+
+#themeButton{
+  /*for the moon/sun icon width*/
+  white-space: pre;
+  font-size: 1.1rem;
 }
 
 .center{

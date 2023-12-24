@@ -16,3 +16,7 @@ function getCookie(name) {
     }
     return null;
 }
+
+function cookieExists(name) {
+    return getCookie(name) !== null;
+}

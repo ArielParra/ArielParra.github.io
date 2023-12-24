@@ -2,10 +2,7 @@
 <html lang="en">
 
 <head>
-<!--
   <base href="https://arielparra.tech/">
--->
-  <base href="../index.html">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
@@ -20,29 +17,25 @@
   <link   rel="preload"          href="./style.css"    as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts -->
-  <link   rel="preload"          href="./language.js"  as="script">
-  <link   rel="preload"          href="./navButton.js" as="script">
-  <script defer                  src="./language.js"> </script>
-  <script defer                  src="./navButton.js"></script>
+  <link   rel="preload"          href="./main.js"   as="script">
+  <script defer                  src ="./main.js">    </script>
+
 </head>
   
 <body>
-
+  
   <div class="container">
-    <div class="mobile">
-      <button type="button" onclick="toggleNavigation(this)">Hide Nav Bar</button>
-    </div>
-
-    <nav>
-      <a href="./"             class="NotCurrent" title="Home Page"><span>~/         </span></a>
-      <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
-      <a href="./achivements/" class="NotCurrent">                  <span>achivements</span></a>  
-      <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
-      <a href="./blog/"        class="current">                     <span>blog       </span></a>  
-    </nav>
+    <button type="button" onclick="toggleNavigation(this)" id="navButton"> Hide Nav Bar                         </button>
+    <button type="button" onclick="langButton()"                            title="Change language to"> Spanish </button>
+    <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Change color theme to">      </button>
   </div><!-- container -->
-
-    </div><!-- container -->
+  <nav>
+    <a href="./"             class="NotCurrent" title="Home Page"><span>~/         </span></a>
+    <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
+    <a href="./achivements/" class="NotCurrent">                  <span>achivements</span></a>  
+    <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
+    <a href="./blog/"        class="current">                     <span>blog       </span></a>  
+  </nav>
 
     <div class="container">
       <div class="card">

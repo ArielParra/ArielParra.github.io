@@ -16,34 +16,75 @@ async function loadAllScripts() {
   await loadScript('./js/dynFavicon.js');
 }
 
+/*function that sets the buttons, cookies, etc.
+  called once everytime the website loads */
 function main() {
 
   loadAllScripts().then(() => {  
 
-    /*dynamic icon*/
+    /* language */
+    const defaultLanguage = navigator.language.substring(0, 2);
+    let currentLanguageSite;
 
+    if ( currentPath.endsWith('/es') || currentPath.endsWith('/es/index.html') ) {
+      currentLanguage = 'es';
+      currentLanguageSite = 'es';
+    }else{
+      currentLanguage = 'en';
+      currentLanguageSite = 'en';
+    }
+
+    if ( cookieExists('language') ) {
+      currentLanguage = getCookie('language');
+    } else {
+      if( (currentLanguage === 'en' && defaultLanguage === 'es') ||
+          (currentLanguage === 'es' && currentLanguageSite === 'en') ){ // && !cookieExists('language')
+        changeLanguage('es');
+      } 
+    }
+    /* nav bar */
+    const navButton = document.getElementById('navButton');
+    if(currentLanguage === 'es'){
+      navButton.textContent = 'Ocultar Barra';
+    }else {
+      navButton.textContent = 'Hide Nav Bar';
+    }
+
+
+    /* color theme */
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const themeButton = document.getElementById('themeButton');
+    let theme;
+
+    if (!cookieExists('theme')) {
+      theme = prefersLight ? 'theme-light' : 'theme-dark';
+    } else {
+      theme = getCookie('theme');
+    }
+
+    if (theme === 'theme-light') {
+      themeButton.textContent = ' 🌙 ';
+    } else {
+      themeButton.textContent = ' ☀️ ';
+    }
+
+    setTheme(theme);
+    
+
+   /* dynamic icon */
     if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
       //for all the other chromium based browsers that doesnt support dynamic favicons
       setInterval(animateIcon, 800);
     }
 
-    /*color theme*/
-
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: light)').matches;
-    if (prefersDarkScheme) {
-      setTheme('theme-light');
-      document.getElementById('themeButton').textContent = 'Dark';
-    } else {
-      setTheme('theme-dark');
-      document.getElementById('themeButton').textContent = 'Light';
-    }
-
-    /*language*/
-
-    detectLanguage();
+    /* debug messages */
     console.log('default lang = ' + defaultLanguage);
+    console.log('current lang = ' + currentLanguage);
+    console.log('current lang site = ' + currentLanguageSite);
+    console.log('current path = ' + currentPath); 
     console.log('lang cookie  = ' + getCookie('language') );
-    console.log('current path = ' + currentPath);
+    console.log('theme cookie = ' + getCookie('theme'));
+
   });
 
 }main();

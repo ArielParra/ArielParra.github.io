@@ -24,10 +24,19 @@ function toggleNavigation(button) {
   }
 
   if (navShown) {
-    button.textContent = 'Show Nav Bar';
+    if(currentLanguage === 'es'){
+      button.textContent = 'Mostrar Barra';
+    }else {
+      button.textContent = 'Show Nav Bar';
+    }
   } else {
-    button.textContent = 'Hide Nav Bar';
+    if(currentLanguage === 'es'){
+      button.textContent = 'Ocultar Barra';
+    }else {
+      button.textContent = 'Hide Nav Bar';
+    }
   }
+
   setTimeout(function() {
     navShown = !navShown;
     button.disabled = false;
