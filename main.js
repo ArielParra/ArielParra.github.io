@@ -36,12 +36,14 @@ function main() {
 
     if ( cookieExists('language') ) {
       currentLanguage = getCookie('language');
+      changeLanguage(currentLanguage);
     } else {
       if( (currentLanguage !== defaultLanguage) ||
           (currentLanguage !== currentLanguageSite) ){ // && !cookieExists('language')
-        changeLanguage('es');
+          changeLanguage(currentLanguage);
       } 
     }
+    
     /* nav bar */
     const navButton = document.getElementById('navButton');
     if(currentLanguage === 'es'){
