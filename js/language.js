@@ -19,7 +19,9 @@ function langButton() {
     } else {
         currentLanguage = 'es';
     }
-    if( (currentLanguage !== currentLanguageSite) ){ // && !cookieExists('language')
+    if(currentLanguage !== currentLanguageSite){
+        console.log('-current lang = ' + currentLanguage);
+        console.log('-current lang site = ' + currentLanguageSite);
         changeLanguage(currentLanguage);
     } 
 }
