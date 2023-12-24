@@ -37,8 +37,8 @@ function main() {
     if ( cookieExists('language') ) {
       currentLanguage = getCookie('language');
     } else {
-      if( (currentLanguage === 'en' && defaultLanguage === 'es') ||
-          (currentLanguage === 'es' && currentLanguageSite === 'en') ){ // && !cookieExists('language')
+      if( (currentLanguage !== defaultLanguage) ||
+          (currentLanguage !== currentLanguageSite) ){ // && !cookieExists('language')
         changeLanguage('es');
       } 
     }

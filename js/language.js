@@ -19,5 +19,8 @@ function langButton() {
     } else {
         currentLanguage = 'es';
     }
-    changeLanguage(currentLanguage);
+    if( (currentLanguage !== defaultLanguage) ||
+        (currentLanguage !== currentLanguageSite) ){ // && !cookieExists('language')
+        changeLanguage(currentLanguage);
+    } 
 }
