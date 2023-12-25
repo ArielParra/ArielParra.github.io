@@ -5,9 +5,6 @@ I like small websites without the need for bloated webframes.
 
 # Todo List:
 
-- [ ] FIX SPANISH
-- [ ] FIX NAV BUTTON (local vars)
-- [ ] debug flag/file
 - [ ] 404 page
 - [ ] achivements section
     - [ ] upload some certs
@@ -17,4 +14,4 @@ I like small websites without the need for bloated webframes.
 - [ ] blog section
     - [ ] start some blogs
     - [ ] youtubers sub-sections in blog
-- [ ] js to detect <code class="C++"> and color C++ correctly
+- [ ] js to detect code class="C++" and color C++ correctly
