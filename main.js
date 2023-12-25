@@ -5,11 +5,13 @@ function main() {
 
     if ( cookieExists('language') === true ) {
       const cookieLang = getCookie('language');
-      if(getCurrentLanguageSite() !== cookieLang){
+      if(getCurrentSiteLanguage() !== cookieLang){
         changeLanguage(cookieLang);
         console.log('1.1 language changed to = ' + cookieLang);
+      } else {
+        /* stay in the same page */
       }
-    } else if( getCurrentLanguageSite() !== getDefaultLanguage() ){ // && !cookieExists('language')
+    } else if ( getCurrentSiteLanguage() !== getDefaultLanguage() ){ // && !cookieExists('language')
       changeLanguage(getDefaultLanguage());
       console.log('1.2 language changed to =  ' + getDefaultLanguage());
     }
@@ -18,7 +20,8 @@ function main() {
     
     const navButton = document.getElementById('navButton');
 
-    if(getCurrentLanguageSite() === 'es'){
+    /* will always be on by default */
+    if(getCurrentSiteLanguage() === 'es'){
       navButton.textContent = 'Ocultar Barra';
     }else {
       navButton.textContent = 'Hide Nav Bar';
@@ -27,16 +30,19 @@ function main() {
 
     /* color theme */
 
-    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
     const themeButton = document.getElementById('themeButton');
     let theme;
 
-    if (!cookieExists('theme')) {
-      theme = prefersLight ? 'theme-light' : 'theme-dark';
-    } else {
+    if (cookieExists('theme')) {
       theme = getCookie('theme');
+    } else { /* no cookie */
+      if (browserPrefersLight() === true) {
+        theme = 'theme-light';
+      } else {
+        theme = 'theme-dark';
+      }  
     }
-
+    /* default button icon */
     if (theme === 'theme-light') {
       themeButton.textContent = ' 🌙 ';
     } else {
@@ -44,7 +50,6 @@ function main() {
     }
 
     setTheme(theme);
-    
 
    /* dynamic icon */
 
@@ -55,10 +60,12 @@ function main() {
 
     /* debug messages */
 
+
     console.log('default lang = ' + getDefaultLanguage() );
-    console.log('current lang site = ' + getCurrentLanguageSite());
-    console.log('current path = ' + getCurrentPath()); 
     console.log('lang cookie  = ' + getCookie('language') );
+    console.log('current site lang = ' + getCurrentSiteLanguage());
+    console.log('current path = ' + getCurrentPath()); 
+    console.log('browser prefers light = ' + browserPrefersLight());
     console.log('theme cookie = ' + getCookie('theme'));
 
 }main();

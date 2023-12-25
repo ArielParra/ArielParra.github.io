@@ -1,5 +1,3 @@
-let navShown = true;
-
 function toggleNavigation(button) {
   button.disabled = true;
 
@@ -8,7 +6,7 @@ function toggleNavigation(button) {
   for (let i = 0; i < elements.length; i++) {
     const elem = elements[i];
     elem.style.transition = 'opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out, visibility 0.5s ease-in-out';
-    if (navShown) {
+    if (button.dataset.navShown === 'true') {
       elem.style.visibility = 'hidden';
       elem.style.opacity = 0;
       elem.style.marginTop = '-25%'; 
@@ -23,25 +21,28 @@ function toggleNavigation(button) {
     }
   }
 
-  let currentLanguage = getCurrentLanguageSite();
+  let currentLanguage = getCurrentSiteLanguage();
 
-  if (navShown) {
+  if (button.dataset.navShown === 'true') {
     if(currentLanguage === 'es'){
       button.textContent = 'Mostrar Barra';
-    }else {
+    } else {
       button.textContent = 'Show Nav Bar';
     }
   } else {
     if(currentLanguage === 'es'){
       button.textContent = 'Ocultar Barra';
-    }else {
+    } else {
       button.textContent = 'Hide Nav Bar';
     }
   }
 
   setTimeout(function() {
-    navShown = !navShown;
+    if (button.dataset.navShown === 'true') {
+      button.dataset.navShown = 'false';
+    } else {
+      button.dataset.navShown = 'true';
+    }
     button.disabled = false;
   }, 500);
 }
-

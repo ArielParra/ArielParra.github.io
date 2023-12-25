@@ -15,3 +15,9 @@ function toggleTheme(button) {
   setTheme(newTheme);
   setCookie('theme', newTheme, 30);
 }
+function browserPrefersLight(){
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    return true;
+  }
+  return false;
+} 

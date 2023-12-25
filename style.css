@@ -16,6 +16,9 @@
 
   /*default theme*/
   --shadow:       var(--gray1); 
+  --highlight_BG: var(--gray4); 
+
+/*.theme-dark {*/
   --HTML_BG:      var(--black); 
   --border:       var(--gray2); 
   --highlight_BG: var(--gray4); 
@@ -23,23 +26,14 @@
   --text:         var(--white); 
 }  
 
-.theme-dark {
-  --HTML_BG:      var(--black); 
-  --border:       var(--gray2); 
-  --highlight_BG: var(--gray4); 
-  --card_BG:      var(--gray3);  
-  --text:         var(--white); 
-}
+/*Default style is dark mode, only need change light colors*/
 .theme-light {
 /*@media (prefers-color-scheme: light) {*/ 
-  /*needs fixing*/
   --HTML_BG:      var(--cyan);
   --border:       var(--gray3); 
-  --highlight_BG: var(--gray2); 
   --card_BG:      var(--blue);
   --text:         var(--black); 
 
-  /*Default style is dark mode, only needs to be rewriten the light colors*/
   hr{
     border-color: var(--border) !important;
   }

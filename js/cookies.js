@@ -18,9 +18,7 @@ function getCookie(name) {
 }
 
 function cookieExists(name) {
-    if (getCookie(name) !== null &&
-        getCookie(name) !== undefined) {
-            console.log('cookie ' + name + ' exists' + getCookie(name));
+    if (getCookie(name) !== null && getCookie(name) !== undefined) {
         return true;
     }
 return false;

@@ -1,14 +1,25 @@
 function changeLanguage(language) {
     let currentPath = getCurrentPath();
+    console.log('current path = ' + currentPath);
     setCookie('language', language, 30);
     let newPath;
-    if (language === 'es') {
-        newPath = currentPath.replace(/\/index\.html$/, '/es');
-    } else {
-        newPath = currentPath.replace(/\/es(\/index\.html)?$/, '');
+    if (currentPath.endsWith('/') === true) {
+        if (language === 'es') {
+            newPath = currentPath + 'es';
+        } else {
+            newPath = currentPath.replace('es/', '');
+        }
+    } else if (currentPath.endsWith('index.html') === true) { /* for index.html */
+        if (language === 'es') {
+            newPath = currentPath.replace('/index.html', '/es');
+        } else { /* en */
+            newPath = currentPath.replace('/es/index.html', '/index.html');
+        }
     }
-    //window.location.href = newPath;
-    console.log('language path changed to ' + newPath);
+    console.log('input = ' + language  + ', new path = ' + newPath);
+    if(newPath !== undefined){
+        window.location.href = newPath;
+    }
 }
 
 function oppositeLanguage(language) {
@@ -20,17 +31,12 @@ function oppositeLanguage(language) {
 
 function langButton(){
     let currentLanguage;
-
     if ( cookieExists('language') ) {
         currentLanguage = getCookie('language');
-        changeLanguage(oppositeLanguage(currentLanguage)); 
-        console.log('2.1 language changed to = ' + oppositeLanguage(currentLanguage));
     } else { 
-        currentLanguage = getCurrentLanguageSite();
-        console.log('2.2 language changed to = ' + oppositeLanguage(currentLanguage));
-
-        changeLanguage(oppositeLanguage(currentLanguage));    
+        currentLanguage = getCurrentSiteLanguage();
     }
+    changeLanguage(oppositeLanguage(currentLanguage));    
 }
 
 /* getters */
@@ -38,7 +44,7 @@ function getCurrentPath(){
     return window.location.pathname;
 
 }
-function getCurrentLanguageSite(){
+function getCurrentSiteLanguage(){
     let currentPath = getCurrentPath();
     if(currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html')){
         return 'es';
