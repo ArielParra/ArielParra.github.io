@@ -1,6 +1,5 @@
-const currentPath = window.location.pathname;
-
 function changeLanguage(language) {
+    let currentPath = getCurrentPath();
     setCookie('language', language, 30);
     let newPath;
     if (language === 'es') {
@@ -36,9 +35,11 @@ function langButton(){
 
 /* getters */
 function getCurrentPath(){
-    return currentPath;
+    return window.location.pathname;
+
 }
 function getCurrentLanguageSite(){
+    let currentPath = getCurrentPath();
     if(currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html')){
         return 'es';
     }
