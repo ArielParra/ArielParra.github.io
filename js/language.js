@@ -29,14 +29,19 @@ function oppositeLanguage(language) {
     return 'es';
 }
 
-function langButton(){
+function langButton(button){
+    button.disabled = true;
     let currentLanguage;
     if ( cookieExists('language') ) {
         currentLanguage = getCookie('language');
     } else { 
         currentLanguage = getCurrentSiteLanguage();
     }
+
     changeLanguage(oppositeLanguage(currentLanguage));    
+    setTimeout(function() {
+        button.disabled = false;
+    }, 500);
 }
 
 /* getters */
@@ -52,5 +57,5 @@ function getCurrentSiteLanguage(){
     return 'en';
 }
 function getDefaultLanguage(){
-    return defaultLanguage = navigator.language.substring(0, 2);
+    return navigator.language.substring(0, 2);
 }

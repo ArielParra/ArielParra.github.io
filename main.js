@@ -1,26 +1,25 @@
-/*function that sets the buttons, cookies, etc.
+/*main function that sets the buttons, cookies, etc.
   called once everytime the website loads */
 function main() {
+
     /* language */
 
     if ( cookieExists('language') === true ) {
       const cookieLang = getCookie('language');
       if(getCurrentSiteLanguage() !== cookieLang){
         changeLanguage(cookieLang);
-        console.log('1.1 language changed to = ' + cookieLang);
       } else {
         /* stay in the same page */
       }
     } else if ( getCurrentSiteLanguage() !== getDefaultLanguage() ){ // && !cookieExists('language')
       changeLanguage(getDefaultLanguage());
-      console.log('1.2 language changed to =  ' + getDefaultLanguage());
     }
     
     /* nav bar */
-    
-    const navButton = document.getElementById('navButton');
 
     /* will always be on by default */
+    const navButton = document.getElementById('navButton');
+    /* default button text */
     if(getCurrentSiteLanguage() === 'es'){
       navButton.textContent = 'Ocultar Barra';
     }else {
@@ -32,7 +31,6 @@ function main() {
 
     const themeButton = document.getElementById('themeButton');
     let theme;
-
     if (cookieExists('theme')) {
       theme = getCookie('theme');
     } else { /* no cookie */
