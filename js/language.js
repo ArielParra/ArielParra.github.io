@@ -7,7 +7,7 @@ function changeLanguage(language) {
     } else {
         newPath = currentPath.replace(/\/es(\/index\.html)?$/, '');
     }
-    window.location.href = newPath;
+    //window.location.href = newPath;
     console.log('language path changed to ' + newPath);
 }
 
@@ -24,10 +24,10 @@ function langButton(){
     if ( cookieExists('language') ) {
         currentLanguage = getCookie('language');
         changeLanguage(oppositeLanguage(currentLanguage)); 
-        console.log('1language changed to ' + oppositeLanguage(currentLanguage));
+        console.log('2.1 language changed to = ' + oppositeLanguage(currentLanguage));
     } else { 
         currentLanguage = getCurrentLanguageSite();
-        console.log('2language changed to ' + oppositeLanguage(currentLanguage));
+        console.log('2.2 language changed to = ' + oppositeLanguage(currentLanguage));
 
         changeLanguage(oppositeLanguage(currentLanguage));    
     }

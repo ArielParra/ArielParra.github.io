@@ -7,11 +7,11 @@ function main() {
       const cookieLang = getCookie('language');
       if(getCurrentLanguageSite() !== cookieLang){
         changeLanguage(cookieLang);
-        console.log('alanguage changed to ' + cookieLang);
+        console.log('1.1 language changed to = ' + cookieLang);
       }
     } else if( getCurrentLanguageSite() !== getDefaultLanguage() ){ // && !cookieExists('language')
       changeLanguage(getDefaultLanguage());
-      console.log('blanguage changed to ' + getDefaultLanguage());
+      console.log('1.2 language changed to =  ' + getDefaultLanguage());
     }
     
     /* nav bar */
