@@ -1,27 +1,6 @@
-async function loadScript(src) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = src;
-    script.defer = false;
-    script.onload = resolve;
-    script.onerror = reject;
-    document.head.appendChild(script);
-  });
-}
-async function loadAllScripts() {
-  await loadScript('./js/cookies.js');
-  await loadScript('./js/language.js');
-  await loadScript('./js/colorTheme.js');
-  await loadScript('./js/navButton.js');
-  await loadScript('./js/dynFavicon.js');
-}
-
 /*function that sets the buttons, cookies, etc.
   called once everytime the website loads */
 function main() {
-
-  loadAllScripts().then(() => {  
-
     /* language */
 
     if ( cookieExists('language') === true ) {
@@ -81,7 +60,5 @@ function main() {
     console.log('current path = ' + getCurrentPath()); 
     console.log('lang cookie  = ' + getCookie('language') );
     console.log('theme cookie = ' + getCookie('theme'));
-
-  });
 
 }main();
