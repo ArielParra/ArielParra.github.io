@@ -22,13 +22,9 @@ function toggleNavigation(button) {
       }, 500);
     }
   }
-  let currentLanguage;
-  
-  if ( cookieExists('language') ) {
-     currentLanguage = getCookie('language');
-  } else if( currentLanguage !== defaultLanguage){ // && !cookieExists('language')
-  
-  }
+
+  let currentLanguage = getCurrentLanguageSite();
+
   if (navShown) {
     if(currentLanguage === 'es'){
       button.textContent = 'Mostrar Barra';
