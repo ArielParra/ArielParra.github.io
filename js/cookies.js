@@ -18,5 +18,10 @@ function getCookie(name) {
 }
 
 function cookieExists(name) {
-    return getCookie(name) !== null;
+    if (getCookie(name) !== null &&
+        getCookie(name) !== undefined) {
+            console.log('cookie ' + name + ' exists' + getCookie(name));
+        return true;
+    }
+return false;
 }

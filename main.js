@@ -23,30 +23,23 @@ function main() {
   loadAllScripts().then(() => {  
 
     /* language */
-    const defaultLanguage = navigator.language.substring(0, 2);
-    let currentLanguageSite;
 
-    if ( currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html') ) {
-      currentLanguage = 'es';
-      currentLanguageSite = 'es';
-    }else{
-      currentLanguage = 'en';
-      currentLanguageSite = 'en';
-    }
-
-    if ( cookieExists('language') ) {
-      currentLanguage = getCookie('language');
-      changeLanguage(currentLanguage);
-    } else {
-      if( (currentLanguage !== defaultLanguage) ||
-          (currentLanguage !== currentLanguageSite) ){ // && !cookieExists('language')
-          changeLanguage(currentLanguage);
-      } 
+    if ( cookieExists('language') === true ) {
+      const cookieLang = getCookie('language');
+      if(getCurrentLanguageSite() !== cookieLang){
+        changeLanguage(cookieLang);
+        console.log('alanguage changed to ' + cookieLang);
+      }
+    } else if( getCurrentLanguageSite() !== getDefaultLanguage() ){ // && !cookieExists('language')
+      changeLanguage(getDefaultLanguage());
+      console.log('blanguage changed to ' + getDefaultLanguage());
     }
     
     /* nav bar */
+    
     const navButton = document.getElementById('navButton');
-    if(currentLanguage === 'es'){
+
+    if(getCurrentLanguageSite() === 'es'){
       navButton.textContent = 'Ocultar Barra';
     }else {
       navButton.textContent = 'Hide Nav Bar';
@@ -54,6 +47,7 @@ function main() {
 
 
     /* color theme */
+
     const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
     const themeButton = document.getElementById('themeButton');
     let theme;
@@ -74,16 +68,17 @@ function main() {
     
 
    /* dynamic icon */
+
     if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
       //for all the other chromium based browsers that doesnt support dynamic favicons
       setInterval(animateIcon, 800);
     }
 
     /* debug messages */
-    console.log('default lang = ' + defaultLanguage);
-    console.log('current lang = ' + currentLanguage);
-    console.log('current lang site = ' + currentLanguageSite);
-    console.log('current path = ' + currentPath); 
+
+    console.log('default lang = ' + getDefaultLanguage() );
+    console.log('current lang site = ' + getCurrentLanguageSite());
+    console.log('current path = ' + getCurrentPath()); 
     console.log('lang cookie  = ' + getCookie('language') );
     console.log('theme cookie = ' + getCookie('theme'));
 

@@ -1,5 +1,4 @@
 const currentPath = window.location.pathname;
-let currentLanguage;
 
 function changeLanguage(language) {
     setCookie('language', language, 30);
@@ -10,18 +9,41 @@ function changeLanguage(language) {
         newPath = currentPath.replace(/\/es(\/index\.html)?$/, '');
     }
     window.location.href = newPath;
-    //console.log('website changed to = ' + newPath );
+    console.log('language path changed to ' + newPath);
 }
 
-function langButton() {
-    if(currentLanguage === 'es'){
-        currentLanguage = 'en';
-    } else {
-        currentLanguage = 'es';
+function oppositeLanguage(language) {
+    if (language === 'es') {
+        return 'en';
     }
-    if(currentLanguage !== currentLanguageSite){
-        console.log('-current lang = ' + currentLanguage);
-        console.log('-current lang site = ' + currentLanguageSite);
-        changeLanguage(currentLanguage);
-    } 
+    return 'es';
+}
+
+function langButton(){
+    let currentLanguage;
+
+    if ( cookieExists('language') ) {
+        currentLanguage = getCookie('language');
+        changeLanguage(oppositeLanguage(currentLanguage)); 
+        console.log('1language changed to ' + oppositeLanguage(currentLanguage));
+    } else { 
+        currentLanguage = getCurrentLanguageSite();
+        console.log('2language changed to ' + oppositeLanguage(currentLanguage));
+
+        changeLanguage(oppositeLanguage(currentLanguage));    
+    }
+}
+
+/* getters */
+function getCurrentPath(){
+    return currentPath;
+}
+function getCurrentLanguageSite(){
+    if(currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html')){
+        return 'es';
+    }
+    return 'en';
+}
+function getDefaultLanguage(){
+    return defaultLanguage = navigator.language.substring(0, 2);
 }

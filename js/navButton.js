@@ -22,15 +22,21 @@ function toggleNavigation(button) {
       }, 500);
     }
   }
-
+  let currentLanguage;
+  
+  if ( cookieExists('language') ) {
+     currentLanguage = getCookie('language');
+  } else if( currentLanguage !== defaultLanguage){ // && !cookieExists('language')
+  
+  }
   if (navShown) {
-    if(currentLanguageSite === 'es'){
+    if(currentLanguage === 'es'){
       button.textContent = 'Mostrar Barra';
     }else {
       button.textContent = 'Show Nav Bar';
     }
   } else {
-    if(currentLanguageSite === 'es'){
+    if(currentLanguage === 'es'){
       button.textContent = 'Ocultar Barra';
     }else {
       button.textContent = 'Hide Nav Bar';
@@ -42,3 +48,4 @@ function toggleNavigation(button) {
     button.disabled = false;
   }, 500);
 }
+
