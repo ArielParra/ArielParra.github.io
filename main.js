@@ -1,5 +1,8 @@
-/*main function that sets the buttons, cookies, etc.
-  called once everytime the website loads */
+/**
+ * @description Initializes the website by setting up the default: language,
+ *              navigation bar text, color theme, color theme button icon and  
+ *              gif favicon. This function is called once every time the website loads.
+ */
 function main() {
 
     /* language */
@@ -15,7 +18,7 @@ function main() {
       changeLanguage(getDefaultLanguage());
     }
     
-    /* nav bar */
+    /* navigation bar */
 
     /* will always be on by default */
     const navButton = document.getElementById('navButton');
@@ -57,7 +60,6 @@ function main() {
     }
 
     /* debug messages */
-
 
     console.log('default lang = ' + getDefaultLanguage() );
     console.log('lang cookie  = ' + getCookie('language') );

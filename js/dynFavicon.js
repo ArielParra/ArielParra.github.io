@@ -1,3 +1,8 @@
+/**
+ * @description Changes the website favicon dynamically by replacing the existing favicon with a new one.
+ *
+ * @param {string} src - The source URL of the new favicon.
+ */
 function changeFavicon(src) {
     const head = document.head || document.getElementsByTagName('head')[0];
     var link  = document.createElement('link'),
@@ -11,6 +16,10 @@ function changeFavicon(src) {
     head.appendChild(link);
 }
 
+/**
+ * @description Animates the website favicon by toggling between two frames.
+ *                The frames are two different favicon images encoded in base64.
+ */
 function animateIcon() {
     if (typeof animateIcon.i === 'undefined') {
         animateIcon.i = 0;

@@ -1,8 +1,18 @@
+/**
+ * @description Sets the theme of the website.
+ * 
+ * @param {string} selectedTheme - The theme to set. This should be either 'theme-dark' or 'theme-light'.
+ */
 function setTheme(selectedTheme) {
   localStorage.setItem('theme', selectedTheme);
   document.documentElement.className = selectedTheme;
 }
 
+/**
+ * @description Toggles the theme of the website between 'theme-dark' and 'theme-light'.
+ * 
+ * @param {HTMLButtonElement} button - The button that triggered the theme change.
+ */
 function toggleTheme(button) {
   let newTheme;
   if (localStorage.getItem('theme') === 'theme-dark') {
@@ -15,6 +25,12 @@ function toggleTheme(button) {
   setTheme(newTheme);
   setCookie('theme', newTheme, 30);
 }
+
+/**
+ * @description Checks if the browser prefers the light theme.
+ * 
+ * @returns {boolean} - Returns true if the browser prefers the light theme, false otherwise.
+ */
 function browserPrefersLight(){
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
     return true;

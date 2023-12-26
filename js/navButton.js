@@ -1,3 +1,9 @@
+/**
+ * @description Toggles the visibility of the navigation bar, with a smooth transition effect.
+ *              Disables the provided button during the transition.
+ * 
+ * @param {HTMLButtonElement} button - The button triggering the navigation toggle.
+ */
 function toggleNavigation(button) {
   button.disabled = true;
 

@@ -1,3 +1,8 @@
+/**
+ * @description Changes the language of the website and updates the URL path accordingly.
+ *
+ * @param {string} language - The language code to set ('es' for Spanish, 'en' for English).
+ */
 function changeLanguage(language) {
     let currentPath = getCurrentPath();
     console.log('current path = ' + currentPath);
@@ -22,6 +27,12 @@ function changeLanguage(language) {
     }
 }
 
+/**
+ * @description Returns the opposite language code.
+ *
+ * @param {string} language - The current language code.
+ * @returns {string} - The opposite language code ('en' if 'es' and vice versa).
+ */
 function oppositeLanguage(language) {
     if (language === 'es') {
         return 'en';
@@ -29,6 +40,11 @@ function oppositeLanguage(language) {
     return 'es';
 }
 
+/**
+ * @description Handles the click event for a language button, changing the language and disabling the button temporarily.
+ *
+ * @param {HTMLButtonElement} button - The language button that triggered the event.
+ */
 function langButton(button){
     button.disabled = true;
     let currentLanguage;
@@ -45,10 +61,21 @@ function langButton(button){
 }
 
 /* getters */
+
+/**
+ * @description Gets the current path of the website.
+ *
+ * @returns {string} - The current URL path.
+ */
 function getCurrentPath(){
     return window.location.pathname;
-
 }
+
+/**
+ * @description Gets the current language of the website based on the URL path.
+ *
+ * @returns {string} - The current language code ('es' for Spanish, 'en' for English).
+ */
 function getCurrentSiteLanguage(){
     let currentPath = getCurrentPath();
     if(currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html')){
@@ -56,6 +83,12 @@ function getCurrentSiteLanguage(){
     }
     return 'en';
 }
+
+/**
+ * @description Gets the default language of the user's browser.
+ *
+ * @returns {string} - The default language code using only the first 2 characters
+ */
 function getDefaultLanguage(){
     return navigator.language.substring(0, 2);
 }

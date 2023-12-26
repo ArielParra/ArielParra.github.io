@@ -10,20 +10,38 @@
   --white:        #d8dee9;
   --black:        #242933;
   --gray1:        #323a48; 
+
   --gray2:        #373e4d;
   --gray3:        #3b4252;
   --gray4:        #4c566a;
+  --gray5:        #4b5f82;
 
-  /*default theme*/
-  --shadow:       var(--gray1); 
-  --highlight_BG: var(--gray4); 
+  /*default theme (dark)*/
 
-/*.theme-dark {*/
-  --HTML_BG:      var(--black); 
   --border:       var(--gray2); 
-  --highlight_BG: var(--gray4); 
-  --card_BG:      var(--gray3);  
   --text:         var(--white); 
+  --shadow:       var(--gray1); 
+
+  --highlight_BG: var(--gray4); 
+  --HTML_BG:      var(--black); 
+  --card_BG:      var(--gray3);  
+
+  --hr:           var(--text);
+
+  --button_BG:    var(--highlight_BG);
+  --button_border:var(--card_BG); 
+  --button_color: var(--text);
+
+  --button-hover_border: var(--highlight_BG);
+  --button-hover_BG:     var(--card_BG);
+  --button-hover_color:  var(--text);
+
+  --a-focus: var(--cyan);/*outline when tab is pressed*/
+
+  --nav-a-current_BG:  var(--highlight_BG);    
+  --nav-a-hover_BG:    var(--text);
+  --nav-a-hover-span_color:  var(--card_BG);
+
 }  
 
 /*Default style is dark mode, only need change light colors*/
@@ -34,42 +52,31 @@
   --card_BG:      var(--blue);
   --text:         var(--black); 
 
-  hr{
-    border-color: var(--border) !important;
-  }
-  button{  
-    background-color:  var(--card_BG) !important;
-    border: 2px solid  var(--border)  !important; 
-    color:             var(--white)   !important;
-  }
-  button:hover{
-    border: 2px solid  var(--card_BG)      !important; 
-    background-color:  var(--highlight_BG) !important;
-    color:             var(--white)        !important
-  }
-  a:focus {
-    outline: 2px solid var(--black) !important; /*outline when tab is pressed*/
-  }
-  nav>a>span{
-    color: var(--text) !important;
-  }
-  nav>a.current{
-    background-color: #4b5f82 !important;
-  }
-  nav>a:hover{
-    background-color: var(--highlight_BG) !important;
-  }
-  nav>a:hover>span{
-    color: #d8dee9 !important;
-  }
+  --hr: var(--border);
+
+  --button_BG:     var(--card_BG);
+  --button_border: var(--border);
+  --button_color:  var(--white) ;
+
+  --button-hover_border: var(--card_BG);
+  --button-hover_BG:     var(--highlight_BG);
+  --button-hover_color:  var(--white);
+
+  --a-focus: var(--black) ;
+  
+  --nav-a-current_BG:        var(--gray5);
+  --nav-a-hover_BG:          var(--highlight_BG);
+  --nav-a-hover-span_color:  var(--white);
+
 }
 
-/*general html*/
+/* general html */
+
 html {
   background-color: var(--HTML_BG);
   color: var(--text);
-  font-family: sans-serif !important; 
-  transition: all 1s ease;  /*color theme transition*/
+  font-family: sans-serif; 
+  transition: all 1s ease;  /* color theme transition */
 }
 
 body{
@@ -78,7 +85,7 @@ body{
   animation: fadeInFromBottom 500ms ease forwards;
 }
 
-@keyframes fadeInFromBottom { /*load in animation*/
+@keyframes fadeInFromBottom { /* load in animation */
   to {
     opacity: 1;
     transform: translateY(0);
@@ -86,7 +93,7 @@ body{
 }
 
 hr{
-  border-color: var(--text);
+  border-color: var(--hr);
   border-style: solid;
   height: 0%;
   width: 100%;
@@ -97,18 +104,18 @@ h3, h5{
 }
 
 a[href]{
-  color: #88c0d0; /*link color*/
+  color: #88c0d0; /* link color */
 }
 
 a:focus {
-  outline: 2px solid var(--nord10); /*outline when tab is pressed*/
+  outline: 2px solid var(--nord10); /* outline when tab is pressed */
 }
 
 footer{
   padding: 10px;
   text-align: center;  
   justify-content: center;
-  /*to fix the tab selection*/
+  /* to fix the tab selection */
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -116,12 +123,12 @@ footer{
 
 footer>a{
   text-decoration: none;
-  /*for tab selection*/
+  /* for tab selection */
   width: 88px;
   height: 31px;
 }
 
-/*navegation bar*/
+/* navegation bar */
 
 nav{
   text-align: center;
@@ -146,24 +153,24 @@ nav>a>span{
 }
 
 nav>a.current{
-  background-color: var(--highlight_BG);
+  background-color: var(--nav-a-current_BG);
 }
 
 nav>a:hover{
-  background-color: var(--text);
+  background-color: var(--nav-a-hover_BG);
   transition: 200ms;
 }
 
 nav>a:hover>span{
-  color: var(--card_BG);
+  color: var(--nav-a-hover-span_color);
 }
 
-/*button*/
+/* button */
 
 button{  
-  background-color:           var(--highlight_BG);
-  border: 2px solid           var(--card_BG); 
-  color:                      var(--text);
+  background-color:           var(--button_BG);
+  border: 2px solid           var(--button_border); 
+  color:                      var(--button_color);
   box-shadow: 4px 4px 2px 1px var(--shadow);
   margin: 5px;
   padding: 15px;
@@ -179,12 +186,13 @@ button:active{
 }
 
 button:hover{
-  border: 2px solid var(--highlight_BG); 
-  background-color: var(--card_BG);
+  border: 2px solid var(--button-hover_border); 
+  background-color: var(--button-hover_BG);
+  color:            var(--button-hover_color);
   transition: 200ms;
 }
 
-/*divs classes*/
+/* divs classes */
 
 .img-88x31{
   box-shadow: 2px 2px 2px 1px var(--shadow);
@@ -270,8 +278,8 @@ button:hover{
     width: calc(50% + 3rem);
   }
   .card{
-    min-width: calc(70% + 3rem) !important;
-    max-width: calc(70% + 3rem) !important;
+    min-width: calc(70% + 3rem);
+    max-width: calc(70% + 3rem);
   }
 
 }
