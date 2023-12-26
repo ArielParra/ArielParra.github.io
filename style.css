@@ -16,29 +16,27 @@
   --gray4:        #4c566a;
   --gray5:        #4b5f82;
 
-  /*default theme (dark)*/
+  /*default theme (dark)*/ 
 
   --border:       var(--gray2); 
-  --text:         var(--white); 
-  --shadow:       var(--gray1); 
+  --text:         var(--white);  
 
-  --highlight_BG: var(--gray4); 
   --HTML_BG:      var(--black); 
   --card_BG:      var(--gray3);  
 
   --hr:           var(--text);
 
-  --button_BG:    var(--highlight_BG);
+  --button_BG:    var(--gray4);
   --button_border:var(--card_BG); 
   --button_color: var(--text);
 
-  --button-hover_border: var(--highlight_BG);
+  --button-hover_border: var(--gray4);
   --button-hover_BG:     var(--card_BG);
   --button-hover_color:  var(--text);
 
   --a-focus: var(--cyan);/*outline when tab is pressed*/
 
-  --nav-a-current_BG:  var(--highlight_BG);    
+  --nav-a-current_BG:  var(--gray4);    
   --nav-a-hover_BG:    var(--text);
   --nav-a-hover-span_color:  var(--card_BG);
 
@@ -46,11 +44,12 @@
 
 /*Default style is dark mode, only need change light colors*/
 .theme-light {
-/*@media (prefers-color-scheme: light) {*/ 
-  --HTML_BG:      var(--cyan);
+
   --border:       var(--gray3); 
-  --card_BG:      var(--blue);
   --text:         var(--black); 
+
+  --HTML_BG:      var(--cyan);
+  --card_BG:      var(--blue);
 
   --hr: var(--border);
 
@@ -59,13 +58,13 @@
   --button_color:  var(--white) ;
 
   --button-hover_border: var(--card_BG);
-  --button-hover_BG:     var(--highlight_BG);
+  --button-hover_BG:     var(--gray4);
   --button-hover_color:  var(--white);
 
   --a-focus: var(--black) ;
   
   --nav-a-current_BG:        var(--gray5);
-  --nav-a-hover_BG:          var(--highlight_BG);
+  --nav-a-hover_BG:          var(--gray4);
   --nav-a-hover-span_color:  var(--white);
 
 }
@@ -76,7 +75,6 @@ html {
   background-color: var(--HTML_BG);
   color: var(--text);
   font-family: sans-serif; 
-  transition: all 1s ease;  /* color theme transition */
 }
 
 body{
@@ -140,7 +138,7 @@ nav{
 
 nav>a{
   background-color:           var(--card_BG);
-  box-shadow: 4px 4px 2px 1px var(--shadow);
+  box-shadow: 4px 4px 2px 1px var(--gray1);
   text-decoration: none;  
   padding: 1rem 2rem;
   margin: 5px;
@@ -171,7 +169,7 @@ button{
   background-color:           var(--button_BG);
   border: 2px solid           var(--button_border); 
   color:                      var(--button_color);
-  box-shadow: 4px 4px 2px 1px var(--shadow);
+  box-shadow: 4px 4px 2px 1px var(--gray1);
   margin: 5px;
   padding: 15px;
   margin-top: 0%;
@@ -195,7 +193,7 @@ button:hover{
 /* divs classes */
 
 .img-88x31{
-  box-shadow: 2px 2px 2px 1px var(--shadow);
+  box-shadow: 2px 2px 2px 1px var(--gray1);
   image-rendering: pixelated;
   width:  88px;
   height: 31px;
@@ -215,7 +213,7 @@ button:hover{
 
 .card{
   background-color: var(--card_BG);
-  box-shadow: 4px 4px 2px 1px var(--shadow);
+  box-shadow: 4px 4px 2px 1px var(--gray1);
   padding: 10px;
   margin: 10px;
   border-radius: 5px;

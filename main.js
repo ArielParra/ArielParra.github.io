@@ -4,9 +4,14 @@
  *              gif favicon. This function is called once every time the website loads.
  */
 function main() {
-
+  
     /* language */
-
+    
+    /* to consider other defaultLanguages as 'en' */
+    let defaultLang = getDefaultLanguage();
+    if (defaultLang !== 'es'){
+      defaultLang = 'en';
+    }
     if ( cookieExists('language') === true ) {
       const cookieLang = getCookie('language');
       if(getCurrentSiteLanguage() !== cookieLang){
@@ -14,8 +19,8 @@ function main() {
       } else {
         /* stay in the same page */
       }
-    } else if ( getCurrentSiteLanguage() !== getDefaultLanguage() ){ // && !cookieExists('language')
-      changeLanguage(getDefaultLanguage());
+    } else if ( getCurrentSiteLanguage() !== defaultLang ){ // && !cookieExists('language')
+      changeLanguage(defaultLang);
     }
     
     /* navigation bar */

@@ -10,7 +10,6 @@ I like small websites without the need for bloated webframes.
 - [ ] achivements section
     - [ ] upload some certs
     - [ ] do some free certs
-- [ ] check for non escential css
 - [ ] comment some "code"
 - [ ] blog section
     - [ ] start some blogs

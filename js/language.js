@@ -31,13 +31,13 @@ function changeLanguage(language) {
  * @description Returns the opposite language code.
  *
  * @param {string} language - The current language code.
- * @returns {string} - The opposite language code ('en' if 'es' and vice versa).
+ * @returns {string}        - The opposite language code ('es' if 'en' and vice versa).
  */
 function oppositeLanguage(language) {
-    if (language === 'es') {
-        return 'en';
+    if (language === 'en') {
+        return 'es';
     }
-    return 'es';
+    return 'en';
 }
 
 /**
