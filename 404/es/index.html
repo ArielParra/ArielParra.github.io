@@ -23,7 +23,7 @@
   <link   rel="preload"          href="./js/navButton.js"   as="script">
   <link   rel="preload"          href="./js/dynFavicon.js"  as="script">
   <link   rel="preload"          href="./404/joyDivision.js"as="script">
-  <link   rel="preload"          href="./404/main.js"       as="script">
+  <link   rel="preload"          href="./main.js"       as="script">
   <!-- Java Scripts defers -->
   <script defer                  src ="./js/cookies.js">     </script>
   <script defer                  src ="./js/language.js">    </script>
@@ -31,16 +31,20 @@
   <script defer                  src ="./js/navButton.js">   </script>
   <script defer                  src ="./js/dynFavicon.js">  </script>
   <script defer                  src ="./404/joyDivision.js"></script>
-  <script defer                  src ="./404/main.js">       </script>
-
+  <script defer                  src ="./main.js">       </script>
+  <script type="text/javascript"> 
+    function getCurrentPath() {
+        return '/404/';//because 404 pages can have any path
+    }
+  </script>
 </head>
 
 <body>
 
   <div class="container">
     <button type="button" onclick="toggleNavigation(this)" id="navButton"   data-nav-shown="true">Ocultar barra </button>
+    <button type="button" onclick="langButton(this)"                        title="Cambiar idioma a"> Inglés    </button>
     <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Cambiar tema de color a"> 🌗 </button>
-    <button type="button" onclick="langButton404(this)"                        title="Cambiar idioma a"> Inglés </button>
     <button type="button" onclick="exportSVG(this)"                                              > Exportar SVG </button>
   </div><!-- container -->
   <nav>
@@ -53,19 +57,21 @@
 
   <div class="container">
 
-        <div class="card">
-            <h1>404 Página No Encontrada</h1> 
-        </div>
-
-        <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
-            <!-- Background -->
-            <rect width="100%" height="100%" fill="var(--HTML_BG)" />
-          
-            <!-- Lines -->
-            <g id="lines" fill="none" stroke="var(--text)" stroke-width="1.2"></g>
-        </svg>
-
+    <div class="card">
+        <h1>404 Página No Encontrada</h1> 
     </div>
+
+    <div class="center">
+      <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background -->
+          <rect width="625px" height="593px" fill="var(--HTML_BG)" />
+        
+          <!-- Lines -->
+          <g id="lines" fill="none" stroke="var(--text)" stroke-width="1.2"></g>
+      </svg>
+    </div><!-- center -->
+
+  </div><!-- container -->
 
 
 </body>
