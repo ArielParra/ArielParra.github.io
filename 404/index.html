@@ -6,13 +6,13 @@
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="Ariel Parra,website, blog">
+  <meta   name="keywords"        content="Ariel Parra, website, blog">
   <meta   name="description"     content="Ariel Parra Website!">
   <meta   name="author"          content="Ariel Parra">
-  <title> portfolio </title>
+  <title> arielparra.tech </title>
   <!-- Favicons -->  
-  <link   rel="icon"             href="./static/favicon.gif"  type="image/gif">
-  <link   rel="apple-touch-icon" href="./static/foto.webp"    type="image/webp" sizes="180x180">
+  <link   rel="icon"             href="./static/favicon.gif" type="image/gif"> <!-- Firefox -->
+  <link   rel="apple-touch-icon" href="./static/foto.webp"   type="image/webp" sizes="180x180">
   <!-- CSS stylesheet -->
   <link   rel="preload"          href="./style.css"        as="style">
   <link   rel="stylesheet"       href="./style.css">
@@ -22,6 +22,7 @@
   <link   rel="preload"          href="./js/colorTheme.js" as="script">
   <link   rel="preload"          href="./js/navButton.js"  as="script">
   <link   rel="preload"          href="./js/dynFavicon.js" as="script">
+  <link   rel="preload"          href="./js/joyDivision.js"as="script">
   <link   rel="preload"          href="./main.js"          as="script">
   <!-- Java Scripts defers -->
   <script defer                  src ="./js/cookies.js">    </script>
@@ -29,12 +30,13 @@
   <script defer                  src ="./js/colorTheme.js"> </script>
   <script defer                  src ="./js/navButton.js">  </script>
   <script defer                  src ="./js/dynFavicon.js"> </script>
+  <script defer                  src ="./js/joyDivision.js"></script>
   <script defer                  src ="./main.js">          </script>
 
 </head>
- 
+
 <body>
- 
+
   <div class="container">
     <button type="button" onclick="toggleNavigation(this)" id="navButton"   data-nav-shown="true">Hide Nav Bar</button>
     <button type="button" onclick="langButton(this)"                        title="Change language to">Spanish</button>
@@ -42,32 +44,34 @@
   </div><!-- container -->
   <nav>
     <a href="./"             class="NotCurrent" title="Home Page"><span>~/         </span></a>
-    <a href="./portfolio/"   class="current">                     <span>portfolio  </span></a>
+    <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
     <a href="./achivements/" class="NotCurrent">                  <span>achivements</span></a>  
     <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
     <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
   </nav>
+  <style>
+    canvas{
+        max-width: fit-content;
+    }
+</style>
+  <div class="container">
 
-    
-    </div><!-- container -->
-  
-  <div class="container" id="grid">
+        <div class="card">
+            <h3>404 Not found</h3> 
+        </div>
 
-    <div class="card">
-      <img src="./portfolio/static/searxng.webp" alt="searxng logo" title="searxng" width ="232" height="40">
-      <div class="center">
-        My <a href="https://searx.arielparra.tech/">searxng</a> instance
-      </div>
+        <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background -->
+            <rect width="100%" height="100%" fill="var(--HTML_BG)" />
+          
+            <!-- Lines -->
+            <g id="lines" fill="none" stroke="var(--text)" stroke-width="1.2"></g>
+        </svg>
+
     </div>
-
-    <div class="card">
-      <img src="./portfolio/static/Codeforces.webp" alt="codeforces logo" title="codeforces" width ="265" height="30">
-      <div class="center">
-        My <a href="https://codeforces.com/profile/ravary">codeforces</a> profile
-      </div>
+    <div class="container" style="padding-top: 10px;">
+        <button id="exportButton">Export SVG</button>
     </div>
-
-  </div><!-- container -->
 
 </body>
 
