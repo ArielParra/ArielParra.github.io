@@ -39,7 +39,6 @@
 
   <div class="container">
     <button type="button" onclick="toggleNavigation(this)" id="navButton"   data-nav-shown="true">Hide Nav Bar</button>
-    <button type="button" onclick="langButton(this)"                        title="Change language to">Spanish</button>
     <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Change color theme to"> 🌗 </button>
   </div><!-- container -->
   <nav>
@@ -50,7 +49,66 @@
     <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
   </nav>
 
-  <div class="container">
+  <script type="text/javascript">
+
+  let defaultLang = getDefaultLanguage();
+    if (defaultLang !== 'es'){
+      defaultLang = 'en';
+    }
+  if ( cookieExists('language') === true ) {
+      const cookieLang = getCookie('language');
+      if(getCurrentSiteLanguage() !== cookieLang){
+          let currentPath = getCurrentPath();
+          console.log('current path = ' + currentPath);
+          setCookie('language', language, 30);
+          let newPath;
+          if (currentPath.endsWith('/') === true) {
+              if (language === 'es') {
+                  newPath = currentPath + 'es';
+              } else {
+                  newPath = currentPath.replace('es/', '');
+              }
+          } else if (currentPath.endsWith('index.html') === true) { /* for index.html */
+              if (language === 'es') {
+                  newPath = currentPath.replace('/index.html', '/es');
+              } else { /* en */
+                  newPath = currentPath.replace('/es/index.html', '/index.html');
+              }
+          }
+          console.log('input = ' + language  + ', new path = ' + newPath);
+          if(newPath !== undefined){
+              window.location.href = newPath;
+          }
+        } else {
+        /* stay in the same page */
+      }
+    } else if ( getCurrentSiteLanguage() !== defaultLang ){ // && !cookieExists('language')
+          let currentPath = '/404/';
+          console.log('current path = ' + currentPath);
+          setCookie('language', language, 30);
+          let newPath;
+          if (currentPath.endsWith('/') === true) {
+              if (language === 'es') {
+                  newPath = currentPath + 'es';
+              } else {
+                  newPath = currentPath.replace('es/', '');
+              }
+          } else if (currentPath.endsWith('index.html') === true) { /* for index.html */
+              if (language === 'es') {
+                  newPath = currentPath.replace('/index.html', '/es');
+              } else { /* en */
+                  newPath = currentPath.replace('/es/index.html', '/index.html');
+              }
+          }
+          console.log('input = ' + language  + ', new path = ' + newPath);
+          if(newPath !== undefined){
+              window.location.href = newPath;
+          }
+        
+      }
+
+  </script>
+<div class="container">
 
         <div class="card">
             <h1>404 Page Not Found!</h1> 
