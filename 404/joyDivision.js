@@ -98,7 +98,7 @@ function exportSVG(button) {
     // Create a temporary anchor element
     var a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'JoyDivision.svg';
+    a.download = 'JoyDivision.svg'; // Set a filename for the download
 
     // Trigger a click event on the anchor to download the SVG
     document.body.appendChild(a);
@@ -109,6 +109,7 @@ function exportSVG(button) {
         button.disabled = false;
     }, 500);
 }
+
 
 /**
  * @description Main function to generate and display the Joy Division-inspired SVG.
