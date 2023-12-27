@@ -107,7 +107,6 @@ function exportSVG() {
   
 /**
  * @description Main function to generate and display the Joy Division-inspired SVG.
- * Also attaches the exportSVG function to the button click event.
  */
 function main(){
     var svg = document.getElementById('JoyDivision');
@@ -165,6 +164,4 @@ function main(){
     y = y + dy;
     }
 
-    // Attach export function to the button click event
-    document.getElementById('exportButton').addEventListener('click', exportSVG);
 }main();

@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <base href="https://arielparra.tech/">
+  <base href="../../">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
@@ -17,21 +17,21 @@
   <link   rel="preload"          href="./style.css"        as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts Preloads -->
-  <link   rel="preload"          href="./js/cookies.js"    as="script">
-  <link   rel="preload"          href="./js/language.js"   as="script">
-  <link   rel="preload"          href="./js/colorTheme.js" as="script">
-  <link   rel="preload"          href="./js/navButton.js"  as="script">
-  <link   rel="preload"          href="./js/dynFavicon.js" as="script">
-  <link   rel="preload"          href="./js/joyDivision.js"as="script">
-  <link   rel="preload"          href="./main.js"          as="script">
+  <link   rel="preload"          href="./js/cookies.js"     as="script">
+  <link   rel="preload"          href="./js/language.js"    as="script">
+  <link   rel="preload"          href="./js/colorTheme.js"  as="script">
+  <link   rel="preload"          href="./js/navButton.js"   as="script">
+  <link   rel="preload"          href="./js/dynFavicon.js"  as="script">
+  <link   rel="preload"          href="./404/joyDivision.js"as="script">
+  <link   rel="preload"          href="./404/main.js"       as="script">
   <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">    </script>
-  <script defer                  src ="./js/language.js">   </script>
-  <script defer                  src ="./js/colorTheme.js"> </script>
-  <script defer                  src ="./js/navButton.js">  </script>
-  <script defer                  src ="./js/dynFavicon.js"> </script>
-  <script defer                  src ="./js/joyDivision.js"></script>
-  <script defer                  src ="./main.js">          </script>
+  <script defer                  src ="./js/cookies.js">     </script>
+  <script defer                  src ="./js/language.js">    </script>
+  <script defer                  src ="./js/colorTheme.js">  </script>
+  <script defer                  src ="./js/navButton.js">   </script>
+  <script defer                  src ="./js/dynFavicon.js">  </script>
+  <script defer                  src ="./404/joyDivision.js"></script>
+  <script defer                  src ="./404/main.js">       </script>
 
 </head>
 
@@ -40,6 +40,8 @@
   <div class="container">
     <button type="button" onclick="toggleNavigation(this)" id="navButton"   data-nav-shown="true">Ocultar barra </button>
     <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Cambiar tema de color a"> 🌗 </button>
+    <button type="button" onclick="langButton404(this)"                        title="Cambiar idioma a"> Inglés </button>
+    <button type="button" onclick="exportSVG(this)"                                              > Exportar SVG </button>
   </div><!-- container -->
   <nav>
     <a href="./es"             class="NotCurrent" title="Página Principal"><span>~/         </span></a>
@@ -64,9 +66,7 @@
         </svg>
 
     </div>
-    <div class="container" style="padding-top: 10px;">
-        <button id="exportButton">Export SVG</button>
-    </div>
+
 
 </body>
 

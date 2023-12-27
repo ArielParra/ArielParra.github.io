@@ -5,7 +5,6 @@
  */
 function changeLanguage(language) {
     let currentPath = getCurrentPath();
-    console.log('current path = ' + currentPath);
     setCookie('language', language, 30);
     let newPath;
     if (currentPath.endsWith('/') === true) {
@@ -21,7 +20,6 @@ function changeLanguage(language) {
             newPath = currentPath.replace('/es/index.html', '/index.html');
         }
     }
-    console.log('input = ' + language  + ', new path = ' + newPath);
     if(newPath !== undefined){
         window.location.href = newPath;
     }

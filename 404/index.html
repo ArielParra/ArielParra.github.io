@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <base href="https://arielparra.tech/">
+  <base href="../">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
@@ -17,21 +17,21 @@
   <link   rel="preload"          href="./style.css"        as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts Preloads -->
-  <link   rel="preload"          href="./js/cookies.js"    as="script">
-  <link   rel="preload"          href="./js/language.js"   as="script">
-  <link   rel="preload"          href="./js/colorTheme.js" as="script">
-  <link   rel="preload"          href="./js/navButton.js"  as="script">
-  <link   rel="preload"          href="./js/dynFavicon.js" as="script">
-  <link   rel="preload"          href="./js/joyDivision.js"as="script">
-  <link   rel="preload"          href="./main.js"          as="script">
+  <link   rel="preload"          href="./js/cookies.js"     as="script">
+  <link   rel="preload"          href="./js/language.js"    as="script">
+  <link   rel="preload"          href="./js/colorTheme.js"  as="script">
+  <link   rel="preload"          href="./js/navButton.js"   as="script">
+  <link   rel="preload"          href="./js/dynFavicon.js"  as="script">
+  <link   rel="preload"          href="./404/joyDivision.js"as="script">
+  <link   rel="preload"          href="./404/main.js"       as="script">
   <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">    </script>
-  <script defer                  src ="./js/language.js">   </script>
-  <script defer                  src ="./js/colorTheme.js"> </script>
-  <script defer                  src ="./js/navButton.js">  </script>
-  <script defer                  src ="./js/dynFavicon.js"> </script>
-  <script defer                  src ="./js/joyDivision.js"></script>
-  <script defer                  src ="./main.js">          </script>
+  <script defer                  src ="./js/cookies.js">     </script>
+  <script defer                  src ="./js/language.js">    </script>
+  <script defer                  src ="./js/colorTheme.js">  </script>
+  <script defer                  src ="./js/navButton.js">   </script>
+  <script defer                  src ="./js/dynFavicon.js">  </script>
+  <script defer                  src ="./404/joyDivision.js"></script>
+  <script defer                  src ="./404/main.js">       </script>
 
 </head>
 
@@ -40,6 +40,8 @@
   <div class="container">
     <button type="button" onclick="toggleNavigation(this)" id="navButton"   data-nav-shown="true">Hide Nav Bar</button>
     <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Change color theme to"> 🌗 </button>
+    <button type="button" onclick="langButton404(this)"                     title="Change language to">Spanish</button>
+    <button type="button" onclick="exportSVG()"                                                  > Export SVG </button>
   </div><!-- container -->
   <nav>
     <a href="./"             class="NotCurrent" title="Home Page"><span>~/         </span></a>
@@ -49,66 +51,7 @@
     <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
   </nav>
 
-  <script type="text/javascript">
-
-  let defaultLang = getDefaultLanguage();
-    if (defaultLang !== 'es'){
-      defaultLang = 'en';
-    }
-  if ( cookieExists('language') === true ) {
-      const cookieLang = getCookie('language');
-      if(getCurrentSiteLanguage() !== cookieLang){
-          let currentPath = getCurrentPath();
-          console.log('current path = ' + currentPath);
-          setCookie('language', language, 30);
-          let newPath;
-          if (currentPath.endsWith('/') === true) {
-              if (language === 'es') {
-                  newPath = currentPath + 'es';
-              } else {
-                  newPath = currentPath.replace('es/', '');
-              }
-          } else if (currentPath.endsWith('index.html') === true) { /* for index.html */
-              if (language === 'es') {
-                  newPath = currentPath.replace('/index.html', '/es');
-              } else { /* en */
-                  newPath = currentPath.replace('/es/index.html', '/index.html');
-              }
-          }
-          console.log('input = ' + language  + ', new path = ' + newPath);
-          if(newPath !== undefined){
-              window.location.href = newPath;
-          }
-        } else {
-        /* stay in the same page */
-      }
-    } else if ( getCurrentSiteLanguage() !== defaultLang ){ // && !cookieExists('language')
-          let currentPath = '/404/';
-          console.log('current path = ' + currentPath);
-          setCookie('language', language, 30);
-          let newPath;
-          if (currentPath.endsWith('/') === true) {
-              if (language === 'es') {
-                  newPath = currentPath + 'es';
-              } else {
-                  newPath = currentPath.replace('es/', '');
-              }
-          } else if (currentPath.endsWith('index.html') === true) { /* for index.html */
-              if (language === 'es') {
-                  newPath = currentPath.replace('/index.html', '/es');
-              } else { /* en */
-                  newPath = currentPath.replace('/es/index.html', '/index.html');
-              }
-          }
-          console.log('input = ' + language  + ', new path = ' + newPath);
-          if(newPath !== undefined){
-              window.location.href = newPath;
-          }
-        
-      }
-
-  </script>
-<div class="container">
+  <div class="container">
 
         <div class="card">
             <h1>404 Page Not Found!</h1> 
@@ -116,15 +59,12 @@
 
         <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
             <!-- Background -->
-            <rect width="100%" height="100%" fill="var(--HTML_BG)" />
+            <rect width="625px" height="593px" fill="var(--HTML_BG)" />
           
             <!-- Lines -->
             <g id="lines" fill="none" stroke="var(--text)" stroke-width="1.2"></g>
         </svg>
 
-    </div>
-    <div class="container" style="padding-top: 10px;">
-        <button id="exportButton">Export SVG</button>
     </div>
 
 </body>
