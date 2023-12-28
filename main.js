@@ -57,12 +57,9 @@ function main() {
 
     setTheme(theme);
 
-   /* dynamic icon */
-
-    if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
-      //for all the other chromium based browsers that doesnt support dynamic favicons
-      setInterval(animateIcon, 800);
-    }
+    /* dynamic icon */
+    
+    setInterval(animateIcon, 800);
 
     /* debug messages */
 
@@ -72,5 +69,6 @@ function main() {
     console.log('current path = ' + getCurrentPath()); 
     console.log('browser prefers light = ' + browserPrefersLight());
     console.log('theme cookie = ' + getCookie('theme'));
+    console.log('device width = ' + window.screen.width + 'px');
 
-}main();
+}document.addEventListener('DOMContentLoaded', main());

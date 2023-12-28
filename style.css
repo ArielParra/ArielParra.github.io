@@ -271,7 +271,7 @@ button:hover{
 
 /*resonsiveness on mobile*/
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 670px) {
   nav>a{
     width: calc(50% + 3rem);
   }

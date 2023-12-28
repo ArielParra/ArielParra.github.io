@@ -81,34 +81,34 @@ function normalPDF(x, mu, sigma) {
 function exportSVG(button) {
     button.disabled = true;
     var svg = document.getElementById('JoyDivision');
-
+    
     // Clone the SVG to avoid modifying the original
     var clonedSvg = svg.cloneNode(true);
-
+  
     // Get the computed styles for the root element
     var computedStyles = getComputedStyle(document.documentElement);
-
+  
     // Replace CSS variables in the SVG content
     clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--HTML_BG\)/g, computedStyles.getPropertyValue('--HTML_BG'));
     clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--text\)/g, computedStyles.getPropertyValue('--text'));
-
+  
     var svgContent = new XMLSerializer().serializeToString(clonedSvg);
     var blob = new Blob([svgContent], { type: 'image/svg+xml;charset=utf-8' });
-
-    // Create a temporary anchor element
+    var url = URL.createObjectURL(blob);
+  
+    // Create a temporary anchor element and trigger a click to download the SVG
     var a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'JoyDivision.svg'; // Set a filename for the download
-
-    // Trigger a click event on the anchor to download the SVG
+    a.href = url;
+    a.download = 'JoyDivision.svg';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-
-    setTimeout(function () {
+    URL.revokeObjectURL(url);
+    setTimeout(function() {
         button.disabled = false;
-    }, 500);
+    }, 500);  
 }
+
 
 
 /**
