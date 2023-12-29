@@ -5,8 +5,6 @@ I like small websites without the need for bloated webframes.
 
 # Todo List:
 
-- [ ] fix css gray colors and contrast
-- [ ] 404 page
 - [ ] achivements section
     - [ ] upload some certs
     - [ ] do some free certs

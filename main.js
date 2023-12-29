@@ -25,15 +25,25 @@ function main() {
     
     /* navigation bar */
 
-    /* will always be on by default */
     const navButton = document.getElementById('navButton');
-    /* default button text */
-    if(getCurrentSiteLanguage() === 'es'){
-      navButton.textContent = 'Ocultar Barra';
-    }else {
-      navButton.textContent = 'Hide Nav Bar';
-    }
 
+    // Check if the 'navstatus' cookie exists
+    if (cookieExists('navstatus')) {
+      const status = getCookie('navstatus');
+    
+      // Check the status and update the button text accordingly
+      if (status === 'hidden') {
+        hideNavBar(navButton, false);
+        console.log('trying');
+        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Barra' : 'Show Nav Bar';
+      } else {
+        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Barra' : 'Hide Nav Bar';
+      }
+    } else {
+      // Default: Navigation bar is visible
+      navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Barra' : 'Hide Nav Bar';
+    }
+    
 
     /* color theme */
 
@@ -59,8 +69,18 @@ function main() {
 
     /* dynamic icon */
     
-    setInterval(animateIcon, 800);
-
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
+      //for all the other chromium based browsers that doesnt support dynamic favicons
+      setInterval(animateIcon, 800);
+    }else {
+      // For Firefox
+      var link = document.createElement('link');
+      link.rel = 'icon';
+      link.href = './static/favicon.gif';
+      link.type = 'image/gif';
+      document.head.appendChild(link);
+    }
+    
     /* debug messages */
 
     console.log('default lang = ' + getDefaultLanguage() );
@@ -70,5 +90,6 @@ function main() {
     console.log('browser prefers light = ' + browserPrefersLight());
     console.log('theme cookie = ' + getCookie('theme'));
     console.log('device width = ' + window.screen.width + 'px');
+    console.log('navstatus = ' + getCookie('navstatus') );
 
 }document.addEventListener('DOMContentLoaded', main());
