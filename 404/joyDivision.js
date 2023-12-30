@@ -78,7 +78,9 @@ function normalPDF(x, mu, sigma) {
 /**
  * @description Exports the SVG content to an SVG file with the filename "JoyDivision.svg".
  */
-function exportSVG() {
+function exportSVG(button) {
+    button.disabled = true;
+
     var svg = document.getElementById('JoyDivision');
     
     // Clone the SVG to avoid modifying the original
@@ -103,7 +105,11 @@ function exportSVG() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-  }
+    // Enable the button after a short delay
+    setTimeout(function () {
+        button.disabled = false;
+    }, 500);
+}
   
 /**
  * @description Main function to generate and display the Joy Division-inspired SVG.
