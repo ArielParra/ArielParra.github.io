@@ -13,9 +13,9 @@ function changeLanguage(language) {
         } else {
             newPath = currentPath.replace('es/', '');
         }
-    } else if (currentPath.endsWith('index.html') === true) { /* for index.html */
+    } else if (currentPath.endsWith('index.html') === true) { /* for index.html (local developing) */
         if (language === 'es') {
-            newPath = currentPath.replace('/index.html', '/es');
+            newPath = currentPath.replace('/index.html', '/es/index.html');
         } else { /* en */
             newPath = currentPath.replace('/es/index.html', '/index.html');
         }

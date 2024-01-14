@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-  <base href="../index.html">
+  <base href="../../index.html">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="Ariel Parra,website, blog">
+  <meta   name="keywords"        content="Ariel Parra,website, blog, linux">
   <meta   name="description"     content="Ariel Parra Website!">
   <meta   name="author"          content="Ariel Parra">
-  <title> achivements </title>
+  <title> linux </title>
+  <!-- Favicons -->  
+  <link   rel="icon"             href="./static/favicon.gif"  type="image/gif">
+  <link   rel="apple-touch-icon" href="./static/foto.webp"    type="image/webp" sizes="180x180">
   <!-- CSS stylesheet -->
   <link   rel="preload"          href="./style.css"        as="style">
   <link   rel="stylesheet"       href="./style.css">
@@ -27,12 +30,11 @@
   <script defer                  src ="./js/navButton.js">  </script>
   <script defer                  src ="./js/dynFavicon.js"> </script>
   <script defer                  src ="./main.js">          </script>
-  <!-- Favicons -->  
-  <link   rel="apple-touch-icon" href="./static/foto.webp"    type="image/webp" sizes="180x180">
+
 </head>
-   
- <body>
-   
+  
+<body>
+  
   <div class="container">
     <button type="button" onclick="toggleNavigation(this)" id="navButton"   data-nav-shown="true">Hide Nav Bar</button>
     <button type="button" onclick="langButton(this)"                        title="Change language to">Spanish</button>
@@ -41,58 +43,56 @@
   <nav>
     <a href="./"             class="NotCurrent" title="Home Page"><span>~/         </span></a>
     <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
-    <a href="./achivements/" class="current">                     <span>achivements</span></a>  
+    <a href="./achivements/" class="NotCurrent">                  <span>achivements</span></a>  
     <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
-    <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
+    <a href="./blog/"        class="current">                     <span>blog       </span></a>  
+  </nav>
+  <nav>
+    <a href="./blog/WebDev"       class="NotCurrent"> <span>Web dev       </span></a>
+    <a href="./blog/Competitive/" class="NotCurrent"> <span>Competitve C++</span></a>  
+    <a href="./blog/linux/"       class="NotCurrent"> <span>Linux         </span></a>
+    <a href="./blog/servers/"     class="current">    <span>Servers       </span></a>
   </nav>
 
   <div class="container">
     <div class="card">
+      <hr>     
+        <h3>1. Professional servers</h3>
       <hr>
-        <h3 class="center">Collage Degree</h3>
-      <hr> 
     </div>
   </div><!-- container Title -->
- 
+
   <div class="container">
-    <div class="card" id="grid">
-      <div class="center">In progress, 4/9 semesters</div>
+    <div class="card">
+      <div class="center"></div>
     </div>
   </div><!-- container Elements -->
 
   <div class="container">
     <div class="card">
-      <hr>
-        <h3 class="center">Diplomas</h3>
-      <hr>
-    </div>
-  </div><!-- container Title -->
-
-  <div class="container">
-    <div class="card" id="grid">
-      <div class="center">
-        Diploma in Financial Education from CONDUSEF, generation 43
-        <p></p>
-        <a href=./achivements/static/Diploma_CONDUSEF.pdf>Diploma PDF</a>
-      </div>
-    </div>
-  </div><!-- container Elements -->
-
-  <div class="container">
-    <div class="card">
-      <hr>
-        <h3 class="center">Certificates</h3>
+      <hr>     
+        <h3>2. Home servers</h3>
       <hr>
     </div>
   </div><!-- container Title -->
 
   <div class="container">
     <div class="card">
-      <hr>
-        <h3 class="center">Certifications</h3>
+      <hr>     
+        <h3>3. Services for servers</h3>
       <hr>
     </div>
   </div><!-- container Title -->
+
+  <div class="container">
+    <div class="card">
+      <hr>     
+        <h3>4. Server projects</h3>
+      <hr>
+    </div>
+  </div><!-- container Title -->
+
+
 </body>
 
 </html>
