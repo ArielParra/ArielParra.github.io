@@ -90,6 +90,11 @@ body{
   }
 }
 
+mark {
+  color: var(--HTML_BG);
+  background-color: var(--nav-a-hover_BG);
+}
+
 hr{
   border-color: var(--hr);
   border-style: solid;
