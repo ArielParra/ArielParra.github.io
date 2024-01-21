@@ -6,6 +6,7 @@
   --magenta:      #b48ead;
   --blue:         #5e81ac;
   --cyan:         #81a1c1;
+  --aqua:         #8fbcbb; 
   --green:        #a3be8c;
   --white:        #d8dee9;
   --black:        #242933;
@@ -35,6 +36,8 @@
   --button-hover_color:  var(--text);
 
   --a-focus: var(--cyan);/*outline when tab is pressed*/
+  --a-href: var(--aqua);
+  --a-href-hover: var(--magenta);
 
   --nav-a-current_BG:  var(--gray4);    
   --nav-a-hover_BG:    var(--text);
@@ -62,7 +65,7 @@
   --button-hover_color:  var(--white);
 
   --a-focus: var(--black) ;
-  
+
   --nav-a-current_BG:        var(--gray5);
   --nav-a-hover_BG:          var(--gray4);
   --nav-a-hover-span_color:  var(--white);
@@ -75,6 +78,8 @@ html {
   background-color: var(--HTML_BG);
   color: var(--text);
   font-family: sans-serif; 
+  width: 100%; 
+  height: auto; 
 }
 
 body{
@@ -102,12 +107,32 @@ hr{
   width: 100%;
 }
 
-h1, h2, h3, h4, h5{
-  text-align: center;
+/*To be able to add hidden-link to h1-h5*/
+
+h1, h2, h3, h4, h5,
+.hidden-link {
+  display: inline;
 }
 
+.hidden-link {
+  display: none;
+  position: absolute;
+  padding-left: 0.5rem;
+}
+
+h1, h2, h3, h4, h5,
+:hover + .hidden-link,
+.hidden-link:hover {
+  display: inline; 
+}
+
+
 a[href]{
-  color: #88c0d0; /* link color */
+  color: #8fbcbb; /* link color */
+  color: var(--a-href); 
+}
+a[href]:hover{
+  color: var(--a-href-hover); 
 }
 
 a:focus {
@@ -216,6 +241,12 @@ button:hover{
   margin: 0 auto;
 }
 
+.blog{
+  min-width: 40rem !important;  
+  max-width: 40 rem !important; 
+  text-align: justify;
+}
+
 .card{
   background-color: var(--card_BG);
   box-shadow: 4px 4px 2px 1px var(--gray1);
@@ -223,7 +254,7 @@ button:hover{
   margin: 10px;
   border-radius: 5px;
   min-width: 20rem;
-  max-width: 20rem; 
+  max-width: 20rem;
 }
 
 .card>p{
@@ -280,11 +311,14 @@ button:hover{
   nav>a{
     width: calc(50% + 3rem);
   }
+  .blog{
+    min-width: calc(70% + 3rem) !important;
+    max-width: calc(70% + 3rem) !important;
+  }
   .card{
     min-width: calc(70% + 3rem);
     max-width: calc(70% + 3rem);
   }
-
 }
 
 

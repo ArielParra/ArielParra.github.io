@@ -2,10 +2,10 @@
 <html lang="es">
 
 <head>
-  <base href="../../">
+  <base href="../../index.html">
   <!-- Info -->
   <meta   charset="UTF-8">
-  <meta   name="viewport"        content="width=device-width, initial-scale=1 maximum-scale=1">
+  <meta   name="viewport"        content="width=device-width, initial-scale=1">
   <meta   name="keywords"        content="Ariel Parra, website, blog">
   <meta   name="description"     content="Ariel Parra Website!">
   <meta   name="author"          content="Ariel Parra">
@@ -29,7 +29,6 @@
   <script defer                  src ="./js/navButton.js">   </script>
   <script defer                  src ="./js/dynFavicon.js">  </script>
   <script defer                  src ="./404/joyDivision.js"></script>
-  <script defer                  src ="./404/esPath.js">     </script>  
   <script defer                  src ="./main.js">           </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./static/foto.webp"   type="image/webp" sizes="180x180">
@@ -53,14 +52,15 @@
   <div class="container">
 
     <div class="card">
-        <h1>404 Página No Encontrada</h1> 
       <div class="center">
+        <h1>404 Página No Encontrada</h1> 
+        <p></p>
         <button type="button" onclick="exportSVG(this)"                                              > Exportar SVG </button>
       </div><!-- center -->
     </div><!-- card     -->
   </div><!-- container  -->
 
-  <div class="container">
+  <div class="container" style="overflow: hidden;">
     <div class="center">
       <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
         <!-- Background -->

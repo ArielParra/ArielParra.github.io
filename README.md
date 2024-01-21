@@ -5,7 +5,6 @@ I like small websites without the need for bloated web frameworks.
 
 # Todo List:
 
-- [ ] fix mobile width in 404
-- [ ] blog section
-    - [ ] youtubers sub-sections in blog
-- [ ] js to detect code class="C++" and color C++ correctly
+- [x] fix mobile width in 404 (fixed with style="overflow: hidden;">)
+- [ ] blogs
+- [ ] js to detect code class="C++" and color C++ syntax correctly

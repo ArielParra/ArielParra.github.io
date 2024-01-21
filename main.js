@@ -92,4 +92,4 @@ function main() {
     console.log('device width = ' + window.screen.width + 'px');
     console.log('navstatus = ' + getCookie('navstatus') );
 
-}document.addEventListener('DOMContentLoaded', main());
+}main();
