@@ -130,6 +130,7 @@ h1, h2, h3, h4, h5,
 a[href]{
   color: #8fbcbb; /* link color */
   color: var(--a-href); 
+  overflow-wrap: break-word; /* fixes long links overflowing */
 }
 a[href]:hover{
   color: var(--a-href-hover); 
@@ -243,7 +244,7 @@ button:hover{
 
 .blog{
   min-width: 40rem !important;  
-  max-width: 40 rem !important; 
+  max-width: 40rem !important; 
   text-align: justify;
 }
 
