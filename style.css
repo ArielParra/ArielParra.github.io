@@ -245,7 +245,6 @@ button:hover{
 .blog{
   min-width: 40rem !important;  
   max-width: 40rem !important; 
-  text-align: justify;
 }
 
 .card{

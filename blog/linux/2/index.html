@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="../../../index.html">
+  <!-- Info -->
+  <meta   charset="UTF-8">
+  <meta   name="viewport"        content="width=device-width, initial-scale=1">
+  <meta   name="keywords"        content="Ariel Parra,website, blog, linux">
+  <meta   name="description"     content="Ariel Parra Website!">
+  <meta   name="author"          content="Ariel Parra">
+  <title> Related topics </title>
+  <!-- Favicons -->  
+  <link   rel="icon"             href="./static/favicon.gif"  type="image/gif">
+  <link   rel="apple-touch-icon" href="./static/foto.webp"    type="image/webp" sizes="180x180">
+  <!-- CSS stylesheet -->
+  <link   rel="preload"          href="./style.css"        as="style">
+  <link   rel="stylesheet"       href="./style.css">
+  <!-- Java Scripts Preloads -->
+  <link   rel="preload"          href="./js/cookies.js"    as="script">
+  <link   rel="preload"          href="./js/language.js"   as="script">
+  <link   rel="preload"          href="./js/colorTheme.js" as="script">
+  <link   rel="preload"          href="./js/navButton.js"  as="script">
+  <link   rel="preload"          href="./js/dynFavicon.js" as="script">
+  <link   rel="preload"          href="./main.js"          as="script">
+  <!-- Java Scripts defers -->
+  <script defer                  src ="./js/cookies.js">    </script>
+  <script defer                  src ="./js/language.js">   </script>
+  <script defer                  src ="./js/colorTheme.js"> </script>
+  <script defer                  src ="./js/navButton.js">  </script>
+  <script defer                  src ="./js/dynFavicon.js"> </script>
+  <script defer                  src ="./main.js">          </script>
+
+</head>
+  
+<body>
+  
+  <div class="container">
+    <button type="button" onclick="toggleNavigation(this)" id="navButton"   data-nav-shown="true">Hide Nav Bar</button>
+    <button type="button" onclick="langButton(this)"                        title="Change language to">Spanish</button>
+    <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Change color theme to"> 🌗 </button>
+  </div><!-- container -->
+  <nav>
+    <a href="./"             class="NotCurrent" title="Home Page"><span>~/         </span></a>
+    <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
+    <a href="./achivements/" class="NotCurrent">                  <span>achivements</span></a>  
+    <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
+    <a href="./blog/"        class="current">                     <span>blog       </span></a>  
+  </nav>
+
+  <nav>
+    <a href="./blog/linux/1" class="NotCurrent" title="previous blog"> <span>  ←  </span></a>
+    <a href="./blog/linux/"  class="NotCurrent" title="blog homepage"> <span>Linux</span></a>
+    <a href="./blog/linux/ " class="NotCurrent" title="next blog">     <span>  →  </span></a>
+  </nav>
+
+  <div class="container">
+    <div class="card center">
+      <hr>
+        <h3> 2. Related topics </h3>
+      <hr>
+    </div>
+  </div><!-- container Title -->
+
+  <div class="container">
+    <div class="card blog justify">
+      <hr>
+        <div class="center">
+          <h4 id="_1-UNIX">2.1 UNIX</h4>
+          <a class="hidden-link" href="./blog/linux/2/#_1-UNIX">[link]</a>
+        </div>
+      <hr>
+      <p>
+      UNIX is an operating system created at the beginning of the 70s in AT&T by Dennis Ritchie (C language creator) and Ken Thompson (B language creator).
+      </p><p>
+      <mark>Single UNIX Specification:</mark> It is a standard for operating systems to use the UNIX tredemark, with interfaces for C language, shell and commands.
+      </p><p>
+      <mark>UNIX filosofy (Doug McIlroy):</mark> Write programs that do one thing very good, that work together (input is the output of another) and that handle streams (bytes strings for I/O), because they are a universal interface.
+      </p><p>
+      Everything is a file, devices, keyboards, hard drives, etc. these are managed with streams and stored in the /dev folder.
+      </p>
+    </div><!-- container Elements -->
+
+    <div class="card blog justify">
+      <hr>
+        <div class="center">
+          <h4 id="_2-Licenses">2.2 Licences</h4>
+          <a class="hidden-link" href="./blog/linux/2/#_2-Licences">[link]</a>
+        </div>
+      <hr>
+      <p>
+      Licences are licenses given by those who have the copyrght of the content, licenses can give you certain use permits depending on the licenses.
+      </p><p>
+      <mark>Copyright:</mark> Is a type of intellectual property that protects the original work of the author, giving the freedom to choose what can and can't be done with his work.
+      </p><p>
+      <mark>Copyleft:</mark> It is a strategy to use copyright to encourage the right to copy, share, modify and improve works under this license.
+      </p><p>
+      <mark>Public Domain:</mark> (No Rights Reserved) CC0 is a license to opt out copyright.
+      </p>
+      
+      <p>
+      <mark>Creative commons:</mark> they are free use licenses but with mandatory attribute, commonly used for images, videos and articles. CC BY, CC BY-SA, CC BY-ND, CC BY-NC, CC BY-NC-SA and CC BY-NC-ND.
+      </p><p>
+      <mark>Open source licenses:</mark>
+      <ul>
+        <li><a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL:</a> similar to GPL but for online services.</li>
+        <li><a href="https://www.apache.org/licenses/">Apache:</a> include the copyright notice.</li>
+        <li>BSD <a href="https://opensource.org/license/bsd-2-clause/">2</a>/<a href="https://opensource.org/license/bsd-3-clause/">3</a>: include the copyright notice.</li>
+        <li>GPL <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">v2</a>/<a href="https://www.gnu.org/licenses/gpl-3.0.html">v3</a>: source code available and copyleft.</li>
+        <li><a href="https://opensource.org/license/mit/">MIT:</a> include the copyright notice.</li>
+      </ul>
+      </p> 
+  </div><!-- container Elements -->
+  
+  <div class="card blog justify">
+      <hr>
+        <div class="center">
+          <h4 id="_3-Free-Libre_Philosophy">2.3 Free/Libre Philosophy</h4>
+          <a class="hidden-link" href="./blog/linux/2/#_3-Free-Libre_Philosophy">[link]</a>
+        </div>
+      <hr>
+      <p>
+      The Free/Libre software philosophy is related to Richard Stallman and his GNU project, which says that software must respect the freedom of the user,
+      freedom of distribution, freedom of use, freedom of study, etc. Going against Proprietary software and closed-source, binary blobs, 
+      non-permissive licenses and EULAs and DRM.
+      </p>
+  </div><!-- container Elements -->
+ 
+  <div class="card blog justify">
+      <hr>
+        <div class="center">
+          <h4 id="_4-BSD">2.4 BSD</h4>
+          <a class="hidden-link" href="./blog/linux/2/#_4-BSD">[link]</a>
+        </div>
+      <hr>
+      <p>
+      Berkeley Software Distribution, is an operating system created at the University of Berkeley in California, it is open source under a BSD Licences and originally was
+      an extension of AT&T’s Research UNIX, unlike Linux this has the BSD C library, although they can share certain GNU utilities.
+
+      The two most important forks are:
+      <ul>
+        <li><mark>FreeBSD:</mark> is a <a href="https://svnweb.freebsd.org/base/stable/12/">"large"</a> project with many forked operating systems departing from it,
+        such as FreeNAS, pfsense, etc.</li>
+        <li><mark>OpenBSD:</mark> is a relatively more <a href="https://cvsweb.openbsd.org/src/">"small"</a> than freebsd, it is innovative and creates new tools used 
+        throughout the unix community like <a href="https://www.openssh.com/">SSH</a>, while being one of the safest operating systems.</li>
+      </ul>
+      These may have certain <a href="https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352">advantages and disadvantages</a> regarding Linux.
+      </p>
+  </div><!-- container Elements -->
+
+  <div class="card blog justify">
+      <hr>
+        <div class="center">
+          <h4 id="_5-Privacy">2.5 Privacy</h4>
+          <a class="hidden-link" href="./blog/linux/2/#_5-Privacy">[link]</a>
+        </div>
+      <hr>
+      <p>
+          I recommend this privacy guide or the youtuber Naomi Brockwell.
+      </p>
+  </div><!-- container Elements -->
+ 
+  <div class="card blog justify">
+      <hr>
+        <div class="center">
+          <h4 id="_">2.</h4>
+          <a class="hidden-link" href="./blog/linux/2/#">[link]</a>
+        </div>
+      <hr>
+      <p>
+      </p>
+  </div><!-- container Elements -->
+  
+  <div class="card blog justify">
+      <hr>
+        <div class="center">
+          <h4 id="_">2.</h4>
+          <a class="hidden-link" href="./blog/linux/2/#">[link]</a>
+        </div>
+      <hr>
+      <p>
+      </p>
+  </div><!-- container Elements -->
+ 
+  <div class="card blog justify">
+      <hr>
+        <div class="center">
+          <h4 id="_">2.</h4>
+          <a class="hidden-link" href="./blog/linux/2/#">[link]</a>
+        </div>
+      <hr>
+      <p>
+      </p>
+  </div><!-- container Elements -->
+ 
+
+  <div class="container">
+    <div class="card center">
+      <hr>
+        <h3 title="With APA format" id="_References">References</h3>
+        <a class="hidden-link" href="./blog/linux/2/#_References">[link]</a>
+      <hr>
+    </div>
+  </div><!-- container Title -->
+  
+  <div class="container">
+    <div class="card blog">
+      <ul> 
+        <li>Copyright.gov. (2021). <em>Copyright Basics</em>. <a href="https://www.copyright.gov/circs/circ01.pdf">https://www.copyright.gov/circs/circ01.pdf</a></li>
+        <li>Copyright.gov. (n.d.). <em>What is Copyright?</em>. <a href="https://www.copyright.gov/what-is-copyright/">https://www.copyright.gov/what-is-copyright/</a></li>
+        <li>Copyright.org. (n.d.). <em>What is copyleft?</em>. <a href="https://copyleft.org/">https://copyleft.org/</a></li>
+        <li>Creativecommons. (n.d.). <em>About The Licenses</em>. <a href="https://creativecommons.org/licenses/">https://creativecommons.org/licenses/</a>"</li>
+        <li>FreeBSD. (2023). <em>Explaining BSD</em>. <a href="https://docs.freebsd.org/en/articles/explaining-bsd/">https://docs.freebsd.org/en/articles/explaining-bsd/</a></li>
+        <li>GNU. (n.d.). <em>What is Free Software?</em>. <a href="https://www.gnu.org/philosophy/free-sw.html">https://www.gnu.org/philosophy/free-sw.html</a></li>
+        <li>Open source initiative. (n.d.). <em>OSI Approved Licenses</em>. <a href="https://opensource.org/licenses/">https://opensource.org/licenses/</a></li>
+        <li>University of Pittsburgh. (2022). <em>Copyright and Intellectual Property Toolkit</em>. <a href="https://pitt.libguides.com/copyright/licenses">https://pitt.libguides.com/copyright/licenses</a></li>
+      </ul>
+      <p class="center">
+        Last update on: February 7th 2024.
+      </p>
+    </div>
+  </div><!-- container Elements -->
+  <nav>
+    <a href="./blog/linux/1" title="previous blog"> <span>  ←  </span></a>
+    <a href="./blog/linux/"  title="blog homepage"> <span>Linux</span></a>
+    <a href="./blog/linux/ " title="next blog">     <span>  →  </span></a>
+  </nav>
+</body>
+
+</html>
