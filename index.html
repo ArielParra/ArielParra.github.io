@@ -3,6 +3,7 @@
 
 <head>
   <!-- Info -->
+  <base href="./">
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
   <meta   name="keywords"        content="Ariel Parra, website, blog">
@@ -10,21 +11,23 @@
   <meta   name="author"          content="Ariel Parra">
   <title> arielparra.tech </title>
   <!-- CSS stylesheet -->
-  <link   rel="preload"          href="./style.css"        as="style">
+  <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts Preloads -->
   <link   rel="preload"          href="./js/cookies.js"    as="script">
   <link   rel="preload"          href="./js/language.js"   as="script">
   <link   rel="preload"          href="./js/colorTheme.js" as="script">
-  <link   rel="preload"          href="./js/navButton.js"  as="script">
+  <link   rel="preload"          href="./js/navButtons.js"  as="script">
   <link   rel="preload"          href="./js/dynFavicon.js" as="script">
+  <link   rel="preload"          href="./js/debug.js"      as="script">
   <link   rel="preload"          href="./main.js"          as="script">
   <!-- Java Scripts defers -->
   <script defer                  src ="./js/cookies.js">    </script>
   <script defer                  src ="./js/language.js">   </script>
   <script defer                  src ="./js/colorTheme.js"> </script>
-  <script defer                  src ="./js/navButton.js">  </script>
+  <script defer                  src ="./js/navButtons.js">  </script>
   <script defer                  src ="./js/dynFavicon.js"> </script>
+  <script defer                  src ="./js/debug.js">      </script>
   <script defer                  src ="./main.js">          </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./static/foto.webp"   type="image/webp" sizes="180x180">
@@ -153,8 +156,13 @@
                                                              <img src="./static/88x31_valid-css.png"   class="img-88x31" alt="Valid CSS"          title="Valid CSS">             </a>
     <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.tech" target="_blank">
                                                              <img src="./static/88x31_valid-html.png"  class="img-88x31" alt="Valid HTML"         title="Valid HTML">            </a>
+
   </footer>
-  
+  <div class="container">
+    <div class="center">
+      <p>made with ❤️ by Ariel Parra</p>
+    </div>
+  </div><!-- made with love -->
 </body>
 
 </html>

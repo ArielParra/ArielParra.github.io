@@ -17,15 +17,17 @@
   <link   rel="preload"          href="./js/cookies.js"    as="script">
   <link   rel="preload"          href="./js/language.js"   as="script">
   <link   rel="preload"          href="./js/colorTheme.js" as="script">
-  <link   rel="preload"          href="./js/navButton.js"  as="script">
+  <link   rel="preload"          href="./js/navButtons.js"  as="script">
   <link   rel="preload"          href="./js/dynFavicon.js" as="script">
+  <link   rel="preload"          href="./js/tags.js"       as="script">
   <link   rel="preload"          href="./main.js"          as="script">
   <!-- Java Scripts defers -->
   <script defer                  src ="./js/cookies.js">    </script>
   <script defer                  src ="./js/language.js">   </script>
   <script defer                  src ="./js/colorTheme.js"> </script>
-  <script defer                  src ="./js/navButton.js">  </script>
+  <script defer                  src ="./js/navButtons.js">  </script>
   <script defer                  src ="./js/dynFavicon.js"> </script>
+  <script defer                  src ="./js/tags.js">       </script>
   <script defer                  src ="./main.js">          </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./static/foto.webp"    type="image/webp" sizes="180x180">
@@ -46,8 +48,40 @@
     <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
   </nav>
 
+  <div class="container max-width">
+    <div class="card max-width" id="filter-checks">
+        <hr>
+        <div class="center" >
+            <h4>Filter by type</h4>
+        </div>
+        <hr>
+        <div class="center">
+            <label><input type="radio" name="type" value="all"  checked  onchange="filterCards()"> All </label>
+            <label><input type="radio" name="type" value="certification" onchange="filterCards()"> Certifications </label>  
+            <label><input type="radio" name="type" value="certificate"   onchange="filterCards()"> Certificates </label>
+            <label><input type="radio" name="type" value="badge"         onchange="filterCards()"> Badges </label>      
+        </div>
+        <hr>
+        <div class="center">
+            <h4>Filter by topic</h4>
+        </div>
+        <hr>
+        <div class="center">
+            <label><input type="checkbox" value="cybersecurity" onchange="filterCards()"> Cybersecurity </label>
+            <label><input type="checkbox" value="devops"        onchange="filterCards()"> DevOps </label>
+            <label><input type="checkbox" value="networks"      onchange="filterCards()"> Networks </label>
+            <label><input type="checkbox" value="cloud"         onchange="filterCards()"> Cloud </label>
+            <label><input type="checkbox" value="blockchain"    onchange="filterCards()"> Blockchain </label>
+            <label><input type="checkbox" value="progamming"    onchange="filterCards()"> Progamming </label>
+            <label><input type="checkbox" value="datascience"   onchange="filterCards()"> Data Science </label>
+            <label><input type="checkbox" value="ai"            onchange="filterCards()"> AI </label>
+        </div>
+    </div><!--filters card-->
+  </div><!--filters container-->
+
+
   <div class="container">
-    <div class="card">
+    <div class="card" data-tags="degree">
       <hr>
       <div class="center">
         <h3>Collage Degree</h3>
@@ -56,34 +90,53 @@
     </div>
   </div><!-- container Title -->
  
-  <div class="container">
-    <div class="card" id="grid">
-      <div class="center">In progress, 4/9 semesters</div>
+  <div class="container grid">
+    <div class="card" data-tags="degree">
+      <div class="center">
+        <p>In progress, 5/9 semesters</p>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="width: 55.55%;"></div>
+      </div>
     </div>
   </div><!-- container Elements -->
 
   <div class="container">
-    <div class="card">
+    <div class="card" data-tags="certification">
       <hr>
       <div class="center">
-        <h3>Diplomas</h3>
+        <h3>Certifications</h3>
       </div>
       <hr>
     </div>
   </div><!-- container Title -->
 
-  <div class="container">
-    <div class="card" id="grid">
+  <div class="container grid max-width">
+
+    <div class="card" data-tags="certification cybersecurity">
+      <img src="./achivements/static/MS_Security_Compliance_and_Identity_Fundamentals.png" alt="Security Fundamentals certification picture">
       <div class="center">
-        Diploma in Financial Education from CONDUSEF, generation 43
-        <p></p>
-        <a href=./achivements/static/Diploma_CONDUSEF.pdf>Diploma PDF</a>
+        <p>
+          Security, Compliance, and Identity Fundamentals certification issued by Microsoft
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/ArielParra-6307/D4A8CCF36FAC1D6E?sharingId=1F8F185897940CA9">LINK</a>
+        </p>
       </div>
     </div>
+
+    <div class="card" data-tags="certification devops">
+      <img src="./achivements/static/GH_Foundations.png" alt="GitHub Foundations certification picture">
+      <div class="center">
+        <p>
+          GitHub Foundations certification issued by GitHub
+          <a href="https://www.credly.com/badges/f024c37b-a271-4588-b5b3-bafbdb7cd661/">LINK</a>
+        </p>
+      </div>
+    </div>
+
   </div><!-- container Elements -->
 
   <div class="container">
-    <div class="card">
+    <div class="card" data-tags="certificate">
       <hr>
       <div class="center">
         <h3>Certificates</h3>
@@ -92,15 +145,134 @@
     </div>
   </div><!-- container Title -->
 
+  <div class="container grid max-width">
+    
+    <div class="card" data-tags="certificate devops">
+      <img src="./achivements/static/Linkedin_Career_Essentials_in_GitHub.webp" alt="Linkedin GitHub certificate picture">
+      <div class="center">
+        <p>
+          Career Essentials in GitHub Professional Certificate issued by Linkedin
+          <a href="https://lnkd.in/d8q5GMah">LINK</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-tags="certificate devops">
+      <img src="./achivements/static/GitLab_CI_Fundamentals.png" alt="GitLab CI Fundamentals certificate picture">
+      <div class="center">
+        <p>
+          GitLab CI Fundamentals certificate issued by GitLab
+          <a href="https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg">LINK</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-tags="certificate progamming">
+      <img src="./achivements/static/Oracle_One_Programa.png" alt="Oracle One Program certificate picture">
+      <div class="center">
+        <p>
+          Oracle Next Education Back-end certificate issued by Alura and Oracle
+          <a href="https://app.aluracursos.com/program/certificate/80f90beb-02e0-48ae-a5a4-c097d226c28e">LINK</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-tags="certificate progamming">
+      <img src="./achivements/static/Oracle_One_Java_y_Spring_Boot.png" alt="Oracle One Program certificate picture">
+      <div class="center">
+        <p>
+          Java and Spring Boot certificate issued by Alura and Oracle
+          <a href="https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang">LINK</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-tags="certificate datascience ai">
+      <img src="./achivements/static/BLOCKMAKERS_Inteligencia_Artificial.png" alt="BLOCKMAKERS AI certificate picture">
+      <div class="center">
+        <p>
+          Artifitial inteligence and data science certificate issued by Blockmakers
+          <a href=./achivements/static/BLOCKMAKERS_Inteligencia_Artificial.pdf>PDF</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-tags="certificate blockchain progamming">
+      <img src="./achivements/static/BLOCKMAKERS_Solidity_Bootcamp.png" alt="BLOCKMAKERS solidity certificate picture">
+      <div class="center">
+        <p>
+          Solidity bootcamp certificate issued by Blockmakers
+          <a href=./achivements/static/BLOCKMAKERS_Solidity_Bootcamp.pdf>PDF</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-tags="certificate blockchain">
+      <img src="./achivements/static/BLOCKMAKERS_Blockchain.png" alt="BLOCKMAKERS blockchain certificate picture">
+      <div class="center">
+        <p>
+          Blockchain consultant certificate issued by Blockmakers
+          <a href=./achivements/static/BLOCKMAKERS_Blockchain.pdf>PDF</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-tags="certificate blockchain progamming">
+      <img src="./achivements/static/ICP_Developer_Azle.png" alt="ICP Azle certificate picture">
+      <div class="center">
+        <p>
+          Developer in Azle certificate issued by Internet Computer  (ICP)
+          <a href=./achivements/static/ICP_Developer_Azle.pdf>PDF</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-tags="certificate">
+      <img src="./achivements/static/Diploma_CONDUSEF.png" alt="Condusef Diploma picture">
+      <div class="center">
+        <p>
+          Financial education diploma issued by CONDUSEF
+          <a href=./achivements/static/Diploma_CONDUSEF.pdf>PDF</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" data-tags="certificate">
+      <img src="./achivements/static/Compu_Cuantrix_nivel_avanzado.png" alt="Compu Cuantrix certificate picture">
+      <div class="center">
+        <p>
+          Compu Cuantrix advance level course certificate issued by Televisa Foundation
+          <a href=./achivements/static/Compu_Cuantrix_nivel_avanzado.pdf>PDF</a>
+        </p>
+      </div>
+    </div>
+
+  </div><!-- container Elements -->
+
   <div class="container">
-    <div class="card">
+    <div class="card" data-tags="badge">
       <hr>
       <div class="center">
-        <h3>Certifications</h3>
+        <h3>Badges</h3>
       </div>
       <hr>
     </div>
   </div><!-- container Title -->
+
+  <div class="container grid max-width">
+
+    <div class="card" data-tags="badge cloud networks">
+      <img src="./achivements/static/IBM_ZXplore_Concepts.png" alt="Z Xplore badge picture">
+      <div class="center">
+        <p>
+          IBM Z Xplore Concepts badge issued by IBM
+          <a href="https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0/linked_in?t=sas12p">LINK</a>
+        </p>
+      </div>
+    </div>
+
+  </div><!-- container Elements -->
+
 </body>
 
 </html>

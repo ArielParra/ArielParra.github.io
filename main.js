@@ -27,21 +27,21 @@ function main() {
 
     const navButton = document.getElementById('navButton');
 
-    // Check if the 'navstatus' cookie exists
-    if (cookieExists('navstatus')) {
-      const status = getCookie('navstatus');
+    // Check if the 'navStatus' cookie exists
+    if (cookieExists('navStatus')) {
+      const navStatus = getCookie('navStatus');
     
       // Check the status and update the button text accordingly
-      if (status === 'hidden') {
+      if (navStatus === 'hidden') {
         hideNavBar(navButton, false);
         console.log('trying');
-        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Barra' : 'Show Nav Bar';
+        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Nav Bar';
       } else {
-        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Barra' : 'Hide Nav Bar';
+        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Nav Bar';
       }
     } else {
       // Default: Navigation bar is visible
-      navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Barra' : 'Hide Nav Bar';
+      navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Nav Bar';
     }
     
 
@@ -79,17 +79,6 @@ function main() {
       link.href = './static/favicon.gif';
       link.type = 'image/gif';
       document.head.appendChild(link);
-    }
+    } 
     
-    /* debug messages */
-
-    console.log('default lang = ' + getDefaultLanguage() );
-    console.log('lang cookie  = ' + getCookie('language') );
-    console.log('current site lang = ' + getCurrentSiteLanguage());
-    console.log('current path = ' + getCurrentPath()); 
-    console.log('browser prefers light = ' + browserPrefersLight());
-    console.log('theme cookie = ' + getCookie('theme'));
-    console.log('device width = ' + window.screen.width + 'px');
-    console.log('navstatus = ' + getCookie('navstatus') );
-
 }main();

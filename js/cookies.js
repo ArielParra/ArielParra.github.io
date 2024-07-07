@@ -42,3 +42,12 @@ function cookieExists(name) {
     }
     return false;
 }
+
+/**
+ * @description Deletes a cookie by setting its expiration date to the past.
+ * 
+ * @param {string} name - The name of the cookie to delete.
+ */
+function delCookie(name) {
+    document.cookie = name + '=' + null + ";expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;SameSite=None;Secure";
+}
