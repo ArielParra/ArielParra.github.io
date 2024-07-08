@@ -33,15 +33,15 @@ function main() {
     
       // Check the status and update the button text accordingly
       if (navStatus === 'hidden') {
-        hideNavBar(navButton, false);
+        hideMenu(navButton, false);
         console.log('trying');
-        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Nav Bar';
+        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Menu';
       } else {
-        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Nav Bar';
+        navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
       }
     } else {
       // Default: Navigation bar is visible
-      navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Nav Bar';
+      navButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
     }
     
 

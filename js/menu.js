@@ -1,14 +1,14 @@
 /**
- * @description Toggles the visibility of the navigation bar, with a smooth transition effect.
+ * @description Toggles the visibility of the navigation bar menu, with a smooth transition effect.
  *              Disables the provided button during the transition.
  * 
  * @param {HTMLButtonElement} button - The button triggering the navigation toggle.
  */
-function toggleNavigation(button) {
+function toggleMenu(button) {
   if (button.dataset.navShown === 'true') {
-    hideNavBar(button,true);
+    hideMenu(button,true);
   } else {
-    showNavBar(button);
+    showMenu(button);
   }
 }
 
@@ -18,7 +18,7 @@ function toggleNavigation(button) {
  * 
  * @param {HTMLButtonElement} button - The button triggering the hide operation.
  */
-function hideNavBar(button, animation) {
+function hideMenu(button, animation) {
   button.disabled = true;
 
   const elements = document.querySelectorAll('.NotCurrent, .current');
@@ -35,7 +35,7 @@ function hideNavBar(button, animation) {
     elem.style.pointerEvents = 'none';
   }
 
-  button.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Nav Bar';
+  button.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Menu';
   setCookie('navStatus', 'hidden', 30);
 
   setTimeout(function() {
@@ -50,7 +50,7 @@ function hideNavBar(button, animation) {
  * 
  * @param {HTMLButtonElement} button - The button triggering the show operation.
  */
-function showNavBar(button) {
+function showMenu(button) {
   button.disabled = true;
 
   const elements = document.querySelectorAll('.NotCurrent, .current');
@@ -66,7 +66,7 @@ function showNavBar(button) {
     }, 500);
   }
 
-  button.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Nav Bar';
+  button.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
   setCookie('navStatus', 'shown', 30);
 
   setTimeout(function() {

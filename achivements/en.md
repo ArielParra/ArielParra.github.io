@@ -4,7 +4,7 @@ base_href: ../
 keywords: [Ariel Parra, certifications, certificates, badges, achivements, degree, diploma]
 description: Ariel Parra mutiple achivements
 title: achivements
-js: [cookies, language, colorTheme, navButton, dynFavicon, tags, main]
+js: [cookies, language, colorTheme, menu, dynFavicon, tags, main]
 nav_current: 3
 blog_current: 0
 ---
@@ -16,7 +16,7 @@ blog_current: 0
       </div>
       <hr> 
     </div>
-  </div>[]: <> (container Elements)
+  </div>[]: <> ("container Elements")
   <div class="container grid">
     <div class="card" data-tags="degree">
       <div class="center">
@@ -26,7 +26,7 @@ blog_current: 0
         <div class="progress" style="width: 55.55%;"></div>
       </div>
     </div>
-  </div>[]: <> (container Elements)
+  </div>[]: <> ("container Elements")
   <div class="container">
     <div class="card" data-tags="certification">
       <hr>
@@ -35,7 +35,7 @@ blog_current: 0
       </div>
       <hr>
     </div>
-  </div>[]: <> (container Elements)
+  </div>[]: <> ("container Elements")
   <div class="container grid max-width">
     <div class="card" data-tags="certification cybersecurity">
       ![alt:"Security Fundamentals certification picture"](./achivements/static/MS_Security_Compliance_and_Identity_Fundamentals.png)
@@ -55,7 +55,7 @@ blog_current: 0
         </p>
       </div>
     </div>
-  </div>[]: <> (container Elements)
+  </div>[]: <> ("container Elements")
   <div class="container">
     <div class="card" data-tags="certificate">
       <hr>
@@ -64,7 +64,7 @@ blog_current: 0
       </div>
       <hr>
     </div>
-  </div>[]: <> (container Elements)
+  </div>[]: <> ("container Elements")
   <div class="container grid max-width">
     <div class="card" data-tags="certificate devops">
       ![alt:"Linkedin GitHub certificate picture"](./achivements/static/Linkedin_Career_Essentials_in_GitHub.webp)
@@ -156,7 +156,7 @@ blog_current: 0
         </p>
       </div>
     </div>
-  </div>[]: <> (container Elements)
+  </div>[]: <> ("container Elements")
   <div class="container">
     <div class="card" data-tags="badge">
       <hr>
@@ -165,7 +165,7 @@ blog_current: 0
       </div>
       <hr>
     </div>
-  </div>[]: <> (container Elements)
+  </div>[]: <> ("container Elements")
   <div class="container grid max-width">
     <div class="card" data-tags="badge cloud networks">
       ![alt:"Z Xplore badge picture"](./achivements/static/IBM_ZXplore_Concepts.png)
@@ -176,5 +176,5 @@ blog_current: 0
         </p>
       </div>
     </div>
-  </div>[]: <> (container Elements)
+  </div>[]: <> ("container Elements")
 

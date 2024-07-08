@@ -1,8 +1,8 @@
 ---
-lang: en
-base_href: ./
-keywords: [Ariel Parra, website]
-description: Ariel Parra Website!
+lang: es
+base_href: ../
+keywords: [Ariel Parra, sitio, página]
+description: Página web de Ariel Parra!
 title: arielparra.tech
 js: [cookies, language, colorTheme, menu, dynFavicon, debug, main]
 nav_current: 1
@@ -11,8 +11,8 @@ blog_current: 0
 <div class="container">
     <div class="card">
         <hr>
-[]: <> ("Temporal photo taken from:https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/ ")
-        ![alt="Photo of me" title="me"](./static/foto.webp)   
+[]: <> (Temporal photo taken from:https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/ )
+        ![alt:"Photo of me" title:"me"](./static/foto.webp)   
         <hr>
         <div class="center">
             <p>
@@ -86,20 +86,11 @@ blog_current: 0
     </div> 
 </div> 
 <footer>
-    [![class="img-88x31" alt="Linkback" title="HTTP Secure = HTTPS"](./static/88x31_linkback.png)](https://arielparra.tech/){:target="_blank"}
-    [![class="img-88x31" alt="Monero donation" title="Donate me some Monero"](./static/88x31_monero.png)](./static/43rhCdPEoAZfGKzeASYYzGQi3BwBYJ4sKe1PjBjPcuNYXe8rkiMghrTH8fJqqt7i1jKMho7MnTj7hTnN7bMMaB79HjJgg9J.png){:target="_blank"}
-    [![class="img-88x31" alt="Github" title="Github"](./static/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}   
-    [![class="img-88x31" alt="email" title="admin@arielparra.tech"](/static/88x31_email.png)](mailto:admin@arielparra.tech/){:target="_blank"}   
-    [![class="img-88x31" alt="email" title="Nord theme website"](/static/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}    
-    ![alt="Made in Mexico!" title="Made in Mexico" class="img-88x31"](/static/88x31_Mexico.png)   
-    ![alt="self Host on linux" title="arm linux" class="img-88x31"](/static/88x31_host-linux.png)
-    [![class="img-88x31" alt="Valid CSS" title="Valid CSS"](/static/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farielparra.tech&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en){:target="_blank"}    
-    [![class="img-88x31" alt="Valid HTML" title="Valid HTML"](/static/88x31_valid-html.png)](https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.tech){:target="_blank"}  
+    [class: img-88x31 alt:"Linkback" href:"https://arielparra.tech/"](./static/88x31_linkback.png)
 </footer>
-[]: <> ("made with love")
+[]: <> (made with love)
 <div class="container">
     <div class="center">
         <p>made with ❤️ by Ariel Parra</p>
     </div>
 </div>
-[]: <> ("<div class="container"> <button type="button" onclick="langButton()">lang</button></div>")

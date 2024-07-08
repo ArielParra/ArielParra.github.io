@@ -16,6 +16,7 @@ function dbgMessages() {
     console.log('lang cookie  = ' + getCookie('language') );
     console.log('current site lang = ' + getCurrentSiteLanguage());
     console.log('current path = ' + getCurrentPath()); 
+    console.log('curren site' + window.location.href);
     console.log('browser prefers light = ' + browserPrefersLight());
     console.log('theme cookie = ' + getCookie('theme'));
     console.log('device width = ' + window.screen.width + 'px');

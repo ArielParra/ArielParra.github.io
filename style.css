@@ -242,10 +242,6 @@ input:checked {
   background-color: var(--nav-a-hover_BG);
 }
 
-input:hover {
-  background-color: var(--HTML_BG);
-}
-
 /* divs classes */
 
 .progress-bar {
@@ -370,5 +366,4 @@ input:hover {
   #filter-checks label {
     display: flex; 
   }
-  
 }

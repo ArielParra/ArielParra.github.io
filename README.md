@@ -7,6 +7,7 @@ I also developed my own Python-based static site generator called `md2html.py`, 
 
 # Todo List:
 
+- [ ] Linkback based on start by window.location.href
 - [x] fix mobile width in 404 (fixed with style="overflow: hidden;">)
 - [ ] blogs
 - [ ] js to detect code class="C++" and color C++ syntax correctly

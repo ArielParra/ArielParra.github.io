@@ -19,14 +19,14 @@ def parse_md(md_content):
     return md_dict
 
 def md_to_html(md_content):
-    md_content = re.sub(r'!\[alt:"(.*?)"(?: title:"(.*?)")?\]\((.*?)\)', lambda match: f'<img src="{match.group(3)}" alt="{match.group(1)}"{" title=\"" + match.group(2) + "\"" if match.group(2) else ""}>', md_content)
+    md_content = re.sub(r'!\[([^\]]+)\]\((.*?)\)', r'<img src="\2" \1>', md_content)
+    md_content = re.sub(r'\[([^\]]+)\]\((.*?)\){:(.*?)}', r'<a href="\2" \3>\1</a>', md_content)
     md_content = re.sub(r'\[([^\]]+)\]\((.*?)\)', r'<a href="\2">\1</a>', md_content)
     md_content = re.sub(r'##### (.*?)\n', r'<h5>\1</h5>\n', md_content)
     md_content = re.sub(r'### (.*?)\n', r'<h3>\1</h3>\n', md_content)
     md_content = re.sub(r'## (.*?)\n', r'<h2>\1</h2>\n', md_content)
     md_content = re.sub(r'# (.*?)\n', r'<h1>\1</h1>\n', md_content)
-    md_content = re.sub(r'\[class: (.*?) alt:"(.*?)" href:"(.*?)"\]\((.*?)\)', r'<a href="\3"><img src="\4" class="\1" alt="\2"></a>', md_content)
-    md_content = re.sub(r'\[\]: <> \((.*?)\)', r'<!--\1-->', md_content)
+    md_content = re.sub(r'\[\]: <> \("(.*?)"\)', r'<!--\1-->', md_content)
     md_content = re.sub(r'(- .*)', r'<li>\1</li>', md_content)
     md_content = re.sub(r'<li>- (.*?)</li>', r'<ul><li>\1</li></ul>', md_content, flags=re.DOTALL)
     md_content = re.sub(r'</ul>\s*<ul>', '', md_content)  # Merge consecutive <ul> tags
@@ -112,23 +112,23 @@ def generate_html(md_dict, md_content):
         lang_button_text = "Inglés"
         theme_button_title = "Cambiar tema de color a"
     else:  # English
-        nav_button_text = "Hide Nav Bar"
+        nav_button_text = "Hide Menu"
         lang_button_text = "Spanish"
         theme_button_title = "Change color theme to"
 
     html_content += f"""
     <div class="container">
-    <button type="button" onclick="toggleNavigation(this)" id="navButton" data-nav-shown="true">{nav_button_text}</button>
+    <button type="button" onclick="toggleMenu(this)" id="navButton" data-nav-shown="true">{nav_button_text}</button>
     <button type="button" onclick="langButton(this)" id="langButton" title="Change language to">{lang_button_text}</button>
     <button type="button" onclick="toggleTheme(this)" id="themeButton" title="{theme_button_title}"> 🌗 </button>
     </div><!-- Buttons -->
 
     <nav>
-    """
+"""
 
     for idx, item in enumerate(nav_items, start=1):
         class_name = "current" if idx == nav_current else "NotCurrent"
-        html_content += f'    <a href="{item["href"]}" class="{class_name}" title="{item["title"]}"> <span>{item["label"]}</span></a>\n'
+        html_content += f'        <a href="{item["href"]}" class="{class_name}" title="{item["title"]}"> <span>{item["label"]}</span></a>\n'
     
     html_content += """  </nav>
 """
@@ -164,8 +164,7 @@ def generate_html(md_dict, md_content):
             tag_text = type_tag_text[idx] if idx < len(type_tag_text) else tag_value.capitalize()
             html_content += f"""          <label><input type="radio" name="type" value="{tag_value}" {'checked' if idx == 0 else ''} onchange="filterCards()"> {tag_text} </label>\n"""
 
-        html_content += f"""
-        </div>
+        html_content += f"""        </div>
         <hr>
         <div class="center">
             <h4>{filterTopic_text}</h4>
