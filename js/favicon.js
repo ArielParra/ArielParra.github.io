@@ -20,20 +20,20 @@ function changeFavicon(src) {
  * @description Animates the website favicon by toggling between two frames.
  *                The frames are two different favicon images encoded in base64.
  */
-function animateIcon() {
-    if (typeof animateIcon.i === 'undefined') {
-        animateIcon.i = 0;
+function animateFavicon() {
+    if (typeof animateFavicon.i === 'undefined') {
+        animateFavicon.i = 0;
     }
-    if (animateIcon.i === 0) {
+    if (animateFavicon.i === 0) {
         //frame 1
         changeFavicon(" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAADFBMVEUAAADZ3unZ3umBocEb6ctKAAAABHRSTlMA////sy1AiAAAAERJREFUOI1jYKAXYGZmxi9AuQJUISyylCtgxgKoqQDOR5JCUUOhAmy2o7iEGAW4fUFlBdhihjoKMAIc7gDsMU6JgqEMACyOBFfUK478AAAAAElFTkSuQmCC");
     } else { //could be a switch if I had more frames
         //frame 2
         changeFavicon(" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAADFBMVEUAAADZ3unZ3umBocEb6ctKAAAABHRSTlMA////sy1AiAAAAEBJREFUOI1jYKAXYGZmxi9AiQI4C0kNihi1FDBjAdRUgMxHZ1JVAQ5AWAEOLyBkqaKAwvRAjAIMWXRhyhUMfQAAcEwEjYn6LD0AAAAASUVORK5CYII=");
     }
-    animateIcon.i++;
-    if (animateIcon.i === 2) {
-        animateIcon.i = 0;
+    animateFavicon.i++;
+    if (animateFavicon.i === 2) {
+        animateFavicon.i = 0;
     }
 }
 

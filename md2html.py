@@ -103,7 +103,7 @@ def generate_html(md_dict, md_content):
     
     
     html_content += """    <!-- Favicons -->  
-    <link   rel="apple-touch-icon" href="./static/foto.webp"   type="image/webp" sizes="180x180">
+    <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
 </head>
 <body>
 """

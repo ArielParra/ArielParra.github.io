@@ -71,12 +71,12 @@ function main() {
     
     if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
       //for all the other chromium based browsers that doesnt support dynamic favicons
-      setInterval(animateIcon, 800);
+      setInterval(animateFavicon, 800);
     }else {
       // For Firefox
       var link = document.createElement('link');
       link.rel = 'icon';
-      link.href = './static/favicon.gif';
+      link.href = './images/favicon.gif';
       link.type = 'image/gif';
       document.head.appendChild(link);
     } 

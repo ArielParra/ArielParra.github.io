@@ -4,7 +4,7 @@ base_href: ../../
 keywords: [Ariel Parra, certificaiones, certificatados, insignias, logros, titulo, diplomas]
 description: multiples logros de Ariel Parra
 title: logros
-js: [cookies, language, colorTheme, menu, dynFavicon, tags, main]
+js: [cookies, language, theme, menu, favicon, tags, main]
 nav_current: 3
 blog_current: 0
 ---
@@ -39,7 +39,7 @@ blog_current: 0
   </div>[]: <> ("container Elements")
   <div class="container grid max-width">
     <div class="card" data-tags="certification cybersecurity">
-      ![alt:"Security Fundamentals, imagen de certificación"](./achivements/static/MS_Security_Compliance_and_Identity_Fundamentals.png)
+      ![alt:"Security Fundamentals, imagen de certificación"](./achivements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">
         <p>
           Certificación en Security, Compliance, and Identity Fundamentals emitido por Microsoft
@@ -48,7 +48,7 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certification devops">
-      ![alt:"GitHub Foundations, imagen de certificación"](./achivements/static/GH_Foundations.png)
+      ![alt:"GitHub Foundations, imagen de certificación"](./achivements/images/GH_Foundations.png)
       <div class="center">
         <p>
           Certificación en GitHub Foundations emitido por GitHub
@@ -68,7 +68,7 @@ blog_current: 0
   </div>[]: <> ("container Elements")
   <div class="container grid max-width">
     <div class="card" data-tags="certificate devops">
-      ![alt:"Linkedin GitHub, imagen del, certificado"](./achivements/static/Linkedin_Career_Essentials_in_GitHub.webp)
+      ![alt:"Linkedin GitHub, imagen del, certificado"](./achivements/images/Linkedin_Career_Essentials_in_GitHub.webp)
       <div class="center">
         <p>
           Career Essentials in GitHub, certificado profesional emitido por Linkedin
@@ -77,7 +77,7 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certificate devops">
-      ![alt:"GitLab CI Fundamentals, imagen del, certificado"](./achivements/static/GitLab_CI_Fundamentals.png)
+      ![alt:"GitLab CI Fundamentals, imagen del, certificado"](./achivements/images/GitLab_CI_Fundamentals.png)
       <div class="center">
         <p>
           GitLab CI Fundamentals, certificado emitido porGitLab
@@ -86,7 +86,7 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certificate progamming">
-      ![alt:"Oracle One Program, imagen del, certificado"](./achivements/static/Oracle_One_Programa.png)
+      ![alt:"Oracle One Program, imagen del, certificado"](./achivements/images/Oracle_One_Programa.png)
       <div class="center">
         <p>
           Oracle Next Education Back-end, certificado emitido porAlura and Oracle
@@ -95,7 +95,7 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certificate progamming">
-      ![alt:"Oracle One Program, imagen del, certificado"](./achivements/static/Oracle_One_Java_y_Spring_Boot.png)
+      ![alt:"Oracle One Program, imagen del, certificado"](./achivements/images/Oracle_One_Java_y_Spring_Boot.png)
       <div class="center">
         <p>
           Java and Spring Boot, certificado emitido porAlura and Oracle
@@ -104,56 +104,56 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certificate datascience ai">
-      ![alt:"BLOCKMAKERS AI, imagen del, certificado"](./achivements/static/BLOCKMAKERS_Inteligencia_Artificial.png)
+      ![alt:"BLOCKMAKERS AI, imagen del, certificado"](./achivements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
       <div class="center">
         <p>
           Inteligencia Artificial y Data Science, certificado emitido por Blockmakers
-          [PDF](./achivements/static/BLOCKMAKERS_Inteligencia_Artificial.pdf)
+          [PDF](./achivements/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain progamming">
-     ![alt:"BLOCKMAKERS solidity, imagen del, certificado" title:""](./achivements/static/BLOCKMAKERS_Solidity_Bootcamp.png)
+     ![alt:"BLOCKMAKERS solidity, imagen del, certificado" title:""](./achivements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
       <div class="center">
         <p>
           Solidity bootcamp, certificado emitido por Blockmakers
-          <a href=./achivements/static/BLOCKMAKERS_Solidity_Bootcamp.pdf>PDF</a>
+          <a href=./achivements/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf>PDF</a>
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain">
-      ![alt:"BLOCKMAKERS blockchain, imagen del, certificado"](./achivements/static/BLOCKMAKERS_Blockchain.png)
+      ![alt:"BLOCKMAKERS blockchain, imagen del, certificado"](./achivements/images/BLOCKMAKERS_Blockchain.png)
       <div class="center">
         <p>
           Blockchain consultant, certificado emitido por Blockmakers
-          <a href=./achivements/static/BLOCKMAKERS_Blockchain.pdf>PDF</a>
+          <a href=./achivements/docs/BLOCKMAKERS_Blockchain.pdf>PDF</a>
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain progamming">
-      ![alt:"ICP Azle, imagen del, certificado"](./achivements/static/ICP_Developer_Azle.png)
+      ![alt:"ICP Azle, imagen del, certificado"](./achivements/images/ICP_Developer_Azle.png)
       <div class="center">
         <p>
           Developer in Azle, certificado emitido por Internet Computer  (ICP)
-          <a href=./achivements/static/ICP_Developer_Azle.pdf>PDF</a>
+          <a href=./achivements/docs/ICP_Developer_Azle.pdf>PDF</a>
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate">
-      ![alt:"Condusef Diploma imagen"](./achivements/static/Diploma_CONDUSEF.png)
+      ![alt:"Condusef Diploma imagen"](./achivements/images/Diploma_CONDUSEF.png)
       <div class="center">
         <p>
           Diplomado en educación financiera emitido por CONDUSEF
-          <a href=./achivements/static/Diploma_CONDUSEF.pdf>PDF</a>
+          <a href=./achivements/docs/Diploma_CONDUSEF.pdf>PDF</a>
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate">
-      ![alt:"Compu Cuantrix, imagen del, certificado"](./achivements/static/Compu_Cuantrix_nivel_avanzado.png)
+      ![alt:"Compu Cuantrix, imagen del, certificado"](./achivements/images/Compu_Cuantrix_nivel_avanzado.png)
       <div class="center">
         <p>
           Compu Cuantrix nivel avanzado, certificado emitido por Fundación Televisa 
-          <a href=./achivements/static/Compu_Cuantrix_nivel_avanzado.pdf>PDF</a>
+          <a href=./achivements/docs/Compu_Cuantrix_nivel_avanzado.pdf>PDF</a>
         </p>
       </div>
     </div>
@@ -169,7 +169,7 @@ blog_current: 0
   </div>[]: <> ("container Elements")
   <div class="container grid max-width">
     <div class="card" data-tags="badge cloud networks">
-      ![alt:"Z Xplore badge imagen"](./achivements/static/IBM_ZXplore_Concepts.png)
+      ![alt:"Z Xplore badge imagen"](./achivements/images/IBM_ZXplore_Concepts.png)
       <div class="center">
         <p>
           Insignia de IBM Z Xplore Concepts emitida por IBM
