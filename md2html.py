@@ -30,18 +30,29 @@ def md_to_html(md_content):
     md_content = re.sub(r'(- .*)', r'<li>\1</li>', md_content)
     md_content = re.sub(r'<li>- (.*?)</li>', r'<ul><li>\1</li></ul>', md_content, flags=re.DOTALL)
     md_content = re.sub(r'</ul>\s*<ul>', '', md_content)  # Merge consecutive <ul> tags
-
-    md_content = re.sub(r'\n\n', '</p><p>', md_content)
     return md_content
 
 def generate_html(md_dict, md_content):
     language = md_dict['lang']
+    cpp_label_text = "C++"
+    linux_label_text = "Linux"
+    portfolio_path = "./portfolio/"
+    achivements_path = "./achivements/"
+    contact_path = "./contact/"
+    home_path = "./"
+    blog_path = "./blog/"
+    blog_path_webDev = blog_path + "webDev/"
+    blog_path_cpp = blog_path + "competitive/"
+    blog_path_linux = blog_path + "linux/"
+    blog_path_servers = blog_path + "servers/"
+    es_path = "es/"
     if language == "en":
         home_title_text = "Home Page"
         portfolio_label_text = "portfolio"
         achivements_label_text = "achivements"
         contact_label_text = "contact"
         webDev_label_text = "Web dev"
+        servers_label_text = "Servers"
         servers_label_text = "Servers"
     else:  # Spanish
         home_title_text = "Página Principal"
@@ -50,20 +61,32 @@ def generate_html(md_dict, md_content):
         contact_label_text = "contacto"
         webDev_label_text = "Desarrollo Web"
         servers_label_text = "Servidores"
-        
+        servers_label_text = "Servidores"
+        portfolio_path += es_path
+        achivements_path += es_path
+        contact_path += es_path
+        home_path += es_path
+        blog_path += es_path
+        blog_path_webDev += es_path
+        blog_path_cpp += es_path
+        blog_path_linux +=  es_path
+        blog_path_servers +=  es_path
+
     nav_items = [
-        {"href": "./", "title": home_title_text, "label": "~/"},
-        {"href": "./portfolio/", "title": "", "label": portfolio_label_text},
-        {"href": "./achivements/", "title": "", "label": achivements_label_text},
-        {"href": "./contact/", "title": "", "label": contact_label_text},
-        {"href": "./blog/", "title": "", "label": "blog"},
+        {"href": home_path, "title": home_title_text, "label": "~/"},
+        {"href": portfolio_path, "title": "", "label": portfolio_label_text},
+        {"href": achivements_path, "title": "", "label": achivements_label_text},
+        {"href": contact_path, "title": "", "label": contact_label_text},
+        {"href": blog_path, "title": "", "label": "blog"},
     ]
+
     blog_items = [
-        {"href": "./blog/webDev", "title": home_title_text, "label": webDev_label_text},
-        {"href": "./blog/competitive/", "title": "", "label": "C++"},
-        {"href": "./blog/linux/", "title": "", "label": "Linux"},
-        {"href": "./blog/servers/", "title": "", "label": servers_label_text},
+        {"href": blog_path_webDev, "title": home_title_text, "label": webDev_label_text},
+        {"href": blog_path_cpp, "title": "", "label": cpp_label_text},
+        {"href": blog_path_linux, "title": "", "label": linux_label_text},
+        {"href": blog_path_servers, "title": "", "label": servers_label_text},
     ]
+
     
     nav_current = int(md_dict['nav_current'])
     blog_current = int(md_dict['blog_current'])
@@ -71,40 +94,41 @@ def generate_html(md_dict, md_content):
 <html lang="{language}">
 
 <head>
-    <!-- Info -->
-    <base href="{md_dict['base_href']}">
-    <meta   charset="UTF-8">
-    <meta   name="viewport"        content="width=device-width, initial-scale=1">
-    <meta   name="keywords"        content="{', '.join(md_dict['keywords'])}">
-    <meta   name="description"     content="{md_dict['description']}">
-    <meta   name="author"          content="Ariel Parra">
-    <title> {md_dict['title']} </title>
-    <!-- CSS stylesheet -->
-    <link   rel="preload"          href="./style.css" as="style">
-    <link   rel="stylesheet"       href="./style.css">
-    <!-- Java Scripts Preloads -->
+  <base href="{md_dict['base_href']}">
+  <!-- Info -->
+  <meta   charset="UTF-8">
+  <meta   name="viewport"        content="width=device-width, initial-scale=1">
+  <meta   name="keywords"        content="{', '.join(md_dict['keywords'])}">
+  <meta   name="description"     content="{md_dict['description']}">
+  <meta   name="author"          content="Ariel Parra">
+  <title> {md_dict['title']} </title>
+  <!-- CSS stylesheet -->
+  <link   rel="preload"          href="./style.css" as="style">
+  <link   rel="stylesheet"       href="./style.css">
+  <!-- Java Scripts Preloads -->
 """
     def space_padding(js_file):
         return " " * (max(len(js_file) for js_file in md_dict['js']) - len(js_file))
     
     for js_file in md_dict['js']:
         if js_file == "main":
-            html_content += f'    <link   rel="preload"          href="./{js_file}.js"    {space_padding(js_file)}as="script">\n'	
+            html_content += f'  <link   rel="preload"          href="./{js_file}.js"    {space_padding(js_file)}as="script">\n'	
         else:
-            html_content += f'    <link   rel="preload"          href="./js/{js_file}.js" {space_padding(js_file)}as="script">\n'
+            html_content += f'  <link   rel="preload"          href="./js/{js_file}.js" {space_padding(js_file)}as="script">\n'
     
-    html_content += """    <!-- Java Scripts defers -->
+    html_content += """  <!-- Java Scripts defers -->
 """
     for js_file in md_dict['js']:
         if js_file == "main":
-            html_content += f'    <script defer                  src ="./{js_file}.js">    {space_padding(js_file)}</script>\n'
+            html_content += f'  <script defer                  src ="./{js_file}.js">    {space_padding(js_file)}</script>\n'
         else:    
-            html_content += f'    <script defer                  src ="./js/{js_file}.js"> {space_padding(js_file)}</script>\n'
+            html_content += f'  <script defer                  src ="./js/{js_file}.js"> {space_padding(js_file)}</script>\n'
     
     
-    html_content += """    <!-- Favicons -->  
-    <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
+    html_content += """  <!-- Favicons -->  
+  <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
 </head>
+
 <body>
 """
     if language == "es":
@@ -117,19 +141,27 @@ def generate_html(md_dict, md_content):
         theme_button_title = "Change color theme to"
 
     html_content += f"""
-    <div class="container">
-    <button type="button" onclick="toggleMenu(this)" id="navButton" data-nav-shown="true">{nav_button_text}</button>
-    <button type="button" onclick="langButton(this)" id="langButton" title="Change language to">{lang_button_text}</button>
+  <div class="container">
+    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">{nav_button_text}</button>
+    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">{lang_button_text}</button>
     <button type="button" onclick="toggleTheme(this)" id="themeButton" title="{theme_button_title}"> 🌗 </button>
-    </div><!-- Buttons -->
+  </div><!-- Buttons -->
 
-    <nav>
+  <nav>
 """
-
+    max_href_length = max(len(item["href"]) for item in nav_items)
+    max_class_length = max(len("current"), len("NotCurrent"))
+    max_title_length = max(len(item["title"]) for item in nav_items)
+    max_label_length = max(len(item["label"]) for item in nav_items)
+    
     for idx, item in enumerate(nav_items, start=1):
         class_name = "current" if idx == nav_current else "NotCurrent"
-        html_content += f'        <a href="{item["href"]}" class="{class_name}" title="{item["title"]}"> <span>{item["label"]}</span></a>\n'
-    
+        html_content += (f'    <a href="{item["href"]}"' + " " * (max_href_length - len(item["href"])) +
+                         f' class="{class_name}"' + " " * (max_class_length - len(class_name)) +
+                         f' title="{item["title"]}' + " " * (max_title_length - len(item["title"])) +
+                         f'"> <span>{item["label"]}' + " " * (max_label_length - len(item["label"])) +
+                         '</span></a>\n')
+        
     html_content += """  </nav>
 """
     
@@ -143,7 +175,7 @@ def generate_html(md_dict, md_content):
             filterTopic_text = "Filter by topic"
             type_tag_text = ["All", "Certifications", "Certificates", "Badges"]
             topic_tag_text = ["Cybersecurity", "Networks", "Cloud", "Blockchain", "Programming", "Data Science", "AI"]
-        else:  # assuming Spanish
+        else:  # Spanish
             filterType_text = "Filtrado por tipo"
             filterTopic_text = "Filtrado por tema"
             type_tag_text = ["Todos", "Certificaciones", "Certificados", "Insignias"]
@@ -159,7 +191,7 @@ def generate_html(md_dict, md_content):
         <hr>
         <div class="center">
 """
-# Generate radio buttons for "Filter by type"
+        # Generate radio buttons for "Filter by type"
         for idx, tag_value in enumerate(type_tag_text_value):
             tag_text = type_tag_text[idx] if idx < len(type_tag_text) else tag_value.capitalize()
             html_content += f"""          <label><input type="radio" name="type" value="{tag_value}" {'checked' if idx == 0 else ''} onchange="filterCards()"> {tag_text} </label>\n"""
@@ -181,9 +213,7 @@ def generate_html(md_dict, md_content):
     </div><!--filters card-->
 </div><!--filters container-->
 """
-
-
-
+    # blog menu
     if blog_current != 0: 
         html_content += """  <nav>"""
         
@@ -194,7 +224,9 @@ def generate_html(md_dict, md_content):
     """
     html_content += md_to_html(md_content)
     html_content += """
+    
 </body>
+
 </html>"""
     return html_content
 
@@ -210,7 +242,7 @@ def main():
     md_parts = md_text.split('---', 2)
     if len(md_parts) == 3:
         md_header = md_parts[1].strip()
-        md_content = md_parts[2].strip()
+        md_content = md_parts[2]
     else:
         raise ValueError("Invalid markdown format. Ensure the file starts with a header block delimited by '---'.")
 

@@ -1,71 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <base href="../../index.html">
+  <base href="../../">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="Ariel Parra,website, blog">
-  <meta   name="description"     content="Ariel Parra Website!">
+  <meta   name="keywords"        content="Ariel Parra, portafolio">
+  <meta   name="description"     content="Portafolio de Ariel Parra">
   <meta   name="author"          content="Ariel Parra">
   <title> portafolio </title>
   <!-- CSS stylesheet -->
-  <link   rel="preload"          href="./style.css"        as="style">
+  <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts Preloads -->
-  <link   rel="preload"          href="./js/cookies.js"    as="script">
-  <link   rel="preload"          href="./js/language.js"   as="script">
-  <link   rel="preload"          href="./js/theme.js" as="script">
-  <link   rel="preload"          href="./js/menu.js"  as="script">
-  <link   rel="preload"          href="./js/favicon.js" as="script">
-  <link   rel="preload"          href="./main.js"          as="script">
+  <link   rel="preload"          href="./js/cookies.js"  as="script">
+  <link   rel="preload"          href="./js/language.js" as="script">
+  <link   rel="preload"          href="./js/theme.js"    as="script">
+  <link   rel="preload"          href="./js/menu.js"     as="script">
+  <link   rel="preload"          href="./js/favicon.js"  as="script">
+  <link   rel="preload"          href="./main.js"        as="script">
   <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">    </script>
-  <script defer                  src ="./js/language.js">   </script>
-  <script defer                  src ="./js/theme.js"> </script>
-  <script defer                  src ="./js/menu.js">  </script>
-  <script defer                  src ="./js/favicon.js"> </script>
-  <script defer                  src ="./main.js">          </script>
+  <script defer                  src ="./js/cookies.js">  </script>
+  <script defer                  src ="./js/language.js"> </script>
+  <script defer                  src ="./js/theme.js">    </script>
+  <script defer                  src ="./js/menu.js">     </script>
+  <script defer                  src ="./js/favicon.js">  </script>
+  <script defer                  src ="./main.js">        </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
 </head>
-  
+
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)" id="navButton"   data-nav-shown="true">Ocultar barra </button>
-    <button type="button" onclick="langButton(this)"                        title="Cambiar idioma a"> Inglés    </button>
-    <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Cambiar tema de color a"> 🌗 </button>
-  </div><!-- container -->
-  <nav>
-    <a href="./es"             class="NotCurrent" title="Página Principal"><span>~/         </span></a>
-    <a href="./portfolio/es"   class="current">                            <span>portafolio </span></a>
-    <a href="./achivements/es" class="NotCurrent">                         <span>logros     </span></a>  
-    <a href="./contact/es"     class="NotCurrent">                         <span>contacto   </span></a>
-    <a href="./blog/es"        class="NotCurrent">                         <span>blog       </span></a>  
-  </nav>
-      
-  <div class="container grid">
+    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">Mostrar Menú</button>
+    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Inglés</button>
+    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Cambiar tema de color a"> 🌗 </button>
+  </div><!-- Buttons -->
 
+  <nav>
+    <a href="./es/"             class="NotCurrent" title="Página Principal"> <span>~/        </span></a>
+    <a href="./portfolio/es/"   class="current"    title="                "> <span>portafolio</span></a>
+    <a href="./achivements/es/" class="NotCurrent" title="                "> <span>logros    </span></a>
+    <a href="./contact/es/"     class="NotCurrent" title="                "> <span>contacto  </span></a>
+    <a href="./blog/es/"        class="NotCurrent" title="                "> <span>blog      </span></a>
+  </nav>
+
+  <div class="container grid">
     <div class="card">
       <img src="./portfolio/images/searxng.svg" alt="searxng logo" title="searxng" width ="232" height="40">
       <div class="center">
         <hr>
-        Mi instancia de <a href="https://searx.arielparra.tech/">searxng</a> 
+        Mi instancia de searxng
+        <!--<a href="https://searx.arielparra.tech">searxng</a>-->
       </div>
     </div>
-
     <div class="card">
-      <img src="./portfolio/images/Codeforces.webp" alt="codeforces logo" title="codeforces" width ="265" height="30">
+      <img src="./portfolio/images/Codeforces.webp" alt="codeforces logo" title="codeforces" width ="236" height="30">
       <div class="center">
         <hr>
         Mi perfil de <a href="https://codeforces.com/profile/ravary">codeforces</a>
       </div>
     </div>
+  </div><!--container grid-->
 
-  </div><!-- container -->
-
+    
 </body>
 
 </html>

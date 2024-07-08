@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <base href="../../index.html">
+  <base href="https://arielparra.github.io/">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="Ariel Parra, website, blog">
-  <meta   name="description"     content="Ariel Parra Website!">
+  <meta   name="keywords"        content="Ariel Parra, 404">
+  <meta   name="description"     content="Pagina de error 404 de Ariel Parra">
   <meta   name="author"          content="Ariel Parra">
   <title> error 404 </title>
   <!-- CSS stylesheet -->
-  <link   rel="preload"          href="./style.css"        as="style">
+  <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts Preloads -->
   <link   rel="preload"          href="./js/cookies.js"     as="script">
   <link   rel="preload"          href="./js/language.js"    as="script">
-  <link   rel="preload"          href="./js/theme.js"  as="script">
-  <link   rel="preload"          href="./js/menu.js"   as="script">
-  <link   rel="preload"          href="./js/favicon.js"  as="script">
-  <link   rel="preload"          href="./404/joyDivision.js"as="script">
-  <link   rel="preload"          href="./404/esPath.js"     as="script">
+  <link   rel="preload"          href="./js/theme.js"       as="script">
+  <link   rel="preload"          href="./js/menu.js"        as="script">
+  <link   rel="preload"          href="./js/favicon.js"     as="script">
+  <link   rel="preload"          href="./js/joyDivision.js" as="script">
+  <link   rel="preload"          href="./js/enPath.js"      as="script">
   <link   rel="preload"          href="./main.js"           as="script">
   <!-- Java Scripts defers -->
   <script defer                  src ="./js/cookies.js">     </script>
   <script defer                  src ="./js/language.js">    </script>
-  <script defer                  src ="./js/theme.js">  </script>
-  <script defer                  src ="./js/menu.js">   </script>
-  <script defer                  src ="./js/favicon.js">  </script>
-  <script defer                  src ="./404/joyDivision.js"></script>
-  <script defer                  src ="./404/esPath.js">     </script>
+  <script defer                  src ="./js/theme.js">       </script>
+  <script defer                  src ="./js/menu.js">        </script>
+  <script defer                  src ="./js/favicon.js">     </script>
+  <script defer                  src ="./js/joyDivision.js"> </script>
+  <script defer                  src ="./js/enPath.js">      </script>
   <script defer                  src ="./main.js">           </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
@@ -38,41 +38,43 @@
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)" id="navButton"   data-nav-shown="true">Ocultar barra </button>
-    <button type="button" onclick="langButton(this)"                        title="Cambiar idioma a"> Inglés    </button>
-    <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Cambiar tema de color a"> 🌗 </button>
-  </div><!-- container -->
+    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">Hide Menu</button>
+    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Spanish</button>
+    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Change color theme to"> 🌗 </button>
+  </div><!-- Buttons -->
+
   <nav>
-    <a href="./es"             class="NotCurrent" title="Página Principal"><span>~/         </span></a>
-    <a href="./portfolio/es"   class="NotCurrent">                         <span>portafolio </span></a>
-    <a href="./achivements/es" class="NotCurrent">                         <span>logros     </span></a>  
-    <a href="./contact/es"     class="NotCurrent">                         <span>contacto   </span></a>
-    <a href="./blog/es"        class="NotCurrent">                         <span>blog       </span></a>  
+    <a href="./"             class="NotCurrent" title="Home Page"> <span>~/         </span></a>
+    <a href="./portfolio/"   class="NotCurrent" title="         "> <span>portfolio  </span></a>
+    <a href="./achivements/" class="NotCurrent" title="         "> <span>achivements</span></a>
+    <a href="./contact/"     class="NotCurrent" title="         "> <span>contact    </span></a>
+    <a href="./blog/"        class="NotCurrent" title="         "> <span>blog       </span></a>
   </nav>
 
-  <div class="container">
+<!--404.html for github.io site-->
 
+  <div class="container">
     <div class="card">
       <div class="center">
-        <h1>404 Página No Encontrada</h1> 
+        <h1>404 Página No Encontrada!</h1> 
         <p></p>
-        <button type="button" onclick="exportSVG(this)"                                              > Exportar SVG </button>
-      </div><!-- center -->
-    </div><!-- card     -->
-  </div><!-- container  -->
+        <button type="button" onclick="exportSVG(this)"> Exportar SVG </button>
+      </div><!--center-->
+    </div><!--card-->
+  </div><!--container-->
 
-  <div class="container" style="overflow: hidden;">
+  <div class="container">
     <div class="center">
       <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
-        <!-- Background -->
+        <!--background-->
         <rect width="625px" height="593px" fill="var(--HTML_BG)" />
-      
-        <!-- Lines -->
+
+        <!--lines-->
         <g id="lines" fill="none" stroke="var(--text)" stroke-width="1.2"></g>
       </svg>
-    </div><!-- center -->
-  </div><!-- container -->
-
+    </div><!--center-->
+  </div><!--container-->
+    
 </body>
 
 </html>

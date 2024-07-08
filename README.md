@@ -3,16 +3,16 @@ Previously arielparra.tech
 My simple website made with simple and plain html + css + javascript while trying to follow HTML5 standarts.
 I made my own mobile responsivenes, auto language detection, desing, animations, etc. 
 I like small websites without the need for bloated web frameworks.
-I also developed my own Python-based images site generator called `md2html.py`, which enables me to create custom HTML websites while increasing efficiency by 45%
+I also developed my own Python-based images site generator called `md2html.py`, which enables me to create custom HTML websites while increasing efficiency by 45% and I also use a Makefile to make each site I want.
+
 
 # Todo List:
 
-- [ ] Linkback based on start by window.location.href
 - [x] fix mobile width in 404 (fixed with style="overflow: hidden;">)
 - [ ] blogs
 - [ ] js to detect code class="C++" and color C++ syntax correctly
 
-# Images credits
+# Image credits
 
 - **./images/foto.webp** used under fair use from https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/
 - **./blog/images/hammer.webp** image inspired from Piotr Siedlecki's "Hammer And Wrench Black Silhouette" recovered from: https://www.publicdomainpictures.net/en/view-image.php?image=278182&picture=hammer-and-wrench-black-silhouette

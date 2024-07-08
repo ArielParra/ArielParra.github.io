@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <base href="../../">
+  <base href="../">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
@@ -34,26 +34,26 @@
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">Mostrar Menú</button>
-    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Inglés</button>
-    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Cambiar tema de color a"> 🌗 </button>
+    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">Hide Menu</button>
+    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Spanish</button>
+    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Change color theme to"> 🌗 </button>
   </div><!-- Buttons -->
 
   <nav>
-    <a href="./es/"             class="NotCurrent" title="Página Principal"> <span>~/        </span></a>
-    <a href="./portfolio/es/"   class="NotCurrent" title="                "> <span>portafolio</span></a>
-    <a href="./achivements/es/" class="NotCurrent" title="                "> <span>logros    </span></a>
-    <a href="./contact/es/"     class="NotCurrent" title="                "> <span>contacto  </span></a>
-    <a href="./blog/es/"        class="current"    title="                "> <span>blog      </span></a>
+    <a href="./"             class="NotCurrent" title="Home Page"> <span>~/         </span></a>
+    <a href="./portfolio/"   class="NotCurrent" title="         "> <span>portfolio  </span></a>
+    <a href="./achivements/" class="NotCurrent" title="         "> <span>achivements</span></a>
+    <a href="./contact/"     class="NotCurrent" title="         "> <span>contact    </span></a>
+    <a href="./blog/"        class="current"    title="         "> <span>blog       </span></a>
   </nav>
 
   <div class="container">
     <div class="card">
       <hr>
       <div class="center">
-        <h3>Blogs en construcción!</h3>
+        <h3>Blogs under construction!</h3>
       </div>
-      <img src="./blog/images/hammer.webp" alt="martillo" title="Trabajando!" width="100" height="100">
+      <img src="./blog/images/hammer.webp" alt="hammer" title="Working on it!" width="100" height="100">
       <!--Image inspired from Piotr Siedlecki's "Hammer And Wrench Black Silhouette" recovered from: https://www.publicdomainpictures.net/en/view-image.php?image=278182&picture=hammer-and-wrench-black-silhouette-->
       <div class="progress-bar">
         <div class="progress" style="width: 5%;"></div>
@@ -64,10 +64,10 @@
 
   <div class="container">
     <div class="card">
-      <img src="./blog/images/webDev.png" alt="Imagen de desarrollo web" title="Sin frameworks!" width="280" height="180">
+      <img src="./blog/images/webDev.png" alt="Web development image" title="No web frameworks!" width="280" height="180">
       <div class="center">
         <hr>
-        Desarrollo web simple HTML + CSS + JS
+        <a href="./blog/webDev">Simple web development HTML + CSS + JS</a>
       </div>
     </div><!--card-->
     <div class="card">
@@ -75,7 +75,7 @@
       <img src="./blog/images/cpp.png" alt="C++" title="learn as fast as nlogn" width="250" height="180">
       <div class="center">
         <hr>
-        programación en C++
+        <a href="./blog/cpp/">programming in C++</a>
       </div>
     </div> <!--card-->
     <div class="card">
@@ -83,7 +83,7 @@
       <img src="./blog/images/rabithole.png" alt="Linux rabithole" title="Pretty deep hole!" width="250" height="150">
       <div class="center">
         <hr>
-        Linux
+        <a href="./blog/linux">Linux</a>
       </div>
     </div><!--card-->
     <div class="card">
@@ -91,11 +91,10 @@
       <img src="./blog/images/servers.png" alt="Clouds" title="The cloud is just someone else's computer?" width="250" height="150">
       <div class="center">
         <hr>
-        Servidores y alojamiento
+        <a href="./blog/servers">Servers and hosting</a>
       </div>
     </div><!--card-->
   </div><!--container-->
-    
+    <footer>
 </body>
-
 </html>

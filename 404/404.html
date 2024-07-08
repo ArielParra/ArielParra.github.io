@@ -1,80 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 404.html for nginx  -->
+<!-- 404 redirect for nginx  -->
 
 <head>
-  <base href="https://arielparra.github.io/">
+  <base href="https://arielparra.github.io">
   <!-- Info -->
   <meta   charset="UTF-8">
-  <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="Ariel Parra, website, blog">
-  <meta   name="description"     content="Ariel Parra Website!">
-  <meta   name="author"          content="Ariel Parra">
   <title> 404 error </title>
   <!-- CSS stylesheet -->
-  <link   rel="preload"          href="./style.css"        as="style">
-  <link   rel="stylesheet"       href="./style.css">
-  <!-- Java Scripts Preloads -->
-  <link   rel="preload"          href="./js/cookies.js"     as="script">
-  <link   rel="preload"          href="./js/language.js"    as="script">
-  <link   rel="preload"          href="./js/theme.js"  as="script">
-  <link   rel="preload"          href="./js/menu.js"   as="script">
-  <link   rel="preload"          href="./js/favicon.js"  as="script">
-  <link   rel="preload"          href="./404/joyDivision.js"as="script">
-  <link   rel="preload"          href="./404/enPath.js"     as="script">
-  <link   rel="preload"          href="./main.js"           as="script">
-  <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">     </script>
-  <script defer                  src ="./js/language.js">    </script>
-  <script defer                  src ="./js/theme.js">  </script>
-  <script defer                  src ="./js/menu.js">   </script>
-  <script defer                  src ="./js/favicon.js">  </script>
-  <script defer                  src ="./404/joyDivision.js"></script>
-  <script defer                  src ="./404/enPath.js">     </script>  
-  <script defer                  src ="./main.js">           </script>
-  <!-- Favicons -->  
-  <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
+  <link   rel="preload"    href="./style.css" as="style">
+  <link   rel="stylesheet" href="./style.css">
+  <!-- Redirect -->
+  <meta http-equiv="refresh" content="0; URL=404.html">
 </head>
 
 <body>
-
-  <div class="container">
-    <button type="button" onclick="toggleMenu(this)" id="navButton"   data-nav-shown="true">Hide Menu</button>
-    <button type="button" onclick="langButton(this)"                        title="Change language to">Spanish</button>
-    <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Change color theme to"> 🌗 </button>
-  </div><!-- container -->
-
-  <nav>
-    <a href="./"             class="NotCurrent" title="Home Page"><span>~/         </span></a>
-    <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
-    <a href="./achivements/" class="NotCurrent">                  <span>achivements</span></a>  
-    <a href="./contact/"     class="NotCurrent">                  <span>contact    </span></a>
-    <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
-  </nav>
-
-  <div class="container">
-    <div class="card">
-      <div class="center">
-        <h1>404 Page Not Found!</h1> 
-        <p></p>
-        <button type="button" onclick="exportSVG(this)"                                              > Export SVG </button>
-      </div><!-- center -->
-    </div><!-- card     -->
-  </div><!-- container  -->
-
-  <div class="container" style="overflow: hidden;">
-    <div class="center">
-      <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
-        <!-- Background -->
-        <rect width="625px" height="593px" fill="var(--HTML_BG)" />
-      
-        <!-- Lines -->
-        <g id="lines" fill="none" stroke="var(--text)" stroke-width="1.2"></g>
-      </svg>
-    </div><!-- center -->
-  </div><!-- container -->
-
 </body>
 
 </html>

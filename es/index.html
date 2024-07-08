@@ -2,174 +2,143 @@
 <html lang="es">
 
 <head>
-  <base href="../index.html">
+  <base href="../">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="Ariel Parra,website, blog">
-  <meta   name="description"     content="Ariel Parra Website!">
+  <meta   name="keywords"        content="Ariel Parra, sitio, página">
+  <meta   name="description"     content="Página web de Ariel Parra!">
   <meta   name="author"          content="Ariel Parra">
   <title> arielparra.tech </title>
   <!-- CSS stylesheet -->
-  <link   rel="preload"          href="./style.css"        as="style">
+  <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts Preloads -->
-  <link   rel="preload"          href="./js/cookies.js"    as="script">
-  <link   rel="preload"          href="./js/language.js"   as="script">
-  <link   rel="preload"          href="./js/theme.js" as="script">
-  <link   rel="preload"          href="./js/menu.js"  as="script">
-  <link   rel="preload"          href="./js/favicon.js" as="script">
-  <link   rel="preload"          href="./main.js"          as="script">
+  <link   rel="preload"          href="./js/cookies.js"  as="script">
+  <link   rel="preload"          href="./js/language.js" as="script">
+  <link   rel="preload"          href="./js/theme.js"    as="script">
+  <link   rel="preload"          href="./js/menu.js"     as="script">
+  <link   rel="preload"          href="./js/favicon.js"  as="script">
+  <link   rel="preload"          href="./js/debug.js"    as="script">
+  <link   rel="preload"          href="./main.js"        as="script">
   <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">    </script>
-  <script defer                  src ="./js/language.js">   </script>
-  <script defer                  src ="./js/theme.js"> </script>
-  <script defer                  src ="./js/menu.js">  </script>
-  <script defer                  src ="./js/favicon.js"> </script>
-  <script defer                  src ="./main.js">          </script>
+  <script defer                  src ="./js/cookies.js">  </script>
+  <script defer                  src ="./js/language.js"> </script>
+  <script defer                  src ="./js/theme.js">    </script>
+  <script defer                  src ="./js/menu.js">     </script>
+  <script defer                  src ="./js/favicon.js">  </script>
+  <script defer                  src ="./js/debug.js">    </script>
+  <script defer                  src ="./main.js">        </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
 </head>
-  
+
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)" id="navButton"   data-nav-shown="true"> Ocultar barra</button>
-    <button type="button" onclick="langButton(this)"                        title="Cambiar idioma a"> Inglés    </button>
-    <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Cambiar tema de color a"> 🌗 </button>
-  </div><!-- container -->
+    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">Mostrar Menú</button>
+    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Inglés</button>
+    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Cambiar tema de color a"> 🌗 </button>
+  </div><!-- Buttons -->
+
   <nav>
-    <a href="./es"             class="current"    title="Página Principal"><span>~/         </span></a>
-    <a href="./portfolio/es"   class="NotCurrent">                         <span>portafolio </span></a>
-    <a href="./achivements/es" class="NotCurrent">                         <span>logros     </span></a>  
-    <a href="./contact/es"     class="NotCurrent">                         <span>contacto   </span></a>
-    <a href="./blog/es"        class="NotCurrent">                         <span>blog       </span></a>  
+    <a href="./es/"             class="current"    title="Página Principal"> <span>~/        </span></a>
+    <a href="./portfolio/es/"   class="NotCurrent" title="                "> <span>portafolio</span></a>
+    <a href="./achivements/es/" class="NotCurrent" title="                "> <span>logros    </span></a>
+    <a href="./contact/es/"     class="NotCurrent" title="                "> <span>contacto  </span></a>
+    <a href="./blog/es/"        class="NotCurrent" title="                "> <span>blog      </span></a>
   </nav>
-  
-  <div class="container">
 
+<div class="container">
     <div class="card">
-      <hr>
-        <!--
-          Temporal photo taken from:
-          https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/
-        -->
-        <img src="./images/foto.webp" alt="foto" title="yo">
-      <hr>
-      <div class="center">Mi foto</div>
-    </div><!-- card -->
-
+        <hr>
+<!--Foto tomada temporalmente de: https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/-->
+        <img src="./images/foto.webp" alt="mi foto" title="yo">   
+        <hr>
+        <div class="center">
+            <p>
+            Mi foto
+            </p>
+        </div>
+    </div> 
     <div class="card">
-      <hr>
-      <div class="center">
-        <h3>presentación</h3>
-      </div>
-      <hr>
-    
-      <div class="justify">
-        <p>
-        Hola soy Ariel Parra, tengo 20 años y soy un estudiante de ingeneria en
-        sistemas computacionales (ISC) en la UAA. Me gusta la programacion,
-        especialmente los lenguajes de C y C++, aunque usualmente suelo hacer
-        scripts de bash y llevo ya dos años usando Linux.
-        </p><p>
-        Tengo un servidor de Linux en casa para poder hosetar mis proyectos,
-        como por ejemplo esta pagina web.
-        </p>
-      </div>
-    </div><!-- card -->
-
+        <hr>
+        <div class="center">
+            <h3>presentación</h3>
+        </div> 
+        <hr>
+        <div class="justify">
+            <p>
+            Hola soy Ariel Parra, tengo 20 años y soy un estudiante de ingeneria en
+            sistemas computacionales (ISC) en la UAA. Me gusta la programacion,
+            especialmente los lenguajes de C y C++, aunque usualmente suelo hacer
+            scripts de bash y llevo ya dos años usando Linux.
+            </p>
+            <p>
+            Tengo un servidor de Linux en casa para poder hosetar mis proyectos,
+            como por ejemplo esta pagina web.
+            </p>
+        </div>
+    </div> 
     <div class="card">
-      <hr>
-      <div class="center">
-        <h3>gustos</h3>
-      </div>
-      <hr>
-      <div class="justify">
-        <p>
-        Me gustan los programas de codigo abierto y de ser posible utilizo cualquier alternativa "libre",
-        en lugar de las apliciones con codigo cerrado, las cuales tienen la capacidad de no trabajar como dicen.
-        </p><p>
-        Tambien me gusta la filosfia de programacion "KISS" (Keep It Simple Stupid), ya que los
-        proyectos "simples" suelen ser los que usan menos recursos y suelen ser más
-        costumizables.
-        </p>
-      </div>
-    </div><!-- card -->
-
+        <div class="center">
+            <h3>gustos</h3>
+        </div>
+        <hr>
+        <div class="justify">
+            <p>
+            Me gustan los programas de codigo abierto y de ser posible utilizo cualquier alternativa "libre",
+            en lugar de las apliciones con codigo cerrado, las cuales tienen la capacidad de no trabajar como dicen.
+            </p>
+            <p>
+            Tambien me gusta la filosfia de programacion "KISS" (Keep It Simple Stupid), ya que los
+            proyectos "simples" suelen ser los que usan menos recursos y suelen ser más
+            costumizables.
+            </p>
+        </div>
+    </div> 
     <div class="card">
-      <hr>
-      <div class="center">
-        <h3>habilidades</h3>
-      </div>
-      <hr>
+        <hr>
+        <div class="center">
+            <h3>habilidades</h3>
+        </div>
+        <hr>
         <p>
         "El conocimiento es poder" 
         -Francis Bacon
         </p>
-
         <div class="column">
-          Programación:
-          <ul>
-            <li>C</li> 
-            <li>C++</li>
-            <li>Python</li>
-          </ul>
-          Desarrollo de software:
-          <ul>
-            <li>Git</li>
-            <li>Vim</li>
-            <li>Docker</li>
-          </ul>
-        </div><!-- 1 column -->
-  
+            Programación:
+            <ul><li>C</li><li>C++</li><li>Python</li></ul>
+            Desarrollo de software:
+            <ul><li>Git</li><li>Vim</li><li>Docker</li></ul>
+        </div>
         <div class="column">
-          Sistemas operativos:
-          <ul>
-            <li>Linux</li>
-            <li>OpenBSD</li>
-            <li>MacOS</li>
-            <li>Windows</li>
-          </ul>
-          Desarrollo web:  
-          <ul>
-            <li>CSS</li> 
-            <li>HTML</li>
-            <li>Java Script</li>
-          </ul>
-        </div><!-- 2 column -->
-
-      </div><!-- card -->
-  
-    </div><!-- container -->
-   
-  <footer>
-    <a href="https://arielparra.tech/">                      <img src="./images/88x31_linkback.png"    class="img-88x31" alt="Linkback"           title="HTTP Seguro = HTTPS">   </a>
-    <a href="images/43rhCdPEoAZfGKzeASYYzGQi3BwBYJ4sKe1PjBjPcuNYXe8rkiMghrTH8fJqqt7i1jKMho7MnTj7hTnN7bMMaB79HjJgg9J.png">
-                                                             <img src="./images/88x31_monero.png"      class="img-88x31" alt="Donacion de Monero"    title="Doname con Monero"> </a>
-    <a href="https://github.com/ArielParra/" target="_blank"><img src="./images/88x31_github.png"      class="img-88x31" alt="Github"             title="Github">                </a>
-    <a href="mailto:admin@arielparra.tech">                  <img src="./images/88x31_email.png"       class="img-88x31" alt="email"              title="correo@arielparra.tech"></a>
-    <a href="https://www.nordtheme.com/"     target="_blank"><img src="./images/88x31_nord.png"        class="img-88x31" alt="Nord color pallete" title="Pagina del Tema Nord">  </a>
-                                                             <img src="./images/88x31_Mexico.png"      class="img-88x31" alt="Hecho en México!"    title="Hecho en México">
-                                                             <img src="./images/88x31_host-linux.png"  class="img-88x31" alt="self Host on linux" title="arm linux!">
-    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farielparra.tech&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
-                                                             <img src="./images/88x31_valid-css.png"   class="img-88x31" alt="Valid css"          title="CSS Valido">            </a>
-    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.tech" target="_blank">
-                                                             <img src="./images/88x31_valid-html.png"  class="img-88x31" alt="Valid html"         title="HTML Valido">           </a>
-  </footer>
-  
-
-  <div class="container">
+            Sistemas operativos:
+            <ul><li>Linux</li><li>OpenBSD</li><li>MacOS</li><li>Windows</li></ul>
+            Desarrollo web:   
+            <ul><li>CSS </li><li>HTML</li><li>Java Script</li></ul>
+        </div>
+    </div> 
+</div> 
+<footer>
+    <a href="https://arielparra.github.io/" target="_blank"><img src="./images/88x31_arielparra_github_io.png" class="img-88x31" alt="Linkback" title="HTTP Secure = HTTPS"></a>
+    <a href="./images/43rhCdPEoAZfGKzeASYYzGQi3BwBYJ4sKe1PjBjPcuNYXe8rkiMghrTH8fJqqt7i1jKMho7MnTj7hTnN7bMMaB79HjJgg9J.png" target="_blank"><img src="./images/88x31_monero.png" class="img-88x31" alt="Donacion de Monero" title="Doname con Monero"></a>
+    <a href="https://github.com/ArielParra/" target="_blank"><img src="./images/88x31_github.png" class="img-88x31" alt="Github" title="Github"></a>   
+    <a href="mailto:admin@arielparra.tech/" target="_blank"><img src="/images/88x31_email.png" class="img-88x31" alt="email" title="admin@arielparra.tech"></a>   
+    <a href="https://www.nordtheme.com" target=""><img src="/images/88x31_nord.png" class="img-88x31" alt="Tema de color Nord" title="Pagina del Tema Nord"></a>    
+    <img src="/images/88x31_Mexico.png" alt="Hecho en México!" title="Hecho en México!" class="img-88x31">   
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farielparra.github.ioh&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><img src="/images/88x31_valid-css.png" class="img-88x31" alt="CSS Valido" title="CSS Valido"></a>    
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io" target="_blank"><img src="/images/88x31_valid-html.png" class="img-88x31" alt="HTML Valido" title="HTML Valido"></a>
+</footer>
+<!--made with love-->
+<div class="container">
     <div class="center">
-      <p>hecho con ❤️ por Ariel Parra</p>
+        <p>hecho con ❤️ por Ariel Parra</p>
     </div>
-  </div><!-- made with love -->
-  <!-- 
-  <div class="container">
-    <button type="button" onclick="langButton()">lang</button>
-  </div>
-  -->
+</div>
+<!--<div class="container"> <button type="button" onclick="langButton()">lang</button></div>-->
+    
 </body>
-  
+
 </html>
-  

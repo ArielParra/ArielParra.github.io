@@ -34,7 +34,7 @@ blog_current: 0
             using Linux for two years.
             </p>
             <p>
-            I have a Linux server at home so I can host my projects, for example this
+            I have a Linux server at home so I can host my projects, for example this website.
             </p>
         </div>
     </div> 

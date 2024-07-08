@@ -2,48 +2,49 @@
 <html lang="en">
 
 <head>
-  <base href="../index.html">
+  <base href="../">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="Ariel Parra,website, blog">
-  <meta   name="description"     content="Ariel Parra Website!">
+  <meta   name="keywords"        content="Ariel Parra, contact">
+  <meta   name="description"     content="Ariel Parra contact information">
   <meta   name="author"          content="Ariel Parra">
   <title> contact </title>
   <!-- CSS stylesheet -->
-  <link   rel="preload"          href="./style.css"        as="style">
+  <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts Preloads -->
-  <link   rel="preload"          href="./js/cookies.js"    as="script">
-  <link   rel="preload"          href="./js/language.js"   as="script">
-  <link   rel="preload"          href="./js/theme.js" as="script">
-  <link   rel="preload"          href="./js/menu.js"  as="script">
-  <link   rel="preload"          href="./js/favicon.js" as="script">
-  <link   rel="preload"          href="./main.js"          as="script">
+  <link   rel="preload"          href="./js/cookies.js"  as="script">
+  <link   rel="preload"          href="./js/language.js" as="script">
+  <link   rel="preload"          href="./js/theme.js"    as="script">
+  <link   rel="preload"          href="./js/menu.js"     as="script">
+  <link   rel="preload"          href="./js/favicon.js"  as="script">
+  <link   rel="preload"          href="./main.js"        as="script">
   <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">    </script>
-  <script defer                  src ="./js/language.js">   </script>
-  <script defer                  src ="./js/theme.js"> </script>
-  <script defer                  src ="./js/menu.js">  </script>
-  <script defer                  src ="./js/favicon.js"> </script>
-  <script defer                  src ="./main.js">          </script>
+  <script defer                  src ="./js/cookies.js">  </script>
+  <script defer                  src ="./js/language.js"> </script>
+  <script defer                  src ="./js/theme.js">    </script>
+  <script defer                  src ="./js/menu.js">     </script>
+  <script defer                  src ="./js/favicon.js">  </script>
+  <script defer                  src ="./main.js">        </script>
   <!-- Favicons -->  
-  <link   rel="apple-touch-icon" href="./images/foto.webp"    type="image/webp" sizes="180x180">
+  <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
 </head>
 
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)" id="navButton"   data-nav-shown="true">Hide Menu</button>
-    <button type="button" onclick="langButton(this)"                        title="Change language to">Spanish</button>
-    <button type="button" onclick="toggleTheme(this)"      id="themeButton" title="Change color theme to"> 🌗 </button>
-  </div><!-- container -->
+    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">Hide Menu</button>
+    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Spanish</button>
+    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Change color theme to"> 🌗 </button>
+  </div><!-- Buttons -->
+
   <nav>
-    <a href="./"             class="NotCurrent" title="Home Page"><span>~/         </span></a>
-    <a href="./portfolio/"   class="NotCurrent">                  <span>portfolio  </span></a>
-    <a href="./achivements/" class="NotCurrent">                  <span>achivements</span></a>  
-    <a href="./contact/"     class="current">                     <span>contact    </span></a>
-    <a href="./blog/"        class="NotCurrent">                  <span>blog       </span></a>  
+    <a href="./"             class="NotCurrent" title="Home Page"> <span>~/         </span></a>
+    <a href="./portfolio/"   class="NotCurrent" title="         "> <span>portfolio  </span></a>
+    <a href="./achivements/" class="NotCurrent" title="         "> <span>achivements</span></a>
+    <a href="./contact/"     class="current"    title="         "> <span>contact    </span></a>
+    <a href="./blog/"        class="NotCurrent" title="         "> <span>blog       </span></a>
   </nav>
 
   <div class="container grid">
@@ -54,17 +55,16 @@
         Discord: ravarygamer212
       </div>
     </div>
-
     <div class="card">
-      <img src="./contact/images/email.png"  alt="email" title="email" width="58" height="38" style="image-rendering: pixelated;">
+      <img src="./contact/images/email.png" alt="email" title="email" width="58" height="38" style="image-rendering: pixelated;">
       <div class="center">
         <hr>
         email: admin@arielparra.tech
       </div>
     </div>
+  </div><!--container-->
 
-  </div><!-- container -->
-
+    
 </body>
 
 </html>
