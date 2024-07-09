@@ -3,10 +3,9 @@ lang: en
 base_href: ./
 keywords: [Ariel Parra, website]
 description: Ariel Parra Website!
-title: arielparra.tech
+title: Ariel Parra
 js: [cookies, language, theme, menu, favicon, debug, main]
 nav_current: 1
-blog_current: 0
 ---
 <div class="container">
     <div class="card">
@@ -90,9 +89,9 @@ blog_current: 0
     [![class="img-88x31" alt="Monero donation" title="Donate me some Monero"](./images/88x31_monero.png)](./images/43rhCdPEoAZfGKzeASYYzGQi3BwBYJ4sKe1PjBjPcuNYXe8rkiMghrTH8fJqqt7i1jKMho7MnTj7hTnN7bMMaB79HjJgg9J.png){:target="_blank"}
     [![class="img-88x31" alt="Github" title="Github"](./images/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}   
     [![class="img-88x31" alt="email" title="admin@arielparra.tech"](/images/88x31_email.png)](mailto:admin@arielparra.tech/){:target="_blank"}   
-    [![class="img-88x31" alt="Nord color pallete" title="Nord theme website"](/images/88x31_nord.png)](https://www.nordtheme.com){:target=""}    
+    [![class="img-88x31" alt="Nord color pallete" title="Nord theme website"](/images/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}    
     ![alt="Made in Mexico!" title="Made in Mexico!" class="img-88x31"](/images/88x31_Mexico.png)   
-    [![class="img-88x31" alt="Valid CSS" title="Valid CSS"](/images/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Farielparra.github.io&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en){:target="_blank"}    
+    [![class="img-88x31" alt="Valid CSS" title="Valid CSS"](/images/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io){:target="_blank"}    
     [![class="img-88x31" alt="Valid HTML" title="Valid HTML"](/images/88x31_valid-html.png)](https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io){:target="_blank"}  
 </footer>
 []: <> ("made with love")

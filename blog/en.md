@@ -6,7 +6,6 @@ description: Ariel Parra blog
 title: blog
 js: [cookies, language, theme, menu, favicon, main]
 nav_current: 5
-blog_current: 0
 ---
   <div class="container">
     <div class="card">

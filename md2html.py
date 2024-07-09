@@ -23,6 +23,7 @@ def md_to_html(md_content):
     md_content = re.sub(r'\[([^\]]+)\]\((.*?)\){:(.*?)}', r'<a href="\2" \3>\1</a>', md_content)
     md_content = re.sub(r'\[([^\]]+)\]\((.*?)\)', r'<a href="\2">\1</a>', md_content)
     md_content = re.sub(r'##### (.*?)\n', r'<h5>\1</h5>\n', md_content)
+    md_content = re.sub(r'#### (.*?)\n', r'<h4>\1</h4>\n', md_content)
     md_content = re.sub(r'### (.*?)\n', r'<h3>\1</h3>\n', md_content)
     md_content = re.sub(r'## (.*?)\n', r'<h2>\1</h2>\n', md_content)
     md_content = re.sub(r'# (.*?)\n', r'<h1>\1</h1>\n', md_content)
@@ -30,6 +31,9 @@ def md_to_html(md_content):
     md_content = re.sub(r'(- .*)', r'<li>\1</li>', md_content)
     md_content = re.sub(r'<li>- (.*?)</li>', r'<ul><li>\1</li></ul>', md_content, flags=re.DOTALL)
     md_content = re.sub(r'</ul>\s*<ul>', '', md_content)  # Merge consecutive <ul> tags
+    md_content = re.sub(r'\*\*\*(.*?)\*\*\*', r'<strong><em>\1</em></strong>', md_content)
+    md_content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', md_content)
+    md_content = re.sub(r'\*(.*?)\*', r'<em>\1</em>', md_content)
     return md_content
 
 def generate_html(md_dict, md_content):
@@ -37,7 +41,7 @@ def generate_html(md_dict, md_content):
     cpp_label_text = "C++"
     linux_label_text = "Linux"
     portfolio_path = "./portfolio/"
-    achivements_path = "./achivements/"
+    achievements_path = "./achievements/"
     contact_path = "./contact/"
     home_path = "./"
     blog_path = "./blog/"
@@ -49,7 +53,7 @@ def generate_html(md_dict, md_content):
     if language == "en":
         home_title_text = "Home Page"
         portfolio_label_text = "portfolio"
-        achivements_label_text = "achivements"
+        achievements_label_text = "achievements"
         contact_label_text = "contact"
         webDev_label_text = "Web dev"
         servers_label_text = "Servers"
@@ -57,13 +61,13 @@ def generate_html(md_dict, md_content):
     else:  # Spanish
         home_title_text = "Página Principal"
         portfolio_label_text = "portafolio"
-        achivements_label_text = "logros"
+        achievements_label_text = "logros"
         contact_label_text = "contacto"
         webDev_label_text = "Desarrollo Web"
         servers_label_text = "Servidores"
         servers_label_text = "Servidores"
         portfolio_path += es_path
-        achivements_path += es_path
+        achievements_path += es_path
         contact_path += es_path
         home_path += es_path
         blog_path += es_path
@@ -75,7 +79,7 @@ def generate_html(md_dict, md_content):
     nav_items = [
         {"href": home_path, "title": home_title_text, "label": "~/"},
         {"href": portfolio_path, "title": "", "label": portfolio_label_text},
-        {"href": achivements_path, "title": "", "label": achivements_label_text},
+        {"href": achievements_path, "title": "", "label": achievements_label_text},
         {"href": contact_path, "title": "", "label": contact_label_text},
         {"href": blog_path, "title": "", "label": "blog"},
     ]
@@ -89,7 +93,11 @@ def generate_html(md_dict, md_content):
 
     
     nav_current = int(md_dict['nav_current'])
-    blog_current = int(md_dict['blog_current'])
+    blog_current =  md_dict.get('blog_current')
+    if blog_current != None:
+            blog_current = int(blog_current)
+    else:
+        blog_current = 0
     html_content = f"""<!DOCTYPE html>
 <html lang="{language}">
 
@@ -214,7 +222,10 @@ def generate_html(md_dict, md_content):
 </div><!--filters container-->
 """
     # blog menu
-    if blog_current != 0: 
+    blog_menu =  md_dict.get('blog_menu')
+    if blog_menu != None:
+        blog_menu = int(blog_menu)
+    if blog_current != 0 and blog_menu == 1: 
         html_content += """  <nav>"""
         
         for idx, item in enumerate(blog_items, start=1):
@@ -222,12 +233,48 @@ def generate_html(md_dict, md_content):
             html_content += f'    <a href="{item["href"]}" class="{class_name}" title="{item["title"]}"> <span>{item["label"]}</span></a>\n'
         html_content += """  </nav>
     """
+    blog_number =  md_dict.get('blog_number')
+    if blog_number != None:
+        blog_number = int(blog_number)
+        if blog_number == 1:
+            previous_number = ''
+        else: 
+            previous_number = blog_number - 1
+        for idx, item in enumerate(blog_items, start=1):
+            if idx == blog_current:
+                span_title_text = item["label"]
+                blog_path = item["href"]
+
+        # Calculate maximum lengths
+        max_href_length = max(len(previous_number),len(str(blog_number)) +1, len(str(blog_number + 1)))
+        max_span_length = len(span_title_text)
+        # Build HTML navigation with dynamic spacing
+        html_content += f"""
+  <nav>
+    <a href="{blog_path}{previous_number}"{' ' * (max_href_length - len(f"{previous_number}"))} title="previous blog"> <span> ← </span>{' ' * (max_span_length - 3)}</a>
+    <a href="{blog_path}#{blog_number}"{' ' * (max_href_length - len(f"#{blog_number}"))} title="blog homepage"> <span>{span_title_text}</span></a>
+    <a href="{blog_path}{blog_number + 1}"{' ' * (max_href_length - len(f"{blog_number + 1}"))} title="next blog">     <span> → </span>{' ' * (max_span_length - 3)}</a>
+  </nav>
+"""
+    # all the content from md file
     html_content += md_to_html(md_content)
-    html_content += """
-    
+
+    # end of the blog navigation
+    if blog_number != None:
+        html_content += f"""
+  <nav>
+    <a href="{blog_path}{previous_number}"{' ' * (max_href_length - len(f"{previous_number}"))} title="previous blog"> <span> ← </span>{' ' * (max_span_length - 3)}</a>
+    <a href="{blog_path}#{blog_number}"{' ' * (max_href_length - len(f"#{blog_number}"))} title="blog homepage"> <span>{span_title_text}</span></a>
+    <a href="{blog_path}{blog_number + 1}"{' ' * (max_href_length - len(f"{blog_number + 1}"))} title="next blog">     <span> → </span>{' ' * (max_span_length - 3)}</a>
+  </nav>
+"""
+        
+    html_content += """ 
 </body>
 
 </html>"""
+
+
     return html_content
 
 def main():

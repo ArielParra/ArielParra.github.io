@@ -1,12 +1,11 @@
 ---
 lang: en
 base_href: ../
-keywords: [Ariel Parra, certifications, certificates, badges, achivements, degree, diploma]
-description: Ariel Parra mutiple achivements
-title: achivements
+keywords: [Ariel Parra, certifications, certificates, badges, achievements, degree, diploma]
+description: Ariel Parra mutiple achievements
+title: achievements
 js: [cookies, language, theme, menu, favicon, tags, main]
 nav_current: 3
-blog_current: 0
 ---
 <div class="container">
     <div class="card" data-tags="degree">
@@ -38,7 +37,7 @@ blog_current: 0
   </div>[]: <> ("container Elements")
   <div class="container grid max-width">
     <div class="card" data-tags="certification cybersecurity">
-      ![alt:"Security Fundamentals certification picture"](./achivements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
+      ![alt="Security Fundamentals certification picture"](./achievements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">
         <p>
           Security, Compliance, and Identity Fundamentals certification issued by Microsoft
@@ -47,7 +46,7 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certification devops">
-      ![alt:"GitHub Foundations certification picture"](./achivements/images/GH_Foundations.png)
+      ![alt="GitHub Foundations certification picture"](./achievements/images/GH_Foundations.png)
       <div class="center">
         <p>
           GitHub Foundations certification issued by GitHub
@@ -67,7 +66,7 @@ blog_current: 0
   </div>[]: <> ("container Elements")
   <div class="container grid max-width">
     <div class="card" data-tags="certificate devops">
-      ![alt:"Linkedin GitHub certificate picture"](./achivements/images/Linkedin_Career_Essentials_in_GitHub.webp)
+      ![alt="Linkedin GitHub certificate picture"](./achievements/images/Linkedin_Career_Essentials_in_GitHub.webp)
       <div class="center">
         <p>
           Career Essentials in GitHub Professional Certificate issued by Linkedin
@@ -76,7 +75,7 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certificate devops">
-      ![alt:"GitLab CI Fundamentals certificate picture"](./achivements/images/GitLab_CI_Fundamentals.png)
+      ![alt="GitLab CI Fundamentals certificate picture"](./achievements/images/GitLab_CI_Fundamentals.png)
       <div class="center">
         <p>
           GitLab CI Fundamentals certificate issued by GitLab
@@ -85,7 +84,7 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certificate progamming">
-      ![alt:"Oracle One Program certificate picture"](./achivements/images/Oracle_One_Programa.png)
+      ![alt="Oracle One Program certificate picture"](./achievements/images/Oracle_One_Programa.png)
       <div class="center">
         <p>
           Oracle Next Education Back-end certificate issued by Alura and Oracle
@@ -94,7 +93,7 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certificate progamming">
-      ![alt:"Oracle One Program certificate picture"](./achivements/images/Oracle_One_Java_y_Spring_Boot.png)
+      ![alt="Oracle One Program certificate picture"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
       <div class="center">
         <p>
           Java and Spring Boot certificate issued by Alura and Oracle
@@ -103,56 +102,56 @@ blog_current: 0
       </div>
     </div>
     <div class="card" data-tags="certificate datascience ai">
-      ![alt:"BLOCKMAKERS AI certificate picture"](./achivements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
+      ![alt="BLOCKMAKERS AI certificate picture"](./achievements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
       <div class="center">
         <p>
           Artifitial inteligence and data science certificate issued by Blockmakers
-          [PDF](./achivements/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf)
+          [PDF](./achievements/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain progamming">
-     ![alt:"BLOCKMAKERS solidity certificate picture" title:""](./achivements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
+     ![alt="BLOCKMAKERS solidity certificate picture" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
       <div class="center">
         <p>
           Solidity bootcamp certificate issued by Blockmakers
-          [PDF](./achivements/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf)
+          [PDF](./achievements/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain">
-      ![alt:"BLOCKMAKERS blockchain certificate picture"](./achivements/images/BLOCKMAKERS_Blockchain.png)
+      ![alt="BLOCKMAKERS blockchain certificate picture"](./achievements/images/BLOCKMAKERS_Blockchain.png)
       <div class="center">
         <p>
           Blockchain consultant certificate issued by Blockmakers
-          [PDF](./achivements/docs/BLOCKMAKERS_Blockchain.pdf)
+          [PDF](./achievements/docs/BLOCKMAKERS_Blockchain.pdf)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain progamming">
-      ![alt:"ICP Azle certificate picture"](./achivements/images/ICP_Developer_Azle.png)
+      ![alt="ICP Azle certificate picture"](./achievements/images/ICP_Developer_Azle.png)
       <div class="center">
         <p>
           Developer in Azle certificate issued by Internet Computer  (ICP)
-          [PDF](./achivements/docs/ICP_Developer_Azle.pdf)
+          [PDF](./achievements/docs/ICP_Developer_Azle.pdf)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate">
-      ![alt:"Condusef Diploma picture"](./achivements/images/Diploma_CONDUSEF.png)
+      ![alt="Condusef Diploma picture"](./achievements/images/Diploma_CONDUSEF.png)
       <div class="center">
         <p>
           Financial education diploma issued by CONDUSEF
-          [PDF](./achivements/docs/Diploma_CONDUSEF.pdf)
+          [PDF](./achievements/docs/Diploma_CONDUSEF.pdf)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate">
-      ![alt:"Compu Cuantrix certificate picture"](./achivements/images/Compu_Cuantrix_nivel_avanzado.png)
+      ![alt="Compu Cuantrix certificate picture"](./achievements/images/Compu_Cuantrix_nivel_avanzado.png)
       <div class="center">
         <p>
           Compu Cuantrix advance level course certificate issued by Televisa Foundation
-          [PDF](./achivements/docs/Compu_Cuantrix_nivel_avanzado.pdf)
+          [PDF](./achievements/docs/Compu_Cuantrix_nivel_avanzado.pdf)
         </p>
       </div>
     </div>
@@ -168,7 +167,7 @@ blog_current: 0
   </div>[]: <> ("container Elements")
   <div class="container grid max-width">
     <div class="card" data-tags="badge cloud networks">
-      ![alt:"Z Xplore badge picture"](./achivements/images/IBM_ZXplore_Concepts.png)
+      ![alt="Z Xplore badge picture"](./achievements/images/IBM_ZXplore_Concepts.png)
       <div class="center">
         <p>
           IBM Z Xplore Concepts badge issued by IBM

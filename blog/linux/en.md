@@ -1,106 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <base href="../../">
-  <!-- Info -->
-  <meta   charset="UTF-8">
-  <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="Ariel Parra, blog, linux">
-  <meta   name="description"     content="Ariel Parra linux blog">
-  <meta   name="author"          content="Ariel Parra">
-  <title> linux blog </title>
-  <!-- CSS stylesheet -->
-  <link   rel="preload"          href="./style.css" as="style">
-  <link   rel="stylesheet"       href="./style.css">
-  <!-- Java Scripts Preloads -->
-  <link   rel="preload"          href="./js/cookies.js"  as="script">
-  <link   rel="preload"          href="./js/language.js" as="script">
-  <link   rel="preload"          href="./js/theme.js"    as="script">
-  <link   rel="preload"          href="./js/menu.js"     as="script">
-  <link   rel="preload"          href="./js/favicon.js"  as="script">
-  <link   rel="preload"          href="./main.js"        as="script">
-  <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">  </script>
-  <script defer                  src ="./js/language.js"> </script>
-  <script defer                  src ="./js/theme.js">    </script>
-  <script defer                  src ="./js/menu.js">     </script>
-  <script defer                  src ="./js/favicon.js">  </script>
-  <script defer                  src ="./main.js">        </script>
-  <!-- Favicons -->  
-  <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
-</head>
-
-<body>
-
-  <div class="container">
-    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">Hide Menu</button>
-    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Spanish</button>
-    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Change color theme to"> 🌗 </button>
-  </div><!-- Buttons -->
-
-  <nav>
-    <a href="./"              class="NotCurrent" title="Home Page"> <span>~/          </span></a>
-    <a href="./portfolio/"    class="NotCurrent" title="         "> <span>portfolio   </span></a>
-    <a href="./achievements/" class="NotCurrent" title="         "> <span>achievements</span></a>
-    <a href="./contact/"      class="NotCurrent" title="         "> <span>contact     </span></a>
-    <a href="./blog/"         class="current"    title="         "> <span>blog        </span></a>
-  </nav>
-  <nav>    <a href="./blog/webDev/" class="NotCurrent" title="Home Page"> <span>Web dev</span></a>
-    <a href="./blog/competitive/" class="NotCurrent" title=""> <span>C++</span></a>
-    <a href="./blog/linux/" class="current" title=""> <span>Linux</span></a>
-    <a href="./blog/servers/" class="NotCurrent" title=""> <span>Servers</span></a>
-  </nav>
-    
+---
+lang: en
+base_href: ../../
+keywords: [Ariel Parra, blog, linux]
+description: Ariel Parra linux blog
+title: linux blog
+js: [cookies, language, theme, menu, favicon, main] 
+nav_current: 5
+blog_menu: 1
+blog_current: 3
+---
   <div class="container">
     <div class="card" id="#1">
       <hr>
       <div class="center">     
-        <h3>1. What is Linux?</h3>
-        <a href="./blog/linux/#1" class="hidden-link">⤷</a>
+        ### 1. What is Linux?
+        [⤷](./blog/linux/#1){:class="hidden-link"}
       </div>
       <hr>
     </div>
-  </div><!--container Title-->
+  </div>[]: <> ("container Title")
 
   <div class="container">
     <div class="card">
       <div class="center">
-        <a href="./blog/linux/1/#1">1.1 Definition</a>  
+        [1.1 Definition](./blog/linux/1/#1)  
       </div>
     </div>
     <div class="card">
       <div class="center">
-        <a href="./blog/linux/1/#2">1.2 History</a>  
+        [1.2 History](./blog/linux/1/#2)  
       </div>
     </div>
     <div class="card">
       <div class="center">
-        <a href="./blog/linux/1/#3">1.3 Philosophy</a>  
+        [1.3 Philosophy](./blog/linux/1/#3)  
       </div>
     </div>
     <div class="card">
       <div class="center">
-        <a href="./blog/linux/1/#4">1.4 Cross Platforms</a>  
+        [1.4 Cross Platforms](./blog/linux/1/#4)  
       </div>
     </div>
-  </div><!--container Elements-->
+  </div>[]: <> ("container Elements")
 
   <div class="container">
     <div class="card" id="#2">
       <hr>
       <div class="center">     
-        <h3>2. Related topics</h3>
-        <a href="./blog/linux/#2" class="hidden-link">⤷</a>
+        ### 2. Related topics
+        [⤷](./blog/linux/#2){:class="hidden-link"}
       </div>
       <hr>
     </div>
-  </div><!--container Title-->
+  </div>[]: <> ("container Title")
 
   <div class="container">
     <div class="card">
       <div class="center">
-        <a href="./blog/linux/2/#1">2.1 UNIX</a>
+        [2.1 UNIX](./blog/linux/2/#1)
       </div>
     </div>
     <div class="card">
@@ -121,17 +78,17 @@
     <div class="card">
       <div class="center">2.7 Ricing</div>
     </div>
-  </div><!--container Elements-->
+  </div>[]: <> ("container Elements")
 
   <div class="container">
     <div class="card">
       <hr>
       <div class="center">     
-        <h3>3. Comparison of Operating Systems</h3>
+        ### 3. Comparison of Operating Systems
       </div>
       <hr>
     </div>
-  </div><!--container Title-->
+  </div>[]: <> ("container Title")
 
   <div class="container">
     <div class="card">
@@ -156,17 +113,17 @@
       <div class="center">3.5 Hardware</div>
     </div>
     
-  </div><!--container Elements-->
+  </div>[]: <> ("container Elements")
 
   <div class="container">
     <div class="card">
       <hr>
         <div class="center">     
-            <h3>4. Linux Distributions</h3>
+            ### 4. Linux Distributions
         </div>
       <hr>
     </div>
-  </div><!--container Title-->
+  </div>[]: <> ("container Title")
 
   <div class="container">
     <div class="card">
@@ -184,17 +141,17 @@
     <div class="card">
       <div class="center">4.5 ChromeOS</div>
     </div>
-  </div><!--container Elements-->
+  </div>[]: <> ("container Elements")
 
   <div class="container">
     <div class="card">
       <hr>
       <div class="center">      
-        <h3>5. Standarization and linux insides</h3>
+        ### 5. Standarization and linux insides
       </div>
       <hr>
     </div>
-  </div><!--container Title-->
+  </div>[]: <> ("container Title")
 
   <div class="container">
     <div class="card">
@@ -209,17 +166,17 @@
     <div class="card">
       <div class="center">5.3 Interfaces</div>
     </div>
-  </div><!--container Elements-->
+  </div>[]: <> ("container Elements")
 
   <div class="container">
     <div class="card">
       <hr>  
       <div class="center">        
-        <h3>6. Command Line</h3>
+        ### 6. Command Line
       </div>
       <hr>
     </div>
-  </div><!--container Title-->
+  </div>[]: <> ("container Title")
 
   <div class="container">
     <div class="card">
@@ -252,19 +209,14 @@
     <div class="card">
       <div class="center">6.10 Extra Commands</div>
     </div>
-  </div><!--container Elements-->
+  </div>[]: <> ("container Elements")
 
   <div class="container">
     <div class="card">
       <hr>
       <div class="center">          
-        <h3>7. Youtubers I Recommended</h3>
+        ### 7. Youtubers I Recommended
       </div>
       <hr>
     </div>
-  </div><!--container Title-->
-
-    
-</body>
-
-</html>
+  </div>[]: <> ("container Title")

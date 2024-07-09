@@ -16,12 +16,12 @@ contact_en_path := $(call FixPath,./contact/en.md)
 contact_es_path := $(call FixPath,./contact/es/es.md)
 blog_en_path := $(call FixPath,./blog/en.md)
 blog_es_path := $(call FixPath,./blog/es/es.md)
-achivements_en_path := $(call FixPath,./achivements/en.md)
-achivements_es_path := $(call FixPath,./achivements/es/es.md)
+achievements_en_path := $(call FixPath,./achievements/en.md)
+achievements_es_path := $(call FixPath,./achievements/es/es.md)
 404_en_path := $(call FixPath,./404.md)
 404_es_path := $(call FixPath,./404/es/es.md) 
 
-all: index portfolio contact blog achivements 404
+all: index portfolio contact blog achievements 404
 
 index: $(index_en_path) $(index_es_path)
 	$(CC) $(call FixPath,$(script)) $(index_en_path) $(call FixPath,./index.html)
@@ -39,9 +39,9 @@ blog: $(blog_en_path) $(blog_es_path)
 	$(CC) $(call FixPath,$(script)) $(blog_en_path) $(call FixPath,./blog/index.html)
 	$(CC) $(call FixPath,$(script)) $(blog_es_path) $(call FixPath,./blog/es/index.html)
 
-achivements: $(achivements_en_path) $(achivements_es_path)
-	$(CC) $(call FixPath,$(script)) $(achivements_en_path) $(call FixPath,./achivements/index.html)
-	$(CC) $(call FixPath,$(script)) $(achivements_es_path) $(call FixPath,./achivements/es/index.html)
+achievements: $(achievements_en_path) $(achievements_es_path)
+	$(CC) $(call FixPath,$(script)) $(achievements_en_path) $(call FixPath,./achievements/index.html)
+	$(CC) $(call FixPath,$(script)) $(achievements_es_path) $(call FixPath,./achievements/es/index.html)
 
 404: $(404_en_path) $(404_es_path)
 	$(CC) $(call FixPath,$(script)) $(404_en_path) $(call FixPath,./404.html)
@@ -54,7 +54,7 @@ clean:
 	rm -f $(call FixPath,./portfolio/index.html) $(call FixPath,./portfolio/es/index.html)
 	rm -f $(call FixPath,./contact/index.html) $(call FixPath,./contact/es/index.html)
 	rm -f $(call FixPath,./blog/index.html) $(call FixPath,./blog/es/index.html)
-	rm -f $(call FixPath,./achivements/index.html) $(call FixPath,./achivements/es/index.html)
+	rm -f $(call FixPath,./achievements/index.html) $(call FixPath,./achievements/es/index.html)
 	rm -f $(call FixPath,./404.html) $(call FixPath,./404/es/index.html)
 
 .PHONY: all clean

@@ -1,12 +1,11 @@
 ---
-lang: en
+lang: es
 base_href: https://arielparra.github.io/
 keywords: [Ariel Parra, 404]
 description: Pagina de error 404 de Ariel Parra
 title: error 404 
 js: [cookies, language, theme, menu, favicon, joyDivision, main]
 nav_current: 0
-blog_current: 0
 ---
 []: <> ("404.html for github.io site")
 

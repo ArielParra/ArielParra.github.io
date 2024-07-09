@@ -6,7 +6,6 @@ description: Ariel Parra blog
 title: blog
 js: [cookies, language, theme, menu, favicon, main]
 nav_current: 5
-blog_current: 0
 ---
   <div class="container">
     <div class="card">
@@ -17,7 +16,7 @@ blog_current: 0
       ![alt="martillo" title="Trabajando!" width="100" height="100"](./blog/images/hammer.webp)
       []: <> ("Image inspired from Piotr Siedlecki's "Hammer And Wrench Black Silhouette" recovered from: https://www.publicdomainpictures.net/en/view-image.php?image=278182&picture=hammer-and-wrench-black-silhouette")
       <div class="progress-bar">
-        <div class="progress" style="width: 5%;"></div>
+        <div class="progress" style="width: 1%;"></div>
       </div>
       <hr>  
     </div>

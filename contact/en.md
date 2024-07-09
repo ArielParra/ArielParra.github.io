@@ -6,7 +6,6 @@ description: Ariel Parra contact information
 title: contact
 js: [cookies, language, theme, menu, favicon, main]
 nav_current: 4
-blog_current: 0
 ---
   <div class="container grid">
     <div class="card">

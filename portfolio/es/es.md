@@ -6,7 +6,6 @@ description: Portafolio de Ariel Parra
 title: portafolio
 js: [cookies, language, theme, menu, favicon, main]
 nav_current: 2
-blog_current: 0
 ---
   <div class="container grid">
     <div class="card">
