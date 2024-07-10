@@ -33,7 +33,7 @@ def md_to_html(md_content):
     md_content = re.sub(r'\*\*\*(.*?)\*\*\*', r'<strong><em>\1</em></strong>', md_content)
     md_content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', md_content)
     md_content = re.sub(r'\*(.*?)\*', r'<em>\1</em>', md_content)
-    md_content = re.sub(r'\[comment\]: <> \(\n?(.*?)\n?\)', r'<!-- \1 -->', md_content, flags=re.DOTALL)
+    md_content = re.sub(r'\[comment\]: <> \(\n?(.*?)\n?\)\n', r'<!-- \1 -->\n', md_content, flags=re.DOTALL)
 
     return md_content
 

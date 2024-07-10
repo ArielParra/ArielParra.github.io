@@ -10,7 +10,7 @@ blog_menu: 1
 blog_current: 3
 ---
   <div class="container">
-    <div class="card" id="#1">
+    <div class="card" id="1">
       <hr>
       <div class="center">     
         ### 1. What is Linux?
@@ -44,7 +44,7 @@ blog_current: 3
   </div>[comment]: <> (container Elements)
 
   <div class="container">
-    <div class="card" id="#2">
+    <div class="card" id="2">
       <hr>
       <div class="center">     
         ### 2. Related topics

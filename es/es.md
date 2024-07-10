@@ -104,4 +104,7 @@ nav_current: 1
         <p>hecho con ❤️ por Ariel Parra</p>
     </div>
 </div>
-[comment]: <> ("<div class="container"> <button type="button" onclick="langButton()">lang</button></div>")
+    [comment]: <> (
+
+    <div class="container"> <button type="button" onclick="langButton()">lang</button></div>
+    )

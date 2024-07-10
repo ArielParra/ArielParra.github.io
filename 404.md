@@ -19,7 +19,7 @@ nav_current: 0
     </div>[comment]: <> (card)
   </div>[comment]: <> (container)
 
-  <div class="container">
+  <div class="container" style="overflow: hidden;">
     <div class="center">
       <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
         [comment]: <> (background)

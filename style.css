@@ -271,7 +271,6 @@ input:checked {
 }
 
 .container{
-  overflow: hidden;/*fixes 404 issue*/
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
