@@ -27,13 +27,14 @@ def md_to_html(md_content):
     md_content = re.sub(r'### (.*?)\n', r'<h3>\1</h3>\n', md_content)
     md_content = re.sub(r'## (.*?)\n', r'<h2>\1</h2>\n', md_content)
     md_content = re.sub(r'# (.*?)\n', r'<h1>\1</h1>\n', md_content)
-    md_content = re.sub(r'\[\]: <> \("(.*?)"\)', r'<!--\1-->', md_content)
     md_content = re.sub(r'(- .*)', r'<li>\1</li>', md_content)
     md_content = re.sub(r'<li>- (.*?)</li>', r'<ul><li>\1</li></ul>', md_content, flags=re.DOTALL)
     md_content = re.sub(r'</ul>\s*<ul>', '', md_content)  # Merge consecutive <ul> tags
     md_content = re.sub(r'\*\*\*(.*?)\*\*\*', r'<strong><em>\1</em></strong>', md_content)
     md_content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', md_content)
     md_content = re.sub(r'\*(.*?)\*', r'<em>\1</em>', md_content)
+    md_content = re.sub(r'\[comment\]: <> \(\n?(.*?)\n?\)', r'<!-- \1 -->', md_content, flags=re.DOTALL)
+
     return md_content
 
 def generate_html(md_dict, md_content):
@@ -246,7 +247,7 @@ def generate_html(md_dict, md_content):
                 blog_path = item["href"]
 
         # Calculate maximum lengths
-        max_href_length = max(len(previous_number),len(str(blog_number)) +1, len(str(blog_number + 1)))
+        max_href_length = max(len(str(previous_number)),len(str(blog_number)) +1, len(str(blog_number + 1)))
         max_span_length = len(span_title_text)
         # Build HTML navigation with dynamic spacing
         html_content += f"""

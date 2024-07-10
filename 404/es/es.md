@@ -7,7 +7,7 @@ title: error 404
 js: [cookies, language, theme, menu, favicon, joyDivision, main]
 nav_current: 0
 ---
-[]: <> ("404.html for github.io site")
+[comment]: <> (404.html for github.io site)
 
   <div class="container">
     <div class="card">
@@ -15,18 +15,18 @@ nav_current: 0
         <h1>404 Página No Encontrada!</h1> 
         <p></p>
         <button type="button" onclick="exportSVG(this)"> Exportar SVG </button>
-      </div>[]: <> ("center")
-    </div>[]: <> ("card")
-  </div>[]: <> ("container")
+      </div>[comment]: <> (center)
+    </div>[comment]: <> (card)
+  </div>[comment]: <> (container)
 
   <div class="container">
     <div class="center">
       <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
-        []: <> ("background")
+        [comment]: <> (background)
         <rect width="625px" height="593px" fill="var(--HTML_BG)" />
 
-        []: <> ("lines")
+        [comment]: <> (lines)
         <g id="lines" fill="none" stroke="var(--text)" stroke-width="1.2"></g>
       </svg>
-    </div>[]: <> ("center")
-  </div>[]: <> ("container")
+    </div>[comment]: <> (center)
+  </div>[comment]: <> (container)

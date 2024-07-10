@@ -16,7 +16,7 @@ blog_number: 1
         ### 1. What is Linux?       
       <hr>
     </div>
-  </div>[]: <> ("container Title")
+  </div>[comment]: <> (container Title)
 
   <div class="container">
     <div class="card blog justify" id="1">
@@ -107,7 +107,7 @@ blog_number: 1
         - Proot on Android: [Termux](https://termux.dev/en/), [Termux Desktop](https://github.com/adi1090x/termux-desktop), [UserLand](https://github.com/CypherpunkArmory/UserLAnd), [Linux Deploy](https://github.com/meefik/linuxdeploy), [AndroNix](https://github.com/AndronixApp/AndronixOrigin).
         - Grafical sessions on Android: [ termux-X11](https://github.com/termux/termux-x11), [multiVNC](https://github.com/bk138/multivnc/), [avnc](https://github.com/gujjwal00/avnc).
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
 
   <div class="container">
     <div class="card center" id="References">
@@ -116,7 +116,7 @@ blog_number: 1
         [⤷](./blog/linux/1/#References){:class="hidden-link"}
       <hr>
     </div>
-  </div>[]: <> ("container Title")
+  </div>[comment]: <> (container Title)
   
   <div class="container">
     <div class="card blog">
@@ -148,4 +148,4 @@ blog_number: 1
         Last update on: February 7th 2024.
       </p>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)

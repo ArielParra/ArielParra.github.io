@@ -18,7 +18,7 @@ blog_current: 3
       </div>
       <hr>
     </div>
-  </div>[]: <> ("container Title")
+  </div>[comment]: <> (container Title)
 
   <div class="container">
     <div class="card">
@@ -41,7 +41,7 @@ blog_current: 3
         [1.4 Cross Platforms](./blog/linux/1/#4)  
       </div>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
 
   <div class="container">
     <div class="card" id="#2">
@@ -52,7 +52,7 @@ blog_current: 3
       </div>
       <hr>
     </div>
-  </div>[]: <> ("container Title")
+  </div>[comment]: <> (container Title)
 
   <div class="container">
     <div class="card">
@@ -78,7 +78,7 @@ blog_current: 3
     <div class="card">
       <div class="center">2.7 Ricing</div>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
 
   <div class="container">
     <div class="card">
@@ -88,7 +88,7 @@ blog_current: 3
       </div>
       <hr>
     </div>
-  </div>[]: <> ("container Title")
+  </div>[comment]: <> (container Title)
 
   <div class="container">
     <div class="card">
@@ -113,7 +113,7 @@ blog_current: 3
       <div class="center">3.5 Hardware</div>
     </div>
     
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
 
   <div class="container">
     <div class="card">
@@ -123,7 +123,7 @@ blog_current: 3
         </div>
       <hr>
     </div>
-  </div>[]: <> ("container Title")
+  </div>[comment]: <> (container Title)
 
   <div class="container">
     <div class="card">
@@ -141,7 +141,7 @@ blog_current: 3
     <div class="card">
       <div class="center">4.5 ChromeOS</div>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
 
   <div class="container">
     <div class="card">
@@ -151,7 +151,7 @@ blog_current: 3
       </div>
       <hr>
     </div>
-  </div>[]: <> ("container Title")
+  </div>[comment]: <> (container Title)
 
   <div class="container">
     <div class="card">
@@ -166,7 +166,7 @@ blog_current: 3
     <div class="card">
       <div class="center">5.3 Interfaces</div>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
 
   <div class="container">
     <div class="card">
@@ -176,7 +176,7 @@ blog_current: 3
       </div>
       <hr>
     </div>
-  </div>[]: <> ("container Title")
+  </div>[comment]: <> (container Title)
 
   <div class="container">
     <div class="card">
@@ -209,7 +209,7 @@ blog_current: 3
     <div class="card">
       <div class="center">6.10 Extra Commands</div>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
 
   <div class="container">
     <div class="card">
@@ -219,4 +219,55 @@ blog_current: 3
       </div>
       <hr>
     </div>
-  </div>[]: <> ("container Title")
+  </div>[comment]: <> (container)
+[comment]: <> (
+
+References:
+
+
+GNU. ⟮2023⟯. *GNU Coreutils*. https://www.gnu.org/software/coreutils/manual/coreutils.pdf
+
+IEEE. ⟮2017⟯. *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
+
+Linux Foundation. ⟮2015⟯. *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
+Linux Foundation. ⟮2015⟯. *Linux Standard Base*. https://refspecs.linuxfoundation.org/lsb.shtml
+
+Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. ⟮2020⟯. *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
+Dodge, C., Irvine, C., & Nguyen, T. ⟮2005⟯. *A study of initialization in Linux and OpenBSD*. https://core.ac.uk/download/pdf/36700709.pdf
+Android. ⟮2023⟯. *Platform architecture*. https://developer.android.com/guide/platform
+
+
+Dominic Humphries. ⟮2006⟯. *Linux is Not Windows*. https://linux.oneandoneis2.org/LNW.htm
+ezeelinux. ⟮2018⟯. *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
+Michael Tunnell. ⟮2023⟯. *Explaining Linux Family Trees*: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
+SUSE. ⟮s.f.⟯. *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/
+The Linux Experiment. ⟮2018⟯. *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
+The Linux Information Project. ⟮2005⟯. *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
+
+
+Cray. ⟮2016⟯. *The final ISA showdown: Is ARM, x86, or MIPS intrinsically more power efficient?*. https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/the-final-isa-showdown-is-arm-x86-or-mips-intrinsically-more-power-efficient
+
+arm. ⟮s.f.⟯. *CPU Architecture: A Foundation for Computing Everywhere*. https://www.arm.com/architecture/cpu
+ExplainingComputers. ⟮2022⟯. *Explaining RISC-V: An x86 & ARM Alternative* [Video]. https://yewtu.be/watch?v=Ps0JFsyX2fU
+arm. ⟮s.f.⟯. *TrustZone for Cortex-A*. https://www.arm.com/technologies/trustzone-for-cortex-a
+Boschs, P. ⟮2019⟯ *Introduction to the Intel Management Engine OS ⟮Part 1⟯*. https://pbx.sh/intelme-sw1/#hasarfaty_2019
+coreboot. ⟮2017⟯. *1. AMD Platform Security Processor ⟮PSP⟯ Firmware Integration Guide*. https://doc.coreboot.org/soc/amd/psp_integration.html#platform-security-processor-psp-overview
+freundschafter. ⟮2018⟯. *About AMD TrustZone, AMD Platform Security Processor ⟮PSP⟯, AMD Secure Technology*. https://freundschafter.com/research/about-amd-trustzone-amd-platform-security-processor-psp-amd-secure-technology/
+Intel. ⟮2017⟯. *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
+Libreboot. ⟮s.f.⟯. *Intel Management Engine ⟮ME⟯*. https://libreboot.org/faq.html#intelme
+Dayzerosec. ⟮2023⟯. *Reversing the AMD Secure Processor ⟮PSP⟯ - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
+
+
+Cloudflare. ⟮s.f⟯. *What is a reverse proxy? | Proxy servers explained*. https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/
+Cloudflare. ⟮s.f.⟯. *What is dynamic DNS ⟮DDNS⟯?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
+NGINX. ⟮s.f⟯. *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
+Open Conteiner Initiative. ⟮s.f.⟯. *Open Container Initiative*. https://opencontainers.org/
+Rack Solutions. ⟮2020⟯. *Server Rack Sizes: Understanding the Differences*. https://www.racksolutions.com/news/blog/server-rack-sizes/
+Seagate. ⟮s.f ⟯. *What is NAS*. https://www.seagate.com/blog/what-is-nas-master-ti/
+TRIPP LITE. ⟮s.f.⟯. *Server Racks Explained*. https://tripplite.eaton.com/products/server-racks-explained
+Vertiv. ⟮s.f.⟯. *What Is a Server Rack?*. https://www.vertiv.com/en-us/about/news-and-insights/articles/educational-articles/what-is-a-server-rack/
+Westerndigital. ⟮s.f.⟯. *RAID Storage*. https://www.westerndigital.com/solutions/raid
+
+The Open Group. ⟮2008⟯. *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
+
+)

@@ -16,7 +16,7 @@ nav_current: 3
       </div>
       <hr> 
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
   <div class="container grid">
     <div class="card" data-tags="degree">
       <div class="center">
@@ -26,7 +26,7 @@ nav_current: 3
         <div class="progress" style="width: 55.55%;"></div>
       </div>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
   <div class="container">
     <div class="card" data-tags="certification">
       <hr>
@@ -35,7 +35,7 @@ nav_current: 3
       </div>
       <hr>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="certification cybersecurity">
       ![alt="Security Fundamentals, imagen de certificación"](./achievements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
@@ -55,7 +55,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
   <div class="container">
     <div class="card" data-tags="certificate">
       <hr>
@@ -64,7 +64,7 @@ nav_current: 3
       </div>
       <hr>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="certificate devops">
       ![alt="Linkedin GitHub, imagen del, certificado"](./achievements/images/Linkedin_Career_Essentials_in_GitHub.webp)
@@ -156,7 +156,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
   <div class="container">
     <div class="card" data-tags="badge">
       <hr>
@@ -165,7 +165,7 @@ nav_current: 3
       </div>
       <hr>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="badge cloud networks">
       ![alt="Z Xplore badge imagen"](./achievements/images/IBM_ZXplore_Concepts.png)
@@ -176,5 +176,5 @@ nav_current: 3
         </p>
       </div>
     </div>
-  </div>[]: <> ("container Elements")
+  </div>[comment]: <> (container Elements)
 

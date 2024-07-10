@@ -10,7 +10,7 @@ nav_current: 1
 <div class="container">
     <div class="card">
         <hr>
-[]: <> ("Foto tomada temporalmente de: https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/")
+        [comment]: <> (Foto tomada temporalmente de: https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/)
         ![alt="mi foto" title="yo"](./images/foto.webp)   
         <hr>
         <div class="center">
@@ -98,10 +98,10 @@ nav_current: 1
     [![class="img-88x31" alt="CSS Valido" title="CSS Valido"](/images/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io){:target="_blank"}    
     [![class="img-88x31" alt="HTML Valido" title="HTML Valido"](/images/88x31_valid-html.png)](https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io){:target="_blank"}
 </footer>
-[]: <> ("made with love")
+[comment]: <> (made with love)
 <div class="container">
     <div class="center">
         <p>hecho con ❤️ por Ariel Parra</p>
     </div>
 </div>
-[]: <> ("<div class="container"> <button type="button" onclick="langButton()">lang</button></div>")
+[comment]: <> ("<div class="container"> <button type="button" onclick="langButton()">lang</button></div>")

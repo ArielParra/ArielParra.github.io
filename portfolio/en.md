@@ -13,7 +13,7 @@ nav_current: 2
       <div class="center">
         <hr>
         My searxng instance
-        []: <> ("[searxng](https://searx.arielparra.tech)")
+        [comment]: <> ([searxng](https://searx.arielparra.tech))
       </div>
     </div>
     <div class="card">
@@ -23,4 +23,4 @@ nav_current: 2
         My [codeforces](https://codeforces.com/profile/ravary) profile
       </div>
     </div>
-  </div>[]: <> ("container grid")
+  </div>[comment]: <> (container grid)
