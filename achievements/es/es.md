@@ -41,7 +41,7 @@ nav_current: 3
       ![alt="Security Fundamentals, imagen de certificación"](./achievements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">
         <p>
-          Certificación en Security, Compliance, and Identity Fundamentals emitido por Microsoft
+          Certificación en Security, Compliance, and Identity Fundamentals, emitido por Microsoft.
           [LINK](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra-6307/D4A8CCF36FAC1D6E?sharingId=1F8F185897940CA9)
         </p>
       </div>
@@ -50,7 +50,7 @@ nav_current: 3
       ![alt="GitHub Foundations, imagen de certificación"](./achievements/images/GH_Foundations.png)
       <div class="center">
         <p>
-          Certificación en GitHub Foundations emitido por GitHub
+          Certificación en GitHub Foundations, emitido por GitHub.
           [LINK](https://www.credly.com/badges/f024c37b-a271-4588-b5b3-bafbdb7cd661/)
         </p>
       </div>
@@ -67,73 +67,91 @@ nav_current: 3
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="certificate devops">
-      ![alt="Linkedin GitHub, imagen del, certificado"](./achievements/images/Linkedin_Career_Essentials_in_GitHub.webp)
+      ![alt="GitHub y LinkedIn, imagen del certificado"](./achievements/images/Linkedin_Career_Essentials_in_GitHub.webp)
       <div class="center">
         <p>
-          Career Essentials in GitHub, certificado profesional emitido por Linkedin
+          Career Essentials in GitHub, certificado profesional, emitido por Github y LinkedIn.
           [LINK](https://lnkd.in/d8q5GMah)
         </p>
       </div>
     </div>
-    <div class="card" data-tags="certificate devops">
-      ![alt="GitLab CI Fundamentals, imagen del, certificado"](./achievements/images/GitLab_CI_Fundamentals.png)
+    <div class="card" data-tags="certificate cybersecurity">
+      ![alt="Microsoft y LinkedIn Ciberseguidad, imagen del certificado"](./achievements/images/Fundamentos-profesionales-en-ciberseguridad-por-Microsoft-y-LinkedIn.png)
       <div class="center">
         <p>
-          GitLab CI Fundamentals, certificado emitido porGitLab
+          Fundamentos profesionales en ciberseguridad, emitido por Microsoft y LinkedIn.
+          [LINK](https://www.linkedin.com/learning/certificates/a0a866855a25d7149e3e449dc9f11626f2461b0cb1754152a7fba2d3530d91e2)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate ai">
+      ![alt="Microsoft y LinkedIn AI, imagen del certificado"](./achievements/images/Fundamentos-profesionales-de-IA-generativa-por-Microsoft-y-LinkedIn.png)
+      <div class="center">
+        <p>
+          Fundamentos profesionales de IA generativa, emitido por Microsoft y LinkedIn.
+          [LINK](https://www.linkedin.com/learning/certificates/470067fc7fb23aa87f537c148fb9dda990ee870df04dd2f90da2eb468e96efb5)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate devops">
+      ![alt="GitLab CI Fundamentals, imagen del certificado"](./achievements/images/GitLab_CI_Fundamentals.png)
+      <div class="center">
+        <p>
+          GitLab CI Fundamentals, certificado, emitido por GitLab.
           [LINK](https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate progamming">
-      ![alt="Oracle One Program, imagen del, certificado"](./achievements/images/Oracle_One_Programa.png)
+      ![alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Programa.png)
       <div class="center">
         <p>
-          Oracle Next Education Back-end, certificado emitido porAlura and Oracle
+          Oracle Next Education Back-end, certificado, emitido por Alura and Oracle.
           [LINK](https://app.aluracursos.com/program/certificate/80f90beb-02e0-48ae-a5a4-c097d226c28e)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate progamming">
-      ![alt="Oracle One Program, imagen del, certificado"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
+      ![alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
       <div class="center">
         <p>
-          Java and Spring Boot, certificado emitido porAlura and Oracle
+          Java and Spring Boot, certificado, emitido por Alura and Oracle.
           [LINK](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate datascience ai">
-      ![alt="BLOCKMAKERS AI, imagen del, certificado"](./achievements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
+      ![alt="BLOCKMAKERS AI, imagen del certificado"](./achievements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
       <div class="center">
         <p>
-          Inteligencia Artificial y Data Science, certificado emitido por Blockmakers
+          Inteligencia Artificial y Data Science, certificado, emitido por Blockmakers.
           [PDF](./achievements/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf)
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain progamming">
-     ![alt="BLOCKMAKERS solidity, imagen del, certificado" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
+     ![alt="BLOCKMAKERS solidity, imagen del certificado" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
       <div class="center">
         <p>
-          Solidity bootcamp, certificado emitido por Blockmakers
+          Solidity bootcamp, certificado, emitido por Blockmakers.
           <a href=./achievements/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf>PDF</a>
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain">
-      ![alt="BLOCKMAKERS blockchain, imagen del, certificado"](./achievements/images/BLOCKMAKERS_Blockchain.png)
+      ![alt="BLOCKMAKERS blockchain, imagen del certificado"](./achievements/images/BLOCKMAKERS_Blockchain.png)
       <div class="center">
         <p>
-          Blockchain consultant, certificado emitido por Blockmakers
+          Blockchain consultant, certificado, emitido por Blockmakers.
           <a href=./achievements/docs/BLOCKMAKERS_Blockchain.pdf>PDF</a>
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain progamming">
-      ![alt="ICP Azle, imagen del, certificado"](./achievements/images/ICP_Developer_Azle.png)
+      ![alt="ICP Azle, imagen del certificado"](./achievements/images/ICP_Developer_Azle.png)
       <div class="center">
         <p>
-          Developer in Azle, certificado emitido por Internet Computer  (ICP)
+          Developer in Azle, certificado, emitido por Internet Computer (ICP).
           <a href=./achievements/docs/ICP_Developer_Azle.pdf>PDF</a>
         </p>
       </div>
@@ -142,16 +160,16 @@ nav_current: 3
       ![alt="Condusef Diploma imagen"](./achievements/images/Diploma_CONDUSEF.png)
       <div class="center">
         <p>
-          Diplomado en educación financiera emitido por CONDUSEF
+          Diplomado en educación financiera, emitido por la CONDUSEF.
           <a href=./achievements/docs/Diploma_CONDUSEF.pdf>PDF</a>
         </p>
       </div>
     </div>
     <div class="card" data-tags="certificate">
-      ![alt="Compu Cuantrix, imagen del, certificado"](./achievements/images/Compu_Cuantrix_nivel_avanzado.png)
+      ![alt="Compu Cuantrix, imagen del certificado"](./achievements/images/Compu_Cuantrix_nivel_avanzado.png)
       <div class="center">
         <p>
-          Compu Cuantrix nivel avanzado, certificado emitido por Fundación Televisa 
+          Compu Cuantrix nivel avanzado, emitido por Fundación Televisa.
           <a href=./achievements/docs/Compu_Cuantrix_nivel_avanzado.pdf>PDF</a>
         </p>
       </div>
@@ -171,7 +189,7 @@ nav_current: 3
       ![alt="Z Xplore badge imagen"](./achievements/images/IBM_ZXplore_Concepts.png)
       <div class="center">
         <p>
-          Insignia de IBM Z Xplore Concepts emitida por IBM
+          Insignia de IBM Z Xplore Concepts, emitida por IBM.
           [LINK](https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0/linked_in?t=sas12p)
         </p>
       </div>

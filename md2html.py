@@ -183,7 +183,7 @@ def generate_html(md_dict, md_content):
             filterType_text = "Filter by type"
             filterTopic_text = "Filter by topic"
             type_tag_text = ["All", "Certifications", "Certificates", "Badges"]
-            topic_tag_text = ["Cybersecurity", "Networks", "Cloud", "Blockchain", "Programming", "Data Science", "AI"]
+            topic_tag_text = ["Cybersecurity", "DevOps","Networks", "Cloud", "Blockchain", "Programming", "Data Science", "AI"]
         else:  # Spanish
             filterType_text = "Filtrado por tipo"
             filterTopic_text = "Filtrado por tema"

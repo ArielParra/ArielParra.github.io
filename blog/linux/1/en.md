@@ -26,8 +26,7 @@ blog_number: 1
           [⤷](./blog/linux/1/#1){:class="hidden-link"}
         </div>
       <hr>
-      <p>It is an open-source monolithic kernel with the <abbr title="GNU is Not Unix Project">GNU</abbr> <abbr title="General Public License version 2">GPLv2</abbr>,
-        used as the base of many operating systems.
+      <p>It is an open-source monolithic kernel with the <abbr title="GNU is Not Unix Project">GNU</abbr> <abbr title="General Public License version 2">GPLv2</abbr>, used as the base of many operating systems.
       </p>
       <p><mark>What is a monolithic kernel?</mark> The kernel is software that has hardware control,
       manages and optimizes system resources such as RAM allocation, CPU processes,
@@ -37,11 +36,10 @@ blog_number: 1
       <p><mark>What is open-source?</mark> It is software where anyone can see, analyze and therefore 
       modify the source code.
       </p>
-      <p>
-      <mark>What is the GPLv2?</mark> It is a software license where any modification to the code
+      <p><mark>What is the GPLv2?</mark> It is a software license where any modification to the code
       must have the same license and for every binary file that is distributed, there has 
       to be available source code.</p>
-    </div>
+    </div>[comment]: <> (container Elements)
     <div class="card blog justify" id="2">
       <hr>
       <div class="center">
@@ -57,7 +55,7 @@ blog_number: 1
       <p>These applications and utilities were added to the Linux kernel to create a complete
       system called GNU/Linux.
       </p>
-    </div>
+    </div>[comment]: <> (container Elements)
     <div class="card blog justify" id="3">
       <hr>
       <div class="center">
@@ -76,7 +74,7 @@ blog_number: 1
       interfaces and run times from where libraries and applications depend. Linux
       operating systems often use the Filesystem Hierarchy Standard of linux.
       </p>
-    </div>
+    </div>[comment]: <> (container Elements)
     <div class="card blog justify" id="4">
       <hr>
       <div class="center">
@@ -106,9 +104,8 @@ blog_number: 1
         - Chroot for ChromeOS: [crouton](https://github.com/dnschneid/crouton)
         - Proot on Android: [Termux](https://termux.dev/en/), [Termux Desktop](https://github.com/adi1090x/termux-desktop), [UserLand](https://github.com/CypherpunkArmory/UserLAnd), [Linux Deploy](https://github.com/meefik/linuxdeploy), [AndroNix](https://github.com/AndronixApp/AndronixOrigin).
         - Grafical sessions on Android: [ termux-X11](https://github.com/termux/termux-x11), [multiVNC](https://github.com/bk138/multivnc/), [avnc](https://github.com/gujjwal00/avnc).
-    </div>
-  </div>[comment]: <> (container Elements)
-
+    </div>[comment]: <> (container Elements)
+  </div>[comment]: <> (container)
   <div class="container">
     <div class="card center" id="References">
       <hr>
@@ -117,7 +114,6 @@ blog_number: 1
       <hr>
     </div>
   </div>[comment]: <> (container Title)
-  
   <div class="container">
     <div class="card blog">
         - Britannica, T. Editors of Encyclopaedia (2023). *Linux*. Encyclopedia Britannica. [https://www.britannica.com/technology/Linux](https://www.britannica.com/technology/Linux)
@@ -147,6 +143,6 @@ blog_number: 1
       <p class="center">
         Last update on: February 7th 2024.
       </p>
-    </div>
-  </div>[comment]: <> (container Elements)
+    </div>[comment]: <> (container Elements)
+  </div>[comment]: <> (container)
   
