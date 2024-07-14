@@ -1,5 +1,5 @@
-/* Forked from: https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html 
-
+// joySVG.js an Unknown Pleasures style svg generator, Forked from: https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html 
+/*
 The MIT License (MIT)
 
 Copyright (c) 2016 Max Halford
@@ -76,12 +76,12 @@ function normalPDF(x, mu, sigma) {
 }
 
 /**
- * @description Exports the SVG content to an SVG file with the filename "JoyDivision.svg".
+ * @description Exports the SVG content to an SVG file with the filename "unknownPleasures.svg".
  */
 function exportSVG(button) {
     button.disabled = true;
 
-    var svg = document.getElementById('JoyDivision');
+    var svg = document.getElementById('unknownPleasures');
     
     // Clone the SVG to avoid modifying the original
     var clonedSvg = svg.cloneNode(true);
@@ -100,7 +100,7 @@ function exportSVG(button) {
     // Create a temporary anchor element and trigger a click to download the SVG
     var a = document.createElement('a');
     a.href = url;
-    a.download = 'JoyDivision.svg';
+    a.download = 'unknownPleasures.svg';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -112,10 +112,10 @@ function exportSVG(button) {
 }
   
 /**
- * @description Main function to generate and display the Joy Division-inspired SVG.
+ * @description Main function to generate and display the Joy Division Unkown Pleasures inspired SVG.
  */
-function main(){
-    var svg = document.getElementById('JoyDivision');
+function displaySVG(){
+    var svg = document.getElementById('unknownPleasures');
     var linesGroup = document.getElementById('lines');
 
     // Determine x and y range
@@ -170,4 +170,11 @@ function main(){
     y = y + dy;
     }
 
-}main();
+}
+
+/**
+ * @description  Initializes the SVG display.
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    displaySVG();
+});

@@ -4,7 +4,7 @@ base_href: ../../
 keywords: [Ariel Parra, contacto]
 description: Información de contacto de Ariel Parra
 title: contacto
-js: [cookies, language, theme, menu, favicon, main]
+js: [cookies, language, theme, menu, favicon]
 nav_current: 4
 ---
   <div class="container grid">

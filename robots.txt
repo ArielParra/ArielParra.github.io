@@ -1,6 +1,6 @@
-# Allow all web crawlers access to all content
+# Disallow all web crawlers from accessing the site
 User-agent: *
-Disallow:
+Disallow: /
 
 # Sitemap location
 Sitemap: /sitemap.xml

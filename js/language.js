@@ -1,3 +1,5 @@
+//import { setCookie, getCookie, cookieExists } from './cookies.js';
+
 /**
  * @description Changes the language of the website and updates the URL path accordingly.
  *
@@ -90,3 +92,25 @@ function getCurrentSiteLanguage(){
 function getDefaultLanguage(){
     return navigator.language.substring(0, 2);
 }
+
+/**
+ * @description Checks if language cookie exists.
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    let defaultLang = getDefaultLanguage();
+    if (defaultLang !== 'es'){
+        defaultLang = 'en'; // default language is English
+    }
+    if ( cookieExists('language') === true ) {
+        const cookieLang = getCookie('language');
+        if(getCurrentSiteLanguage() !== cookieLang){
+            changeLanguage(cookieLang);
+        } 
+        /*else {
+            // stay in the same page
+        }
+        */
+    } else if ( getCurrentSiteLanguage() !== defaultLang ){ // && !cookieExists('language')
+        changeLanguage(defaultLang);
+    }
+});

@@ -20,7 +20,7 @@ function dbgMessages() {
     console.log('browser prefers light = ' + browserPrefersLight());
     console.log('theme cookie = ' + getCookie('theme'));
     console.log('device width = ' + window.screen.width + 'px');
-    console.log('navStatus = ' + getCookie('navStatus') );
+    console.log('menuStatus = ' + getCookie('menuStatus') );
 }
 /**
  * @description get all cookies

@@ -120,10 +120,7 @@ def generate_html(md_dict, md_content):
         return " " * (max(len(js_file) for js_file in md_dict['js']) - len(js_file))
     
     for js_file in md_dict['js']:
-        if js_file == "main":
-            html_content += f'  <link   rel="preload"          href="./{js_file}.js"    {space_padding(js_file)}as="script">\n'	
-        else:
-            html_content += f'  <link   rel="preload"          href="./js/{js_file}.js" {space_padding(js_file)}as="script">\n'
+        html_content += f'  <link   rel="preload"          href="./js/{js_file}.js" {space_padding(js_file)}as="script">\n'
     
     html_content += """  <!-- Java Scripts defers -->
 """
@@ -151,7 +148,7 @@ def generate_html(md_dict, md_content):
 
     html_content += f"""
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">{nav_button_text}</button>
+    <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true">{nav_button_text}</button>
     <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">{lang_button_text}</button>
     <button type="button" onclick="toggleTheme(this)" id="themeButton" title="{theme_button_title}"> 🌗 </button>
   </div><!-- Buttons -->

@@ -1,3 +1,5 @@
+//import { setCookie } from './cookies.js';
+
 /**
  * @description Toggles the visibility of the navigation bar menu, with a smooth transition effect.
  *              Disables the provided button during the transition.
@@ -36,7 +38,7 @@ function hideMenu(button, animation) {
   }
 
   button.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Menu';
-  setCookie('navStatus', 'hidden', 30);
+  setCookie('menuStatus', 'hidden', 30);
 
   setTimeout(function() {
     button.dataset.navShown = 'false';
@@ -67,10 +69,34 @@ function showMenu(button) {
   }
 
   button.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
-  setCookie('navStatus', 'shown', 30);
+  setCookie('menuStatus', 'shown', 30);
 
   setTimeout(function() {
     button.dataset.navShown = 'true';
     button.disabled = false;
   }, 500);
 }
+
+
+/**
+ * @description Initializes the menu status. 
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  const menuButton = document.getElementById('menuButton');
+
+  // Check if the 'menuStatus' cookie exists
+  if (cookieExists('menuStatus')) {
+    const menuStatus = getCookie('menuStatus');
+
+    // Check the status and update the button text accordingly
+    if (menuStatus === 'hidden') {
+      hideMenu(menuButton, false);
+      menuButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Menu';
+    } else {
+      menuButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
+    }
+  } else {
+    // Default: Navigation bar is visible
+    menuButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
+  }
+});

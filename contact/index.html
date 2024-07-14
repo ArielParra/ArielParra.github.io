@@ -19,14 +19,12 @@
   <link   rel="preload"          href="./js/theme.js"    as="script">
   <link   rel="preload"          href="./js/menu.js"     as="script">
   <link   rel="preload"          href="./js/favicon.js"  as="script">
-  <link   rel="preload"          href="./main.js"        as="script">
   <!-- Java Scripts defers -->
   <script defer                  src ="./js/cookies.js">  </script>
   <script defer                  src ="./js/language.js"> </script>
   <script defer                  src ="./js/theme.js">    </script>
   <script defer                  src ="./js/menu.js">     </script>
   <script defer                  src ="./js/favicon.js">  </script>
-  <script defer                  src ="./main.js">        </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
 </head>
@@ -34,7 +32,7 @@
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">Hide Menu</button>
+    <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true">Hide Menu</button>
     <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Spanish</button>
     <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Change color theme to"> 🌗 </button>
   </div><!-- Buttons -->

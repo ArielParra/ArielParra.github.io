@@ -4,7 +4,7 @@ base_href: ../../../
 keywords: [Ariel Parra, blog, linux]
 description: Ariel Parra linux blog
 title: What is Linux?
-js: [cookies, language, theme, menu, favicon, main]
+js: [cookies, language, theme, menu, favicon]
 nav_current: 5
 blog_current: 3
 blog_number: 1

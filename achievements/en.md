@@ -4,7 +4,7 @@ base_href: ../
 keywords: [Ariel Parra, certifications, certificates, badges, achievements, degree, diploma]
 description: Ariel Parra mutiple achievements
 title: achievements
-js: [cookies, language, theme, menu, favicon, tags, main]
+js: [cookies, language, theme, menu, favicon, tags]
 nav_current: 3
 ---
 <div class="container">

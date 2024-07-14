@@ -4,7 +4,7 @@ base_href: ../../
 keywords: [Ariel Parra, portafolio]
 description: Portafolio de Ariel Parra
 title: portafolio
-js: [cookies, language, theme, menu, favicon, main]
+js: [cookies, language, theme, menu, favicon]
 nav_current: 2
 ---
   <div class="container grid">

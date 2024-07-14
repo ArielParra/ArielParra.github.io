@@ -4,7 +4,7 @@ base_href: ./
 keywords: [Ariel Parra, website]
 description: Ariel Parra Website!
 title: Ariel Parra
-js: [cookies, language, theme, menu, favicon, debug, main]
+js: [cookies, language, theme, menu, favicon, debug]
 nav_current: 1
 ---
 <div class="container">
@@ -97,7 +97,7 @@ nav_current: 1
 [comment]: <> (made with love)
 <div class="container">
     <div class="center">
-        <p>made with ❤️ by Ariel Parra</p>
+        <p>Made with ❤️ by Ariel Parra</p>
     </div>
 </div>
     [comment]: <> (

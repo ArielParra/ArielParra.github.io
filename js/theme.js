@@ -1,3 +1,4 @@
+//import { setCookie } from './cookies.js';
 /**
  * @description Sets the theme of the website.
  * 
@@ -37,3 +38,28 @@ function browserPrefersLight(){
   }
   return false;
 } 
+
+/**
+ * @description Initializes the theme of the website. 
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  const themeButton = document.getElementById('themeButton');
+  let theme;
+  if (cookieExists('theme')) {
+    theme = getCookie('theme');
+  } else { /* no cookie */
+    if (browserPrefersLight() === true) {
+      theme = 'theme-light';
+    } else {
+      theme = 'theme-dark';
+    }  
+  }
+  /* default button icon */
+  if (theme === 'theme-light') {
+    themeButton.textContent = ' 🌙 ';
+  } else {
+    themeButton.textContent = ' ☀️ ';
+  }
+
+  setTheme(theme);
+});

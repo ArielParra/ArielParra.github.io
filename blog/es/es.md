@@ -4,7 +4,7 @@ base_href: ../../
 keywords: [Ariel Parra, blog]
 description: Ariel Parra blog
 title: blog
-js: [cookies, language, theme, menu, favicon, main]
+js: [cookies, language, theme, menu, favicon]
 nav_current: 5
 ---
   <div class="container">

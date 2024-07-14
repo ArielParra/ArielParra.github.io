@@ -85,12 +85,10 @@ function filterCards() {
  */
 document.addEventListener('DOMContentLoaded', () => {
   setFiltersFromURL();
-
   // Add event listeners to checkboxes and radios
   const inputs = document.querySelectorAll('#filter-checks input');
   inputs.forEach(input => {
     input.addEventListener('change', filterCards);
   });
+  filterCards();
 });
-
-filterCards();

@@ -12,6 +12,11 @@ I also developed my own Python-based images site generator called `md2html.py`, 
 - [ ] blogs
 - [ ] js to detect code class="C++" and color C++ syntax correctly
 
+# Thanks
+
+- Max Halford for the unknown_pleasures script used for my 404 page, recovered from: https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html
+- sadgrl's 88x31 Button Maker at: https://goblin-heart.net/sadgrl/projects/88x31-button-maker
+
 # Image credits
 
 - **./images/foto.webp** used under fair use from https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/

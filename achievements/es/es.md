@@ -4,7 +4,7 @@ base_href: ../../
 keywords: [Ariel Parra, certificaiones, certificatados, insignias, logros, titulo, diplomas]
 description: multiples logros de Ariel Parra
 title: logros
-js: [cookies, language, theme, menu, favicon, tags, main]
+js: [cookies, language, theme, menu, favicon, tags]
 nav_current: 3
 ---
 

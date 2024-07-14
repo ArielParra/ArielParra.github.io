@@ -14,23 +14,21 @@
   <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
   <!-- Java Scripts Preloads -->
-  <link   rel="preload"          href="./js/cookies.js"     as="script">
-  <link   rel="preload"          href="./js/language.js"    as="script">
-  <link   rel="preload"          href="./js/theme.js"       as="script">
-  <link   rel="preload"          href="./js/menu.js"        as="script">
-  <link   rel="preload"          href="./js/favicon.js"     as="script">
-  <link   rel="preload"          href="./js/joyDivision.js" as="script">
-  <link   rel="preload"          href="./js/enPath.js"      as="script">
-  <link   rel="preload"          href="./main.js"           as="script">
+  <link   rel="preload"          href="./js/cookies.js"  as="script">
+  <link   rel="preload"          href="./js/language.js" as="script">
+  <link   rel="preload"          href="./js/theme.js"    as="script">
+  <link   rel="preload"          href="./js/menu.js"     as="script">
+  <link   rel="preload"          href="./js/favicon.js"  as="script">
+  <link   rel="preload"          href="./js/joySVG.js"   as="script">
+  <link   rel="preload"          href="./js/enPath.js"   as="script">
   <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">     </script>
-  <script defer                  src ="./js/language.js">    </script>
-  <script defer                  src ="./js/theme.js">       </script>
-  <script defer                  src ="./js/menu.js">        </script>
-  <script defer                  src ="./js/favicon.js">     </script>
-  <script defer                  src ="./js/joyDivision.js"> </script>
-  <script defer                  src ="./js/enPath.js">      </script>
-  <script defer                  src ="./main.js">           </script>
+  <script defer                  src ="./js/cookies.js">  </script>
+  <script defer                  src ="./js/language.js"> </script>
+  <script defer                  src ="./js/theme.js">    </script>
+  <script defer                  src ="./js/menu.js">     </script>
+  <script defer                  src ="./js/favicon.js">  </script>
+  <script defer                  src ="./js/joySVG.js">   </script>
+  <script defer                  src ="./js/enPath.js">   </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./images/foto.webp"   type="image/webp" sizes="180x180">
 </head>
@@ -38,7 +36,7 @@
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)"  id="navButton"   data-nav-shown="true">Hide Menu</button>
+    <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true">Hide Menu</button>
     <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Spanish</button>
     <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Change color theme to"> 🌗 </button>
   </div><!-- Buttons -->
@@ -65,7 +63,7 @@
 
   <div class="container" style="overflow: hidden;">
     <div class="center">
-      <svg id="JoyDivision" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
+      <svg id="unknownPleasures" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
         <!-- background -->
         <rect width="625px" height="593px" fill="var(--HTML_BG)" />
 
@@ -74,6 +72,11 @@
       </svg>
     </div><!-- center -->
   </div><!-- container -->
+ <footer>
+  <p>
+  Special thanks to the album <em>Unknown Pleasures</em> by Joy Division and its cover, originally designed by Peter Saville. Also, special thanks to <a href="https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html">Max Halford</a> for his script that I forked for this site.
+  </p>
+ </footer>
  
 </body>
 

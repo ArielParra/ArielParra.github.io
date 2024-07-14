@@ -1,9 +1,14 @@
 /* TEAM */
+  
   Developer: Ariel Parra
-
   Designer: Ariel Parra
-
+  Project Manager: Ariel Parra
+  
 /* THANKS */
+
+  Max Halford for the unknown_pleasures script used for my 404 page, recovered from:
+  https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html
+  
   sanriomemes for the Pompompurin image, recovered from: 
   https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/
 
@@ -25,15 +30,15 @@
   freepik's "Cloud Free Icon," recovered from:
   https://www.flaticon.com/free-icon/cloud_2929984?term=cloud&page=1&position=6&related_id=2929984
 
-  sadgrl's 88x31 Button Maker at:
+  sadgrl's 88x31 Button Maker at: 
   https://goblin-heart.net/sadgrl/projects/88x31-button-maker
 
   And special thanks to Chat-GPT from OpenAI.
 
 
 /* SITE */
-  Last update: 2024-07-07
-  Standards: HTML5, CSS3
+  Last update: 2024-07-13
+  Standards: W3 HTML5, W3 CSS3
   Software: VSCode, git
 
 /* CONTACT */

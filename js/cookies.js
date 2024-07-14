@@ -51,3 +51,5 @@ function cookieExists(name) {
 function delCookie(name) {
     document.cookie = name + '=' + null + ";expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;SameSite=None;Secure";
 }
+
+//export { setCookie, getCookie, cookieExists, delCookie };

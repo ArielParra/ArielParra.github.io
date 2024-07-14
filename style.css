@@ -363,6 +363,9 @@ input:checked {
   img {
     max-width: calc(70% + 3rem);
   }
+  .img-88x31:hover{
+    transform: scale(1);
+  }
   #filter-checks label {
     display: flex; 
   }
