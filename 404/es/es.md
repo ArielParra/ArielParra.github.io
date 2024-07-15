@@ -32,6 +32,6 @@ nav_current: 0
   </div>[comment]: <> (container)
  <footer>
   <p>
-  Special thanks to the album *Unknown Pleasures* by Joy Division and its cover, originally designed by Peter Saville. Also, special thanks to [Max Halford](https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html) for his script that I forked for this site.
+  Un agradecimiento especial al álbum *Unknown Pleasures* de Joy Division y su portada, diseñada originalmente por Peter Saville. Además, un agradecimiento especial a [Max Halford](https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html) por el script que modifique para este sitio.
   </p>
  </footer>
