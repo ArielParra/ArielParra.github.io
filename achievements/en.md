@@ -54,6 +54,24 @@ nav_current: 3
         </p>
       </div>
     </div>
+    <div class="card" data-tags="certification ai cloud">
+      ![alt="OCI AI Generative AI, certification picture"](./achievements/images/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
+      <div class="center">
+        <p>
+          Oracle Cloud Infrastructure 2024 Generative AI Certified Professional, issued by Oracle.
+          [LINK](https://catalog-education.oracle.com/pls/certview/sharebadge?id=7DD090751D80D1CE9EC6B1DA78D457443D935A64E485A8C85C1FE63E7C05DD0A)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certification ai cloud">
+      ![alt="OCI AI Foundations Associate, certification picture"](./achievements/images/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
+      <div class="center">
+        <p>
+          Oracle Cloud Infrastructure 2023 AI Foundations Associate, issued by Oracle.
+          [LINK](https://catalog-education.oracle.com/pls/certview/sharebadge?id=30992A10499F1A0197793FF82B04E2513DC2F17E1B28756FB0B6EE8F8B29D9A2)
+        </p>
+      </div>
+    </div>
   </div>[comment]: <> (container Elements)
   <div class="container">
     <div class="card" data-tags="certificate">

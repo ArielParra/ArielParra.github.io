@@ -9,18 +9,10 @@ nav_current: 2
 ---
   <div class="container grid">
     <div class="card">
-      ![alt="searxng logo" title="searxng" width ="232" height="40"](./portfolio/images/searxng.svg)
+      ![alt="cpc-gallos" title="cpc-gallos" ](./portfolio/images/cpc-gallos.png)
       <div class="center">
         <hr>
-        Mi instancia de searxng
-        [comment]: <> ([searxng](https://searx.arielparra.tech))
-      </div>
-    </div>
-    <div class="card">
-      ![alt="codeforces logo" title="codeforces" width ="236" height="30"](./portfolio/images/Codeforces.webp)
-      <div class="center">
-        <hr>
-        Mi perfil de [codeforces](https://codeforces.com/profile/ravary)
+        La página de [cpc-gallos](https://cpc-gallos.github.io/) administrada por mi.
       </div>
     </div>
   </div>[comment]: <> (container grid)

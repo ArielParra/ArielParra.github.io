@@ -52,4 +52,7 @@ function delCookie(name) {
     document.cookie = name + '=' + null + ";expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;SameSite=None;Secure";
 }
 
+/**
+ * @description export functions to be used in other modules
+ */
 //export { setCookie, getCookie, cookieExists, delCookie };
