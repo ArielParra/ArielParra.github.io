@@ -5,10 +5,10 @@
  */
 function changeFavicon(src) {
     const head = document.head || document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link'),
-    oldLink   = document.getElementById('dynamic-favicon');
-    link.id   = 'dynamic-favicon';
-    link.rel  = 'icon';
+    var link = document.createElement('link'),
+        oldLink = document.getElementById('dynamic-favicon');
+    link.id = 'dynamic-favicon';
+    link.rel = 'icon';
     link.href = src;
     if (oldLink) {
         head.removeChild(oldLink);
@@ -37,15 +37,15 @@ function animateFavicon() {
     }
 }
 document.addEventListener('DOMContentLoaded', () => {
-  if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
-    //for all the other chromium based browsers that doesnt support dynamic favicons
-    setInterval(animateFavicon, 800);
-  }else {
-    // For Firefox
-    var link = document.createElement('link');
-    link.rel = 'icon';
-    link.href = './images/favicon.gif';
-    link.type = 'image/gif';
-    document.head.appendChild(link);
-  } 
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
+        //for all the other chromium based browsers that doesnt support dynamic favicons
+        setInterval(animateFavicon, 800);
+    } else {
+        // For Firefox
+        var link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = './images/favicon.gif';
+        link.type = 'image/gif';
+        document.head.appendChild(link);
+    }
 });

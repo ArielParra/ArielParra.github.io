@@ -32,12 +32,12 @@ function toggleTheme(button) {
  * 
  * @returns {boolean} - Returns true if the browser prefers the light theme, false otherwise.
  */
-function browserPrefersLight(){
+function browserPrefersLight() {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
     return true;
   }
   return false;
-} 
+}
 
 /**
  * @description Initializes the theme of the website. 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       theme = 'theme-light';
     } else {
       theme = 'theme-dark';
-    }  
+    }
   }
   /* default button icon */
   if (theme === 'theme-light') {

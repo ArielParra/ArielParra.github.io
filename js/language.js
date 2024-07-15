@@ -22,7 +22,7 @@ function changeLanguage(language) {
             newPath = currentPath.replace('/es/index.html', '/index.html');
         }
     }
-    if(newPath !== undefined){
+    if (newPath !== undefined) {
         window.location.href = newPath;
     }
 }
@@ -45,17 +45,17 @@ function oppositeLanguage(language) {
  *
  * @param {HTMLButtonElement} button - The language button that triggered the event.
  */
-function langButton(button){
+function langButton(button) {
     button.disabled = true;
     let currentLanguage;
-    if ( cookieExists('language') ) {
+    if (cookieExists('language')) {
         currentLanguage = getCookie('language');
-    } else { 
+    } else {
         currentLanguage = getCurrentSiteLanguage();
     }
 
-    changeLanguage(oppositeLanguage(currentLanguage));    
-    setTimeout(function() {
+    changeLanguage(oppositeLanguage(currentLanguage));
+    setTimeout(function () {
         button.disabled = false;
     }, 500);
 }
@@ -67,7 +67,7 @@ function langButton(button){
  *
  * @returns {string} - The current URL path.
  */
-function getCurrentPath(){
+function getCurrentPath() {
     return window.location.pathname;
 }
 
@@ -76,9 +76,9 @@ function getCurrentPath(){
  *
  * @returns {string} - The current language code ('es' for Spanish, 'en' for English).
  */
-function getCurrentSiteLanguage(){
+function getCurrentSiteLanguage() {
     let currentPath = getCurrentPath();
-    if(currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html')){
+    if (currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html')) {
         return 'es';
     }
     return 'en';
@@ -89,7 +89,7 @@ function getCurrentSiteLanguage(){
  *
  * @returns {string} - The default language code using only the first 2 characters
  */
-function getDefaultLanguage(){
+function getDefaultLanguage() {
     return navigator.language.substring(0, 2);
 }
 
@@ -98,19 +98,19 @@ function getDefaultLanguage(){
  */
 document.addEventListener('DOMContentLoaded', () => {
     let defaultLang = getDefaultLanguage();
-    if (defaultLang !== 'es'){
+    if (defaultLang !== 'es') {
         defaultLang = 'en'; // default language is English
     }
-    if ( cookieExists('language') === true ) {
+    if (cookieExists('language') === true) {
         const cookieLang = getCookie('language');
-        if(getCurrentSiteLanguage() !== cookieLang){
+        if (getCurrentSiteLanguage() !== cookieLang) {
             changeLanguage(cookieLang);
-        } 
+        }
         /*else {
             // stay in the same page
         }
         */
-    } else if ( getCurrentSiteLanguage() !== defaultLang ){ // && !cookieExists('language')
+    } else if (getCurrentSiteLanguage() !== defaultLang) { // && !cookieExists('language')
         changeLanguage(defaultLang);
     }
 });

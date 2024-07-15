@@ -82,21 +82,21 @@ function exportSVG(button) {
     button.disabled = true;
 
     var svg = document.getElementById('unknownPleasures');
-    
+
     // Clone the SVG to avoid modifying the original
     var clonedSvg = svg.cloneNode(true);
-  
+
     // Get the computed styles for the root element
     var computedStyles = getComputedStyle(document.documentElement);
-  
+
     // Replace CSS variables in the SVG content
     clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--HTML_BG\)/g, computedStyles.getPropertyValue('--HTML_BG'));
     clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--text\)/g, computedStyles.getPropertyValue('--text'));
-  
+
     var svgContent = new XMLSerializer().serializeToString(clonedSvg);
     var blob = new Blob([svgContent], { type: 'image/svg+xml;charset=utf-8' });
     var url = URL.createObjectURL(blob);
-  
+
     // Create a temporary anchor element and trigger a click to download the SVG
     var a = document.createElement('a');
     a.href = url;
@@ -110,11 +110,11 @@ function exportSVG(button) {
         button.disabled = false;
     }, 500);
 }
-  
+
 /**
  * @description Main function to generate and display the Joy Division Unkown Pleasures inspired SVG.
  */
-function displaySVG(){
+function displaySVG() {
     var svg = document.getElementById('unknownPleasures');
     var linesGroup = document.getElementById('lines');
 
@@ -136,38 +136,38 @@ function displaySVG(){
     var y = yMin;
 
     for (var i = 0; i < nLines; i++) {
-    var linePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    var pathData = '';
+        var linePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        var pathData = '';
 
-    var nModes = randInt(1, 4);
-    var mus = [];
-    var sigmas = [];
+        var nModes = randInt(1, 4);
+        var mus = [];
+        var sigmas = [];
 
-    for (var j = 0; j < nModes; j++) {
-        mus[j] = rand(mx - 50, mx + 50);
-        sigmas[j] = randNormal(24, 30);
-    }
-
-    var w = y;
-
-    for (var k = 0; k < nPoints; k++) {
-        x = x + dx;
-        var noise = 0;
-
-        for (var l = 0; l < nModes; l++) {
-        noise += normalPDF(x, mus[l], sigmas[l]);
+        for (var j = 0; j < nModes; j++) {
+            mus[j] = rand(mx - 50, mx + 50);
+            sigmas[j] = randNormal(24, 30);
         }
 
-        var yy = 0.3 * w + 0.7 * (y - 600 * noise + noise * Math.random() * 200 + Math.random());
-        pathData += (k === 0 ? 'M' : 'L') + x + ' ' + yy;
-        w = yy;
-    }
+        var w = y;
 
-    linePath.setAttribute('d', pathData);
-    linesGroup.appendChild(linePath);
+        for (var k = 0; k < nPoints; k++) {
+            x = x + dx;
+            var noise = 0;
 
-    x = xMin;
-    y = y + dy;
+            for (var l = 0; l < nModes; l++) {
+                noise += normalPDF(x, mus[l], sigmas[l]);
+            }
+
+            var yy = 0.3 * w + 0.7 * (y - 600 * noise + noise * Math.random() * 200 + Math.random());
+            pathData += (k === 0 ? 'M' : 'L') + x + ' ' + yy;
+            w = yy;
+        }
+
+        linePath.setAttribute('d', pathData);
+        linesGroup.appendChild(linePath);
+
+        x = xMin;
+        y = y + dy;
     }
 
 }

@@ -38,7 +38,7 @@ nav_current: 3
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="certification cybersecurity">
-      ![alt="Security Fundamentals, imagen de certificación"](./achievements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
+      ![loading="lazy" alt="Security Fundamentals, imagen de certificación"](./achievements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">
         <p>
           Certificación en Security, Compliance, and Identity Fundamentals, emitido por Microsoft.
@@ -47,7 +47,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certification devops">
-      ![alt="GitHub Foundations, imagen de certificación"](./achievements/images/GH_Foundations.png)
+      ![loading="lazy" alt="GitHub Foundations, imagen de certificación"](./achievements/images/GH_Foundations.png)
       <div class="center">
         <p>
           Certificación en GitHub Foundations, emitido por GitHub.
@@ -56,7 +56,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certification ai cloud">
-      ![alt="OCI AI Generative AI, certification picture"](./achievements/images/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
+      ![loading="lazy" alt="OCI AI Generative AI, certification picture"](./achievements/images/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
       <div class="center">
         <p>
           Oracle Cloud Infrastructure 2024 Generative AI Certified Professional, emitido por Oracle.
@@ -65,7 +65,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certification ai cloud">
-      ![alt="OCI AI Foundations Associate, imagen de certification"](./achievements/images/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
+      ![loading="lazy" alt="OCI AI Foundations Associate, imagen de certification"](./achievements/images/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
       <div class="center">
         <p>
           Oracle Cloud Infrastructure 2023 AI Foundations Associate, emitido por Oracle.
@@ -85,7 +85,7 @@ nav_current: 3
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="certificate devops">
-      ![alt="GitHub y LinkedIn, imagen del certificado"](./achievements/images/Linkedin_Career_Essentials_in_GitHub.webp)
+      ![loading="lazy" alt="GitHub y LinkedIn, imagen del certificado"](./achievements/images/Linkedin_Career_Essentials_in_GitHub.webp)
       <div class="center">
         <p>
           Career Essentials in GitHub, certificado profesional, emitido por Github y LinkedIn.
@@ -94,7 +94,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate cybersecurity">
-      ![alt="Microsoft y LinkedIn Ciberseguidad, imagen del certificado"](./achievements/images/Fundamentos-profesionales-en-ciberseguridad-por-Microsoft-y-LinkedIn.png)
+      ![loading="lazy" alt="Microsoft y LinkedIn Ciberseguidad, imagen del certificado"](./achievements/images/Fundamentos-profesionales-en-ciberseguridad-por-Microsoft-y-LinkedIn.png)
       <div class="center">
         <p>
           Fundamentos profesionales en ciberseguridad, emitido por Microsoft y LinkedIn.
@@ -103,7 +103,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate ai">
-      ![alt="Microsoft y LinkedIn AI, imagen del certificado"](./achievements/images/Fundamentos-profesionales-de-IA-generativa-por-Microsoft-y-LinkedIn.png)
+      ![loading="lazy" alt="Microsoft y LinkedIn AI, imagen del certificado"](./achievements/images/Fundamentos-profesionales-de-IA-generativa-por-Microsoft-y-LinkedIn.png)
       <div class="center">
         <p>
           Fundamentos profesionales de IA generativa, emitido por Microsoft y LinkedIn.
@@ -112,7 +112,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate devops">
-      ![alt="GitLab CI Fundamentals, imagen del certificado"](./achievements/images/GitLab_CI_Fundamentals.png)
+      ![loading="lazy" alt="GitLab CI Fundamentals, imagen del certificado"](./achievements/images/GitLab_CI_Fundamentals.png)
       <div class="center">
         <p>
           GitLab CI Fundamentals, certificado, emitido por GitLab.
@@ -121,7 +121,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate progamming">
-      ![alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Programa.png)
+      ![loading="lazy" alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Programa.png)
       <div class="center">
         <p>
           Oracle Next Education Back-end, certificado, emitido por Alura and Oracle.
@@ -130,7 +130,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate progamming">
-      ![alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
+      ![loading="lazy" alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
       <div class="center">
         <p>
           Java and Spring Boot, certificado, emitido por Alura and Oracle.
@@ -139,7 +139,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate datascience ai">
-      ![alt="BLOCKMAKERS AI, imagen del certificado"](./achievements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
+      ![loading="lazy" alt="BLOCKMAKERS AI, imagen del certificado"](./achievements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
       <div class="center">
         <p>
           Inteligencia Artificial y Data Science, certificado, emitido por Blockmakers.
@@ -148,7 +148,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain progamming">
-     ![alt="BLOCKMAKERS solidity, imagen del certificado" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
+     ![loading="lazy" alt="BLOCKMAKERS solidity, imagen del certificado" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
       <div class="center">
         <p>
           Solidity bootcamp, certificado, emitido por Blockmakers.
@@ -157,7 +157,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain">
-      ![alt="BLOCKMAKERS blockchain, imagen del certificado"](./achievements/images/BLOCKMAKERS_Blockchain.png)
+      ![loading="lazy" alt="BLOCKMAKERS blockchain, imagen del certificado"](./achievements/images/BLOCKMAKERS_Blockchain.png)
       <div class="center">
         <p>
           Blockchain consultant, certificado, emitido por Blockmakers.
@@ -166,7 +166,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain progamming">
-      ![alt="ICP Azle, imagen del certificado"](./achievements/images/ICP_Developer_Azle.png)
+      ![loading="lazy" alt="ICP Azle, imagen del certificado"](./achievements/images/ICP_Developer_Azle.png)
       <div class="center">
         <p>
           Developer in Azle, certificado, emitido por Internet Computer (ICP).
@@ -175,7 +175,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate">
-      ![alt="Condusef Diploma imagen"](./achievements/images/Diploma_CONDUSEF.png)
+      ![loading="lazy" alt="Condusef Diploma imagen"](./achievements/images/Diploma_CONDUSEF.png)
       <div class="center">
         <p>
           Diplomado en educación financiera, emitido por la CONDUSEF.
@@ -184,7 +184,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate">
-      ![alt="Compu Cuantrix, imagen del certificado"](./achievements/images/Compu_Cuantrix_nivel_avanzado.png)
+      ![loading="lazy" alt="Compu Cuantrix, imagen del certificado"](./achievements/images/Compu_Cuantrix_nivel_avanzado.png)
       <div class="center">
         <p>
           Compu Cuantrix nivel avanzado, emitido por Fundación Televisa.
@@ -204,7 +204,7 @@ nav_current: 3
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="badge cloud networks">
-      ![alt="Z Xplore badge imagen"](./achievements/images/IBM_ZXplore_Concepts.png)
+      ![loading="lazy" alt="Z Xplore badge imagen"](./achievements/images/IBM_ZXplore_Concepts.png)
       <div class="center">
         <p>
           Insignia de IBM Z Xplore Concepts, emitida por IBM.

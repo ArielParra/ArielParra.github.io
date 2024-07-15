@@ -8,7 +8,7 @@
  */
 function toggleMenu(button) {
   if (button.dataset.navShown === 'true') {
-    hideMenu(button,true);
+    hideMenu(button, true);
   } else {
     showMenu(button);
   }
@@ -24,23 +24,23 @@ function hideMenu(button, animation) {
   button.disabled = true;
 
   const elements = document.querySelectorAll('.NotCurrent, .current');
-  
- 
+
+
   for (let i = 0; i < elements.length; i++) {
     const elem = elements[i];
-    if(animation === true){
+    if (animation === true) {
       elem.style.transition = 'opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out, visibility 0.5s ease-in-out';
     }
     elem.style.visibility = 'hidden';
     elem.style.opacity = 0;
-    elem.style.marginTop = '-25%'; 
+    elem.style.marginTop = '-25%';
     elem.style.pointerEvents = 'none';
   }
 
   button.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Menu';
   setCookie('menuStatus', 'hidden', 30);
 
-  setTimeout(function() {
+  setTimeout(function () {
     button.dataset.navShown = 'false';
     button.disabled = false;
   }, 500);
@@ -56,14 +56,14 @@ function showMenu(button) {
   button.disabled = true;
 
   const elements = document.querySelectorAll('.NotCurrent, .current');
-  
+
   for (let i = 0; i < elements.length; i++) {
     const elem = elements[i];
     elem.style.transition = 'opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out, visibility 0.5s ease-in-out';
     elem.style.visibility = 'visible';
     elem.style.opacity = 1;
     elem.style.marginTop = '0%';
-    setTimeout(function(){
+    setTimeout(function () {
       elem.style.pointerEvents = 'auto';
     }, 500);
   }
@@ -71,7 +71,7 @@ function showMenu(button) {
   button.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
   setCookie('menuStatus', 'shown', 30);
 
-  setTimeout(function() {
+  setTimeout(function () {
     button.dataset.navShown = 'true';
     button.disabled = false;
   }, 500);

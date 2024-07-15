@@ -10,7 +10,7 @@ function setCookie(name, value, days) {
     expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
     const sameSite = ';SameSite=None';
     const secure = ';Secure'; /*because of HTTPS*/
-    document.cookie = name + '=' + value  + ';expires=' + expires.toUTCString() + ';path=/' + sameSite + secure;
+    document.cookie = name + '=' + value + ';expires=' + expires.toUTCString() + ';path=/' + sameSite + secure;
 }
 
 /**

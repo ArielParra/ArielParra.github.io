@@ -12,15 +12,15 @@ function dbgAll() {
  *              Disables the provided button during the transition.
  */
 function dbgMessages() {
-    console.log('default lang = ' + getDefaultLanguage() );
-    console.log('lang cookie  = ' + getCookie('language') );
+    console.log('default lang = ' + getDefaultLanguage());
+    console.log('lang cookie  = ' + getCookie('language'));
     console.log('current site lang = ' + getCurrentSiteLanguage());
-    console.log('current path = ' + getCurrentPath()); 
+    console.log('current path = ' + getCurrentPath());
     console.log('curren site =' + window.location.href);
     console.log('browser prefers light = ' + browserPrefersLight());
     console.log('theme cookie = ' + getCookie('theme'));
     console.log('device width = ' + window.screen.width + 'px');
-    console.log('menuStatus = ' + getCookie('menuStatus') );
+    console.log('menuStatus = ' + getCookie('menuStatus'));
 }
 /**
  * @description get all cookies
