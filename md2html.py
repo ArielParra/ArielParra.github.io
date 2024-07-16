@@ -104,6 +104,8 @@ def generate_html(md_dict, md_content):
 
 <head>
   <base href="{md_dict['base_href']}">
+  <!-- App manifest -->
+  <link rel="manifest" href="./manifest.json">
   <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
