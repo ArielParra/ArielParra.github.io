@@ -174,7 +174,7 @@ def generate_html(md_dict, md_content):
 
     if nav_current == 3:
         type_tag_text_value = ["all", "certification", "certificate", "badge"]
-        topic_tag_text_value = ["cybersecurity", "devOps", "networks", "cloud", "blockchain", "progamming", "datascience", "ai"]
+        topic_tag_text_value = ["cybersecurity", "devOps", "networks", "cloud", "blockchain", "programming", "datascience", "ai"]
 
         if language == "en":
             filterType_text = "Filter by type"

@@ -39,7 +39,7 @@ nav_current: 3
     <div class="card" data-tags="certification cybersecurity">
       ![loading="lazy" alt="Security Fundamentals, certification picture"](./achievements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">
-        <p>
+        <p> 
           Security, Compliance, and Identity Fundamentals certification, issued by Microsoft.
           [LINK](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra-6307/D4A8CCF36FAC1D6E?sharingId=1F8F185897940CA9)
         </p>
@@ -119,7 +119,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-    <div class="card" data-tags="certificate progamming">
+    <div class="card" data-tags="certificate programming">
       ![loading="lazy" alt="Oracle One Program, certificate picture"](./achievements/images/Oracle_One_Programa.png)
       <div class="center">
         <p>
@@ -128,7 +128,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-    <div class="card" data-tags="certificate progamming">
+    <div class="card" data-tags="certificate programming">
       ![loading="lazy" alt="Oracle One Program, certificate picture"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
       <div class="center">
         <p>
@@ -146,7 +146,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-    <div class="card" data-tags="certificate blockchain progamming">
+    <div class="card" data-tags="certificate blockchain programming">
      ![loading="lazy" alt="BLOCKMAKERS solidity, certificate picture" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
       <div class="center">
         <p>
@@ -164,7 +164,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-    <div class="card" data-tags="certificate blockchain progamming">
+    <div class="card" data-tags="certificate blockchain programming">
       ![loading="lazy" alt="ICP Azle, certificate picture"](./achievements/images/ICP_Developer_Azle.png)
       <div class="center">
         <p>

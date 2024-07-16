@@ -312,7 +312,6 @@ input:checked {
 .grid>.card{
   /*Fixes text alignent with images on cards*/  
   display: grid;
-
 }
 
 #blog .card{
@@ -326,8 +325,14 @@ input:checked {
   font-size: 1.1rem;
 }
 
+#filter-checks {
+  display: inline-block;
+}
 #filter-checks label {
-  margin-right: 10px;
+  display: inline-flex;
+  align-items: top;
+  line-height: 1.4;
+  margin-right: 5px; 
 }
 
 .center{

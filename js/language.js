@@ -7,6 +7,7 @@
  */
 function changeLanguage(language) {
     let currentPath = getCurrentPath();
+    let params = window.location.search;
     setCookie('language', language, 30);
     let newPath;
     if (currentPath.endsWith('/') === true) {
@@ -23,10 +24,9 @@ function changeLanguage(language) {
         }
     }
     if (newPath !== undefined) {
-        window.location.href = newPath;
+        window.location.href = newPath + params; // Append the query parameters to the new path
     }
 }
-
 /**
  * @description Returns the opposite language code.
  *

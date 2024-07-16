@@ -120,7 +120,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-    <div class="card" data-tags="certificate progamming">
+    <div class="card" data-tags="certificate programming">
       ![loading="lazy" alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Programa.png)
       <div class="center">
         <p>
@@ -129,7 +129,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-    <div class="card" data-tags="certificate progamming">
+    <div class="card" data-tags="certificate programming">
       ![loading="lazy" alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
       <div class="center">
         <p>
@@ -147,7 +147,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-    <div class="card" data-tags="certificate blockchain progamming">
+    <div class="card" data-tags="certificate blockchain programming">
      ![loading="lazy" alt="BLOCKMAKERS solidity, imagen del certificado" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
       <div class="center">
         <p>
@@ -165,7 +165,7 @@ nav_current: 3
         </p>
       </div>
     </div>
-    <div class="card" data-tags="certificate blockchain progamming">
+    <div class="card" data-tags="certificate blockchain programming">
       ![loading="lazy" alt="ICP Azle, imagen del certificado"](./achievements/images/ICP_Developer_Azle.png)
       <div class="center">
         <p>
