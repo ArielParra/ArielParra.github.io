@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5,
 
 
 a[href]{
-  color: #8fbcbb; /* link color */
+  color: var(--aqua); /* link color */
   color: var(--a-href); 
   overflow-wrap: break-word; /* fixes long links overflowing */
 }
@@ -330,7 +330,6 @@ input:checked {
 }
 #filter-checks label {
   display: inline-flex;
-  align-items: top;
   line-height: 1.4;
   margin-right: 5px; 
 }
@@ -355,6 +354,31 @@ input:checked {
   display: table;
   clear:   both;
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--HTML_BG);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--button_BG);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--button-hover_color);
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--button_BG) var(--HTML_BG);
+}
+
 
 /*resonsiveness on mobile*/
 
