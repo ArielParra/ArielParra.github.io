@@ -115,7 +115,7 @@ nav_current: 3
       ![loading="lazy" alt="GitLab CI Fundamentals, imagen del certificado"](./achievements/images/GitLab_CI_Fundamentals.png)
       <div class="center">
         <p>
-          GitLab CI Fundamentals, certificado, emitido por GitLab.
+          GitLab CI Fundamentals, certificado emitido por GitLab.
           [LINK](https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg)
         </p>
       </div>
@@ -124,7 +124,7 @@ nav_current: 3
       ![loading="lazy" alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Programa.png)
       <div class="center">
         <p>
-          Oracle Next Education Back-end, certificado, emitido por Alura and Oracle.
+          Oracle Next Education Back-end, certificado emitido por Alura and Oracle.
           [LINK](https://app.aluracursos.com/program/certificate/80f90beb-02e0-48ae-a5a4-c097d226c28e)
         </p>
       </div>
@@ -133,7 +133,7 @@ nav_current: 3
       ![loading="lazy" alt="Oracle One Program, imagen del certificado"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
       <div class="center">
         <p>
-          Java and Spring Boot, certificado, emitido por Alura and Oracle.
+          Java and Spring Boot, certificado emitido por Alura and Oracle.
           [LINK](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang)
         </p>
       </div>
@@ -142,7 +142,7 @@ nav_current: 3
       ![loading="lazy" alt="BLOCKMAKERS AI, imagen del certificado"](./achievements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
       <div class="center">
         <p>
-          Inteligencia Artificial y Data Science, certificado, emitido por Blockmakers.
+          Inteligencia Artificial y Data Science, certificado emitido por Blockmakers.
           [PDF](./achievements/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf)
         </p>
       </div>
@@ -151,7 +151,7 @@ nav_current: 3
      ![loading="lazy" alt="BLOCKMAKERS solidity, imagen del certificado" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
       <div class="center">
         <p>
-          Solidity bootcamp, certificado, emitido por Blockmakers.
+          Solidity bootcamp, certificado emitido por Blockmakers.
           <a href=./achievements/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf>PDF</a>
         </p>
       </div>
@@ -160,7 +160,7 @@ nav_current: 3
       ![loading="lazy" alt="BLOCKMAKERS blockchain, imagen del certificado"](./achievements/images/BLOCKMAKERS_Blockchain.png)
       <div class="center">
         <p>
-          Blockchain consultant, certificado, emitido por Blockmakers.
+          Blockchain consultant, certificado emitido por Blockmakers.
           <a href=./achievements/docs/BLOCKMAKERS_Blockchain.pdf>PDF</a>
         </p>
       </div>
@@ -169,8 +169,53 @@ nav_current: 3
       ![loading="lazy" alt="ICP Azle, imagen del certificado"](./achievements/images/ICP_Developer_Azle.png)
       <div class="center">
         <p>
-          Developer in Azle, certificado, emitido por Internet Computer (ICP).
+          Developer in Azle, certificado emitido por Internet Computer (ICP).
           <a href=./achievements/docs/ICP_Developer_Azle.pdf>PDF</a>
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate ai">
+      ![loading="lazy" alt="Red Por la Ciberseguridad IA en el trabajo, imagen del certificado"](./achievements/images/RPLC_IAenElTrabajo.png)
+      <div class="center">
+        <p>
+          Inteligencia Artificial en el trabajo, certificado emitido por Red Por la Ciberseguridad y Microsoft.
+          [link](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724038728/3923002801AP.pdf)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate ai">
+      ![loading="lazy" alt="Red Por la Ciberseguridad IA generativa, imagen del certificado"](./achievements/images/RPLC_IAgenerativa.png)
+      <div class="center">
+        <p>
+          Introducción a la Inteligencia Artificial Generativa, certificado emitido por Red Por la Ciberseguridad.
+          [link](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039546/0744160282AP.pdf)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate cybersecurity">
+      ![loading="lazy" alt="Red Por la Ciberseguridad Operación Aleph, imagen del certificado"](./achievements/images/RPLC_OperacionAlephSC900.png)
+      <div class="center">
+        <p>
+          Operación Aleph: SC-900 certificate, certificado emitido por Red Por la Ciberseguridad.
+          [link](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1711245522/0939970957AP.pdf)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate cybersecurity">
+      ![loading="lazy" alt="Red Por la Ciberseguridad Ciberseguridad en el Trabajo, imagen del certificado"](./achievements/images/RPLC_CyberseguridadEnElTrabajo.png)
+      <div class="center">
+        <p>
+          Ciberseguridad en el Trabajo, certificado emitido por Red Por la Ciberseguridad.
+          [link](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate programming">
+      ![loading="lazy" alt="HackerRank Problem Solving, imagen del certificado"](./achievements/images/HackerRank-problem_solving_basic.webp)
+      <div class="center">
+        <p>
+          Problem Solving, certificado emitido por HackerRank.
+          [link](https://www.hackerrank.com/certificates/610bac95af9a)
         </p>
       </div>
     </div>

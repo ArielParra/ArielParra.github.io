@@ -37,7 +37,7 @@ nav_current: 3
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="certification cybersecurity">
-      ![loading="lazy" alt="Security Fundamentals, certification picture"](./achievements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
+      ![loading="lazy" alt="Security Fundamentals, certification image"](./achievements/images/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">
         <p> 
           Security, Compliance, and Identity Fundamentals certification, issued by Microsoft.
@@ -46,7 +46,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certification devops">
-      ![loading="lazy" alt="GitHub Foundations, certification picture"](./achievements/images/GH_Foundations.png)
+      ![loading="lazy" alt="GitHub Foundations, certification image"](./achievements/images/GH_Foundations.png)
       <div class="center">
         <p>
           GitHub Foundations certification, issued by GitHub.
@@ -55,7 +55,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certification ai cloud">
-      ![loading="lazy" alt="OCI AI Generative AI, certification picture"](./achievements/images/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
+      ![loading="lazy" alt="OCI AI Generative AI, certification image"](./achievements/images/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
       <div class="center">
         <p>
           Oracle Cloud Infrastructure 2024 Generative AI Certified Professional, issued by Oracle.
@@ -64,7 +64,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certification ai cloud">
-      ![loading="lazy" alt="OCI AI Foundations Associate, certification picture"](./achievements/images/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
+      ![loading="lazy" alt="OCI AI Foundations Associate, certification image"](./achievements/images/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
       <div class="center">
         <p>
           Oracle Cloud Infrastructure 2023 AI Foundations Associate, issued by Oracle.
@@ -84,7 +84,7 @@ nav_current: 3
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="certificate devops">
-      ![loading="lazy" alt="GitHub and LinkedIn, certificate picture"](./achievements/images/Linkedin_Career_Essentials_in_GitHub.webp)
+      ![loading="lazy" alt="GitHub and LinkedIn, certificate image"](./achievements/images/Linkedin_Career_Essentials_in_GitHub.webp)
       <div class="center">
         <p>
           Career Essentials in GitHub Professional Certificate, issued by Github and LinkedIn.
@@ -93,7 +93,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate cybersecurity">
-      ![loading="lazy" alt="Microsoft and LinkedIn Cybersecurity, certificate picture"](./achievements/images/Career_Essentials_in_Cybersecurity_by_Microsoft_and_LinkedIn.png)
+      ![loading="lazy" alt="Microsoft and LinkedIn Cybersecurity, certificate image"](./achievements/images/Career_Essentials_in_Cybersecurity_by_Microsoft_and_LinkedIn.png)
       <div class="center">
         <p>
           Career Essentials in Cybersecurity, issued by Microsoft and LinkedIn.
@@ -102,7 +102,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate ai">
-      ![loading="lazy" alt="Microsoft and LinkedIn AI, certificate picture"](./achievements/images/Career_Essentials_in_Generative_AI_by_Microsoft_and_LinkedIn.png)
+      ![loading="lazy" alt="Microsoft and LinkedIn AI, certificate image"](./achievements/images/Career_Essentials_in_Generative_AI_by_Microsoft_and_LinkedIn.png)
       <div class="center">
         <p>
           Career Essentials in Generative AI, issued by Microsoft and LinkedIn.
@@ -111,7 +111,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate devops">
-      ![loading="lazy" alt="GitLab CI Fundamentals, certificate picture"](./achievements/images/GitLab_CI_Fundamentals.png)
+      ![loading="lazy" alt="GitLab CI Fundamentals, certificate image"](./achievements/images/GitLab_CI_Fundamentals.png)
       <div class="center">
         <p>
           GitLab CI Fundamentals certificate, issued by GitLab.
@@ -120,7 +120,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate programming">
-      ![loading="lazy" alt="Oracle One Program, certificate picture"](./achievements/images/Oracle_One_Programa.png)
+      ![loading="lazy" alt="Oracle One Program, certificate image"](./achievements/images/Oracle_One_Programa.png)
       <div class="center">
         <p>
           Oracle Next Education Back-end certificate, issued by Alura and Oracle.
@@ -129,7 +129,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate programming">
-      ![loading="lazy" alt="Oracle One Program, certificate picture"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
+      ![loading="lazy" alt="Oracle One Program, certificate image"](./achievements/images/Oracle_One_Java_y_Spring_Boot.png)
       <div class="center">
         <p>
           Java and Spring Boot certificate, issued by Alura and Oracle.
@@ -138,7 +138,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate datascience ai">
-      ![loading="lazy" alt="BLOCKMAKERS AI, certificate picture"](./achievements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
+      ![loading="lazy" alt="BLOCKMAKERS AI, certificate image"](./achievements/images/BLOCKMAKERS_Inteligencia_Artificial.png)
       <div class="center">
         <p>
           Artifitial inteligence and data science certificate, issued by Blockmakers.
@@ -147,7 +147,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain programming">
-     ![loading="lazy" alt="BLOCKMAKERS solidity, certificate picture" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
+     ![loading="lazy" alt="BLOCKMAKERS solidity, certificate image" title=""](./achievements/images/BLOCKMAKERS_Solidity_Bootcamp.png)
       <div class="center">
         <p>
           Solidity bootcamp certificate, issued by Blockmakers.
@@ -156,7 +156,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain">
-      ![loading="lazy" alt="BLOCKMAKERS blockchain, certificate picture"](./achievements/images/BLOCKMAKERS_Blockchain.png)
+      ![loading="lazy" alt="BLOCKMAKERS blockchain, certificate image"](./achievements/images/BLOCKMAKERS_Blockchain.png)
       <div class="center">
         <p>
           Blockchain consultant certificate, issued by Blockmakers.
@@ -165,7 +165,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate blockchain programming">
-      ![loading="lazy" alt="ICP Azle, certificate picture"](./achievements/images/ICP_Developer_Azle.png)
+      ![loading="lazy" alt="ICP Azle, certificate image"](./achievements/images/ICP_Developer_Azle.png)
       <div class="center">
         <p>
           Developer in Azle certificate, issued by Internet Computer (ICP).
@@ -173,8 +173,53 @@ nav_current: 3
         </p>
       </div>
     </div>
+    <div class="card" data-tags="certificate ai">
+      ![loading="lazy" alt="Red Por la Ciberseguridad AI at work image"](./achievements/images/RPLC_IAenElTrabajo.png)
+      <div class="center">
+        <p>
+          Artificial intelligence at work certificate, issued by Red Por la Ciberseguridad and Microsoft.
+          [link](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724038728/3923002801AP.pdf)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate ai">
+      ![loading="lazy" alt="Red Por la Ciberseguridad Generative AI image"](./achievements/images/RPLC_IAgenerativa.png)
+      <div class="center">
+        <p>
+          Introduction to Generative Artificial Intelligence certificate, issued by Red Por la Ciberseguridad.
+          [link](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039546/0744160282AP.pdf)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate cybersecurity">
+      ![loading="lazy" alt="Red Por la Ciberseguridad Aleph Operation image"](./achievements/images/RPLC_OperacionAlephSC900.png)
+      <div class="center">
+        <p>
+          Aleph Operation: SC-900 certificate, issued by Red Por la Ciberseguridad.
+          [link](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1711245522/0939970957AP.pdf)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate cybersecurity">
+      ![loading="lazy" alt="Red Por la Ciberseguridad Cybersecurity at work image"](./achievements/images/RPLC_CyberseguridadEnElTrabajo.png)
+      <div class="center">
+        <p>
+          Cybersecurity at work certificate, issued by Red Por la Ciberseguridad.
+          [link](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate programming">
+      ![loading="lazy" alt="HackerRank Problem Solving image"](./achievements/images/HackerRank-problem_solving_basic.webp)
+      <div class="center">
+        <p>
+          Problem Solving certificate, issued by HackerRank.
+          [link](https://www.hackerrank.com/certificates/610bac95af9a)
+        </p>
+      </div>
+    </div>
     <div class="card" data-tags="certificate">
-      ![loading="lazy" alt="Condusef Diploma picture"](./achievements/images/Diploma_CONDUSEF.png)
+      ![loading="lazy" alt="Condusef Diploma image"](./achievements/images/Diploma_CONDUSEF.png)
       <div class="center">
         <p>
           Financial education diploma, issued by CONDUSEF.
@@ -183,7 +228,7 @@ nav_current: 3
       </div>
     </div>
     <div class="card" data-tags="certificate">
-      ![loading="lazy" alt="Compu Cuantrix, certificate picture"](./achievements/images/Compu_Cuantrix_nivel_avanzado.png)
+      ![loading="lazy" alt="Compu Cuantrix, certificate image"](./achievements/images/Compu_Cuantrix_nivel_avanzado.png)
       <div class="center">
         <p>
           Compu Cuantrix advance level course, issued by Televisa Foundation.
@@ -203,7 +248,7 @@ nav_current: 3
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="badge cloud networks">
-      ![loading="lazy" alt="Z Xplore, badge picture"](./achievements/images/IBM_ZXplore_Concepts.png)
+      ![loading="lazy" alt="Z Xplore, badge image"](./achievements/images/IBM_ZXplore_Concepts.png)
       <div class="center">
         <p>
           IBM Z Xplore Concepts badge, issued by IBM.

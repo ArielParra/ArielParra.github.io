@@ -14,7 +14,8 @@ nav_current: 0
       <div class="center">
         <h1>404 Página No Encontrada!</h1> 
         <p></p>
-        <button type="button" onclick="exportSVG(this)"> Exportar SVG </button>
+        <button type="button" id="exportSVG" onclick="exportSVG(this)">Exportar SVG</button>
+        <button type="button" id="exportPNG" onclick="exportPNG(this)">Exportar PNG</button>
       </div>[comment]: <> (center)
     </div>[comment]: <> (card)
   </div>[comment]: <> (container)

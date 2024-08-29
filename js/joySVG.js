@@ -178,3 +178,53 @@ function displaySVG() {
 document.addEventListener('DOMContentLoaded', () => {
     displaySVG();
 });
+
+
+/**
+ * @description Exports the SVG content to a PNG file with the filename "unknownPleasures.png".
+ */
+function exportPNG(button) {
+    button.disabled = true;
+
+    var svg = document.getElementById('unknownPleasures');
+
+    // Clone the SVG to avoid modifying the original
+    var clonedSvg = svg.cloneNode(true);
+
+    // Get the computed styles for the root element
+    var computedStyles = getComputedStyle(document.documentElement);
+
+    // Replace CSS variables in the SVG content
+    clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--HTML_BG\)/g, computedStyles.getPropertyValue('--HTML_BG'));
+    clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--text\)/g, computedStyles.getPropertyValue('--text'));
+
+    var svgContent = new XMLSerializer().serializeToString(clonedSvg);
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    
+    var svgBlob = new Blob([svgContent], { type: 'image/svg+xml;charset=utf-8' });
+    var url = URL.createObjectURL(svgBlob);
+
+    var image = new Image();
+    image.onload = function() {
+        canvas.width = image.width;
+        canvas.height = image.height;
+        ctx.drawImage(image, 0, 0);
+
+        URL.revokeObjectURL(url);
+
+        // Create a temporary anchor element and trigger a click to download the PNG
+        var a = document.createElement('a');
+        a.href = canvas.toDataURL('image/png');
+        a.download = 'unknownPleasures.png';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        // Enable the button after a short delay
+        setTimeout(function () {
+            button.disabled = false;
+        }, 500);
+    };
+    image.src = url;
+}

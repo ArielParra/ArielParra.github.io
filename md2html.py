@@ -45,11 +45,7 @@ def generate_html(md_dict, md_content):
     achievements_path = "./achievements/"
     contact_path = "./contact/"
     home_path = "./"
-    blog_path = "./blog/"
-    blog_path_webDev = blog_path + "webDev/"
-    blog_path_cpp = blog_path + "competitive/"
-    blog_path_linux = blog_path + "linux/"
-    blog_path_servers = blog_path + "servers/"
+
     es_path = "es/"
     if language == "en":
         home_title_text = "Home Page"
@@ -71,34 +67,18 @@ def generate_html(md_dict, md_content):
         achievements_path += es_path
         contact_path += es_path
         home_path += es_path
-        blog_path += es_path
-        blog_path_webDev += es_path
-        blog_path_cpp += es_path
-        blog_path_linux +=  es_path
-        blog_path_servers +=  es_path
+
 
     nav_items = [
         {"href": home_path, "title": home_title_text, "label": "~/"},
         {"href": portfolio_path, "title": "", "label": portfolio_label_text},
         {"href": achievements_path, "title": "", "label": achievements_label_text},
         {"href": contact_path, "title": "", "label": contact_label_text},
-        {"href": blog_path, "title": "", "label": "blog"},
-    ]
-
-    blog_items = [
-        {"href": blog_path_webDev, "title": home_title_text, "label": webDev_label_text},
-        {"href": blog_path_cpp, "title": "", "label": cpp_label_text},
-        {"href": blog_path_linux, "title": "", "label": linux_label_text},
-        {"href": blog_path_servers, "title": "", "label": servers_label_text},
     ]
 
     
     nav_current = int(md_dict['nav_current'])
-    blog_current =  md_dict.get('blog_current')
-    if blog_current != None:
-            blog_current = int(blog_current)
-    else:
-        blog_current = 0
+
     html_content = f"""<!DOCTYPE html>
 <html lang="{language}">
 
@@ -221,53 +201,8 @@ def generate_html(md_dict, md_content):
     </div><!--filters card-->
 </div><!--filters container-->
 """
-    # blog menu
-    blog_menu =  md_dict.get('blog_menu')
-    if blog_menu != None:
-        blog_menu = int(blog_menu)
-    if blog_current != 0 and blog_menu == 1: 
-        html_content += """  <nav>"""
-        
-        for idx, item in enumerate(blog_items, start=1):
-            class_name = "current" if idx == blog_current else "NotCurrent"
-            html_content += f'    <a href="{item["href"]}" class="{class_name}" title="{item["title"]}"> <span>{item["label"]}</span></a>\n'
-        html_content += """  </nav>
-    """
-    blog_number =  md_dict.get('blog_number')
-    if blog_number != None:
-        blog_number = int(blog_number)
-        if blog_number == 1:
-            previous_number = ''
-        else: 
-            previous_number = blog_number - 1
-        for idx, item in enumerate(blog_items, start=1):
-            if idx == blog_current:
-                span_title_text = item["label"]
-                blog_path = item["href"]
-
-        # Calculate maximum lengths
-        max_href_length = max(len(str(previous_number)),len(str(blog_number)) +1, len(str(blog_number + 1)))
-        max_span_length = len(span_title_text)
-        # Build HTML navigation with dynamic spacing
-        html_content += f"""
-  <nav>
-    <a href="{blog_path}{previous_number}"{' ' * (max_href_length - len(f"{previous_number}"))} title="previous blog"> <span> ← </span>{' ' * (max_span_length - 3)}</a>
-    <a href="{blog_path}#{blog_number}"{' ' * (max_href_length - len(f"#{blog_number}"))} title="blog homepage"> <span>{span_title_text}</span></a>
-    <a href="{blog_path}{blog_number + 1}"{' ' * (max_href_length - len(f"{blog_number + 1}"))} title="next blog">     <span> → </span>{' ' * (max_span_length - 3)}</a>
-  </nav>
-"""
     # all the content from md file
     html_content += md_to_html(md_content)
-
-    # end of the blog navigation
-    if blog_number != None:
-        html_content += f"""
-  <nav>
-    <a href="{blog_path}{previous_number}"{' ' * (max_href_length - len(f"{previous_number}"))} title="previous blog"> <span> ← </span>{' ' * (max_span_length - 3)}</a>
-    <a href="{blog_path}#{blog_number}"{' ' * (max_href_length - len(f"#{blog_number}"))} title="blog homepage"> <span>{span_title_text}</span></a>
-    <a href="{blog_path}{blog_number + 1}"{' ' * (max_href_length - len(f"{blog_number + 1}"))} title="next blog">     <span> → </span>{' ' * (max_span_length - 3)}</a>
-  </nav>
-"""
         
     html_content += """ 
 </body>

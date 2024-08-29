@@ -14,14 +14,12 @@ portfolio_en_path := $(call FixPath,./portfolio/en.md)
 portfolio_es_path := $(call FixPath,./portfolio/es/es.md)
 contact_en_path := $(call FixPath,./contact/en.md)
 contact_es_path := $(call FixPath,./contact/es/es.md)
-blog_en_path := $(call FixPath,./blog/en.md)
-blog_es_path := $(call FixPath,./blog/es/es.md)
 achievements_en_path := $(call FixPath,./achievements/en.md)
 achievements_es_path := $(call FixPath,./achievements/es/es.md)
 404_en_path := $(call FixPath,./404.md)
 404_es_path := $(call FixPath,./404/es/es.md) 
 
-all: index portfolio contact blog achievements 404
+all: index portfolio contact achievements 404
 
 index: $(index_en_path) $(index_es_path)
 	$(CC) $(call FixPath,$(script)) $(index_en_path) $(call FixPath,./index.html)
@@ -34,10 +32,6 @@ portfolio: $(portfolio_en_path) $(portfolio_es_path)
 contact: $(contact_en_path) $(contact_es_path)
 	$(CC) $(call FixPath,$(script)) $(contact_en_path) $(call FixPath,./contact/index.html)
 	$(CC) $(call FixPath,$(script)) $(contact_es_path) $(call FixPath,./contact/es/index.html)
-
-blog: $(blog_en_path) $(blog_es_path)
-	$(CC) $(call FixPath,$(script)) $(blog_en_path) $(call FixPath,./blog/index.html)
-	$(CC) $(call FixPath,$(script)) $(blog_es_path) $(call FixPath,./blog/es/index.html)
 
 achievements: $(achievements_en_path) $(achievements_es_path)
 	$(CC) $(call FixPath,$(script)) $(achievements_en_path) $(call FixPath,./achievements/index.html)
