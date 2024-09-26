@@ -11,7 +11,7 @@ nav_current: 1
     <div class="card">
         <hr>
         [comment]: <> (Temporal photo taken from:https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/ )
-        ![alt="Photo of me" title="me"](./images/foto.webp)   
+        ![alt="Photo of me" title="me"](./img/foto.webp)   
         <hr>
         <div class="center">
             <p>
@@ -85,14 +85,14 @@ nav_current: 1
     </div> 
 </div> 
 <footer>
-    [![class="img-88x31" alt="Linkback" title="HTTP Secure = HTTPS"](./images/88x31_arielparra_github_io.png)](https://arielparra.github.io/){:target="_blank"}
-    [![class="img-88x31" alt="Monero donation" title="Donate me some Monero"](./images/88x31_monero.png)](./images/43rhCdPEoAZfGKzeASYYzGQi3BwBYJ4sKe1PjBjPcuNYXe8rkiMghrTH8fJqqt7i1jKMho7MnTj7hTnN7bMMaB79HjJgg9J.png){:target="_blank"}
-    [![class="img-88x31" alt="Github" title="Github"](./images/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}   
-    [![class="img-88x31" alt="email" title="admin@arielparra.tech"](/images/88x31_email.png)](mailto:admin@arielparra.tech/){:target="_blank"}   
-    [![class="img-88x31" alt="Nord color pallete" title="Nord theme website"](/images/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}    
-    ![alt="Made in Mexico!" title="Made in Mexico!" class="img-88x31"](/images/88x31_Mexico.png)   
-    [![class="img-88x31" alt="Valid CSS" title="Valid CSS"](/images/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io){:target="_blank"}    
-    [![class="img-88x31" alt="Valid HTML" title="Valid HTML"](/images/88x31_valid-html.png)](https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io){:target="_blank"}  
+    [![class="img-88x31" alt="Linkback" title="HTTP Secure = HTTPS"](./img/88x31_arielparra_github_io.png)](https://arielparra.github.io/){:target="_blank"}
+    [![class="img-88x31" alt="Monero donation" title="Donate me some Monero"](./img/88x31_monero.png)](./img/43rhCdPEoAZfGKzeASYYzGQi3BwBYJ4sKe1PjBjPcuNYXe8rkiMghrTH8fJqqt7i1jKMho7MnTj7hTnN7bMMaB79HjJgg9J.png){:target="_blank"}
+    [![class="img-88x31" alt="Github" title="Github"](./img/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}   
+    [![class="img-88x31" alt="email" title="admin@arielparra.tech"](/img/88x31_email.png)](mailto:admin@arielparra.tech/){:target="_blank"}   
+    [![class="img-88x31" alt="Nord color pallete" title="Nord theme website"](/img/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}    
+    ![alt="Made in Mexico!" title="Made in Mexico!" class="img-88x31"](/img/88x31_Mexico.png)   
+    [![class="img-88x31" alt="Valid CSS" title="Valid CSS"](/img/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io){:target="_blank"}    
+    [![class="img-88x31" alt="Valid HTML" title="Valid HTML"](/img/88x31_valid-html.png)](https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io){:target="_blank"}  
 </footer>
 [comment]: <> (made with love)
 <div class="container">

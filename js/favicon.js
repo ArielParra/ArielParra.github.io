@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // For Firefox
         var link = document.createElement('link');
         link.rel = 'icon';
-        link.href = './images/favicon.gif';
+        link.href = './img/favicon.gif';
         link.type = 'image/gif';
         document.head.appendChild(link);
     }
