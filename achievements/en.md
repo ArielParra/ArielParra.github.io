@@ -36,12 +36,21 @@ nav_current: 3
     </div>
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
-    <div class="card" data-tags="certification cybersecurity">
+    <div class="card" data-tags="certification cybersecurity cloud">
       ![loading="lazy" alt="Security Fundamentals, certification image"](./achievements/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">
         <p> 
           Security, Compliance, and Identity Fundamentals certification, issued by Microsoft.
           [LINK](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra-6307/D4A8CCF36FAC1D6E?sharingId=1F8F185897940CA9)
+        </p>
+      </div>
+    </div>
+      <div class="card" data-tags="certification ai cloud">
+      ![loading="lazy" alt="Azure AI Fundamentals, certification image"](./achievements/img/MS_AI900.png)
+      <div class="center">
+        <p>
+          Azure AI Fundamentals certification, issued by Microsoft.
+          [LINK](https://learn.microsoft.com/api/credentials/share/en-gb/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9)
         </p>
       </div>
     </div>
@@ -83,6 +92,15 @@ nav_current: 3
     </div>
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
+    <div class="card" data-tags="certificate programming">
+      ![loading="lazy" alt="Harvard CS50x, certificate image"](./achievements/img/CS50x.png)
+      <div class="center">
+        <p>
+          Certificate of Completion of the CS50X course, issued by Harvard University.
+          [LINK](https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd)
+        </p>
+      </div>
+    </div>
     <div class="card" data-tags="certificate devops">
       ![loading="lazy" alt="GitHub and LinkedIn, certificate image"](./achievements/img/Linkedin_Career_Essentials_in_GitHub.webp)
       <div class="center">
@@ -134,6 +152,15 @@ nav_current: 3
         <p>
           Java and Spring Boot certificate, issued by Alura and Oracle.
           [LINK](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate ai">
+      <img src="./achievements/img/754_arielemilio_parra_EN.png" loading="lazy" alt="Google AI, certificate image">
+      <div class="center">
+        <p>
+          Artificial inteligence and productivity, issued by Santander and Google.
+          <a href="./achievements/docs/754_arielemilio_parra_EN.pdf">PDF</a>
         </p>
       </div>
     </div>
@@ -257,3 +284,42 @@ nav_current: 3
       </div>
     </div>
   </div>[comment]: <> (container Elements)
+<div class="container">
+    <div class="card" data-tags="event">
+      <hr>
+      <div class="center">
+        ### Events
+      </div>
+      <hr>
+    </div>
+  </div>[comment]: <> (container Elements)
+  <div class="container grid max-width">
+    <div class="card" data-tags="event programming">
+      ![loading="lazy" alt="ICPC 2024, certificate image"](./achievements/img/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.png)
+      <div class="center">
+        <p>
+          Honarable Mention at the 2024 ICPC Grand Premio de Mexico.
+          <a href="./achievements/docs/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.pdf">PDF</a>
+        </p>
+      </div>
+    </div>    
+    <div class="card" data-tags="event programming">
+      ![loading="lazy" alt="ANIEI 2024, certificate image"](./achievements/img/ANIEI-Ariel Emilio Parra Martínez.png)
+      <div class="center">
+        <p>
+          Participation at the 19th ANIEI National Programming Contest.
+          <a href="./achievements/docs/ANIEI-Ariel Emilio Parra Martínez.pdf">PDF</a>
+        </p>
+      </div>  
+    </div>
+    <div class="card" data-tags="event programming">
+      ![loading="lazy" alt="Meta Hacker Cup 2024, certificate image"](./achievements/img/MetaHackerCup-2024.png)
+      <div class="center">
+        <p>
+          Participation in Round 1 of the 2024 Meta Hacker Cup. Placing in the top 32% globally.
+          <a href="https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1022025052997781">LINK</a>
+        </p>
+      </div>  
+    </div>    
+  </div>[comment]: <> (container Elements)
+  

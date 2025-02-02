@@ -46,6 +46,15 @@ nav_current: 3
         </p>
       </div>
     </div>
+    <div class="card" data-tags="certification ai cloud">
+      ![loading="lazy" alt="Azure AI Fundamentals, imagen de certificación"](./achievements/img/MS_AI900.png)
+      <div class="center">
+        <p>
+          Certificación en Azure AI Fundamentals, emitido por Microsoft.
+          [LINK](https://learn.microsoft.com/api/credentials/share/en-gb/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9)
+        </p>
+      </div>
+    </div>
     <div class="card" data-tags="certification devops">
       ![loading="lazy" alt="GitHub Foundations, imagen de certificación"](./achievements/img/GH_Foundations.png)
       <div class="center">
@@ -84,6 +93,15 @@ nav_current: 3
     </div>
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
+    <div class="card" data-tags="certificate programming">
+      ![loading="lazy" alt="Harvard CS50x, imagen del certificado"](./achievements/img/CS50x.png)
+      <div class="center">
+        <p>
+          Certificado de Culminación del curso CS50X, emitido por la Universidad de Harvard.
+          [LINK](https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd)
+        </p>
+      </div>
+    </div>
     <div class="card" data-tags="certificate devops">
       ![loading="lazy" alt="GitHub y LinkedIn, imagen del certificado"](./achievements/img/Linkedin_Career_Essentials_in_GitHub.webp)
       <div class="center">
@@ -135,6 +153,15 @@ nav_current: 3
         <p>
           Java and Spring Boot, certificado emitido por Alura and Oracle.
           [LINK](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate ai">
+      ![loading="lazy" alt="Google AI, imagen del certificado"](./achievements/img/787_arielemilio_parra_ES.png)
+      <div class="center">
+        <p>
+          Inteligencia Artificial y productividad, certificado emitido por Santander y Google.
+          [PDF](./achievements/docs/787_arielemilio_parra_ES.pdf)
         </p>
       </div>
     </div>
@@ -249,7 +276,7 @@ nav_current: 3
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="badge cloud networks">
-      ![loading="lazy" alt="Z Xplore badge imagen"](./achievements/img/IBM_ZXplore_Concepts.png)
+      ![loading="lazy" alt="Z Xplore, imagen de la insignia"](./achievements/img/IBM_ZXplore_Concepts.png)
       <div class="center">
         <p>
           Insignia de IBM Z Xplore Concepts, emitida por IBM.
@@ -257,4 +284,42 @@ nav_current: 3
         </p>
       </div>
     </div>
+  </div>[comment]: <> (container Elements)
+<div class="container">
+    <div class="card" data-tags="event">
+      <hr>
+      <div class="center">
+        ### Eventos
+      </div>
+      <hr>
+    </div>
+  </div>[comment]: <> (container Elements)
+  <div class="container grid max-width">
+    <div class="card" data-tags="event programming">
+      ![loading="lazy" alt="ICPC 2024, imagen del certificado"](./achievements/img/achievements/img/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.png)
+      <div class="center">
+        <p>
+          Mención Honorifica en el Grand Premio de Mexico del ICPC 2024.
+          [PDF](./achievements/docs/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.pdf)
+        </p>
+      </div>
+    </div>    
+    <div class="card" data-tags="event programming">
+      ![loading="lazy" alt="ANIEI 2024, imagen del certificado"](./achievements/img/ANIEI-Ariel Emilio Parra Martínez.png)
+      <div class="center">
+        <p>
+          Participación en el 19o Concurso Nacional de Programación del ANIEI.
+          [PDF](./achievements/docs/ANIEI-Ariel Emilio Parra Martínez.pdf)
+        </p>
+      </div>  
+    </div>
+    <div class="card" data-tags="event programming">
+      ![loading="lazy" alt="Meta Hacker Cup 2024, imagen del certificado"](./achievements/img/MetaHackerCup-2024.png)
+      <div class="center">
+        <p>
+          Participación en la 1er ronda del Meta Hacker Cup 2024. Logrando un lugar en el top 32% mundial.
+          [LINK](./https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1022025052997781)
+        </p>
+      </div>  
+    </div> 
   </div>[comment]: <> (container Elements)

@@ -155,18 +155,18 @@ def generate_html(md_dict, md_content):
     
 
     if nav_current == 3:
-        type_tag_text_value = ["all", "certification", "certificate", "badge"]
+        type_tag_text_value = ["all", "certification", "certificate", "badge", "event"]
         topic_tag_text_value = ["cybersecurity", "devOps", "networks", "cloud", "blockchain", "programming", "datascience", "ai"]
 
         if language == "en":
             filterType_text = "Filter by type"
             filterTopic_text = "Filter by topic"
-            type_tag_text = ["All", "Certifications", "Certificates", "Badges"]
+            type_tag_text = ["All", "Certifications", "Certificates", "Badges", "Events"]
             topic_tag_text = ["Cybersecurity", "DevOps","Networks", "Cloud", "Blockchain", "Programming", "Data Science", "AI"]
         else:  # Spanish
             filterType_text = "Filtrado por tipo"
             filterTopic_text = "Filtrado por tema"
-            type_tag_text = ["Todos", "Certificaciones", "Certificados", "Insignias"]
+            type_tag_text = ["Todos", "Certificaciones", "Certificados", "Insignias", "Eventos"]
             topic_tag_text = ["Ciberseguridad", "DevOps", "Redes", "Nube", "Blockchain", "Programación", "Ciencia de Datos", "IA"]
 
         html_content += f"""
