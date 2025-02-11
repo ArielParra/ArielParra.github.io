@@ -11,7 +11,7 @@ nav_current: 1
     <div class="card">
         <hr>
         [comment]: <> (Foto tomada temporalmente de: https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/)
-        ![alt="mi foto" title="yo"](./img/foto.webp)   
+        ![alt="mi foto" title="yo"](./img/ArielParra.jpg)   
         <hr>
         <div class="center">
             <p>
@@ -92,7 +92,7 @@ nav_current: 1
     [![class="img-88x31" alt="Linkback" title="HTTP Secure = HTTPS"](./img/88x31_arielparra_github_io.png)](https://arielparra.github.io/){:target="_blank"}
     [![class="img-88x31" alt="Donacion de Monero" title="Doname con Monero"](./img/88x31_monero.png)](./img/43rhCdPEoAZfGKzeASYYzGQi3BwBYJ4sKe1PjBjPcuNYXe8rkiMghrTH8fJqqt7i1jKMho7MnTj7hTnN7bMMaB79HjJgg9J.png){:target="_blank"}
     [![class="img-88x31" alt="Github" title="Github"](./img/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}   
-    [![class="img-88x31" alt="email" title="admin@arielparra.tech"](/img/88x31_email.png)](mailto:admin@arielparra.tech/){:target="_blank"}   
+    [![class="img-88x31" alt="email" title="arielemilioparra@gmail.com"](/img/88x31_email.png)](mailto:arielemilioparra@gmail.com/){:target="_blank"}   
     [![class="img-88x31" alt="Tema de color Nord" title="Pagina del Tema Nord"](/img/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}    
     ![alt="Hecho en México!" title="Hecho en México!" class="img-88x31"](/img/88x31_Mexico.png)   
     [![class="img-88x31" alt="CSS Valido" title="CSS Valido"](/img/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io){:target="_blank"}    

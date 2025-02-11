@@ -42,7 +42,7 @@ def generate_html(md_dict, md_content):
     cpp_label_text = "C++"
     linux_label_text = "Linux"
     portfolio_path = "./portfolio/"
-    achievements_path = "./achievements/"
+    credentials_path = "./credentials/"
     contact_path = "./contact/"
     home_path = "./"
 
@@ -50,7 +50,7 @@ def generate_html(md_dict, md_content):
     if language == "en":
         home_title_text = "Home Page"
         portfolio_label_text = "portfolio"
-        achievements_label_text = "achievements"
+        credentials_label_text = "credentials"
         contact_label_text = "contact"
         webDev_label_text = "Web dev"
         servers_label_text = "Servers"
@@ -58,13 +58,13 @@ def generate_html(md_dict, md_content):
     else:  # Spanish
         home_title_text = "Página Principal"
         portfolio_label_text = "portafolio"
-        achievements_label_text = "logros"
+        credentials_label_text = "acreditaciones"
         contact_label_text = "contacto"
         webDev_label_text = "Desarrollo Web"
         servers_label_text = "Servidores"
         servers_label_text = "Servidores"
         portfolio_path += es_path
-        achievements_path += es_path
+        credentials_path += es_path
         contact_path += es_path
         home_path += es_path
 
@@ -72,7 +72,7 @@ def generate_html(md_dict, md_content):
     nav_items = [
         {"href": home_path, "title": home_title_text, "label": "~/"},
         {"href": portfolio_path, "title": "", "label": portfolio_label_text},
-        {"href": achievements_path, "title": "", "label": achievements_label_text},
+        {"href": credentials_path, "title": "", "label": credentials_label_text},
         {"href": contact_path, "title": "", "label": contact_label_text},
     ]
 
@@ -114,7 +114,7 @@ def generate_html(md_dict, md_content):
     
     
     html_content += """  <!-- Favicons -->  
-  <link   rel="apple-touch-icon" href="./img/foto.webp"   type="image/webp" sizes="180x180">
+  <link   rel="apple-touch-icon" href="./img/ArielParra.jpg"   type="image/webp" sizes="180x180">
 </head>
 
 <body>

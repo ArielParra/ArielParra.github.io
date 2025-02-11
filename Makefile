@@ -14,12 +14,12 @@ portfolio_en_path := $(call FixPath,./portfolio/en.md)
 portfolio_es_path := $(call FixPath,./portfolio/es/es.md)
 contact_en_path := $(call FixPath,./contact/en.md)
 contact_es_path := $(call FixPath,./contact/es/es.md)
-achievements_en_path := $(call FixPath,./achievements/en.md)
-achievements_es_path := $(call FixPath,./achievements/es/es.md)
+credentials_en_path := $(call FixPath,./credentials/en.md)
+credentials_es_path := $(call FixPath,./credentials/es/es.md)
 404_en_path := $(call FixPath,./404.md)
 404_es_path := $(call FixPath,./404/es/es.md) 
 
-all: index portfolio contact achievements 404
+all: index portfolio contact credentials 404
 
 index: $(index_en_path) $(index_es_path)
 	$(CC) $(call FixPath,$(script)) $(index_en_path) $(call FixPath,./index.html)
@@ -33,9 +33,9 @@ contact: $(contact_en_path) $(contact_es_path)
 	$(CC) $(call FixPath,$(script)) $(contact_en_path) $(call FixPath,./contact/index.html)
 	$(CC) $(call FixPath,$(script)) $(contact_es_path) $(call FixPath,./contact/es/index.html)
 
-achievements: $(achievements_en_path) $(achievements_es_path)
-	$(CC) $(call FixPath,$(script)) $(achievements_en_path) $(call FixPath,./achievements/index.html)
-	$(CC) $(call FixPath,$(script)) $(achievements_es_path) $(call FixPath,./achievements/es/index.html)
+credentials: $(credentials_en_path) $(credentials_es_path)
+	$(CC) $(call FixPath,$(script)) $(credentials_en_path) $(call FixPath,./credentials/index.html)
+	$(CC) $(call FixPath,$(script)) $(credentials_es_path) $(call FixPath,./credentials/es/index.html)
 
 404: $(404_en_path) $(404_es_path)
 	$(CC) $(call FixPath,$(script)) $(404_en_path) $(call FixPath,./404.html)
@@ -48,7 +48,7 @@ clean:
 	rm -f $(call FixPath,./portfolio/index.html) $(call FixPath,./portfolio/es/index.html)
 	rm -f $(call FixPath,./contact/index.html) $(call FixPath,./contact/es/index.html)
 	rm -f $(call FixPath,./blog/index.html) $(call FixPath,./blog/es/index.html)
-	rm -f $(call FixPath,./achievements/index.html) $(call FixPath,./achievements/es/index.html)
+	rm -f $(call FixPath,./credentials/index.html) $(call FixPath,./credentials/es/index.html)
 	rm -f $(call FixPath,./404.html) $(call FixPath,./404/es/index.html)
 
 .PHONY: all clean

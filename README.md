@@ -19,7 +19,7 @@ I also developed my own Python-based images site generator called `md2html.py`, 
 
 # Image credits
 
-- **./img/foto.webp** used under fair use from https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/
+- **./img/ArielParra.jpg** used under fair use from https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/
 - **./blog/img/hammer.webp** image inspired from Piotr Siedlecki's "Hammer And Wrench Black Silhouette" recovered from: https://www.publicdomainpictures.net/en/view-image.php?image=278182&picture=hammer-and-wrench-black-silhouette
 - **./blog/img/cpp.png** image inspired from Schäferle's "stone push overcoming obstacle" recovered from: https://pixabay.com/illustrations/stone-push-overcoming-obstacle-2127669/
 - **./blog/img/rabithole.png** image was created using GIMP and the font of the "penguin" text is liberation-serif. The white penguin (tux) was download from https://commons.wikimedia.org/wiki/File:Tux_bw.svg ; The background is Svetlanasmirnova's "White rabbit runs and falls into a hole. Surreal chess background and lettering follow the white rabbit.". obtained from: https://stock.adobe.com/mx/contributor/205805951/svetlanasmirnova?load_type=autoresprev_url=detail fortunaasset_id=391546596 ; So this image cannot be used in marketing, templates or other products for sale.

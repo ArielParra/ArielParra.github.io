@@ -31,9 +31,9 @@
   --button_border:var(--card_BG); 
   --button_color: var(--text);
 
-  --button-hover_border: var(--gray4);
-  --button-hover_BG:     var(--card_BG);
-  --button-hover_color:  var(--text);
+  --btn-hover_border: var(--gray4);
+  --btn-hover_BG:     var(--card_BG);
+  --btn-hover_color:  var(--text);
 
   --a-focus: var(--cyan);/*outline when tab is pressed*/
   --a-href: var(--aqua);
@@ -51,20 +51,22 @@
   --border:       var(--gray3); 
   --text:         var(--black); 
 
-  --HTML_BG:      var(--cyan);
-  --card_BG:      var(--blue);
+  --HTML_BG:      var(--white);
+  --card_BG:      var(--cyan);
 
   --hr: var(--border);
 
-  --button_BG:     var(--card_BG);
+  --button_BG:     var(--blue);
   --button_border: var(--border);
   --button_color:  var(--white) ;
 
-  --button-hover_border: var(--card_BG);
-  --button-hover_BG:     var(--gray4);
-  --button-hover_color:  var(--white);
+  --btn-hover_border: var(--blue);
+  --btn-hover_BG:     var(--gray4);
+  --btn-hover_color:  var(--white);
 
   --a-focus: var(--black) ;
+  --a-href: var(--white);
+  --a-href-hover: var(--blue);
 
   --nav-a-current_BG:        var(--gray5);
   --nav-a-hover_BG:          var(--gray4);
@@ -215,9 +217,9 @@ button:active{
 }
 
 button:hover{
-  border: 2px solid var(--button-hover_border); 
-  background-color: var(--button-hover_BG);
-  color:            var(--button-hover_color);
+  border: 2px solid var(--btn-hover_border); 
+  background-color: var(--btn-hover_BG);
+  color:            var(--btn-hover_color);
   transition: 200ms;
 }
 img {
@@ -370,7 +372,7 @@ input:checked {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--button-hover_color);
+  background: var(--btn-hover_color);
 }
 
 /* Firefox */

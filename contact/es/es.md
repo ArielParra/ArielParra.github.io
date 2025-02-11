@@ -19,7 +19,7 @@ nav_current: 4
       ![alt="email" title="email" width="58" height="38" style="image-rendering: pixelated;"](./contact/img/email.png)
       <div class="center">
         <hr>
-        email: [admin@arielparra.tech](mailto:admin@arielparra.tech)
+        email: [arielemilioparra@gmail.com](mailto:arielemilioparra@gmail.com)
       </div>
     </div>
     <div class="card">
