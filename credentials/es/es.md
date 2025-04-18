@@ -12,7 +12,7 @@ nav_current: 3
     <div class="card" data-tags="degree">
       <hr>
       <div class="center">
-        ### Titulo Universitario
+        ### Título en Ingeniería en Sistemas Computacionales
       </div>
       <hr> 
     </div>
@@ -20,10 +20,10 @@ nav_current: 3
   <div class="container grid">
     <div class="card" data-tags="degree">
       <div class="center">
-        <p>En progreso, 5/9 semestres</p>
+        <p>En progreso, 6/9 semestres</p>
       </div>
       <div class="progress-bar">
-        <div class="progress" style="width: 55.55%;"></div>
+        <div class="progress" style="width: 66.66%;"></div>
       </div>
     </div>
   </div>[comment]: <> (container Elements)
@@ -42,7 +42,7 @@ nav_current: 3
       <div class="center">
         <p>
           Certificación en Security, Compliance, and Identity Fundamentals, emitido por Microsoft.
-          [LINK](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra-6307/D4A8CCF36FAC1D6E?sharingId=1F8F185897940CA9)
+          [LINK](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/D4A8CCF36FAC1D6E?sharingId=1F8F185897940CA9)
         </p>
       </div>
     </div>
@@ -51,7 +51,7 @@ nav_current: 3
       <div class="center">
         <p>
           Certificación en Azure AI Fundamentals, emitido por Microsoft.
-          [LINK](https://learn.microsoft.com/api/credentials/share/en-gb/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9)
+          [LINK](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9)
         </p>
       </div>
     </div>
@@ -286,25 +286,52 @@ nav_current: 3
     </div>
   </div>[comment]: <> (container Elements)
 <div class="container">
-    <div class="card" data-tags="event">
+    <div class="card" data-tags="award">
       <hr>
       <div class="center">
-        ### Eventos
+        ### Premios y Reconocimientos
       </div>
       <hr>
     </div>
-  </div>[comment]: <> (container Elements)
-  <div class="container grid max-width">
-    <div class="card" data-tags="event programming">
-      ![loading="lazy" alt="ICPC 2024, imagen del certificado"](./credentials/img/credentials/img/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.png)
+</div>[comment]: <> (container Elements)
+<div class="container grid max-width">
+  <div class="card" data-tags="award programming">
+    ![loading="lazy" alt="UAA Taller 2025, imagen del certificado"](./credentials/img/UAA_TALLER_2025.jpg)
+    <div class="center">
+      <p>
+        Constancia otorgada por la *Universidad Autónoma de Aguascalientes* por mi participación como tallerista en el XIX Congreso de Ciencias Exactas, impartiendo el taller "Entrevistas técnicas de trabajo".
+         [PDF](./credentials/docs/UAA_TALLER_2025.pdf)
+      </p>
+    </div>  
+  </div>   
+  <div class="card" data-tags="award programming">
+    ![loading="lazy" alt="UAA concurso 2025, imagen del certificado"](./credentials/img/UAA_CONCURSO_2025.jpg)
+    <div class="center">
+      <p>
+         Constancia otorgada por la *Universidad Autónoma de Aguascalientes* por la organización y dirección del concurso de programación del XIX Congreso de Ciencias Exactas, celebrado el 27 de marzo de 2025
+         [PDF](./credentials/docs/UAA_CONCURSO_2025.pdf)
+      </p>
+    </div>  
+  </div>   
+  <div class="card" data-tags="award programming">
+    ![loading="lazy" alt="CPC-GALLOS 2024, imagen del certificado"](./credentials/img/CPC-GALLOS_2024.jpg)
+    <div class="center">
+      <p>
+        Constancia otorgada por la *Universidad Autónoma de Aguascalientes* por mi liderazgo y compromiso como presidente del club de programación competitiva Γα=Ω5 (Gallos), durante el semestre agosto-diciembre 2024
+        [PDF](./credentials/docs/CPC-GALLOS_2024.pdf)
+      </p>
+    </div>  
+  </div>   
+    <div class="card" data-tags="award programming">
+      ![loading="lazy" alt="ICPC 2024, imagen del certificado"](./credentials/img/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.png)
       <div class="center">
         <p>
-          Mención Honorifica en el Grand Premio de Mexico del ICPC 2024.
+          Mención Honorifica en el Gran Premio de Mexico del ICPC 2024
           [PDF](./credentials/docs/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.pdf)
         </p>
       </div>
     </div>    
-    <div class="card" data-tags="event programming">
+    <div class="card" data-tags="award programming">
       ![loading="lazy" alt="ANIEI 2024, imagen del certificado"](./credentials/img/ANIEI-Ariel Emilio Parra Martínez.png)
       <div class="center">
         <p>
@@ -313,7 +340,7 @@ nav_current: 3
         </p>
       </div>  
     </div>
-    <div class="card" data-tags="event programming">
+    <div class="card" data-tags="award programming">
       ![loading="lazy" alt="Meta Hacker Cup 2024, imagen del certificado"](./credentials/img/MetaHackerCup-2024.png)
       <div class="center">
         <p>
@@ -322,4 +349,4 @@ nav_current: 3
         </p>
       </div>  
     </div> 
-  </div>[comment]: <> (container Elements)
+</div>[comment]: <> (container Elements)

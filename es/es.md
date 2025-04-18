@@ -22,36 +22,29 @@ nav_current: 1
     <div class="card">
         <hr>
         <div class="center">
-            ### presentación
+            ### Acerca de mi
         </div> 
         <hr>
         <div class="justify">
             <p>
-            Hola soy Ariel Parra, tengo 20 años y soy un estudiante de ingeneria en
-            sistemas computacionales (ISC) en la UAA. Me gusta la programacion,
-            especialmente los lenguajes de C y C++, aunque usualmente suelo hacer
-            scripts de bash y llevo ya dos años usando Linux.
+                Hola, soy **Ariel Parra**, un estudiante de Ingeniería en Sistemas Computacionales de 21 años en la *Universidad Autónoma de Aguascalientes*, con un promedio general de 9.34/10 (equivalente a 3.7 GPA). Me apasiona la programación, especialmente en **C y C++**. He estado usando **Linux** como mi sistema operativo principal durante más de tres años.
             </p>
             <p>
-            Tengo un servidor de Linux en casa para poder hosetar mis proyectos,
-            como por ejemplo esta pagina web.
+                Soy presidente del **Club de Programación Competitiva Gallos** en la UAA y he participado en concursos internacionales como el **ICPC**, donde obtuve una Mención Honorífica. También he estado entre los **15 mejores en el Concurso Nacional de Programación de ANIEI** y clasifiqué en el **top 32% a nivel mundial en la Meta Hacker Cup**.
             </p>
         </div>
     </div> 
     <div class="card">
         <div class="center">
-            ### gustos
+            ### Filosofía
         </div>
         <hr>
         <div class="justify">
             <p>
-            Me gustan los programas de codigo abierto y de ser posible utilizo cualquier alternativa "libre",
-            en lugar de las apliciones con codigo cerrado, las cuales tienen la capacidad de no trabajar como dicen.
+                Creo firmemente en el uso de software de código abierto y que respete la privacidad. Siempre que es posible, prefiero alternativas "libres" en lugar de opciones propietarias. También soy fan de la filosofía **KISS (Keep It Simple, Stupid)** — la simplicidad lleva a sistemas más eficientes y personalizables.
             </p>
             <p>
-            Tambien me gusta la filosfia de programacion "KISS" (Keep It Simple Stupid), ya que los
-            proyectos "simples" suelen ser los que usan menos recursos y suelen ser más
-            costumizables.
+                Fuera del ámbito tecnológico, practico **Kendo** y represento con orgullo al equipo de Aguascalientes. Creo que las artes marciales ayudan a mantener mi mente aguda y mi cuerpo equilibrado.
             </p>
         </div>
     </div> 
@@ -63,28 +56,28 @@ nav_current: 1
         <hr>
         <p>
         "El conocimiento es poder" 
-        -Francis Bacon
+        - Francis Bacon
         </p>
         <div class="column">
-            Programación:
-            - C
-            - C++
+            **Programación:**
+            - C/C++
+            - Java
             - Python
-            Desarrollo de software:
-            - Git
-            - Vim
-            - Docker
+            **Desarrollo de software:**
+            - Git + GitHub
+            - Vscode
+            - Nix & Docker
+            - Azure
         </div>
         <div class="column">
-            Sistemas operativos:
+            **Sistemas operativos:**
             - Linux
-            - OpenBSD
+            - FreeBSD & OpenBSD
             - MacOS
-            - Windows
-            Desarrollo web:   
-            - CSS 
-            - HTML
-            - Java Script
+            - Windows & Windows Server
+            **Desarrollo web:**
+            - HTML + CSS + JavaScript
+            - Angular
         </div>
     </div> 
 </div> 

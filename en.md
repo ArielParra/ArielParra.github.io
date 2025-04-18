@@ -10,8 +10,7 @@ nav_current: 1
 <div class="container">
     <div class="card">
         <hr>
-        [comment]: <> (Temporal photo taken from:https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/ )
-        ![alt="Photo of me" title="me"](./img/ArielParra.jpg)   
+        ![alt="My photo" title="me"](./img/ArielParra.jpg)   
         <hr>
         <div class="center">
             <p>
@@ -22,32 +21,29 @@ nav_current: 1
     <div class="card">
         <hr>
         <div class="center">
-            ### presentation
+            ### About me
         </div> 
         <hr>
         <div class="justify">
             <p>
-            Hi I'm Ariel Parra, I'm 20 years old and I'm a engineering student in
-            Computer systems at UAA. I like programming, especially with languages
-            like C and C++, but usually I like making bash scripts and I have been
-            using Linux for two years.
+                Hi, I'm **Ariel Parra**, a 21-year-old Systems Engineering student at *Universidad Autónoma de Aguascalientes* with a cumulative average of 9.34/10 (equivalent to 3.7 GPA). I'm passionate about programming, especially in **C and C++**. I have been using **Linux** as my daily driver for over three years.
             </p>
             <p>
-            I have a Linux server at home so I can host my projects, for example this website.
+                I'm the president of the **Gallos Competitive Programming Club** at UAA and have participated in international contests like the **ICPC**, where I earned an Honorable Mention. I've also ranked in the **top 15 in the ANIEI National Programming Contest** and placed in the **top 32% globally in the Meta Hacker Cup**.
             </p>
         </div>
     </div> 
     <div class="card">
         <div class="center">
-            ### likes
+            ### Philosphy
         </div>
         <hr>
         <div class="justify">
             <p>
-            I like open source programs and if possible I use any "free" alternative, instead of the applications with closed code, which they might not work as they say.
+                I strongly believe in using open-source and privacy-respecting software. Whenever possible, I prefer "free" alternatives over proprietary options. I'm also a fan of the **KISS (Keep It Simple, Stupid)** philosophy — simplicity leads to more efficient and customizable systems.
             </p>
             <p>
-            I also like the "KISS" program philosophies (Keep It Simple Stupid), as the "simple" projects are often the ones that use the least resources and are usually more costumizable
+                Outside of tech, I practice **Kendo** and proudly represent the Aguascalientes team. I believe martial arts help keep my mind sharp and body balanced.
             </p>
         </div>
     </div> 
@@ -62,25 +58,25 @@ nav_current: 1
         -Francis Bacon
         </p>
         <div class="column">
-            Programming:
-            - C
-            - C++
+            **Programming:**
+            - C/C++
+            - Java
             - Python
-            Software development:
-            - Git
-            - Vim
-            - Docker
+            **Software development:**
+            - Git + GitHub
+            - Vscode
+            - Nix & Docker
+            - Azure 
         </div>
         <div class="column">
-            Operating systems:
+            **Operating systems:**
             - Linux
-            - OpenBSD
+            - FreeBSD & OpenBSD
             - MacOS
-            - Windows
-            Web development:   
-            - CSS 
-            - HTML
-            - Java Script
+            - Windows & Windows Server
+            **Web development:**
+            - HTML + CSS + Java Script
+            - Angular
         </div>
     </div> 
 </div> 
