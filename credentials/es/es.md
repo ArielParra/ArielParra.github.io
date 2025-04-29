@@ -138,6 +138,24 @@ nav_current: 3
         </p>
       </div>
     </div>
+    <div class="card" data-tags="certificate devops">
+      ![loading="lazy" alt="Santander AWS Cloud Practitioner, imagen del certificado"](./credentials/img/Santander_AWS_Cloud_Practitioner_Essentials.png)
+      <div class="center">
+        <p>
+          Ruta de Aprendizaje de AWS Cloud Practitioner, certificado emitido por Santander.
+          [PDF](./credentials/docs/Santander_AWS_Cloud_Practitioner_Essentials.pdf)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate devops">
+      ![loading="lazy" alt="Santander AWS Cloud Fundamentals, imagen del certificado"](./credentials/img/Santander_Fundamentos_de_Nube_AWS.png)
+      <div class="center">
+        <p>
+          Fundamentos de Nube de AWS, certificado emitido por Santander.
+          [PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf)
+        </p>
+      </div>
+    </div>
     <div class="card" data-tags="certificate programming">
       ![loading="lazy" alt="Oracle One Program, imagen del certificado"](./credentials/img/Oracle_One_Programa.png)
       <div class="center">
@@ -279,8 +297,17 @@ nav_current: 3
       ![loading="lazy" alt="Z Xplore, imagen de la insignia"](./credentials/img/IBM_ZXplore_Concepts.png)
       <div class="center">
         <p>
-          Insignia de IBM Z Xplore Concepts, emitida por IBM.
+          Insignia de IBM Z Xplore Concepts, emitida por IBM en credly.
           [LINK](https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0/linked_in?t=sas12p)
+        </p>
+      </div>
+    </div>
+    <div class="card" data-tags="badge cloud">
+      ![loading="lazy" alt="AWS Technology: Cloud Essentials, imagen de la insignia"](./credentials/img/AWS_Cloud_Essentials.png)
+      <div class="center">
+        <p>
+          AWS Technology: Cloud Essentials badge, emitida por Amazon en credly.
+          [LINK](https://www.credly.com/badges/afd4033e-db74-41f2-ae6a-87ff9dc0520e/public_url)
         </p>
       </div>
     </div>
