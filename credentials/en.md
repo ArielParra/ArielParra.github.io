@@ -63,6 +63,15 @@ nav_current: 3
         </p>
       </div>
     </div>
+    <div class="card" data-tags="certification cloud">
+      ![loading="lazy" alt="AWS Cloud Practitioner, certification image"](./credentials/img/AWS_Cloud_Practitioner.png)
+      <div class="center">
+        <p>
+          AWS Certified Cloud Practitioner, issued by Amazon Web Services.
+          [LINK](https://www.credly.com/badges/c3534c43-4770-43e1-9d13-c98260a0cb00/)
+        </p>
+      </div>
+    </div>
     <div class="card" data-tags="certification ai cloud">
       ![loading="lazy" alt="OCI AI Generative AI, certification image"](./credentials/img/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
       <div class="center">
