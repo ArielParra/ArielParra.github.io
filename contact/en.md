@@ -26,7 +26,7 @@ nav_current: 4
       ![alt="LinkedIn" title="LinkedIn" height="38"](https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg)
       <div class="center">
         <hr>
-        LinkedIn: [Ariel Emilio Parra Martínez](https://www.linkedin.com/in/ariel-emilio-parra-mart%C3%ADnez-03780a2b5/)
+        LinkedIn: [Ariel Emilio Parra Martínez](https://www.linkedin.com/in/parra-ariel/)
       </div>
     </div>
   </div>[comment]: <> (container)
