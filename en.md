@@ -40,7 +40,7 @@ nav_current: 1
         <hr>
         <div class="justify">
             <p>
-                I strongly believe in using open-source and privacy-respecting software. Whenever possible, I prefer "free" alternatives over proprietary options. I'm also a fan of the **KISS (Keep It Simple, Stupid)** philosophy — simplicity leads to more efficient and customizable systems.
+                I strongly believe in using open-source and privacy-respecting software. Whenever possible, I prefer "free" alternatives over proprietary options. I'm also a fan of the **KISS (Keep It Simple, Stupid)** philosophy  simplicity leads to more efficient and customizable systems.
             </p>
             <p>
                 Outside of tech, I practice **Kendo** and proudly represent the Aguascalientes team. I believe martial arts help keep my mind sharp and body balanced.

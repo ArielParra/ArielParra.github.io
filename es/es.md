@@ -41,7 +41,7 @@ nav_current: 1
         <hr>
         <div class="justify">
             <p>
-                Creo firmemente en el uso de software de código abierto y que respete la privacidad. Siempre que es posible, prefiero alternativas "libres" en lugar de opciones propietarias. También soy fan de la filosofía **KISS (Keep It Simple, Stupid)** — la simplicidad lleva a sistemas más eficientes y personalizables.
+                Creo firmemente en el uso de software de código abierto y que respete la privacidad. Siempre que es posible, prefiero alternativas "libres" en lugar de opciones propietarias. También soy fan de la filosofía **KISS (Keep It Simple, Stupid)**  la simplicidad lleva a sistemas más eficientes y personalizables.
             </p>
             <p>
                 Fuera del ámbito tecnológico, practico **Kendo** y represento con orgullo al equipo de Aguascalientes. Creo que las artes marciales ayudan a mantener mi mente aguda y mi cuerpo equilibrado.

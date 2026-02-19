@@ -7,12 +7,11 @@ title: acreditaciones
 js: [cookies, language, theme, menu, favicon, tags]
 nav_current: 3
 ---
-
 <div class="container">
-    <div class="card" data-tags="degree">
+    <div class="card" data-tags="Studies">
       <hr>
       <div class="center">
-        ### Título en Ingeniería en Sistemas Computacionales
+        ### Estudios
       </div>
       <hr> 
     </div>
@@ -20,10 +19,21 @@ nav_current: 3
   <div class="container grid">
     <div class="card" data-tags="degree">
       <div class="center">
-        <p>En progreso, 6/9 semestres</p>
+        ![loading="lazy" alt="UAA logo"](https://www.uaa.mx/portal/wp-content/uploads/2022/08/UAA-LOGO.png)
+        ### Ingeniería en Sistemas Computacionales @ UAA
+        <p>
+        - En proceso, 8/9 semestres
+        </p>
       </div>
       <div class="progress-bar">
-        <div class="progress" style="width: 66.66%;"></div>
+        <div class="progress" style="width: 88.88%;"></div>
+      </div>
+    </div>
+     <div class="card" data-tags="degree">
+      <div class="center">
+        ![loading="lazy" alt="UTC logo"](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg/1280px-Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg.png)
+        ### Génie Informatique @ UTC
+        - Programa de estudios en el extranjero 2025
       </div>
     </div>
   </div>[comment]: <> (container Elements)
@@ -31,12 +41,21 @@ nav_current: 3
     <div class="card" data-tags="certification">
       <hr>
       <div class="center">
-        ### Certificaciones
+        ### Certifications
       </div>
       <hr>
     </div>
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
+    <div class="card" data-tags="certification english">
+      ![loading="lazy" alt="TOEFL IBT 2025"](./credentials/img/TOEFL_IBT_AEPM_2025.png)
+      <div class="center">
+        <p> 
+          TOEFL iBT 2025, con puntuación de 89/120 (CEFR B2), emitido por Educational Testing Service (ETS).
+          [PDF](./credentials/docs/TOEFL_IBT_AEPM_2025.pdf)
+        </p>
+      </div>
+    </div>
     <div class="card" data-tags="certification cybersecurity">
       ![loading="lazy" alt="Security Fundamentals, imagen de certificación"](./credentials/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">
@@ -332,6 +351,15 @@ nav_current: 3
 </div>[comment]: <> (container Elements)
 <div class="container grid max-width">
   <div class="card" data-tags="award programming">
+    ![loading="lazy" alt="ICPC 2025, certificate image"](./credentials/img/2025_SWERC_AEPM_UTC.png)
+    <div class="center">
+      <p>
+        Mención en el SWERC 2025. Puesto 67 de 142 equipos. Puesto 15 entre 46 equipos franceses y 1.er lugar en la región de Hauts-de-France.
+        [PDF](./credentials/docs/2025_SWERC_AEPM_UTC.pdf)
+      </p>
+    </div>
+  </div>    
+  <div class="card" data-tags="award programming">
     ![loading="lazy" alt="UAA Taller 2025, imagen del certificado"](./credentials/img/UAA_TALLER_2025.jpg)
     <div class="center">
       <p>
@@ -366,7 +394,16 @@ nav_current: 3
           [PDF](./credentials/docs/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.pdf)
         </p>
       </div>
-    </div>    
+    </div>
+    <div class="card" data-tags="award programming">
+      ![loading="lazy" alt="ICPC 2025, imagen del certificado"](./credentials/img/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.png)
+      <div class="center">
+        <p>
+          Mención Honorifica en el Gran Premio de Mexico del ICPC 2025
+          [PDF](./credentials/docs/2026-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.pdf)
+        </p>
+      </div>
+    </div>          
     <div class="card" data-tags="award programming">
       ![loading="lazy" alt="ANIEI 2024, imagen del certificado"](./credentials/img/ANIEI-Ariel Emilio Parra Martínez.png)
       <div class="center">

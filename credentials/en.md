@@ -8,10 +8,10 @@ js: [cookies, language, theme, menu, favicon, tags]
 nav_current: 3
 ---
 <div class="container">
-    <div class="card" data-tags="degree">
+    <div class="card" data-tags="Studies">
       <hr>
       <div class="center">
-        ### Bachelor's Degree in Systems Engineering
+        ### Studies
       </div>
       <hr> 
     </div>
@@ -19,10 +19,21 @@ nav_current: 3
   <div class="container grid">
     <div class="card" data-tags="degree">
       <div class="center">
-        <p>In progress, 6/9 semesters</p>
+        ![loading="lazy" alt="UAA logo"](https://www.uaa.mx/portal/wp-content/uploads/2022/08/UAA-LOGO.png)
+        ### Bachelor's Degree in Systems Engineering @ UAA
+        <p>
+        - In progress, 8/9 semesters
+        </p>
       </div>
       <div class="progress-bar">
-        <div class="progress" style="width: 66.66%;"></div>
+        <div class="progress" style="width: 88.88%;"></div>
+      </div>
+    </div>
+     <div class="card" data-tags="degree">
+      <div class="center">
+        ![loading="lazy" alt="UTC logo"](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg/1280px-Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg.png)
+        ### Génie Informatique @ UTC
+        - Study Abroad Program 2025
       </div>
     </div>
   </div>[comment]: <> (container Elements)
@@ -36,6 +47,15 @@ nav_current: 3
     </div>
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
+    <div class="card" data-tags="certification english">
+      ![loading="lazy" alt="TOEFL IBT 2025"](./credentials/img/TOEFL_IBT_AEPM_2025.png)
+      <div class="center">
+        <p> 
+          TOEFL iBT 2025, scored 89/120 (CEFR B2), issued by Educational Testing Service (ETS).
+          [PDF](./credentials/docs/TOEFL_IBT_AEPM_2025.pdf)
+        </p>
+      </div>
+    </div>
     <div class="card" data-tags="certification cybersecurity cloud">
       ![loading="lazy" alt="Security Fundamentals, certification image"](./credentials/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">
@@ -331,6 +351,15 @@ nav_current: 3
   </div>[comment]: <> (container Elements)
   <div class="container grid max-width">
     <div class="card" data-tags="award programming">
+      ![loading="lazy" alt="ICPC 2025, certificate image"](./credentials/img/2025_SWERC_AEPM_UTC.png)
+      <div class="center">
+        <p>
+          Ranked Mention at the 2025 SWERC (ICPC Southwestern Europe Regional Contest).Ranked 67th out of 142 teams. Placed 15th among 46 French teams and 1st in the Hauts-de-France region.
+          [PDF](./credentials/docs/2025_SWERC_AEPM_UTC.pdf)
+        </p>
+      </div>
+    </div>    
+    <div class="card" data-tags="award programming">
     ![loading="lazy" alt="UAA workshop 2025, certificate image"](./credentials/img/UAA_TALLER_2025.jpg)
     <div class="center">
       <p>
@@ -365,12 +394,21 @@ nav_current: 3
           [PDF](./credentials/docs/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.pdf)
         </p>
       </div>
-    </div>    
+    </div>
+    <div class="card" data-tags="award programming">
+      ![loading="lazy" alt="ICPC 2025, certificate image"](./credentials/img/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.png)
+      <div class="center">
+        <p>
+          Honarable Mention at the 2025 ICPC Gran Premio de Mexico.
+          [PDF](./credentials/docs/2026-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.pdf)
+        </p>
+      </div>
+    </div>      
     <div class="card" data-tags="award programming">
       ![loading="lazy" alt="ANIEI 2024, certificate image"](./credentials/img/ANIEI-Ariel Emilio Parra Martínez.png)
       <div class="center">
         <p>
-          Participation at the 19th ANIEI National Programming Contest.
+          Participation at the 19th ANIEI National Programming Contest. Ranking top 15.
           [PDF](./credentials/docs/ANIEI-Ariel Emilio Parra Martínez.pdf)
         </p>
       </div>  
