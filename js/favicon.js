@@ -9,7 +9,8 @@ function changeFavicon(src) {
         oldLink = document.getElementById('dynamic-favicon');
     link.id = 'dynamic-favicon';
     link.rel = 'icon';
-    link.href = src;
+    link.href = String(src).trim();
+    link.type = 'image/png';
     if (oldLink) {
         head.removeChild(oldLink);
     }
@@ -26,10 +27,10 @@ function animateFavicon() {
     }
     if (animateFavicon.i === 0) {
         //frame 1
-        changeFavicon(" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAADFBMVEUAAADZ3unZ3umBocEb6ctKAAAABHRSTlMA////sy1AiAAAAERJREFUOI1jYKAXYGZmxi9AuQJUISyylCtgxgKoqQDOR5JCUUOhAmy2o7iEGAW4fUFlBdhihjoKMAIc7gDsMU6JgqEMACyOBFfUK478AAAAAElFTkSuQmCC");
+        changeFavicon("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAADFBMVEUAAADZ3unZ3umBocEb6ctKAAAABHRSTlMA////sy1AiAAAAERJREFUOI1jYKAXYGZmxi9AuQJUISyylCtgxgKoqQDOR5JCUUOhAmy2o7iEGAW4fUFlBdhihjoKMAIc7gDsMU6JgqEMACyOBFfUK478AAAAAElFTkSuQmCC");
     } else { //could be a switch if I had more frames
         //frame 2
-        changeFavicon(" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAADFBMVEUAAADZ3unZ3umBocEb6ctKAAAABHRSTlMA////sy1AiAAAAEBJREFUOI1jYKAXYGZmxi9AiQI4C0kNihi1FDBjAdRUgMxHZ1JVAQ5AWAEOLyBkqaKAwvRAjAIMWXRhyhUMfQAAcEwEjYn6LD0AAAAASUVORK5CYII=");
+        changeFavicon("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAADFBMVEUAAADZ3unZ3umBocEb6ctKAAAABHRSTlMA////sy1AiAAAAEBJREFUOI1jYKAXYGZmxi9AiQI4C0kNihi1FDBjAdRUgMxHZ1JVAQ5AWAEOLyBkqaKAwvRAjAIMWXRhyhUMfQAAcEwEjYn6LD0AAAAASUVORK5CYII=");
     }
     animateFavicon.i++;
     if (animateFavicon.i === 2) {
@@ -37,15 +38,18 @@ function animateFavicon() {
     }
 }
 document.addEventListener('DOMContentLoaded', () => {
-    if (navigator.userAgent.toLowerCase().indexOf('firefox') === -1) {
-        //for all the other chromium based browsers that doesnt support dynamic favicons
-        setInterval(animateFavicon, 800);
+    const ua = navigator.userAgent;
+    const isFirefox = ua.toLowerCase().indexOf('firefox') !== -1;
+    if (isFirefox) {
+        setInterval(animateFavicon, 800);    
     } else {
-        // For Firefox
+        // For Chromium
         var link = document.createElement('link');
         link.rel = 'icon';
         link.href = './img/favicon.gif';
         link.type = 'image/gif';
-        document.head.appendChild(link);
+        document.head.appendChild(link);        
     }
+
+    
 });
