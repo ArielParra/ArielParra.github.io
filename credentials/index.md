@@ -22,10 +22,9 @@ nav_current: 3
       <div class="center">
         ![loading="lazy" alt="UAA logo"](https://www.uaa.mx/portal/wp-content/uploads/2022/08/UAA-LOGO.png)
         ### ((en))Bachelor's Degree in Systems Engineering((/en))((es)) Ing. en Sistemas Computacionales((/es)) @ UAA
-        <p>
         - In progress, 8/9 semesters
-        </p>
       </div>
+
       <div class="progress-bar">
         <div class="progress" style="width: 88.88%;"></div>
       </div>
@@ -43,7 +42,7 @@ nav_current: 3
     <div class="card" data-tags="certification">
       <hr>
       <div class="center">
-        ((en))### Certifications((/en))((es))### Certificaciones((/es))
+        ### ((en))Certifications((/en))((es))Certificaciones((/es))
       </div>
       <hr>
     </div>
@@ -101,7 +100,7 @@ nav_current: 3
     <div class="card" data-tags="certificate">
       <hr>
       <div class="center">
-        ((en))### Certificates((/en))((es))### certificados((/es))
+        ### ((en))Certificates((/en))((es))certificados((/es))
       </div>
       <hr>
     </div>
@@ -176,7 +175,7 @@ nav_current: 3
       <div class="center">
         <p>
           ((en))Artificial inteligence and productivity, issued by Santander and Google.((/en))((es))Inteligencia Artificial y productividad, certificado emitido por Santander y Google.((/es))
-          ((en))PDF((/en))((es))PDF((/es))(./docs/754_arielemilio_parra_EN.pdf)
+          ((en))PDF((/en))((es))PDF((/es))(./credentials/docs/754_arielemilio_parra_EN.pdf)
         </p>
       </div>
     </div>
@@ -185,7 +184,7 @@ nav_current: 3
       <div class="center">
         <p>
           ((en))Artifitial inteligence and data science certificate, issued by Blockmakers.((/en))((es))Inteligencia Artificial y Data Science, certificado emitido por Blockmakers.((/es))
-          ((en))PDF((/en))((es))PDF((/es))(./docs/BLOCKMAKERS_Inteligencia_Artificial.pdf)
+          ((en))PDF((/en))((es))PDF((/es))(./credentials/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf)
         </p>
       </div>
     </div>
@@ -194,7 +193,7 @@ nav_current: 3
       <div class="center">
         <p>
           ((en))Solidity bootcamp certificate, issued by Blockmakers.((/en))((es))Solidity bootcamp, certificado emitido por Blockmakers.((/es))
-          ((en))PDF((/en))((es))PDF((/es))(./docs/BLOCKMAKERS_Solidity_Bootcamp.pdf)
+          ((en))PDF((/en))((es))PDF((/es))(./credentials/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf)
         </p>
       </div>
     </div>
@@ -203,7 +202,7 @@ nav_current: 3
       <div class="center">
         <p>
           ((en))Blockchain consultant certificate, issued by Blockmakers.((/en))((es))Blockchain consultant, certificado emitido por Blockmakers.((/es))
-          ((en))PDF((/en))((es))PDF((/es))(./docs/BLOCKMAKERS_Blockchain.pdf)
+          ((en))PDF((/en))((es))PDF((/es))(./credentials/docs/BLOCKMAKERS_Blockchain.pdf)
         </p>
       </div>
     </div>
@@ -212,7 +211,7 @@ nav_current: 3
       <div class="center">
         <p>
           ((en))Developer in Azle certificate, issued by Internet Computer (ICP).((/en))((es))Developer in Azle, certificado emitido por Internet Computer (ICP).((/es))
-          ((en))PDF((/en))((es))PDF((/es))(./docs/ICP_Developer_Azle.pdf)
+          ((en))PDF((/en))((es))PDF((/es))(./credentials/docs/ICP_Developer_Azle.pdf)
         </p>
       </div>
     </div>
@@ -266,7 +265,7 @@ nav_current: 3
       <div class="center">
         <p>
           ((en))Financial education diploma, issued by CONDUSEF.((/en))((es))Diplomado en educación financiera, emitido por la CONDUSEF.((/es))
-          ((en))PDF((/en))((es))PDF((/es))(./docs/Diploma_CONDUSEF.pdf)
+          ((en))PDF((/en))((es))PDF((/es))(./credentials/docs/Diploma_CONDUSEF.pdf)
         </p>
       </div>
     </div>
@@ -275,7 +274,7 @@ nav_current: 3
       <div class="center">
         <p>
           ((en))Compu Cuantrix advance level course, issued by Televisa Foundation.((/en))((es))Compu Cuantrix nivel avanzado, emitido por Fundación Televisa.((/es))
-          ((en))PDF((/en))((es))PDF((/es))(./docs/Compu_Cuantrix_nivel_avanzado.pdf)
+          ((en))PDF((/en))((es))PDF((/es))(./credentials/docs/Compu_Cuantrix_nivel_avanzado.pdf)
         </p>
       </div>
     </div>
@@ -285,7 +284,7 @@ nav_current: 3
     <div class="card" data-tags="badge">
       <hr>
       <div class="center">
-        ((en))### Badges((/en))((es))### Insignias((/es))
+        ### ((en))Badges((/en))((es))Insignias((/es))
       </div>
       <hr>
     </div>
@@ -303,11 +302,11 @@ nav_current: 3
     </div>
   </div><!--container Elements-->
 
-<div class="container">
+  <div class="container">
     <div class="card" data-tags="event">
       <hr>
       <div class="center">
-        ((en))### Events((/en))((es))### Eventos((/es))
+        ### ((en))Events((/en))((es))Hventos((/es))
       </div>
       <hr>
     </div>
@@ -325,20 +324,20 @@ nav_current: 3
       </div>
     </div>    
     <div class="card" data-tags="event programming">
-      ![loading="lazy" alt="ICPC 2024, certificate image"](./credentials/img/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.png)
+      ![loading="lazy" alt="ICPC 2024, certificate image"](./credentials/img/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.png)
       <div class="center">
         <p>
           ((en))Honarable Mention at the 2024 ICPC Grand Premio de Mexico.((/en))((es))Mención Honorifica en el Grand Premio de Mexico del ICPC 2024.((/es))
-          ((en))PDF((/en))((es))PDF((/es))(./docs/2025-ICPC Gran Premio de Mexico-Ariel Emilio Parra Martínez-PLACE.pdf)
+          ((en))PDF((/en))((es))PDF((/es))(./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.pdf)
         </p>
       </div>
     </div>    
     <div class="card" data-tags="event programming">
-      ![loading="lazy" alt="ANIEI 2024, certificate image"](./credentials/img/ANIEI-Ariel Emilio Parra Martínez.png)
+      ![loading="lazy" alt="ANIEI 2024, certificate image"](./credentials/img/ANIEI-Ariel_Emilio_Parra_Martínez.png)
       <div class="center">
         <p>
           ((en))Participation at the 19th ANIEI National Programming Contest.((/en))((es))Participación en el 19o Concurso Nacional de Programación del ANIEI.((/es))
-          ((en))PDF((/en))((es))PDF((/es))(./docs/ANIEI-Ariel Emilio Parra Martínez.pdf)
+          ((en))PDF((/en))((es))PDF((/es))(./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martínez.pdf)
         </p>
       </div>  
     </div>

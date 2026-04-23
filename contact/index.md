@@ -1,9 +1,8 @@
 ---
-lang: en
 base_href: ../
-keywords: [Ariel Parra, contact]
-description: Ariel Parra contact information
-title: contact
+keywords: [((en))Ariel Parra, contact((/en))((es))Ariel Parra, contacto((/es))]
+description: ((en))Ariel Parra contact information((/en))((es))Información de contacto de Ariel Parra((/es))
+title: ((en))contact((/en))((es))contacto((/es))
 js: [cookies, language, theme, menu, favicon]
 nav_current: 4
 ---

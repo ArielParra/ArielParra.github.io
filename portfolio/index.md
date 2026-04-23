@@ -1,9 +1,8 @@
 ---
-lang: en
 base_href: ../
-keywords: [Ariel Parra, portfolio]
-description: Ariel Parra portfolio
-title: portfolio
+keywords: [((en))Ariel Parra, portfolio((/en))((es))Ariel Parra, portafolio((/es))]
+description: ((en))Ariel Parra portfolio((/en))((es))Portafolio de Ariel Parra((/es))
+title: ((en))portfolio((/en))((es))portafolio((/es))
 js: [cookies, language, theme, menu, favicon]
 nav_current: 2
 ---

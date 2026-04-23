@@ -1,9 +1,8 @@
 ---
-lang: en
 base_href: ./
-keywords: [Ariel Parra, website]
-description: Ariel Parra Website!
-title: Ariel Parra
+keywords: [((en))Ariel Parra, website((/en))((es))Ariel Parra, sitio web((/es))]
+description: ((en))Ariel Parra Website!((/en))((es))¡Sitio web de Ariel Parra!((/es))
+title: ((en))Ariel Parra((/en))((es))Ariel Parra((/es))
 js: [cookies, language, theme, menu, favicon, debug]
 nav_current: 1
 ---
@@ -124,12 +123,10 @@ nav_current: 1
 <!-- made with love -->
 <div class="container">
 <div class="center">
-((en))
-<p>Made with ❤️ by Ariel Parra</p>
-((/en))
-((es))
-<p>Hecho con ❤️ por Ariel Parra</p>
-((/es))
+<p>
+((en))Made with ❤️ by Ariel Parra((/en))
+((es))Hecho con ❤️ por Ariel Parra((/es))
+</p>
 </div>
 </div>
 <!-- lang button 

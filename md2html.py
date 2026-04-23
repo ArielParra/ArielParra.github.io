@@ -224,6 +224,48 @@ def md_to_html_phase2(text):
 
     return text
 
+def get_translations(text):
+    """Extracts both English and Spanish translations from i18n tags.
+    
+    Args:
+        text: The text containing i18n tags.
+        
+    Returns:
+        tuple: (en_content, es_content)
+    """
+    if not isinstance(text, str):
+        return text, text
+    pattern = re.compile(r'\(\((en|es)\)\)(.*?)\(\(/\1\)\)', re.DOTALL)
+    matches = pattern.findall(text)
+    if not matches:
+        return text, text
+    
+    results = {'en': text, 'es': text}
+    for l, content in matches:
+        results[l] = content
+    return results['en'], results['es']
+
+def extract_translation(text, lang):
+    """Extracts the translation for the given language from i18n tags.
+    
+    Args:
+        text: The text containing i18n tags.
+        lang: The language to extract ('en' or 'es').
+        
+    Returns:
+        The translated text or the original text if no tags are found.
+    """
+    if not isinstance(text, str):
+        return text
+    pattern = re.compile(r'\(\((en|es)\)\)(.*?)\(\(/\1\)\)', re.DOTALL)
+    matches = pattern.findall(text)
+    if not matches:
+        return text
+    for l, content in matches:
+        if l == lang:
+            return content
+    return text
+
 def md_to_html(md_content, page_lang):
     md_content = md_to_html_phase1(md_content)
 
@@ -327,11 +369,17 @@ def md_to_html(md_content, page_lang):
 
 
 def generate_html(md_dict, md_content):
-    language = md_dict['lang']
+    language = md_dict.get('lang', 'en')
     portfolio_path = "./portfolio/"
     credentials_path = "./credentials/"
     contact_path = "./contact/"
     home_path = "./"
+    
+    title_en, title_es = get_translations(md_dict['title'])
+    desc_en, desc_es = get_translations(md_dict['description'])
+    keys_raw = ', '.join(md_dict['keywords'])
+    keys_en, keys_es = get_translations(keys_raw)
+
 
     nav_items = [
         {"href": home_path, "title": "Home Page", "label": '<span class="i18n" data-i18n-en="~/" data-i18n-es="~/">~/</span>'},
@@ -342,17 +390,17 @@ def generate_html(md_dict, md_content):
     
     nav_current = int(md_dict['nav_current'])
     html_content = f"""<!DOCTYPE html>
-<html lang="{language}">
-
+<html lang="{language}" data-i18n-title-en="{html.escape(title_en)}" data-i18n-title-es="{html.escape(title_es)}">
+ 
 <head>
   <base href="{md_dict['base_href']}">
   <link rel="manifest" href="./manifest.json">
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="{', '.join(md_dict['keywords'])}">
-  <meta   name="description"     content="{md_dict['description']}">
+  <meta   name="keywords"        data-i18n-keywords-en="{html.escape(keys_en)}" data-i18n-keywords-es="{html.escape(keys_es)}" content="{html.escape(extract_translation(keys_raw, language))}">
+  <meta   name="description"     data-i18n-description-en="{html.escape(desc_en)}" data-i18n-description-es="{html.escape(desc_es)}" content="{html.escape(extract_translation(md_dict['description'], language))}">
   <meta   name="author"          content="Ariel Parra">
-  <title> {md_dict['title']} </title>
+  <title> {extract_translation(md_dict['title'], language)} </title>
   <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
 """
@@ -377,13 +425,14 @@ def generate_html(md_dict, md_content):
 """
     nav_button_text = '<span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span>'
     lang_button_text = '<span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span>'
-    theme_button_title = '<span class="i18n" data-i18n-en="Change color theme to" data-i18n-es="Cambiar tema de color a">Change color theme to</span>'
+    theme_button_title_en = "Change color theme to"
+    theme_button_title_es = "Cambiar tema de color a"
 
     html_content += f"""
   <div class="container">
     <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true">{nav_button_text}</button>
     <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">{lang_button_text}</button>
-    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="{theme_button_title}"> 🌗 </button>
+    <button type="button" onclick="toggleTheme(this)" id="themeButton" data-i18n-title-en="{theme_button_title_en}" data-i18n-title-es="{theme_button_title_es}" title="{theme_button_title_en}"> 🌗 </button>
   </div><!-- Buttons -->
 
   <nav>

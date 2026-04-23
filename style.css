@@ -75,8 +75,13 @@
 }
 
 /* general html */
+ 
+ .i18n {
+   display: contents;
+ }
+ 
+ html {
 
-html {
   background-color: var(--HTML_BG);
   color: var(--text);
   font-family: sans-serif; 

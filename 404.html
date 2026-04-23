@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-i18n-title-en="404 error" data-i18n-title-es="Error 404">
+ 
 <head>
   <base href="./">
   <link rel="manifest" href="./manifest.json">
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   name="keywords"        content="Ariel Parra, 404">
-  <meta   name="description"     content="Ariel Parra 404 error page">
+  <meta   name="keywords"        data-i18n-keywords-en="Ariel Parra, 404" data-i18n-keywords-es="Ariel Parra, 404" content="Ariel Parra, 404">
+  <meta   name="description"     data-i18n-description-en="Ariel Parra 404 error page" data-i18n-description-es="Página de error 404 de Ariel Parra" content="Ariel Parra 404 error page">
   <meta   name="author"          content="Ariel Parra">
   <title> 404 error </title>
   <link   rel="preload"          href="./style.css" as="style">
@@ -34,7 +34,7 @@
   <div class="container">
     <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true"><span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span></button>
     <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to"><span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span></button>
-    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="<span class="i18n" data-i18n-en="Change color theme to" data-i18n-es="Cambiar tema de color a">Change color theme to</span>"> 🌗 </button>
+    <button type="button" onclick="toggleTheme(this)" id="themeButton" data-i18n-title-en="Change color theme to" data-i18n-title-es="Cambiar tema de color a" title="Change color theme to"> 🌗 </button>
   </div><!-- Buttons -->
 
   <nav>
@@ -49,7 +49,7 @@
   <div class="container">
     <div class="card">
       <div class="center">
-        <span class="i18n" data-i18n-en="&lt;h1&gt;404 Page Not Found!&lt;/h1&gt;" data-i18n-es="&lt;h1&gt;¡404 Página No Encontrada!&lt;/h1&gt;"><h1>404 Page Not Found!</h1></span>
+        <h1><span class="i18n" data-i18n-en="404 Page Not Found!" data-i18n-es="¡404 Página No Encontrada!">404 Page Not Found!</span></h1> 
         <p></p>
         <span class="i18n" data-i18n-en="&lt;button type=&quot;button&quot; id=&quot;exportSVG&quot; onclick=&quot;exportSVG(this)&quot;&gt;Export as SVG&lt;/button&gt;
         &lt;button type=&quot;button&quot; id=&quot;exportPNG&quot; onclick=&quot;exportPNG(this)&quot;&gt;Export as PNG&lt;/button&gt;" data-i18n-es="&lt;button type=&quot;button&quot; id=&quot;exportSVG&quot; onclick=&quot;exportSVG(this)&quot;&gt;Exportar como SVG&lt;/button&gt;
@@ -71,13 +71,9 @@
     </div><!-- center -->
   </div><!-- container -->
   <footer>
-    <span class="i18n" data-i18n-en="&lt;p&gt;
-    Special thanks to the album &lt;em&gt;Unknown Pleasures&lt;/em&gt; by Joy Division and its cover, originally designed by Peter Saville. Also, special thanks to &lt;a href=&quot;https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html&quot;&gt;Max Halford&lt;/a&gt; for his script that I forked for this site.
-    &lt;/p&gt;" data-i18n-es="&lt;p&gt;
-    Agradecimientos especiales al álbum &lt;em&gt;Unknown Pleasures&lt;/em&gt; de Joy Division y su portada, originalmente diseñada por Peter Saville. También, agradecimientos especiales a &lt;a href=&quot;https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html&quot;&gt;Max Halford&lt;/a&gt; por su script que bifurcamos para este sitio.
-    &lt;/p&gt;"><p>
-    Special thanks to the album <em>Unknown Pleasures</em> by Joy Division and its cover, originally designed by Peter Saville. Also, special thanks to <a href="https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html">Max Halford</a> for his script that I forked for this site.
-    </p></span>
+    <p>
+    <span class="i18n" data-i18n-en="Special thanks to the album &lt;em&gt;Unknown Pleasures&lt;/em&gt; by Joy Division and its cover, originally designed by Peter Saville. Also, special thanks to &lt;a href=&quot;https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html&quot;&gt;Max Halford&lt;/a&gt; for his script that I forked for this site." data-i18n-es="Agradecimientos especiales al álbum &lt;em&gt;Unknown Pleasures&lt;/em&gt; de Joy Division y su portada, originalmente diseñada por Peter Saville. También, agradecimientos especiales a &lt;a href=&quot;https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html&quot;&gt;Max Halford&lt;/a&gt; por su script que bifurcamos para este sitio.">Special thanks to the album <em>Unknown Pleasures</em> by Joy Division and its cover, originally designed by Peter Saville. Also, special thanks to <a href="https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html">Max Halford</a> for his script that I forked for this site.</span>
+    </p>
   </footer> 
 </body>
 </html>
