@@ -2,27 +2,22 @@
 <html lang="en">
 
 <head>
-  <base href="https://arielparra.github.io/">
-  <!-- App manifest -->
+  <base href="./">
   <link rel="manifest" href="./manifest.json">
-  <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
   <meta   name="keywords"        content="Ariel Parra, 404">
   <meta   name="description"     content="Ariel Parra 404 error page">
   <meta   name="author"          content="Ariel Parra">
   <title> 404 error </title>
-  <!-- CSS stylesheet -->
   <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
-  <!-- Java Scripts Preloads -->
   <link   rel="preload"          href="./js/cookies.js"  as="script">
   <link   rel="preload"          href="./js/language.js" as="script">
   <link   rel="preload"          href="./js/theme.js"    as="script">
   <link   rel="preload"          href="./js/menu.js"     as="script">
   <link   rel="preload"          href="./js/favicon.js"  as="script">
   <link   rel="preload"          href="./js/joySVG.js"   as="script">
-  <link   rel="preload"          href="./js/enPath.js"   as="script">
   <!-- Java Scripts defers -->
   <script defer                  src ="./js/cookies.js">  </script>
   <script defer                  src ="./js/language.js"> </script>
@@ -30,7 +25,6 @@
   <script defer                  src ="./js/menu.js">     </script>
   <script defer                  src ="./js/favicon.js">  </script>
   <script defer                  src ="./js/joySVG.js">   </script>
-  <script defer                  src ="./js/enPath.js">   </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./img/ArielParra.jpg"   type="image/webp" sizes="180x180">
 </head>
@@ -38,48 +32,52 @@
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true">Hide Menu</button>
-    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Spanish</button>
-    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Change color theme to"> 🌗 </button>
+    <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true"><span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span></button>
+    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to"><span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span></button>
+    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="<span class="i18n" data-i18n-en="Change color theme to" data-i18n-es="Cambiar tema de color a">Change color theme to</span>"> 🌗 </button>
   </div><!-- Buttons -->
 
   <nav>
-    <a href="./"             class="NotCurrent" title="Home Page"> <span>~/         </span></a>
-    <a href="./portfolio/"   class="NotCurrent" title="         "> <span>portfolio  </span></a>
-    <a href="./credentials/" class="NotCurrent" title="         "> <span>credentials</span></a>
-    <a href="./contact/"     class="NotCurrent" title="         "> <span>contact    </span></a>
+    <a href="./"             class="NotCurrent" title="Home Page"> <span><span class="i18n" data-i18n-en="~/" data-i18n-es="~/">~/</span>                              </span></a>
+    <a href="./portfolio/"   class="NotCurrent" title="         "> <span><span class="i18n" data-i18n-en="portfolio" data-i18n-es="portafolio">portfolio</span>        </span></a>
+    <a href="./credentials/" class="NotCurrent" title="         "> <span><span class="i18n" data-i18n-en="credentials" data-i18n-es="acreditaciones">credentials</span></span></a>
+    <a href="./contact/"     class="NotCurrent" title="         "> <span><span class="i18n" data-i18n-en="contact" data-i18n-es="contacto">contact</span>              </span></a>
   </nav>
 
-<!-- 404.html for github.io site -->
+
 
   <div class="container">
     <div class="card">
       <div class="center">
-        <h1>404 Page Not Found!</h1> 
+        <span class="i18n" data-i18n-en="&lt;h1&gt;404 Page Not Found!&lt;/h1&gt;" data-i18n-es="&lt;h1&gt;¡404 Página No Encontrada!&lt;/h1&gt;"><h1>404 Page Not Found!</h1></span>
         <p></p>
-        <button type="button" id="exportSVG" onclick="exportSVG(this)">Export as SVG</button>
-        <button type="button" id="exportPNG" onclick="exportPNG(this)">Export as PNG</button>
-      </div><!-- center -->
-    </div><!-- card -->
-  </div><!-- container -->
+        <span class="i18n" data-i18n-en="&lt;button type=&quot;button&quot; id=&quot;exportSVG&quot; onclick=&quot;exportSVG(this)&quot;&gt;Export as SVG&lt;/button&gt;
+        &lt;button type=&quot;button&quot; id=&quot;exportPNG&quot; onclick=&quot;exportPNG(this)&quot;&gt;Export as PNG&lt;/button&gt;" data-i18n-es="&lt;button type=&quot;button&quot; id=&quot;exportSVG&quot; onclick=&quot;exportSVG(this)&quot;&gt;Exportar como SVG&lt;/button&gt;
+        &lt;button type=&quot;button&quot; id=&quot;exportPNG&quot; onclick=&quot;exportPNG(this)&quot;&gt;Exportar como PNG&lt;/button&gt;"><button type="button" id="exportSVG" onclick="exportSVG(this)">Export as SVG</button>
+        <button type="button" id="exportPNG" onclick="exportPNG(this)">Export as PNG</button></span>
+      </div>
+    </div>
+  </div>
 
   <div class="container" style="overflow: hidden;">
     <div class="center">
       <svg id="unknownPleasures" width="625" height="593" xmlns="http://www.w3.org/2000/svg">
-        <!-- background -->
+        
         <rect width="625px" height="593px" fill="var(--HTML_BG)" />
 
-        <!-- lines -->
+        
         <g id="lines" fill="none" stroke="var(--text)" stroke-width="1.2"></g>
       </svg>
-    </div><!-- center -->
-  </div><!-- container -->
- <footer>
-  <p>
-  Special thanks to the album <em>Unknown Pleasures</em> by Joy Division and its cover, originally designed by Peter Saville. Also, special thanks to <a href="https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html">Max Halford</a> for his script that I forked for this site.
-  </p>
- </footer>
- 
+    </div>
+  </div>
+  <footer>
+    <span class="i18n" data-i18n-en="&lt;p&gt;
+    Special thanks to the album &lt;em&gt;Unknown Pleasures&lt;/em&gt; by Joy Division and its cover, originally designed by Peter Saville. Also, special thanks to &lt;a href=&quot;https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html&quot;&gt;Max Halford&lt;/a&gt; for his script that I forked for this site.
+    &lt;/p&gt;" data-i18n-es="&lt;p&gt;
+    Agradecimientos especiales al álbum &lt;em&gt;Unknown Pleasures&lt;/em&gt; de Joy Division y su portada, originalmente diseñada por Peter Saville. También, agradecimientos especiales a &lt;a href=&quot;https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html&quot;&gt;Max Halford&lt;/a&gt; por su script que bifurcamos para este sitio.
+    &lt;/p&gt;"><p>
+    Special thanks to the album <em>Unknown Pleasures</em> by Joy Division and its cover, originally designed by Peter Saville. Also, special thanks to <a href="https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html">Max Halford</a> for his script that I forked for this site.
+    </p></span>
+  </footer> 
 </body>
-
 </html>

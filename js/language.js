@@ -6,25 +6,34 @@
  * @param {string} language - The language code to set ('es' for Spanish, 'en' for English).
  */
 function changeLanguage(language) {
-    let currentPath = getCurrentPath();
-    let params = window.location.search;
     setCookie('language', language, 30);
-    let newPath;
-    if (currentPath.endsWith('/') === true) {
-        if (language === 'es') {
-            newPath = currentPath + 'es';
-        } else {
-            newPath = currentPath.replace('es/', '');
-        }
-    } else if (currentPath.endsWith('index.html') === true) { /* for index.html (local developing) */
-        if (language === 'es') {
-            newPath = currentPath.replace('/index.html', '/es/index.html');
-        } else { /* en */
-            newPath = currentPath.replace('/es/index.html', '/index.html');
-        }
+    document.documentElement.lang = language;
+    document.querySelectorAll('.i18n').forEach(el => {
+        el.innerHTML = el.getAttribute(`data-i18n-${language}`);
+    });
+document.querySelectorAll('[data-i18n-en]').forEach(el => {
+    const attrEn = el.getAttribute('data-i18n-en');
+    const attrEs = el.getAttribute('data-i18n-es');
+    if (attrEn && attrEs) {
+      const attrName = el.tagName === 'IMG' ? 'alt' : 'title';
+      el.setAttribute(attrName, el.getAttribute(`data-i18n-${language}`));
     }
-    if (newPath !== undefined) {
-        window.location.href = newPath + params; // Append the query parameters to the new path
+  });
+  // Handle data-i18n-alt-en and data-i18n-alt-es on any element (especially images)
+  document.querySelectorAll('[data-i18n-alt-en]').forEach(el => {
+    el.setAttribute('alt', el.getAttribute(`data-i18n-alt-${language}`));
+  });
+  // Handle data-i18n-title-en and data-i18n-title-es on any element
+  document.querySelectorAll('[data-i18n-title-en]').forEach(el => {
+    el.setAttribute('title', el.getAttribute(`data-i18n-title-${language}`));
+  });
+    updateLangButton(language);
+}
+
+function updateLangButton(language) {
+    const langButton = document.getElementById('langButton');
+    if (langButton) {
+        langButton.textContent = language === 'en' ? 'Español' : 'English';
     }
 }
 /**
@@ -94,23 +103,14 @@ function getDefaultLanguage() {
 }
 
 /**
- * @description Checks if language cookie exists.
+ * @description Initialize language on page load.
  */
 document.addEventListener('DOMContentLoaded', () => {
-    let defaultLang = getDefaultLanguage();
-    if (defaultLang !== 'es') {
-        defaultLang = 'en'; // default language is English
+    let lang = getDefaultLanguage();
+    if (lang !== 'es') lang = 'en';
+    if (cookieExists('language')) {
+        lang = getCookie('language');
     }
-    if (cookieExists('language') === true) {
-        const cookieLang = getCookie('language');
-        if (getCurrentSiteLanguage() !== cookieLang) {
-            changeLanguage(cookieLang);
-        }
-        /*else {
-            // stay in the same page
-        }
-        */
-    } else if (getCurrentSiteLanguage() !== defaultLang) { // && !cookieExists('language')
-        changeLanguage(defaultLang);
-    }
+    document.documentElement.lang = lang;
+    updateLangButton(lang);
 });

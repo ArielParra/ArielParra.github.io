@@ -5,11 +5,14 @@ import re
 import sys
 import io
 import argparse
+import html
 
 def parse_md(md_content):
     md_dict = {}
     md_content = md_content.strip('---').strip()
     for line in md_content.split('\n'):
+        if ':' not in line:
+            continue
         key, value = line.split(':', 1)
         key = key.strip()
         value = value.strip()
@@ -18,100 +21,350 @@ def parse_md(md_content):
         md_dict[key] = value
     return md_dict
 
-def md_to_html(md_content):
-    md_content = re.sub(r'!\[([^\]]+)\]\((.*?)\)', r'<img src="\2" \1>', md_content)
-    md_content = re.sub(r'\[([^\]]+)\]\((.*?)\){:(.*?)}', r'<a href="\2" \3>\1</a>', md_content)
-    md_content = re.sub(r'\[([^\]]+)\]\((.*?)\)', r'<a href="\2">\1</a>', md_content)
-    md_content = re.sub(r'##### (.*?)\n', r'<h5>\1</h5>\n', md_content)
-    md_content = re.sub(r'#### (.*?)\n', r'<h4>\1</h4>\n', md_content)
-    md_content = re.sub(r'### (.*?)\n', r'<h3>\1</h3>\n', md_content)
-    md_content = re.sub(r'## (.*?)\n', r'<h2>\1</h2>\n', md_content)
-    md_content = re.sub(r'# (.*?)\n', r'<h1>\1</h1>\n', md_content)
-    md_content = re.sub(r'(- .*)', r'<li>\1</li>', md_content)
-    md_content = re.sub(r'<li>- (.*?)</li>', r'<ul><li>\1</li></ul>', md_content, flags=re.DOTALL)
-    md_content = re.sub(r'</ul>\s*<ul>', '', md_content)  # Merge consecutive <ul> tags
-    md_content = re.sub(r'\*\*\*(.*?)\*\*\*', r'<strong><em>\1</em></strong>', md_content)
-    md_content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', md_content)
-    md_content = re.sub(r'\*(.*?)\*', r'<em>\1</em>', md_content)
-    md_content = re.sub(r'\[comment\]: <> \(\n?(.*?)\n?\)\n', r'<!-- \1 -->\n', md_content, flags=re.DOTALL)
+def extract_i18n_from_attr(attr_value):
+    """Extract i18n content from an attribute value.
+    
+    Args:
+        attr_value: The attribute value string to check for i18n tags
+        
+    Returns:
+        tuple: (plain_text, en_content, es_content)
+        - If attr contains i18n: plain_text is empty, en/es are the translations
+        - If attr has no i18n: plain_text is the original value, en/es are None
+    """
+    pair_pattern = re.compile(r'\(\(en\)\)(.*?)\(\(/en\)\)\(\(es\)\)(.*?)\(\(/es\)\)', re.DOTALL)
+    match = pair_pattern.search(attr_value)
+    if match:
+        en_content = match.group(1)
+        es_content = match.group(2)
+        return ('', en_content, es_content)
+    return (attr_value, None, None)
 
-    return md_content
+def md_to_html_basic(text):
+    # Remove HTML comments
+    text = re.sub(r'<!--.*?-->', '', text, flags=re.DOTALL)
+    
+    # Process linked images: [![alt](url)](link){: target="_blank"}
+    def fix_linked_img(m):
+        full_match = m.group(0)
+        img_part = m.group(1) # ![alt](url)
+
+        img_alt_match = re.search(r'!\[([^\]]*)\]\(([^)]+)\)', img_part)
+        img_url = img_alt_match.group(2) if img_alt_match else ""
+        img_alt_raw = img_alt_match.group(1) if img_alt_match else "image"
+        
+        # Extract alt attribute value
+        alt_match = re.search(r'alt="([^"]*)"', img_alt_raw)
+        img_alt = alt_match.group(1) if alt_match else ""
+        if not img_alt and not re.search(r'\w+="[^"]*"', img_alt_raw):
+            img_alt = img_alt_raw.strip()
+        
+        # Check for i18n in alt
+        img_alt_plain, img_alt_en, img_alt_es = extract_i18n_from_attr(img_alt)
+
+        other_img_attrs = []
+        title_val = ""
+        for attr_match in re.finditer(r'(\w+)="([^"]*)"', img_alt_raw):
+            key = attr_match.group(1)
+            val = attr_match.group(2)
+            if key == 'alt':
+                continue
+            elif key == 'title':
+                title_val = val
+            else:
+                other_img_attrs.append(attr_match.group(0))
+
+        title_plain, title_en, title_es = extract_i18n_from_attr(title_val)
+
+        # Find all ](...) patterns - the non-image one is the link URL
+        all_urls = re.findall(r'\]\(([^)]+)\)', full_match)
+        link_url = "#"
+        for url in reversed(all_urls):
+            url_lower = url.lower()
+            # Skip URLs that look like image paths (have img/ and common extensions)
+            if not ('img/' in url or url.startswith('./img/') or url.startswith('/img/')) or \
+               (url_lower.endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.ico')) and 'monero' in url_lower):
+                link_url = url
+                break
+
+        target_match = re.search(r'target="([^"]+)"', full_match)
+        target = target_match.group(1) if target_match else "_blank"
+
+        # Build img tag with i18n data attributes if applicable
+        img_parts = [f'<img src="{img_url}"']
+        
+        if other_img_attrs:
+            img_parts.extend(other_img_attrs)
+
+        if img_alt_en and img_alt_es:
+            img_parts.append(f'data-i18n-alt-en="{html.escape(img_alt_en)}"')
+            img_parts.append(f'data-i18n-alt-es="{html.escape(img_alt_es)}"')
+            img_parts.append(f'alt="{img_alt_en}"')
+        elif img_alt:
+            img_parts.append(f'alt="{img_alt}"')
+        else:
+            img_parts.append('alt=""')
+            
+        if title_en and title_es:
+            img_parts.append(f'data-i18n-title-en="{html.escape(title_en)}"')
+            img_parts.append(f'data-i18n-title-es="{html.escape(title_es)}"')
+            img_parts.append(f'title="{title_en}"')
+        elif title_val:
+            img_parts.append(f'title="{title_val}"')
+        
+        img_tag = ' '.join(img_parts) + '>'
+        return f'<a href="{link_url}" target="{target}">{img_tag}</a>'
+
+    text = re.sub(r'\[(!?\[[^\]]*\]\([^)]+\))\]\(([^)]+)\)(?:\{:([^\}]*)\})?', fix_linked_img, text)
+
+    # Process regular images: ![alt](url){: title="..."}
+    def fix_image(m):
+        alt_raw = m.group(1)
+        url = m.group(2)
+        attrs = m.group(3) or ""
+        
+        # Extract alt value
+        alt_match = re.search(r'alt="([^"]*)"', alt_raw)
+        alt = alt_match.group(1) if alt_match else ""
+        if not alt and not re.search(r'\w+="[^"]*"', alt_raw):
+            alt = alt_raw.strip()
+
+        other_img_attrs = []
+        title_val = ""
+        for attr_match in re.finditer(r'(\w+)="([^"]*)"', alt_raw):
+            key = attr_match.group(1)
+            val = attr_match.group(2)
+            if key == 'alt':
+                continue
+            elif key == 'title':
+                title_val = val
+            else:
+                other_img_attrs.append(attr_match.group(0))
+
+        # Extract title from attrs {: title="..."}
+        title_match = re.search(r'title="([^"]+)"', attrs)
+        if title_match:
+            title_val = title_match.group(1)
+        
+        # Check for i18n in alt
+        alt_plain, alt_en, alt_es = extract_i18n_from_attr(alt)
+        
+        # Check for i18n in title
+        title_plain, title_en, title_es = extract_i18n_from_attr(title_val)
+        
+        # Build img tag with i18n data attributes if applicable
+        img_parts = [f'<img src="{url}"']
+        
+        if other_img_attrs:
+            img_parts.extend(other_img_attrs)
+
+        if alt_en and alt_es:
+            img_parts.append(f'data-i18n-alt-en="{html.escape(alt_en)}"')
+            img_parts.append(f'data-i18n-alt-es="{html.escape(alt_es)}"')
+            img_parts.append(f'alt="{alt_en}"')
+        elif alt:
+            img_parts.append(f'alt="{alt}"')
+        else:
+            img_parts.append('alt=""')
+        
+        if title_en and title_es:
+            img_parts.append(f'data-i18n-title-en="{html.escape(title_en)}"')
+            img_parts.append(f'data-i18n-title-es="{html.escape(title_es)}"')
+            img_parts.append(f'title="{title_en}"')
+        elif title_val:
+            img_parts.append(f'title="{title_val}"')
+        
+        return ' '.join(img_parts) + '>'
+
+    text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)(?:\{:([^\}]*)\})?', fix_image, text)
+
+    # Process links: [text](url){: target="..."}
+    def fix_link(m):
+        text_content = m.group(1)
+        url = m.group(2)
+        attrs = m.group(3) or ""
+        target_match = re.search(r'target="([^"]+)"', attrs)
+        target = target_match.group(1) if target_match else ""
+        if target:
+            return f'<a href="{url}" target="{target}">{text_content}</a>'
+        return f'<a href="{url}">{text_content}</a>'
+
+    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)(?:\{:([^\}]*)\})?', fix_link, text)
+
+    # Headings
+    text = re.sub(r'##### (.*?)(?:\n|$)', r'<h5>\1</h5>\n', text)
+    text = re.sub(r'#### (.*?)(?:\n|$)', r'<h4>\1</h4>\n', text)
+    text = re.sub(r'### (.*?)(?:\n|$)', r'<h3>\1</h3>\n', text)
+    text = re.sub(r'## (.*?)(?:\n|$)', r'<h2>\1</h2>\n', text)
+    text = re.sub(r'# (.*?)(?:\n|$)', r'<h1>\1</h1>\n', text)
+
+    # Lists
+    lines = text.split('\n')
+    new_lines = []
+    in_list = False
+    for line in lines:
+        if line.strip().startswith('- '):
+            if not in_list:
+                new_lines.append('<ul>')
+                in_list = True
+            new_lines.append(f'<li>{line.strip()[2:]}</li>')
+        else:
+            if in_list:
+                new_lines.append('</ul>')
+                in_list = False
+            new_lines.append(line)
+    if in_list:
+        new_lines.append('</ul>')
+    text = '\n'.join(new_lines)
+
+    # Bold and Italic
+    text = re.sub(r'\*\*\*(.*?)\*\*\*', r'<strong><em>\1</em></strong>', text)
+    text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', text)
+    text = re.sub(r'\*(.*?)\*', r'<em>\1</em>', text)
+
+    return text
+
+def md_to_html(md_content, page_lang):
+    def is_inside_attribute(text, pos):
+        """Check if position is inside a quoted attribute value.
+        
+        We scan backwards from pos to find the last unquoted ="
+        """
+        before = text[:pos]
+        last_unquoted_eq = -1
+        in_quote = False
+        for i in range(len(before)):
+            if before[i] == '"':
+                in_quote = not in_quote
+            elif before[i] == '=' and not in_quote:
+                last_unquoted_eq = i
+        
+        if last_unquoted_eq == -1:
+            return False
+        
+        after_eq = before[last_unquoted_eq+1:]
+        return after_eq.count('"') % 2 == 1
+    
+    # Pattern to find i18n blocks
+    pattern = re.compile(r'\(\((en|es)\)\)(.*?)\(\(/\1\)\)', re.DOTALL)
+
+    parts = []
+    last_pos = 0
+    matches = list(pattern.finditer(md_content))
+
+    i = 0
+    while i < len(matches):
+        m = matches[i]
+        
+        # Skip i18n blocks that are inside attribute values
+        if is_inside_attribute(md_content, m.start()):
+            i += 1
+            continue
+        
+        # Append part before match
+        parts.append(('text', md_content[last_pos:m.start()]))
+
+        lang = m.group(1)
+        content = m.group(2)
+        complement = 'es' if lang == 'en' else 'en'
+
+        if i + 1 < len(matches):
+            next_m = matches[i+1]
+            if next_m.group(1) == complement and md_content[m.end():next_m.start()].strip() == "":
+                en_text = content if lang == 'en' else next_m.group(2)
+                es_text = next_m.group(2) if lang == 'en' else content
+                parts.append(('i18n', (en_text, es_text)))
+                last_pos = next_m.end()
+                i += 2
+                continue
+
+        parts.append(('single', (lang, content)))
+        last_pos = m.end()
+        i += 1
+
+    parts.append(('text', md_content[last_pos:]))
+    
+    final_html = []
+    for ptype, val in parts:
+        if ptype == 'text':
+            final_html.append(md_to_html_basic(val))
+        elif ptype == 'i18n':
+            en_text, es_text = val
+            en_html = md_to_html_basic(en_text).strip()
+            es_html = md_to_html_basic(es_text).strip()
+            display_html = en_html if page_lang == 'en' else es_html
+            en_attr = html.escape(en_html, quote=True)
+            es_attr = html.escape(es_html, quote=True)
+            final_html.append(f'<span class="i18n" data-i18n-en="{en_attr}" data-i18n-es="{es_attr}">{display_html}</span>')
+        elif ptype == 'single':
+            lang, content = val
+            final_html.append(md_to_html_basic(content).strip())
+
+    result = "".join(final_html)
+
+# Post-process: Convert </span>(url) to <a href="url">...</a>
+    # This handles inline links like: <span class="i18n">LINK</span>(https://url)
+    def fix_inline_link(m):
+        span_tag = m.group(1)
+        span_content = m.group(2)
+        # Group 3 is </span>, we don't need it
+        url = m.group(4)
+        target = m.group(5) if m.group(5) else "_blank"
+        # Check if it's an external link
+        if url.startswith('http://') or url.startswith('https://'):
+            target = target if target else "_blank"
+        else:
+            target = "_self"
+        return f'<a href="{url}" target="{target}">{span_tag}{span_content}</span></a>'
+    
+    # Match </span> followed by (url){: target="_blank"}
+    result = re.sub(r'(<span class="i18n"[^>]*>)([^<]*)(</span>)\(([^)]+)\)(?:\{\:target="([^"]+)"\})?', fix_inline_link, result)
+
+    return result
+
 
 def generate_html(md_dict, md_content):
     language = md_dict['lang']
-    cpp_label_text = "C++"
-    linux_label_text = "Linux"
     portfolio_path = "./portfolio/"
     credentials_path = "./credentials/"
     contact_path = "./contact/"
     home_path = "./"
 
-    es_path = "es/"
-    if language == "en":
-        home_title_text = "Home Page"
-        portfolio_label_text = "portfolio"
-        credentials_label_text = "credentials"
-        contact_label_text = "contact"
-        webDev_label_text = "Web dev"
-        servers_label_text = "Servers"
-        servers_label_text = "Servers"
-    else:  # Spanish
-        home_title_text = "Página Principal"
-        portfolio_label_text = "portafolio"
-        credentials_label_text = "acreditaciones"
-        contact_label_text = "contacto"
-        webDev_label_text = "Desarrollo Web"
-        servers_label_text = "Servidores"
-        servers_label_text = "Servidores"
-        portfolio_path += es_path
-        credentials_path += es_path
-        contact_path += es_path
-        home_path += es_path
-
-
     nav_items = [
-        {"href": home_path, "title": home_title_text, "label": "~/"},
-        {"href": portfolio_path, "title": "", "label": portfolio_label_text},
-        {"href": credentials_path, "title": "", "label": credentials_label_text},
-        {"href": contact_path, "title": "", "label": contact_label_text},
+        {"href": home_path, "title": "Home Page", "label": '<span class="i18n" data-i18n-en="~/" data-i18n-es="~/">~/</span>'},
+        {"href": portfolio_path, "title": "", "label": '<span class="i18n" data-i18n-en="portfolio" data-i18n-es="portafolio">portfolio</span>'},
+        {"href": credentials_path, "title": "", "label": '<span class="i18n" data-i18n-en="credentials" data-i18n-es="acreditaciones">credentials</span>'},
+        {"href": contact_path, "title": "", "label": '<span class="i18n" data-i18n-en="contact" data-i18n-es="contacto">contact</span>'},
     ]
-
     
     nav_current = int(md_dict['nav_current'])
-
     html_content = f"""<!DOCTYPE html>
 <html lang="{language}">
 
 <head>
   <base href="{md_dict['base_href']}">
-  <!-- App manifest -->
   <link rel="manifest" href="./manifest.json">
-  <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
   <meta   name="keywords"        content="{', '.join(md_dict['keywords'])}">
   <meta   name="description"     content="{md_dict['description']}">
   <meta   name="author"          content="Ariel Parra">
   <title> {md_dict['title']} </title>
-  <!-- CSS stylesheet -->
   <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
-  <!-- Java Scripts Preloads -->
 """
     def space_padding(js_file):
-        return " " * (max(len(js_file) for js_file in md_dict['js']) - len(js_file))
+        return " " * (max(len(jf) for jf in md_dict['js']) - len(js_file))
     
     for js_file in md_dict['js']:
         html_content += f'  <link   rel="preload"          href="./js/{js_file}.js" {space_padding(js_file)}as="script">\n'
     
-    html_content += """  <!-- Java Scripts defers -->
-"""
+    html_content += '  <!-- Java Scripts defers -->\n'
     for js_file in md_dict['js']:
         if js_file == "main":
             html_content += f'  <script defer                  src ="./{js_file}.js">    {space_padding(js_file)}</script>\n'
         else:    
             html_content += f'  <script defer                  src ="./js/{js_file}.js"> {space_padding(js_file)}</script>\n'
-    
     
     html_content += """  <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./img/ArielParra.jpg"   type="image/webp" sizes="180x180">
@@ -119,14 +372,9 @@ def generate_html(md_dict, md_content):
 
 <body>
 """
-    if language == "es":
-        nav_button_text = "Mostrar Menú"
-        lang_button_text = "Inglés"
-        theme_button_title = "Cambiar tema de color a"
-    else:  # English
-        nav_button_text = "Hide Menu"
-        lang_button_text = "Spanish"
-        theme_button_title = "Change color theme to"
+    nav_button_text = '<span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span>'
+    lang_button_text = '<span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span>'
+    theme_button_title = '<span class="i18n" data-i18n-en="Change color theme to" data-i18n-es="Cambiar tema de color a">Change color theme to</span>'
 
     html_content += f"""
   <div class="container">
@@ -153,21 +401,24 @@ def generate_html(md_dict, md_content):
     html_content += """  </nav>
 """
     
-
     if nav_current == 3:
         type_tag_text_value = ["all", "certification", "certificate", "badge", "award"]
         topic_tag_text_value = ["cybersecurity", "devOps", "networks", "cloud", "blockchain", "programming", "datascience", "ai"]
-
-        if language == "en":
-            filterType_text = "Filter by type"
-            filterTopic_text = "Filter by topic"
-            type_tag_text = ["All", "Certifications", "Certificates", "Badges", "Awards"]
-            topic_tag_text = ["Cybersecurity", "DevOps","Networks", "Cloud", "Blockchain", "Programming", "Data Science", "AI"]
-        else:  # Spanish
-            filterType_text = "Filtrado por tipo"
-            filterTopic_text = "Filtrado por tema"
-            type_tag_text = ["Todos", "Certificaciones", "Certificados", "Insignias", "Reconocimientos"]
-            topic_tag_text = ["Ciberseguridad", "DevOps", "Redes", "Nube", "Blockchain", "Programación", "Ciencia de Datos", "IA"]
+        filterType_text = '<span class="i18n" data-i18n-en="Filter by type" data-i18n-es="Filtrado por tipo">Filter by type</span>'
+        filterTopic_text = '<span class="i18n" data-i18n-en="Filter by topic" data-i18n-es="Filtrado por tema">Filter by topic</span>'
+        type_tag_text = ['<span class="i18n" data-i18n-en="All" data-i18n-es="Todos">All</span>', 
+                        '<span class="i18n" data-i18n-en="Certifications" data-i18n-es="Certificaciones">Certifications</span>',
+                        '<span class="i18n" data-i18n-en="Certificates" data-i18n-es="Certificados">Certificates</span>',
+                        '<span class="i18n" data-i18n-en="Badges" data-i18n-es="Insignias">Badges</span>',
+                        '<span class="i18n" data-i18n-en="Awards" data-i18n-es="Reconocimientos">Awards</span>']
+        topic_tag_text = ['<span class="i18n" data-i18n-en="Cybersecurity" data-i18n-es="Ciberseguridad">Cybersecurity</span>',
+                         '<span class="i18n" data-i18n-en="DevOps" data-i18n-es="DevOps">DevOps</span>',
+                         '<span class="i18n" data-i18n-en="Networks" data-i18n-es="Redes">Networks</span>',
+                         '<span class="i18n" data-i18n-en="Cloud" data-i18n-es="Nube">Cloud</span>',
+                         '<span class="i18n" data-i18n-en="Blockchain" data-i18n-es="Blockchain">Blockchain</span>',
+                         '<span class="i18n" data-i18n-en="Programming" data-i18n-es="Programación">Programming</span>',
+                         '<span class="i18n" data-i18n-en="Data Science" data-i18n-es="Ciencia de Datos">Data Science</span>',
+                         '<span class="i18n" data-i18n-en="AI" data-i18n-es="IA">AI</span>']
 
         html_content += f"""
 <div class="container max-width">
@@ -179,7 +430,6 @@ def generate_html(md_dict, md_content):
         <hr>
         <div class="center">
 """
-        # Generate radio buttons for "Filter by type"
         for idx, tag_value in enumerate(type_tag_text_value):
             tag_text = type_tag_text[idx] if idx < len(type_tag_text) else tag_value.capitalize()
             html_content += f"""          <label><input type="radio" name="type" value="{tag_value}" {'checked' if idx == 0 else ''} onchange="filterCards()"> {tag_text} </label>\n"""
@@ -192,7 +442,6 @@ def generate_html(md_dict, md_content):
         <hr>
         <div class="center">
 """
-        # Generate checkboxes for "Filter by topic"
         for idx, tag_value in enumerate(topic_tag_text_value):
             tag_text = topic_tag_text[idx] if idx < len(topic_tag_text) else tag_value.capitalize()
             html_content += f"""          <label><input type="checkbox" value="{tag_value}" onchange="filterCards()"> {tag_text} </label>\n"""
@@ -201,15 +450,12 @@ def generate_html(md_dict, md_content):
     </div><!--filters card-->
 </div><!--filters container-->
 """
-    # all the content from md file
-    html_content += md_to_html(md_content)
+    
+    html_content += md_to_html(md_content, language)
         
     html_content += """ 
 </body>
-
 </html>"""
-
-
     return html_content
 
 def main():
@@ -233,7 +479,6 @@ def main():
 
     with open(args.output_file, 'w', encoding='utf-8') as f:
         f.write(html_content)
-
 
 if __name__ == '__main__':
     main()

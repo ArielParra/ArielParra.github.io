@@ -3,19 +3,15 @@
 
 <head>
   <base href="./">
-  <!-- App manifest -->
   <link rel="manifest" href="./manifest.json">
-  <!-- Info -->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
   <meta   name="keywords"        content="Ariel Parra, website">
   <meta   name="description"     content="Ariel Parra Website!">
   <meta   name="author"          content="Ariel Parra">
   <title> Ariel Parra </title>
-  <!-- CSS stylesheet -->
   <link   rel="preload"          href="./style.css" as="style">
   <link   rel="stylesheet"       href="./style.css">
-  <!-- Java Scripts Preloads -->
   <link   rel="preload"          href="./js/cookies.js"  as="script">
   <link   rel="preload"          href="./js/language.js" as="script">
   <link   rel="preload"          href="./js/theme.js"    as="script">
@@ -36,26 +32,27 @@
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true">Hide Menu</button>
-    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">Spanish</button>
-    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="Change color theme to"> 🌗 </button>
+    <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true"><span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span></button>
+    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to"><span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span></button>
+    <button type="button" onclick="toggleTheme(this)" id="themeButton" title="<span class="i18n" data-i18n-en="Change color theme to" data-i18n-es="Cambiar tema de color a">Change color theme to</span>"> 🌗 </button>
   </div><!-- Buttons -->
 
   <nav>
-    <a href="./"             class="current"    title="Home Page"> <span>~/         </span></a>
-    <a href="./portfolio/"   class="NotCurrent" title="         "> <span>portfolio  </span></a>
-    <a href="./credentials/" class="NotCurrent" title="         "> <span>credentials</span></a>
-    <a href="./contact/"     class="NotCurrent" title="         "> <span>contact    </span></a>
+    <a href="./"             class="current"    title="Home Page"> <span><span class="i18n" data-i18n-en="~/" data-i18n-es="~/">~/</span>                              </span></a>
+    <a href="./portfolio/"   class="NotCurrent" title="         "> <span><span class="i18n" data-i18n-en="portfolio" data-i18n-es="portafolio">portfolio</span>        </span></a>
+    <a href="./credentials/" class="NotCurrent" title="         "> <span><span class="i18n" data-i18n-en="credentials" data-i18n-es="acreditaciones">credentials</span></span></a>
+    <a href="./contact/"     class="NotCurrent" title="         "> <span><span class="i18n" data-i18n-en="contact" data-i18n-es="contacto">contact</span>              </span></a>
   </nav>
+
 
 <div class="container">
     <div class="card">
         <hr>
-        <img src="./img/ArielParra.jpg" alt="My photo" title="me">   
+        <img src="./img/ArielParra.jpg" data-i18n-alt-en="My photo" data-i18n-alt-es="mi foto" alt="My photo" title="me">   
         <hr>
         <div class="center">
             <p>
-            My Photo
+            <span class="i18n" data-i18n-en="My Photo" data-i18n-es="Mi foto">My Photo</span>
             </p>
         </div>
     </div> 
@@ -67,24 +64,24 @@
         <hr>
         <div class="justify">
             <p>
-                Hi, I'm <strong>Ariel Parra</strong>, a 21-year-old Systems Engineering student at <em>Universidad Autónoma de Aguascalientes</em> with a cumulative average of 9.34/10 (equivalent to 3.7 GPA). I'm passionate about programming, especially in <strong>C and C++</strong>. I have been using <strong>Linux</strong> as my daily driver for over three years.
+            <span class="i18n" data-i18n-en="Hi, I&#x27;m &lt;strong&gt;Ariel Parra&lt;/strong&gt;, a 21-year-old Systems Engineering student at &lt;em&gt;Universidad Autónoma de Aguascalientes&lt;/em&gt; with a cumulative average of 9.34/10 (equivalent to 3.7 GPA). I&#x27;m passionate about programming, especially in &lt;strong&gt;C and C++&lt;/strong&gt;. I have been using &lt;strong&gt;Linux&lt;/strong&gt; as my daily driver for over three years." data-i18n-es="Hola, soy &lt;strong&gt;Ariel Parra&lt;/strong&gt;, un estudiante de Ingeniería en Sistemas Computacionales de 21 años en la &lt;em&gt;Universidad Autónoma de Aguascalientes&lt;/em&gt;, con un promedio general de 9.34/10 (equivalente a 3.7 GPA). Me apasiona la programación, especialmente en &lt;strong&gt;C y C++&lt;/strong&gt;. He estado usando &lt;strong&gt;Linux&lt;/strong&gt; como mi sistema operativo principal durante más de tres años.">Hi, I'm <strong>Ariel Parra</strong>, a 21-year-old Systems Engineering student at <em>Universidad Autónoma de Aguascalientes</em> with a cumulative average of 9.34/10 (equivalent to 3.7 GPA). I'm passionate about programming, especially in <strong>C and C++</strong>. I have been using <strong>Linux</strong> as my daily driver for over three years.</span>
             </p>
             <p>
-                I'm the president of the <strong>Gallos Competitive Programming Club</strong> at UAA and have participated in international contests like the <strong>ICPC</strong>, where I earned an Honorable Mention. I've also ranked in the <strong>top 15 in the ANIEI National Programming Contest</strong> and placed in the <strong>top 32% globally in the Meta Hacker Cup</strong>.
+            <span class="i18n" data-i18n-en="I&#x27;m the president of the &lt;strong&gt;Gallos Competitive Programming Club&lt;/strong&gt; at UAA and have participated in international contests like the &lt;strong&gt;ICPC&lt;/strong&gt;, where I earned an Honorable Mention. I&#x27;ve also ranked in the &lt;strong&gt;top 15 in the ANIEI National Programming Contest&lt;/strong&gt; and placed in the &lt;strong&gt;top 32% globally in the Meta Hacker Cup&lt;/strong&gt;." data-i18n-es="Soy presidente del &lt;strong&gt;Club de Programación Competitiva Gallos&lt;/strong&gt; en la UAA y he participé en concursos internacionales como el &lt;strong&gt;ICPC&lt;/strong&gt;, donde obtuve una Mención Honorífica. También he estado entre los &lt;strong&gt;15 mejores en el Concurso Nacional de Programación de ANIEI&lt;/strong&gt; y clasifiqué en el &lt;strong&gt;top 32% a nivel mundial en la Meta Hacker Cup&lt;/strong&gt;.">I'm the president of the <strong>Gallos Competitive Programming Club</strong> at UAA and have participated in international contests like the <strong>ICPC</strong>, where I earned an Honorable Mention. I've also ranked in the <strong>top 15 in the ANIEI National Programming Contest</strong> and placed in the <strong>top 32% globally in the Meta Hacker Cup</strong>.</span>
             </p>
         </div>
     </div> 
     <div class="card">
         <div class="center">
-            <h3>Philosphy</h3>
+            <h3>Philosophy</h3>
         </div>
         <hr>
         <div class="justify">
             <p>
-                I strongly believe in using open-source and privacy-respecting software. Whenever possible, I prefer "free" alternatives over proprietary options. I'm also a fan of the <strong>KISS (Keep It Simple, Stupid)</strong> philosophy  simplicity leads to more efficient and customizable systems.
+            <span class="i18n" data-i18n-en="I strongly believe in using open-source and privacy-respecting software. Whenever possible, I prefer &quot;free&quot; alternatives over proprietary options. I&#x27;m also a fan of the &lt;strong&gt;KISS (Keep It Simple, Stupid)&lt;/strong&gt; philosophy  simplicity leads to more efficient and customizable systems." data-i18n-es="Creo firmemente en el uso de software de código abierto y que respete la privacidad. Siempre que es posible, prefiero alternativas &quot;libres&quot; en lugar de opciones propietarias. También soy fan de la filosofía &lt;strong&gt;KISS (Keep It Simple, Stupid)&lt;/strong&gt;  la simplicidad lleva a sistemas más eficientes y personalizables.">I strongly believe in using open-source and privacy-respecting software. Whenever possible, I prefer "free" alternatives over proprietary options. I'm also a fan of the <strong>KISS (Keep It Simple, Stupid)</strong> philosophy  simplicity leads to more efficient and customizable systems.</span>
             </p>
             <p>
-                Outside of tech, I practice <strong>Kendo</strong> and proudly represent the Aguascalientes team. I believe martial arts help keep my mind sharp and body balanced.
+            <span class="i18n" data-i18n-en="Outside of tech, I practice &lt;strong&gt;Kendo&lt;/strong&gt; and proudly represent the Aguascalientes team. I believe martial arts help keep my mind sharp and body balanced." data-i18n-es="Fuera del ámbito tecnológico, practico &lt;strong&gt;Kendo&lt;/strong&gt; y represento con orgullo al equipo de Aguascalientes. Creo que las artes marciales ayudan a mantener mi mente aguda y mi cuerpo equilibrado.">Outside of tech, I practice <strong>Kendo</strong> and proudly represent the Aguascalientes team. I believe martial arts help keep my mind sharp and body balanced.</span>
             </p>
         </div>
     </div> 
@@ -96,42 +93,57 @@
         <hr>
         <p>
         "Knowledge is power" 
-        -Francis Bacon
+        <span class="i18n" data-i18n-en="-Francis Bacon" data-i18n-es="&lt;ul&gt;
+&lt;li&gt;Francis Bacon&lt;/li&gt;
+&lt;/ul&gt;">-Francis Bacon</span>
         </p>
         <div class="column">
             <strong>Programming:</strong>
-            <ul><li>C/C++</li><li>Java</li><li>Python</li></ul>
+<ul>
+<li>C/C++</li>
+<li>Java</li>
+<li>Python</li>
+</ul>
             <strong>Software development:</strong>
-            <ul><li>Git + GitHub</li><li>Vscode</li><li>Nix & Docker</li><li>Azure </li></ul>
+<ul>
+<li>Git + GitHub</li>
+<li>Vscode</li>
+<li>Nix & Docker</li>
+<li>Azure</li>
+</ul>
         </div>
         <div class="column">
             <strong>Operating systems:</strong>
-            <ul><li>Linux</li><li>FreeBSD & OpenBSD</li><li>MacOS</li><li>Windows & Windows Server</li></ul>
+<ul>
+<li>Linux</li>
+<li>FreeBSD & OpenBSD</li>
+<li>MacOS</li>
+<li>Windows & Windows Server</li>
+</ul>
             <strong>Web development:</strong>
-            <ul><li>HTML + CSS + Java Script</li><li>Angular</li></ul>
+<ul>
+<li>HTML + CSS + Java Script</li>
+<li>Angular</li>
+</ul>
         </div>
     </div> 
 </div> 
 <footer>
-    <a href="https://arielparra.github.io/" target="_blank"><img src="./img/88x31_arielparra_github_io.png" class="img-88x31" alt="Linkback" title="HTTP Secure = HTTPS"></a>
-    <a href="./img/43rhCdPEoAZfGKzeASYYzGQi3BwBYJ4sKe1PjBjPcuNYXe8rkiMghrTH8fJqqt7i1jKMho7MnTj7hTnN7bMMaB79HjJgg9J.png" target="_blank"><img src="./img/88x31_monero.png" class="img-88x31" alt="Monero donation" title="Donate me some Monero"></a>
+    <a href="https://arielparra.github.io/" target="_blank"><img src="./img/88x31_arielparra_github_io.png" class="img-88x31" data-i18n-alt-en="Linkback" data-i18n-alt-es="Enlace" alt="Linkback" title="HTTP Secure = HTTPS"></a>
+    <a href="./img/88x31_monero.png" target="_blank"><img src="./img/88x31_monero.png" class="img-88x31" alt="Monero donation" title="Donate me some Monero"></a>
     <a href="https://github.com/ArielParra/" target="_blank"><img src="./img/88x31_github.png" class="img-88x31" alt="Github" title="Github"></a>   
-    <a href="mailto:arielemilioparra@gmail.com/" target="_blank"><img src="/img/88x31_email.png" class="img-88x31" alt="email" title="arielemilioparra@gmail.com"></a>   
-    <a href="https://www.nordtheme.com" target="_blank"><img src="/img/88x31_nord.png" class="img-88x31" alt="Nord color pallete" title="Nord theme website"></a>    
-    <img src="/img/88x31_Mexico.png" alt="Made in Mexico!" title="Made in Mexico!" class="img-88x31">   
-    <a href="https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io" target="_blank"><img src="/img/88x31_valid-css.png" class="img-88x31" alt="Valid CSS" title="Valid CSS"></a>    
-    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io" target="_blank"><img src="/img/88x31_valid-html.png" class="img-88x31" alt="Valid HTML" title="Valid HTML"></a>  
+    <a href="mailto:arielemilioparra@gmail.com/" target="_blank"><img src="./img/88x31_email.png" class="img-88x31" alt="email" title="arielemilioparra@gmail.com"></a>   
+    <a href="https://www.nordtheme.com" target="_blank"><img src="./img/88x31_nord.png" class="img-88x31" alt="Nord color pallete" title="Nord theme website"></a>    
+    <img src="./img/88x31_Mexico.png" class="img-88x31" data-i18n-alt-en="Made in Mexico!" data-i18n-alt-es="¡Hecho en México!" alt="Made in Mexico!" data-i18n-title-en="Made in Mexico" data-i18n-title-es="Hecho en México" title="Made in Mexico">   
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io" target="_blank"><img src="./img/88x31_valid-css.png" class="img-88x31" alt="Valid CSS" title="Valid CSS"></a>    
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io" target="_blank"><img src="./img/88x31_valid-html.png" class="img-88x31" alt="Valid HTML" title="Valid HTML"></a>  
 </footer>
-<!-- made with love -->
+
 <div class="container">
-    <div class="center">
-        <p>Made with ❤️ by Ariel Parra</p>
-    </div>
+<div class="center">
+<span class="i18n" data-i18n-en="&lt;p&gt;Made with ❤️ by Ariel Parra&lt;/p&gt;" data-i18n-es="&lt;p&gt;Hecho con ❤️ por Ariel Parra&lt;/p&gt;"><p>Made with ❤️ by Ariel Parra</p></span>
 </div>
-    <!-- 
-    <div class="container"> <button type="button" onclick="langButton()">lang</button></div>
-     -->
+</div>
  
 </body>
-
 </html>
