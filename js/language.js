@@ -48,12 +48,18 @@ function changeLanguage(language) {
     setCookie('language', language, 30);
     applyLanguage(language);
     updateLangButton(language);
+    updateMenuButtonLanguage(language);
 }
 
 function updateLangButton(language) {
     const langButton = document.getElementById('langButton');
     if (langButton) {
-        langButton.textContent = language === 'en' ? 'Español' : 'English';
+        const i18nSpan = langButton.querySelector('.i18n');
+        if (i18nSpan) {
+            i18nSpan.innerHTML = i18nSpan.getAttribute(`data-i18n-${language}`);
+        } else {
+            langButton.textContent = language === 'en' ? 'Español' : 'English';
+        }
     }
 }
 /**
@@ -101,14 +107,13 @@ function getCurrentPath() {
 }
 
 /**
- * @description Gets the current language of the website based on the URL path.
+ * @description Gets the current language of the website based on the cookie.
  *
  * @returns {string} - The current language code ('es' for Spanish, 'en' for English).
  */
 function getCurrentSiteLanguage() {
-    let currentPath = getCurrentPath();
-    if (currentPath.endsWith('/es/') || currentPath.endsWith('/es/index.html')) {
-        return 'es';
+    if (cookieExists('language')) {
+        return getCookie('language');
     }
     return 'en';
 }
@@ -133,4 +138,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     applyLanguage(lang);
     updateLangButton(lang);
+    
+    // Also update menu button text on initial load
+    const menuButton = document.getElementById('menuButton');
+    if (menuButton) {
+        const i18nSpan = menuButton.querySelector('.i18n');
+        if (i18nSpan) {
+            i18nSpan.innerHTML = i18nSpan.getAttribute(`data-i18n-${lang}`);
+        }
+    }
 });
+
+function updateMenuButtonLanguage(language) {
+    const menuButton = document.getElementById('menuButton');
+    if (menuButton) {
+        const i18nSpan = menuButton.querySelector('.i18n');
+        if (i18nSpan) {
+            i18nSpan.innerHTML = i18nSpan.getAttribute(`data-i18n-${language}`);
+        }
+    }
+}

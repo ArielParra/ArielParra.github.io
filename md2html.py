@@ -347,23 +347,12 @@ def md_to_html(md_content, page_lang):
     result = "".join(final_html)
     result = md_to_html_phase2(result)
 
-# Post-process: Convert </span>(url) to <a href="url">...</a>
-    # This handles inline links like: <span class="i18n">LINK</span>(https://url)
-    def fix_inline_link(m):
-        span_tag = m.group(1)
-        span_content = m.group(2)
-        # Group 3 is </span>, we don't need it
-        url = m.group(4)
-        target = m.group(5) if m.group(5) else "_blank"
-        # Check if it's an external link
-        if url.startswith('http://') or url.startswith('https://'):
-            target = target if target else "_blank"
-        else:
-            target = "_self"
-        return f'<a href="{url}" target="{target}">{span_tag}{span_content}</span></a>'
-    
-    # Match </span> followed by (url){: target="_blank"}
-    result = re.sub(r'(<span class="i18n"[^>]*>)([^<]*)(</span>)\(([^)]+)\)(?:\{\:target="([^"]+)"\})?', fix_inline_link, result)
+# Post-process: Removed automatic </span>(url) to <a href="url"> conversion
+    # Users must now use proper Markdown link format: [text](url) for links
+    # This ensures that plain text followed by (url) is not mistakenly converted to a link
+    # Example: ((es))ejemplo:((/es))(https://) will NOT become a link
+    #          Only [((en))LINK((/en))((es))LINK((/es))](https://) will be a link
+    result = result
 
     return result
 
@@ -425,13 +414,15 @@ def generate_html(md_dict, md_content):
 """
     nav_button_text = '<span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span>'
     lang_button_text = '<span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span>'
+    lang_button_title_en = "Change language to"
+    lang_button_title_es = "Cambiar idioma a"
     theme_button_title_en = "Change color theme to"
     theme_button_title_es = "Cambiar tema de color a"
 
     html_content += f"""
   <div class="container">
     <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true">{nav_button_text}</button>
-    <button type="button" onclick="langButton(this)"  id="langButton"  title="Change language to">{lang_button_text}</button>
+    <button type="button" onclick="langButton(this)"  id="langButton"  data-i18n-title-en="{lang_button_title_en}" data-i18n-title-es="{lang_button_title_es}" title="{lang_button_title_en}">{lang_button_text}</button>
     <button type="button" onclick="toggleTheme(this)" id="themeButton" data-i18n-title-en="{theme_button_title_en}" data-i18n-title-es="{theme_button_title_es}" title="{theme_button_title_en}"> 🌗 </button>
   </div><!-- Buttons -->
 

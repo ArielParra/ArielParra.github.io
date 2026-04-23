@@ -37,7 +37,17 @@ function hideMenu(button, animation) {
     elem.style.pointerEvents = 'none';
   }
 
-  button.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Menu';
+  const i18nSpan = button.querySelector('.i18n');
+  if (i18nSpan) {
+    const lang = getCurrentSiteLanguage();
+    const showText = lang === 'es' ? 'Mostrar Menú' : 'Show Menu';
+    i18nSpan.setAttribute('data-i18n-en', 'Show Menu');
+    i18nSpan.setAttribute('data-i18n-es', 'Mostrar Menú');
+    i18nSpan.innerHTML = showText;
+  } else {
+    button.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Menu';
+  }
+  
   setCookie('menuStatus', 'hidden', 30);
 
   setTimeout(function () {
@@ -68,7 +78,13 @@ function showMenu(button) {
     }, 500);
   }
 
-  button.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
+  const i18nSpan = button.querySelector('.i18n');
+  if (i18nSpan) {
+    const lang = getCurrentSiteLanguage();
+    i18nSpan.innerHTML = i18nSpan.getAttribute(`data-i18n-${lang}`);
+  } else {
+    button.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
+  }
   setCookie('menuStatus', 'shown', 30);
 
   setTimeout(function () {
@@ -84,6 +100,16 @@ function showMenu(button) {
 document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.getElementById('menuButton');
 
+  function updateMenuButtonText() {
+    const i18nSpan = menuButton.querySelector('.i18n');
+    if (i18nSpan) {
+      const lang = getCurrentSiteLanguage();
+      i18nSpan.innerHTML = i18nSpan.getAttribute(`data-i18n-${lang}`);
+    }
+  }
+  
+  updateMenuButtonText();
+
   // Check if the 'menuStatus' cookie exists
   if (cookieExists('menuStatus')) {
     const menuStatus = getCookie('menuStatus');
@@ -91,12 +117,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check the status and update the button text accordingly
     if (menuStatus === 'hidden') {
       hideMenu(menuButton, false);
-      menuButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Mostrar Menú' : 'Show Menu';
-    } else {
-      menuButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
+      const i18nSpan = menuButton.querySelector('.i18n');
+      if (i18nSpan) {
+        const lang = getCurrentSiteLanguage();
+        const showText = lang === 'es' ? 'Mostrar Menú' : 'Show Menu';
+        i18nSpan.setAttribute('data-i18n-en', 'Show Menu');
+        i18nSpan.setAttribute('data-i18n-es', 'Mostrar Menú');
+        i18nSpan.innerHTML = showText;
+      }
     }
-  } else {
-    // Default: Navigation bar is visible
-    menuButton.textContent = getCurrentSiteLanguage() === 'es' ? 'Ocultar Menú' : 'Hide Menu';
   }
 });

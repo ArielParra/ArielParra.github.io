@@ -112,7 +112,6 @@ nav_current: 1
 </div> 
 <footer>
     [![class="img-88x31" alt="((en))Linkback((/en))((es))Enlace((/es))" title="HTTP Secure = HTTPS"](./img/88x31_arielparra_github_io.png)](https://arielparra.github.io/){:target="_blank"}
-    [![class="img-88x31" alt="Monero donation" title="Donate me some Monero"](./img/88x31_monero.png)](./img/43rhCdPEoAZfGKzeASYYzGQi3BwBYJ4sKe1PjBjPcuNYXe8rkiMghrTH8fJqqt7i1jKMho7MnTj7hTnN7bMMaB79HjJgg9J.png){:target="_blank"}
     [![class="img-88x31" alt="Github" title="Github"](./img/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}   
     [![class="img-88x31" alt="email" title="arielemilioparra@gmail.com"](./img/88x31_email.png)](mailto:arielemilioparra@gmail.com/){:target="_blank"}   
     [![class="img-88x31" alt="Nord color pallete" title="Nord theme website"](./img/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}    
