@@ -5,7 +5,7 @@
  * @param {string} selectedTheme - The theme to set. This should be either 'theme-dark' or 'theme-light'.
  */
 function setTheme(selectedTheme) {
-  localStorage.setItem('theme', selectedTheme);
+  setCookie('theme', selectedTheme, 30);
   document.documentElement.className = selectedTheme;
 }
 
@@ -16,7 +16,7 @@ function setTheme(selectedTheme) {
  */
 function toggleTheme(button) {
   let newTheme;
-  if (localStorage.getItem('theme') === 'theme-dark') {
+  if (getCookie('theme') === 'theme-dark') {
     newTheme = 'theme-light';
     button.textContent = ' 🌙 ';
   } else {
@@ -24,7 +24,6 @@ function toggleTheme(button) {
     button.textContent = ' ☀️ ';
   }
   setTheme(newTheme);
-  setCookie('theme', newTheme, 30);
 }
 
 /**
