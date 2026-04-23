@@ -40,10 +40,7 @@ def extract_i18n_from_attr(attr_value):
         return ('', en_content, es_content)
     return (attr_value, None, None)
 
-def md_to_html_basic(text):
-    # Remove HTML comments
-    text = re.sub(r'<!--.*?-->', '', text, flags=re.DOTALL)
-    
+def md_to_html_phase1(text):
     # Process linked images: [![alt](url)](link){: target="_blank"}
     def fix_linked_img(m):
         full_match = m.group(0)
@@ -191,6 +188,9 @@ def md_to_html_basic(text):
 
     text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)(?:\{:([^\}]*)\})?', fix_link, text)
 
+    return text
+
+def md_to_html_phase2(text):
     # Headings
     text = re.sub(r'##### (.*?)(?:\n|$)', r'<h5>\1</h5>\n', text)
     text = re.sub(r'#### (.*?)(?:\n|$)', r'<h4>\1</h4>\n', text)
@@ -225,6 +225,8 @@ def md_to_html_basic(text):
     return text
 
 def md_to_html(md_content, page_lang):
+    md_content = md_to_html_phase1(md_content)
+
     def is_inside_attribute(text, pos):
         """Check if position is inside a quoted attribute value.
         
@@ -287,20 +289,21 @@ def md_to_html(md_content, page_lang):
     final_html = []
     for ptype, val in parts:
         if ptype == 'text':
-            final_html.append(md_to_html_basic(val))
+            final_html.append(val)
         elif ptype == 'i18n':
             en_text, es_text = val
-            en_html = md_to_html_basic(en_text).strip()
-            es_html = md_to_html_basic(es_text).strip()
+            en_html = md_to_html_phase2(en_text).strip()
+            es_html = md_to_html_phase2(es_text).strip()
             display_html = en_html if page_lang == 'en' else es_html
             en_attr = html.escape(en_html, quote=True)
             es_attr = html.escape(es_html, quote=True)
             final_html.append(f'<span class="i18n" data-i18n-en="{en_attr}" data-i18n-es="{es_attr}">{display_html}</span>')
         elif ptype == 'single':
             lang, content = val
-            final_html.append(md_to_html_basic(content).strip())
+            final_html.append(md_to_html_phase2(content).strip())
 
     result = "".join(final_html)
+    result = md_to_html_phase2(result)
 
 # Post-process: Convert </span>(url) to <a href="url">...</a>
     # This handles inline links like: <span class="i18n">LINK</span>(https://url)
