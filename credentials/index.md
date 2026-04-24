@@ -4,15 +4,15 @@ base_href: ../
 keywords: [Ariel Parra, certifications, certificates, badges, achievements, degree, diploma]
 description: Ariel Parra multiple achievements
 title: ((en))achievements((/en))((es))acreditaciones((/es))
-js: [cookies, language, theme, menu, favicon, tags]
+js: [cookies, language, theme, menu, favicon, tags, credentials]
 nav_current: 3
 ---
 
   <div class="container">
-    <div class="card" data-tags="Studies">
+    <div class="card" data-tags="Education">
       <hr>
       <div class="center">
-        ### Studies
+        ### ((en))Education((/en))((es))Educación((/es))
       </div>
       <hr> 
     </div>
@@ -48,18 +48,39 @@ nav_current: 3
   </div><!--container Elements-->
 
   <div class="container grid max-width">
-    <div class="card" data-tags="certification english">
-      ![loading="lazy" alt="((en))TOEFL iBT, certification image((/en))((es))TOEFL iBT, imagen de la certificación((/es))"](./credentials/img/TOEFL_IBT_AEPM_2025.png)
-      <div class="center">
-        <p>
-          ((en))TOEFL iBT 2025, with a score of 89/120 (CEFR B2), issued by Educational Testing Service (ETS).((/en))((es)) TOEFL iBT 2025, con puntuación de 89/120 (CEFR B2), emitido por Educational Testing Service (ETS).((/es))
-          [LINK](./credentials/docs/TOEFL_IBT_AEPM_2025.pdf)
-          ((en))PDF((/en))((es))PDF((/es))(https://)
-          ((en))PDF((/en))(https://)
-          ((es))PDF((/es))(https://)
-        </p>
+    <!--start of card -->
+    <div class="card" data-tags="certification English Foreign Language Listening Reading Speaking Writing Communication">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">TOEFL iBT</span>
+          <span class="title-rank">B2 CEFR</span>
+          <span class="title-score">89/120</span>
+          <div class="credential-actions">
+            <a href="./credentials/docs/TOEFL_IBT_AEPM_2025.pdf" target="_blank" class="credential-link">PDF</a>
+          </div>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))English((/en))((es))Inglés((/es))</span>
+          <span class="credential-skill">((en))Listening((/en))((es))Escucha((/es))</span>
+          <span class="credential-skill">((en))Reading((/en))((es))Lectura((/es))</span>
+          <span class="credential-skill">((en))Speaking((/en))((es))Habla((/es))</span>
+          <span class="credential-skill">((en))Writing((/en))((es))Escritura((/es))</span>
+          <span class="skills-more"></span>
+        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="TOEFL iBT"](./credentials/img/TOEFL_IBT_AEPM_2025.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Educational Testing Service (ETS)((/en))((es))Emitido por: Educational Testing Service (ETS)((/es))</span>
+        <span class="credential-date">((en))Issued on: Jan-2025((/en))((es))Fecha: Ene-2025((/es))</span>
+      </div>
+      <div class="credential-description justify">
+        ((en))The TOEFL iBT test assesses English proficiency for non-native speakers. A score of 89/120 demonstrates B2 upper-intermediate level, equivalent to Upper Intermediate on the CEFR scale. The test evaluates reading, listening, speaking, and writing skills.((/en))((es)) El TOEFL iBT evalúa la competencia en inglés para hablantes no nativos. Una puntuación de 89/120 demuestra un nivel intermedio alto, equivalente al nivel B2 del MCER. El examen evalúa lectura, escucha, habla y escritura.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
+    <!--End of card -->
     <div class="card" data-tags="certification cybersecurity cloud">
       ![loading="lazy" alt="((en))Security Fundamentals, certification image((/en))((es))Certificación en Security Fundamentals, imagen de la certificación((/es))"](./credentials/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
       <div class="center">

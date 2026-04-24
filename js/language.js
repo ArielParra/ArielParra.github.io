@@ -49,6 +49,7 @@ function changeLanguage(language) {
     applyLanguage(language);
     updateLangButton(language);
     updateMenuButtonLanguage(language);
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: language } }));
 }
 
 function updateLangButton(language) {
