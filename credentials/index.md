@@ -109,7 +109,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Educational Testing Service (ETS)((/en))((es))Emitido por: Educational Testing Service (ETS)((/es))</span>
         <span class="credential-date">((en))Issued on: Jan-2025((/en))((es))Fecha: Ene-2025((/es))</span>
-        <a href="./credentials/docs/TOEFL_IBT_AEPM_2025.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/TOEFL_IBT_AEPM_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))The TOEFL iBT test assesses English proficiency for non-native speakers. A score of 89/120 demonstrates B2 upper-intermediate level, equivalent to Upper Intermediate on the CEFR scale. The test evaluates reading, listening, speaking, and writing skills.((/en))((es)) El TOEFL iBT evalúa la competencia en inglés para hablantes no nativos. Una puntuación de 89/120 demuestra un nivel intermedio alto, equivalente al nivel B2 del MCER. El examen evalúa lectura, escucha, habla y escritura.((/es))
@@ -138,7 +138,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
         <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
-        <a href="https://learn.microsoft.com/api/credentials/share/en-gb/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-gb/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Security, Compliance, and Identity Fundamentals certification, issued by Microsoft.((/en))((es))Certificación en Security, Compliance, and Identity Fundamentals, emitido por Microsoft.((/es))
@@ -164,7 +164,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
         <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
-        <a href="https://learn.microsoft.com/api/credentials/share/en-gb/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-gb/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Azure AI Fundamentals certification, issued by Microsoft.((/en))((es))Certificación en Azure AI Fundamentals, emitido por Microsoft.((/es))
@@ -191,7 +191,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitHub((/en))((es))Emitido por: GitHub((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://www.credly.com/badges/f024c37b-a271-4588-b5b3-bafbdb7cd661/" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f024c37b-a271-4588-b5b3-bafbdb7cd661/){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))GitHub Foundations certification, issued by GitHub.((/en))((es))Certificación en GitHub Foundations, emitido por GitHub.((/es))
@@ -218,7 +218,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
         <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
-        <a href="https://www.credly.com/badges/c3534c43-4770-43e1-9d13-c98260a0cb00/" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/c3534c43-4770-43e1-9d13-c98260a0cb00/){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))AWS Certified Cloud Practitioner, issued by Amazon Web Services.((/en))((es))Certificación en AWS Cloud Practitioner, emitido por Amazon Web Services.((/es))
@@ -244,7 +244,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=7DD090751D80D1CE9EC6B1DA78D457443D935A64E485A8C85C1FE63E7C05DD0A" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=7DD090751D80D1CE9EC6B1DA78D457443D935A64E485A8C85C1FE63E7C05DD0A){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Oracle Cloud Infrastructure 2024 Generative AI Certified Professional, issued by Oracle.((/en))((es))Oracle Cloud Infrastructure 2024 Generative AI Certified Professional, emitido por Oracle.((/es))
@@ -270,7 +270,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
         <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
-        <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=30992A10499F1A0197793FF82B04E2513DC2F17E1B28756FB0B6EE8F8B29D9A2" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=30992A10499F1A0197793FF82B04E2513DC2F17E1B28756FB0B6EE8F8B29D9A2){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Oracle Cloud Infrastructure 2023 AI Foundations Associate, issued by Oracle.((/en))((es))Oracle Cloud Infrastructure 2023 AI Foundations Associate, emitido por Oracle.((/es))
@@ -310,7 +310,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GoFluent((/en))((es))Emitido por: GoFluent((/es))</span>
         <span class="credential-date">((en))Issued on: 2026((/en))((es))Fecha: 2026((/es))</span>
-        <a href="./credentials/docs/GoFluent_English_C2_Certificate.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify PDF((/en))((es))Verificar PDF((/es))](./credentials/docs/GoFluent_English_C2_Certificate.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))According to the CEFR framework, this level reflects the ability to understand spoken language at native speed, read complex and abstract texts with ease, and use language with precision and flexibility for professional and academic contexts.((/en))((es))Según el marco del MCER, este nivel refleja la capacidad de comprender el lenguaje hablado a velocidad nativa, leer textos complejos y abstractos con facilidad, y usar el idioma con precisión y flexibilidad en contextos profesionales y académicos.((/es))
@@ -337,7 +337,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: EF Standard English Test (EFSET)((/en))((es))Emitido por: EF Standard English Test (EFSET)((/es))</span>
         <span class="credential-date">((en))Issued on: Jan-2025((/en))((es))Fecha: Ene-2025((/es))</span>
-        <a href="https://cert.efset.org/en/akd3bm" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cert.efset.org/en/akd3bm){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))EFSET English C2 certification demonstrating mastery of English listening and reading comprehension at the highest CEFR level.((/en))((es))Certificación EFSET English C2 demostrando dominio de la comprensión auditiva y de lectura en inglés en el nivel más alto del MCER.((/es))
@@ -364,7 +364,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Harvard University((/en))((es))Emitido por: Universidad de Harvard((/es))</span>
         <span class="credential-date">((en))Issued on: 2022((/en))((es))Fecha: 2022((/es))</span>
-        <a href="https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify((/en))((es))Verificar((/es))](https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Certificate of Completion of the CS50X course, issued by Harvard University.((/en))((es))Certificado de Culminación del curso CS50X, emitido por la Universidad de Harvard.((/es))
@@ -390,7 +390,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitHub and LinkedIn((/en))((es))Emitido por: GitHub y LinkedIn((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://lnkd.in/d8q5GMah" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://lnkd.in/d8q5GMah){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Career Essentials in GitHub Professional Certificate, issued by Github and LinkedIn.((/en))((es))Career Essentials in GitHub, certificado profesional, emitido por Github y LinkedIn.((/es))
@@ -416,7 +416,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft y LinkedIn((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Career Essentials in Cybersecurity, issued by Microsoft and LinkedIn.((/en))((es))Fundamentos profesionales en ciberseguridad, emitido por Microsoft y LinkedIn.((/es))
@@ -442,7 +442,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft y LinkedIn((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Career Essentials in Generative AI, issued by Microsoft and LinkedIn.((/en))((es))Fundamentos profesionales de IA generativa, emitido por Microsoft y LinkedIn.((/es))
@@ -468,7 +468,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitLab((/en))((es))Emitido por: GitLab((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))GitLab CI Fundamentals certificate, issued by GitLab.((/en))((es))GitLab CI Fundamentals, certificado emitido por GitLab.((/es))
@@ -479,7 +479,7 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">AWS Cloud Practitioner Essentials</span>
           <span class="title-rank">Learning Path Certificate</span>
-          
+
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
@@ -494,7 +494,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander((/en))((es))Emitido por: Santander((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))AWS Cloud Practitioner learning path, issued by Santander.((/en))((es))Ruta de Aprendizaje de AWS Cloud Practitioner, certificado emitido por Santander.((/es))
@@ -520,7 +520,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander((/en))((es))Emitido por: Santander((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))AWS Cloud Fundamentals, issued by Santander.((/en))((es))Fundamentos de Nube de AWS, certificado emitido por Santander.((/es))
@@ -545,7 +545,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura y Oracle((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Oracle Next Education Back-end certificate, issued by Alura and Oracle.((/en))((es))Oracle Next Education Back-end, certificado emitido por Alura and Oracle.((/es))
@@ -571,7 +571,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura y Oracle((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Java and Spring Boot certificate, issued by Alura and Oracle.((/en))((es))Java and Spring Boot, certificado emitido por Alura and Oracle.((/es))
@@ -597,7 +597,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander and Google((/en))((es))Emitido por: Santander y Google((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/754_arielemilio_parra_EN.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/754_arielemilio_parra_EN.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Artificial inteligence and productivity, issued by Santander and Google.((/en))((es))Inteligencia Artificial y productividad, certificado emitido por Santander y Google.((/es))
@@ -623,7 +623,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Blockmakers((/en))((es))Emitido por: Blockmakers((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/BLOCKMAKERS_Blockchain.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Artifitial inteligence and data science certificate, issued by Blockmakers.((/en))((es))Inteligencia Artificial y Data Science, certificado emitido por Blockmakers.((/es))
@@ -649,7 +649,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Blockmakers((/en))((es))Emitido por: Blockmakers((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/BLOCKMAKERS_Blockchain.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Solidity bootcamp certificate, issued by Blockmakers.((/en))((es))Solidity bootcamp, certificado emitido por Blockmakers.((/es))
@@ -675,7 +675,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Blockmakers((/en))((es))Emitido por: Blockmakers((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/BLOCKMAKERS_Blockchain.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Blockchain consultant certificate, issued by Blockmakers.((/en))((es))Blockchain consultant, certificado emitido por Blockmakers.((/es))
@@ -701,7 +701,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Internet Computer (ICP)((/en))((es))Emitido por: Internet Computer (ICP)((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/ICP_Developer_Azle.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ICP_Developer_Azle.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Developer in Azle certificate, issued by Internet Computer (ICP).((/en))((es))Developer in Azle, certificado emitido por Internet Computer (ICP).((/es))
@@ -727,7 +727,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red Por la Ciberseguridad and Microsoft((/en))((es))Emitido por: Red Por la Ciberseguridad y Microsoft((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724038728/3923002801AP.pdf" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724038728/3923002801AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Artificial intelligence at work certificate, issued by Red Por la Ciberseguridad and Microsoft.((/en))((es))Inteligencia Artificial en el trabajo, certificado emitido por Red Por la Ciberseguridad y Microsoft.((/es))
@@ -753,7 +753,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red Por la Ciberseguridad((/en))((es))Emitido por: Red Por la Ciberseguridad((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Introduction to Generative Artificial Intelligence certificate, issued by Red Por la Ciberseguridad.((/en))((es))Introducción a la Inteligencia Artificial Generativa, certificado emitido por Red Por la Ciberseguridad.((/es))
@@ -779,7 +779,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red Por la Ciberseguridad((/en))((es))Emitido por: Red Por la Ciberseguridad((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Aleph Operation: SC-900 certificate, issued by Red Por la Ciberseguridad.((/en))((es))Operación Aleph: SC-900 certificate, certificado emitido por Red Por la Ciberseguridad.((/es))
@@ -805,7 +805,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red Por la Ciberseguridad((/en))((es))Emitido por: Red Por la Ciberseguridad((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Cybersecurity at work certificate, issued by Red Por la Ciberseguridad.((/en))((es))Ciberseguridad en el Trabajo, certificado emitido por Red Por la Ciberseguridad.((/es))
@@ -831,7 +831,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: HackerRank((/en))((es))Emitido por: HackerRank((/es))</span>
         <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
-        <a href="https://www.hackerrank.com/certificates/610bac95af9a" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.hackerrank.com/certificates/610bac95af9a){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Problem Solving certificate, issued by HackerRank.((/en))((es))Problem Solving, certificado emitido por HackerRank.((/es))
@@ -856,7 +856,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: CONDUSEF((/en))((es))Emitido por: CONDUSEF((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/Diploma_CONDUSEF.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Diploma_CONDUSEF.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Financial education diploma, issued by CONDUSEF.((/en))((es))Diplomado en educación financiera, emitido por la CONDUSEF.((/es))
@@ -881,7 +881,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Televisa Foundation((/en))((es))Emitido por: Fundación Televisa((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/Compu_Cuantrix_nivel_avanzado.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Compu_Cuantrix_nivel_avanzado.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Compu Cuantrix advance level course, issued by Televisa Foundation.((/en))((es))Compu Cuantrix nivel avanzado, emitido por Fundación Televisa.((/es))
@@ -920,7 +920,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: IBM((/en))((es))Emitido por: IBM((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0/linked_in?t=sas12p" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0/linked_in?t=sas12p){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))IBM Z Xplore Concepts badge, issued by IBM.((/en))((es))Insignia de IBM Z Xplore Concepts, emitida por IBM.((/es))
@@ -946,7 +946,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://www.credly.com/badges/afd4033e-db74-41f2-ae6a-87ff9dc0520e/public_url" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/afd4033e-db74-41f2-ae6a-87ff9dc0520e/public_url){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))AWS Technology: Cloud Essentials badge, issued by Amazon on credly.((/en))((es))AWS Technology: Cloud Essentials badge, emitida por Amazon en credly.((/es))
@@ -987,7 +987,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Talent Land / Banco Azteca((/en))((es))Emitido por: Talent Land / Banco Azteca((/es))</span>
         <span class="credential-date">((en))Issued on: Apr-2026((/en))((es))Fecha: Abr-2026((/es))</span>
-        <a href="./credentials/docs/Talent_Land_Hackathon_Genius_Arena_2026_Winner.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Talent_Land_Hackathon_Genius_Arena_2026_Winner.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Won 1st place among 75 teams at Talent Land Genius Arena as team leader of D3LT4. Architected Tomin, a cross-platform expense-tracking app with an integrated LLM assistant, achieving a 40% increase in user engagement during MVP testing. Coordinated sprint planning, task delegation, and live demo under a 72-hour hackathon constraint.((/en))((es))Ganador del 1er lugar entre 75 equipos en Talent Land Genius Arena como líder del equipo D3LT4. Diseñó Tomin, una aplicación multiplataforma de seguimiento de gastos con un asistente LLM integrado, logrando un aumento del 40% en el compromiso del usuario durante las pruebas del MVP. Coordinó la planificación de sprints, la delegación de tareas y la demostración en vivo bajo una restricción de hackathon de 72 horas.((/es))
@@ -1014,7 +1014,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: ICPC((/en))((es))Emitido por: ICPC((/es))</span>
         <span class="credential-date">((en))Issued on: 2025((/en))((es))Fecha: 2025((/es))</span>
-        <a href="./credentials/docs/2025_SWERC_AEPM_UTC.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025_SWERC_AEPM_UTC.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Ranked Mention at the 2025 SWERC (ICPC Southwestern Europe Regional Contest). Ranked 67th out of 142 teams. Placed 15th among 46 French teams and 1st in the Hauts-de-France region.((/en))((es))Mención Honorifica en el SWERC del ICPC 2025. Clasificado en el puesto 67 de 142 equipos. Clasificado en el puesto 15 de 46 equipos franceses y 1er lugar en la región de Hauts-de-France.((/es))
@@ -1041,7 +1041,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: ICPC((/en))((es))Emitido por: ICPC((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Honarable Mention at the 2024 ICPC Grand Premio de Mexico.((/en))((es))Mención Honorifica en el Grand Premio de Mexico del ICPC 2024.((/es))
@@ -1067,7 +1067,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: ANIEI((/en))((es))Emitido por: ANIEI((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martínez.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martínez.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Participation at the 19th ANIEI National Programming Contest.((/en))((es))Participación en el 19o Concurso Nacional de Programación del ANIEI.((/es))
@@ -1093,7 +1093,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Meta((/en))((es))Emitido por: Meta((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1022025052997781" target="_blank" class="credential-link">((en))Verify credential((/en))((es))Verificar credencial((/es))</a>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1022025052997781){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Participation in Round 1 of the 2024 Meta Hacker Cup. Placing in the top 32% globally.((/en))((es))Participación en la 1er ronda del Meta Hacker Cup 2024. Logrando un lugar en el top 32% mundial.((/es))
@@ -1119,7 +1119,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
         <span class="credential-date">((en))Issued on: 2025((/en))((es))Fecha: 2025((/es))</span>
-        <a href="./credentials/docs/UAA_CONCURSO_2025.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Certificate awarded by the Universidad Autónoma de Aguascalientes for my participation as a workshop instructor at the 19th Congress of Exact Sciences, delivering the workshop "Technical Job Interviews".((/en))((es))Constancia otorgada por la Universidad Autónoma de Aguascalientes por mi participación como tallerista en el XIX Congreso de Ciencias Exactas, impartiendo el taller "Entrevistas técnicas de trabajo".((/es))
@@ -1146,7 +1146,7 @@ nav_current: 3
 <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
         <span class="credential-date">((en))Issued on: 2025((/en))((es))Fecha: 2025((/es))</span>
-        <a href="./credentials/docs/UAA_CONCURSO_2025.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Certificate awarded by the Universidad Autónoma de Aguascalientes for organizing and leading the programming contest at the 19th Congress of Exact Sciences, held on March 27, 2025.((/en))((es))Constancia otorgada por la Universidad Autónoma de Aguascalientes por la organización y dirección del concurso de programación del XIX Congreso de Ciencias Exactas, celebrado el 27 de marzo de 2025.((/es))
@@ -1173,7 +1173,7 @@ nav_current: 3
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        <a href="./credentials/docs/CPC-GALLOS_2024.pdf" target="_blank" class="credential-link">((en))Verify((/en))((es))Verificar((/es)) PDF</a>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2024.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Certificate awarded by the Universidad Autónoma de Aguascalientes for my leadership and commitment as president of the competitive programming club Γα=Ω5 (Gallos), during the August-December 2024 semester.((/en))((es))Constancia otorgada por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como presidente del club de programación competitiva Γα=Ω5 (Gallos), durante el semestre agosto-diciembre 2024.((/es))

@@ -175,16 +175,18 @@ def md_to_html_phase1(text):
 
     text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)(?:\{:([^\}]*)\})?', fix_image, text)
 
-    # Process links: [text](url){: target="..."}
+    # Process links: [text](url){: target="..." class="..."}
     def fix_link(m):
         text_content = m.group(1)
         url = m.group(2)
         attrs = m.group(3) or ""
-        target_match = re.search(r'target="([^"]+)"', attrs)
-        target = target_match.group(1) if target_match else ""
-        if target:
-            return f'<a href="{url}" target="{target}">{text_content}</a>'
-        return f'<a href="{url}">{text_content}</a>'
+        # Extract all attributes from the {:...} block
+        attr_parts = [f'href="{url}"']
+        for attr_match in re.finditer(r'(\w+)="([^"]*)"', attrs):
+            key = attr_match.group(1)
+            val = attr_match.group(2)
+            attr_parts.append(f'{key}="{val}"')
+        return f'<a {" ".join(attr_parts)}>{text_content}</a>'
 
     text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)(?:\{:([^\}]*)\})?', fix_link, text)
 
