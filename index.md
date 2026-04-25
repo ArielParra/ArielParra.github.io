@@ -4,6 +4,7 @@ keywords: [((en))Ariel Parra, website((/en))((es))Ariel Parra, sitio web((/es))]
 description: ((en))Ariel Parra Website!((/en))((es))¡Sitio web de Ariel Parra!((/es))
 title: ((en))Ariel Parra((/en))((es))Ariel Parra((/es))
 js: [cookies, language, theme, menu, favicon, debug]
+css: [theme, common]
 nav_current: 1
 ---
 

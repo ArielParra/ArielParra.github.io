@@ -1,0 +1,80 @@
+:root {
+  /*color pallete*/
+  --yellow: #ebcb8b;
+  --orange: #d08770;
+  --red: #bf616a;
+  --magenta: #b48ead;
+  --blue: #5e81ac;
+  --cyan: #81a1c1;
+  --aqua: #8fbcbb;
+  --green: #a3be8c;
+  --white: #d8dee9;
+  --black: #242933;
+  --gray1: #323a48;
+
+  --gray2: #373e4d;
+  --gray3: #3b4252;
+  --gray4: #4c566a;
+  --gray5: #4b5f82;
+
+  /*default theme (dark)*/
+
+  --border: var(--gray2);
+  --text: var(--white);
+
+  --HTML_BG: var(--black);
+  --card_BG: var(--gray3);
+
+  --hr: var(--text);
+
+  --button_BG: var(--gray4);
+  --button_border: var(--card_BG);
+  --button_color: var(--text);
+
+  --btn-hover_border: var(--gray4);
+  --btn-hover_BG: var(--card_BG);
+  --btn-hover_color: var(--text);
+
+  --a-focus: var(--cyan);
+  /*outline when tab is pressed*/
+  --a-href: var(--aqua);
+  --a-href-hover: var(--magenta);
+  --link: var(--a-href);
+  --link-hover: var(--a-href-hover);
+
+  --nav-a-current_BG: var(--gray4);
+  --nav-a-hover_BG: var(--white);
+  --nav-a-hover-span_color: var(--card_BG);
+
+}
+
+/*Default style is dark mode, only need change light colors*/
+.theme-light {
+
+  --border: var(--gray3);
+  --text: var(--black);
+
+  --HTML_BG: var(--white);
+  --card_BG: var(--cyan);
+
+  --hr: var(--border);
+
+  --button_BG: var(--blue);
+  --button_border: var(--border);
+  --button_color: var(--white);
+
+  --btn-hover_border: var(--blue);
+  --btn-hover_BG: var(--gray4);
+  --btn-hover_color: var(--white);
+
+  --a-focus: var(--black);
+  --a-href: var(--white);
+  --a-href-hover: var(--blue);
+  --link: var(--a-href);
+  --link-hover: var(--a-href-hover);
+
+  --nav-a-current_BG: var(--gray5);
+  --nav-a-hover_BG: var(--gray4);
+  --nav-a-hover-span_color: var(--white);
+
+}

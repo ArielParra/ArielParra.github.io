@@ -4,6 +4,7 @@ keywords: [((en))Ariel Parra, portfolio((/en))((es))Ariel Parra, portafolio((/es
 description: ((en))Ariel Parra portfolio((/en))((es))Portafolio de Ariel Parra((/es))
 title: ((en))portfolio((/en))((es))portafolio((/es))
 js: [cookies, language, theme, menu, favicon]
+css: [theme, common, portfolio]
 nav_current: 2
 ---
   <div class="container grid">

@@ -5,9 +5,9 @@ keywords: [Ariel Parra, certifications, certificates, badges, achievements, degr
 description: Ariel Parra multiple achievements
 title: ((en))achievements((/en))((es))acreditaciones((/es))
 js: [cookies, language, theme, menu, favicon, tags, credentials]
+css: [theme, common, credentials]
 nav_current: 3
 ---
-
   <div class="container">
     <div class="card" data-tags="Education">
       <hr>
@@ -37,7 +37,7 @@ nav_current: 3
         ![loading="lazy" alt="UAA logo"](https://www.uaa.mx/portal/wp-content/uploads/2022/08/UAA-LOGO.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
+        <span class="credential-issuer">Universidad Autónoma de Aguascalientes (UAA)</span>
         <span class="credential-date">((en))Expected: Dec 2026((/en))((es))Esperado: Dic 2026((/es))</span>
       </div>
       <div class="credential-description justify">
@@ -64,7 +64,7 @@ nav_current: 3
         ![loading="lazy" alt="UTC logo"](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg/1280px-Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Université de Technologie de Compiègne (UTC)((/en))((es))Emitido por: Université de Technologie de Compiègne (UTC)((/es))</span>
+        <span class="credential-issuer">Université de Technologie de Compiègne</span>
         <span class="credential-date">((en))Automne 2025((/en))((es))Otoño 2025((/es))</span>
       </div>
       <div class="credential-description justify">
@@ -73,7 +73,6 @@ nav_current: 3
       </div>
     </div>
   </div><!--container Elements-->
-
   <div class="container">
     <div class="card" data-tags="certification">
       <hr>
@@ -83,7 +82,6 @@ nav_current: 3
       <hr>
     </div>
   </div><!--container Elements-->
-
   <div class="container grid max-width">
     <!--start of card -->
     <div class="card" data-tags="certification English Foreign Language Listening Reading Speaking Writing Communication">
@@ -92,7 +90,6 @@ nav_current: 3
           <span class="title-main">TOEFL iBT</span>
           <span class="title-rank">B2 CEFR</span>
           <span class="title-score">89/120</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))English((/en))((es))Inglés((/es))</span>
@@ -122,7 +119,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Security, Compliance, and Identity Fundamentals</span>
           <span class="title-rank">Fundamentals</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Security((/en))((es))Seguridad((/es))</span>
@@ -149,7 +145,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Azure AI Fundamentals</span>
           <span class="title-rank">Fundamentals</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
@@ -175,7 +170,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">GitHub Foundations</span>
           <span class="title-rank">Foundations</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
@@ -202,7 +196,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">AWS Certified Cloud Practitioner</span>
           <span class="title-rank">Foundational</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
@@ -229,7 +222,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">OCI Generative AI Certified Professional</span>
           <span class="title-rank">Professional</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
@@ -255,7 +247,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">OCI AI Foundations Associate</span>
           <span class="title-rank">Associate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
@@ -277,7 +268,6 @@ nav_current: 3
       </div>
     </div>
   </div><!--container Elements-->
-
   <div class="container">
     <div class="card" data-tags="certificate">
       <hr>
@@ -287,7 +277,6 @@ nav_current: 3
       <hr>
     </div>
   </div><!--container Elements-->
-
   <div class="container grid max-width">
   <div class="card" data-tags="certificate English Foreign Language Listening Reading Speaking Writing Communication">
       <div class="credential-header">
@@ -335,7 +324,7 @@ nav_current: 3
         ![loading="lazy" alt="EFSET English C2 Certificate"](./credentials/img/EFSET_English_C2_Certificate.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: EF Standard English Test (EFSET)((/en))((es))Emitido por: EF Standard English Test (EFSET)((/es))</span>
+        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: Education First((/es))</span>
         <span class="credential-date">((en))Issued on: Jan-2025((/en))((es))Fecha: Ene-2025((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cert.efset.org/en/akd3bm){:target="_blank" class="credential-link"}
       </div>
@@ -348,7 +337,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">CS50X</span>
           <span class="title-rank">Certificate of Completion</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
@@ -375,7 +363,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Career Essentials in GitHub</span>
           <span class="title-rank">Professional Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
@@ -401,7 +388,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Career Essentials in Cybersecurity</span>
           <span class="title-rank">Professional Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Cybersecurity((/en))((es))Ciberseguridad((/es))</span>
@@ -427,7 +413,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Career Essentials in Generative AI</span>
           <span class="title-rank">Professional Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
@@ -453,7 +438,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">GitLab CI Fundamentals</span>
           <span class="title-rank">Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
@@ -479,7 +463,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">AWS Cloud Practitioner Essentials</span>
           <span class="title-rank">Learning Path Certificate</span>
-
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
@@ -492,7 +475,7 @@ nav_current: 3
         ![loading="lazy" alt="((en))Santander AWS Cloud Practitioner, certificate image((/en))((es))Santander AWS Cloud Practitioner, imagen del certificado((/es))"](./credentials/img/Santander_AWS_Cloud_Practitioner_Essentials.png)
       </div>
 <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Santander((/en))((es))Emitido por: Santander((/es))</span>
+        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es)) Santander / TIDWIT</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -505,7 +488,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">AWS Cloud Fundamentals</span>
           <span class="title-rank">Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
@@ -518,7 +500,7 @@ nav_current: 3
         ![loading="lazy" alt="((en))Santander AWS Cloud Fundamentals, certificate image((/en))((es))Santander AWS Cloud Fundamentals, imagen del certificado((/es))"](./credentials/img/Santander_Fundamentos_de_Nube_AWS.png)
       </div>
 <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Santander((/en))((es))Emitido por: Santander((/es))</span>
+        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es)) Santander / TIDWIT</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -556,7 +538,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Java and Spring Boot</span>
           <span class="title-rank">Degree Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
@@ -582,7 +563,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Artificial Intelligence and Productivity</span>
           <span class="title-rank">Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
@@ -608,7 +588,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Artificial Intelligence and Data Science</span>
           <span class="title-rank">Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
@@ -634,7 +613,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Solidity Bootcamp</span>
           <span class="title-rank">Bootcamp Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Blockchain((/en))((es))Blockchain((/es))</span>
@@ -660,7 +638,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Blockchain Consultant</span>
           <span class="title-rank">Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Blockchain((/en))((es))Blockchain((/es))</span>
@@ -686,7 +663,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Developer in Azle</span>
           <span class="title-rank">Developer Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Blockchain((/en))((es))Blockchain((/es))</span>
@@ -712,7 +688,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Artificial Intelligence at Work</span>
           <span class="title-rank">Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
@@ -738,7 +713,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Introduction to Generative Artificial Intelligence</span>
           <span class="title-rank">Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
@@ -764,7 +738,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Operación Aleph: SC-900</span>
           <span class="title-rank">Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Cybersecurity((/en))((es))Ciberseguridad((/es))</span>
@@ -790,7 +763,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Cybersecurity at Work</span>
           <span class="title-rank">Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Cybersecurity((/en))((es))Ciberseguridad((/es))</span>
@@ -816,7 +788,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">HackerRank Problem Solving</span>
           <span class="title-rank">Basic Certificate</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
@@ -842,7 +813,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Diploma CONDUCEF</span>
           <span class="title-rank">Diploma</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Financial Education((/en))((es))Educación Financiera((/es))</span>
@@ -867,7 +837,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Compu Cuantrix Advance Level</span>
           <span class="title-rank">Advance Level</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Technology((/en))((es))Tecnología((/es))</span>
@@ -888,7 +857,6 @@ nav_current: 3
       </div>
     </div>
   </div><!--container Elements-->
-
   <div class="container">
     <div class="card" data-tags="badge">
       <hr>
@@ -898,14 +866,12 @@ nav_current: 3
       <hr>
     </div>
   </div><!--container Elements-->
-
   <div class="container grid max-width">
     <div class="card" data-tags="badge cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">IBM Z Xplore Concepts</span>
           <span class="title-rank">Badge</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Mainframe((/en))((es))Mainframe((/es))</span>
@@ -931,7 +897,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">AWS Technology: Cloud Essentials</span>
           <span class="title-rank">Badge</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
@@ -952,9 +917,7 @@ nav_current: 3
         ((en))AWS Technology: Cloud Essentials badge, issued by Amazon on credly.((/en))((es))AWS Technology: Cloud Essentials badge, emitida por Amazon en credly.((/es))
       </div>
     </div>
-
   </div><!--container Elements-->
-
    <div class="container">
      <div class="card" data-tags="award">
        <hr>
@@ -964,14 +927,12 @@ nav_current: 3
        <hr>
      </div>
    </div><!--container Elements-->
-
    <div class="container grid max-width">
        <div class="card" data-tags="award hackathon">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Talent Land Genius Arena</span>
           <span class="title-rank">1st Place / 75 Teams</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Hackathon((/en))((es))Hackathon((/es))</span>
@@ -999,7 +960,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">SWERC 2025 (ICPC)</span>
           <span class="title-rank">67th Place</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
@@ -1012,7 +972,7 @@ nav_current: 3
         ![loading="lazy" alt="ICPC 2025, certificate image"](./credentials/img/2025_SWERC_AEPM_UTC.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ICPC((/en))((es))Emitido por: ICPC((/es))</span>
+        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es))International Collegiate Programming Contest</span>
         <span class="credential-date">((en))Issued on: 2025((/en))((es))Fecha: 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025_SWERC_AEPM_UTC.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -1020,13 +980,12 @@ nav_current: 3
         ((en))Ranked Mention at the 2025 SWERC (ICPC Southwestern Europe Regional Contest). Ranked 67th out of 142 teams. Placed 15th among 46 French teams and 1st in the Hauts-de-France region.((/en))((es))Mención Honorifica en el SWERC del ICPC 2025. Clasificado en el puesto 67 de 142 equipos. Clasificado en el puesto 15 de 46 equipos franceses y 1er lugar en la región de Hauts-de-France.((/es))
         <span class="see-more"></span>
       </div>
-    </div>    
-    <div class="card" data-tags="event programming">
+    </div>
+        <div class="card" data-tags="event programming">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">ICPC Grand Premio de Mexico 2024</span>
+          <span class="title-main">ICPC Gran Premio de Mexico 2025</span>
           <span class="title-rank">Honorable Mention</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
@@ -1036,15 +995,40 @@ nav_current: 3
         </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="ICPC 2024, certificate image"](./credentials/img/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.png)
+        ![loading="lazy" alt="ICPC 2025, certificate image"](./credentials/img/2025-ICPC-Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ICPC((/en))((es))Emitido por: ICPC((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.pdf){:target="_blank" class="credential-link"}
+        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es)) International Collegiate Programming Contest</span>
+        <span class="credential-date">((en))Issued on: 2025((/en))((es))Fecha: 2025((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Honarable Mention at the 2024 ICPC Grand Premio de Mexico.((/en))((es))Mención Honorifica en el Grand Premio de Mexico del ICPC 2024.((/es))
+        ((en))Honarable Mention at the 2025 ICPC Gran Premio de Mexico.((/en))((es))Mención Honorifica en el Grand Premio de Mexico del ICPC 2025.((/es))
+      </div>
+    </div>        
+    <div class="card" data-tags="event programming">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">ICPC Gran Premio de Mexico 2024</span>
+          <span class="title-rank">Honorable Mention</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
+          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))ICPC((/en))((es))ICPC((/es))</span>
+          <span class="skills-more"></span>
+        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="ICPC 2024, certificate image"](./credentials/img/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es))International Collegiate Programming Contest</span>
+        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Honarable Mention at the 2024 ICPC Gran Premio de Mexico.((/en))((es))Mención Honorifica en el Grand Premio de Mexico del ICPC 2024.((/es))
       </div>
     </div>    
     <div class="card" data-tags="event programming">
@@ -1052,7 +1036,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">19th ANIEI National Programming Contest</span>
           <span class="title-rank">Participation</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
@@ -1065,7 +1048,7 @@ nav_current: 3
         ![loading="lazy" alt="ANIEI 2024, certificate image"](./credentials/img/ANIEI-Ariel_Emilio_Parra_Martínez.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ANIEI((/en))((es))Emitido por: ANIEI((/es))</span>
+        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es)) Asociación Nacional de Instituciones de Educación en Tecnologías de la Información</span>
         <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martínez.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -1078,7 +1061,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Meta Hacker Cup 2024</span>
           <span class="title-rank">Top 32%</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
@@ -1104,7 +1086,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">UAA Workshop Instructor</span>
           <span class="title-rank">XIX Congress</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Teaching((/en))((es))Docencia((/es))</span>
@@ -1131,7 +1112,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">UAA Programming Contest Organizer</span>
           <span class="title-rank">XIX Congress</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Leadership((/en))((es))Liderazgo((/es))</span>
@@ -1158,7 +1138,6 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">CPC Gallos President</span>
           <span class="title-rank">Semester Aug-Dec 2024</span>
-          
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Leadership((/en))((es))Liderazgo((/es))</span>
@@ -1181,4 +1160,3 @@ nav_current: 3
       </div>
     </div>
   </div><!--container Elements-->
-

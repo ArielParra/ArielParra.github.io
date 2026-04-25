@@ -18,7 +18,15 @@ def parse_md(md_content):
         value = value.strip()
         if value.startswith('[') and value.endswith(']'):
             value = [v.strip() for v in value[1:-1].split(',')]
+        else:
+            value = value
         md_dict[key] = value
+    
+    if 'css' not in md_dict:
+        md_dict['css'] = []
+    if 'js' not in md_dict:
+        md_dict['js'] = []
+        
     return md_dict
 
 def extract_i18n_from_attr(attr_value):
@@ -392,9 +400,12 @@ def generate_html(md_dict, md_content):
   <meta   name="description"     data-i18n-description-en="{html.escape(desc_en)}" data-i18n-description-es="{html.escape(desc_es)}" content="{html.escape(extract_translation(md_dict['description'], language))}">
   <meta   name="author"          content="Ariel Parra">
   <title> {extract_translation(md_dict['title'], language)} </title>
-  <link   rel="preload"          href="./style.css" as="style">
-  <link   rel="stylesheet"       href="./style.css">
 """
+    
+    for css_file in md_dict['css']:
+        if css_file:
+            html_content += f'  <link rel="stylesheet" href="./css/{css_file}.css">\n'
+
     def space_padding(js_file):
         return " " * (max(len(jf) for jf in md_dict['js']) - len(js_file))
     
