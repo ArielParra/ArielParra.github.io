@@ -8,73 +8,154 @@ js: [cookies, language, theme, menu, favicon, tags, credentials]
 css: [theme, common, credentials]
 nav_current: 3
 ---
+
+  <div class="container">
+    <div class="card" data-tags="Certifice">
+      <hr>
+      <div class="center">
+        ### Certifice
+      </div>
+      <hr>
+    </div>
+  </div><!--container Elements-->
+
+  <div class="container grid max-width">
+    <div class="card" data-tags="certifice">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))CS50x: Introduction to Computer Science((/en))((es))CS50x: Introducción a la Ciencia de la Computación((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Culminación((/es))</span>
+          <span class="title-score">((en))10 Problem Sets + Final Project Completed((/en))((es))10 Conjuntos de Problemas + Proyecto Final Completados((/es))</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Algorithms</span>
+          <span class="credential-skill">Data Structures</span>
+          <span class="credential-skill">C</span>
+          <span class="credential-skill">Python</span>
+          <span class="credential-skill">SQL</span>
+          <span class="credential-skill">HTML/CSS</span>
+          <span class="credential-skill">JavaScript</span>
+          <span class="credential-skill">Flask</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))CS50x: Introduction to Computer Science((/en))((es))CS50x: Introducción a la Ciencia de la Computación((/es))](./credentials/img/CS50x.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Harvard University((/en))((es))Emitido por: Harvard University((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational knowledge of computer science and the art of programming through this Harvard University course. I successfully completed ten intensive problem sets and a final project, demonstrating proficiency in low-level programming with C, web development with Python and SQL, and core algorithmic thinking.((/en))((es))Validé mis conocimientos fundamentales de la ciencia de la computación y el arte de la programación a través de este curso de la Universidad de Harvard. Completé con éxito diez conjuntos de problemas intensivos y un proyecto final, demostrando competencia en programación de bajo nivel con C, desarrollo web con Python y SQL, y pensamiento algorítmico central.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+  </div><!--container Elements-->
+
   <div class="container">
     <div class="card" data-tags="Education">
       <hr>
       <div class="center">
         ### ((en))Education((/en))((es))Educación((/es))
       </div>
-      <hr> 
+      <hr>
     </div>
   </div><!--container Elements-->
-  <div class="container grid">
-    <div class="card" data-tags="education degree">
+
+  <div class="container grid max-width">
+    <div class="card" data-tags="education">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">((en))Bachelor's Degree in Systems Engineering((/en))((es))Ing. en Sistemas Computacionales((/es))</span>
-          <span class="title-rank">B.S.</span>
+          <span class="title-main">Computer Systems Engineering</span>
+          <span class="title-rank">B.Sc.</span>
           <span class="title-score">GPA 9.34/10</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
-          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
-          <span class="credential-skill">((en))Databases((/en))((es))Bases de Datos((/es))</span>
-          <span class="credential-skill">((en))Operating Systems((/en))((es))Sistemas Operativos((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Algorithms</span>
+          <span class="credential-skill">Data Structures</span>
+          <span class="credential-skill">Databases</span>
+          <span class="credential-skill">Operating Systems</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="UAA logo"](https://www.uaa.mx/portal/wp-content/uploads/2022/08/UAA-LOGO.png)
+        ![loading="lazy" alt="Computer Systems Engineering](https://www.uaa.mx/portal/wp-content/uploads/2022/08/UAA-LOGO.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">Universidad Autónoma de Aguascalientes (UAA)</span>
-        <span class="credential-date">((en))Expected: Dec 2026((/en))((es))Esperado: Dic 2026((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
+        <span class="credential-date">((en))Issued on: 2026-12((/en))((es))Fecha: 2026-12((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.uaa.mx/descubretucarrera/ccb/ing-en-sistemas-computacionales/plan.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Bachelor's Degree in Systems Engineering. Currently in the 8th of 9 semesters with a GPA of 9.34/10.((/en))((es))Licenciatura en Ingeniería en Sistemas Computacionales. Actualmente en el 8vo de 9 semestres con un promedio de 9.34/10.((/es))
+        ((en))Bachelor of Science Degree in Computer Systems Engineering. Currently in the 8th of 9 semesters with a GPA of 9.34/10.((/en))((es))Licenciatura en Ingeniería en Sistemas Computacionales. Actualmente cursando el 8vo de 9 semestres con un promedio de 9.34/10.((/es))
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="education degree">
+    <div class="card" data-tags="education">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">((en))Génie Informatique (Computer Engineering)((/en))((es))Génie Informatique (Ingeniería Informática)((/es))</span>
-          <span class="title-rank">((en))Exchange Student((/en))((es))Estudiante de Intercambio((/es))</span>
-          <div class="credential-actions">
-          </div>
+          <span class="title-main">Génie Informatique ((en))(Computer Engineering)((/en))((es))(Ingeniería Informática)((/es))</span>
+          <span class="title-rank">Exchange Student</span>
+          <span class="title-score">ECTS C</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Computer Networks((/en))((es))Redes Computacionales((/es))</span>
-          <span class="credential-skill">((en))Machine Learning((/en))((es))Aprendizaje Automático((/es))</span>
-          <span class="credential-skill">((en))French((/en))((es))Francés((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Computer Networks</span>
+          <span class="credential-skill">Machine Learning</span>
+          <span class="credential-skill">French</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="UTC logo"](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg/1280px-Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg.png)
+        ![loading="lazy" alt="Génie Informatique ((en))(Computer Engineering)((/en))((es))(Ingeniería Informática)((/es))](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg/1280px-Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">Université de Technologie de Compiègne</span>
-        <span class="credential-date">((en))Automne 2025((/en))((es))Otoño 2025((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Université de Technologie de Compiègne((/en))((es))Emitido por: Université de Technologie de Compiègne((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-09((/en))((es))Fecha: 2025-09((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.utc.fr/wp-content/uploads/sites/28/2021/01/gi2021-web.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Study Abroad Program 2025 at the Université de Technologie de Compiègne in France. Focus on Computer Engineering, Computer Networks, Machine Learning, and French as a Foreign Language.((/en))((es))Programa de Estudios en el Extranjero 2025 en la Université de Technologie de Compiègne en Francia. Especialización en Ingeniería Informática, Redes Computacionales, Aprendizaje Automático y Francés como Lengua Extranjera.((/es))
         <span class="see-more"></span>
       </div>
     </div>
+    <div class="card" data-tags="education">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">Oracle Next Education (ONE)</span>
+          <span class="title-rank">Back-end Program</span>
+          <span class="title-score">1301/1302 ((en)Activities(/en)) ((es)Actividades(/es))</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Programming</span>
+          <span class="credential-skill">Back-end</span>
+          <span class="credential-skill">Java</span>
+          <span class="credential-skill">OOP</span>
+          <span class="credential-skill">Spring Boot</span>
+          <span class="credential-skill">Agile Methodologies</span>
+          <span class="credential-skill">Software Development Lifecycle</span>
+          <span class="credential-skill">Professional Soft Skills</span>
+          <span class="credential-skill">Entrepreneurship</span>
+          <span class="credential-skill">Software Engineering</span>
+          <span class="credential-skill">Back-end Development</span>
+          <span class="credential-skill">Professional Development</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="Oracle Next Education (ONE)](./credentials/img/Oracle_One_Programa.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-05((/en))((es))Fecha: 2024-05((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/program/certificate/80f90beb-02e0-48ae-a5a4-c097d226c28e){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I successfully completed the comprehensive Oracle Next Education (ONE) program. This journey involved 286 hours of intensive training across 6 specialized tracks, including Back-end with Java, Agile methodologies, and professional development, completing over 1,300 technical and soft skills activities.((/en))((es))Completé con éxito el programa integral Oracle Next Education (ONE). Esta trayectoria implicó 286 horas de formación intensiva a través de 6 rutas especializadas, incluyendo Back-end con Java, metodologías ágiles y desarrollo profesional, realizando más de 1,300 actividades técnicas y de habilidades blandas.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
   </div><!--container Elements-->
+
   <div class="container">
-    <div class="card" data-tags="certification">
+    <div class="card" data-tags="Certification">
       <hr>
       <div class="center">
         ### ((en))Certifications((/en))((es))Certificaciones((/es))
@@ -82,783 +163,1017 @@ nav_current: 3
       <hr>
     </div>
   </div><!--container Elements-->
+
   <div class="container grid max-width">
-    <!--start of card -->
-    <div class="card" data-tags="certification English Foreign Language Listening Reading Speaking Writing Communication">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">TOEFL iBT</span>
-          <span class="title-rank">B2 CEFR</span>
-          <span class="title-score">89/120</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))English((/en))((es))Inglés((/es))</span>
-          <span class="credential-skill">((en))Listening((/en))((es))Escucha((/es))</span>
-          <span class="credential-skill">((en))Reading((/en))((es))Lectura((/es))</span>
-          <span class="credential-skill">((en))Speaking((/en))((es))Habla((/es))</span>
-          <span class="credential-skill">((en))Writing((/en))((es))Escritura((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="TOEFL iBT"](./credentials/img/TOEFL_IBT_AEPM_2025.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Educational Testing Service (ETS)((/en))((es))Emitido por: Educational Testing Service (ETS)((/es))</span>
-        <span class="credential-date">((en))Issued on: Jan-2025((/en))((es))Fecha: Ene-2025((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/TOEFL_IBT_AEPM_2025.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))The TOEFL iBT test assesses English proficiency for non-native speakers. A score of 89/120 demonstrates B2 upper-intermediate level, equivalent to Upper Intermediate on the CEFR scale. The test evaluates reading, listening, speaking, and writing skills.((/en))((es)) El TOEFL iBT evalúa la competencia en inglés para hablantes no nativos. Una puntuación de 89/120 demuestra un nivel intermedio alto, equivalente al nivel B2 del MCER. El examen evalúa lectura, escucha, habla y escritura.((/es))
-        <span class="see-more"></span>
-      </div>
-    </div>
-    <!--End of card -->
-    <div class="card" data-tags="certification cybersecurity cloud security compliance identity">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Security, Compliance, and Identity Fundamentals</span>
-          <span class="title-rank">Fundamentals</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Security((/en))((es))Seguridad((/es))</span>
-          <span class="credential-skill">((en))Compliance((/en))((es))Cumplimiento((/es))</span>
-          <span class="credential-skill">((en))Identity((/en))((es))Identidad((/es))</span>
-          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="((en))Security, Compliance, and Identity Fundamentals, certification image((/en))((es))Certificación en Security Fundamentals, imagen de la certificación((/es))"](./credentials/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-gb/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Security, Compliance, and Identity Fundamentals certification, issued by Microsoft.((/en))((es))Certificación en Security, Compliance, and Identity Fundamentals, emitido por Microsoft.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certification ai cloud">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Azure AI Fundamentals</span>
-          <span class="title-rank">Fundamentals</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
-          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
-          <span class="credential-skill">((en))Machine Learning((/en))((es))Aprendizaje Automático((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="Azure AI Fundamentals, certification image"](./credentials/img/MS_AI900.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-gb/ArielParra/7B85BE1673D5720D?sharingId=1F8F185897940CA9){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Azure AI Fundamentals certification, issued by Microsoft.((/en))((es))Certificación en Azure AI Fundamentals, emitido por Microsoft.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certification devops">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">GitHub Foundations</span>
-          <span class="title-rank">Foundations</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
-          <span class="credential-skill">((en))Git((/en))((es))Git((/es))</span>
-          <span class="credential-skill">((en))GitHub((/en))((es))GitHub((/es))</span>
-          <span class="credential-skill">((en))CI/CD((/en))((es))CI/CD((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="GitHub Foundations, certification image"](./credentials/img/GH_Foundations.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: GitHub((/en))((es))Emitido por: GitHub((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f024c37b-a271-4588-b5b3-bafbdb7cd661/){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))GitHub Foundations certification, issued by GitHub.((/en))((es))Certificación en GitHub Foundations, emitido por GitHub.((/es))
-      </div>
-    </div>
-<div class="card" data-tags="certification cloud">
+    <div class="card" data-tags="certification">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">AWS Certified Cloud Practitioner</span>
           <span class="title-rank">Foundational</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
-          <span class="credential-skill">((en))AWS((/en))((es))AWS((/es))</span>
-          <span class="credential-skill">((en))Networking((/en))((es))Redes((/es))</span>
-          <span class="credential-skill">((en))Security((/en))((es))Seguridad((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Cloud</span>
+          <span class="credential-skill">AWS</span>
+          <span class="credential-skill">Networking</span>
+          <span class="credential-skill">Security</span>
+          <span class="credential-skill">EC2</span>
+          <span class="credential-skill">S3</span>
+          <span class="credential-skill">Lambda</span>
+          <span class="credential-skill">RDS</span>
+          <span class="credential-skill">VPC</span>
+          <span class="credential-skill">IAM</span>
+          <span class="credential-skill">CloudWatch</span>
+          <span class="credential-skill">CloudFront</span>
+          <span class="credential-skill">Route 53</span>
+          <span class="credential-skill">CloudTrail</span>
+          <span class="credential-skill">CloudFormation</span>
+          <span class="credential-skill">CloudHSM</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))AWS Cloud Practitioner, certification image((/en))((es))AWS Cloud Practitioner, imagen de certificación((/es))"](./credentials/img/AWS_Cloud_Practitioner.png)
+        ![loading="lazy" alt="AWS Certified Cloud Practitioner](./credentials/img/AWS_Cloud_Practitioner.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-07((/en))((es))Fecha: 2025-07((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/c3534c43-4770-43e1-9d13-c98260a0cb00/){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))AWS Certified Cloud Practitioner, issued by Amazon Web Services.((/en))((es))Certificación en AWS Cloud Practitioner, emitido por Amazon Web Services.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certification ai cloud">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">OCI Generative AI Certified Professional</span>
-          <span class="title-rank">Professional</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
-          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
-          <span class="credential-skill">((en))OCI((/en))((es))OCI((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="OCI AI Generative AI, certification image"](./credentials/img/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=7DD090751D80D1CE9EC6B1DA78D457443D935A64E485A8C85C1FE63E7C05DD0A){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Oracle Cloud Infrastructure 2024 Generative AI Certified Professional, issued by Oracle.((/en))((es))Oracle Cloud Infrastructure 2024 Generative AI Certified Professional, emitido por Oracle.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certification ai cloud">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">OCI AI Foundations Associate</span>
-          <span class="title-rank">Associate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
-          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
-          <span class="credential-skill">((en))OCI((/en))((es))OCI((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="OCI AI Foundations Associate, certification image"](./credentials/img/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=30992A10499F1A0197793FF82B04E2513DC2F17E1B28756FB0B6EE8F8B29D9A2){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Oracle Cloud Infrastructure 2023 AI Foundations Associate, issued by Oracle.((/en))((es))Oracle Cloud Infrastructure 2023 AI Foundations Associate, emitido por Oracle.((/es))
-      </div>
-    </div>
-  </div><!--container Elements-->
-  <div class="container">
-    <div class="card" data-tags="certificate">
-      <hr>
-      <div class="center">
-        ### ((en))Certificates((/en))((es))certificados((/es))
-      </div>
-      <hr>
-    </div>
-  </div><!--container Elements-->
-  <div class="container grid max-width">
-  <div class="card" data-tags="certificate English Foreign Language Listening Reading Speaking Writing Communication">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">GoFluent English</span>
-          <span class="title-rank">C2 CEFR</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))English((/en))((es))Inglés((/es))</span>
-          <span class="credential-skill">((en))Listening((/en))((es))Escucha((/es))</span>
-          <span class="credential-skill">((en))Reading((/en))((es))Lectura((/es))</span>
-          <span class="credential-skill">((en))Speaking((/en))((es))Habla((/es))</span>
-          <span class="credential-skill">((en))Writing((/en))((es))Escritura((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="GoFluent English C2 Certificate"](./credentials/img/GoFluent_English_C2_Certificate.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: GoFluent((/en))((es))Emitido por: GoFluent((/es))</span>
-        <span class="credential-date">((en))Issued on: 2026((/en))((es))Fecha: 2026((/es))</span>
-        [((en))Verify PDF((/en))((es))Verificar PDF((/es))](./credentials/docs/GoFluent_English_C2_Certificate.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))According to the CEFR framework, this level reflects the ability to understand spoken language at native speed, read complex and abstract texts with ease, and use language with precision and flexibility for professional and academic contexts.((/en))((es))Según el marco del MCER, este nivel refleja la capacidad de comprender el lenguaje hablado a velocidad nativa, leer textos complejos y abstractos con facilidad, y usar el idioma con precisión y flexibilidad en contextos profesionales y académicos.((/es))
+        ((en))Validated my knowledge of IT services and their uses in the AWS Cloud. I demonstrated cloud fluency and foundational AWS knowledge. I'm able to identify essential AWS services necessary to set up AWS-focused projects.((/en))((es))Demuestre fluidez en la nube y conocimientos básicos de AWS. Puedo identificar los servicios esenciales de AWS necesarios para configurar proyectos enfocados en AWS.((/es))
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate English Foreign Language Listening Reading">
+    <div class="card" data-tags="certification">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">EFSET English</span>
-          <span class="title-rank">C2 CEFR</span>
-          <span class="title-score">79/100</span>
+          <span class="title-main">TOEFL iBT</span>
+          <span class="title-rank">CEFR B2</span>
+          <span class="title-score">89/120</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))English((/en))((es))Inglés((/es))</span>
-          <span class="credential-skill">((en))Listening((/en))((es))Escucha((/es))</span>
-          <span class="credential-skill">((en))Reading((/en))((es))Lectura((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">English</span>
+          <span class="credential-skill">Listening</span>
+          <span class="credential-skill">Reading</span>
+          <span class="credential-skill">Speaking</span>
+          <span class="credential-skill">Writing</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="EFSET English C2 Certificate"](./credentials/img/EFSET_English_C2_Certificate.png)
+        ![loading="lazy" alt="TOEFL iBT](./credentials/img/TOEFL_IBT_AEPM_2025.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: Education First((/es))</span>
-        <span class="credential-date">((en))Issued on: Jan-2025((/en))((es))Fecha: Ene-2025((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cert.efset.org/en/akd3bm){:target="_blank" class="credential-link"}
+        <span class="credential-issuer">((en))Issuer: Educational Testing Service (ETS)((/en))((es))Emitido por: Educational Testing Service (ETS)((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-01((/en))((es))Fecha: 2025-01((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/TOEFL_IBT_AEPM_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))EFSET English C2 certification demonstrating mastery of English listening and reading comprehension at the highest CEFR level.((/en))((es))Certificación EFSET English C2 demostrando dominio de la comprensión auditiva y de lectura en inglés en el nivel más alto del MCER.((/es))
+        ((en))The TOEFL iBT assesses the ability of non-native speakers to use and understand English at the university level. With a total score of 89/120 (CEFR B2), I demonstrated 'Advanced' proficiency in Reading and Listening (24/30 each) and 'High-Intermediate' proficiency in Speaking and Writing.((/en))((es))El TOEFL iBT evalúa la capacidad de hablantes no nativos para utilizar y entender el inglés a nivel universitario. Con un puntaje total de 89/120 (MCER B2), demostré una competencia 'Avanzada' en Lectura y Escucha (24/30 cada una) y una competencia 'Intermedio-Alto' en Habla y Escritura.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate programming">
+    <div class="card" data-tags="certification">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">CS50X</span>
-          <span class="title-rank">Certificate of Completion</span>
+          <span class="title-main">Azure AI</span>
+          <span class="title-rank">Fundamentals</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))C((/en))((es))C((/es))</span>
-          <span class="credential-skill">((en))Python((/en))((es))Python((/es))</span>
-          <span class="credential-skill">((en))SQL((/en))((es))SQL((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">AI</span>
+          <span class="credential-skill">Cloud</span>
+          <span class="credential-skill">Machine Learning</span>
+          <span class="credential-skill">Generative AI</span>
+          <span class="credential-skill">Computer Vision</span>
+          <span class="credential-skill">Natural Language Processing (NLP)</span>
+          <span class="credential-skill">Azure AI Services</span>
+          <span class="credential-skill">Responsible AI</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Harvard CS50x, certificate image"](./credentials/img/CS50x.png)
+        ![loading="lazy" alt="Azure AI](./credentials/img/MS_AI900.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Harvard University((/en))((es))Emitido por: Universidad de Harvard((/es))</span>
-        <span class="credential-date">((en))Issued on: 2022((/en))((es))Fecha: 2022((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es))](https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd){:target="_blank" class="credential-link"}
+        <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-11((/en))((es))Fecha: 2024-11((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/7B85BE1673D5720D){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Certificate of Completion of the CS50X course, issued by Harvard University.((/en))((es))Certificado de Culminación del curso CS50X, emitido por la Universidad de Harvard.((/es))
+        ((en))I validated my foundational knowledge of Machine Learning and AI workloads on Azure. I demonstrated proficiency in describing features of computer vision, NLP, and generative AI, while identifying core AI concepts and ethical responsibilities.((/en))((es))Validé mi conocimiento fundamental sobre cargas de trabajo de Machine Learning e Inteligencia Artificial en Azure. Demostré competencia al describir características de visión computacional, NLP e IA generativa, además de identificar conceptos esenciales y responsabilidades éticas de la IA.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate devops">
+    <div class="card" data-tags="certification">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Career Essentials in GitHub</span>
-          <span class="title-rank">Professional Certificate</span>
+          <span class="title-main">((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Constancia de Finalización((/es))</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
-          <span class="credential-skill">((en))GitHub((/en))((es))GitHub((/es))</span>
-          <span class="credential-skill">((en))Git((/en))((es))Git((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Information Security Awareness</span>
+          <span class="credential-skill">Digital Risk Management</span>
+          <span class="credential-skill">Cyber Hygiene</span>
+          <span class="credential-skill">Workplace Security Best Practices</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="GitHub and LinkedIn, certificate image"](./credentials/img/Linkedin_Career_Essentials_in_GitHub.webp)
+        ![loading="lazy" alt="((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))](./credentials/img/RPLC_CyberseguridadEnElTrabajo.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: GitHub and LinkedIn((/en))((es))Emitido por: GitHub y LinkedIn((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://lnkd.in/d8q5GMah){:target="_blank" class="credential-link"}
+        <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Career Essentials in GitHub Professional Certificate, issued by Github and LinkedIn.((/en))((es))Career Essentials in GitHub, certificado profesional, emitido por Github y LinkedIn.((/es))
+        ((en))I validated my professional competence in digital protection through the 'Cybersecurity at Work' course. I demonstrated proficiency in identifying risks and implementing best security practices within corporate environments, as certified by the Red por la Ciberseguridad Academy.((/en))((es))Validé mi competencia profesional en protección digital a través del curso 'Ciberseguridad en el Trabajo'. Demostré suficiencia en la identificación de riesgos e implementación de mejores prácticas de seguridad en entornos corporativos, certificado por la Academia de la Red por la Ciberseguridad.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate cybersecurity">
+    <div class="card" data-tags="certification">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Career Essentials in Cybersecurity</span>
-          <span class="title-rank">Professional Certificate</span>
+          <span class="title-main">OCI Generative AI Certified</span>
+          <span class="title-rank">Professional</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Cybersecurity((/en))((es))Ciberseguridad((/es))</span>
-          <span class="credential-skill">((en))Security((/en))((es))Seguridad((/es))</span>
-          <span class="credential-skill">((en))Networking((/en))((es))Redes((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Generative AI</span>
+          <span class="credential-skill">Cloud</span>
+          <span class="credential-skill">OCI</span>
+          <span class="credential-skill">Large Language Models (LLMs)</span>
+          <span class="credential-skill">Retrieval-Augmented Generation (RAG)</span>
+          <span class="credential-skill">LangChain</span>
+          <span class="credential-skill">Vector Databases</span>
+          <span class="credential-skill">Semantic Search</span>
+          <span class="credential-skill">Python</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Microsoft and LinkedIn Cybersecurity, certificate image"](./credentials/img/Career_Essentials_in_Cybersecurity_by_Microsoft_and_LinkedIn.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft y LinkedIn((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Career Essentials in Cybersecurity, issued by Microsoft and LinkedIn.((/en))((es))Fundamentos profesionales en ciberseguridad, emitido por Microsoft y LinkedIn.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certificate ai">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Career Essentials in Generative AI</span>
-          <span class="title-rank">Professional Certificate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
-          <span class="credential-skill">((en))Machine Learning((/en))((es))Aprendizaje Automático((/es))</span>
-          <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="Microsoft and LinkedIn AI, certificate image"](./credentials/img/Career_Essentials_in_Generative_AI_by_Microsoft_and_LinkedIn.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft y LinkedIn((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Career Essentials in Generative AI, issued by Microsoft and LinkedIn.((/en))((es))Fundamentos profesionales de IA generativa, emitido por Microsoft y LinkedIn.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certificate devops">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">GitLab CI Fundamentals</span>
-          <span class="title-rank">Certificate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
-          <span class="credential-skill">((en))CI/CD((/en))((es))CI/CD((/es))</span>
-          <span class="credential-skill">((en))GitLab((/en))((es))GitLab((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="GitLab CI Fundamentals, certificate image"](./credentials/img/GitLab_CI_Fundamentals.png)
+        ![loading="lazy" alt="OCI Generative AI Certified](./credentials/img/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: GitLab((/en))((es))Emitido por: GitLab((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg){:target="_blank" class="credential-link"}
+        <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-07((/en))((es))Fecha: 2024-07((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=7DD090751D80D1CE9EC6B1DA78D457443D935A64E485A8C85C1FE63E7C05DD0A){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))GitLab CI Fundamentals certificate, issued by GitLab.((/en))((es))GitLab CI Fundamentals, certificado emitido por GitLab.((/es))
+        ((en))I validated my expertise in Large Language Models (LLMs) and the OCI Generative AI Service. I demonstrated the ability to build, evaluate, and deploy LLM applications using advanced techniques such as Retrieval-Augmented Generation (RAG), Semantic Search, and LangChain.((/en))((es))Validé mi experiencia en modelos de lenguaje de gran tamaño (LLMs) y el servicio de IA generativa de OCI. Demostré la capacidad para construir, evaluar y desplegar aplicaciones de LLM utilizando técnicas avanzadas como Generación Aumentada por Recuperación (RAG), búsqueda semántica y LangChain.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
-     <div class="card" data-tags="certificate cloud">
+    <div class="card" data-tags="certification">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">OCI AI Foundations</span>
+          <span class="title-rank">Associate</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">AI</span>
+          <span class="credential-skill">Cloud</span>
+          <span class="credential-skill">OCI</span>
+          <span class="credential-skill">Oracle AI Services</span>
+          <span class="credential-skill">Oracle ML Services</span>
+          <span class="credential-skill">Machine Learning Concepts</span>
+          <span class="credential-skill">Deep Learning</span>
+          <span class="credential-skill">Oracle Generative AI</span>
+          <span class="credential-skill">AI Fundamentals</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="OCI AI Foundations](./credentials/img/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-07((/en))((es))Fecha: 2024-07((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=30992A10499F1A0197793FF82B04E2513DC2F17E1B28756FB0B6EE8F8B29D9A2){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational knowledge of AI, Machine Learning, and Deep Learning concepts within Oracle Cloud Infrastructure. I demonstrated proficiency in using Oracle AI/ML services and understanding the core principles of Oracle Generative AI.((/en))((es))Validé mi conocimiento fundamental en conceptos de IA, Machine Learning y Deep Learning dentro de Oracle Cloud Infrastructure. Demostré competencia en el uso de los servicios de IA/ML de Oracle y en la comprensión de los principios básicos de la IA generativa de Oracle.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certification">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">GitHub Foundations</span>
+          <span class="title-rank">Foundations</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">DevOps</span>
+          <span class="credential-skill">GitHub</span>
+          <span class="credential-skill">Git</span>
+          <span class="credential-skill">GitHub Actions</span>
+          <span class="credential-skill">CI/CD</span>
+          <span class="credential-skill">Project Management</span>
+          <span class="credential-skill">Collaborative Development</span>
+          <span class="credential-skill">Security & Privacy</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="GitHub Foundations](./credentials/img/GH_Foundations.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: GitHub((/en))((es))Emitido por: GitHub((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-06((/en))((es))Fecha: 2024-06((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f024c37b-a271-4588-b5b3-bafbdb7cd661/){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my subject matter expertise in GitHub, covering entry-level skills in repositories, branching, and project management, as well as modern development workflows including GitHub Actions and CI/CD pipelines.((/en))((es))Validé mi experiencia técnica en GitHub, cubriendo habilidades esenciales en repositorios, manejo de ramas y gestión de proyectos, además de flujos de trabajo modernos como GitHub Actions y tuberías de CI/CD.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certification">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">Security, Compliance, and Identity</span>
+          <span class="title-rank">Fundamentals</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Security</span>
+          <span class="credential-skill">Compliance</span>
+          <span class="credential-skill">Identity</span>
+          <span class="credential-skill">Cloud</span>
+          <span class="credential-skill">Microsoft Entra (Azure AD)</span>
+          <span class="credential-skill">Identity Management</span>
+          <span class="credential-skill">Cybersecurity Solutions</span>
+          <span class="credential-skill">Zero Trust Concepts</span>
+          <span class="credential-skill">Data Privacy</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="Security, Compliance, and Identity](./credentials/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-04((/en))((es))Fecha: 2024-04((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/D4A8CCF36FAC1D6E){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my expertise in the core concepts of security, compliance, and identity within Microsoft ecosystem. I demonstrated proficiency in describing the capabilities of Microsoft Entra and Microsoft's comprehensive security and compliance solutions.((/en))((es))Validé mi experiencia en los conceptos fundamentales de seguridad, cumplimiento e identidad dentro del ecosistema de Microsoft. Demostré competencia al describir las capacidades de Microsoft Entra y las soluciones integrales de seguridad y cumplimiento de Microsoft.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certification">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">Compu Cuantrix</span>
+          <span class="title-rank">((en))Advanced Level((/en))((es))Nivel Avanzado((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Advanced Computing</span>
+          <span class="credential-skill">Digital Literacy</span>
+          <span class="credential-skill">Problem Solving</span>
+          <span class="credential-skill">Technological Competence</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="Compu Cuantrix](./credentials/img/Compu_Cuantrix_nivel_avanzado.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Fundación Televisa((/en))((es))Emitido por: Fundación Televisa((/es))</span>
+        <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Compu_Cuantrix_nivel_avanzado.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my advanced computing skills through the Compu Cuantrix program by Televisa Foundation. This certification recognizes the mastery of complex technological tools and digital competencies required for high-level professional environments.((/en))((es))Validé mis habilidades de computación avanzada a través del programa Compu Cuantrix de Fundación Televisa. Esta certificación reconoce el dominio de herramientas tecnológicas complejas y competencias digitales requeridas para entornos profesionales de alto nivel.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+  </div><!--container Elements-->
+
+  <div class="container">
+    <div class="card" data-tags="Certificate">
+      <hr>
+      <div class="center">
+        ### ((en))Certificates((/en))((es))Certificados((/es))
+      </div>
+      <hr>
+    </div>
+  </div><!--container Elements-->
+
+  <div class="container grid max-width">
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">GoFluent English</span>
+          <span class="title-rank">CEFR C2</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">English</span>
+          <span class="credential-skill">Listening</span>
+          <span class="credential-skill">Reading</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="GoFluent English](./credentials/img/GoFluent_English_C2_Certificate.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: GoFluent((/en))((es))Emitido por: GoFluent((/es))</span>
+        <span class="credential-date">((en))Issued on: 2026-03((/en))((es))Fecha: 2026-03((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/GoFluent_English_C2_Certificate.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my proficiency at the C2 level. According to the CEFR framework, this level reflects the ability to understand spoken language at native speed and read complex and abstract texts with ease, using the language with precision and flexibility.((/en))((es))Validé mi competencia al nivel C2. Según el marco del MCER, este nivel refleja la capacidad de comprender el lenguaje hablado a velocidad nativa y leer textos complejos y abstractos con facilidad, usando el idioma con precisión y flexibilidad.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">AWS Cloud Practitioner Essentials</span>
           <span class="title-rank">Learning Path Certificate</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
-          <span class="credential-skill">((en))AWS((/en))((es))AWS((/es))</span>
-          <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Cloud</span>
+          <span class="credential-skill">AWS</span>
+          <span class="credential-skill">DevOps</span>
+          <span class="credential-skill">AWS Cloud Concepts</span>
+          <span class="credential-skill">Cloud Security & Compliance</span>
+          <span class="credential-skill">AWS Core Services</span>
+          <span class="credential-skill">Cloud Economics</span>
+          <span class="credential-skill">Infrastructure as a Service (IaaS)</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Santander AWS Cloud Practitioner, certificate image((/en))((es))Santander AWS Cloud Practitioner, imagen del certificado((/es))"](./credentials/img/Santander_AWS_Cloud_Practitioner_Essentials.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es)) Santander / TIDWIT</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))AWS Cloud Practitioner learning path, issued by Santander.((/en))((es))Ruta de Aprendizaje de AWS Cloud Practitioner, certificado emitido por Santander.((/es))
-      </div>
-    </div>
-     <div class="card" data-tags="certificate cloud">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">AWS Cloud Fundamentals</span>
-          <span class="title-rank">Certificate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
-          <span class="credential-skill">((en))AWS((/en))((es))AWS((/es))</span>
-          <span class="credential-skill">((en))Networking((/en))((es))Redes((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="((en))Santander AWS Cloud Fundamentals, certificate image((/en))((es))Santander AWS Cloud Fundamentals, imagen del certificado((/es))"](./credentials/img/Santander_Fundamentos_de_Nube_AWS.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es)) Santander / TIDWIT</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))AWS Cloud Fundamentals, issued by Santander.((/en))((es))Fundamentos de Nube de AWS, certificado emitido por Santander.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certificate programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Oracle Next Education Back-end</span>
-          <span class="title-rank">Certificate of Completion</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Back-end((/en))((es))Back-end((/es))</span>
-          <span class="credential-skill">((en))Java((/en))((es))Java((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="Oracle One Program, certificate image"](./credentials/img/Oracle_One_Programa.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura y Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Oracle Next Education Back-end certificate, issued by Alura and Oracle.((/en))((es))Oracle Next Education Back-end, certificado emitido por Alura and Oracle.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certificate programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Java and Spring Boot</span>
-          <span class="title-rank">Degree Certificate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Java((/en))((es))Java((/es))</span>
-          <span class="credential-skill">((en))Spring Boot((/en))((es))Spring Boot((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="Oracle One Program, certificate image"](./credentials/img/Oracle_One_Java_y_Spring_Boot.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura y Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279?lang){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Java and Spring Boot certificate, issued by Alura and Oracle.((/en))((es))Java and Spring Boot, certificado emitido por Alura and Oracle.((/es))
-      </div>
-    </div>
-<div class="card" data-tags="certificate ai">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Artificial Intelligence and Productivity</span>
-          <span class="title-rank">Certificate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
-          <span class="credential-skill">((en))Productivity((/en))((es))Productividad((/es))</span>
-          <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="Google AI, certificate image"](./credentials/img/754_arielemilio_parra_EN.png)
+        ![loading="lazy" alt="AWS Cloud Practitioner Essentials](./credentials/img/Santander_AWS_Cloud_Practitioner_Essentials.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Santander and Google((/en))((es))Emitido por: Santander y Google((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Santander / TIDWIT (Powered by AWS)((/en))((es))Emitido por: Santander / TIDWIT (Powered by AWS)((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-04((/en))((es))Fecha: 2025-04((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_AWS_Cloud_Practitioner_Essentials.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational knowledge of the AWS Cloud platform through this comprehensive learning path (10h 44m). I demonstrated a solid understanding of basic cloud concepts, security, compliance, and the core services offered by Amazon Web Services.((/en))((es))Validé mi conocimiento fundamental de la plataforma AWS Cloud a través de esta ruta de aprendizaje integral (10h 44m). Demostré una sólida comprensión de los conceptos básicos de la nube, seguridad, cumplimiento y los servicios principales que ofrece Amazon Web Services.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))AWS Cloud Fundamentals((/en)) ((es))Fundamentos de Nube AWS((/es))</span>
+          <span class="title-rank">Learning Path Certificate</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Cloud</span>
+          <span class="credential-skill">AWS</span>
+          <span class="credential-skill">Networking</span>
+          <span class="credential-skill">Cloud Computing Concepts</span>
+          <span class="credential-skill">AWS Global Infrastructure</span>
+          <span class="credential-skill">AWS Core Services</span>
+          <span class="credential-skill">Cloud Security Foundations</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))AWS Cloud Fundamentals((/en)) ((es))Fundamentos de Nube AWS((/es))](./credentials/img/Santander_Fundamentos_de_Nube_AWS.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Santander / TIDWIT (Powered by AWS)((/en))((es))Emitido por: Santander / TIDWIT (Powered by AWS)((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-04((/en))((es))Fecha: 2025-04((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational knowledge of the AWS Cloud platform through this specialized learning path (2h 21m). I demonstrated a clear understanding of cloud computing principles, the AWS global infrastructure, and the core services provided by the platform.((/en))((es))Validé mi conocimiento fundamental de la plataforma AWS Cloud a través de esta ruta de aprendizaje especializada (2h 21m). Demostré una comprensión clara de los principios de computación en la nube, la infraestructura global de AWS y los servicios principales proporcionados por la plataforma.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">EF SET English Certificate</span>
+          <span class="title-rank">CEFR C2</span>
+          <span class="title-score">79/100</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">English</span>
+          <span class="credential-skill">Listening</span>
+          <span class="credential-skill">Reading</span>
+          <span class="credential-skill">Speaking</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="EF SET English Certificate](./credentials/img/EFSET_English_C2_Certificate.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Education First (EF)((/en))((es))Emitido por: Education First (EF)((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-01((/en))((es))Fecha: 2025-01((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cert.efset.org/en/akd3bm){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my English proficiency at the C2 level with an overall score of 79/100. According to the CEFR framework, this level reflects the ability to understand spoken language at native speed and read complex and abstract texts with ease, using the language with precision and flexibility.((/en))((es))Validé mi competencia en inglés al nivel C2 con un puntaje global de 79/100. Según el marco del MCER, este nivel refleja la capacidad de comprender el lenguaje hablado a velocidad nativa y leer textos complejos y abstractos con facilidad, usando el idioma con precisión y flexibilidad.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Artificial Intelligence and Productivity((/en))((es))Inteligencia Artificial y Productividad((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">AI Foundations</span>
+          <span class="credential-skill">Productivity Tools</span>
+          <span class="credential-skill">Generative AI</span>
+          <span class="credential-skill">Digital Workflow Optimization</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Artificial Intelligence and Productivity((/en))((es))Inteligencia Artificial y Productividad((/es))](./credentials/img/754_arielemilio_parra_EN.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Santander Open Academy / Google((/en))((es))Emitido por: Santander Open Academy / Google((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-12((/en))((es))Fecha: 2024-12((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/754_arielemilio_parra_EN.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Artificial inteligence and productivity, issued by Santander and Google.((/en))((es))Inteligencia Artificial y productividad, certificado emitido por Santander y Google.((/es))
+        ((en))I validated my knowledge of artificial intelligence and its application to productivity through this course developed by Google. I completed 2 hours of specialized training across 2 modules , focusing on leveraging AI tools to optimize daily professional workflows.((/en))((es))Validé mis conocimientos sobre inteligencia artificial y su aplicación a la productividad a través de este curso desarrollado por Google. Completé 2 horas de formación especializada en 2 módulos , enfocándome en el aprovechamiento de herramientas de IA para optimizar flujos de trabajo profesionales diarios.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
-<div class="card" data-tags="certificate ai datascience">
+    <div class="card" data-tags="certificate">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Artificial Intelligence and Data Science</span>
-          <span class="title-rank">Certificate</span>
+          <span class="title-main">((en))Generative AI - ONE((/en))((es))IA Generativa - ONE((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score">90/90 ((en))Activities((/en))(es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
-          <span class="credential-skill">((en))Data Science((/en))((es))Ciencia de Datos((/es))</span>
-          <span class="credential-skill">((en))Machine Learning((/en))((es))Aprendizaje Automático((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">ChatGPT Optimization</span>
+          <span class="credential-skill">Prompt Engineering</span>
+          <span class="credential-skill">AI-Powered Productivity</span>
+          <span class="credential-skill">Market Readiness</span>
+          <span class="credential-skill">Generative AI Tools</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="BLOCKMAKERS AI, certificate image"](./credentials/img/BLOCKMAKERS_Inteligencia_Artificial.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Blockmakers((/en))((es))Emitido por: Blockmakers((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Artifitial inteligence and data science certificate, issued by Blockmakers.((/en))((es))Inteligencia Artificial y Data Science, certificado emitido por Blockmakers.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certificate blockchain programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Solidity Bootcamp</span>
-          <span class="title-rank">Bootcamp Certificate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Blockchain((/en))((es))Blockchain((/es))</span>
-          <span class="credential-skill">((en))Solidity((/en))((es))Solidity((/es))</span>
-          <span class="credential-skill">((en))Smart Contracts((/en))((es))Contratos Inteligentes((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="BLOCKMAKERS solidity, certificate image"](./credentials/img/BLOCKMAKERS_Solidity_Bootcamp.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Blockmakers((/en))((es))Emitido por: Blockmakers((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Solidity bootcamp certificate, issued by Blockmakers.((/en))((es))Solidity bootcamp, certificado emitido por Blockmakers.((/es))
-      </div>
-    </div>
-<div class="card" data-tags="certificate blockchain">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Blockchain Consultant</span>
-          <span class="title-rank">Certificate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Blockchain((/en))((es))Blockchain((/es))</span>
-          <span class="credential-skill">((en))Consulting((/en))((es))Consultoría((/es))</span>
-          <span class="credential-skill">((en))Web3((/en))((es))Web3((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="BLOCKMAKERS blockchain, certificate image"](./credentials/img/BLOCKMAKERS_Blockchain.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Blockmakers((/en))((es))Emitido por: Blockmakers((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Blockchain consultant certificate, issued by Blockmakers.((/en))((es))Blockchain consultant, certificado emitido por Blockmakers.((/es))
-      </div>
-    </div>
-<div class="card" data-tags="certificate blockchain programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Developer in Azle</span>
-          <span class="title-rank">Developer Certificate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Blockchain((/en))((es))Blockchain((/es))</span>
-          <span class="credential-skill">((en))ICP((/en))((es))ICP((/es))</span>
-          <span class="credential-skill">((en))TypeScript((/en))((es))TypeScript((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="ICP Azle, certificate image"](./credentials/img/ICP_Developer_Azle.png)
+        ![loading="lazy" alt="((en))Generative AI - ONE((/en))((es))IA Generativa - ONE((/es))](./credentials/img/Oracle_One_IA_Generativa.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Internet Computer (ICP)((/en))((es))Emitido por: Internet Computer (ICP)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ICP_Developer_Azle.pdf){:target="_blank" class="credential-link"}
+        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-11((/en))((es))Fecha: 2024-11((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/bd61f356-6b68-41b1-b9c6-8c607ecbbb3f){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Developer in Azle certificate, issued by Internet Computer (ICP).((/en))((es))Developer in Azle, certificado emitido por Internet Computer (ICP).((/es))
+        ((en))I validated my expertise in Generative AI through the Oracle Next Education program. I completed 3 specialized courses (25h) and 90 activities focusing on optimizing ChatGPT results, enhancing professional productivity with AI, and preparing for the AI-driven job market.((/en))((es))Validé mi experiencia en IA Generativa a través del programa Oracle Next Education. Completé 3 cursos especializados (25h) y 90 actividades enfocadas en la optimización de resultados en ChatGPT, la mejora de la productividad profesional con IA y la preparación para el mercado laboral impulsado por la IA.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
-<div class="card" data-tags="certificate ai">
+    <div class="card" data-tags="certificate">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Artificial Intelligence at Work</span>
-          <span class="title-rank">Certificate</span>
+          <span class="title-main">((en))SQL with MySQL Server from Oracle - ONE((/en))((es))SQL con MySQL Server de Oracle - ONE((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score">408/408 ((en))Activities((/en))((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
-          <span class="credential-skill">((en))Productivity((/en))((es))Productividad((/es))</span>
-          <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">MySQL Server</span>
+          <span class="credential-skill">Advanced SQL Queries</span>
+          <span class="credential-skill">Stored Procedures</span>
+          <span class="credential-skill">DML Commands</span>
+          <span class="credential-skill">Database Administration</span>
+          <span class="credential-skill">Security & Optimization</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Red Por la Ciberseguridad AI at work image"](./credentials/img/RPLC_IAenElTrabajo.png)
+        ![loading="lazy" alt="((en))SQL with MySQL Server from Oracle - ONE((/en))((es))SQL con MySQL Server de Oracle - ONE((/es))](./credentials/img/Oracle_One_MySQL.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Red Por la Ciberseguridad and Microsoft((/en))((es))Emitido por: Red Por la Ciberseguridad y Microsoft((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724038728/3923002801AP.pdf){:target="_blank" class="credential-link"}
+        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-09((/en))((es))Fecha: 2024-09((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/4f5b1c64-9851-4115-9bad-a402d2c9289a){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Artificial intelligence at work certificate, issued by Red Por la Ciberseguridad and Microsoft.((/en))((es))Inteligencia Artificial en el trabajo, certificado emitido por Red Por la Ciberseguridad y Microsoft.((/es))
+        ((en))I validated my expertise in database management and SQL with MySQL through the Oracle Next Education program. I completed 7 specialized courses (80h) covering advanced queries, stored procedures, DML operations, and database administration, focusing on security and performance optimization.((/en))((es))Validé mi experiencia en gestión de bases de datos y SQL con MySQL a través del programa Oracle Next Education. Completé 7 cursos especializados (80h) que abarcan consultas avanzadas, procedimientos almacenados, operaciones DML y administración de bases de datos, con un enfoque en seguridad y optimización de rendimiento.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
-<div class="card" data-tags="certificate ai">
+    <div class="card" data-tags="certificate">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Introduction to Generative Artificial Intelligence</span>
-          <span class="title-rank">Certificate</span>
+          <span class="title-main">((en))Artificial Intelligence at Work((/en))((es))Inteligencia Artificial en el trabajo((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Constancia de Finalización((/es))</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
-          <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
-          <span class="credential-skill">((en))Machine Learning((/en))((es))Aprendizaje Automático((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Artificial Intelligence</span>
+          <span class="credential-skill">Workplace Productivity</span>
+          <span class="credential-skill">Generative AI</span>
+          <span class="credential-skill">Digital Security Awareness</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Red Por la Ciberseguridad Generative AI image"](./credentials/img/RPLC_IAgenerativa.png)
+        ![loading="lazy" alt="((en))Artificial Intelligence at Work((/en))((es))Inteligencia Artificial en el trabajo((/es))](./credentials/img/RPLC_IAenElTrabajo.png)
       </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Red Por la Ciberseguridad((/en))((es))Emitido por: Red Por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad / Microsoft((/en))((es))Emitido por: Red por la Ciberseguridad / Microsoft((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724038728/3923002801AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Introduction to Generative Artificial Intelligence certificate, issued by Red Por la Ciberseguridad.((/en))((es))Introducción a la Inteligencia Artificial Generativa, certificado emitido por Red Por la Ciberseguridad.((/es))
+        ((en))I validated my skills in applying artificial intelligence within professional environments through this 6-hour course developed by Microsoft and Red por la Ciberseguridad. I focused on leveraging AI tools to enhance workplace productivity and operational efficiency.((/en))((es))Validé mis habilidades en la aplicación de inteligencia artificial dentro de entornos profesionales a través de este curso de 6 horas desarrollado por Microsoft y la Red por la Ciberseguridad. Me enfoqué en el aprovechamiento de herramientas de IA para mejorar la productividad laboral y la eficiencia operativa.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
-<div class="card" data-tags="certificate cybersecurity">
+    <div class="card" data-tags="certificate">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Operación Aleph: SC-900</span>
-          <span class="title-rank">Certificate</span>
+          <span class="title-main">((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Constancia de Finalización((/es))</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Cybersecurity((/en))((es))Ciberseguridad((/es))</span>
-          <span class="credential-skill">((en))SC-900((/en))((es))SC-900((/es))</span>
-          <span class="credential-skill">((en))Compliance((/en))((es))Cumplimiento((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Information Security</span>
+          <span class="credential-skill">Digital Risk Management</span>
+          <span class="credential-skill">Cybersecurity Best Practices</span>
+          <span class="credential-skill">Workplace Security Awareness</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Red Por la Ciberseguridad Aleph Operation image"](./credentials/img/RPLC_OperacionAlephSC900.png)
+        ![loading="lazy" alt="((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))](./credentials/img/RPLC_CiberseguridadTrabajo.png)
       </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Red Por la Ciberseguridad((/en))((es))Emitido por: Red Por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Aleph Operation: SC-900 certificate, issued by Red Por la Ciberseguridad.((/en))((es))Operación Aleph: SC-900 certificate, certificado emitido por Red Por la Ciberseguridad.((/es))
+        ((en))I validated my professional skills in digital protection through the 'Cybersecurity at Work' course. I demonstrated proficiency in identifying risks and implementing best security practices within corporate environments, as certified by the Red por la Ciberseguridad Academy.((/en))((es))Validé mis habilidades profesionales en protección digital a través del curso 'Ciberseguridad en el Trabajo'. Demostré competencia en la identificación de riesgos e implementación de mejores prácticas de seguridad en entornos corporativos, certificado por la Academia de la Red por la Ciberseguridad.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
-<div class="card" data-tags="certificate cybersecurity">
+    <div class="card" data-tags="certificate">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Cybersecurity at Work</span>
-          <span class="title-rank">Certificate</span>
+          <span class="title-main">((en))Problem Solving (Basic)((/en))((es))Resolución de Problemas (Básico)((/es))</span>
+          <span class="title-rank">((en))Certificate of Accomplishment((/en))((es))Certificado de Logro((/es))</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Cybersecurity((/en))((es))Ciberseguridad((/es))</span>
-          <span class="credential-skill">((en))Security((/en))((es))Seguridad((/es))</span>
-          <span class="credential-skill">((en))Networking((/en))((es))Redes((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Data Structures</span>
+          <span class="credential-skill">Problem Solving</span>
+          <span class="credential-skill">control structures</span>
+          <span class="credential-skill">Arrays</span>
+          <span class="credential-skill">Strings</span>
+          <span class="credential-skill">Sorting</span>
+          <span class="credential-skill">Searching</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Red Por la Ciberseguridad Cybersecurity at work image"](./credentials/img/RPLC_CyberseguridadEnElTrabajo.png)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Red Por la Ciberseguridad((/en))((es))Emitido por: Red Por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Cybersecurity at work certificate, issued by Red Por la Ciberseguridad.((/en))((es))Ciberseguridad en el Trabajo, certificado emitido por Red Por la Ciberseguridad.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certificate programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">HackerRank Problem Solving</span>
-          <span class="title-rank">Basic Certificate</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
-          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
-          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="HackerRank Problem Solving image"](./credentials/img/HackerRank-problem_solving_basic.webp)
+        ![loading="lazy" alt="((en))Problem Solving (Basic)((/en))((es))Resolución de Problemas (Básico)((/es))](./credentials/img/HackerRank-problem_solving_basic.webp)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: HackerRank((/en))((es))Emitido por: HackerRank((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.hackerrank.com/certificates/610bac95af9a){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Problem Solving certificate, issued by HackerRank.((/en))((es))Problem Solving, certificado emitido por HackerRank.((/es))
+        ((en))I validated my foundational technical skills through the HackerRank Skills Certification. I demonstrated proficiency in core Data Structures such as Arrays and Strings, as well as essential Algorithms including Sorting and Searching.((/en))((es))Validé mis habilidades técnicas fundamentales a través de la Certificación de Habilidades de HackerRank. Demostré competencia en estructuras de datos básicas como arreglos y cadenas, así como en algoritmos esenciales incluyendo ordenamiento y búsqueda.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
     <div class="card" data-tags="certificate">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Diploma CONDUCEF</span>
-          <span class="title-rank">Diploma</span>
+          <span class="title-main">Career Essentials in Cybersecurity</span>
+          <span class="title-rank">Professional Certificate</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Financial Education((/en))((es))Educación Financiera((/es))</span>
-          <span class="credential-skill">((en))Finance((/en))((es))Finanzas((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Cybersecurity</span>
+          <span class="credential-skill">Networking</span>
+          <span class="credential-skill">Network Security</span>
+          <span class="credential-skill">Threat & Vulnerability Management</span>
+          <span class="credential-skill">Information Security Awareness</span>
+          <span class="credential-skill">Risk Management</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Condusef Diploma image"](./credentials/img/Diploma_CONDUSEF.png)
+        ![loading="lazy" alt="Career Essentials in Cybersecurity](./credentials/img/Career_Essentials_in_Cybersecurity_by_Microsoft_and_LinkedIn.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: CONDUSEF((/en))((es))Emitido por: CONDUSEF((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft and LinkedIn((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-07((/en))((es))Fecha: 2024-07((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/c6d4100d5d3e6ff21724a72cc1b339bd2a8834132a078fd1765a01f87ffeeddd){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational expertise in cybersecurity through this professional learning path, which included passing a final exam and completing 4 courses (6h 8m). I demonstrated proficiency in threat and vulnerability management, information security awareness, and core security principles.((/en))((es))Validé mi experiencia fundamental en ciberseguridad a través de esta ruta de aprendizaje profesional, que incluyó aprobar un examen final y completar 4 cursos (6h 8m). Demostré competencia en la gestión de amenazas y vulnerabilidades, concientización sobre seguridad de la información y principios básicos de seguridad.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">Career Essentials in Generative AI</span>
+          <span class="title-rank">Professional Certificate</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">AI</span>
+          <span class="credential-skill">Generative AI</span>
+          <span class="credential-skill">Machine Learning</span>
+          <span class="credential-skill">Prompt Engineering</span>
+          <span class="credential-skill">Microsoft Copilot</span>
+          <span class="credential-skill">Responsible AI</span>
+          <span class="credential-skill">AI for Business</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="Career Essentials in Generative AI](./credentials/img/Career_Essentials_in_Generative_AI_by_Microsoft_and_LinkedIn.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft and LinkedIn((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-07((/en))((es))Fecha: 2024-07((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my expertise in generative AI through this professional learning path, which included passing a final exam and completing 5 courses (4h 18m). I demonstrated proficiency in prompt engineering, the use of Microsoft Copilot, and the application of responsible AI principles in business contexts.((/en))((es))Validé mi experiencia en IA generativa a través de esta ruta de aprendizaje profesional, que incluyó aprobar un examen final y completar 5 cursos (4h 18m). Demostré competencia en ingeniería de prompts, el uso de Microsoft Copilot y la aplicación de principios de IA responsable en contextos empresariales.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">Career Essentials in GitHub</span>
+          <span class="title-rank">Professional Certificate</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">DevOps</span>
+          <span class="credential-skill">GitHub</span>
+          <span class="credential-skill">Git</span>
+          <span class="credential-skill">Open Source Collaboration</span>
+          <span class="credential-skill">Workflow Automation</span>
+          <span class="credential-skill">Project Management</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="Career Essentials in GitHub](./credentials/img/Linkedin_Career_Essentials_in_GitHub.webp)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: GitHub and LinkedIn((/en))((es))Emitido por: GitHub and LinkedIn((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-06((/en))((es))Fecha: 2024-06((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://lnkd.in/d8q5GMah){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my professional expertise in GitHub through this learning path, which included passing a final exam and completing 4 courses (4h 20m). I demonstrated proficiency in core GitHub workflows, collaboration tools, and essential skills for modern software development.((/en))((es))Validé mi experiencia profesional en GitHub a través de esta ruta de aprendizaje, que incluyó aprobar un examen final y completar 4 cursos (4h 20m). Demostré competencia en los flujos de trabajo principales de GitHub, herramientas de colaboración y habilidades esenciales para el desarrollo de software moderno.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">GitLab CI</span>
+          <span class="title-rank">Fundamentals</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">DevOps</span>
+          <span class="credential-skill">CI/CD</span>
+          <span class="credential-skill">GitLab</span>
+          <span class="credential-skill">YAML Pipeline Authoring</span>
+          <span class="credential-skill">GitLab Runners & Executors</span>
+          <span class="credential-skill">Docker Container Registry</span>
+          <span class="credential-skill">DevSecOps (Security Scanning)</span>
+          <span class="credential-skill">Auto DevOps</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="GitLab CI](./credentials/img/GitLab_CI_Fundamentals.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: GitLab((/en))((es))Emitido por: GitLab((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-06((/en))((es))Fecha: 2024-06((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational expertise in GitLab CI/CD, covering the full lifecycle of automated pipelines. I demonstrated proficiency in authoring YAML configurations, configuring scalable GitLab Runners, managing container registries, and implementing security scanners within the DevSecOps workflow.((/en))((es))Validé mi experiencia fundamental en GitLab CI/CD, cubriendo el ciclo completo de tuberías automatizadas. Demostré competencia en la creación de configuraciones YAML, configuración de GitLab Runners escalables, gestión de registros de contenedores e implementación de escáneres de seguridad dentro del flujo de trabajo DevSecOps.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Java Object Oriented G6 - ONE((/en))((es))Java Orientado a Objetos G6 - ONE((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score">206/207 ((en))Activities((/en)) ((es))Actividades((/es))</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Java OOP</span>
+          <span class="credential-skill">Collections & Lists</span>
+          <span class="credential-skill">API Consumption</span>
+          <span class="credential-skill">Exception Handling</span>
+          <span class="credential-skill">File I/O</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Java Object Oriented G6 - ONE((/en))((es))Java Orientado a Objetos G6 - ONE((/es))](./credentials/img/Oracle_One_Java_OOP.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-05-20((/en))((es))Fecha: 2024-05-20((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/f45675e9-f450-4305-b003-3fc56339d4da){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my expertise in Object-Oriented Programming with Java through the Oracle Next Education program. I completed 5 courses (46h) and 206 activities, mastering core concepts such as inheritance, polymorphism, API integration, and file management, culminating in the Currency Converter challenge.((/en))((es))Validé mi experiencia en Programación Orientada a Objetos con Java a través del programa Oracle Next Education. Completé 5 cursos (46h) y 206 actividades, dominando conceptos clave como herencia, polimorfismo, integración de APIs y manejo de archivos, culminando con el desafío del Conversor de Monedas.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Java and Spring Boot G6 - ONE((/en))((es))Java y Spring Boot G6 - ONE((/es))</span>
+          <span class="title-rank">((en))Degree Certificate((/en))((es))Certificado de Formación((/es))</span>
+          <span class="title-score">381/381 ((en))Activities((/en))((es))Actividades((/es))</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Java</span>
+          <span class="credential-skill">Spring Boot 3</span>
+          <span class="credential-skill">Spring Data JPA</span>
+          <span class="credential-skill">REST API Development</span>
+          <span class="credential-skill">Java Lambdas & Streams</span>
+          <span class="credential-skill">Spring Security</span>
+          <span class="credential-skill">API Documentation</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Java and Spring Boot G6 - ONE((/en))((es))Java y Spring Boot G6 - ONE((/es))](./credentials/img/Oracle_One_Java_y_Spring_Boot.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-05((/en))((es))Fecha: 2024-05((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my expertise in modern Back-end development with Java and Spring Boot 3 through the Oracle Next Education program. I completed 8 courses (104h) and 381 activities, mastering REST API creation, database persistence with JPA, security implementation, and professional documentation.((/en))((es))Validé mi experiencia en desarrollo Back-end moderno con Java y Spring Boot 3 a través del programa Oracle Next Education. Completé 8 cursos (104h) y 381 actividades, dominando la creación de APIs REST, persistencia de datos con JPA, implementación de seguridad y documentación profesional.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Entrepreneurship, Agility and Professional Protagonism G6 - ONE((/en))((es))Emprendimiento, Agilidad y Protagonismo Profesional G6 - ONE((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score">198/198 ((en))Activities((/en)) ((es))Actividades((/es))</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Agile Fundamentals</span>
+          <span class="credential-skill">Entrepreneurship</span>
+          <span class="credential-skill">Business Planning</span>
+          <span class="credential-skill">Career Strategy</span>
+          <span class="credential-skill">Professional Protagonism</span>
+          <span class="credential-skill">Market Analysis</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Entrepreneurship, Agility and Professional Protagonism G6 - ONE((/en))((es))Emprendimiento, Agilidad y Protagonismo Profesional G6 - ONE((/es))](./credentials/img/Oracle_One_Agility_Entrepreneurship.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-03((/en))((es))Fecha: 2024-03((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/340af97d-1823-4d60-91b5-93f17e629a68){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my expertise in agile methodologies and business strategy through the Oracle Next Education program. I completed 6 courses (39h) and 198 activities focused on career development, agile transformation, and the transition from business ideas to formal business plans.((/en))((es))Validé mi experiencia en metodologías ágiles y estrategia de negocios a través del programa Oracle Next Education. Completé 6 cursos (39h) y 198 actividades enfocadas en el desarrollo de carrera, la transformación ágil y la transición de ideas de negocio a planes de negocio formales.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Operation Aleph: SC-900((/en))((es))Operación Aleph: SC-900((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Constancia de Finalización((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Microsoft SC-900</span>
+          <span class="credential-skill">Cloud Security Fundamentals</span>
+          <span class="credential-skill">Identity and Access Management (IAM)</span>
+          <span class="credential-skill">Compliance Management</span>
+          <span class="credential-skill">Security Operations</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Operation Aleph: SC-900((/en))((es))Operación Aleph: SC-900((/es))](./credentials/img/RPLC_OperacionAlephSC900.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-03((/en))((es))Fecha: 2024-03((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1711245522/0939970957AP.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational knowledge of security, compliance, and identity through the 'Operation Aleph' program. I demonstrated proficiency in Microsoft SC-900 concepts, covering the fundamental principles of security operations and cloud environment protection.((/en))((es))Validé mis conocimientos fundamentales sobre seguridad, cumplimiento e identidad a través del programa 'Operación Aleph'. Demostré competencia en los conceptos de Microsoft SC-900, cubriendo los principios fundamentales de operaciones de seguridad y protección de entornos en la nube.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))ICP Developer Azle((/en))((es))ICP Developer Azle((/es)) </span>
+          <span class="title-rank">((en))Developer Certificate((/en))((es))Certificado de Desarrollador((/es)) </span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Internet Computer Protocol (ICP)</span>
+          <span class="credential-skill">Web3</span>
+          <span class="credential-skill">TypeScript</span>
+          <span class="credential-skill">Azle Framework</span>
+          <span class="credential-skill">Smart Contracts</span>
+          <span class="credential-skill">Decentralized Applications (dApps)</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))ICP Developer Azle((/en))((es))ICP Developer Azle((/es)) ](./credentials/img/ICP_Developer_Azle.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: ICP Hub Latam / Internet Computer ((/en))((es))Emitido por: ICP Hub Latam / Internet Computer ((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-02((/en))((es))Fecha: 2024-02((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ICP_Developer_Azle.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my expertise as a developer on the Internet Computer protocol using the Azle framework. I completed an intensive training program focused on building decentralized applications with TypeScript, fulfilling all technical requirements within the ICP Hub Latam community.((/en))((es))Validé mi experiencia como desarrollador en el protocolo Internet Computer utilizando el framework Azle. Completé un programa de entrenamiento intensivo enfocado en la construcción de aplicaciones descentralizadas con TypeScript, cumpliendo con todos los requerimientos técnicos dentro de la comunidad de ICP Hub Latam.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Beginner in Programming G6 - ONE((/en)) ((es))Principiante en Programación G6 - ONE((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score">345/348 ((en)Activities(/en)) ((es)Actividades(/es))</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Programming</span>
+          <span class="credential-skill">Web Development</span>
+          <span class="credential-skill">JavaScript Logic</span>
+          <span class="credential-skill">HTML5</span>
+          <span class="credential-skill">CSS3</span>
+          <span class="credential-skill">Responsive Design</span>
+          <span class="credential-skill">Git</span>
+          <span class="credential-skill">GitHub</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Beginner in Programming G6 - ONE((/en)) ((es))Principiante en Programación G6 - ONE((/es))](./credentials/img/Oracle_One_Beginner.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-01((/en))((es))Fecha: 2024-01((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/d44473bf-6dfd-4589-a589-7a657958ca62){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational programming skills through the Oracle Next Education program. I completed 7 courses (62h) covering JavaScript logic, advanced HTML5/CSS3 styling, and version control with Git, successfully finishing 345 activities.((/en))((es))Validé mis habilidades fundamentales de programación a través del programa Oracle Next Education. Completé 7 cursos (62h) que cubren lógica de JavaScript, maquetación avanzada con HTML5/CSS3 y control de versiones con Git, finalizando con éxito 345 actividades.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Professional Development G6 - ONE((/en))((es))Desarrollo Personal G6 - ONE((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score">171/171 ((en)Activities(/en)) ((es)Actividades(/es))</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Learning Strategies</span>
+          <span class="credential-skill">Personal Productivity</span>
+          <span class="credential-skill">LinkedIn Optimization</span>
+          <span class="credential-skill">Focus & Time Management</span>
+          <span class="credential-skill">Habit Building</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Professional Development G6 - ONE((/en))((es))Desarrollo Personal G6 - ONE((/es))](./credentials/img/Oracle_One_Professional_Development.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-01((/en))((es))Fecha: 2024-01((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/bcff9a4c-f197-42e1-adc6-abfa2117b6cf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my professional soft skills through the Oracle Next Education program. I completed 4 courses (35h) and 171 activities focused on meta-learning techniques, productivity habits, focus strategies for daily results, and professional branding on LinkedIn.((/en))((es))Validé mi habilidades blandas profesionales a través del programa Oracle Next Education. Completé 4 cursos (35h) y 171 actividades enfocadas en técnicas de meta-aprendizaje, hábitos de productividad, estrategias de enfoque para resultados diarios y marca profesional en LinkedIn.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Artificial Intelligence and Data Science((/en))((es))Inteligencia Artificial y Data Science((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Artificial Intelligence</span>
+          <span class="credential-skill">Data Science</span>
+          <span class="credential-skill">Machine Learning</span>
+          <span class="credential-skill">Data Analysis</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Artificial Intelligence and Data Science((/en))((es))Inteligencia Artificial y Data Science((/es))](./credentials/img/BLOCKMAKERS_Inteligencia_Artificial.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/es))</span>
+        <span class="credential-date">((en))Issued on: 2023-11((/en))((es))Fecha: 2023-11((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my expertise in AI and Data Science through the Blockmakers program, supported by INCYTEA. I completed intensive training focused on fundamental AI concepts and data-driven decision-making.((/en))((es))Validé mi experiencia en IA y Ciencia de Datos a través del programa Blockmakers, respaldado por el INCYTEA. Completé una formación intensiva centrada en conceptos fundamentales de IA y toma de decisiones basada en datos.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Solidity Bootcamp((/en))((es))Solidity Bootcamp((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Blockchain</span>
+          <span class="credential-skill">Solidity</span>
+          <span class="credential-skill">Smart Contracts</span>
+          <span class="credential-skill">Ethereum</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Solidity Bootcamp((/en))((es))Solidity Bootcamp((/es))](./credentials/img/BLOCKMAKERS_Solidity_Bootcamp.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/es))</span>
+        <span class="credential-date">((en))Issued on: 2023-11((/en))((es))Fecha: 2023-11((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I completed an intensive Solidity Bootcamp focused on blockchain development. I demonstrated the ability to program smart contracts and understand decentralized infrastructure.((/en))((es))Completé un bootcamp intensivo de Solidity enfocado en el desarrollo de blockchain. Demostré la capacidad de programar contratos inteligentes y comprender la infraestructura descentralizada.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Blockchain Consultant Professional((/en))((es))Blockchain Consultant Professional((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Blockchain Consulting</span>
+          <span class="credential-skill">Web3 Strategy</span>
+          <span class="credential-skill">Decentralized Systems</span>
+          <span class="credential-skill">Enterprise Blockchain</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Blockchain Consultant Professional((/en))((es))Blockchain Consultant Professional((/es))](./credentials/img/BLOCKMAKERS_Blockchain.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/es))</span>
+        <span class="credential-date">((en))Issued on: 2023-11((/en))((es))Fecha: 2023-11((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my professional skills as a Blockchain Consultant. I demonstrated a deep understanding of blockchain ecosystems and their strategic application in professional and technological environments.((/en))((es))Validé mis habilidades profesionales como Consultor Blockchain. Demostré una comprensión profunda de los ecosistemas blockchain y su aplicación estratégica en entornos profesionales y tecnológicos.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Financial Education Diploma((/en))((es))Diplomado en Educación Financiera((/es))</span>
+          <span class="title-rank"></span>
+          <span class="title-score">8/10</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Personal Finance</span>
+          <span class="credential-skill">Financial Planning</span>
+          <span class="credential-skill">Savings & Investment</span>
+          <span class="credential-skill">Consumer Credit Rights</span>
+          <span class="credential-skill">Insurance & Retirement</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Financial Education Diploma((/en))((es))Diplomado en Educación Financiera((/es))](./credentials/img/Diploma_CONDUSEF.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros / Secretaría de Hacienda y Crédito Público((/en))((es))Emitido por: Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros / Secretaría de Hacienda y Crédito Público((/es))</span>
+        <span class="credential-date">((en))Issued on: 2023-05((/en))((es))Fecha: 2023-05((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Diploma_CONDUSEF.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Financial education diploma, issued by CONDUSEF.((/en))((es))Diplomado en educación financiera, emitido por la CONDUSEF.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="certificate">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Compu Cuantrix Advance Level</span>
-          <span class="title-rank">Advance Level</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Technology((/en))((es))Tecnología((/es))</span>
-          <span class="credential-skill">((en))Computer Skills((/en))((es))Habilidades Informáticas((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="Compu Cuantrix, certificate image"](./credentials/img/Compu_Cuantrix_nivel_avanzado.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Televisa Foundation((/en))((es))Emitido por: Fundación Televisa((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Compu_Cuantrix_nivel_avanzado.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Compu Cuantrix advance level course, issued by Televisa Foundation.((/en))((es))Compu Cuantrix nivel avanzado, emitido por Fundación Televisa.((/es))
+        ((en))I validated my expertise in personal finance through this 150-hour comprehensive diploma program (Generation 43). I demonstrated proficiency in financial planning, investment strategies, credit management, and user protection within the Mexican financial system.((/en))((es))Validé mi experiencia en finanzas personales a través de este diplomado integral de 150 horas (Generación 43). Demostré competencia en planeación financiera, estrategias de inversión, gestión de crédito y protección al usuario dentro del sistema financiero mexicano.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
   </div><!--container Elements-->
+
   <div class="container">
-    <div class="card" data-tags="badge">
+    <div class="card" data-tags="Badge">
       <hr>
       <div class="center">
         ### ((en))Badges((/en))((es))Insignias((/es))
@@ -866,88 +1181,107 @@ nav_current: 3
       <hr>
     </div>
   </div><!--container Elements-->
+
   <div class="container grid max-width">
-    <div class="card" data-tags="badge cloud">
+    <div class="card" data-tags="badge">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">IBM Z Xplore Concepts</span>
-          <span class="title-rank">Badge</span>
+          <span class="title-main">((en))AWS Knowledge: Cloud Essentials((/en))((es))AWS Knowledge: Cloud Essentials((/es))</span>
+          <span class="title-rank">((en))Training Badge((/en))((es))Insignia de Entrenamiento((/es))</span>
+          <span class="title-score">((en))Verified((/en))((es))Verificado((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Mainframe((/en))((es))Mainframe((/es))</span>
-          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
-          <span class="credential-skill">((en))Networking((/en))((es))Redes((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">AWS Compute</span>
+          <span class="credential-skill">AWS Storage</span>
+          <span class="credential-skill">AWS Networking</span>
+          <span class="credential-skill">AWS Databases</span>
+          <span class="credential-skill">Cloud Security</span>
+          <span class="credential-skill">Cloud Architecture</span>
+          <span class="credential-skill">AWS Pricing & Support</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Z Xplore, badge image"](./credentials/img/IBM_ZXplore_Concepts.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: IBM((/en))((es))Emitido por: IBM((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0/linked_in?t=sas12p){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))IBM Z Xplore Concepts badge, issued by IBM.((/en))((es))Insignia de IBM Z Xplore Concepts, emitida por IBM.((/es))
-      </div>
-    </div>
-     <div class="card" data-tags="badge cloud">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">AWS Technology: Cloud Essentials</span>
-          <span class="title-rank">Badge</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
-          <span class="credential-skill">((en))AWS((/en))((es))AWS((/es))</span>
-          <span class="credential-skill">((en))Technology((/en))((es))Tecnología((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="((en))AWS Technology: Cloud Essentials, badge image((/en))((es))AWS Technology: Cloud Essentials, imagen de la insignia((/es))"](./credentials/img/AWS_Cloud_Essentials.png)
+        ![loading="lazy" alt="((en))AWS Knowledge: Cloud Essentials((/en))((es))AWS Knowledge: Cloud Essentials((/es))](./credentials/img/AWS_Cloud_Essentials.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/afd4033e-db74-41f2-ae6a-87ff9dc0520e/public_url){:target="_blank" class="credential-link"}
+        <span class="credential-date">((en))Issued on: 2025-04((/en))((es))Fecha: 2025-04((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/afd4033e-db74-41f2-ae6a-87ff9dc0520e){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))AWS Technology: Cloud Essentials badge, issued by Amazon on credly.((/en))((es))AWS Technology: Cloud Essentials badge, emitida por Amazon en credly.((/es))
+        ((en))I validated my foundational knowledge of AWS Cloud concepts through the AWS Training and Certification program. I demonstrated proficiency in core services including Compute, Storage, Networking, and Databases, as well as essential concepts of security, architecture, and pricing within the Amazon Web Services ecosystem.((/en))((es))Validé mis conocimientos fundamentales de los conceptos de la nube de AWS a través del programa de AWS Training and Certification. Demostré competencia en servicios principales incluyendo Cómputo, Almacenamiento, Redes y Bases de Datos, así como conceptos esenciales de seguridad, arquitectura y costos dentro del ecosistema de Amazon Web Services.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="badge">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))IBM Z Xplore - Concepts((/en))((es))IBM Z Xplore - Conceptos((/es))</span>
+          <span class="title-rank">((en))Badge (Intermediate)((/en))((es))Insignia (Intermedio)((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">IBM Z</span>
+          <span class="credential-skill">Mainframes</span>
+          <span class="credential-skill">JCL (Job Control Language)</span>
+          <span class="credential-skill">MVS Commands</span>
+          <span class="credential-skill">Python</span>
+          <span class="credential-skill">z/OS UNIX (USS)</span>
+          <span class="credential-skill">IBM Z Open Automation Utilities</span>
+          <span class="credential-skill">Zowe</span>
+          <span class="credential-skill">Data Set Administration</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))IBM Z Xplore - Concepts((/en))((es))IBM Z Xplore - Conceptos((/es))](./credentials/img/IBM_ZXplore_Concepts.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: IBM((/en))((es))Emitido por: IBM((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-03((/en))((es))Fecha: 2024-03((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my fundamental IBM Z skills and concepts through the IBM Z Xplore platform. I demonstrated proficiency in performing everyday tasks in a mainframe environment, including data set administration, formulating MVS commands, managing JCL, and orchestrating actions through Python and Open Automation Utilities.((/en))((es))Validé mis habilidades y conceptos fundamentales de IBM Z a través de la plataforma IBM Z Xplore. Demostré competencia en la ejecución de tareas cotidianas en entornos mainframe, incluyendo la administración de conjuntos de datos, formulación de comandos MVS, gestión de JCL y orquestación de acciones mediante Python y Open Automation Utilities.((/es))
+        <span class="see-more"></span>
       </div>
     </div>
   </div><!--container Elements-->
-   <div class="container">
-     <div class="card" data-tags="award">
-       <hr>
-       <div class="center">
-         ### ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))
-       </div>
-       <hr>
-     </div>
-   </div><!--container Elements-->
-   <div class="container grid max-width">
-       <div class="card" data-tags="award hackathon">
+
+  <div class="container">
+    <div class="card" data-tags="Award">
+      <hr>
+      <div class="center">
+        ### ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))
+      </div>
+      <hr>
+    </div>
+  </div><!--container Elements-->
+
+  <div class="container grid max-width">
+    <div class="card" data-tags="award">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Talent Land Genius Arena</span>
-          <span class="title-rank">1st Place / 75 Teams</span>
+          <span class="title-rank">((en))1st Place((/en))((es))1er Lugar((/es))</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Hackathon((/en))((es))Hackathon((/es))</span>
-          <span class="credential-skill">((en))Team Leadership((/en))((es))Liderazgo de Equipo((/es))</span>
-          <span class="credential-skill">((en))LLM((/en))((es))LLM((/es))</span>
-          <span class="credential-skill">((en))Mobile App((/en))((es))App Móvil((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Hackathon</span>
+          <span class="credential-skill">Team Leadership</span>
+          <span class="credential-skill">Mobile Development</span>
+          <span class="credential-skill">Flutter</span>
+          <span class="credential-skill">Firebase</span>
+          <span class="credential-skill">REST APIs</span>
+          <span class="credential-skill">Python</span>
+          <span class="credential-skill">LLM Integration</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Talent Land Hackathon Genius Arena 2026 Winner"](./credentials/img/Talent_Land_Hackathon_Genius_Arena_2026_Winner.png)
+        ![loading="lazy" alt="Talent Land Genius Arena](./credentials/img/Talent_Land_Hackathon_Genius_Arena_2026_Winner.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Talent Land / Banco Azteca((/en))((es))Emitido por: Talent Land / Banco Azteca((/es))</span>
-        <span class="credential-date">((en))Issued on: Apr-2026((/en))((es))Fecha: Abr-2026((/es))</span>
+        <span class="credential-date">((en))Issued on: 2026-04((/en))((es))Fecha: 2026-04((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Talent_Land_Hackathon_Genius_Arena_2026_Winner.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -955,25 +1289,28 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-       <div class="card" data-tags="event programming">
+    <div class="card" data-tags="award">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">SWERC 2025 (ICPC)</span>
-          <span class="title-rank">67th Place</span>
+          <span class="title-main">South Western Europe Regional Contest 2025</span>
+          <span class="title-rank">((en))67th Place((/en))((es))67º Lugar((/es))</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
-          <span class="credential-skill">((en))ICPC((/en))((es))ICPC((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Competitive Programming</span>
+          <span class="credential-skill">Problem Solving</span>
+          <span class="credential-skill">Algorithms</span>
+          <span class="credential-skill">ICPC</span>
+          <span class="credential-skill">Data Structures</span>
+          <span class="credential-skill">Team Collaboration</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="ICPC 2025, certificate image"](./credentials/img/2025_SWERC_AEPM_UTC.png)
+        ![loading="lazy" alt="South Western Europe Regional Contest 2025](./credentials/img/2025_SWERC_AEPM_UTC.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es))International Collegiate Programming Contest</span>
-        <span class="credential-date">((en))Issued on: 2025((/en))((es))Fecha: 2025((/es))</span>
+        <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-11((/en))((es))Fecha: 2025-11((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025_SWERC_AEPM_UTC.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -981,181 +1318,202 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-        <div class="card" data-tags="event programming">
+    <div class="card" data-tags="award">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">ICPC Gran Premio de Mexico 2025</span>
-          <span class="title-rank">Honorable Mention</span>
+          <span class="title-main">Gran Premio de México 2025</span>
+          <span class="title-rank">((en))Honorable Mention((/en))((es))Mención Honorífica((/es))</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
-          <span class="credential-skill">((en))ICPC((/en))((es))ICPC((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Competitive Programming</span>
+          <span class="credential-skill">Problem Solving</span>
+          <span class="credential-skill">ICPC</span>
+          <span class="credential-skill">Data Structures</span>
+          <span class="credential-skill">Algorithms</span>
+          <span class="credential-skill">Team Collaboration</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="ICPC 2025, certificate image"](./credentials/img/2025-ICPC-Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.png)
+        ![loading="lazy" alt="Gran Premio de México 2025](./credentials/img/2025-ICPC-Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es)) International Collegiate Programming Contest</span>
-        <span class="credential-date">((en))Issued on: 2025((/en))((es))Fecha: 2025((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.pdf){:target="_blank" class="credential-link"}
+        <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-10((/en))((es))Fecha: 2025-10((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Honarable Mention at the 2025 ICPC Gran Premio de Mexico.((/en))((es))Mención Honorifica en el Grand Premio de Mexico del ICPC 2025.((/es))
-      </div>
-    </div>        
-    <div class="card" data-tags="event programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">ICPC Gran Premio de Mexico 2024</span>
-          <span class="title-rank">Honorable Mention</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
-          <span class="credential-skill">((en))ICPC((/en))((es))ICPC((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="ICPC 2024, certificate image"](./credentials/img/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es))International Collegiate Programming Contest</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Honarable Mention at the 2024 ICPC Gran Premio de Mexico.((/en))((es))Mención Honorifica en el Grand Premio de Mexico del ICPC 2024.((/es))
-      </div>
-    </div>    
-    <div class="card" data-tags="event programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">19th ANIEI National Programming Contest</span>
-          <span class="title-rank">Participation</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
-          <span class="credential-skill">((en))ANIEI((/en))((es))ANIEI((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="ANIEI 2024, certificate image"](./credentials/img/ANIEI-Ariel_Emilio_Parra_Martínez.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: ((/en))((es))Emitido por: ((/es)) Asociación Nacional de Instituciones de Educación en Tecnologías de la Información</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martínez.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Participation at the 19th ANIEI National Programming Contest.((/en))((es))Participación en el 19o Concurso Nacional de Programación del ANIEI.((/es))
-      </div>
-    </div>
-    <div class="card" data-tags="event programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Meta Hacker Cup 2024</span>
-          <span class="title-rank">Top 32%</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
-          <span class="credential-skill">((en))Meta((/en))((es))Meta((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="Meta Hacker Cup 2024, certificate image"](./credentials/img/MetaHackerCup-2024.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Meta((/en))((es))Emitido por: Meta((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1022025052997781){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Participation in Round 1 of the 2024 Meta Hacker Cup. Placing in the top 32% globally.((/en))((es))Participación en la 1er ronda del Meta Hacker Cup 2024. Logrando un lugar en el top 32% mundial.((/es))
-      </div>
-    </div> 
-<div class="card" data-tags="award programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">UAA Workshop Instructor</span>
-          <span class="title-rank">XIX Congress</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Teaching((/en))((es))Docencia((/es))</span>
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Soft Skills((/en))((es))Habilidades Blandas((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="((en))UAA workshop 2025, certificate image((/en))((es))UAA Taller 2025, imagen del certificado((/es))"](./credentials/img/UAA_TALLER_2025.jpg)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025((/en))((es))Fecha: 2025((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2025.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Certificate awarded by the Universidad Autónoma de Aguascalientes for my participation as a workshop instructor at the 19th Congress of Exact Sciences, delivering the workshop "Technical Job Interviews".((/en))((es))Constancia otorgada por la Universidad Autónoma de Aguascalientes por mi participación como tallerista en el XIX Congreso de Ciencias Exactas, impartiendo el taller "Entrevistas técnicas de trabajo".((/es))
+        ((en))I earned an Honorable Mention at the 2025 ICPC Gran Premio de México, representing the Universidad Autónoma de Aguascalientes. This achievement validates my technical proficiency in algorithmic problem-solving and my ability to collaborate effectively in high-pressure competitive programming environments.((/en))((es))Obtuve una Mención Honorífica en el ICPC Gran Premio de México 2025, representando a la Universidad Autónoma de Aguascalientes. Este logro valida mi competencia técnica en la resolución de problemas algorítmicos y mi capacidad para colaborar eficazmente en entornos de programación competitiva de alta presión.((/es))
         <span class="see-more"></span>
       </div>
     </div>
-<div class="card" data-tags="award programming">
+    <div class="card" data-tags="award">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">UAA Programming Contest Organizer</span>
-          <span class="title-rank">XIX Congress</span>
+          <span class="title-main">((en))Technical Job Interviews Workshop Instructor((/en))((es))Tallerista: Entrevistas Técnicas de Trabajo((/es))</span>
+          <span class="title-rank">((en))XIX Congress of Exact Sciences((/en))((es))XIX Congreso de Ciencias Exactas((/es))</span>
+          <span class="title-score">((en))Recognition((/en))((es))Reconocimiento((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">((en))Leadership((/en))((es))Liderazgo((/es))</span>
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Organization((/en))((es))Organización((/es))</span>
-          <span class="skills-more"></span>
-        </div>
+          <span class="credential-skill">Public Speaking</span>
+          <span class="credential-skill">Career Development</span>
+          <span class="credential-skill">Technical Mentoring</span>
+          <span class="credential-skill">Career Coaching</span>
+          <span class="credential-skill">Interview Preparation</span>
+          <span class="credential-skill">Soft Skills</span>
+          <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))UAA Contest 2025, certificate image((/en))((es))UAA concurso 2025, imagen del certificado((/es))"](./credentials/img/UAA_CONCURSO_2025.jpg)
-      </div>
-<div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025((/en))((es))Fecha: 2025((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2025.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))Certificate awarded by the Universidad Autónoma de Aguascalientes for organizing and leading the programming contest at the 19th Congress of Exact Sciences, held on March 27, 2025.((/en))((es))Constancia otorgada por la Universidad Autónoma de Aguascalientes por la organización y dirección del concurso de programación del XIX Congreso de Ciencias Exactas, celebrado el 27 de marzo de 2025.((/es))
-        <span class="see-more"></span>
-      </div>
-    </div>
-<div class="card" data-tags="award programming">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">CPC Gallos President</span>
-          <span class="title-rank">Semester Aug-Dec 2024</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">((en))Leadership((/en))((es))Liderazgo((/es))</span>
-          <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
-          <span class="credential-skill">((en))Team Management((/en))((es))Gestión de Equipos((/es))</span>
-          <span class="skills-more"></span>
-        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="((en))CPC-GALLOS 2024, certificate image((/en))((es))CPC-GALLOS 2024, imagen del certificado((/es))"](./credentials/img/CPC-GALLOS_2024.jpg)
+        ![loading="lazy" alt="((en))Technical Job Interviews Workshop Instructor((/en))((es))Tallerista: Entrevistas Técnicas de Trabajo((/es))](./credentials/img/UAA_TALLER_2025.jpg)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-03-28((/en))((es))Fecha: 2025-03-28((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_TALLER_2025.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I was recognized by the Universidad Autónoma de Aguascalientes and the Center for Basic Sciences for my contribution as a workshop instructor during the XIX Congress of Exact Sciences. I designed and delivered the 'Technical Job Interviews' workshop, sharing strategies and technical knowledge to help students navigate professional selection processes.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes y el Centro de Ciencias Básicas por mi contribución como tallerista durante el XIX Congreso de Ciencias Exactas. Diseñé e impartí el taller 'Entrevistas Técnicas de Trabajo', compartiendo estrategias y conocimientos técnicos para ayudar a los estudiantes a navegar procesos de selección profesional.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Programming Contest Organizer((/en))((es))Organizador de Concurso de Programación((/es))</span>
+          <span class="title-rank">((en))XIX Congress of Exact Sciences((/en))((es))XIX Congreso de Ciencias Exactas((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Leadership</span>
+          <span class="credential-skill">Project Management</span>
+          <span class="credential-skill">Algorithmic Competition Design</span>
+          <span class="credential-skill">Team Coordination</span>
+          <span class="credential-skill">Public Speaking</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Programming Contest Organizer((/en))((es))Organizador de Concurso de Programación((/es))](./credentials/img/UAA_CONCURSO_2025.jpg)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
+        <span class="credential-date">((en))Issued on: 2025-03((/en))((es))Fecha: 2025-03((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2025.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I was recognized by the Universidad Autónoma de Aguascalientes and the Department of Electronic Systems for my leadership in organizing and directing the programming contest during the XIX Congress of Exact Sciences. I managed the competition logistics and execution on March 27, 2025, fostering technical growth within the university community.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes y el Departamento de Sistemas Electrónicos por mi liderazgo en la organización y dirección del concurso de programación durante el XIX Congreso de Ciencias Exactas. Gestioné la logística y ejecución de la competencia el 27 de marzo de 2025, fomentando el crecimiento técnico dentro de la comunidad universitaria.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))President of the Competitive Programming Club (Gallos)((/en))((es))Presidente del Club de Programación Competitiva (Gallos)((/es))</span>
+          <span class="title-rank"></span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Strategic Leadership</span>
+          <span class="credential-skill">Technical Mentoring</span>
+          <span class="credential-skill">Community Management</span>
+          <span class="credential-skill">Competitive Programming</span>
+          <span class="credential-skill">Team Coordination</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))President of the Competitive Programming Club (Gallos)((/en))((es))Presidente del Club de Programación Competitiva (Gallos)((/es))](./credentials/img/CPC-GALLOS_2024.jpg)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-12((/en))((es))Fecha: 2024-12((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2024.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Certificate awarded by the Universidad Autónoma de Aguascalientes for my leadership and commitment as president of the competitive programming club Γα=Ω5 (Gallos), during the August-December 2024 semester.((/en))((es))Constancia otorgada por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como presidente del club de programación competitiva Γα=Ω5 (Gallos), durante el semestre agosto-diciembre 2024.((/es))
+        ((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2024 semester[cite: 214, 215]. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2024[cite: 214, 215]. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">Gran Premio de México 2024</span>
+          <span class="title-rank">((en))Honorable Mention((/en))((es))Mención Honorífica((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Competitive Programming</span>
+          <span class="credential-skill">Problem Solving</span>
+          <span class="credential-skill">ICPC</span>
+          <span class="credential-skill">Data Structures</span>
+          <span class="credential-skill">Algorithms</span>
+          <span class="credential-skill">Team Collaboration</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="Gran Premio de México 2024](./credentials/img/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-10((/en))((es))Fecha: 2024-10((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I received an Honorable Mention at the 2024 ICPC Gran Premio de México representing the Universidad Autónoma de Aguascalientes with the team 'HoneyCrisps'. This recognition validates my technical skills in competitive programming and algorithmic problem solving during the competition held from April to October 2024.((/en))((es))Recibí una Mención Honorífica en el ICPC Gran Premio de México 2024 representando a la Universidad Autónoma de Aguascalientes con el equipo 'HoneyCrisps'. Este reconocimiento valida mis habilidades técnicas en programación competitiva y resolución de problemas algorítmicos durante la competencia celebrada de abril a octubre de 2024.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))19th National Programming Contest ANIEI 2024((/en))((es))19º Concurso Nacional de Programación ANIEI 2024((/es))</span>
+          <span class="title-rank">((en))National Participation((/en))((es))Participación Nacional((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Competitive Programming</span>
+          <span class="credential-skill">Problem Solving</span>
+          <span class="credential-skill">Data Structures</span>
+          <span class="credential-skill">Algorithms</span>
+          <span class="credential-skill">Team Collaboration</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))19th National Programming Contest ANIEI 2024((/en))((es))19º Concurso Nacional de Programación ANIEI 2024((/es))](./credentials/img/ANIEI-Ariel_Emilio_Parra_Martínez.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/en))((es))Emitido por: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-10((/en))((es))Fecha: 2024-10((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martínez.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my competitive programming skills by participating in the 19th National Programming Contest [cite: 198] during the XXXVII National and XXIII International Congress of Informatics and Computing (ANIEI 2024)[cite: 199]. The event was held at the Centro Universitario de Tonalá (UDG), focusing on the intersection of AI, reality, and virtual environments[cite: 194, 200].((/en))((es))Validé mis habilidades en programación competitiva mediante mi participación en el 19º Concurso Nacional de Programación [cite: 198] dentro del XXXVII Congreso Nacional y XXIII Congreso Internacional de Informática y Computación (ANIEI 2024)[cite: 199]. El evento se llevó a cabo en el Centro Universitario de Tonalá (UDG), con un enfoque en la intersección de la IA, la realidad y los entornos virtuales[cite: 194, 200].((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Meta Hacker Cup 2024 - Round 1((/en))((es))Meta Hacker Cup 2024 - Ronda 1((/es))</span>
+          <span class="title-rank">((en))Top 32% Globally((/en))((es))Top 32% Mundial((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">Competitive Programming</span>
+          <span class="credential-skill">Problem Solving</span>
+          <span class="credential-skill">Data Structures</span>
+          <span class="credential-skill">Algorithms</span>
+          <span class="credential-skill">Complexity Analysis</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Meta Hacker Cup 2024 - Round 1((/en))((es))Meta Hacker Cup 2024 - Ronda 1((/es))](./credentials/img/MetaHackerCup-2024.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Meta((/en))((es))Emitido por: Meta((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-10((/en))((es))Fecha: 2024-10((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1022025052997781){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my technical proficiency in algorithmic problem-solving by participating in the 2024 Meta Hacker Cup. I successfully reached Round 1, achieving a global ranking of 7,297th, which placed me within the top 32% of competitors worldwide in this high-level international programming competition.((/en))((es))Validé mi competencia técnica en la resolución de problemas algorítmicos al participar en el Meta Hacker Cup 2024. Alcancé con éxito la Ronda 1, obteniendo una clasificación global de 7,297, lo que me posicionó dentro del top 32% de los competidores a nivel mundial en esta competencia de programación internacional de alto nivel.((/es))
         <span class="see-more"></span>
       </div>
     </div>

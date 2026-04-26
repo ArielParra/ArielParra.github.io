@@ -34,30 +34,33 @@ function truncateSkills() {
   skillContainers.forEach(container => {
     const skills = container.querySelectorAll('.credential-skill');
     const extraCount = skills.length - 3;
-    const lang = getCurrentSiteLanguage();
+    const moreIndicator = container.querySelector('.skills-more');
 
-    if (extraCount > 0) {
-      const moreIndicator = container.querySelector('.skills-more');
-      if (moreIndicator) {
+    if (moreIndicator) {
+      if (extraCount > 0) {
+        const lang = getCurrentSiteLanguage();
         const label = lang === 'es'
           ? (moreIndicator.getAttribute('data-i18n-more-es') || `+${extraCount} más`)
           : (moreIndicator.getAttribute('data-i18n-more-en') || `+${extraCount} more`);
         moreIndicator.textContent = label;
         moreIndicator.style.display = '';
-      }
 
-      skills.forEach((skill, index) => {
-        if (index >= 3) skill.style.display = 'none';
-      });
+        skills.forEach((skill, index) => {
+          if (index >= 3) skill.style.display = 'none';
+        });
+      } else {
+        moreIndicator.style.display = 'none';
+      }
     }
   });
 }
 
 /**
- * @description Truncates description to 2 lines with ellipsis and makes see-more clickable.
+ * @description Truncates description to 2 lines (approx 85 chars) with ellipsis and makes see-more clickable.
  */
 function truncateDescriptions() {
   const descriptions = document.querySelectorAll('.credential-description.justify');
+  const MAX_CHARS = 84;
 
   descriptions.forEach(container => {
     const textSpan = container.querySelector('span.i18n');
@@ -70,33 +73,19 @@ function truncateDescriptions() {
 
     container.setAttribute('data-full-text', fullText);
 
-    const containerWidth = container.offsetWidth;
-    if (containerWidth <= 0) {
-      seeMoreLink.textContent = '... ' + seeMoreText;
-      seeMoreLink.style.display = 'inline';
-      return;
-    }
-
-    const fontSize = parseInt(getComputedStyle(textSpan).fontSize) || 14;
-    const lineHeight = parseInt(getComputedStyle(textSpan).lineHeight) || 18;
-    const charWidth = fontSize * 0.55;
-    const seeMoreLen = ('... ' + seeMoreText).length;
-
-    const charsPerLine = Math.floor((containerWidth - 10) / charWidth);
-    const maxChars = charsPerLine * 2.35 - seeMoreLen;
-
-    let truncated = fullText;
-    if (fullText.length > maxChars) {
-      truncated = fullText.substring(0, maxChars);
+    if (fullText.length > MAX_CHARS) {
+      let truncated = fullText.substring(0, MAX_CHARS);
       while (truncated.length > 0 && !truncated.match(/\s$/)) {
         truncated = truncated.slice(0, -1);
       }
       truncated = truncated.trim();
-    }
 
-    textSpan.textContent = truncated;
-    seeMoreLink.textContent = '... ' + seeMoreText;
-    seeMoreLink.style.display = 'inline';
+      textSpan.textContent = truncated;
+      seeMoreLink.textContent = '... ' + seeMoreText;
+      seeMoreLink.style.display = 'inline';
+    } else {
+      seeMoreLink.style.display = 'none';
+    }
   });
 }
 

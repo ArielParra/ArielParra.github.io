@@ -401,16 +401,21 @@ def generate_html(md_dict, md_content):
   <meta   name="author"          content="Ariel Parra">
   <title> {extract_translation(md_dict['title'], language)} </title>
 """
+    def space_padding(css_file):
+        return " " * (max(len(cf) for cf in md_dict['css']) - len(css_file))
     
+    html_content += '  <!-- CSS files -->\n'
     for css_file in md_dict['css']:
         if css_file:
-            html_content += f'  <link rel="stylesheet" href="./css/{css_file}.css">\n'
+            html_content += f'  <link   rel="stylesheet"       href="./css/{css_file}.css" {space_padding(css_file)}>\n'
 
     def space_padding(js_file):
         return " " * (max(len(jf) for jf in md_dict['js']) - len(js_file))
-    
+
+    html_content += '  <!-- Java Scripts preloads -->\n' 
     for js_file in md_dict['js']:
-        html_content += f'  <link   rel="preload"          href="./js/{js_file}.js" {space_padding(js_file)}as="script">\n'
+        if js_file:
+            html_content += f'  <link   rel="preload"          href="./js/{js_file}.js" {space_padding(js_file)}as="script">\n'
     
     html_content += '  <!-- Java Scripts defers -->\n'
     for js_file in md_dict['js']:
