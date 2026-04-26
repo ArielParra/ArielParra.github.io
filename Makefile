@@ -1,8 +1,8 @@
 ifdef OS
-	CC := python.exe
+	PYTHON := python.exe
 	FixPath = $(subst /,\,$1)
 else
-	CC := python
+	PYTHON := python
 	FixPath = $1
 endif
 
@@ -11,19 +11,24 @@ script := md2html.py
 all: index portfolio contact credentials 404
 
 index:
-	$(CC) $(call FixPath,$(script)) $(call FixPath,./index.md) $(call FixPath,./index.html)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./index.md) $(call FixPath,./index.html)
 
 portfolio:
-	$(CC) $(call FixPath,$(script)) $(call FixPath,./portfolio/index.md) $(call FixPath,./portfolio/index.html)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./portfolio/index.md) $(call FixPath,./portfolio/index.html)
 
 contact:
-	$(CC) $(call FixPath,$(script)) $(call FixPath,./contact/index.md) $(call FixPath,./contact/index.html)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./contact/index.md) $(call FixPath,./contact/index.html)
 
+# This is a special case that makes credentials.html from 
 credentials:
-	$(CC) $(call FixPath,$(script)) $(call FixPath,./credentials/index.md) $(call FixPath,./credentials/index.html)
+	@echo "Sorting credentials.json..."
+	$(PYTHON) $(call FixPath,manage_credentials.py) sort
+	@echo "Generating credentials/index.md file..."
+	$(PYTHON) $(call FixPath,manage_credentials.py) generate
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./credentials/index.md) $(call FixPath,./credentials/index.html)
 
 404:
-	$(CC) $(call FixPath,$(script)) $(call FixPath,./404.md) $(call FixPath,./404.html)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./404.md) $(call FixPath,./404.html)
 
 clean:
 	rm -f $(call FixPath,./index.html)

@@ -1,26 +1,110 @@
-# Ariel Parra WebSite
-Previously arielparra.tech
-My simple website made with simple and plain html + css + javascript while trying to follow HTML5 standarts.
-I made my own mobile responsivenes, auto language detection, desing, animations, etc. 
-I like small websites without the need for bloated web frameworks.
-I also developed my own Python-based images site generator called `md2html.py`, which enables me to create custom HTML websites while increasing efficiency by 45% and I also use a Makefile to make each site I want.
+# Ariel Parra Website
 
+A simple, lightweight personal website. Previously hosted at arielparra.tech.
 
-# Todo List:
+Built with plain HTML, CSS, and JavaScript—following HTML5 standards without bloated frameworks. Features custom mobile responsiveness, auto language detection, design, animations, and a Python-based static site generator.
 
-- [x] fix mobile width in 404 (fixed with style="overflow: hidden;">)
-- [ ] blogs
-- [ ] js to detect code class="C++" and color C++ syntax correctly
+## Quick Start
 
-# Thanks
+```bash
+make              # Build all pages
+make index        # Build specific page
+make clean        # Remove generated HTML
+```
 
-- Max Halford for the unknown_pleasures script used for my 404 page, recovered from: https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html
-- sadgrl's 88x31 Button Maker at: https://goblin-heart.net/sadgrl/projects/88x31-button-maker
+## Project Structure
 
-# Image credits
+```
+├── md2html.py          # Python static site generator
+├── Makefile            # Build automation
+├── *.md                # Source files with YAML frontmatter
+├── css/                # Modular stylesheets
+│   ├── theme.css       # Color palette, light/dark themes
+│   ├── common.css      # Base styles (nav, buttons, cards, scrollbar)
+│   ├── credentials.css # Credentials card styles
+│   ├── portfolio.css   # Portfolio grid styles
+│   └── 404.css         # 404 page styles
+├── js/                 # JavaScript modules
+├── portfolio/          # Portfolio page sources
+├── contact/            # Contact page sources
+└── credentials/        # Credentials page sources
+    ├── data/
+    │   └── credentials.json   # All credentials data (education, certs, etc.)
+    ├── docs/                  # PDF documentation files
+    ├── img/                   # Credential images
+    ├── manage_credentials.py  # CLI tool to manage credentials.json
+    ├── index.md               # Source markdown
+    └── index.html             # Generated output
+```
 
-- **./img/ArielParra.jpg** used under fair use from https://www.reddit.com/r/sanriomemes/comments/1123loc/drew_pompompurin_based_of_a_meme_few_days_ago/
-- **./blog/img/hammer.webp** image inspired from Piotr Siedlecki's "Hammer And Wrench Black Silhouette" recovered from: https://www.publicdomainpictures.net/en/view-image.php?image=278182&picture=hammer-and-wrench-black-silhouette
-- **./blog/img/cpp.png** image inspired from Schäferle's "stone push overcoming obstacle" recovered from: https://pixabay.com/illustrations/stone-push-overcoming-obstacle-2127669/
-- **./blog/img/rabithole.png** image was created using GIMP and the font of the "penguin" text is liberation-serif. The white penguin (tux) was download from https://commons.wikimedia.org/wiki/File:Tux_bw.svg ; The background is Svetlanasmirnova's "White rabbit runs and falls into a hole. Surreal chess background and lettering follow the white rabbit.". obtained from: https://stock.adobe.com/mx/contributor/205805951/svetlanasmirnova?load_type=autoresprev_url=detail fortunaasset_id=391546596 ; So this image cannot be used in marketing, templates or other products for sale.
-- **./blog/img/servers.png** image inspired from mohamed mahmoud hassan's "Machine Learning" recovered from:         https://www.publicdomainpictures.net/en/view-image.php?image=289092&picture=machine-learning And from freepik's "Cloud free icon" recovered from: https://www.flaticon.com/free-icon/cloud_2929984?term=cloud&page=1&position=6&related_id=2929984
+## Markdown Frontmatter Format
+
+```markdown
+---
+title: Page Title
+lang: en
+base_href: ./
+nav_current: 1
+js: [main, menu, theme, language]
+css: [theme, common, credentials]
+---
+
+content here
+```
+
+## i18n Syntax
+
+```markdown
+((en))English text((/en))((es))Texto en español((/es))
+```
+
+## Features
+
+- **No dependencies**: Vanilla HTML, CSS, JavaScript
+- **Lightweight**: No frameworks, no bundlers, no node_modules
+- **Custom site generator**: Python-based `md2html.py`
+- **Theming**: Manual light/dark mode support
+- **Internationalization**: Auto language detection
+- **Responsive**: Custom mobile-first design
+- **Animated**: Subtle CSS animations
+
+## Credentials Management
+
+The site uses a JSON-based data source for credentials, processed into HTML by `manage_credentials.py`.
+
+### credentials.json
+
+Contains all education records, certifications, certificates, and badges organized by type:
+- `type`: Category (education, certification, certificate, badge, award)
+- `issuer`: Issuing organization
+- `title`: Credential name (with i18n syntax)
+- `level`: Rank or level achieved
+- `score`: Achievement score
+- `issuedOn`: Date issued (YYYY-MM format)
+- `topics`: Tags (cybersecurity, devops, ai, cloud, etc.)
+- `skills`: List of skills gained
+- `image`: Path to credential image
+- `link`: Verification URL or PDF
+- `description`: Bilingual description (en/es)
+
+### manage_credentials.py
+
+A CLI tool for managing credentials data:
+
+```bash
+python manage_credentials.py add          # Add new credential (interactive)
+python manage_credentials.py list        # List all credentials
+python manage_credentials.py list --sort year    # Sort by year
+python manage_credentials.py list --type certification  # Filter by type
+python manage_credentials.py get <id>    # View specific credential
+python manage_credentials.py delete <id>  # Delete credential
+python manage_credentials.py sort           # Sort credentials by type then date
+python manage_credentials.py generate    # Generate credentials/index.md from JSON
+```
+
+After adding or modifying credentials in `credentials.json`, run `generate` to rebuild `credentials/index.md`, then run `make credentials` to build the final HTML.
+
+## Credits
+
+- Unknown Pleasures visualization for 404 page, originally from [Max Halford/procedural-art](https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html)
+- 88x31 Button Maker by [sadgrl](https://goblin-heart.net/sadgrl/projects/88x31-button-maker)
