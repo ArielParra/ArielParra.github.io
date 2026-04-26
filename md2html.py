@@ -40,11 +40,13 @@ def extract_i18n_from_attr(attr_value):
         - If attr contains i18n: plain_text is empty, en/es are the translations
         - If attr has no i18n: plain_text is the original value, en/es are None
     """
-    pair_pattern = re.compile(r'\(\(en\)\)(.*?)\(\(/en\)\)\(\(es\)\)(.*?)\(\(/es\)\)', re.DOTALL)
-    match = pair_pattern.search(attr_value)
-    if match:
-        en_content = match.group(1)
-        es_content = match.group(2)
+    en_match = re.search(r'\(\(en\)\)(.*?)\(\(/en\)\)', attr_value)
+    es_match = re.search(r'\(\(es\)\)(.*?)\(\(/es\)\)', attr_value)
+    if en_match and es_match:
+        prefix = attr_value[:en_match.start()]
+        suffix = attr_value[es_match.end():]
+        en_content = prefix + en_match.group(1) + suffix
+        es_content = prefix + es_match.group(1) + suffix
         return ('', en_content, es_content)
     return (attr_value, None, None)
 

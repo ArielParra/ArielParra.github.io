@@ -20,7 +20,7 @@ function toggleCredentialDescription(element) {
     element.textContent = lang === 'es' ? 'Ver menos' : 'See less';
     if (textSpan) {
       const fullText = container.getAttribute('data-full-text');
-      if (fullText) textSpan.textContent = fullText;
+      if (fullText) textSpan.innerHTML = fullText;
     }
   }
 }
@@ -80,7 +80,7 @@ function truncateDescriptions() {
       }
       truncated = truncated.trim();
 
-      textSpan.textContent = truncated;
+      textSpan.innerHTML = truncated;
       seeMoreLink.textContent = '... ' + seeMoreText;
       seeMoreLink.style.display = 'inline';
     } else {
@@ -109,7 +109,7 @@ function resetDescriptions() {
     const seeMoreLink = container.querySelector('.see-more');
     const fullText = container.getAttribute('data-full-text');
     if (textSpan && fullText) {
-      textSpan.textContent = fullText;
+      textSpan.innerHTML = fullText;
     }
     container.classList.remove('expanded');
     if (seeMoreLink) {

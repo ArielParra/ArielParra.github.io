@@ -14,14 +14,15 @@ nav_current: 1
         ![alt="((en))My photo((/en))((es))mi foto((/es))" title="me"](./img/ArielParra.jpg)   
         <hr>
         <div class="center">
-            <p>
-            ((en))
-            My Photo
-            ((/en))
-            ((es))
-            Mi foto
-            ((/es))
-            </p>
+            # ((en))Hello, I'm((/en))((es))Hola, soy((/es))
+            <p></p>
+            # Ariel PARRA.
+            <p></p>
+            # ((en))Welcome to my website!((/en))((es))¡Bienvenido a mi sitio web!((/es))
+        </div>
+        <div class="justify">
+            <p></p>
+            ## ((en))Here you will find my portfolio of digital applications and projects, my credentials, my contact information, and more about my professional journey.((/en))((es))Aquí encontrarás mi portafolio de aplicaciones digitales y proyectos, mis acreditaciones, mi información de contacto y más sobre mi trayectoria profesional.((/es))
         </div>
     </div> 
     <div class="card">
@@ -33,10 +34,10 @@ nav_current: 1
         <div class="justify">
             <p>
             ((en))
-            Hi, I'm **Ariel Parra**, a 21-year-old Systems Engineering student at *Universidad Autónoma de Aguascalientes* with a cumulative average of 9.34/10 (equivalent to 3.7 GPA). I'm passionate about programming, especially in **C and C++**. I have been using **Linux** as my daily driver for over three years.
+            Hi, I'm **Ariel Emilio Parra Martínez**, a 22-year-old Systems Engineering student at *Universidad Autónoma de Aguascalientes* with a cumulative average of 9.34/10 (equivalent to 3.7 GPA). I'm passionate about programming, especially in **C and C++**. I have been using **Linux** as my daily driver for over four years.
             ((/en))
             ((es))
-            Hola, soy **Ariel Parra**, un estudiante de Ingeniería en Sistemas Computacionales de 21 años en la *Universidad Autónoma de Aguascalientes*, con un promedio general de 9.34/10 (equivalente a 3.7 GPA). Me apasiona la programación, especialmente en **C y C++**. He estado usando **Linux** como mi sistema operativo principal durante más de tres años.
+            Hola, soy **Ariel Emilio Parra Martínez**, un estudiante de Ingeniería en Sistemas Computacionales de 22 años en la *Universidad Autónoma de Aguascalientes*, con un promedio general de 9.34/10 (equivalente a 3.7 GPA). Me apasiona la programación, especialmente en **C y C++**. He estado usando **Linux** como mi sistema operativo principal durante más de cuatro años.
             ((/es))
             </p>
             <p>
@@ -45,6 +46,14 @@ nav_current: 1
             ((/en))
             ((es))
             Soy presidente del **Club de Programación Competitiva Gallos** en la UAA y he participé en concursos internacionales como el **ICPC**, donde obtuve una Mención Honorífica. También he estado entre los **15 mejores en el Concurso Nacional de Programación de ANIEI** y clasifiqué en el **top 32% a nivel mundial en la Meta Hacker Cup**.
+            ((/es))
+            </p>
+            <p>
+            ((en))
+            I love to learn independently, which has driven me to earn over 50 [credentials](https://arielparra.github.io/credentials/) (certifications, certificates, badges, etc.) and pursue an international exchange at the **Université de Technologie de Compiègne (UTC)** in France. During my time there, I focused on Computer Networks and Machine Learning, and served as Vice President of UTCode, ranking 1st in the Hauts-de-France region at SWERC 2025.
+            ((/en))
+            ((es))
+            Me gusta aprender de manera independiente, motivo por el cual he obtenido más de 50 [acreditaciones](https://arielparra.github.io/credentials/) (certificaciones, certificados, insignias, etc.) y realicé un intercambio internacional en la **Université de Technologie de Compiègne (UTC)** en Francia. Durante mi estancia me enfoqué en Redes de Computadoras y Machine Learning, y me desempeñé como Vicepresidente de UTCode, logrando el 1er lugar en la región de Hauts-de-France en el SWERC 2025.
             ((/es))
             </p>
         </div>
@@ -65,10 +74,10 @@ nav_current: 1
             </p>
             <p>
             ((en))
-            Outside of tech, I practice **Kendo** and proudly represent the Aguascalientes team. I believe martial arts help keep my mind sharp and body balanced.
+            Outside of tech, my interests include traveling and practicing **Kendo**, proudly representing the Aguascalientes state team for over 10 years. I believe martial arts help keep my mind sharp and body balanced.
             ((/en))
             ((es))
-            Fuera del ámbito tecnológico, practico **Kendo** y represento con orgullo al equipo de Aguascalientes. Creo que las artes marciales ayudan a mantener mi mente aguda y mi cuerpo equilibrado.
+            Fuera del ámbito tecnológico, mis intereses incluyen viajar y practicar **Kendo**, representando con orgullo a la selección estatal de Aguascalientes por más de 10 años. Creo que las artes marciales ayudan a mantener mi mente aguda y mi cuerpo equilibrado.
             ((/es))
             </p>
         </div>
@@ -80,34 +89,21 @@ nav_current: 1
         </div>
         <hr>
         <p>
-        "Knowledge is power" 
-        ((en))
-        -Francis Bacon
-        ((/en))
-        ((es))
-        - Francis Bacon
-        ((/es))
+        ((en))"Knowledge is power"((/en))((es))"El conocimiento es poder"((/es))- Francis Bacon
         </p>
         <div class="column">
-            **Programming:**
-            - C/C++
-            - Java
-            - Python
-            **Software development:**
-            - Git + GitHub
-            - Vscode
-            - Nix & Docker
-            - Azure 
+            **((en))Technical((/en))((es))Habilidades Técnicas((/es)):**
+            - C/C++, Python, Java
+            - Linux, Git, Docker
+            - AWS (Certified), OCI, Azure (Certified), GCP
+            - ((en))AI / LLM Integration((/en))((es))Integración de IA / LLMs((/es))
         </div>
         <div class="column">
-            **Operating systems:**
-            - Linux
-            - FreeBSD & OpenBSD
-            - MacOS
-            - Windows & Windows Server
-            **Web development:**
-            - HTML + CSS + Java Script
-            - Angular
+            **((en))Languages((/en))((es))Idiomas((/es)):**
+            - ((en))Spanish (Native)((/en))((es))Español (Nativo)((/es))
+            - ((en))English - B2 (TOEFL iBT: 89/120)((/en))((es))Inglés - B2 (TOEFL iBT: 89/120)((/es))
+            - ((en))French (Conversational)((/en))((es))Francés (Conversacional)((/es))
+            - ((en))Portuguese (Basic)((/en))((es))Portugués (Básico)((/es))
         </div>
     </div> 
 </div> 

@@ -10,50 +10,6 @@ nav_current: 3
 ---
 
   <div class="container">
-    <div class="card" data-tags="Certifice">
-      <hr>
-      <div class="center">
-        ### Certifice
-      </div>
-      <hr>
-    </div>
-  </div><!--container Elements-->
-
-  <div class="container grid max-width">
-    <div class="card" data-tags="certifice">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">((en))CS50x: Introduction to Computer Science((/en))((es))CS50x: Introducción a la Ciencia de la Computación((/es))</span>
-          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Culminación((/es))</span>
-          <span class="title-score">((en))10 Problem Sets + Final Project Completed((/en))((es))10 Conjuntos de Problemas + Proyecto Final Completados((/es))</span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">Algorithms</span>
-          <span class="credential-skill">Data Structures</span>
-          <span class="credential-skill">C</span>
-          <span class="credential-skill">Python</span>
-          <span class="credential-skill">SQL</span>
-          <span class="credential-skill">HTML/CSS</span>
-          <span class="credential-skill">JavaScript</span>
-          <span class="credential-skill">Flask</span>
-          <span class="skills-more"></span>        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="((en))CS50x: Introduction to Computer Science((/en))((es))CS50x: Introducción a la Ciencia de la Computación((/es))](./credentials/img/CS50x.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Harvard University((/en))((es))Emitido por: Harvard University((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
-        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))I validated my foundational knowledge of computer science and the art of programming through this Harvard University course. I successfully completed ten intensive problem sets and a final project, demonstrating proficiency in low-level programming with C, web development with Python and SQL, and core algorithmic thinking.((/en))((es))Validé mis conocimientos fundamentales de la ciencia de la computación y el arte de la programación a través de este curso de la Universidad de Harvard. Completé con éxito diez conjuntos de problemas intensivos y un proyecto final, demostrando competencia en programación de bajo nivel con C, desarrollo web con Python y SQL, y pensamiento algorítmico central.((/es))
-        <span class="see-more"></span>
-      </div>
-    </div>
-  </div><!--container Elements-->
-
-  <div class="container">
     <div class="card" data-tags="Education">
       <hr>
       <div class="center">
@@ -67,27 +23,30 @@ nav_current: 3
     <div class="card" data-tags="education">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Computer Systems Engineering</span>
-          <span class="title-rank">B.Sc.</span>
-          <span class="title-score">GPA 9.34/10</span>
+          <span class="title-main">((en))B.Sc. in Computer Systems Engineering((/en))((es))Ingeniería en Sistemas Computacionales((/es))</span>
+          <span class="title-rank">((en))Bachelor of Science Degree (Plan 2023)((/en))((es))Título de Licenciatura (Plan 2023)((/es))</span>
+          <span class="title-score">((en))9.34 / 10.0((/en))((es))9.34 / 10.0((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Algorithms</span>
-          <span class="credential-skill">Data Structures</span>
-          <span class="credential-skill">Databases</span>
-          <span class="credential-skill">Operating Systems</span>
+           <span class="credential-skill">Software Architecture & Design</span>
+          <span class="credential-skill">Data Engineering & Big Data</span>
+          <span class="credential-skill">Cloud Computing & Distributed Systems</span>
+          <span class="credential-skill">Network Administration & Security</span>
+          <span class="credential-skill">Embedded Systems & Hardware Analysis</span>
+          <span class="credential-skill">Agile Methodologies</span>
+          <span class="credential-skill">Cybersecurity Assurance</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Computer Systems Engineering](https://www.uaa.mx/portal/wp-content/uploads/2022/08/UAA-LOGO.png)
+        ![loading="lazy" alt="((en))B.Sc. in Computer Systems Engineering image((/en))((es))Ingeniería en Sistemas Computacionales imagen((/es))"](https://www.uaa.mx/portal/wp-content/uploads/2022/08/UAA-LOGO.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2026-12((/en))((es))Fecha: 2026-12((/es))</span>
+        <span class="credential-date">((en))Issued on: 2027-06((/en))((es))Fecha: 2027-06((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.uaa.mx/descubretucarrera/ccb/ing-en-sistemas-computacionales/plan.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Bachelor of Science Degree in Computer Systems Engineering. Currently in the 8th of 9 semesters with a GPA of 9.34/10.((/en))((es))Licenciatura en Ingeniería en Sistemas Computacionales. Actualmente cursando el 8vo de 9 semestres con un promedio de 9.34/10.((/es))
+        ((en))Currently in 8th semester out of 9. Comprehensive training in design, implementation, and automation of complex systems. Relevant coursework: Algorithms & Data Structures, Operating Systems, and Databases. As Founder and President of CPC-GALLOS, I lead 20+ members in algorithmic training, coordinating participation in Meta Hacker Cup and ICPC Gran Premio de México.((/en))((es))Cursando actualmente el 8vo semestre de 9 Formación integral en diseño, implementación y automatización de sistemas complejos. Materias relevantes: Estructuras de Datos y Algoritmos, Sistemas Operativos y Bases de Datos. Como Fundador y Presidente de CPC-GALLOS, lidero a más de 20 miembros en entrenamiento algorítmico, coordinando la participación en Meta Hacker Cup e ICPC Gran Premio de México.((/es))
         <span class="see-more"></span>
       </div>
     </div>
@@ -95,25 +54,29 @@ nav_current: 3
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Génie Informatique ((en))(Computer Engineering)((/en))((es))(Ingeniería Informática)((/es))</span>
-          <span class="title-rank">Exchange Student</span>
-          <span class="title-score">ECTS C</span>
+          <span class="title-rank">((en))Exchange Student / Study Abroad((/en))((es))Estudiante de Intercambio Académico((/es))</span>
+          <span class="title-score">((en))ECTS C((/en))((es))ECTS C((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Computer Networks</span>
-          <span class="credential-skill">Machine Learning</span>
-          <span class="credential-skill">French</span>
+           <span class="credential-skill">Machine Learning & Data Mining</span>
+          <span class="credential-skill">Cyber-Physical Systems</span>
+          <span class="credential-skill">Enterprise Network Architecture</span>
+          <span class="credential-skill">Cloud & Fog Computing</span>
+          <span class="credential-skill">Distributed Systems</span>
+          <span class="credential-skill">Knowledge Engineering</span>
+          <span class="credential-skill">French (FLE)</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Génie Informatique ((en))(Computer Engineering)((/en))((es))(Ingeniería Informática)((/es))](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg/1280px-Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg.png)
+        ![loading="lazy" alt="((en))(Computer Engineering) image((/en))((es))(Ingeniería Informática) imagen((/es))"](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg/1280px-Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Université de Technologie de Compiègne((/en))((es))Emitido por: Université de Technologie de Compiègne((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Université de Technologie de Compiègne (UTC)((/en))((es))Emitido por: Université de Technologie de Compiègne (UTC)((/es))</span>
         <span class="credential-date">((en))Issued on: 2025-09((/en))((es))Fecha: 2025-09((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.utc.fr/wp-content/uploads/sites/28/2021/01/gi2021-web.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Study Abroad Program 2025 at the Université de Technologie de Compiègne in France. Focus on Computer Engineering, Computer Networks, Machine Learning, and French as a Foreign Language.((/en))((es))Programa de Estudios en el Extranjero 2025 en la Université de Technologie de Compiègne en Francia. Especialización en Ingeniería Informática, Redes Computacionales, Aprendizaje Automático y Francés como Lengua Extranjera.((/es))
+        ((en))International exchange at UTC France, ranked as the [2nd best post-baccalaureate engineering school by Le Figaro](https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-post-bac/). Relevant coursework: Computer Networks, Machine Learning, and French (FLE). Served as Vice President of UTCode, ranking 1st in the Hauts-de-France region at SWERC 2025 (ICPC).((/en))((es))Intercambio internacional en la UTC Francia, reconocida como la [2da mejor escuela de ingeniería post-bac según Le Figaro](https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-post-bac/). Materias relevantes: Redes de Computadoras, Machine Learning y Francés (FLE). Me desempeñé como Vicepresidente de UTCode, logrando el 1er lugar en la región de Hauts-de-France en SWERC 2025 (ICPC).((/es))
         <span class="see-more"></span>
       </div>
     </div>
@@ -122,10 +85,10 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">Oracle Next Education (ONE)</span>
           <span class="title-rank">Back-end Program</span>
-          <span class="title-score">1301/1302 ((en)Activities(/en)) ((es)Actividades(/es))</span>
+          <span class="title-score">1301/1302 ((en))Activities((/en))((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Programming</span>
+           <span class="credential-skill">Programming</span>
           <span class="credential-skill">Back-end</span>
           <span class="credential-skill">Java</span>
           <span class="credential-skill">OOP</span>
@@ -140,7 +103,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Oracle Next Education (ONE)](./credentials/img/Oracle_One_Programa.png)
+        ![loading="lazy" alt="Oracle Next Education (ONE) ((en))image((/en))((es))imagen((/es))"](./credentials/img/Oracle_One_Programa.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
@@ -173,7 +136,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Cloud</span>
+           <span class="credential-skill">Cloud</span>
           <span class="credential-skill">AWS</span>
           <span class="credential-skill">Networking</span>
           <span class="credential-skill">Security</span>
@@ -192,7 +155,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="AWS Certified Cloud Practitioner](./credentials/img/AWS_Cloud_Practitioner.png)
+        ![loading="lazy" alt="AWS Certified Cloud Practitioner ((en))image((/en))((es))imagen((/es))"](./credentials/img/AWS_Cloud_Practitioner.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
@@ -209,10 +172,10 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">TOEFL iBT</span>
           <span class="title-rank">CEFR B2</span>
-          <span class="title-score">89/120</span>
+          <span class="title-score">((en))89/120((/en))((es))89/120((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">English</span>
+           <span class="credential-skill">English</span>
           <span class="credential-skill">Listening</span>
           <span class="credential-skill">Reading</span>
           <span class="credential-skill">Speaking</span>
@@ -220,7 +183,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="TOEFL iBT](./credentials/img/TOEFL_IBT_AEPM_2025.png)
+        ![loading="lazy" alt="TOEFL iBT ((en))image((/en))((es))imagen((/es))"](./credentials/img/TOEFL_IBT_AEPM_2025.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Educational Testing Service (ETS)((/en))((es))Emitido por: Educational Testing Service (ETS)((/es))</span>
@@ -240,7 +203,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">AI</span>
+           <span class="credential-skill">AI</span>
           <span class="credential-skill">Cloud</span>
           <span class="credential-skill">Machine Learning</span>
           <span class="credential-skill">Generative AI</span>
@@ -251,7 +214,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Azure AI](./credentials/img/MS_AI900.png)
+        ![loading="lazy" alt="Azure AI ((en))image((/en))((es))imagen((/es))"](./credentials/img/MS_AI900.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
@@ -266,39 +229,12 @@ nav_current: 3
     <div class="card" data-tags="certification">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))</span>
-          <span class="title-rank">((en))Certificate of Completion((/en))((es))Constancia de Finalización((/es))</span>
-          <span class="title-score"></span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">Information Security Awareness</span>
-          <span class="credential-skill">Digital Risk Management</span>
-          <span class="credential-skill">Cyber Hygiene</span>
-          <span class="credential-skill">Workplace Security Best Practices</span>
-          <span class="skills-more"></span>        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))](./credentials/img/RPLC_CyberseguridadEnElTrabajo.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))I validated my professional competence in digital protection through the 'Cybersecurity at Work' course. I demonstrated proficiency in identifying risks and implementing best security practices within corporate environments, as certified by the Red por la Ciberseguridad Academy.((/en))((es))Validé mi competencia profesional en protección digital a través del curso 'Ciberseguridad en el Trabajo'. Demostré suficiencia en la identificación de riesgos e implementación de mejores prácticas de seguridad en entornos corporativos, certificado por la Academia de la Red por la Ciberseguridad.((/es))
-        <span class="see-more"></span>
-      </div>
-    </div>
-    <div class="card" data-tags="certification">
-      <div class="credential-header">
-        <div class="credential-title">
           <span class="title-main">OCI Generative AI Certified</span>
           <span class="title-rank">Professional</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Generative AI</span>
+           <span class="credential-skill">Generative AI</span>
           <span class="credential-skill">Cloud</span>
           <span class="credential-skill">OCI</span>
           <span class="credential-skill">Large Language Models (LLMs)</span>
@@ -310,7 +246,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="OCI Generative AI Certified](./credentials/img/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
+        ![loading="lazy" alt="OCI Generative AI Certified ((en))image((/en))((es))imagen((/es))"](./credentials/img/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
@@ -330,7 +266,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">AI</span>
+           <span class="credential-skill">AI</span>
           <span class="credential-skill">Cloud</span>
           <span class="credential-skill">OCI</span>
           <span class="credential-skill">Oracle AI Services</span>
@@ -342,7 +278,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="OCI AI Foundations](./credentials/img/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
+        ![loading="lazy" alt="OCI AI Foundations ((en))image((/en))((es))imagen((/es))"](./credentials/img/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
@@ -358,11 +294,11 @@ nav_current: 3
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">GitHub Foundations</span>
-          <span class="title-rank">Foundations</span>
+          <span class="title-rank">Certification Program</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">DevOps</span>
+           <span class="credential-skill">DevOps</span>
           <span class="credential-skill">GitHub</span>
           <span class="credential-skill">Git</span>
           <span class="credential-skill">GitHub Actions</span>
@@ -373,7 +309,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="GitHub Foundations](./credentials/img/GH_Foundations.png)
+        ![loading="lazy" alt="GitHub Foundations ((en))image((/en))((es))imagen((/es))"](./credentials/img/GH_Foundations.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitHub((/en))((es))Emitido por: GitHub((/es))</span>
@@ -393,7 +329,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Security</span>
+           <span class="credential-skill">Security</span>
           <span class="credential-skill">Compliance</span>
           <span class="credential-skill">Identity</span>
           <span class="credential-skill">Cloud</span>
@@ -405,7 +341,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Security, Compliance, and Identity](./credentials/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
+        ![loading="lazy" alt="Security, Compliance, and Identity ((en))image((/en))((es))imagen((/es))"](./credentials/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
@@ -414,33 +350,6 @@ nav_current: 3
       </div>
       <div class="credential-description justify">
         ((en))I validated my expertise in the core concepts of security, compliance, and identity within Microsoft ecosystem. I demonstrated proficiency in describing the capabilities of Microsoft Entra and Microsoft's comprehensive security and compliance solutions.((/en))((es))Validé mi experiencia en los conceptos fundamentales de seguridad, cumplimiento e identidad dentro del ecosistema de Microsoft. Demostré competencia al describir las capacidades de Microsoft Entra y las soluciones integrales de seguridad y cumplimiento de Microsoft.((/es))
-        <span class="see-more"></span>
-      </div>
-    </div>
-    <div class="card" data-tags="certification">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">Compu Cuantrix</span>
-          <span class="title-rank">((en))Advanced Level((/en))((es))Nivel Avanzado((/es))</span>
-          <span class="title-score"></span>
-        </div>
-        <div class="credential-skills">
-          <span class="credential-skill">Advanced Computing</span>
-          <span class="credential-skill">Digital Literacy</span>
-          <span class="credential-skill">Problem Solving</span>
-          <span class="credential-skill">Technological Competence</span>
-          <span class="skills-more"></span>        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="Compu Cuantrix](./credentials/img/Compu_Cuantrix_nivel_avanzado.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Fundación Televisa((/en))((es))Emitido por: Fundación Televisa((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Compu_Cuantrix_nivel_avanzado.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))I validated my advanced computing skills through the Compu Cuantrix program by Televisa Foundation. This certification recognizes the mastery of complex technological tools and digital competencies required for high-level professional environments.((/en))((es))Validé mis habilidades de computación avanzada a través del programa Compu Cuantrix de Fundación Televisa. Esta certificación reconoce el dominio de herramientas tecnológicas complejas y competencias digitales requeridas para entornos profesionales de alto nivel.((/es))
         <span class="see-more"></span>
       </div>
     </div>
@@ -465,13 +374,13 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">English</span>
+           <span class="credential-skill">English</span>
           <span class="credential-skill">Listening</span>
           <span class="credential-skill">Reading</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="GoFluent English](./credentials/img/GoFluent_English_C2_Certificate.png)
+        ![loading="lazy" alt="GoFluent English ((en))image((/en))((es))imagen((/es))"](./credentials/img/GoFluent_English_C2_Certificate.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GoFluent((/en))((es))Emitido por: GoFluent((/es))</span>
@@ -491,7 +400,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Cloud</span>
+           <span class="credential-skill">Cloud</span>
           <span class="credential-skill">AWS</span>
           <span class="credential-skill">DevOps</span>
           <span class="credential-skill">AWS Cloud Concepts</span>
@@ -502,7 +411,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="AWS Cloud Practitioner Essentials](./credentials/img/Santander_AWS_Cloud_Practitioner_Essentials.png)
+        ![loading="lazy" alt="AWS Cloud Practitioner Essentials ((en))image((/en))((es))imagen((/es))"](./credentials/img/Santander_AWS_Cloud_Practitioner_Essentials.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander / TIDWIT (Powered by AWS)((/en))((es))Emitido por: Santander / TIDWIT (Powered by AWS)((/es))</span>
@@ -522,7 +431,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Cloud</span>
+           <span class="credential-skill">Cloud</span>
           <span class="credential-skill">AWS</span>
           <span class="credential-skill">Networking</span>
           <span class="credential-skill">Cloud Computing Concepts</span>
@@ -532,7 +441,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))AWS Cloud Fundamentals((/en)) ((es))Fundamentos de Nube AWS((/es))](./credentials/img/Santander_Fundamentos_de_Nube_AWS.png)
+        ![loading="lazy" alt="((en))AWS Cloud Fundamentals image((/en))((es))Fundamentos de Nube AWS imagen((/es))"](./credentials/img/Santander_Fundamentos_de_Nube_AWS.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander / TIDWIT (Powered by AWS)((/en))((es))Emitido por: Santander / TIDWIT (Powered by AWS)((/es))</span>
@@ -549,17 +458,17 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">EF SET English Certificate</span>
           <span class="title-rank">CEFR C2</span>
-          <span class="title-score">79/100</span>
+          <span class="title-score">((en))79/100((/en))((es))79/100((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">English</span>
+           <span class="credential-skill">English</span>
           <span class="credential-skill">Listening</span>
           <span class="credential-skill">Reading</span>
           <span class="credential-skill">Speaking</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="EF SET English Certificate](./credentials/img/EFSET_English_C2_Certificate.png)
+        ![loading="lazy" alt="EF SET English Certificate ((en))image((/en))((es))imagen((/es))"](./credentials/img/EFSET_English_C2_Certificate.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Education First (EF)((/en))((es))Emitido por: Education First (EF)((/es))</span>
@@ -579,14 +488,14 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">AI Foundations</span>
+           <span class="credential-skill">AI Foundations</span>
           <span class="credential-skill">Productivity Tools</span>
           <span class="credential-skill">Generative AI</span>
           <span class="credential-skill">Digital Workflow Optimization</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Artificial Intelligence and Productivity((/en))((es))Inteligencia Artificial y Productividad((/es))](./credentials/img/754_arielemilio_parra_EN.png)
+        ![loading="lazy" alt="((en))Artificial Intelligence and Productivity image((/en))((es))Inteligencia Artificial y Productividad imagen((/es))"](./credentials/img/754_arielemilio_parra_EN.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander Open Academy / Google((/en))((es))Emitido por: Santander Open Academy / Google((/es))</span>
@@ -606,7 +515,7 @@ nav_current: 3
           <span class="title-score">90/90 ((en))Activities((/en))(es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">ChatGPT Optimization</span>
+           <span class="credential-skill">ChatGPT Optimization</span>
           <span class="credential-skill">Prompt Engineering</span>
           <span class="credential-skill">AI-Powered Productivity</span>
           <span class="credential-skill">Market Readiness</span>
@@ -614,7 +523,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Generative AI - ONE((/en))((es))IA Generativa - ONE((/es))](./credentials/img/Oracle_One_IA_Generativa.png)
+        ![loading="lazy" alt="((en))Generative AI - ONE image((/en))((es))IA Generativa - ONE imagen((/es))"](./credentials/img/Oracle_One_IA_Generativa.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
@@ -634,7 +543,7 @@ nav_current: 3
           <span class="title-score">408/408 ((en))Activities((/en))((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">MySQL Server</span>
+           <span class="credential-skill">MySQL Server</span>
           <span class="credential-skill">Advanced SQL Queries</span>
           <span class="credential-skill">Stored Procedures</span>
           <span class="credential-skill">DML Commands</span>
@@ -643,7 +552,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))SQL with MySQL Server from Oracle - ONE((/en))((es))SQL con MySQL Server de Oracle - ONE((/es))](./credentials/img/Oracle_One_MySQL.png)
+        ![loading="lazy" alt="((en))SQL with MySQL Server from Oracle - ONE image((/en))((es))SQL con MySQL Server de Oracle - ONE imagen((/es))"](./credentials/img/Oracle_One_MySQL.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
@@ -658,19 +567,46 @@ nav_current: 3
     <div class="card" data-tags="certificate">
       <div class="credential-header">
         <div class="credential-title">
+          <span class="title-main">((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Constancia de Finalización((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+           <span class="credential-skill">Information Security Awareness</span>
+          <span class="credential-skill">Digital Risk Management</span>
+          <span class="credential-skill">Cyber Hygiene</span>
+          <span class="credential-skill">Workplace Security Best Practices</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Cybersecurity at Work image((/en))((es))Ciberseguridad en el Trabajo imagen((/es))"](./credentials/img/RPLC_CyberseguridadEnElTrabajo.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my professional competence in digital protection through the 'Cybersecurity at Work' course. I demonstrated proficiency in identifying risks and implementing best security practices within corporate environments, as certified by the Red por la Ciberseguridad Academy.((/en))((es))Validé mi competencia profesional en protección digital a través del curso 'Ciberseguridad en el Trabajo'. Demostré suficiencia en la identificación de riesgos e implementación de mejores prácticas de seguridad en entornos corporativos, certificado por la Academia de la Red por la Ciberseguridad.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
           <span class="title-main">((en))Artificial Intelligence at Work((/en))((es))Inteligencia Artificial en el trabajo((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Constancia de Finalización((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Artificial Intelligence</span>
+           <span class="credential-skill">Artificial Intelligence</span>
           <span class="credential-skill">Workplace Productivity</span>
           <span class="credential-skill">Generative AI</span>
           <span class="credential-skill">Digital Security Awareness</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Artificial Intelligence at Work((/en))((es))Inteligencia Artificial en el trabajo((/es))](./credentials/img/RPLC_IAenElTrabajo.png)
+        ![loading="lazy" alt="((en))Artificial Intelligence at Work image((/en))((es))Inteligencia Artificial en el trabajo imagen((/es))"](./credentials/img/RPLC_IAenElTrabajo.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad / Microsoft((/en))((es))Emitido por: Red por la Ciberseguridad / Microsoft((/es))</span>
@@ -690,14 +626,14 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Information Security</span>
+           <span class="credential-skill">Information Security</span>
           <span class="credential-skill">Digital Risk Management</span>
           <span class="credential-skill">Cybersecurity Best Practices</span>
           <span class="credential-skill">Workplace Security Awareness</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))](./credentials/img/RPLC_CiberseguridadTrabajo.png)
+        ![loading="lazy" alt="((en))Cybersecurity at Work image((/en))((es))Ciberseguridad en el Trabajo imagen((/es))"](./credentials/img/RPLC_CiberseguridadTrabajo.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
@@ -717,7 +653,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Data Structures</span>
+           <span class="credential-skill">Data Structures</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">control structures</span>
           <span class="credential-skill">Arrays</span>
@@ -727,7 +663,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Problem Solving (Basic)((/en))((es))Resolución de Problemas (Básico)((/es))](./credentials/img/HackerRank-problem_solving_basic.webp)
+        ![loading="lazy" alt="((en))Problem Solving (Basic) image((/en))((es))Resolución de Problemas (Básico) imagen((/es))"](./credentials/img/HackerRank-problem_solving_basic.webp)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: HackerRank((/en))((es))Emitido por: HackerRank((/es))</span>
@@ -747,7 +683,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Cybersecurity</span>
+           <span class="credential-skill">Cybersecurity</span>
           <span class="credential-skill">Networking</span>
           <span class="credential-skill">Network Security</span>
           <span class="credential-skill">Threat & Vulnerability Management</span>
@@ -756,7 +692,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Career Essentials in Cybersecurity](./credentials/img/Career_Essentials_in_Cybersecurity_by_Microsoft_and_LinkedIn.png)
+        ![loading="lazy" alt="Career Essentials in Cybersecurity ((en))image((/en))((es))imagen((/es))"](./credentials/img/Career_Essentials_in_Cybersecurity_by_Microsoft_and_LinkedIn.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft and LinkedIn((/es))</span>
@@ -776,7 +712,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">AI</span>
+           <span class="credential-skill">AI</span>
           <span class="credential-skill">Generative AI</span>
           <span class="credential-skill">Machine Learning</span>
           <span class="credential-skill">Prompt Engineering</span>
@@ -786,7 +722,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Career Essentials in Generative AI](./credentials/img/Career_Essentials_in_Generative_AI_by_Microsoft_and_LinkedIn.png)
+        ![loading="lazy" alt="Career Essentials in Generative AI ((en))image((/en))((es))imagen((/es))"](./credentials/img/Career_Essentials_in_Generative_AI_by_Microsoft_and_LinkedIn.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft and LinkedIn((/es))</span>
@@ -806,7 +742,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">DevOps</span>
+           <span class="credential-skill">DevOps</span>
           <span class="credential-skill">GitHub</span>
           <span class="credential-skill">Git</span>
           <span class="credential-skill">Open Source Collaboration</span>
@@ -815,7 +751,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Career Essentials in GitHub](./credentials/img/Linkedin_Career_Essentials_in_GitHub.webp)
+        ![loading="lazy" alt="Career Essentials in GitHub ((en))image((/en))((es))imagen((/es))"](./credentials/img/Linkedin_Career_Essentials_in_GitHub.webp)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitHub and LinkedIn((/en))((es))Emitido por: GitHub and LinkedIn((/es))</span>
@@ -835,7 +771,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">DevOps</span>
+           <span class="credential-skill">DevOps</span>
           <span class="credential-skill">CI/CD</span>
           <span class="credential-skill">GitLab</span>
           <span class="credential-skill">YAML Pipeline Authoring</span>
@@ -846,7 +782,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="GitLab CI](./credentials/img/GitLab_CI_Fundamentals.png)
+        ![loading="lazy" alt="GitLab CI ((en))image((/en))((es))imagen((/es))"](./credentials/img/GitLab_CI_Fundamentals.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitLab((/en))((es))Emitido por: GitLab((/es))</span>
@@ -866,7 +802,7 @@ nav_current: 3
           <span class="title-score">206/207 ((en))Activities((/en)) ((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Java OOP</span>
+           <span class="credential-skill">Java OOP</span>
           <span class="credential-skill">Collections & Lists</span>
           <span class="credential-skill">API Consumption</span>
           <span class="credential-skill">Exception Handling</span>
@@ -874,7 +810,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Java Object Oriented G6 - ONE((/en))((es))Java Orientado a Objetos G6 - ONE((/es))](./credentials/img/Oracle_One_Java_OOP.png)
+        ![loading="lazy" alt="((en))Java Object Oriented G6 - ONE image((/en))((es))Java Orientado a Objetos G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Java_OOP.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
@@ -894,7 +830,7 @@ nav_current: 3
           <span class="title-score">381/381 ((en))Activities((/en))((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Java</span>
+           <span class="credential-skill">Java</span>
           <span class="credential-skill">Spring Boot 3</span>
           <span class="credential-skill">Spring Data JPA</span>
           <span class="credential-skill">REST API Development</span>
@@ -904,7 +840,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Java and Spring Boot G6 - ONE((/en))((es))Java y Spring Boot G6 - ONE((/es))](./credentials/img/Oracle_One_Java_y_Spring_Boot.png)
+        ![loading="lazy" alt="((en))Java and Spring Boot G6 - ONE image((/en))((es))Java y Spring Boot G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Java_y_Spring_Boot.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
@@ -924,7 +860,7 @@ nav_current: 3
           <span class="title-score">198/198 ((en))Activities((/en)) ((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Agile Fundamentals</span>
+           <span class="credential-skill">Agile Fundamentals</span>
           <span class="credential-skill">Entrepreneurship</span>
           <span class="credential-skill">Business Planning</span>
           <span class="credential-skill">Career Strategy</span>
@@ -933,7 +869,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Entrepreneurship, Agility and Professional Protagonism G6 - ONE((/en))((es))Emprendimiento, Agilidad y Protagonismo Profesional G6 - ONE((/es))](./credentials/img/Oracle_One_Agility_Entrepreneurship.png)
+        ![loading="lazy" alt="((en))Entrepreneurship, Agility and Professional Protagonism G6 - ONE image((/en))((es))Emprendimiento, Agilidad y Protagonismo Profesional G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Agility_Entrepreneurship.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
@@ -953,7 +889,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Microsoft SC-900</span>
+           <span class="credential-skill">Microsoft SC-900</span>
           <span class="credential-skill">Cloud Security Fundamentals</span>
           <span class="credential-skill">Identity and Access Management (IAM)</span>
           <span class="credential-skill">Compliance Management</span>
@@ -961,7 +897,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Operation Aleph: SC-900((/en))((es))Operación Aleph: SC-900((/es))](./credentials/img/RPLC_OperacionAlephSC900.png)
+        ![loading="lazy" alt="((en))Operation Aleph: SC-900 image((/en))((es))Operación Aleph: SC-900 imagen((/es))"](./credentials/img/RPLC_OperacionAlephSC900.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
@@ -981,7 +917,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Internet Computer Protocol (ICP)</span>
+           <span class="credential-skill">Internet Computer Protocol (ICP)</span>
           <span class="credential-skill">Web3</span>
           <span class="credential-skill">TypeScript</span>
           <span class="credential-skill">Azle Framework</span>
@@ -990,7 +926,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))ICP Developer Azle((/en))((es))ICP Developer Azle((/es)) ](./credentials/img/ICP_Developer_Azle.png)
+        ![loading="lazy" alt="((en))ICP Developer Azle image((/en))((es))ICP Developer Azle imagen((/es))"](./credentials/img/ICP_Developer_Azle.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: ICP Hub Latam / Internet Computer ((/en))((es))Emitido por: ICP Hub Latam / Internet Computer ((/es))</span>
@@ -1007,10 +943,10 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))Beginner in Programming G6 - ONE((/en)) ((es))Principiante en Programación G6 - ONE((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
-          <span class="title-score">345/348 ((en)Activities(/en)) ((es)Actividades(/es))</span>
+          <span class="title-score">345/348 ((en))Activities((/en)) ((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Programming</span>
+           <span class="credential-skill">Programming</span>
           <span class="credential-skill">Web Development</span>
           <span class="credential-skill">JavaScript Logic</span>
           <span class="credential-skill">HTML5</span>
@@ -1021,7 +957,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Beginner in Programming G6 - ONE((/en)) ((es))Principiante en Programación G6 - ONE((/es))](./credentials/img/Oracle_One_Beginner.png)
+        ![loading="lazy" alt="((en))Beginner in Programming G6 - ONE image((/en))((es))Principiante en Programación G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Beginner.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
@@ -1038,10 +974,10 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))Professional Development G6 - ONE((/en))((es))Desarrollo Personal G6 - ONE((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
-          <span class="title-score">171/171 ((en)Activities(/en)) ((es)Actividades(/es))</span>
+          <span class="title-score">171/171 ((en))Activities((/en)) ((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Learning Strategies</span>
+           <span class="credential-skill">Learning Strategies</span>
           <span class="credential-skill">Personal Productivity</span>
           <span class="credential-skill">LinkedIn Optimization</span>
           <span class="credential-skill">Focus & Time Management</span>
@@ -1049,7 +985,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Professional Development G6 - ONE((/en))((es))Desarrollo Personal G6 - ONE((/es))](./credentials/img/Oracle_One_Professional_Development.png)
+        ![loading="lazy" alt="((en))Professional Development G6 - ONE image((/en))((es))Desarrollo Personal G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Professional_Development.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
@@ -1064,22 +1000,53 @@ nav_current: 3
     <div class="card" data-tags="certificate">
       <div class="credential-header">
         <div class="credential-title">
+          <span class="title-main">((en))CS50x: Introduction to Computer Science((/en))((es))CS50x: Introducción a la Ciencia de la Computación((/es))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Culminación((/es))</span>
+          <span class="title-score">((en))10 Problem Sets + Final Project Completed((/en))((es))10 Conjuntos de Problemas + Proyecto Final Completados((/es))</span>
+        </div>
+        <div class="credential-skills">
+           <span class="credential-skill">Algorithms</span>
+          <span class="credential-skill">Data Structures</span>
+          <span class="credential-skill">C</span>
+          <span class="credential-skill">Python</span>
+          <span class="credential-skill">SQL</span>
+          <span class="credential-skill">HTML/CSS</span>
+          <span class="credential-skill">JavaScript</span>
+          <span class="credential-skill">Flask</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))CS50x: Introduction to Computer Science image((/en))((es))CS50x: Introducción a la Ciencia de la Computación imagen((/es))"](./credentials/img/CS50x.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Harvard University((/en))((es))Emitido por: Harvard University((/es))</span>
+        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational knowledge of computer science and the art of programming through this Harvard University course. I successfully completed ten intensive problem sets and a final project, demonstrating proficiency in low-level programming with C, web development with Python and SQL, and core algorithmic thinking.((/en))((es))Validé mis conocimientos fundamentales de la ciencia de la computación y el arte de la programación a través de este curso de la Universidad de Harvard. Completé con éxito diez conjuntos de problemas intensivos y un proyecto final, demostrando competencia en programación de bajo nivel con C, desarrollo web con Python y SQL, y pensamiento algorítmico central.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
           <span class="title-main">((en))Artificial Intelligence and Data Science((/en))((es))Inteligencia Artificial y Data Science((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Artificial Intelligence</span>
+           <span class="credential-skill">Artificial Intelligence</span>
           <span class="credential-skill">Data Science</span>
           <span class="credential-skill">Machine Learning</span>
           <span class="credential-skill">Data Analysis</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Artificial Intelligence and Data Science((/en))((es))Inteligencia Artificial y Data Science((/es))](./credentials/img/BLOCKMAKERS_Inteligencia_Artificial.png)
+        ![loading="lazy" alt="((en))Artificial Intelligence and Data Science image((/en))((es))Inteligencia Artificial y Data Science imagen((/es))"](./credentials/img/BLOCKMAKERS_Inteligencia_Artificial.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/es))</span>
         <span class="credential-date">((en))Issued on: 2023-11((/en))((es))Fecha: 2023-11((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -1096,17 +1063,17 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Blockchain</span>
+           <span class="credential-skill">Blockchain</span>
           <span class="credential-skill">Solidity</span>
           <span class="credential-skill">Smart Contracts</span>
           <span class="credential-skill">Ethereum</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Solidity Bootcamp((/en))((es))Solidity Bootcamp((/es))](./credentials/img/BLOCKMAKERS_Solidity_Bootcamp.png)
+        ![loading="lazy" alt="((en))Solidity Bootcamp image((/en))((es))Solidity Bootcamp imagen((/es))"](./credentials/img/BLOCKMAKERS_Solidity_Bootcamp.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/es))</span>
         <span class="credential-date">((en))Issued on: 2023-11((/en))((es))Fecha: 2023-11((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -1123,17 +1090,17 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Blockchain Consulting</span>
+           <span class="credential-skill">Blockchain Consulting</span>
           <span class="credential-skill">Web3 Strategy</span>
           <span class="credential-skill">Decentralized Systems</span>
           <span class="credential-skill">Enterprise Blockchain</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Blockchain Consultant Professional((/en))((es))Blockchain Consultant Professional((/es))](./credentials/img/BLOCKMAKERS_Blockchain.png)
+        ![loading="lazy" alt="((en))Blockchain Consultant Professional image((/en))((es))Blockchain Consultant Professional imagen((/es))"](./credentials/img/BLOCKMAKERS_Blockchain.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/es))</span>
         <span class="credential-date">((en))Issued on: 2023-11((/en))((es))Fecha: 2023-11((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -1147,10 +1114,10 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))Financial Education Diploma((/en))((es))Diplomado en Educación Financiera((/es))</span>
           <span class="title-rank"></span>
-          <span class="title-score">8/10</span>
+          <span class="title-score">((en))8/10((/en))((es))8/10((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Personal Finance</span>
+           <span class="credential-skill">Personal Finance</span>
           <span class="credential-skill">Financial Planning</span>
           <span class="credential-skill">Savings & Investment</span>
           <span class="credential-skill">Consumer Credit Rights</span>
@@ -1158,15 +1125,42 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Financial Education Diploma((/en))((es))Diplomado en Educación Financiera((/es))](./credentials/img/Diploma_CONDUSEF.png)
+        ![loading="lazy" alt="((en))Financial Education Diploma image((/en))((es))Diplomado en Educación Financiera imagen((/es))"](./credentials/img/Diploma_CONDUSEF.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros / Secretaría de Hacienda y Crédito Público((/en))((es))Emitido por: Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros / Secretaría de Hacienda y Crédito Público((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (CONDUSEF) / Secretaría de Hacienda y Crédito Público((/en))((es))Emitido por: Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (CONDUSEF) / Secretaría de Hacienda y Crédito Público((/es))</span>
         <span class="credential-date">((en))Issued on: 2023-05((/en))((es))Fecha: 2023-05((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Diploma_CONDUSEF.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))I validated my expertise in personal finance through this 150-hour comprehensive diploma program (Generation 43). I demonstrated proficiency in financial planning, investment strategies, credit management, and user protection within the Mexican financial system.((/en))((es))Validé mi experiencia en finanzas personales a través de este diplomado integral de 150 horas (Generación 43). Demostré competencia en planeación financiera, estrategias de inversión, gestión de crédito y protección al usuario dentro del sistema financiero mexicano.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">Compu Cuantrix</span>
+          <span class="title-rank">((en))Advanced Level((/en))((es))Nivel Avanzado((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+           <span class="credential-skill">Advanced Computing</span>
+          <span class="credential-skill">Digital Literacy</span>
+          <span class="credential-skill">Problem Solving</span>
+          <span class="credential-skill">Technological Competence</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="Compu Cuantrix ((en))image((/en))((es))imagen((/es))"](./credentials/img/Compu_Cuantrix_nivel_avanzado.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Fundación Televisa((/en))((es))Emitido por: Fundación Televisa((/es))</span>
+        <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Compu_Cuantrix_nivel_avanzado.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my advanced computing skills through the Compu Cuantrix program by Televisa Foundation. This certification recognizes the mastery of complex technological tools and digital competencies required for high-level professional environments.((/en))((es))Validé mis habilidades de computación avanzada a través del programa Compu Cuantrix de Fundación Televisa. Esta certificación reconoce el dominio de herramientas tecnológicas complejas y competencias digitales requeridas para entornos profesionales de alto nivel.((/es))
         <span class="see-more"></span>
       </div>
     </div>
@@ -1188,10 +1182,10 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))AWS Knowledge: Cloud Essentials((/en))((es))AWS Knowledge: Cloud Essentials((/es))</span>
           <span class="title-rank">((en))Training Badge((/en))((es))Insignia de Entrenamiento((/es))</span>
-          <span class="title-score">((en))Verified((/en))((es))Verificado((/es))</span>
+          <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">AWS Compute</span>
+           <span class="credential-skill">AWS Compute</span>
           <span class="credential-skill">AWS Storage</span>
           <span class="credential-skill">AWS Networking</span>
           <span class="credential-skill">AWS Databases</span>
@@ -1201,7 +1195,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))AWS Knowledge: Cloud Essentials((/en))((es))AWS Knowledge: Cloud Essentials((/es))](./credentials/img/AWS_Cloud_Essentials.png)
+        ![loading="lazy" alt="((en))AWS Knowledge: Cloud Essentials image((/en))((es))AWS Knowledge: Cloud Essentials imagen((/es))"](./credentials/img/AWS_Cloud_Essentials.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
@@ -1221,7 +1215,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">IBM Z</span>
+           <span class="credential-skill">IBM Z</span>
           <span class="credential-skill">Mainframes</span>
           <span class="credential-skill">JCL (Job Control Language)</span>
           <span class="credential-skill">MVS Commands</span>
@@ -1233,7 +1227,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))IBM Z Xplore - Concepts((/en))((es))IBM Z Xplore - Conceptos((/es))](./credentials/img/IBM_ZXplore_Concepts.png)
+        ![loading="lazy" alt="((en))IBM Z Xplore - Concepts image((/en))((es))IBM Z Xplore - Conceptos imagen((/es))"](./credentials/img/IBM_ZXplore_Concepts.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: IBM((/en))((es))Emitido por: IBM((/es))</span>
@@ -1266,7 +1260,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Hackathon</span>
+           <span class="credential-skill">Hackathon</span>
           <span class="credential-skill">Team Leadership</span>
           <span class="credential-skill">Mobile Development</span>
           <span class="credential-skill">Flutter</span>
@@ -1277,7 +1271,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Talent Land Genius Arena](./credentials/img/Talent_Land_Hackathon_Genius_Arena_2026_Winner.png)
+        ![loading="lazy" alt="Talent Land Genius Arena ((en))image((/en))((es))imagen((/es))"](./credentials/img/Talent_Land_Hackathon_Genius_Arena_2026_Winner.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Talent Land / Banco Azteca((/en))((es))Emitido por: Talent Land / Banco Azteca((/es))</span>
@@ -1297,7 +1291,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Competitive Programming</span>
+           <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">Algorithms</span>
           <span class="credential-skill">ICPC</span>
@@ -1306,7 +1300,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="South Western Europe Regional Contest 2025](./credentials/img/2025_SWERC_AEPM_UTC.png)
+        ![loading="lazy" alt="South Western Europe Regional Contest 2025 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2025_SWERC_AEPM_UTC.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
@@ -1326,7 +1320,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Competitive Programming</span>
+           <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">ICPC</span>
           <span class="credential-skill">Data Structures</span>
@@ -1335,7 +1329,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Gran Premio de México 2025](./credentials/img/2025-ICPC-Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.png)
+        ![loading="lazy" alt="Gran Premio de México 2025 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2025-ICPC-Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
@@ -1355,7 +1349,7 @@ nav_current: 3
           <span class="title-score">((en))Recognition((/en))((es))Reconocimiento((/es))</span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Public Speaking</span>
+           <span class="credential-skill">Public Speaking</span>
           <span class="credential-skill">Career Development</span>
           <span class="credential-skill">Technical Mentoring</span>
           <span class="credential-skill">Career Coaching</span>
@@ -1364,7 +1358,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Technical Job Interviews Workshop Instructor((/en))((es))Tallerista: Entrevistas Técnicas de Trabajo((/es))](./credentials/img/UAA_TALLER_2025.jpg)
+        ![loading="lazy" alt="((en))Technical Job Interviews Workshop Instructor image((/en))((es))Tallerista: Entrevistas Técnicas de Trabajo imagen((/es))"](./credentials/img/UAA_TALLER_2025.jpg)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
@@ -1384,7 +1378,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Leadership</span>
+           <span class="credential-skill">Leadership</span>
           <span class="credential-skill">Project Management</span>
           <span class="credential-skill">Algorithmic Competition Design</span>
           <span class="credential-skill">Team Coordination</span>
@@ -1392,7 +1386,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Programming Contest Organizer((/en))((es))Organizador de Concurso de Programación((/es))](./credentials/img/UAA_CONCURSO_2025.jpg)
+        ![loading="lazy" alt="((en))Programming Contest Organizer image((/en))((es))Organizador de Concurso de Programación imagen((/es))"](./credentials/img/UAA_CONCURSO_2025.jpg)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
@@ -1412,7 +1406,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Strategic Leadership</span>
+           <span class="credential-skill">Strategic Leadership</span>
           <span class="credential-skill">Technical Mentoring</span>
           <span class="credential-skill">Community Management</span>
           <span class="credential-skill">Competitive Programming</span>
@@ -1420,7 +1414,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))President of the Competitive Programming Club (Gallos)((/en))((es))Presidente del Club de Programación Competitiva (Gallos)((/es))](./credentials/img/CPC-GALLOS_2024.jpg)
+        ![loading="lazy" alt="((en))President of the Competitive Programming Club (Gallos) image((/en))((es))Presidente del Club de Programación Competitiva (Gallos) imagen((/es))"](./credentials/img/CPC-GALLOS_2024.jpg)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
@@ -1428,7 +1422,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2024.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2024 semester[cite: 214, 215]. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2024[cite: 214, 215]. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))
+        ((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2024 semester. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2024. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))
         <span class="see-more"></span>
       </div>
     </div>
@@ -1440,7 +1434,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Competitive Programming</span>
+           <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">ICPC</span>
           <span class="credential-skill">Data Structures</span>
@@ -1449,7 +1443,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Gran Premio de México 2024](./credentials/img/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.png)
+        ![loading="lazy" alt="Gran Premio de México 2024 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
@@ -1469,7 +1463,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Competitive Programming</span>
+           <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">Data Structures</span>
           <span class="credential-skill">Algorithms</span>
@@ -1477,7 +1471,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))19th National Programming Contest ANIEI 2024((/en))((es))19º Concurso Nacional de Programación ANIEI 2024((/es))](./credentials/img/ANIEI-Ariel_Emilio_Parra_Martínez.png)
+        ![loading="lazy" alt="((en))19th National Programming Contest ANIEI 2024 image((/en))((es))19º Concurso Nacional de Programación ANIEI 2024 imagen((/es))"](./credentials/img/ANIEI-Ariel_Emilio_Parra_Martínez.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/en))((es))Emitido por: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/es))</span>
@@ -1485,7 +1479,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martínez.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my competitive programming skills by participating in the 19th National Programming Contest [cite: 198] during the XXXVII National and XXIII International Congress of Informatics and Computing (ANIEI 2024)[cite: 199]. The event was held at the Centro Universitario de Tonalá (UDG), focusing on the intersection of AI, reality, and virtual environments[cite: 194, 200].((/en))((es))Validé mis habilidades en programación competitiva mediante mi participación en el 19º Concurso Nacional de Programación [cite: 198] dentro del XXXVII Congreso Nacional y XXIII Congreso Internacional de Informática y Computación (ANIEI 2024)[cite: 199]. El evento se llevó a cabo en el Centro Universitario de Tonalá (UDG), con un enfoque en la intersección de la IA, la realidad y los entornos virtuales[cite: 194, 200].((/es))
+        ((en))I validated my competitive programming skills by participating in the 19th National Programming Contest during the XXXVII National and XXIII International Congress of Informatics and Computing (ANIEI 2024). The event was held at the Centro Universitario de Tonalá (UDG), focusing on the intersection of AI, reality, and virtual environments.((/en))((es))Validé mis habilidades en programación competitiva mediante mi participación en el 19º Concurso Nacional de Programación dentro del XXXVII Congreso Nacional y XXIII Congreso Internacional de Informática y Computación (ANIEI 2024). El evento se llevó a cabo en el Centro Universitario de Tonalá (UDG), con un enfoque en la intersección de la IA, la realidad y los entornos virtuales.((/es))
         <span class="see-more"></span>
       </div>
     </div>
@@ -1497,7 +1491,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-          <span class="credential-skill">Competitive Programming</span>
+           <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">Data Structures</span>
           <span class="credential-skill">Algorithms</span>
@@ -1505,7 +1499,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Meta Hacker Cup 2024 - Round 1((/en))((es))Meta Hacker Cup 2024 - Ronda 1((/es))](./credentials/img/MetaHackerCup-2024.png)
+        ![loading="lazy" alt="((en))Meta Hacker Cup 2024 - Round 1 image((/en))((es))Meta Hacker Cup 2024 - Ronda 1 imagen((/es))"](./credentials/img/MetaHackerCup-2024.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Meta((/en))((es))Emitido por: Meta((/es))</span>

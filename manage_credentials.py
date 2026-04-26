@@ -386,9 +386,19 @@ def generate_card(c):
     
     image = c.get('image', '')
     if image:
+        title = c.get('title', '')
+        if '((en))' in title:
+            en_match = re.search(r'\(\(en\)\)(.*?)\(\(/en\)\)', title)
+            es_match = re.search(r'\(\(es\)\)(.*?)\(\(/es\)\)', title)
+            if en_match and es_match:
+                alt_text = '((en))' + en_match.group(1) + ' image((/en))((es))' + es_match.group(1) + ' imagen((/es))'
+            else:
+                alt_text = '((en))image((/en))((es))imagen((/es))'
+        else:
+            alt_text = title + ' ((en))image((/en))((es))imagen((/es))'
         image_html = '''
       <div class="credential-preview">
-        ![loading="lazy" alt="''' + c.get('title', '') + '''](''' + image + ''')
+        ![loading="lazy" alt="''' + alt_text + '"](''' + image + ''')
       </div>'''
     else:
         image_html = ""
@@ -398,16 +408,25 @@ def generate_card(c):
     
     issuer_en = c.get('issuer', '')
     issuer_text = '((en))Issuer: ' + issuer_en + '((/en))((es))Emitido por: ' + issuer_en + '((/es))'
+
+    score = c.get('score', '')
+    if score:
+        if '((en))' in score or '((es))' in score:
+            score_text = score
+        else:
+            score_text = '((en))' + score + '((/en))((es))' + score + '((/es))'
+    else:
+        score_text = ''
     
     card = '''    <div class="card" data-tags="''' + ctype + '''">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">''' + c.get('title', '') + '''</span>
           <span class="title-rank">''' + c.get('level', '') + '''</span>
-          <span class="title-score">''' + c.get('score', '') + '''</span>
+          <span class="title-score">''' + score_text + '''</span>
         </div>
         <div class="credential-skills">
-''' + skills_html + '''        </div>
+ ''' + skills_html + '''        </div>
       </div>''' + image_html + '''
       <div class="credential-meta">
         <span class="credential-issuer">''' + issuer_text + '''</span>''' + link_html + '''
