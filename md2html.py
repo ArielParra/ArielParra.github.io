@@ -237,14 +237,16 @@ def md_to_html_phase2(text):
     return text
 
 def get_translations(text):
-    """Extracts both English and Spanish translations from i18n tags.
+    """Extracts both English and Spanish translations from i18n tags or objects.
     
     Args:
-        text: The text containing i18n tags.
+        text: The text containing i18n tags or a dict with en/es keys.
         
     Returns:
         tuple: (en_content, es_content)
     """
+    if isinstance(text, dict):
+        return text.get('en', ''), text.get('es', '')
     if not isinstance(text, str):
         return text, text
     pattern = re.compile(r'\(\((en|es)\)\)(.*?)\(\(/\1\)\)', re.DOTALL)
@@ -258,15 +260,17 @@ def get_translations(text):
     return results['en'], results['es']
 
 def extract_translation(text, lang):
-    """Extracts the translation for the given language from i18n tags.
+    """Extracts the translation for the given language from i18n tags or objects.
     
     Args:
-        text: The text containing i18n tags.
+        text: The text containing i18n tags or a dict with en/es keys.
         lang: The language to extract ('en' or 'es').
         
     Returns:
         The translated text or the original text if no tags are found.
     """
+    if isinstance(text, dict):
+        return text.get(lang, text.get('en', ''))
     if not isinstance(text, str):
         return text
     pattern = re.compile(r'\(\((en|es)\)\)(.*?)\(\(/\1\)\)', re.DOTALL)

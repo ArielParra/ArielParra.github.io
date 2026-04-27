@@ -8,7 +8,7 @@ endif
 
 script := md2html.py
 
-all: index portfolio contact credentials 404
+all: index portfolio contact credentials_md credentials 404
 
 index:
 	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./index.md) $(call FixPath,./index.html)
@@ -19,12 +19,13 @@ portfolio:
 contact:
 	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./contact/index.md) $(call FixPath,./contact/index.html)
 
-# This is a special case that makes credentials.html from 
-credentials:
+credentials_md: 
 	@echo "Sorting credentials.json..."
 	$(PYTHON) $(call FixPath,manage_credentials.py) sort
 	@echo "Generating credentials/index.md file..."
 	$(PYTHON) $(call FixPath,manage_credentials.py) generate
+
+credentials:
 	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./credentials/index.md) $(call FixPath,./credentials/index.html)
 
 404:

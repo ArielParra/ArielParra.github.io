@@ -13,7 +13,7 @@ nav_current: 3
   <div class="card" data-tags="education">
  <hr>
  <div class="center">
- ### ((en))Education((/en))((es))Educación((/es)) <span class="section-count" data-type="education">(0)</span>
+ ### ((en))Education((/en))((es))Educación((/es)) <span class="section-count" data-type="education">0</span>
  <div class="credential-description center">
 ((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))
  </div>
@@ -27,17 +27,17 @@ nav_current: 3
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))B.Sc. in Computer Systems Engineering((/en))((es))Ingeniería en Sistemas Computacionales((/es))</span>
-          <span class="title-rank">((en))Bachelor of Science Degree (Plan 2023)((/en))((es))Título de Licenciatura (Plan 2023)((/es))</span>
+          <span class="title-rank">((en))Bachelor of Science Degree((/en))((es))Título de Licenciatura((/es))</span>
           <span class="title-score">((en))9.34 / 10.0((/en))((es))9.34 / 10.0((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Software Architecture & Design</span>
-          <span class="credential-skill">Data Engineering & Big Data</span>
-          <span class="credential-skill">Cloud Computing & Distributed Systems</span>
-          <span class="credential-skill">Network Administration & Security</span>
-          <span class="credential-skill">Embedded Systems & Hardware Analysis</span>
-          <span class="credential-skill">Agile Methodologies</span>
-          <span class="credential-skill">Cybersecurity Assurance</span>
+            <span class="credential-skill">((en))Software Architecture & Design((/en))((es))Arquitectura y Diseño de Software((/es))</span>
+          <span class="credential-skill">((en))Data Engineering & Big Data((/en))((es))Ingeniería de Datos y Big Data((/es))</span>
+          <span class="credential-skill">((en))Cloud Computing & Distributed Systems((/en))((es))Computación en la Nube y Sistemas Distribuidos((/es))</span>
+          <span class="credential-skill">((en))Network Administration & Security((/en))((es))Administración de Redes y Seguridad((/es))</span>
+          <span class="credential-skill">((en))Embedded Systems & Hardware Analysis((/en))((es))Sistemas Embebidos y Análisis de Hardware((/es))</span>
+          <span class="credential-skill">((en))Agile Methodologies((/en))((es))Metodologías Ágiles((/es))</span>
+          <span class="credential-skill">((en))Cybersecurity Assurance((/en))((es))Garantía de Ciberseguridad((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -45,7 +45,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2026((/en))((es))Fecha: 2026((/es))</span>
+        <span class="credential-date">2026</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.uaa.mx/descubretucarrera/ccb/ing-en-sistemas-computacionales/plan.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -56,7 +56,7 @@ nav_current: 3
     <div class="card" data-tags="education ai networks">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Génie Informatique ((en))(Computer Engineering)((/en))((es))(Ingeniería Informática)((/es))</span>
+          <span class="title-main">((en))Génie informatique (Computer Engineering)((/en))((es))Génie informatique (Ingeniería Informática)((/es))</span>
           <span class="title-rank">((en))Exchange Student / Study Abroad((/en))((es))Estudiante de Intercambio Académico((/es))</span>
           <span class="title-score">((en))ECTS C((/en))((es))ECTS C((/es))</span>
         </div>
@@ -71,11 +71,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))(Computer Engineering) image((/en))((es))(Ingeniería Informática) imagen((/es))"](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg/1280px-Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg.png)
+        ![loading="lazy" alt="((en))Génie informatique (Computer Engineering) image((/en))((es))Génie informatique (Ingeniería Informática) imagen((/es))"](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg/1280px-Technische_Universit%C3%A4t_Compi%C3%A8gne_Logo.svg.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Université de Technologie de Compiègne (UTC)((/en))((es))Emitido por: Université de Technologie de Compiègne (UTC)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-09((/en))((es))Fecha: 2025-09((/es))</span>
+        <span class="credential-date">((en))Sept. 2025((/en))((es))Sept. 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.utc.fr/wp-content/uploads/sites/28/2021/01/gi2021-web.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -86,9 +86,9 @@ nav_current: 3
     <div class="card" data-tags="education programming">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Oracle Next Education (ONE)</span>
-          <span class="title-rank">Back-end Program</span>
-          <span class="title-score">1301/1302 ((en))Activities((/en))((es))Actividades((/es))</span>
+          <span class="title-main">((en))Oracle Next Education (ONE)((/en))((es))Oracle Next Education (ONE)((/es))</span>
+          <span class="title-rank">((en))Back-end Program((/en))((es))Back-end Program((/es))</span>
+          <span class="title-score">((en))1301/1302 Activities((/en))((es))1301/1302 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
             <span class="credential-skill">Programming</span>
@@ -106,11 +106,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Oracle Next Education (ONE) ((en))image((/en))((es))imagen((/es))"](./credentials/img/Oracle_One_Programa.png)
+        ![loading="lazy" alt="((en))Oracle Next Education (ONE) image((/en))((es))Oracle Next Education (ONE) imagen((/es))"](./credentials/img/Oracle_One_Programa.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-05((/en))((es))Fecha: 2024-05((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
+        <span class="credential-date">((en))May 2024((/en))((es))Mayo 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/program/certificate/80f90beb-02e0-48ae-a5a4-c097d226c28e){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -124,9 +124,9 @@ nav_current: 3
   <div class="card" data-tags="certification">
  <hr>
  <div class="center">
- ### ((en))Certifications((/en))((es))Certificaciones((/es)) <span class="section-count" data-type="certification">(0)</span>
+ ### ((en))Certifications((/en))((es))Certificaciones((/es)) <span class="section-count" data-type="certification">0</span>
  <div class="credential-description center">
-((en))Proctored exam-based credentials that validate professional expertise.((/en))((es))Acreditaciones basadas en exámenes supervisados que validan la experiencia profesional.((/es))
+((en))Proctored exam-based credentials.((/en))((es))Acreditaciones basadas en exámenes.((/es))
  </div>
  </div>
  <hr>
@@ -137,8 +137,8 @@ nav_current: 3
     <div class="card" data-tags="certification cloud">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">AWS Certified Cloud Practitioner</span>
-          <span class="title-rank">Foundational</span>
+          <span class="title-main">((en))AWS Certified Cloud Practitioner((/en))((es))AWS Certified Cloud Practitioner((/es))</span>
+          <span class="title-rank">((en))Foundational((/en))((es))Foundational((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -161,11 +161,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="AWS Certified Cloud Practitioner ((en))image((/en))((es))imagen((/es))"](./credentials/img/AWS_Cloud_Practitioner.png)
+        ![loading="lazy" alt="((en))AWS Certified Cloud Practitioner image((/en))((es))AWS Certified Cloud Practitioner imagen((/es))"](./credentials/img/AWS_Cloud_Practitioner.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-07((/en))((es))Fecha: 2025-07((/es))</span>
+        <span class="credential-date">((en))July 2025((/en))((es))Jul. 2025((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/c3534c43-4770-43e1-9d13-c98260a0cb00/){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -176,8 +176,8 @@ nav_current: 3
     <div class="card" data-tags="certification Language">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">TOEFL iBT</span>
-          <span class="title-rank">CEFR B2</span>
+          <span class="title-main">((en))TOEFL iBT((/en))((es))TOEFL iBT((/es))</span>
+          <span class="title-rank">((en))CEFR B2((/en))((es))CEFR B2((/es))</span>
           <span class="title-score">((en))89/120((/en))((es))89/120((/es))</span>
         </div>
         <div class="credential-skills">
@@ -189,11 +189,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="TOEFL iBT ((en))image((/en))((es))imagen((/es))"](./credentials/img/TOEFL_IBT_AEPM_2025.png)
+        ![loading="lazy" alt="((en))TOEFL iBT image((/en))((es))TOEFL iBT imagen((/es))"](./credentials/img/TOEFL_IBT_AEPM_2025.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Educational Testing Service (ETS)((/en))((es))Emitido por: Educational Testing Service (ETS)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-01((/en))((es))Fecha: 2025-01((/es))</span>
+        <span class="credential-date">((en))Jan. 2025((/en))((es))Ene. 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/TOEFL_IBT_AEPM_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -204,8 +204,8 @@ nav_current: 3
     <div class="card" data-tags="certification ai cloud">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Azure AI</span>
-          <span class="title-rank">Fundamentals</span>
+          <span class="title-main">((en))Azure AI((/en))((es))Azure AI((/es))</span>
+          <span class="title-rank">((en))Fundamentals((/en))((es))Fundamentals((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -220,11 +220,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Azure AI ((en))image((/en))((es))imagen((/es))"](./credentials/img/MS_AI900.png)
+        ![loading="lazy" alt="((en))Azure AI image((/en))((es))Azure AI imagen((/es))"](./credentials/img/MS_AI900.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-11((/en))((es))Fecha: 2024-11((/es))</span>
+        <span class="credential-date">((en))Nov. 2024((/en))((es))Nov. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/7B85BE1673D5720D){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -235,8 +235,8 @@ nav_current: 3
     <div class="card" data-tags="certification ai cloud">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">OCI Generative AI Certified</span>
-          <span class="title-rank">Professional</span>
+          <span class="title-main">((en))OCI Generative AI Certified((/en))((es))OCI Generative AI Certified((/es))</span>
+          <span class="title-rank">((en))Professional((/en))((es))Professional((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -252,11 +252,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="OCI Generative AI Certified ((en))image((/en))((es))imagen((/es))"](./credentials/img/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
+        ![loading="lazy" alt="((en))OCI Generative AI Certified image((/en))((es))OCI Generative AI Certified imagen((/es))"](./credentials/img/Oracle_Cloud_Infrastructure_2024_Generative_AI_Certified_Professional.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-07((/en))((es))Fecha: 2024-07((/es))</span>
+        <span class="credential-date">((en))July 2024((/en))((es))Jul. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=7DD090751D80D1CE9EC6B1DA78D457443D935A64E485A8C85C1FE63E7C05DD0A){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -267,8 +267,8 @@ nav_current: 3
     <div class="card" data-tags="certification ai cloud">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">OCI AI Foundations</span>
-          <span class="title-rank">Associate</span>
+          <span class="title-main">((en))OCI AI Foundations((/en))((es))OCI AI Foundations((/es))</span>
+          <span class="title-rank">((en))Associate((/en))((es))Associate((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -284,11 +284,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="OCI AI Foundations ((en))image((/en))((es))imagen((/es))"](./credentials/img/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
+        ![loading="lazy" alt="((en))OCI AI Foundations image((/en))((es))OCI AI Foundations imagen((/es))"](./credentials/img/Oracle_Cloud_Infrastructure_2023_AI_Foundations_Associate.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-07((/en))((es))Fecha: 2024-07((/es))</span>
+        <span class="credential-date">((en))July 2024((/en))((es))Jul. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=30992A10499F1A0197793FF82B04E2513DC2F17E1B28756FB0B6EE8F8B29D9A2){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -299,8 +299,8 @@ nav_current: 3
     <div class="card" data-tags="certification devops">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">GitHub Foundations</span>
-          <span class="title-rank">Certification Program</span>
+          <span class="title-main">((en))GitHub Foundations((/en))((es))GitHub Foundations((/es))</span>
+          <span class="title-rank">((en))Certification Program((/en))((es))Certification Program((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -315,11 +315,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="GitHub Foundations ((en))image((/en))((es))imagen((/es))"](./credentials/img/GH_Foundations.png)
+        ![loading="lazy" alt="((en))GitHub Foundations image((/en))((es))GitHub Foundations imagen((/es))"](./credentials/img/GH_Foundations.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitHub((/en))((es))Emitido por: GitHub((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-06((/en))((es))Fecha: 2024-06((/es))</span>
+        <span class="credential-date">((en))June 2024((/en))((es))Jun. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f024c37b-a271-4588-b5b3-bafbdb7cd661/){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -330,8 +330,8 @@ nav_current: 3
     <div class="card" data-tags="certification cybersecurity cloud">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Security, Compliance, and Identity</span>
-          <span class="title-rank">Fundamentals</span>
+          <span class="title-main">((en))Security, Compliance, and Identity((/en))((es))Security, Compliance, and Identity((/es))</span>
+          <span class="title-rank">((en))Fundamentals((/en))((es))Fundamentals((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -347,11 +347,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Security, Compliance, and Identity ((en))image((/en))((es))imagen((/es))"](./credentials/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
+        ![loading="lazy" alt="((en))Security, Compliance, and Identity image((/en))((es))Security, Compliance, and Identity imagen((/es))"](./credentials/img/MS_Security_Compliance_and_Identity_Fundamentals.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-04((/en))((es))Fecha: 2024-04((/es))</span>
+        <span class="credential-date">((en))Apr. 2024((/en))((es))Abr. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/D4A8CCF36FAC1D6E){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -365,9 +365,9 @@ nav_current: 3
   <div class="card" data-tags="certificate">
  <hr>
  <div class="center">
- ### ((en))Certificates((/en))((es))Certificados((/es)) <span class="section-count" data-type="certificate">(0)</span>
+ ### ((en))Certificates((/en))((es))Certificados((/es)) <span class="section-count" data-type="certificate">0</span>
  <div class="credential-description center">
-((en))Course completion or unproctored exam certificates.((/en))((es))Certificados de finalización de cursos o exámenes no supervisados.((/es))
+((en))Course completion certificates.((/en))((es))Certificados de finalización.((/es))
  </div>
  </div>
  <hr>
@@ -378,8 +378,8 @@ nav_current: 3
     <div class="card" data-tags="certificate Language">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">GoFluent English</span>
-          <span class="title-rank">CEFR C2</span>
+          <span class="title-main">((en))GoFluent English((/en))((es))GoFluent English((/es))</span>
+          <span class="title-rank">((en))CEFR C2((/en))((es))CEFR C2((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -389,11 +389,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="GoFluent English ((en))image((/en))((es))imagen((/es))"](./credentials/img/GoFluent_English_C2_Certificate.png)
+        ![loading="lazy" alt="((en))GoFluent English image((/en))((es))GoFluent English imagen((/es))"](./credentials/img/GoFluent_English_C2_Certificate.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GoFluent((/en))((es))Emitido por: GoFluent((/es))</span>
-        <span class="credential-date">((en))Issued on: 2026-03((/en))((es))Fecha: 2026-03((/es))</span>
+        <span class="credential-date">((en))Mar. 2026((/en))((es))Mar. 2026((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/GoFluent_English_C2_Certificate.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -404,8 +404,8 @@ nav_current: 3
     <div class="card" data-tags="certificate cloud">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">AWS Cloud Practitioner Essentials</span>
-          <span class="title-rank">Learning Path Certificate</span>
+          <span class="title-main">((en))AWS Cloud Practitioner Essentials((/en))((es))AWS Cloud Practitioner Essentials((/es))</span>
+          <span class="title-rank">((en))Learning Path Certificate((/en))((es))Learning Path Certificate((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -420,11 +420,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="AWS Cloud Practitioner Essentials ((en))image((/en))((es))imagen((/es))"](./credentials/img/Santander_AWS_Cloud_Practitioner_Essentials.png)
+        ![loading="lazy" alt="((en))AWS Cloud Practitioner Essentials image((/en))((es))AWS Cloud Practitioner Essentials imagen((/es))"](./credentials/img/Santander_AWS_Cloud_Practitioner_Essentials.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander / TIDWIT (Powered by AWS)((/en))((es))Emitido por: Santander / TIDWIT (Powered by AWS)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-04((/en))((es))Fecha: 2025-04((/es))</span>
+        <span class="credential-date">((en))Apr. 2025((/en))((es))Abr. 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_AWS_Cloud_Practitioner_Essentials.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -435,8 +435,8 @@ nav_current: 3
     <div class="card" data-tags="certificate cloud">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">((en))AWS Cloud Fundamentals((/en)) ((es))Fundamentos de Nube AWS((/es))</span>
-          <span class="title-rank">Learning Path Certificate</span>
+          <span class="title-main">((en))AWS Cloud Fundamentals((/en))((es))Fundamentos de Nube AWS((/es))</span>
+          <span class="title-rank">((en))Learning Path Certificate((/en))((es))Learning Path Certificate((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -454,7 +454,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander / TIDWIT (Powered by AWS)((/en))((es))Emitido por: Santander / TIDWIT (Powered by AWS)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-04((/en))((es))Fecha: 2025-04((/es))</span>
+        <span class="credential-date">((en))Apr. 2025((/en))((es))Abr. 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -465,8 +465,8 @@ nav_current: 3
     <div class="card" data-tags="certificate Language">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">EF SET English Certificate</span>
-          <span class="title-rank">CEFR C2</span>
+          <span class="title-main">((en))EF SET English Certificate((/en))((es))EF SET English Certificate((/es))</span>
+          <span class="title-rank">((en))CEFR C2((/en))((es))CEFR C2((/es))</span>
           <span class="title-score">((en))79/100((/en))((es))79/100((/es))</span>
         </div>
         <div class="credential-skills">
@@ -477,11 +477,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="EF SET English Certificate ((en))image((/en))((es))imagen((/es))"](./credentials/img/EFSET_English_C2_Certificate.png)
+        ![loading="lazy" alt="((en))EF SET English Certificate image((/en))((es))EF SET English Certificate imagen((/es))"](./credentials/img/EFSET_English_C2_Certificate.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Education First (EF)((/en))((es))Emitido por: Education First (EF)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-01((/en))((es))Fecha: 2025-01((/es))</span>
+        <span class="credential-date">((en))Jan. 2025((/en))((es))Ene. 2025((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cert.efset.org/en/akd3bm){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -508,7 +508,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander Open Academy / Google((/en))((es))Emitido por: Santander Open Academy / Google((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-12((/en))((es))Fecha: 2024-12((/es))</span>
+        <span class="credential-date">((en))Dec. 2024((/en))((es))Dic. 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/754_arielemilio_parra_EN.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -521,7 +521,7 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))Generative AI - ONE((/en))((es))IA Generativa - ONE((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
-          <span class="title-score">90/90 ((en))Activities((/en))(es))Actividades((/es))</span>
+          <span class="title-score">((en))90/90 Activities((/en))((es))90/90 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
             <span class="credential-skill">ChatGPT Optimization</span>
@@ -535,8 +535,8 @@ nav_current: 3
         ![loading="lazy" alt="((en))Generative AI - ONE image((/en))((es))IA Generativa - ONE imagen((/es))"](./credentials/img/Oracle_One_IA_Generativa.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-11((/en))((es))Fecha: 2024-11((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
+        <span class="credential-date">((en))Nov. 2024((/en))((es))Nov. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/bd61f356-6b68-41b1-b9c6-8c607ecbbb3f){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -549,7 +549,7 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))SQL with MySQL Server from Oracle - ONE((/en))((es))SQL con MySQL Server de Oracle - ONE((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
-          <span class="title-score">408/408 ((en))Activities((/en))((es))Actividades((/es))</span>
+          <span class="title-score">((en))408/408 Activities((/en))((es))408/408 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
             <span class="credential-skill">MySQL Server</span>
@@ -564,8 +564,8 @@ nav_current: 3
         ![loading="lazy" alt="((en))SQL with MySQL Server from Oracle - ONE image((/en))((es))SQL con MySQL Server de Oracle - ONE imagen((/es))"](./credentials/img/Oracle_One_MySQL.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-09((/en))((es))Fecha: 2024-09((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
+        <span class="credential-date">((en))Sept. 2024((/en))((es))Sept. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/4f5b1c64-9851-4115-9bad-a402d2c9289a){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -592,7 +592,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
+        <span class="credential-date">((en))Aug. 2024((/en))((es))Ago. 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -619,7 +619,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad / Microsoft((/en))((es))Emitido por: Red por la Ciberseguridad / Microsoft((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
+        <span class="credential-date">((en))Aug. 2024((/en))((es))Ago. 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724038728/3923002801AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -646,7 +646,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
+        <span class="credential-date">((en))Aug. 2024((/en))((es))Ago. 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -676,7 +676,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: HackerRank((/en))((es))Emitido por: HackerRank((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-08((/en))((es))Fecha: 2024-08((/es))</span>
+        <span class="credential-date">((en))Aug. 2024((/en))((es))Ago. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.hackerrank.com/certificates/610bac95af9a){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -687,8 +687,8 @@ nav_current: 3
     <div class="card" data-tags="certificate cybersecurity networks">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Career Essentials in Cybersecurity</span>
-          <span class="title-rank">Professional Certificate</span>
+          <span class="title-main">((en))Career Essentials in Cybersecurity((/en))((es))Career Essentials in Cybersecurity((/es))</span>
+          <span class="title-rank">((en))Professional Certificate((/en))((es))Professional Certificate((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -701,11 +701,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Career Essentials in Cybersecurity ((en))image((/en))((es))imagen((/es))"](./credentials/img/Career_Essentials_in_Cybersecurity_by_Microsoft_and_LinkedIn.png)
+        ![loading="lazy" alt="((en))Career Essentials in Cybersecurity image((/en))((es))Career Essentials in Cybersecurity imagen((/es))"](./credentials/img/Career_Essentials_in_Cybersecurity_by_Microsoft_and_LinkedIn.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft and LinkedIn((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-07((/en))((es))Fecha: 2024-07((/es))</span>
+        <span class="credential-date">((en))July 2024((/en))((es))Jul. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/c6d4100d5d3e6ff21724a72cc1b339bd2a8834132a078fd1765a01f87ffeeddd){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -716,8 +716,8 @@ nav_current: 3
     <div class="card" data-tags="certificate ai">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Career Essentials in Generative AI</span>
-          <span class="title-rank">Professional Certificate</span>
+          <span class="title-main">((en))Career Essentials in Generative AI((/en))((es))Career Essentials in Generative AI((/es))</span>
+          <span class="title-rank">((en))Professional Certificate((/en))((es))Professional Certificate((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -731,11 +731,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Career Essentials in Generative AI ((en))image((/en))((es))imagen((/es))"](./credentials/img/Career_Essentials_in_Generative_AI_by_Microsoft_and_LinkedIn.png)
+        ![loading="lazy" alt="((en))Career Essentials in Generative AI image((/en))((es))Career Essentials in Generative AI imagen((/es))"](./credentials/img/Career_Essentials_in_Generative_AI_by_Microsoft_and_LinkedIn.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft and LinkedIn((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-07((/en))((es))Fecha: 2024-07((/es))</span>
+        <span class="credential-date">((en))July 2024((/en))((es))Jul. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -746,8 +746,8 @@ nav_current: 3
     <div class="card" data-tags="certificate devops">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Career Essentials in GitHub</span>
-          <span class="title-rank">Professional Certificate</span>
+          <span class="title-main">((en))Career Essentials in GitHub((/en))((es))Career Essentials in GitHub((/es))</span>
+          <span class="title-rank">((en))Professional Certificate((/en))((es))Professional Certificate((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -760,11 +760,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Career Essentials in GitHub ((en))image((/en))((es))imagen((/es))"](./credentials/img/Linkedin_Career_Essentials_in_GitHub.webp)
+        ![loading="lazy" alt="((en))Career Essentials in GitHub image((/en))((es))Career Essentials in GitHub imagen((/es))"](./credentials/img/Linkedin_Career_Essentials_in_GitHub.webp)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitHub and LinkedIn((/en))((es))Emitido por: GitHub and LinkedIn((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-06((/en))((es))Fecha: 2024-06((/es))</span>
+        <span class="credential-date">((en))June 2024((/en))((es))Jun. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://lnkd.in/d8q5GMah){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -775,8 +775,8 @@ nav_current: 3
     <div class="card" data-tags="certificate devops">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">GitLab CI</span>
-          <span class="title-rank">Fundamentals</span>
+          <span class="title-main">((en))GitLab CI((/en))((es))GitLab CI((/es))</span>
+          <span class="title-rank">((en))Fundamentals((/en))((es))Fundamentals((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -791,11 +791,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="GitLab CI ((en))image((/en))((es))imagen((/es))"](./credentials/img/GitLab_CI_Fundamentals.png)
+        ![loading="lazy" alt="((en))GitLab CI image((/en))((es))GitLab CI imagen((/es))"](./credentials/img/GitLab_CI_Fundamentals.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitLab((/en))((es))Emitido por: GitLab((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-06((/en))((es))Fecha: 2024-06((/es))</span>
+        <span class="credential-date">((en))June 2024((/en))((es))Jun. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -808,7 +808,7 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))Java Object Oriented G6 - ONE((/en))((es))Java Orientado a Objetos G6 - ONE((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
-          <span class="title-score">206/207 ((en))Activities((/en)) ((es))Actividades((/es))</span>
+          <span class="title-score">((en))206/207 Activities((/en))((es))206/207 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
             <span class="credential-skill">Java OOP</span>
@@ -822,8 +822,8 @@ nav_current: 3
         ![loading="lazy" alt="((en))Java Object Oriented G6 - ONE image((/en))((es))Java Orientado a Objetos G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Java_OOP.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-05-20((/en))((es))Fecha: 2024-05-20((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
+        <span class="credential-date">((en))May 2024((/en))((es))Mayo 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/f45675e9-f450-4305-b003-3fc56339d4da){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -836,7 +836,7 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))Java and Spring Boot G6 - ONE((/en))((es))Java y Spring Boot G6 - ONE((/es))</span>
           <span class="title-rank">((en))Degree Certificate((/en))((es))Certificado de Formación((/es))</span>
-          <span class="title-score">381/381 ((en))Activities((/en))((es))Actividades((/es))</span>
+          <span class="title-score">((en))381/381 Activities((/en))((es))381/381 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
             <span class="credential-skill">Java</span>
@@ -852,8 +852,8 @@ nav_current: 3
         ![loading="lazy" alt="((en))Java and Spring Boot G6 - ONE image((/en))((es))Java y Spring Boot G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Java_y_Spring_Boot.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-05((/en))((es))Fecha: 2024-05((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
+        <span class="credential-date">((en))May 2024((/en))((es))Mayo 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -866,7 +866,7 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))Entrepreneurship, Agility and Professional Protagonism G6 - ONE((/en))((es))Emprendimiento, Agilidad y Protagonismo Profesional G6 - ONE((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
-          <span class="title-score">198/198 ((en))Activities((/en)) ((es))Actividades((/es))</span>
+          <span class="title-score">((en))198/198 Activities((/en))((es))198/198 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
             <span class="credential-skill">Agile Fundamentals</span>
@@ -881,8 +881,8 @@ nav_current: 3
         ![loading="lazy" alt="((en))Entrepreneurship, Agility and Professional Protagonism G6 - ONE image((/en))((es))Emprendimiento, Agilidad y Protagonismo Profesional G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Agility_Entrepreneurship.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-03((/en))((es))Fecha: 2024-03((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
+        <span class="credential-date">((en))Mar. 2024((/en))((es))Mar. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/340af97d-1823-4d60-91b5-93f17e629a68){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -910,7 +910,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-03((/en))((es))Fecha: 2024-03((/es))</span>
+        <span class="credential-date">((en))Mar. 2024((/en))((es))Mar. 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1711245522/0939970957AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -918,11 +918,11 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate blockchain">
+    <div class="card" data-tags="certificate blockchain web3">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">((en))ICP Developer Azle((/en))((es))ICP Developer Azle((/es)) </span>
-          <span class="title-rank">((en))Developer Certificate((/en))((es))Certificado de Desarrollador((/es)) </span>
+          <span class="title-main">((en))ICP Developer Azle((/en))((es))ICP Developer Azle((/es))</span>
+          <span class="title-rank">((en))Developer Certificate((/en))((es))Certificado de Desarrollador((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
@@ -939,7 +939,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: ICP Hub Latam / Internet Computer ((/en))((es))Emitido por: ICP Hub Latam / Internet Computer ((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-02((/en))((es))Fecha: 2024-02((/es))</span>
+        <span class="credential-date">((en))Feb. 2024((/en))((es))Feb. 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ICP_Developer_Azle.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -950,9 +950,9 @@ nav_current: 3
     <div class="card" data-tags="certificate programming">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">((en))Beginner in Programming G6 - ONE((/en)) ((es))Principiante en Programación G6 - ONE((/es))</span>
+          <span class="title-main">((en))Beginner in Programming G6 - ONE((/en))((es))Principiante en Programación G6 - ONE((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
-          <span class="title-score">345/348 ((en))Activities((/en)) ((es))Actividades((/es))</span>
+          <span class="title-score">((en))345/345 Activities((/en))((es))345/345 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
             <span class="credential-skill">Programming</span>
@@ -969,8 +969,8 @@ nav_current: 3
         ![loading="lazy" alt="((en))Beginner in Programming G6 - ONE image((/en))((es))Principiante en Programación G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Beginner.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-01((/en))((es))Fecha: 2024-01((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
+        <span class="credential-date">((en))Jan. 2024((/en))((es))Ene. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/d44473bf-6dfd-4589-a589-7a657958ca62){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -983,7 +983,7 @@ nav_current: 3
         <div class="credential-title">
           <span class="title-main">((en))Professional Development G6 - ONE((/en))((es))Desarrollo Personal G6 - ONE((/es))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))</span>
-          <span class="title-score">171/171 ((en))Activities((/en)) ((es))Actividades((/es))</span>
+          <span class="title-score">((en))171/171 Activities((/en))((es))171/171 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
             <span class="credential-skill">Learning Strategies</span>
@@ -997,8 +997,8 @@ nav_current: 3
         ![loading="lazy" alt="((en))Professional Development G6 - ONE image((/en))((es))Desarrollo Personal G6 - ONE imagen((/es))"](./credentials/img/Oracle_One_Professional_Development.png)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Alura and Oracle((/en))((es))Emitido por: Alura and Oracle((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-01((/en))((es))Fecha: 2024-01((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
+        <span class="credential-date">((en))Jan. 2024((/en))((es))Ene. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/bcff9a4c-f197-42e1-adc6-abfa2117b6cf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1029,7 +1029,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Harvard University((/en))((es))Emitido por: Harvard University((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024((/en))((es))Fecha: 2024((/es))</span>
+        <span class="credential-date">2024</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1056,7 +1056,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023-11((/en))((es))Fecha: 2023-11((/es))</span>
+        <span class="credential-date">((en))Nov. 2023((/en))((es))Nov. 2023((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1083,7 +1083,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023-11((/en))((es))Fecha: 2023-11((/es))</span>
+        <span class="credential-date">((en))Nov. 2023((/en))((es))Nov. 2023((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1110,7 +1110,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023-11((/en))((es))Fecha: 2023-11((/es))</span>
+        <span class="credential-date">((en))Nov. 2023((/en))((es))Nov. 2023((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1138,7 +1138,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (CONDUSEF) / Secretaría de Hacienda y Crédito Público((/en))((es))Emitido por: Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (CONDUSEF) / Secretaría de Hacienda y Crédito Público((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023-05((/en))((es))Fecha: 2023-05((/es))</span>
+        <span class="credential-date">((en))May 2023((/en))((es))Mayo 2023((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Diploma_CONDUSEF.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1149,7 +1149,7 @@ nav_current: 3
     <div class="card" data-tags="certificate programming">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Compu Cuantrix</span>
+          <span class="title-main">((en))Compu Cuantrix((/en))((es))Compu Cuantrix((/es))</span>
           <span class="title-rank">((en))Advanced Level((/en))((es))Nivel Avanzado((/es))</span>
           <span class="title-score"></span>
         </div>
@@ -1161,11 +1161,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Compu Cuantrix ((en))image((/en))((es))imagen((/es))"](./credentials/img/Compu_Cuantrix_nivel_avanzado.png)
+        ![loading="lazy" alt="((en))Compu Cuantrix image((/en))((es))Compu Cuantrix imagen((/es))"](./credentials/img/Compu_Cuantrix_nivel_avanzado.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Fundación Televisa((/en))((es))Emitido por: Fundación Televisa((/es))</span>
-        <span class="credential-date">((en))Issued on: 2023((/en))((es))Fecha: 2023((/es))</span>
+        <span class="credential-date">2023</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Compu_Cuantrix_nivel_avanzado.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1179,9 +1179,9 @@ nav_current: 3
   <div class="card" data-tags="badge">
  <hr>
  <div class="center">
- ### ((en))Badges((/en))((es))Insignias((/es)) <span class="section-count" data-type="badge">(0)</span>
+ ### ((en))Badges((/en))((es))Insignias((/es)) <span class="section-count" data-type="badge">0</span>
  <div class="credential-description center">
-((en))Micro-credentials on specific topics.((/en))((es))Micro-acreditaciones sobre temas específicos.((/es))
+((en))Micro-credentials.((/en))((es))Micro-acreditaciones.((/es))
  </div>
  </div>
  <hr>
@@ -1211,7 +1211,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-04((/en))((es))Fecha: 2025-04((/es))</span>
+        <span class="credential-date">((en))Apr. 2025((/en))((es))Abr. 2025((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/afd4033e-db74-41f2-ae6a-87ff9dc0520e){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1243,7 +1243,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: IBM((/en))((es))Emitido por: IBM((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-03((/en))((es))Fecha: 2024-03((/es))</span>
+        <span class="credential-date">((en))Mar. 2024((/en))((es))Mar. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1257,9 +1257,9 @@ nav_current: 3
   <div class="card" data-tags="award">
  <hr>
  <div class="center">
- ### ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es)) <span class="section-count" data-type="award">(0)</span>
+ ### ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es)) <span class="section-count" data-type="award">0</span>
  <div class="credential-description center">
-((en))Honors, contest wins, or participation awards.((/en))((es))Honores, premios de concursos o reconocimientos por participación.((/es))
+((en))Honors and contest wins.((/en))((es))Honores y premios.((/es))
  </div>
  </div>
  <hr>
@@ -1270,7 +1270,7 @@ nav_current: 3
     <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Talent Land Genius Arena</span>
+          <span class="title-main">((en))Talent Land Genius Arena((/en))((es))Talent Land Genius Arena((/es))</span>
           <span class="title-rank">((en))1st Place((/en))((es))1er Lugar((/es))</span>
           <span class="title-score"></span>
         </div>
@@ -1286,11 +1286,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Talent Land Genius Arena ((en))image((/en))((es))imagen((/es))"](./credentials/img/Talent_Land_Hackathon_Genius_Arena_2026_Winner.png)
+        ![loading="lazy" alt="((en))Talent Land Genius Arena image((/en))((es))Talent Land Genius Arena imagen((/es))"](./credentials/img/Talent_Land_Hackathon_Genius_Arena_2026_Winner.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Talent Land / Banco Azteca((/en))((es))Emitido por: Talent Land / Banco Azteca((/es))</span>
-        <span class="credential-date">((en))Issued on: 2026-04((/en))((es))Fecha: 2026-04((/es))</span>
+        <span class="credential-date">((en))Apr. 2026((/en))((es))Abr. 2026((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Talent_Land_Hackathon_Genius_Arena_2026_Winner.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1301,7 +1301,7 @@ nav_current: 3
     <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">South Western Europe Regional Contest 2025</span>
+          <span class="title-main">((en))South Western Europe Regional Contest 2025((/en))((es))South Western Europe Regional Contest 2025((/es))</span>
           <span class="title-rank">((en))67th Place((/en))((es))67º Lugar((/es))</span>
           <span class="title-score"></span>
         </div>
@@ -1315,11 +1315,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="South Western Europe Regional Contest 2025 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2025_SWERC_AEPM_UTC.png)
+        ![loading="lazy" alt="((en))South Western Europe Regional Contest 2025 image((/en))((es))South Western Europe Regional Contest 2025 imagen((/es))"](./credentials/img/2025_SWERC_AEPM_UTC.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-11((/en))((es))Fecha: 2025-11((/es))</span>
+        <span class="credential-date">((en))Nov. 2025((/en))((es))Nov. 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025_SWERC_AEPM_UTC.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1330,7 +1330,7 @@ nav_current: 3
     <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Gran Premio de México 2025</span>
+          <span class="title-main">((en))Gran Premio de México 2025((/en))((es))Gran Premio de México 2025((/es))</span>
           <span class="title-rank">((en))Honorable Mention((/en))((es))Mención Honorífica((/es))</span>
           <span class="title-score"></span>
         </div>
@@ -1344,11 +1344,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Gran Premio de México 2025 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2025-ICPC-Gran_Premio_de_Mexico-Ariel_Parra-HONORABLE.png)
+        ![loading="lazy" alt="((en))Gran Premio de México 2025 image((/en))((es))Gran Premio de México 2025 imagen((/es))"](./credentials/img/2025-ICPC-Gran_Premio_de_Mexico-Ariel_Parra-HONORABLE.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-10((/en))((es))Fecha: 2025-10((/es))</span>
+        <span class="credential-date">((en))Oct. 2025((/en))((es))Oct. 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martinez-HONORABLE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1377,7 +1377,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-03-28((/en))((es))Fecha: 2025-03-28((/es))</span>
+        <span class="credential-date">((en))Mar. 2025((/en))((es))Mar. 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_TALLER_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1405,7 +1405,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
-        <span class="credential-date">((en))Issued on: 2025-03((/en))((es))Fecha: 2025-03((/es))</span>
+        <span class="credential-date">((en))Mar. 2025((/en))((es))Mar. 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1433,7 +1433,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-12((/en))((es))Fecha: 2024-12((/es))</span>
+        <span class="credential-date">((en))Dec. 2024((/en))((es))Dic. 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2024.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1444,7 +1444,7 @@ nav_current: 3
     <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">Gran Premio de México 2024</span>
+          <span class="title-main">((en))Gran Premio de México 2024((/en))((es))Gran Premio de México 2024((/es))</span>
           <span class="title-rank">((en))Honorable Mention((/en))((es))Mención Honorífica((/es))</span>
           <span class="title-score"></span>
         </div>
@@ -1458,11 +1458,11 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Gran Premio de México 2024 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Parra_PLACE.png)
+        ![loading="lazy" alt="((en))Gran Premio de México 2024 image((/en))((es))Gran Premio de México 2024 imagen((/es))"](./credentials/img/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Parra_PLACE.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-10((/en))((es))Fecha: 2024-10((/es))</span>
+        <span class="credential-date">((en))Oct. 2024((/en))((es))Oct. 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Parra_PLACE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1490,7 +1490,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/en))((es))Emitido por: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-10((/en))((es))Fecha: 2024-10((/es))</span>
+        <span class="credential-date">((en))Oct. 2024((/en))((es))Oct. 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martinez.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1518,7 +1518,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Meta((/en))((es))Emitido por: Meta((/es))</span>
-        <span class="credential-date">((en))Issued on: 2024-10((/en))((es))Fecha: 2024-10((/es))</span>
+        <span class="credential-date">((en))Oct. 2024((/en))((es))Oct. 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1022025052997781){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">

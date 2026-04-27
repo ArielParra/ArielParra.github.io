@@ -1,21 +1,10 @@
 #!/usr/bin/env python3
 """
 Credentials Management CLI
-Usage: python manage_credentials.py <command> [options]
-
-Commands:
-    add         Add a new credential (interactive)
-    list        List credentials (optionally filtered/sorted)
-    get <id>   Get a credential by ID
-    delete <id> Delete a credential by ID
-    sort        Sort credentials by year (default: newest first)
-    generate    Generate credentials/index.md from JSON
 """
 import json
-import os
 import sys
 import re
-from datetime import datetime
 from pathlib import Path
 
 CREDENTIALS_FILE = Path(__file__).resolve().parent / "data" / "credentials.json"
@@ -96,14 +85,20 @@ def cmd_add(args):
     data = load_credentials()
     print("\n=== Add New Credential ===")
     
-    title = input("Title: ").strip()
-    if not title:
+    title_en = input("Title (English): ").strip()
+    if not title_en:
         print("Title required.")
         return 1
+    title_es = input("Title (Spanish): ").strip()
+    if not title_es:
+        title_es = title_en
     
     ctype = prompt_credit_type()
     issuer = input("Issuer: ").strip()
-    level = input("Level/Rank: ").strip()
+    
+    level_en = input("Level/Rank (English): ").strip()
+    level_es = input("Level/Rank (Spanish): ").strip()
+    
     score = input("Score (optional): ").strip()
     issued_on = input("Issued on (YYYY-MM): ").strip()
     if issued_on:
@@ -112,12 +107,14 @@ def cmd_add(args):
             return 1
     
     topics = prompt_topics()
-    skills = prompt_skills()
+    print("\nSkills (comma-separated):")
+    skills_en = input("  English: ").strip()
+    skills_es = input("  Spanish: ").strip()
     
     image = input("Image path (e.g., ./credentials/img/...): ").strip()
     if not image:
         if ctype in ("certification", "certificate"):
-            safe_title = re.sub(r'[^a-zA-Z0-9]', '_', title)
+            safe_title = re.sub(r'[^a-zA-Z0-9]', '_', title_en)
             image = f"./credentials/img/{safe_title}.png"
         else:
             image = ""
@@ -130,18 +127,18 @@ def cmd_add(args):
     
     cred_id = args.get('--id') or input("ID [auto-generated]: ").strip()
     if not cred_id:
-        cred_id = generate_id(title, issued_on)
+        cred_id = generate_id(title_en, issued_on)
     
     new_cred = {
         "id": cred_id,
         "type": ctype,
         "issuer": issuer,
-        "title": title,
-        "level": level,
+        "title": {"en": title_en, "es": title_es},
+        "level": {"en": level_en, "es": level_es} if level_en else "",
         "score": score,
         "issuedOn": issued_on,
         "topics": topics,
-        "skills": skills,
+        "skills": [{"en": s.strip(), "es": s.strip()} for s in skills_en.split(',')] if skills_en else [],
         "image": image,
         "link": link,
         "description": {
@@ -181,10 +178,6 @@ def cmd_list(args):
     
     if sort_by == 'year' or sort_by == 'date':
         creds = sorted(creds, key=lambda c: c.get('issuedOn', ''), reverse=reverse)
-        desc_str = "newest first" if reverse else "oldest first"
-    elif sort_by == 'title':
-        creds = sorted(creds, key=lambda c: c.get('title', '').lower(), reverse=reverse)
-        desc_str = "title Z-A" if reverse else "title A-Z"
     elif sort_by == 'type':
         def sort_key(c):
             ctype = c.get('type', 'certificate')
@@ -192,12 +185,8 @@ def cmd_list(args):
             issued = c.get('issuedOn', '')
             return (type_order, issued if reverse else '')
         creds = sorted(creds, key=sort_key, reverse=reverse)
-        desc_str = "type priority, newest date per type" if reverse else "type priority, oldest date per type"
     elif sort_by == 'issuer':
         creds = sorted(creds, key=lambda c: c.get('issuer', '').lower(), reverse=reverse)
-        desc_str = "issuer Z-A" if reverse else "issuer A-Z"
-    else:
-        desc_str = "default (type + date)"
     
     filter_type = args.get('--type')
     if filter_type:
@@ -219,7 +208,7 @@ def cmd_list(args):
         cid = c.get('id', '')
         ctype = c.get('type','')
         issued = c.get('issuedOn', '')
-        title = c.get('title', '')
+        title = get_i18n_field(c.get('title', ''), 'en')
         print(f"{cid:<30} {ctype:<14} {issued:<10}")
         print(f"  {title}")
     
@@ -305,10 +294,10 @@ def cmd_generate(args):
 
     TYPE_LABELS = {
         "education": ("((en))Education((/en))((es))Educación((/es))", "((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))"),
-        "certification": ("((en))Certifications((/en))((es))Certificaciones((/es))", "((en))Proctored exam-based credentials that validate professional expertise.((/en))((es))Acreditaciones basadas en exámenes supervisados que validan la experiencia profesional.((/es))"),
-        "certificate": ("((en))Certificates((/en))((es))Certificados((/es))", "((en))Course completion or unproctored exam certificates.((/en))((es))Certificados de finalización de cursos o exámenes no supervisados.((/es))"),
-        "badge": ("((en))Badges((/en))((es))Insignias((/es))", "((en))Micro-credentials on specific topics.((/en))((es))Micro-acreditaciones sobre temas específicos.((/es))"),
-        "award": ("((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))", "((en))Honors, contest wins, or participation awards.((/en))((es))Honores, premios de concursos o reconocimientos por participación.((/es))"),
+        "certification": ("((en))Certifications((/en))((es))Certificaciones((/es))", "((en))Proctored exam-based credentials.((/en))((es))Acreditaciones basadas en exámenes.((/es))"),
+        "certificate": ("((en))Certificates((/en))((es))Certificados((/es))", "((en))Course completion certificates.((/en))((es))Certificados de finalización.((/es))"),
+        "badge": ("((en))Badges((/en))((es))Insignias((/es))", "((en))Micro-credentials.((/en))((es))Micro-acreditaciones.((/es))"),
+        "award": ("((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))", "((en))Honors and contest wins.((/en))((es))Honores y premios.((/es))"),
     }
 
     lines = []
@@ -342,7 +331,7 @@ def cmd_generate(args):
             lines.append('  <div class="card" data-tags="' + ctype + '">')
             lines.append(" <hr>")
             lines.append(' <div class="center">')
-            lines.append(" ### " + type_label + ' <span class="section-count" data-type="' + ctype + '">(0)</span>')
+            lines.append(" ### " + type_label + ' <span class="section-count" data-type="' + ctype + '">0</span>')
             if type_desc:
                 lines.append(' <div class="credential-description center">')
                 lines.append(type_desc)
@@ -367,39 +356,80 @@ def cmd_generate(args):
     print(f"Generated {output_file} with {len(creds)} credentials")
     return 0
 
+def get_i18n_field(value, page_lang='en'):
+    """Extract value from i18n object or string"""
+    if isinstance(value, dict):
+        return value.get(page_lang, value.get('en', ''))
+    return value
+
+def get_i18n_tags(value):
+    """Get i18n tags string from object or plain value"""
+    if isinstance(value, dict):
+        en = value.get('en', '')
+        es = value.get('es', en)
+        if en and es:
+            return f"((en)){en}((/en))((es)){es}((/es))"
+        return en
+    if isinstance(value, str):
+        if '((en))' in value or '((es))' in value:
+            return value
+        return value
+    return str(value) if value else ""
+
+def format_date_i18n(date_str):
+    """Convert date like 2026-12 to Dec. 2026 / Dic. 2026"""
+    if not date_str:
+        return ""
+    
+    en_months = ["", "Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."]
+    es_months = ["", "Ene.", "Feb.", "Mar.", "Abr.", "Mayo", "Jun.", "Jul.", "Ago.", "Sept.", "Oct.", "Nov.", "Dic."]
+    
+    parts = date_str.split("-")
+    if len(parts) >= 2:
+        year = parts[0]
+        try:
+            month = int(parts[1])
+        except:
+            return date_str
+        en_month = en_months[month] if 1 <= month <= 12 else ""
+        es_month = es_months[month] if 1 <= month <= 12 else ""
+        
+        if en_month and es_month:
+            en_date = f"{en_month} {year}"
+            es_date = f"{es_month} {year}"
+            return f"((en)){en_date}((/en))((es)){es_date}((/es))"
+    
+    return date_str
+
 def generate_card(c):
     ctype = c.get('type', 'certificate')
     issued = c.get('issuedOn', '')
     
     skills_html = ""
     for s in c.get('skills', []):
-        skills_html += '          <span class="credential-skill">' + s + '</span>\n'
+        skill_text = get_i18n_tags(s)
+        if skill_text:
+            skills_html += '          <span class="credential-skill">' + skill_text + '</span>\n'
     if len(c.get('skills', [])) > 0:
         skills_html += '          <span class="skills-more"></span>'
     
     link_html = ""
     link = c.get('link', '')
+    issued_formatted = format_date_i18n(issued)
     if link:
         if link.endswith('.pdf') or link.startswith('./'):
             link_text = "((en))Verify((/en))((es))Verificar((/es)) PDF"
         else:
             link_text = "((en))Verify credential((/en))((es))Verificar credencial((/es))"
         link_html = '''
-        <span class="credential-date">((en))Issued on: ''' + issued + '''((/en))((es))Fecha: ''' + issued + '''((/es))</span>
+        <span class="credential-date">''' + issued_formatted + '''</span>
         [''' + link_text + '''](''' + link + '''){:target="_blank" class="credential-link"}'''
     
     image = c.get('image', '')
+    title_en = get_i18n_field(c.get('title', ''), 'en')
+    title_es = get_i18n_field(c.get('title', ''), 'es')
     if image:
-        title = c.get('title', '')
-        if '((en))' in title:
-            en_match = re.search(r'\(\(en\)\)(.*?)\(\(/en\)\)', title)
-            es_match = re.search(r'\(\(es\)\)(.*?)\(\(/es\)\)', title)
-            if en_match and es_match:
-                alt_text = '((en))' + en_match.group(1) + ' image((/en))((es))' + es_match.group(1) + ' imagen((/es))'
-            else:
-                alt_text = '((en))image((/en))((es))imagen((/es))'
-        else:
-            alt_text = title + ' ((en))image((/en))((es))imagen((/es))'
+        alt_text = '((en))' + title_en + ' image((/en))((es))' + title_es + ' imagen((/es))'
         image_html = '''
       <div class="credential-preview">
         ![loading="lazy" alt="''' + alt_text + '"](''' + image + ''')
@@ -415,18 +445,26 @@ def generate_card(c):
 
     score = c.get('score', '')
     if score:
-        if '((en))' in score or '((es))' in score:
-            score_text = score
+        if isinstance(score, dict):
+            score_text = f"((en)){score.get('en', '')}((/en))((es)){score.get('es', '')}((/es))"
         else:
             score_text = '((en))' + score + '((/en))((es))' + score + '((/es))'
     else:
         score_text = ''
     
-    card = '''    <div class="card" data-tags="''' + ctype + ' ' + ' '.join(c.get('topics', [])) + '''">
+    level_en = get_i18n_field(c.get('level', ''), 'en')
+    level_es = get_i18n_field(c.get('level', ''), 'es')
+    level = f"((en)){level_en}((/en))((es)){level_es}((/es))" if level_en or level_es else ""
+    title = f"((en)){title_en}((/en))((es)){title_es}((/es))" if title_en or title_es else title_en
+    
+    topics = c.get('topics', [])
+    data_tags = ctype + (' ' + ' '.join(topics) if topics else '')
+
+    card = '''    <div class="card" data-tags="''' + data_tags + '''">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">''' + c.get('title', '') + '''</span>
-          <span class="title-rank">''' + c.get('level', '') + '''</span>
+          <span class="title-main">''' + title + '''</span>
+          <span class="title-rank">''' + level + '''</span>
           <span class="title-score">''' + score_text + '''</span>
         </div>
         <div class="credential-skills">
