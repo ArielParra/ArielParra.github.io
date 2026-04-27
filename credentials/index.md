@@ -14,7 +14,7 @@ nav_current: 3
  <hr>
  <div class="center">
  ### ((en))Education((/en))((es))Educación((/es)) <span class="section-count" data-type="education">(0)</span>
- <div class="credential-description justify">
+ <div class="credential-description center">
 ((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))
  </div>
  </div>
@@ -23,7 +23,7 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
-    <div class="card" data-tags="education">
+    <div class="card" data-tags="education programming cybersecurity databases networks">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))B.Sc. in Computer Systems Engineering((/en))((es))Ingeniería en Sistemas Computacionales((/es))</span>
@@ -53,7 +53,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="education">
+    <div class="card" data-tags="education ai networks">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Génie Informatique ((en))(Computer Engineering)((/en))((es))(Ingeniería Informática)((/es))</span>
@@ -83,7 +83,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="education">
+    <div class="card" data-tags="education programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Oracle Next Education (ONE)</span>
@@ -125,7 +125,7 @@ nav_current: 3
  <hr>
  <div class="center">
  ### ((en))Certifications((/en))((es))Certificaciones((/es)) <span class="section-count" data-type="certification">(0)</span>
- <div class="credential-description justify">
+ <div class="credential-description center">
 ((en))Proctored exam-based credentials that validate professional expertise.((/en))((es))Acreditaciones basadas en exámenes supervisados que validan la experiencia profesional.((/es))
  </div>
  </div>
@@ -134,7 +134,7 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
-    <div class="card" data-tags="certification">
+    <div class="card" data-tags="certification cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">AWS Certified Cloud Practitioner</span>
@@ -173,7 +173,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certification">
+    <div class="card" data-tags="certification Language">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">TOEFL iBT</span>
@@ -201,7 +201,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certification">
+    <div class="card" data-tags="certification ai cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Azure AI</span>
@@ -232,7 +232,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certification">
+    <div class="card" data-tags="certification ai cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">OCI Generative AI Certified</span>
@@ -264,7 +264,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certification">
+    <div class="card" data-tags="certification ai cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">OCI AI Foundations</span>
@@ -296,7 +296,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certification">
+    <div class="card" data-tags="certification devops">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">GitHub Foundations</span>
@@ -327,7 +327,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certification">
+    <div class="card" data-tags="certification cybersecurity cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Security, Compliance, and Identity</span>
@@ -366,7 +366,7 @@ nav_current: 3
  <hr>
  <div class="center">
  ### ((en))Certificates((/en))((es))Certificados((/es)) <span class="section-count" data-type="certificate">(0)</span>
- <div class="credential-description justify">
+ <div class="credential-description center">
 ((en))Course completion or unproctored exam certificates.((/en))((es))Certificados de finalización de cursos o exámenes no supervisados.((/es))
  </div>
  </div>
@@ -375,7 +375,7 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate Language">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">GoFluent English</span>
@@ -401,7 +401,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">AWS Cloud Practitioner Essentials</span>
@@ -432,7 +432,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))AWS Cloud Fundamentals((/en)) ((es))Fundamentos de Nube AWS((/es))</span>
@@ -462,7 +462,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate Language">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">EF SET English Certificate</span>
@@ -489,7 +489,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate ai">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Artificial Intelligence and Productivity((/en))((es))Inteligencia Artificial y Productividad((/es))</span>
@@ -516,7 +516,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate ai">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Generative AI - ONE((/en))((es))IA Generativa - ONE((/es))</span>
@@ -544,7 +544,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate database">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))SQL with MySQL Server from Oracle - ONE((/en))((es))SQL con MySQL Server de Oracle - ONE((/es))</span>
@@ -573,7 +573,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate cybersecurity">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))</span>
@@ -600,7 +600,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate ai">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Artificial Intelligence at Work((/en))((es))Inteligencia Artificial en el trabajo((/es))</span>
@@ -627,7 +627,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate cybersecurity">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))</span>
@@ -654,7 +654,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Problem Solving (Basic)((/en))((es))Resolución de Problemas (Básico)((/es))</span>
@@ -684,7 +684,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate cybersecurity networks">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Career Essentials in Cybersecurity</span>
@@ -713,7 +713,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate ai">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Career Essentials in Generative AI</span>
@@ -743,7 +743,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate devops">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Career Essentials in GitHub</span>
@@ -772,7 +772,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate devops">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">GitLab CI</span>
@@ -803,7 +803,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Java Object Oriented G6 - ONE((/en))((es))Java Orientado a Objetos G6 - ONE((/es))</span>
@@ -831,7 +831,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate programming backend">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Java and Spring Boot G6 - ONE((/en))((es))Java y Spring Boot G6 - ONE((/es))</span>
@@ -861,7 +861,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate softskills">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Entrepreneurship, Agility and Professional Protagonism G6 - ONE((/en))((es))Emprendimiento, Agilidad y Protagonismo Profesional G6 - ONE((/es))</span>
@@ -890,7 +890,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate cybersecurity">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Operation Aleph: SC-900((/en))((es))Operación Aleph: SC-900((/es))</span>
@@ -918,7 +918,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate blockchain">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))ICP Developer Azle((/en))((es))ICP Developer Azle((/es)) </span>
@@ -947,7 +947,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Beginner in Programming G6 - ONE((/en)) ((es))Principiante en Programación G6 - ONE((/es))</span>
@@ -978,7 +978,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate softskills">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Professional Development G6 - ONE((/en))((es))Desarrollo Personal G6 - ONE((/es))</span>
@@ -1006,7 +1006,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))CS50x: Introduction to Computer Science((/en))((es))CS50x: Introducción a la Ciencia de la Computación((/es))</span>
@@ -1037,7 +1037,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate ai datascience">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Artificial Intelligence and Data Science((/en))((es))Inteligencia Artificial y Data Science((/es))</span>
@@ -1064,7 +1064,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate blockchain programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Solidity Bootcamp((/en))((es))Solidity Bootcamp((/es))</span>
@@ -1091,7 +1091,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate blockchain web3">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Blockchain Consultant Professional((/en))((es))Blockchain Consultant Professional((/es))</span>
@@ -1118,7 +1118,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate finance">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Financial Education Diploma((/en))((es))Diplomado en Educación Financiera((/es))</span>
@@ -1146,7 +1146,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate">
+    <div class="card" data-tags="certificate programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Compu Cuantrix</span>
@@ -1180,7 +1180,7 @@ nav_current: 3
  <hr>
  <div class="center">
  ### ((en))Badges((/en))((es))Insignias((/es)) <span class="section-count" data-type="badge">(0)</span>
- <div class="credential-description justify">
+ <div class="credential-description center">
 ((en))Micro-credentials on specific topics.((/en))((es))Micro-acreditaciones sobre temas específicos.((/es))
  </div>
  </div>
@@ -1189,7 +1189,7 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
-    <div class="card" data-tags="badge">
+    <div class="card" data-tags="badge cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))AWS Knowledge: Cloud Essentials((/en))((es))AWS Knowledge: Cloud Essentials((/es))</span>
@@ -1219,7 +1219,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="badge">
+    <div class="card" data-tags="badge cloud mainframe">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))IBM Z Xplore - Concepts((/en))((es))IBM Z Xplore - Conceptos((/es))</span>
@@ -1258,7 +1258,7 @@ nav_current: 3
  <hr>
  <div class="center">
  ### ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es)) <span class="section-count" data-type="award">(0)</span>
- <div class="credential-description justify">
+ <div class="credential-description center">
 ((en))Honors, contest wins, or participation awards.((/en))((es))Honores, premios de concursos o reconocimientos por participación.((/es))
  </div>
  </div>
@@ -1267,7 +1267,7 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
-    <div class="card" data-tags="award">
+    <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Talent Land Genius Arena</span>
@@ -1298,7 +1298,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award">
+    <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">South Western Europe Regional Contest 2025</span>
@@ -1327,7 +1327,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award">
+    <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Gran Premio de México 2025</span>
@@ -1356,7 +1356,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award">
+    <div class="card" data-tags="award softskills">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Technical Job Interviews Workshop Instructor((/en))((es))Tallerista: Entrevistas Técnicas de Trabajo((/es))</span>
@@ -1385,7 +1385,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award">
+    <div class="card" data-tags="award softskills programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Programming Contest Organizer((/en))((es))Organizador de Concurso de Programación((/es))</span>
@@ -1413,7 +1413,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award">
+    <div class="card" data-tags="award programming softskills">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))President of the Competitive Programming Club (Gallos)((/en))((es))Presidente del Club de Programación Competitiva (Gallos)((/es))</span>
@@ -1441,7 +1441,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award">
+    <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">Gran Premio de México 2024</span>
@@ -1470,7 +1470,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award">
+    <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))19th National Programming Contest ANIEI 2024((/en))((es))19º Concurso Nacional de Programación ANIEI 2024((/es))</span>
@@ -1498,7 +1498,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award">
+    <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Meta Hacker Cup 2024 - Round 1((/en))((es))Meta Hacker Cup 2024 - Ronda 1((/es))</span>

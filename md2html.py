@@ -471,7 +471,7 @@ def generate_html(md_dict, md_content):
     
     if nav_current == 3:
         type_tag_text_value = ["all", "education", "certification", "certificate", "badge", "award"]
-        topic_tag_text_value = ["cybersecurity", "devOps", "networks", "cloud", "blockchain", "programming", "datascience", "ai"]
+        topic_tag_text_value = ["Language", "ai", "backend", "blockchain", "cloud", "cybersecurity", "database", "datascience", "devops", "finance", "mainframe", "networks", "programming", "softskills", "web3"]
         filterType_text = '<span class="i18n" data-i18n-en="Filter by type" data-i18n-es="Filtrado por tipo">Filter by type</span>'
         filterTopic_text = '<span class="i18n" data-i18n-en="Filter by topic" data-i18n-es="Filtrado por tema">Filter by topic</span>'
         type_tag_text = ['<span class="i18n" data-i18n-en="All" data-i18n-es="Todos">All</span>',
@@ -479,15 +479,22 @@ def generate_html(md_dict, md_content):
                         '<span class="i18n" data-i18n-en="Certifications" data-i18n-es="Certificaciones">Certifications</span>',
                         '<span class="i18n" data-i18n-en="Certificates" data-i18n-es="Certificados">Certificates</span>',
                         '<span class="i18n" data-i18n-en="Badges" data-i18n-es="Insignias">Badges</span>',
-                        '<span class="i18n" data-i18n-en="Awards" data-i18n-es="Reconocimientos">Awards</span>']
-        topic_tag_text = ['<span class="i18n" data-i18n-en="Cybersecurity" data-i18n-es="Ciberseguridad">Cybersecurity</span>',
-                         '<span class="i18n" data-i18n-en="DevOps" data-i18n-es="DevOps">DevOps</span>',
-                         '<span class="i18n" data-i18n-en="Networks" data-i18n-es="Redes">Networks</span>',
-                         '<span class="i18n" data-i18n-en="Cloud" data-i18n-es="Nube">Cloud</span>',
+                        '<span class="i18n" data-i18n-en="Awards" data-i18n-es="Premios">Awards</span>']
+        topic_tag_text = ['<span class="i18n" data-i18n-en="Language" data-i18n-es="Idioma">Language</span>',
+                         '<span class="i18n" data-i18n-en="AI" data-i18n-es="IA">AI</span>',
+                         '<span class="i18n" data-i18n-en="Back-end" data-i18n-es="Back-end">Back-end</span>',
                          '<span class="i18n" data-i18n-en="Blockchain" data-i18n-es="Blockchain">Blockchain</span>',
-                         '<span class="i18n" data-i18n-en="Programming" data-i18n-es="Programación">Programming</span>',
+                         '<span class="i18n" data-i18n-en="Cloud" data-i18n-es="Nube">Cloud</span>',
+                         '<span class="i18n" data-i18n-en="Cybersecurity" data-i18n-es="Ciberseguridad">Cybersecurity</span>',
+                         '<span class="i18n" data-i18n-en="Database" data-i18n-es="Base de datos">Database</span>',
                          '<span class="i18n" data-i18n-en="Data Science" data-i18n-es="Ciencia de Datos">Data Science</span>',
-                         '<span class="i18n" data-i18n-en="AI" data-i18n-es="IA">AI</span>']
+                         '<span class="i18n" data-i18n-en="DevOps" data-i18n-es="DevOps">DevOps</span>',
+                         '<span class="i18n" data-i18n-en="Finance" data-i18n-es="Finanzas">Finance</span>',
+                         '<span class="i18n" data-i18n-en="Mainframe" data-i18n-es="Mainframe">Mainframe</span>',
+                         '<span class="i18n" data-i18n-en="Networks" data-i18n-es="Redes">Networks</span>',
+                         '<span class="i18n" data-i18n-en="Programming" data-i18n-es="Programación">Programming</span>',
+                         '<span class="i18n" data-i18n-en="Soft Skills" data-i18n-es="Habilidades blandas">Soft Skills</span>',
+                         '<span class="i18n" data-i18n-en="Web3" data-i18n-es="Web3">Web3</span>']
 
         html_content += f"""
 <div class="container max-width">

@@ -71,16 +71,18 @@ function filterCards() {
     const isHeader = card.querySelector('.credential-header') === null && card.querySelector('.section-count');
     const tagsAttr = card.getAttribute('data-tags');
     if (!tagsAttr) return;
-    const tagsInCard = tagsAttr.toLowerCase().split(' ');
+    const tagsInCard = tagsAttr.split(' ');
+    const tagsInCardLower = tagsInCard.map(t => t.toLowerCase());
+    const selectedTypeLower = selectedType.toLowerCase();
 
-    const matchesType = selectedType === 'all' || tagsInCard.includes(selectedType);
-    const matchesTags = selectedTags.every(tag => tagsInCard.includes(tag));
+    const matchesType = selectedType === 'all' || tagsInCardLower.includes(selectedTypeLower);
+    const matchesTags = selectedTags.length === 0 || selectedTags.some(tag => tagsInCardLower.includes(tag.toLowerCase()));
 
     if (matchesType && (selectedTags.length === 0 || matchesTags)) {
       card.style.display = '';
       if (isHeader) return;
       totalCredentials++;
-      const primaryType = tagsInCard.find(t => counts.hasOwnProperty(t));
+      const primaryType = tagsInCardLower.find(t => counts.hasOwnProperty(t));
       if (primaryType) counts[primaryType]++;
     } else {
       card.style.display = 'none';

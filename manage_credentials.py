@@ -344,7 +344,7 @@ def cmd_generate(args):
             lines.append(' <div class="center">')
             lines.append(" ### " + type_label + ' <span class="section-count" data-type="' + ctype + '">(0)</span>')
             if type_desc:
-                lines.append(' <div class="credential-description justify">')
+                lines.append(' <div class="credential-description center">')
                 lines.append(type_desc)
                 lines.append(' </div>')
             lines.append(" </div>")
@@ -422,7 +422,7 @@ def generate_card(c):
     else:
         score_text = ''
     
-    card = '''    <div class="card" data-tags="''' + ctype + '''">
+    card = '''    <div class="card" data-tags="''' + ctype + ' ' + ' '.join(c.get('topics', [])) + '''">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">''' + c.get('title', '') + '''</span>
