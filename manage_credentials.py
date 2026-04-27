@@ -381,8 +381,8 @@ def format_date_i18n(date_str):
     if not date_str:
         return ""
     
-    en_months = ["", "Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."]
-    es_months = ["", "Ene.", "Feb.", "Mar.", "Abr.", "Mayo", "Jun.", "Jul.", "Ago.", "Sept.", "Oct.", "Nov.", "Dic."]
+    en_months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    es_months = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
     
     parts = date_str.split("-")
     if len(parts) >= 2:

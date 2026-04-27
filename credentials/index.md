@@ -75,7 +75,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Université de Technologie de Compiègne (UTC)((/en))((es))Emitido por: Université de Technologie de Compiègne (UTC)((/es))</span>
-        <span class="credential-date">((en))Sept. 2025((/en))((es))Sept. 2025((/es))</span>
+        <span class="credential-date">((en))September 2025((/en))((es))Septiembre 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.utc.fr/wp-content/uploads/sites/28/2021/01/gi2021-web.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -165,7 +165,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
-        <span class="credential-date">((en))July 2025((/en))((es))Jul. 2025((/es))</span>
+        <span class="credential-date">((en))July 2025((/en))((es))Julio 2025((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/c3534c43-4770-43e1-9d13-c98260a0cb00/){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -193,7 +193,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Educational Testing Service (ETS)((/en))((es))Emitido por: Educational Testing Service (ETS)((/es))</span>
-        <span class="credential-date">((en))Jan. 2025((/en))((es))Ene. 2025((/es))</span>
+        <span class="credential-date">((en))January 2025((/en))((es))Enero 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/TOEFL_IBT_AEPM_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -224,7 +224,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
-        <span class="credential-date">((en))Nov. 2024((/en))((es))Nov. 2024((/es))</span>
+        <span class="credential-date">((en))November 2024((/en))((es))Noviembre 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/7B85BE1673D5720D){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -256,7 +256,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
-        <span class="credential-date">((en))July 2024((/en))((es))Jul. 2024((/es))</span>
+        <span class="credential-date">((en))July 2024((/en))((es))Julio 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=7DD090751D80D1CE9EC6B1DA78D457443D935A64E485A8C85C1FE63E7C05DD0A){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -288,7 +288,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle University((/en))((es))Emitido por: Oracle University((/es))</span>
-        <span class="credential-date">((en))July 2024((/en))((es))Jul. 2024((/es))</span>
+        <span class="credential-date">((en))July 2024((/en))((es))Julio 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=30992A10499F1A0197793FF82B04E2513DC2F17E1B28756FB0B6EE8F8B29D9A2){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -319,7 +319,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitHub((/en))((es))Emitido por: GitHub((/es))</span>
-        <span class="credential-date">((en))June 2024((/en))((es))Jun. 2024((/es))</span>
+        <span class="credential-date">((en))June 2024((/en))((es))Junio 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f024c37b-a271-4588-b5b3-bafbdb7cd661/){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -351,7 +351,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
-        <span class="credential-date">((en))Apr. 2024((/en))((es))Abr. 2024((/es))</span>
+        <span class="credential-date">((en))April 2024((/en))((es))Abril 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/D4A8CCF36FAC1D6E){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -393,7 +393,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GoFluent((/en))((es))Emitido por: GoFluent((/es))</span>
-        <span class="credential-date">((en))Mar. 2026((/en))((es))Mar. 2026((/es))</span>
+        <span class="credential-date">((en))March 2026((/en))((es))Marzo 2026((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/GoFluent_English_C2_Certificate.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -424,7 +424,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander / TIDWIT (Powered by AWS)((/en))((es))Emitido por: Santander / TIDWIT (Powered by AWS)((/es))</span>
-        <span class="credential-date">((en))Apr. 2025((/en))((es))Abr. 2025((/es))</span>
+        <span class="credential-date">((en))April 2025((/en))((es))Abril 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_AWS_Cloud_Practitioner_Essentials.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -454,7 +454,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander / TIDWIT (Powered by AWS)((/en))((es))Emitido por: Santander / TIDWIT (Powered by AWS)((/es))</span>
-        <span class="credential-date">((en))Apr. 2025((/en))((es))Abr. 2025((/es))</span>
+        <span class="credential-date">((en))April 2025((/en))((es))Abril 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -481,7 +481,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Education First (EF)((/en))((es))Emitido por: Education First (EF)((/es))</span>
-        <span class="credential-date">((en))Jan. 2025((/en))((es))Ene. 2025((/es))</span>
+        <span class="credential-date">((en))January 2025((/en))((es))Enero 2025((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cert.efset.org/en/akd3bm){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -508,7 +508,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander Open Academy / Google((/en))((es))Emitido por: Santander Open Academy / Google((/es))</span>
-        <span class="credential-date">((en))Dec. 2024((/en))((es))Dic. 2024((/es))</span>
+        <span class="credential-date">((en))December 2024((/en))((es))Diciembre 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/754_arielemilio_parra_EN.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -536,7 +536,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
-        <span class="credential-date">((en))Nov. 2024((/en))((es))Nov. 2024((/es))</span>
+        <span class="credential-date">((en))November 2024((/en))((es))Noviembre 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/bd61f356-6b68-41b1-b9c6-8c607ecbbb3f){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -565,7 +565,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
-        <span class="credential-date">((en))Sept. 2024((/en))((es))Sept. 2024((/es))</span>
+        <span class="credential-date">((en))September 2024((/en))((es))Septiembre 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/4f5b1c64-9851-4115-9bad-a402d2c9289a){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -592,7 +592,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Aug. 2024((/en))((es))Ago. 2024((/es))</span>
+        <span class="credential-date">((en))August 2024((/en))((es))Agosto 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -619,7 +619,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad / Microsoft((/en))((es))Emitido por: Red por la Ciberseguridad / Microsoft((/es))</span>
-        <span class="credential-date">((en))Aug. 2024((/en))((es))Ago. 2024((/es))</span>
+        <span class="credential-date">((en))August 2024((/en))((es))Agosto 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724038728/3923002801AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -646,7 +646,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Aug. 2024((/en))((es))Ago. 2024((/es))</span>
+        <span class="credential-date">((en))August 2024((/en))((es))Agosto 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -676,7 +676,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: HackerRank((/en))((es))Emitido por: HackerRank((/es))</span>
-        <span class="credential-date">((en))Aug. 2024((/en))((es))Ago. 2024((/es))</span>
+        <span class="credential-date">((en))August 2024((/en))((es))Agosto 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.hackerrank.com/certificates/610bac95af9a){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -705,7 +705,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft and LinkedIn((/es))</span>
-        <span class="credential-date">((en))July 2024((/en))((es))Jul. 2024((/es))</span>
+        <span class="credential-date">((en))July 2024((/en))((es))Julio 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/c6d4100d5d3e6ff21724a72cc1b339bd2a8834132a078fd1765a01f87ffeeddd){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -735,7 +735,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Microsoft and LinkedIn((/en))((es))Emitido por: Microsoft and LinkedIn((/es))</span>
-        <span class="credential-date">((en))July 2024((/en))((es))Jul. 2024((/es))</span>
+        <span class="credential-date">((en))July 2024((/en))((es))Julio 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -764,7 +764,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitHub and LinkedIn((/en))((es))Emitido por: GitHub and LinkedIn((/es))</span>
-        <span class="credential-date">((en))June 2024((/en))((es))Jun. 2024((/es))</span>
+        <span class="credential-date">((en))June 2024((/en))((es))Junio 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://lnkd.in/d8q5GMah){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -795,7 +795,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: GitLab((/en))((es))Emitido por: GitLab((/es))</span>
-        <span class="credential-date">((en))June 2024((/en))((es))Jun. 2024((/es))</span>
+        <span class="credential-date">((en))June 2024((/en))((es))Junio 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -882,7 +882,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
-        <span class="credential-date">((en))Mar. 2024((/en))((es))Mar. 2024((/es))</span>
+        <span class="credential-date">((en))March 2024((/en))((es))Marzo 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/340af97d-1823-4d60-91b5-93f17e629a68){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -910,7 +910,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))Mar. 2024((/en))((es))Mar. 2024((/es))</span>
+        <span class="credential-date">((en))March 2024((/en))((es))Marzo 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1711245522/0939970957AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -939,7 +939,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: ICP Hub Latam / Internet Computer ((/en))((es))Emitido por: ICP Hub Latam / Internet Computer ((/es))</span>
-        <span class="credential-date">((en))Feb. 2024((/en))((es))Feb. 2024((/es))</span>
+        <span class="credential-date">((en))February 2024((/en))((es))Febrero 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ICP_Developer_Azle.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -970,7 +970,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
-        <span class="credential-date">((en))Jan. 2024((/en))((es))Ene. 2024((/es))</span>
+        <span class="credential-date">((en))January 2024((/en))((es))Enero 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/d44473bf-6dfd-4589-a589-7a657958ca62){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -998,7 +998,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
-        <span class="credential-date">((en))Jan. 2024((/en))((es))Ene. 2024((/es))</span>
+        <span class="credential-date">((en))January 2024((/en))((es))Enero 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/bcff9a4c-f197-42e1-adc6-abfa2117b6cf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1056,7 +1056,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/es))</span>
-        <span class="credential-date">((en))Nov. 2023((/en))((es))Nov. 2023((/es))</span>
+        <span class="credential-date">((en))November 2023((/en))((es))Noviembre 2023((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1083,7 +1083,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/es))</span>
-        <span class="credential-date">((en))Nov. 2023((/en))((es))Nov. 2023((/es))</span>
+        <span class="credential-date">((en))November 2023((/en))((es))Noviembre 2023((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1110,7 +1110,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/en))((es))Emitido por: Instituto de Ciencia y Tecnología de Aguascalientes (INCYTEA) / Blockdemy / Indptados((/es))</span>
-        <span class="credential-date">((en))Nov. 2023((/en))((es))Nov. 2023((/es))</span>
+        <span class="credential-date">((en))November 2023((/en))((es))Noviembre 2023((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1211,7 +1211,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
-        <span class="credential-date">((en))Apr. 2025((/en))((es))Abr. 2025((/es))</span>
+        <span class="credential-date">((en))April 2025((/en))((es))Abril 2025((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/afd4033e-db74-41f2-ae6a-87ff9dc0520e){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1243,7 +1243,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: IBM((/en))((es))Emitido por: IBM((/es))</span>
-        <span class="credential-date">((en))Mar. 2024((/en))((es))Mar. 2024((/es))</span>
+        <span class="credential-date">((en))March 2024((/en))((es))Marzo 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1290,7 +1290,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Talent Land / Banco Azteca((/en))((es))Emitido por: Talent Land / Banco Azteca((/es))</span>
-        <span class="credential-date">((en))Apr. 2026((/en))((es))Abr. 2026((/es))</span>
+        <span class="credential-date">((en))April 2026((/en))((es))Abril 2026((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Talent_Land_Hackathon_Genius_Arena_2026_Winner.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1319,7 +1319,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
-        <span class="credential-date">((en))Nov. 2025((/en))((es))Nov. 2025((/es))</span>
+        <span class="credential-date">((en))November 2025((/en))((es))Noviembre 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025_SWERC_AEPM_UTC.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1348,7 +1348,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
-        <span class="credential-date">((en))Oct. 2025((/en))((es))Oct. 2025((/es))</span>
+        <span class="credential-date">((en))October 2025((/en))((es))Octubre 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martinez-HONORABLE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1377,7 +1377,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
-        <span class="credential-date">((en))Mar. 2025((/en))((es))Mar. 2025((/es))</span>
+        <span class="credential-date">((en))March 2025((/en))((es))Marzo 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_TALLER_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1405,7 +1405,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
-        <span class="credential-date">((en))Mar. 2025((/en))((es))Mar. 2025((/es))</span>
+        <span class="credential-date">((en))March 2025((/en))((es))Marzo 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1433,7 +1433,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
-        <span class="credential-date">((en))Dec. 2024((/en))((es))Dic. 2024((/es))</span>
+        <span class="credential-date">((en))December 2024((/en))((es))Diciembre 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2024.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1462,7 +1462,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
-        <span class="credential-date">((en))Oct. 2024((/en))((es))Oct. 2024((/es))</span>
+        <span class="credential-date">((en))October 2024((/en))((es))Octubre 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Parra_PLACE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1490,7 +1490,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/en))((es))Emitido por: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/es))</span>
-        <span class="credential-date">((en))Oct. 2024((/en))((es))Oct. 2024((/es))</span>
+        <span class="credential-date">((en))October 2024((/en))((es))Octubre 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martinez.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -1518,7 +1518,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Meta((/en))((es))Emitido por: Meta((/es))</span>
-        <span class="credential-date">((en))Oct. 2024((/en))((es))Oct. 2024((/es))</span>
+        <span class="credential-date">((en))October 2024((/en))((es))Octubre 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1022025052997781){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">

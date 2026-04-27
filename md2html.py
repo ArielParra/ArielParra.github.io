@@ -504,11 +504,11 @@ def generate_html(md_dict, md_content):
 <div class="container max-width">
     <div class="card max-width" id="filter-checks">
         <hr>
-        <div class="center">
+        <div class="center row">
             <h4>{filterType_text}</h4>
         </div>
         <hr>
-        <div class="center">
+        <div class="center row">
 """
         for idx, tag_value in enumerate(type_tag_text_value):
             tag_text = type_tag_text[idx] if idx < len(type_tag_text) else tag_value.capitalize()
@@ -516,11 +516,11 @@ def generate_html(md_dict, md_content):
 
         html_content += f"""        </div>
         <hr>
-        <div class="center">
+        <div class="center row">
             <h4>{filterTopic_text}</h4>
         </div>
         <hr>
-        <div class="center">
+        <div class="center row">
 """
         for idx, tag_value in enumerate(topic_tag_text_value):
             tag_text = topic_tag_text[idx] if idx < len(topic_tag_text) else tag_value.capitalize()
