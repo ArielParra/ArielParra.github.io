@@ -1219,7 +1219,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="badge cloud mainframe">
+    <div class="card" data-tags="badge cloud">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))IBM Z Xplore - Concepts((/en))((es))IBM Z Xplore - Conceptos((/es))</span>

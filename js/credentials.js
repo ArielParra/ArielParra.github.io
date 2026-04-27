@@ -26,34 +26,58 @@ function toggleCredentialDescription(element) {
 }
 
 /**
- * @description Truncates skills tags to show only first 3.
+ * @description Truncates skills based on character width (~45 chars per line).
  */
 function truncateSkills() {
   const skillContainers = document.querySelectorAll('.credential-skills');
+  const MAX_CHARS_PER_LINE = 30;
+
+  // Helper to clean i18n tags from text
+  const cleanText = (text) => {
+    return text.replace(/\(\(en\)\)/g, '').replace(/\(\(\/en\)\)/g, '')
+      .replace(/\(\(es\)\)/g, '').replace(/\(\(\/es\)\)/g, '');
+  };
 
   skillContainers.forEach(container => {
     const skills = container.querySelectorAll('.credential-skill');
-    const extraCount = skills.length - 3;
     const moreIndicator = container.querySelector('.skills-more');
 
-    if (moreIndicator) {
-      if (extraCount > 0) {
-        const lang = getCurrentSiteLanguage();
-        const label = lang === 'es'
-          ? (moreIndicator.getAttribute('data-i18n-more-es') || `+${extraCount} más`)
-          : (moreIndicator.getAttribute('data-i18n-more-en') || `+${extraCount} more`);
-        moreIndicator.textContent = label;
-        moreIndicator.style.display = '';
+    if (!moreIndicator || skills.length <= 1) {
+      if (moreIndicator) moreIndicator.style.display = 'none';
+      return;
+    }
 
-        skills.forEach((skill, index) => {
-          if (index >= 3) skill.style.display = 'none';
-        });
+    let currentLength = 0;
+    let skillsToShow = 0;
+
+    skills.forEach((skill, index) => {
+      const skillText = cleanText(skill.textContent);
+      const skillLength = skillText.length + 2;
+
+      if (index === 0 || currentLength + skillLength <= MAX_CHARS_PER_LINE) {
+        skillsToShow = index + 1;
+        currentLength += skillLength;
+        skill.style.display = '';
       } else {
-        moreIndicator.style.display = 'none';
+        skill.style.display = 'none';
       }
+    });
+
+    const extraCount = skills.length - skillsToShow;
+    if (extraCount > 0 && moreIndicator) {
+      const lang = getCurrentSiteLanguage();
+      const label = lang === 'es'
+        ? (moreIndicator.getAttribute('data-i18n-more-es') || `+${extraCount} más`)
+        : (moreIndicator.getAttribute('data-i18n-more-en') || `+${extraCount} more`);
+      moreIndicator.textContent = label;
+      moreIndicator.style.display = '';
+    } else if (moreIndicator) {
+      moreIndicator.style.display = 'none';
     }
   });
 }
+
+
 
 /**
  * @description Truncates description to 2 lines (approx 85 chars) with ellipsis and makes see-more clickable.

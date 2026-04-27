@@ -475,7 +475,7 @@ def generate_html(md_dict, md_content):
     
     if nav_current == 3:
         type_tag_text_value = ["all", "education", "certification", "certificate", "badge", "award"]
-        topic_tag_text_value = ["Language", "ai", "backend", "blockchain", "cloud", "cybersecurity", "database", "datascience", "devops", "finance", "mainframe", "networks", "programming", "softskills", "web3"]
+        topic_tag_text_value = ["Language", "ai", "backend", "blockchain", "cloud", "cybersecurity", "database", "datascience", "devops", "finance", "networks", "programming", "softskills", "web3"]
         filterType_text = '<span class="i18n" data-i18n-en="Filter by type" data-i18n-es="Filtrado por tipo">Filter by type</span>'
         filterTopic_text = '<span class="i18n" data-i18n-en="Filter by topic" data-i18n-es="Filtrado por tema">Filter by topic</span>'
         type_tag_text = ['<span class="i18n" data-i18n-en="All" data-i18n-es="Todos">All</span>',
@@ -494,7 +494,6 @@ def generate_html(md_dict, md_content):
                          '<span class="i18n" data-i18n-en="Data Science" data-i18n-es="Ciencia de Datos">Data Science</span>',
                          '<span class="i18n" data-i18n-en="DevOps" data-i18n-es="DevOps">DevOps</span>',
                          '<span class="i18n" data-i18n-en="Finance" data-i18n-es="Finanzas">Finance</span>',
-                         '<span class="i18n" data-i18n-en="Mainframe" data-i18n-es="Mainframe">Mainframe</span>',
                          '<span class="i18n" data-i18n-en="Networks" data-i18n-es="Redes">Networks</span>',
                          '<span class="i18n" data-i18n-en="Programming" data-i18n-es="Programación">Programming</span>',
                          '<span class="i18n" data-i18n-en="Soft Skills" data-i18n-es="Habilidades blandas">Soft Skills</span>',
