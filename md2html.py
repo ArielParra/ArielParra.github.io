@@ -396,6 +396,11 @@ def generate_html(md_dict, md_content):
 <head>
   <base href="{md_dict['base_href']}">
   <link rel="manifest" href="./manifest.json">
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <!--metadatas-->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
   <meta   name="keywords"        data-i18n-keywords-en="{html.escape(keys_en)}" data-i18n-keywords-es="{html.escape(keys_es)}" content="{html.escape(extract_translation(keys_raw, language))}">
@@ -465,11 +470,12 @@ def generate_html(md_dict, md_content):
 """
     
     if nav_current == 3:
-        type_tag_text_value = ["all", "certification", "certificate", "badge", "award"]
+        type_tag_text_value = ["all", "education", "certification", "certificate", "badge", "award"]
         topic_tag_text_value = ["cybersecurity", "devOps", "networks", "cloud", "blockchain", "programming", "datascience", "ai"]
         filterType_text = '<span class="i18n" data-i18n-en="Filter by type" data-i18n-es="Filtrado por tipo">Filter by type</span>'
         filterTopic_text = '<span class="i18n" data-i18n-en="Filter by topic" data-i18n-es="Filtrado por tema">Filter by topic</span>'
-        type_tag_text = ['<span class="i18n" data-i18n-en="All" data-i18n-es="Todos">All</span>', 
+        type_tag_text = ['<span class="i18n" data-i18n-en="All" data-i18n-es="Todos">All</span>',
+                        '<span class="i18n" data-i18n-en="Education" data-i18n-es="Educación">Education</span>',
                         '<span class="i18n" data-i18n-en="Certifications" data-i18n-es="Certificaciones">Certifications</span>',
                         '<span class="i18n" data-i18n-en="Certificates" data-i18n-es="Certificados">Certificates</span>',
                         '<span class="i18n" data-i18n-en="Badges" data-i18n-es="Insignias">Badges</span>',
@@ -510,6 +516,21 @@ def generate_html(md_dict, md_content):
             html_content += f"""          <label><input type="checkbox" value="{tag_value}" onchange="filterCards()"> {tag_text} </label>\n"""
 
         html_content += """        </div>
+        <hr>
+        <div class="center">
+            <h4>Stats</h4>
+        </div>
+        <hr>
+        <div class="center">
+            <span class="credential-counts">
+                <span class="stat-item" data-type="education"><span class="stat-label i18n" data-i18n-en="Education" data-i18n-es="Educación">Education</span>: <span class="stat-count" data-type="education">0</span></span>
+                <span class="stat-item" data-type="certification"><span class="stat-label i18n" data-i18n-en="Certifications" data-i18n-es="Certificaciones">Certifications</span>: <span class="stat-count" data-type="certification">0</span></span>
+                <span class="stat-item" data-type="certificate"><span class="stat-label i18n" data-i18n-en="Certificates" data-i18n-es="Certificados">Certificates</span>: <span class="stat-count" data-type="certificate">0</span></span>
+                <span class="stat-item" data-type="badge"><span class="stat-label i18n" data-i18n-en="Badges" data-i18n-es="Insignias">Badges</span>: <span class="stat-count" data-type="badge">0</span></span>
+                <span class="stat-item" data-type="award"><span class="stat-label i18n" data-i18n-en="Awards" data-i18n-es="Premios">Awards</span>: <span class="stat-count" data-type="award">0</span></span>
+                <span class="stat-item total"><span class="stat-label">Total:</span> <span class="stat-count" id="global-total-credentials">0</span></span>
+            </span>
+        </div>
     </div><!--filters card-->
 </div><!--filters container-->
 """

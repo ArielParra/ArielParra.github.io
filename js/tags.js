@@ -64,18 +64,44 @@ function filterCards() {
   const selectedTags = Array.from(checkboxes).map(checkbox => checkbox.value.toLowerCase());
   const selectedType = radios.length ? radios[0].value.toLowerCase() : 'all';
 
+  let totalCredentials = 0;
+  const counts = { education: 0, certification: 0, certificate: 0, badge: 0, award: 0 };
+
   cards.forEach(card => {
-    const tagsInCard = card.getAttribute('data-tags').toLowerCase().split(' ');
+    const isHeader = card.querySelector('.credential-header') === null && card.querySelector('.section-count');
+    const tagsAttr = card.getAttribute('data-tags');
+    if (!tagsAttr) return;
+    const tagsInCard = tagsAttr.toLowerCase().split(' ');
 
     const matchesType = selectedType === 'all' || tagsInCard.includes(selectedType);
     const matchesTags = selectedTags.every(tag => tagsInCard.includes(tag));
 
     if (matchesType && (selectedTags.length === 0 || matchesTags)) {
       card.style.display = '';
+      if (isHeader) return;
+      totalCredentials++;
+      const primaryType = tagsInCard.find(t => counts.hasOwnProperty(t));
+      if (primaryType) counts[primaryType]++;
     } else {
       card.style.display = 'none';
     }
   });
+
+  // Update section title counts
+  document.querySelectorAll('.section-count').forEach(el => {
+    const type = el.getAttribute('data-type');
+    el.textContent = `(${counts[type] || 0})`;
+  });
+
+  // Update filter stats
+  document.querySelectorAll('.stat-count[data-type]').forEach(el => {
+    const type = el.getAttribute('data-type');
+    el.textContent = counts[type] || 0;
+  });
+
+  // Update global total in filters
+  const totalEl = document.getElementById('global-total-credentials');
+  if (totalEl) totalEl.textContent = totalCredentials;
 
   updateURLfilters();
 }

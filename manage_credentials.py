@@ -9,6 +9,7 @@ Commands:
     get <id>   Get a credential by ID
     delete <id> Delete a credential by ID
     sort        Sort credentials by year (default: newest first)
+    generate    Generate credentials/index.md from JSON
 """
 import json
 import os
@@ -18,7 +19,6 @@ from datetime import datetime
 from pathlib import Path
 
 CREDENTIALS_FILE = Path(__file__).resolve().parent / "data" / "credentials.json"
-# Alternative: use when running from repo root
 if not CREDENTIALS_FILE.exists():
     CREDENTIALS_FILE = Path(__file__).resolve().parent / "credentials" / "data" / "credentials.json"
 
@@ -264,6 +264,7 @@ def cmd_delete(args):
         print(f"Deleted '{cred_id}'.")
     else:
         print("Aborted.")
+        return 0
     return 0
 
 def cmd_sort(args):
@@ -295,24 +296,23 @@ def cmd_generate(args):
     """Generate credentials/index.md from JSON"""
     data = load_credentials()
     creds = data.get('credentials', [])
-    
+
     if not creds:
         print("No credentials to generate.")
         return 0
-    
+
     output_file = Path(__file__).resolve().parent / "credentials" / "index.md"
-    
-    TYPE_ORDER = ["education", "certification", "certificate", "badge", "award"]
+
     TYPE_LABELS = {
-        "education": "((en))Education((/en))((es))Educación((/es))",
-        "certification": "((en))Certifications((/en))((es))Certificaciones((/es))",
-        "certificate": "((en))Certificates((/en))((es))Certificados((/es))",
-        "badge": "((en))Badges((/en))((es))Insignias((/es))",
-        "award": "((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))",
+        "education": ("((en))Education((/en))((es))Educación((/es))", "((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))"),
+        "certification": ("((en))Certifications((/en))((es))Certificaciones((/es))", "((en))Proctored exam-based credentials that validate professional expertise.((/en))((es))Acreditaciones basadas en exámenes supervisados que validan la experiencia profesional.((/es))"),
+        "certificate": ("((en))Certificates((/en))((es))Certificados((/es))", "((en))Course completion or unproctored exam certificates.((/en))((es))Certificados de finalización de cursos o exámenes no supervisados.((/es))"),
+        "badge": ("((en))Badges((/en))((es))Insignias((/es))", "((en))Micro-credentials on specific topics.((/en))((es))Micro-acreditaciones sobre temas específicos.((/es))"),
+        "award": ("((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))", "((en))Honors, contest wins, or participation awards.((/en))((es))Honores, premios de concursos o reconocimientos por participación.((/es))"),
     }
-    
+
     lines = []
-    
+
     lines.append("---")
     lines.append("lang: en")
     lines.append("base_href: ../")
@@ -324,48 +324,52 @@ def cmd_generate(args):
     lines.append("nav_current: 3")
     lines.append("---")
     lines.append("")
-    
+
     prev_type = None
-    
+
     for cred in creds:
         ctype = cred.get('type', 'certificate')
-        
+
         if ctype != prev_type:
             if prev_type is not None:
                 lines.append("  </div><!--container Elements-->")
                 lines.append("")
-            
-            type_label = TYPE_LABELS.get(ctype, ctype.capitalize())
-            
+
+            type_info = TYPE_LABELS.get(ctype, (ctype.capitalize(), ""))
+            type_label, type_desc = type_info
+
             lines.append('  <div class="container">')
-            lines.append('    <div class="card" data-tags="' + ctype.capitalize() + '">')
-            lines.append("      <hr>")
-            lines.append('      <div class="center">')
-            lines.append("        ### " + type_label)
-            lines.append("      </div>")
-            lines.append("      <hr>")
-            lines.append("    </div>")
-            lines.append("  </div><!--container Elements-->")
+            lines.append('  <div class="card" data-tags="' + ctype + '">')
+            lines.append(" <hr>")
+            lines.append(' <div class="center">')
+            lines.append(" ### " + type_label + ' <span class="section-count" data-type="' + ctype + '">(0)</span>')
+            if type_desc:
+                lines.append(' <div class="credential-description justify">')
+                lines.append(type_desc)
+                lines.append(' </div>')
+            lines.append(" </div>")
+            lines.append(" <hr>")
+            lines.append(" </div>")
+            lines.append(" </div><!--container Elements-->")
             lines.append("")
             lines.append('  <div class="container grid max-width">')
-            
+
             prev_type = ctype
-        
+
         lines.append(generate_card(cred))
-    
+
     if prev_type is not None:
         lines.append("  </div><!--container Elements-->")
-    
+
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-    
+
     print(f"Generated {output_file} with {len(creds)} credentials")
     return 0
 
 def generate_card(c):
     ctype = c.get('type', 'certificate')
     issued = c.get('issuedOn', '')
-    year = issued[:4] if issued else 'Unknown'
     
     skills_html = ""
     for s in c.get('skills', []):
@@ -426,7 +430,7 @@ def generate_card(c):
           <span class="title-score">''' + score_text + '''</span>
         </div>
         <div class="credential-skills">
- ''' + skills_html + '''        </div>
+  ''' + skills_html + '''        </div>
       </div>''' + image_html + '''
       <div class="credential-meta">
         <span class="credential-issuer">''' + issuer_text + '''</span>''' + link_html + '''

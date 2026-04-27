@@ -10,14 +10,17 @@ nav_current: 3
 ---
 
   <div class="container">
-    <div class="card" data-tags="Education">
-      <hr>
-      <div class="center">
-        ### ((en))Education((/en))((es))Educación((/es))
-      </div>
-      <hr>
-    </div>
-  </div><!--container Elements-->
+  <div class="card" data-tags="education">
+ <hr>
+ <div class="center">
+ ### ((en))Education((/en))((es))Educación((/es)) <span class="section-count" data-type="education">(0)</span>
+ <div class="credential-description justify">
+((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))
+ </div>
+ </div>
+ <hr>
+ </div>
+ </div><!--container Elements-->
 
   <div class="container grid max-width">
     <div class="card" data-tags="education">
@@ -28,7 +31,7 @@ nav_current: 3
           <span class="title-score">((en))9.34 / 10.0((/en))((es))9.34 / 10.0((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Software Architecture & Design</span>
+            <span class="credential-skill">Software Architecture & Design</span>
           <span class="credential-skill">Data Engineering & Big Data</span>
           <span class="credential-skill">Cloud Computing & Distributed Systems</span>
           <span class="credential-skill">Network Administration & Security</span>
@@ -42,7 +45,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
-        <span class="credential-date">((en))Issued on: 2027-06((/en))((es))Fecha: 2027-06((/es))</span>
+        <span class="credential-date">((en))Issued on: 2026((/en))((es))Fecha: 2026((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.uaa.mx/descubretucarrera/ccb/ing-en-sistemas-computacionales/plan.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -58,7 +61,7 @@ nav_current: 3
           <span class="title-score">((en))ECTS C((/en))((es))ECTS C((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Machine Learning & Data Mining</span>
+            <span class="credential-skill">Machine Learning & Data Mining</span>
           <span class="credential-skill">Cyber-Physical Systems</span>
           <span class="credential-skill">Enterprise Network Architecture</span>
           <span class="credential-skill">Cloud & Fog Computing</span>
@@ -88,7 +91,7 @@ nav_current: 3
           <span class="title-score">1301/1302 ((en))Activities((/en))((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Programming</span>
+            <span class="credential-skill">Programming</span>
           <span class="credential-skill">Back-end</span>
           <span class="credential-skill">Java</span>
           <span class="credential-skill">OOP</span>
@@ -118,14 +121,17 @@ nav_current: 3
   </div><!--container Elements-->
 
   <div class="container">
-    <div class="card" data-tags="Certification">
-      <hr>
-      <div class="center">
-        ### ((en))Certifications((/en))((es))Certificaciones((/es))
-      </div>
-      <hr>
-    </div>
-  </div><!--container Elements-->
+  <div class="card" data-tags="certification">
+ <hr>
+ <div class="center">
+ ### ((en))Certifications((/en))((es))Certificaciones((/es)) <span class="section-count" data-type="certification">(0)</span>
+ <div class="credential-description justify">
+((en))Proctored exam-based credentials that validate professional expertise.((/en))((es))Acreditaciones basadas en exámenes supervisados que validan la experiencia profesional.((/es))
+ </div>
+ </div>
+ <hr>
+ </div>
+ </div><!--container Elements-->
 
   <div class="container grid max-width">
     <div class="card" data-tags="certification">
@@ -136,7 +142,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Cloud</span>
+            <span class="credential-skill">Cloud</span>
           <span class="credential-skill">AWS</span>
           <span class="credential-skill">Networking</span>
           <span class="credential-skill">Security</span>
@@ -175,7 +181,7 @@ nav_current: 3
           <span class="title-score">((en))89/120((/en))((es))89/120((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">English</span>
+            <span class="credential-skill">English</span>
           <span class="credential-skill">Listening</span>
           <span class="credential-skill">Reading</span>
           <span class="credential-skill">Speaking</span>
@@ -203,7 +209,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">AI</span>
+            <span class="credential-skill">AI</span>
           <span class="credential-skill">Cloud</span>
           <span class="credential-skill">Machine Learning</span>
           <span class="credential-skill">Generative AI</span>
@@ -234,7 +240,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Generative AI</span>
+            <span class="credential-skill">Generative AI</span>
           <span class="credential-skill">Cloud</span>
           <span class="credential-skill">OCI</span>
           <span class="credential-skill">Large Language Models (LLMs)</span>
@@ -266,7 +272,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">AI</span>
+            <span class="credential-skill">AI</span>
           <span class="credential-skill">Cloud</span>
           <span class="credential-skill">OCI</span>
           <span class="credential-skill">Oracle AI Services</span>
@@ -298,7 +304,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">DevOps</span>
+            <span class="credential-skill">DevOps</span>
           <span class="credential-skill">GitHub</span>
           <span class="credential-skill">Git</span>
           <span class="credential-skill">GitHub Actions</span>
@@ -329,7 +335,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Security</span>
+            <span class="credential-skill">Security</span>
           <span class="credential-skill">Compliance</span>
           <span class="credential-skill">Identity</span>
           <span class="credential-skill">Cloud</span>
@@ -356,14 +362,17 @@ nav_current: 3
   </div><!--container Elements-->
 
   <div class="container">
-    <div class="card" data-tags="Certificate">
-      <hr>
-      <div class="center">
-        ### ((en))Certificates((/en))((es))Certificados((/es))
-      </div>
-      <hr>
-    </div>
-  </div><!--container Elements-->
+  <div class="card" data-tags="certificate">
+ <hr>
+ <div class="center">
+ ### ((en))Certificates((/en))((es))Certificados((/es)) <span class="section-count" data-type="certificate">(0)</span>
+ <div class="credential-description justify">
+((en))Course completion or unproctored exam certificates.((/en))((es))Certificados de finalización de cursos o exámenes no supervisados.((/es))
+ </div>
+ </div>
+ <hr>
+ </div>
+ </div><!--container Elements-->
 
   <div class="container grid max-width">
     <div class="card" data-tags="certificate">
@@ -374,7 +383,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">English</span>
+            <span class="credential-skill">English</span>
           <span class="credential-skill">Listening</span>
           <span class="credential-skill">Reading</span>
           <span class="skills-more"></span>        </div>
@@ -400,7 +409,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Cloud</span>
+            <span class="credential-skill">Cloud</span>
           <span class="credential-skill">AWS</span>
           <span class="credential-skill">DevOps</span>
           <span class="credential-skill">AWS Cloud Concepts</span>
@@ -431,7 +440,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Cloud</span>
+            <span class="credential-skill">Cloud</span>
           <span class="credential-skill">AWS</span>
           <span class="credential-skill">Networking</span>
           <span class="credential-skill">Cloud Computing Concepts</span>
@@ -461,7 +470,7 @@ nav_current: 3
           <span class="title-score">((en))79/100((/en))((es))79/100((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">English</span>
+            <span class="credential-skill">English</span>
           <span class="credential-skill">Listening</span>
           <span class="credential-skill">Reading</span>
           <span class="credential-skill">Speaking</span>
@@ -488,7 +497,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">AI Foundations</span>
+            <span class="credential-skill">AI Foundations</span>
           <span class="credential-skill">Productivity Tools</span>
           <span class="credential-skill">Generative AI</span>
           <span class="credential-skill">Digital Workflow Optimization</span>
@@ -515,7 +524,7 @@ nav_current: 3
           <span class="title-score">90/90 ((en))Activities((/en))(es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">ChatGPT Optimization</span>
+            <span class="credential-skill">ChatGPT Optimization</span>
           <span class="credential-skill">Prompt Engineering</span>
           <span class="credential-skill">AI-Powered Productivity</span>
           <span class="credential-skill">Market Readiness</span>
@@ -543,7 +552,7 @@ nav_current: 3
           <span class="title-score">408/408 ((en))Activities((/en))((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">MySQL Server</span>
+            <span class="credential-skill">MySQL Server</span>
           <span class="credential-skill">Advanced SQL Queries</span>
           <span class="credential-skill">Stored Procedures</span>
           <span class="credential-skill">DML Commands</span>
@@ -572,7 +581,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Information Security Awareness</span>
+            <span class="credential-skill">Information Security Awareness</span>
           <span class="credential-skill">Digital Risk Management</span>
           <span class="credential-skill">Cyber Hygiene</span>
           <span class="credential-skill">Workplace Security Best Practices</span>
@@ -599,7 +608,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Artificial Intelligence</span>
+            <span class="credential-skill">Artificial Intelligence</span>
           <span class="credential-skill">Workplace Productivity</span>
           <span class="credential-skill">Generative AI</span>
           <span class="credential-skill">Digital Security Awareness</span>
@@ -626,7 +635,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Information Security</span>
+            <span class="credential-skill">Information Security</span>
           <span class="credential-skill">Digital Risk Management</span>
           <span class="credential-skill">Cybersecurity Best Practices</span>
           <span class="credential-skill">Workplace Security Awareness</span>
@@ -653,7 +662,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Data Structures</span>
+            <span class="credential-skill">Data Structures</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">control structures</span>
           <span class="credential-skill">Arrays</span>
@@ -683,7 +692,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Cybersecurity</span>
+            <span class="credential-skill">Cybersecurity</span>
           <span class="credential-skill">Networking</span>
           <span class="credential-skill">Network Security</span>
           <span class="credential-skill">Threat & Vulnerability Management</span>
@@ -712,7 +721,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">AI</span>
+            <span class="credential-skill">AI</span>
           <span class="credential-skill">Generative AI</span>
           <span class="credential-skill">Machine Learning</span>
           <span class="credential-skill">Prompt Engineering</span>
@@ -742,7 +751,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">DevOps</span>
+            <span class="credential-skill">DevOps</span>
           <span class="credential-skill">GitHub</span>
           <span class="credential-skill">Git</span>
           <span class="credential-skill">Open Source Collaboration</span>
@@ -771,7 +780,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">DevOps</span>
+            <span class="credential-skill">DevOps</span>
           <span class="credential-skill">CI/CD</span>
           <span class="credential-skill">GitLab</span>
           <span class="credential-skill">YAML Pipeline Authoring</span>
@@ -802,7 +811,7 @@ nav_current: 3
           <span class="title-score">206/207 ((en))Activities((/en)) ((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Java OOP</span>
+            <span class="credential-skill">Java OOP</span>
           <span class="credential-skill">Collections & Lists</span>
           <span class="credential-skill">API Consumption</span>
           <span class="credential-skill">Exception Handling</span>
@@ -830,7 +839,7 @@ nav_current: 3
           <span class="title-score">381/381 ((en))Activities((/en))((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Java</span>
+            <span class="credential-skill">Java</span>
           <span class="credential-skill">Spring Boot 3</span>
           <span class="credential-skill">Spring Data JPA</span>
           <span class="credential-skill">REST API Development</span>
@@ -860,7 +869,7 @@ nav_current: 3
           <span class="title-score">198/198 ((en))Activities((/en)) ((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Agile Fundamentals</span>
+            <span class="credential-skill">Agile Fundamentals</span>
           <span class="credential-skill">Entrepreneurship</span>
           <span class="credential-skill">Business Planning</span>
           <span class="credential-skill">Career Strategy</span>
@@ -889,7 +898,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Microsoft SC-900</span>
+            <span class="credential-skill">Microsoft SC-900</span>
           <span class="credential-skill">Cloud Security Fundamentals</span>
           <span class="credential-skill">Identity and Access Management (IAM)</span>
           <span class="credential-skill">Compliance Management</span>
@@ -917,7 +926,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Internet Computer Protocol (ICP)</span>
+            <span class="credential-skill">Internet Computer Protocol (ICP)</span>
           <span class="credential-skill">Web3</span>
           <span class="credential-skill">TypeScript</span>
           <span class="credential-skill">Azle Framework</span>
@@ -946,7 +955,7 @@ nav_current: 3
           <span class="title-score">345/348 ((en))Activities((/en)) ((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Programming</span>
+            <span class="credential-skill">Programming</span>
           <span class="credential-skill">Web Development</span>
           <span class="credential-skill">JavaScript Logic</span>
           <span class="credential-skill">HTML5</span>
@@ -977,7 +986,7 @@ nav_current: 3
           <span class="title-score">171/171 ((en))Activities((/en)) ((es))Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Learning Strategies</span>
+            <span class="credential-skill">Learning Strategies</span>
           <span class="credential-skill">Personal Productivity</span>
           <span class="credential-skill">LinkedIn Optimization</span>
           <span class="credential-skill">Focus & Time Management</span>
@@ -1005,7 +1014,7 @@ nav_current: 3
           <span class="title-score">((en))10 Problem Sets + Final Project Completed((/en))((es))10 Conjuntos de Problemas + Proyecto Final Completados((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Algorithms</span>
+            <span class="credential-skill">Algorithms</span>
           <span class="credential-skill">Data Structures</span>
           <span class="credential-skill">C</span>
           <span class="credential-skill">Python</span>
@@ -1036,7 +1045,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Artificial Intelligence</span>
+            <span class="credential-skill">Artificial Intelligence</span>
           <span class="credential-skill">Data Science</span>
           <span class="credential-skill">Machine Learning</span>
           <span class="credential-skill">Data Analysis</span>
@@ -1063,7 +1072,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Blockchain</span>
+            <span class="credential-skill">Blockchain</span>
           <span class="credential-skill">Solidity</span>
           <span class="credential-skill">Smart Contracts</span>
           <span class="credential-skill">Ethereum</span>
@@ -1090,7 +1099,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Blockchain Consulting</span>
+            <span class="credential-skill">Blockchain Consulting</span>
           <span class="credential-skill">Web3 Strategy</span>
           <span class="credential-skill">Decentralized Systems</span>
           <span class="credential-skill">Enterprise Blockchain</span>
@@ -1117,7 +1126,7 @@ nav_current: 3
           <span class="title-score">((en))8/10((/en))((es))8/10((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Personal Finance</span>
+            <span class="credential-skill">Personal Finance</span>
           <span class="credential-skill">Financial Planning</span>
           <span class="credential-skill">Savings & Investment</span>
           <span class="credential-skill">Consumer Credit Rights</span>
@@ -1145,7 +1154,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Advanced Computing</span>
+            <span class="credential-skill">Advanced Computing</span>
           <span class="credential-skill">Digital Literacy</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">Technological Competence</span>
@@ -1167,14 +1176,17 @@ nav_current: 3
   </div><!--container Elements-->
 
   <div class="container">
-    <div class="card" data-tags="Badge">
-      <hr>
-      <div class="center">
-        ### ((en))Badges((/en))((es))Insignias((/es))
-      </div>
-      <hr>
-    </div>
-  </div><!--container Elements-->
+  <div class="card" data-tags="badge">
+ <hr>
+ <div class="center">
+ ### ((en))Badges((/en))((es))Insignias((/es)) <span class="section-count" data-type="badge">(0)</span>
+ <div class="credential-description justify">
+((en))Micro-credentials on specific topics.((/en))((es))Micro-acreditaciones sobre temas específicos.((/es))
+ </div>
+ </div>
+ <hr>
+ </div>
+ </div><!--container Elements-->
 
   <div class="container grid max-width">
     <div class="card" data-tags="badge">
@@ -1185,7 +1197,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">AWS Compute</span>
+            <span class="credential-skill">AWS Compute</span>
           <span class="credential-skill">AWS Storage</span>
           <span class="credential-skill">AWS Networking</span>
           <span class="credential-skill">AWS Databases</span>
@@ -1215,7 +1227,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">IBM Z</span>
+            <span class="credential-skill">IBM Z</span>
           <span class="credential-skill">Mainframes</span>
           <span class="credential-skill">JCL (Job Control Language)</span>
           <span class="credential-skill">MVS Commands</span>
@@ -1242,14 +1254,17 @@ nav_current: 3
   </div><!--container Elements-->
 
   <div class="container">
-    <div class="card" data-tags="Award">
-      <hr>
-      <div class="center">
-        ### ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))
-      </div>
-      <hr>
-    </div>
-  </div><!--container Elements-->
+  <div class="card" data-tags="award">
+ <hr>
+ <div class="center">
+ ### ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es)) <span class="section-count" data-type="award">(0)</span>
+ <div class="credential-description justify">
+((en))Honors, contest wins, or participation awards.((/en))((es))Honores, premios de concursos o reconocimientos por participación.((/es))
+ </div>
+ </div>
+ <hr>
+ </div>
+ </div><!--container Elements-->
 
   <div class="container grid max-width">
     <div class="card" data-tags="award">
@@ -1260,7 +1275,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Hackathon</span>
+            <span class="credential-skill">Hackathon</span>
           <span class="credential-skill">Team Leadership</span>
           <span class="credential-skill">Mobile Development</span>
           <span class="credential-skill">Flutter</span>
@@ -1291,7 +1306,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Competitive Programming</span>
+            <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">Algorithms</span>
           <span class="credential-skill">ICPC</span>
@@ -1320,7 +1335,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Competitive Programming</span>
+            <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">ICPC</span>
           <span class="credential-skill">Data Structures</span>
@@ -1329,12 +1344,12 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Gran Premio de México 2025 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2025-ICPC-Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.png)
+        ![loading="lazy" alt="Gran Premio de México 2025 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2025-ICPC-Gran_Premio_de_Mexico-Ariel_Parra-HONORABLE.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
         <span class="credential-date">((en))Issued on: 2025-10((/en))((es))Fecha: 2025-10((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-HONORABLE.pdf){:target="_blank" class="credential-link"}
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martinez-HONORABLE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))I earned an Honorable Mention at the 2025 ICPC Gran Premio de México, representing the Universidad Autónoma de Aguascalientes. This achievement validates my technical proficiency in algorithmic problem-solving and my ability to collaborate effectively in high-pressure competitive programming environments.((/en))((es))Obtuve una Mención Honorífica en el ICPC Gran Premio de México 2025, representando a la Universidad Autónoma de Aguascalientes. Este logro valida mi competencia técnica en la resolución de problemas algorítmicos y mi capacidad para colaborar eficazmente en entornos de programación competitiva de alta presión.((/es))
@@ -1349,7 +1364,7 @@ nav_current: 3
           <span class="title-score">((en))Recognition((/en))((es))Reconocimiento((/es))</span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Public Speaking</span>
+            <span class="credential-skill">Public Speaking</span>
           <span class="credential-skill">Career Development</span>
           <span class="credential-skill">Technical Mentoring</span>
           <span class="credential-skill">Career Coaching</span>
@@ -1378,7 +1393,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Leadership</span>
+            <span class="credential-skill">Leadership</span>
           <span class="credential-skill">Project Management</span>
           <span class="credential-skill">Algorithmic Competition Design</span>
           <span class="credential-skill">Team Coordination</span>
@@ -1406,7 +1421,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Strategic Leadership</span>
+            <span class="credential-skill">Strategic Leadership</span>
           <span class="credential-skill">Technical Mentoring</span>
           <span class="credential-skill">Community Management</span>
           <span class="credential-skill">Competitive Programming</span>
@@ -1434,7 +1449,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Competitive Programming</span>
+            <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">ICPC</span>
           <span class="credential-skill">Data Structures</span>
@@ -1443,12 +1458,12 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="Gran Premio de México 2024 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.png)
+        ![loading="lazy" alt="Gran Premio de México 2024 ((en))image((/en))((es))imagen((/es))"](./credentials/img/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Parra_PLACE.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))</span>
         <span class="credential-date">((en))Issued on: 2024-10((/en))((es))Fecha: 2024-10((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martínez-PLACE.pdf){:target="_blank" class="credential-link"}
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Parra_PLACE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))I received an Honorable Mention at the 2024 ICPC Gran Premio de México representing the Universidad Autónoma de Aguascalientes with the team 'HoneyCrisps'. This recognition validates my technical skills in competitive programming and algorithmic problem solving during the competition held from April to October 2024.((/en))((es))Recibí una Mención Honorífica en el ICPC Gran Premio de México 2024 representando a la Universidad Autónoma de Aguascalientes con el equipo 'HoneyCrisps'. Este reconocimiento valida mis habilidades técnicas en programación competitiva y resolución de problemas algorítmicos durante la competencia celebrada de abril a octubre de 2024.((/es))
@@ -1463,7 +1478,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Competitive Programming</span>
+            <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">Data Structures</span>
           <span class="credential-skill">Algorithms</span>
@@ -1471,12 +1486,12 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))19th National Programming Contest ANIEI 2024 image((/en))((es))19º Concurso Nacional de Programación ANIEI 2024 imagen((/es))"](./credentials/img/ANIEI-Ariel_Emilio_Parra_Martínez.png)
+        ![loading="lazy" alt="((en))19th National Programming Contest ANIEI 2024 image((/en))((es))19º Concurso Nacional de Programación ANIEI 2024 imagen((/es))"](./credentials/img/ANIEI-Ariel_Emilio_Parra_Martinez.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/en))((es))Emitido por: Asociación Nacional de Instituciones de Educación en Tecnologías de la Información (ANIEI)((/es))</span>
         <span class="credential-date">((en))Issued on: 2024-10((/en))((es))Fecha: 2024-10((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martínez.pdf){:target="_blank" class="credential-link"}
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martinez.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))I validated my competitive programming skills by participating in the 19th National Programming Contest during the XXXVII National and XXIII International Congress of Informatics and Computing (ANIEI 2024). The event was held at the Centro Universitario de Tonalá (UDG), focusing on the intersection of AI, reality, and virtual environments.((/en))((es))Validé mis habilidades en programación competitiva mediante mi participación en el 19º Concurso Nacional de Programación dentro del XXXVII Congreso Nacional y XXIII Congreso Internacional de Informática y Computación (ANIEI 2024). El evento se llevó a cabo en el Centro Universitario de Tonalá (UDG), con un enfoque en la intersección de la IA, la realidad y los entornos virtuales.((/es))
@@ -1491,7 +1506,7 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-           <span class="credential-skill">Competitive Programming</span>
+            <span class="credential-skill">Competitive Programming</span>
           <span class="credential-skill">Problem Solving</span>
           <span class="credential-skill">Data Structures</span>
           <span class="credential-skill">Algorithms</span>

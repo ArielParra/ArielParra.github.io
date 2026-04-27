@@ -11,12 +11,12 @@ nav_current: 1
 <div class="container">
     <div class="card">
         <hr>
-        ![alt="((en))My photo((/en))((es))mi foto((/es))" title="me"](./img/ArielParra.jpg)   
+        ![alt="((en))My photo((/en))((es))mi foto((/es))" title="((en))me((/en))((es))yo((/es))"](./img/ArielParra.jpg)   
         <hr>
         <div class="center">
             # ((en))Hello, I'm((/en))((es))Hola, soy((/es))
             <p></p>
-            # Ariel PARRA.
+            # <span class="pixelify-sans-a">A</span>riel P<span class="pixelify-sans-a">a</span>rr<span class="pixelify-sans-a">a</span>.
             <p></p>
             # ((en))Welcome to my website!((/en))((es))¡Bienvenido a mi sitio web!((/es))
         </div>
