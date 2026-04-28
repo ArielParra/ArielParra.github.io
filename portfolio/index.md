@@ -38,7 +38,7 @@ nav_current: 2
           <span class="techs-more"></span>
       </div>
       <div class="project-preview">
-        ![loading="lazy" alt="Tomin"](https://raw.githubusercontent.com/ArielParra/Tomin/refs/heads/main/demo.gif)
+        ![loading="lazy" alt="Tomin"](./portfolio/img/Tomin.gif)
       </div>
       <div class="project-description justify">
         ((en))Tomin is a cross-platform expense-tracking app with an integrated LLM assistant. Built during the Talent Land Genius Arena hackathon, where it won 1st place among 75 teams.((/en))((es))Tomin es una aplicación multiplataforma de seguimiento de gastos con un asistente LLM integrado. Construida durante el hackathon Talent Land Genius Arena, donde ganó el 1er lugar entre 75 equipos.((/es))

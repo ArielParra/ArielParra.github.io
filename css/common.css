@@ -379,7 +379,7 @@ html {
 
 .pixelify-sans-a {
   font-family: "Pixelify Sans", sans-serif;
-  font-optical-sizing: auto;
+
   font-size: 115%;
   /* Increase the text size */
   font-weight: 700;

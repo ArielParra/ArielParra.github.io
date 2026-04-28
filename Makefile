@@ -1,8 +1,10 @@
 ifdef OS
 	PYTHON := python.exe
+	NPX := npx.exe
 	FixPath = $(subst /,\,$1)
 else
 	PYTHON := python
+	NPX := npx
 	FixPath = $1
 endif
 
@@ -42,4 +44,13 @@ clean:
 	rm -f $(call FixPath,./credentials/index.html)
 	rm -f $(call FixPath,./404.html)
 
-.PHONY: all clean index portfolio_md portfolio contact credentials_md credentials 404
+validate:
+	$(PYTHON) $(call FixPath,scripts/validate.py)
+
+lint:
+	${NPX} eslint "js/**/*.js"
+	@echo "🎉 All JS files passed validation!"
+	$(PYTHON) -m flake8 scripts/ --extend-ignore=E501
+	@echo "🎉 All Python scripts passed validation!"
+
+.PHONY: all clean index portfolio_md portfolio contact credentials_md credentials 404 validate lint

@@ -37,7 +37,7 @@
 
 
 /* SITE */
-  Last update: 2025-02-11
+  Last update: 2026-04-28
   Standards: W3 HTML5, W3 CSS3
   Software: VSCode, git
 

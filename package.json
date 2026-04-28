@@ -1,0 +1,25 @@
+{
+  "name": "arielparra.github.io",
+  "version": "1.0.0",
+  "description": "A simple, lightweight personal website. Previously hosted at arielparra.tech.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArielParra/ArielParra.github.io.git"
+  },
+  "keywords": [],
+  "author": "Ariel Parra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArielParra/ArielParra.github.io/issues"
+  },
+  "homepage": "https://github.com/ArielParra/ArielParra.github.io#readme",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.32.0"
+  }
+}

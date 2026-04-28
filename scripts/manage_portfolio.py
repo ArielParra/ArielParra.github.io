@@ -15,9 +15,12 @@ from pathlib import Path
 
 from base_manager import BaseManager
 
-PROJECTS_FILE = Path(__file__).resolve().parent.parent / "portfolio" / "data" / "projects.json"
+PROJECTS_FILE = Path(__file__).resolve().parent.parent / \
+    "portfolio" / "data" / "projects.json"
 if not PROJECTS_FILE.exists():
-    PROJECTS_FILE = Path(__file__).resolve().parent.parent / "data" / "projects.json"
+    PROJECTS_FILE = Path(__file__).resolve(
+    ).parent.parent / "data" / "projects.json"
+
 
 class PortfolioManager(BaseManager):
     TECH_OPTIONS = [
@@ -108,7 +111,8 @@ class PortfolioManager(BaseManager):
         image = p.get('image', '')
         title = p.get('title', '')
         if image:
-            image_html = '\n      <div class="project-preview">\n        ![loading="lazy" alt="' + title + '"](' + image + ')\n      </div>'
+            image_html = '\n      <div class="project-preview">\n        ![loading="lazy" alt="' + \
+                title + '"](' + image + ')\n      </div>'
         else:
             image_html = ""
 
@@ -151,7 +155,8 @@ class PortfolioManager(BaseManager):
             print("No projects to generate.")
             return 0
 
-        output_file = Path(__file__).resolve().parent.parent / "portfolio" / "index.md"
+        output_file = Path(__file__).resolve(
+        ).parent.parent / "portfolio" / "index.md"
 
         # Collect all unique techs across all projects
         all_techs = []
@@ -167,10 +172,13 @@ class PortfolioManager(BaseManager):
         # --- Frontmatter ---
         lines.append("---")
         lines.append("base_href: ../")
-        lines.append("keywords: [((en))Ariel Parra, portfolio((/en))((es))Ariel Parra, portafolio((/es))]")
-        lines.append("description: ((en))Ariel Parra portfolio((/en))((es))Portafolio de Ariel Parra((/es))")
+        lines.append(
+            "keywords: [((en))Ariel Parra, portfolio((/en))((es))Ariel Parra, portafolio((/es))]")
+        lines.append(
+            "description: ((en))Ariel Parra portfolio((/en))((es))Portafolio de Ariel Parra((/es))")
         lines.append("title: ((en))portfolio((/en))((es))portafolio((/es))")
-        lines.append("js: [cookies, language, theme, menu, favicon, portfolio]")
+        lines.append(
+            "js: [cookies, language, theme, menu, favicon, portfolio]")
         lines.append("css: [theme, common, portfolio]")
         lines.append("nav_current: 2")
         lines.append("---")
@@ -181,7 +189,8 @@ class PortfolioManager(BaseManager):
         for tech in all_techs:
             label = self.TECH_LABELS.get(tech, tech)
             if isinstance(label, dict):
-                tech_data.append({"value": tech, "en": label.get("en", tech), "es": label.get("es", tech)})
+                tech_data.append({"value": tech, "en": label.get(
+                    "en", tech), "es": label.get("es", tech)})
             else:
                 tech_data.append({"value": tech, "en": label, "es": label})
         tech_data_json = json.dumps(tech_data, ensure_ascii=False)
@@ -191,8 +200,10 @@ class PortfolioManager(BaseManager):
         lines.append('  <div class="card" id="filter-techs">')
         lines.append("  <hr>")
         lines.append('  <div class="center">')
-        lines.append("  ### ((en))Filter by Technology((/en))((es))Filtrar por Tecnología((/es))")
-        lines.append(f'  <span id="tech-data" data-techs=\'{tech_data_json}\' style="display:none;"></span>')
+        lines.append(
+            "  ### ((en))Filter by Technology((/en))((es))Filtrar por Tecnología((/es))")
+        lines.append(
+            f'  <span id="tech-data" data-techs=\'{tech_data_json}\' style="display:none;"></span>')
         lines.append('  <div class="tech-search-wrapper">')
         lines.append('    <input type="text" id="tech-search" placeholder="Search technology..." data-placeholder-en="Search technology..." data-placeholder-es="Buscar tecnología..." autocomplete="off">')
         lines.append('    <div id="tech-suggestions"></div>')
@@ -224,7 +235,9 @@ class PortfolioManager(BaseManager):
             print("No projects to sort.")
             return 0
 
-        sorted_projects = sorted(projects, key=lambda p: p.get('title', '').lower())
+        sorted_projects = sorted(
+            projects, key=lambda p: p.get(
+                'title', '').lower())
         data['projects'] = sorted_projects
         self.save_data(data)
 
@@ -239,9 +252,9 @@ class PortfolioManager(BaseManager):
             print("No projects found.")
             return 0
 
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"{'ID':<25} {'TITLE':<20} {'TECHS'}")
-        print(f"{'='*60}")
+        print(f"{'=' * 60}")
 
         for p in projects:
             pid = p.get('id', '')
@@ -261,7 +274,8 @@ class PortfolioManager(BaseManager):
             print("Title required.")
             return 1
 
-        pid = input(f"ID [{self.generate_id(title)}]: ").strip() or self.generate_id(title)
+        pid = input(f"ID [{self.generate_id(title)}]: ").strip(
+        ) or self.generate_id(title)
         techs = self.prompt_technologies()
 
         desc_en = input("Description (English): ").strip()
@@ -300,19 +314,20 @@ class PortfolioManager(BaseManager):
     def cmd_get(self, args):
         data = self.load_data()
         projects = data.get('projects', [])
-        
+
         item_id = args.get('<id>')
         if not item_id:
             print("Usage: get <project-id>")
             return 1
-        
+
         for p in projects:
             if p.get('id') == item_id:
                 print(json.dumps(p, indent=2, ensure_ascii=False))
                 return 0
-        
+
         print(f"Project '{item_id}' not found.")
         return 1
+
 
 if __name__ == '__main__':
     manager = PortfolioManager()

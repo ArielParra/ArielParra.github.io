@@ -4,8 +4,8 @@ Base Manager for Portfolio and Credentials
 """
 import json
 import sys
-import re
 from pathlib import Path
+
 
 class BaseManager:
     def __init__(self, file_path, data_key):
@@ -56,23 +56,49 @@ class BaseManager:
         """Convert date like 2025-04 to April 2025 / Abril 2025"""
         if not date_str:
             return ""
-        
-        en_months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-        es_months = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
-        
+
+        en_months = [
+            "",
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"]
+        es_months = [
+            "",
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"]
+
         parts = date_str.split("-")
         if len(parts) >= 2:
             year = parts[0]
             try:
                 month = int(parts[1])
-            except:
+            except BaseException:
                 return date_str
             en_month = en_months[month] if 1 <= month <= 12 else ""
             es_month = es_months[month] if 1 <= month <= 12 else ""
-            
+
             if en_month and es_month:
                 return f"((en)){en_month} {year}((/en))((es)){es_month} {year}((/es))"
-        
+
         return date_str
 
     def cmd_delete(self, args):
@@ -120,14 +146,15 @@ class BaseManager:
         if len(sys.argv) < 2:
             print("Commands: generate, sort, list, add, delete, get")
             return 0
-        
+
         command = sys.argv[1]
         args = {}
         i = 2
         while i < len(sys.argv):
             arg = sys.argv[i]
             if arg.startswith('--'):
-                if i + 1 < len(sys.argv) and not sys.argv[i + 1].startswith('-'):
+                if i + \
+                        1 < len(sys.argv) and not sys.argv[i + 1].startswith('-'):
                     args[arg] = sys.argv[i + 1]
                     i += 2
                 else:
@@ -142,7 +169,7 @@ class BaseManager:
             else:
                 args['<id>'] = arg
                 i += 1
-        
+
         commands = {
             'add': self.cmd_add,
             'list': self.cmd_list,
@@ -151,9 +178,9 @@ class BaseManager:
             'sort': self.cmd_sort,
             'generate': self.cmd_generate,
         }
-        
+
         if command not in commands:
             print(f"Unknown command: {command}")
             return 1
-        
+
         return commands[command](args)

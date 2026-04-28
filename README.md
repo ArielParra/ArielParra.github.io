@@ -67,13 +67,27 @@ content here
 
 ## Features
 
-- **No dependencies**: Vanilla HTML, CSS, JavaScript
-- **Lightweight**: No frameworks, no bundlers, no node_modules
+- **No dependencies for core website**: Vanilla HTML, CSS, JavaScript
+- **Lightweight**: No frameworks, no bundlers for the frontend.
 - **Custom site generator**: Python-based `md2html.py`
 - **Theming**: Manual light/dark mode support
 - **Internationalization**: Auto language detection
 - **Responsive**: Custom mobile-first design
 - **Animated**: Subtle CSS animations
+
+## Quality Assurance & Validation
+
+To maintain high code quality and standard compliance, the project includes an automated linting and validation pipeline:
+
+- **HTML & CSS Validation**: Uses `scripts/validate.py` to check all generated HTML and CSS files against the official W3C Validation APIs (Nu HTML Checker & Jigsaw CSS Validator).
+- **JavaScript Linting**: Uses **ESLint** with a relaxed `airbnb-base` configuration tailored for a vanilla global-scope architecture.
+- **Python Linting**: Uses **Flake8** to enforce PEP8 standards and **Autopep8** for automatic formatting of the custom CLI tools.
+
+Run the full validation suite using:
+```bash
+make validate  # Validates HTML and CSS via W3C
+make lint      # Lints JS files via ESLint and Python files via Flake8
+```
 
 ## Credentials Management
 
@@ -110,6 +124,36 @@ python scripts/manage_credentials.py generate    # Generate credentials/index.md
 ```
 
 After adding or modifying credentials in `credentials.json`, run `generate` to rebuild `credentials/index.md`, then run `make credentials` to build the final HTML.
+
+## Portfolio Projects Management
+
+Similar to credentials, the portfolio uses a JSON-based data source, processed into HTML by `manage_portfolio.py`.
+
+### projects.json
+
+Contains all your portfolio projects:
+- `id`: Unique identifier for the project
+- `title`: Project name
+- `date`: Project date (YYYY-MM format)
+- `technologies`: Array of technology tags used in the project
+- `description`: Bilingual description (en/es)
+- `image`: Path or URL to project preview image/gif
+- `link`: URL to the project repository or live demo
+
+### manage_portfolio.py
+
+A CLI tool for managing portfolio data:
+
+```bash
+python scripts/manage_portfolio.py add          # Add new project (interactive)
+python scripts/manage_portfolio.py list         # List all projects
+python scripts/manage_portfolio.py get <id>     # View specific project
+python scripts/manage_portfolio.py delete <id>  # Delete project
+python scripts/manage_portfolio.py sort         # Sort projects alphabetically
+python scripts/manage_portfolio.py generate     # Generate portfolio/index.md from JSON
+```
+
+After adding or modifying projects in `projects.json`, run `generate` to rebuild `portfolio/index.md`, then run `make portfolio` to build the final HTML.
 
 ## Credits
 
