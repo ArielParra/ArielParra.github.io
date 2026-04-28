@@ -478,6 +478,7 @@ def generate_html(md_dict, md_content):
         topic_tag_text_value = ["Language", "ai", "backend", "blockchain", "cloud", "cybersecurity", "database", "datascience", "devops", "finance", "networks", "programming", "softskills", "web3"]
         filterType_text = '<span class="i18n" data-i18n-en="Filter by type" data-i18n-es="Filtrado por tipo">Filter by type</span>'
         filterTopic_text = '<span class="i18n" data-i18n-en="Filter by topic" data-i18n-es="Filtrado por tema">Filter by topic</span>'
+        stats_text = '<span class="i18n" data-i18n-en="Stats" data-i18n-es="Estadísticas">Stats</span>'
         type_tag_text = ['<span class="i18n" data-i18n-en="All" data-i18n-es="Todos">All</span>',
                         '<span class="i18n" data-i18n-en="Education" data-i18n-es="Educación">Education</span>',
                         '<span class="i18n" data-i18n-en="Certifications" data-i18n-es="Certificaciones">Certifications</span>',
@@ -503,7 +504,7 @@ def generate_html(md_dict, md_content):
 <div class="container max-width">
     <div class="card max-width" id="filter-checks">
         <hr>
-        <div class="center row">
+        <div class="center">
             <h4>{filterType_text}</h4>
         </div>
         <hr>
@@ -515,7 +516,7 @@ def generate_html(md_dict, md_content):
 
         html_content += f"""        </div>
         <hr>
-        <div class="center row">
+        <div class="center">
             <h4>{filterTopic_text}</h4>
         </div>
         <hr>
@@ -525,10 +526,10 @@ def generate_html(md_dict, md_content):
             tag_text = topic_tag_text[idx] if idx < len(topic_tag_text) else tag_value.capitalize()
             html_content += f"""          <label><input type="checkbox" value="{tag_value}" onchange="filterCards()"> {tag_text} </label>\n"""
 
-        html_content += """        </div>
+        html_content += f"""        </div>
         <hr>
         <div class="center">
-            <h4>Stats</h4>
+            <h4>{stats_text}</h4>
         </div>
         <hr>
         <div class="center">

@@ -163,10 +163,10 @@ def cmd_generate(args):
     lines.append('  <div class="tech-search-wrapper">')
     lines.append('    <input type="text" id="tech-search" placeholder="Search technology..." data-placeholder-en="Search technology..." data-placeholder-es="Buscar tecnología..." autocomplete="off">')
     lines.append('    <div id="tech-suggestions"></div>')
+    lines.append("  <hr>")
     lines.append("  </div>")
     lines.append('  <div id="selected-techs"></div>')
     lines.append("  </div>")
-    lines.append("  <hr>")
     lines.append("  </div>")
     lines.append("  </div>")
     lines.append("")
@@ -183,6 +183,29 @@ def cmd_generate(args):
     print(f"Generated {output_file} with {len(projects)} projects")
     return 0
 
+def format_date_i18n(date_str):
+    """Convert date like 2025-04 to April 2025 / Abril 2025"""
+    if not date_str:
+        return ""
+
+    en_months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    es_months = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+
+    parts = date_str.split("-")
+    if len(parts) >= 2:
+        year = parts[0]
+        try:
+            month = int(parts[1])
+        except:
+            return date_str
+        en_month = en_months[month] if 1 <= month <= 12 else ""
+        es_month = es_months[month] if 1 <= month <= 12 else ""
+
+        if en_month and es_month:
+            return f"((en)){en_month} {year}((/en))((es)){es_month} {year}((/es))"
+
+    return date_str
+
 def generate_project_card(p):
     """Generate markdown card HTML for a single project."""
     techs = p.get('technologies', [])
@@ -198,10 +221,7 @@ def generate_project_card(p):
     image = p.get('image', '')
     title = p.get('title', '')
     if image:
-        image_html = f"""
-      <div class="project-preview">
-        ![loading="lazy" alt="{title}"](""" + image + """)
-      </div>"""
+        image_html = '\n      <div class="project-preview">\n        ![loading="lazy" alt="' + title + '"](' + image + ')\n      </div>'
     else:
         image_html = ""
 
@@ -209,12 +229,16 @@ def generate_project_card(p):
     desc_en = p.get('description', {}).get('en', '')
     desc_es = p.get('description', {}).get('es', '')
 
+    # Date
+    date_str = p.get('date', '')
+    date_formatted = format_date_i18n(date_str)
+    date_html = f'\n        <span class="project-date">{date_formatted}</span>' if date_formatted else ''
+
     # Link
     link = p.get('link', '')
     link_html = ""
     if link:
-        link_html = f"""
-        [((en))View Project((/en))((es))Ver Proyecto((/es))]({link}){{:target="_blank" class="project-link"}}"""
+        link_html = f'\n        [((en))View Project((/en))((es))Ver Proyecto((/es))]({link}){{:target="_blank" class="project-link"}}'
 
     card = f"""    <div class="card" data-tags="{data_tags}">
       <div class="project-header">
@@ -222,9 +246,12 @@ def generate_project_card(p):
       </div>
       <div class="project-techs">
 {tech_tags_html}      </div>{image_html}
+        <div class="project-meta">{date_html}{link_html}
+      <hr>
       <div class="center">
-        <hr>
-        ((en)){desc_en}((/en))((es)){desc_es}((/es)){link_html}
+        
+        ((en)){desc_en}((/en))((es)){desc_es}((/es))
+      </div>
       </div>
     </div>"""
     return card

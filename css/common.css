@@ -281,17 +281,18 @@ input:checked {
 }
 
 #filter-checks label {
-    display: inline-flex;
-    line-height: 1.4;
-    margin-right: 5px;
-  }
+  display: inline-flex;
+  line-height: 1.4;
+  margin-right: 5px;
+}
 
 @media (max-width: 600px) {
   .row {
     display: flex !important;
     flex-wrap: wrap;
   }
-  .row > * {
+
+  .row>* {
     width: 50%;
     box-sizing: border-box;
   }
@@ -371,7 +372,7 @@ html {
   #filter-checks label {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
     width: 45%;
   }
 }
