@@ -9,11 +9,7 @@
         "dart",
         "firebase",
         "python",
-        "llm",
-        "test",
-        "2",
-        "3",
-        "4"
+        "llm"
       ],
       "description": {
         "en": "Tomin is a cross-platform expense-tracking app with an integrated LLM assistant. Built during the Talent Land Genius Arena hackathon, where it won 1st place among 75 teams.",

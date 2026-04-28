@@ -13,7 +13,7 @@ nav_current: 2
   <hr>
   <div class="center">
   ### ((en))Filter by Technology((/en))((es))Filtrar por Tecnología((/es))
-  <span id="tech-data" data-techs='[{"value": "flutter", "en": "Flutter", "es": "Flutter"}, {"value": "dart", "en": "Dart", "es": "Dart"}, {"value": "firebase", "en": "Firebase", "es": "Firebase"}, {"value": "python", "en": "Python", "es": "Python"}, {"value": "llm", "en": "LLM", "es": "LLM"}, {"value": "test", "en": "test", "es": "test"}, {"value": "2", "en": "2", "es": "2"}, {"value": "3", "en": "3", "es": "3"}, {"value": "4", "en": "4", "es": "4"}, {"value": "jekyll", "en": "Jekyll", "es": "Jekyll"}, {"value": "ruby", "en": "Ruby", "es": "Ruby"}, {"value": "html", "en": "HTML", "es": "HTML"}, {"value": "css", "en": "CSS", "es": "CSS"}, {"value": "markdown", "en": "Markdown", "es": "Markdown"}, {"value": "cpp", "en": "C++", "es": "C++"}, {"value": "libpcap", "en": "Libpcap", "es": "Libpcap"}, {"value": "raylib", "en": "Raylib", "es": "Raylib"}, {"value": "networking", "en": "Networking", "es": "Redes"}, {"value": "assembly", "en": "Assembly", "es": "Assembly"}, {"value": "dos", "en": "DOS", "es": "DOS"}, {"value": "algorithms", "en": "Algorithms", "es": "Algoritmos"}, {"value": "winapi", "en": "WinAPI", "es": "WinAPI"}, {"value": "javascript", "en": "JavaScript", "es": "JavaScript"}, {"value": "browser-extension", "en": "Browser Extension", "es": "Extensión de Navegador"}, {"value": "c", "en": "C", "es": "C"}]' style="display:none;"></span>
+  <span id="tech-data" data-techs='[{"value": "flutter", "en": "Flutter", "es": "Flutter"}, {"value": "dart", "en": "Dart", "es": "Dart"}, {"value": "firebase", "en": "Firebase", "es": "Firebase"}, {"value": "python", "en": "Python", "es": "Python"}, {"value": "llm", "en": "LLM", "es": "LLM"}, {"value": "jekyll", "en": "Jekyll", "es": "Jekyll"}, {"value": "ruby", "en": "Ruby", "es": "Ruby"}, {"value": "html", "en": "HTML", "es": "HTML"}, {"value": "css", "en": "CSS", "es": "CSS"}, {"value": "markdown", "en": "Markdown", "es": "Markdown"}, {"value": "cpp", "en": "C++", "es": "C++"}, {"value": "libpcap", "en": "Libpcap", "es": "Libpcap"}, {"value": "raylib", "en": "Raylib", "es": "Raylib"}, {"value": "networking", "en": "Networking", "es": "Redes"}, {"value": "assembly", "en": "Assembly", "es": "Assembly"}, {"value": "dos", "en": "DOS", "es": "DOS"}, {"value": "algorithms", "en": "Algorithms", "es": "Algoritmos"}, {"value": "winapi", "en": "WinAPI", "es": "WinAPI"}, {"value": "javascript", "en": "JavaScript", "es": "JavaScript"}, {"value": "browser-extension", "en": "Browser Extension", "es": "Extensión de Navegador"}, {"value": "c", "en": "C", "es": "C"}]' style="display:none;"></span>
   <div class="tech-search-wrapper">
     <input type="text" id="tech-search" placeholder="Search technology..." data-placeholder-en="Search technology..." data-placeholder-es="Buscar tecnología..." autocomplete="off">
     <div id="tech-suggestions"></div>
@@ -25,7 +25,7 @@ nav_current: 2
   </div>
 
   <div class="container grid max-width">
-    <div class="card" data-tags="flutter dart firebase python llm test 2 3 4">
+    <div class="card" data-tags="flutter dart firebase python llm">
       <div class="project-header">
         <span class="project-title">Tomin</span>
       </div>
@@ -35,10 +35,6 @@ nav_current: 2
           <span class="project-tech">Firebase</span>
           <span class="project-tech">Python</span>
           <span class="project-tech">LLM</span>
-          <span class="project-tech">test</span>
-          <span class="project-tech">2</span>
-          <span class="project-tech">3</span>
-          <span class="project-tech">4</span>
           <span class="techs-more"></span>
       </div>
       <div class="project-preview">

@@ -15,9 +15,13 @@ make clean        # Remove generated HTML
 ## Project Structure
 
 ```
-├── md2html.py          # Python static site generator
 ├── Makefile            # Build automation
 ├── *.md                # Source files with YAML frontmatter
+├── scripts/            # Python build and management scripts
+│   ├── md2html.py             # Python static site generator
+│   ├── manage_portfolio.py    # CLI tool to manage portfolio JSON
+│   ├── manage_credentials.py  # CLI tool to manage credentials JSON
+│   └── base_manager.py        # OOP Base class for CLI tools
 ├── css/                # Modular stylesheets
 │   ├── theme.css       # Color palette, light/dark themes
 │   ├── common.css      # Base styles (nav, buttons, cards, scrollbar)
@@ -26,13 +30,16 @@ make clean        # Remove generated HTML
 │   └── 404.css         # 404 page styles
 ├── js/                 # JavaScript modules
 ├── portfolio/          # Portfolio page sources
+│   ├── data/
+│   │   └── projects.json      # All portfolio projects data
+│   ├── index.md               # Source markdown
+│   └── index.html             # Generated output
 ├── contact/            # Contact page sources
 └── credentials/        # Credentials page sources
     ├── data/
     │   └── credentials.json   # All credentials data (education, certs, etc.)
     ├── docs/                  # PDF documentation files
     ├── img/                   # Credential images
-    ├── manage_credentials.py  # CLI tool to manage credentials.json
     ├── index.md               # Source markdown
     └── index.html             # Generated output
 ```
@@ -92,14 +99,14 @@ Contains all education records, certifications, certificates, and badges organiz
 A CLI tool for managing credentials data:
 
 ```bash
-python manage_credentials.py add          # Add new credential (interactive)
-python manage_credentials.py list        # List all credentials
-python manage_credentials.py list --sort year    # Sort by year
-python manage_credentials.py list --type certification  # Filter by type
-python manage_credentials.py get <id>    # View specific credential
-python manage_credentials.py delete <id>  # Delete credential
-python manage_credentials.py sort           # Sort credentials by type then date
-python manage_credentials.py generate    # Generate credentials/index.md from JSON
+python scripts/manage_credentials.py add          # Add new credential (interactive)
+python scripts/manage_credentials.py list        # List all credentials
+python scripts/manage_credentials.py list --sort year    # Sort by year
+python scripts/manage_credentials.py list --type certification  # Filter by type
+python scripts/manage_credentials.py get <id>    # View specific credential
+python scripts/manage_credentials.py delete <id>  # Delete credential
+python scripts/manage_credentials.py sort           # Sort credentials by type then date
+python scripts/manage_credentials.py generate    # Generate credentials/index.md from JSON
 ```
 
 After adding or modifying credentials in `credentials.json`, run `generate` to rebuild `credentials/index.md`, then run `make credentials` to build the final HTML.

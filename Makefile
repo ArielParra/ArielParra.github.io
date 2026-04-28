@@ -6,7 +6,7 @@ else
 	FixPath = $1
 endif
 
-script := md2html.py
+script := scripts/md2html.py
 
 all: index portfolio_md portfolio contact credentials_md credentials 404
 
@@ -15,7 +15,7 @@ index:
 
 portfolio_md:
 	@echo "Generating portfolio/index.md file..."
-	$(PYTHON) $(call FixPath,manage_portfolio.py) generate
+	$(PYTHON) $(call FixPath,scripts/manage_portfolio.py) generate
 
 portfolio:
 	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./portfolio/index.md) $(call FixPath,./portfolio/index.html)
@@ -25,9 +25,9 @@ contact:
 
 credentials_md: 
 	@echo "Sorting credentials.json..."
-	$(PYTHON) $(call FixPath,manage_credentials.py) sort
+	$(PYTHON) $(call FixPath,scripts/manage_credentials.py) sort
 	@echo "Generating credentials/index.md file..."
-	$(PYTHON) $(call FixPath,manage_credentials.py) generate
+	$(PYTHON) $(call FixPath,scripts/manage_credentials.py) generate
 
 credentials:
 	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./credentials/index.md) $(call FixPath,./credentials/index.html)

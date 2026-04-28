@@ -11,7 +11,7 @@ make clean        # Remove generated HTML
 ## Architecture
 
 - **Source**: `*.md` files with YAML frontmatter (`---key: value---`)
-- **Generator**: `md2html.py` - custom Python converter (no dependencies)
+- **Generator**: `scripts/md2html.py` - custom Python converter (no dependencies)
 - **Output**: Static HTML in same directory
 
 ## Markdown Format
@@ -59,7 +59,10 @@ content here
 
 ## Key Files
 
-- `md2html.py` - HTML generator (544 lines)
+- `scripts/md2html.py` - HTML generator
+- `scripts/manage_portfolio.py` - CLI tool for portfolio.json
+- `scripts/manage_credentials.py` - CLI tool for credentials.json
+- `scripts/base_manager.py` - OOP base class for data managers
 - `style.css` - imports css/ folder (backward compatibility)
 - `css/` - modular CSS files
 - `js/` - JavaScript modules
