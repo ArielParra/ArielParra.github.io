@@ -1,0 +1,180 @@
+/* Portfolio Card Styles */
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.project-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.project-tech {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--text);
+  background: var(--card_BG);
+  border: 1px solid var(--text);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.project-preview {
+  display: flex;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--HTML_BG);
+}
+
+.project-preview img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 200px;
+}
+
+.project-link {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.2rem 0.4rem;
+  background: var(--button_BG);
+  border: 1px solid var(--button_border);
+  border-radius: 4px;
+  color: var(--button_color);
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background: var(--btn-hover_BG);
+  color: var(--btn-hover_color);
+}
+
+/* --- Search Filter --- */
+
+.tech-search-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+#tech-search {
+  width: 100%;
+  max-width: 20rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border: 2px solid var(--button_border);
+  border-radius: 6px;
+  background: var(--HTML_BG);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: auto;
+}
+
+#tech-search:focus {
+  border-color: var(--nav-a-hover_BG);
+}
+
+#tech-search::placeholder {
+  color: var(--text);
+  opacity: 0.5;
+}
+
+/* --- Suggestions Dropdown --- */
+
+#tech-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 20rem;
+  max-height: 12rem;
+  overflow-y: auto;
+  background: var(--card_BG);
+  border: 1px solid var(--button_border);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 100;
+}
+
+.tech-suggestion {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.tech-suggestion:hover {
+  background: var(--nav-a-hover_BG);
+  color: var(--nav-a-hover-span_color);
+}
+
+/* --- Selected Tech Chips --- */
+
+#selected-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  min-height: 1.5rem;
+}
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--text);
+  background: var(--nav-a-current_BG);
+  border: 1px solid var(--button_border);
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  animation: chipIn 0.2s ease;
+}
+
+@keyframes chipIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.tech-chip-remove {
+  cursor: pointer;
+  font-size: 0.7rem;
+  opacity: 0.7;
+  padding: 0 0.15rem;
+  transition: opacity 0.15s;
+}
+
+.tech-chip-remove:hover {
+  opacity: 1;
+}

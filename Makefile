@@ -8,10 +8,14 @@ endif
 
 script := md2html.py
 
-all: index portfolio contact credentials_md credentials 404
+all: index portfolio_md portfolio contact credentials_md credentials 404
 
 index:
 	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./index.md) $(call FixPath,./index.html)
+
+portfolio_md:
+	@echo "Generating portfolio/index.md file..."
+	$(PYTHON) $(call FixPath,manage_portfolio.py) generate
 
 portfolio:
 	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./portfolio/index.md) $(call FixPath,./portfolio/index.html)
@@ -38,4 +42,4 @@ clean:
 	rm -f $(call FixPath,./credentials/index.html)
 	rm -f $(call FixPath,./404.html)
 
-.PHONY: all clean index portfolio contact credentials 404
+.PHONY: all clean index portfolio_md portfolio contact credentials_md credentials 404

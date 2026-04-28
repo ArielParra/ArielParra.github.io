@@ -20,17 +20,19 @@
   <link   rel="stylesheet"       href="./css/common.css"    >
   <link   rel="stylesheet"       href="./css/portfolio.css" >
   <!-- Java Scripts preloads -->
-  <link   rel="preload"          href="./js/cookies.js"  as="script">
-  <link   rel="preload"          href="./js/language.js" as="script">
-  <link   rel="preload"          href="./js/theme.js"    as="script">
-  <link   rel="preload"          href="./js/menu.js"     as="script">
-  <link   rel="preload"          href="./js/favicon.js"  as="script">
+  <link   rel="preload"          href="./js/cookies.js"   as="script">
+  <link   rel="preload"          href="./js/language.js"  as="script">
+  <link   rel="preload"          href="./js/theme.js"     as="script">
+  <link   rel="preload"          href="./js/menu.js"      as="script">
+  <link   rel="preload"          href="./js/favicon.js"   as="script">
+  <link   rel="preload"          href="./js/portfolio.js" as="script">
   <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">  </script>
-  <script defer                  src ="./js/language.js"> </script>
-  <script defer                  src ="./js/theme.js">    </script>
-  <script defer                  src ="./js/menu.js">     </script>
-  <script defer                  src ="./js/favicon.js">  </script>
+  <script defer                  src ="./js/cookies.js">   </script>
+  <script defer                  src ="./js/language.js">  </script>
+  <script defer                  src ="./js/theme.js">     </script>
+  <script defer                  src ="./js/menu.js">      </script>
+  <script defer                  src ="./js/favicon.js">   </script>
+  <script defer                  src ="./js/portfolio.js"> </script>
   <!-- Favicons -->  
   <link   rel="apple-touch-icon" href="./img/ArielParra.jpg"   type="image/webp" sizes="180x180">
 </head>
@@ -50,75 +52,216 @@
     <a href="./contact/"     class="NotCurrent" title="         "> <span><span class="i18n" data-i18n-en="contact" data-i18n-es="contacto">contact</span>              </span></a>
   </nav>
 
-  <div class="container grid">
-    <div class="card">
-      <img src="./portfolio/img/cpc-gallos.png" alt="cpc-gallos">
+
+  <div class="container">
+  <div class="card" id="filter-techs">
+  <hr>
+  <div class="center">
+  <h3><span class="i18n" data-i18n-en="Filter by Technology" data-i18n-es="Filtrar por Tecnología">Filter by Technology</span></h3>
+  <span id="tech-data" data-techs='[{"value": "flutter", "en": "Flutter", "es": "Flutter"}, {"value": "dart", "en": "Dart", "es": "Dart"}, {"value": "firebase", "en": "Firebase", "es": "Firebase"}, {"value": "python", "en": "Python", "es": "Python"}, {"value": "llm", "en": "LLM", "es": "LLM"}, {"value": "jekyll", "en": "Jekyll", "es": "Jekyll"}, {"value": "ruby", "en": "Ruby", "es": "Ruby"}, {"value": "html", "en": "HTML", "es": "HTML"}, {"value": "css", "en": "CSS", "es": "CSS"}, {"value": "markdown", "en": "Markdown", "es": "Markdown"}, {"value": "cpp", "en": "C++", "es": "C++"}, {"value": "libpcap", "en": "Libpcap", "es": "Libpcap"}, {"value": "raylib", "en": "Raylib", "es": "Raylib"}, {"value": "networking", "en": "Networking", "es": "Redes"}, {"value": "assembly", "en": "Assembly", "es": "Assembly"}, {"value": "dos", "en": "DOS", "es": "DOS"}, {"value": "algorithms", "en": "Algorithms", "es": "Algoritmos"}, {"value": "winapi", "en": "WinAPI", "es": "WinAPI"}, {"value": "javascript", "en": "JavaScript", "es": "JavaScript"}, {"value": "browser-extension", "en": "Browser Extension", "es": "Extensión de Navegador"}, {"value": "c", "en": "C", "es": "C"}]' style="display:none;"></span>
+  <div class="tech-search-wrapper">
+    <input type="text" id="tech-search" placeholder="Search technology..." data-placeholder-en="Search technology..." data-placeholder-es="Buscar tecnología..." autocomplete="off">
+    <div id="tech-suggestions"></div>
+  </div>
+  <div id="selected-techs"></div>
+  </div>
+  <hr>
+  </div>
+  </div>
+
+  <div class="container grid max-width">
+    <div class="card" data-tags="flutter dart firebase python llm">
+      <div class="project-header">
+        <span class="project-title">Tomin</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">Flutter</span>
+          <span class="project-tech">Dart</span>
+          <span class="project-tech">Firebase</span>
+          <span class="project-tech">Python</span>
+          <span class="project-tech">LLM</span>
+      </div>
+      <div class="project-preview">
+        <img src="https://raw.githubusercontent.com/ArielParra/Tomin/refs/heads/main/demo.gif" loading="lazy" alt="Tomin">
+      </div>
       <div class="center">
         <hr>
-        <span class="i18n" data-i18n-en="The &lt;a href=&quot;https://cpc-gallos.github.io/&quot;&gt;cpc-gallos&lt;/a&gt; website, &quot;Competitive Programming Club GALLOS&quot; made with jekyll and chirpy, admin by me." data-i18n-es="El sitio web de &lt;a href=&quot;https://cpc-gallos.github.io/&quot;&gt;cpc-gallos&lt;/a&gt;, &quot;Club de Programación Competitiva GALLOS&quot;, hecho con Jekyll y Chirpy, administrado por mí.">The <a href="https://cpc-gallos.github.io/">cpc-gallos</a> website, "Competitive Programming Club GALLOS" made with jekyll and chirpy, admin by me.</span>
+        <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/Tomin&quot;&gt;Tomin&lt;/a&gt; is a cross-platform expense-tracking app with an integrated LLM assistant. Built during the Talent Land Genius Arena hackathon, where it won 1st place among 75 teams." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/Tomin&quot;&gt;Tomin&lt;/a&gt; es una aplicación multiplataforma de seguimiento de gastos con un asistente LLM integrado. Construida durante el hackathon Talent Land Genius Arena, donde ganó el 1er lugar entre 75 equipos."><a href="https://github.com/ArielParra/Tomin">Tomin</a> is a cross-platform expense-tracking app with an integrated LLM assistant. Built during the Talent Land Genius Arena hackathon, where it won 1st place among 75 teams.</span>
+        <a href="https://github.com/ArielParra/Tomin" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/ArielParra/Pcapsule/refs/heads/main/pcapsule.gif" alt="Pcapsule">
+    <div class="card" data-tags="jekyll ruby html css markdown">
+      <div class="project-header">
+        <span class="project-title">CPC-GALLOS</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">Jekyll</span>
+          <span class="project-tech">Ruby</span>
+          <span class="project-tech">HTML</span>
+          <span class="project-tech">CSS</span>
+          <span class="project-tech">Markdown</span>
+      </div>
+      <div class="project-preview">
+        <img src="./portfolio/img/cpc-gallos.png" loading="lazy" alt="CPC-GALLOS">
+      </div>
+      <div class="center">
+        <hr>
+        <span class="i18n" data-i18n-en="The &lt;a href=&quot;https://cpc-gallos.github.io/&quot;&gt;cpc-gallos&lt;/a&gt; website, &quot;Competitive Programming Club GALLOS&quot; made with Jekyll and Chirpy, admin by me." data-i18n-es="El sitio web de &lt;a href=&quot;https://cpc-gallos.github.io/&quot;&gt;cpc-gallos&lt;/a&gt;, &quot;Club de Programación Competitiva GALLOS&quot;, hecho con Jekyll y Chirpy, administrado por mí.">The <a href="https://cpc-gallos.github.io/">cpc-gallos</a> website, "Competitive Programming Club GALLOS" made with Jekyll and Chirpy, admin by me.</span>
+        <a href="https://cpc-gallos.github.io/" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
+      </div>
+    </div>
+    <div class="card" data-tags="cpp libpcap raylib networking">
+      <div class="project-header">
+        <span class="project-title">Pcapsule</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">C++</span>
+          <span class="project-tech">Libpcap</span>
+          <span class="project-tech">Raylib</span>
+          <span class="project-tech"><span class="i18n" data-i18n-en="Networking" data-i18n-es="Redes">Networking</span></span>
+      </div>
+      <div class="project-preview">
+        <img src="https://raw.githubusercontent.com/ArielParra/Pcapsule/refs/heads/main/pcapsule.gif" loading="lazy" alt="Pcapsule">
+      </div>
       <div class="center">
         <hr>
         <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/Pcapsule&quot;&gt;Pcapsule&lt;/a&gt; A network packet sniffer developed using libpcap and raylib in C++, allowing real-time capturing and analysis of IPv4 packets on both Windows and Linux." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/Pcapsule&quot;&gt;Pcapsule&lt;/a&gt; es un sniffer de paquetes de red desarrollado con libpcap y raylib en C++, que permite la captura y análisis en tiempo real de paquetes IPv4 en Windows y Linux."><a href="https://github.com/ArielParra/Pcapsule">Pcapsule</a> A network packet sniffer developed using libpcap and raylib in C++, allowing real-time capturing and analysis of IPv4 packets on both Windows and Linux.</span>
+        <a href="https://github.com/ArielParra/Pcapsule" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/ArielParra/ASM_Piano/refs/heads/main/demo.gif" alt="ASM Piano">
+    <div class="card" data-tags="assembly dos">
+      <div class="project-header">
+        <span class="project-title">ASM Piano</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">Assembly</span>
+          <span class="project-tech">DOS</span>
+      </div>
+      <div class="project-preview">
+        <img src="https://raw.githubusercontent.com/ArielParra/ASM_Piano/refs/heads/main/demo.gif" loading="lazy" alt="ASM Piano">
+      </div>
       <div class="center">
         <hr>
         <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/ASM_Piano&quot;&gt;ASM Piano&lt;/a&gt; 8086 ASM for DOS piano simulator with auto-play and manual key mode." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/ASM_Piano&quot;&gt;ASM Piano&lt;/a&gt; simulador de piano en ASM 8086 para DOS con modo de reproducción automática y modo manual."><a href="https://github.com/ArielParra/ASM_Piano">ASM Piano</a> 8086 ASM for DOS piano simulator with auto-play and manual key mode.</span>
+        <a href="https://github.com/ArielParra/ASM_Piano" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/ArielParra/Klotski_Solver/refs/heads/main/KlotskiSolver-Demo.gif" alt="Klotski Solver">
+    <div class="card" data-tags="cpp algorithms">
+      <div class="project-header">
+        <span class="project-title">Klotski Solver</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">C++</span>
+          <span class="project-tech"><span class="i18n" data-i18n-en="Algorithms" data-i18n-es="Algoritmos">Algorithms</span></span>
+      </div>
+      <div class="project-preview">
+        <img src="https://raw.githubusercontent.com/ArielParra/Klotski_Solver/refs/heads/main/KlotskiSolver-Demo.gif" loading="lazy" alt="Klotski Solver">
+      </div>
       <div class="center">
         <hr>
-        <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/Klotski_Solver&quot;&gt;Klotski Solver&lt;/a&gt; uses DFS (Depth-First Search) and Backtracking algorithms to find solutions to klotkski puzzle boards" data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/Klotski_Solver&quot;&gt;Klotski Solver&lt;/a&gt; utiliza algoritmos de búsqueda en profundidad (DFS) y backtracking para encontrar soluciones a tableros del rompecabezas Klotski."><a href="https://github.com/ArielParra/Klotski_Solver">Klotski Solver</a> uses DFS (Depth-First Search) and Backtracking algorithms to find solutions to klotkski puzzle boards</span>
+        <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/Klotski_Solver&quot;&gt;Klotski Solver&lt;/a&gt; uses DFS (Depth-First Search) and Backtracking algorithms to find solutions to Klotski puzzle boards." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/Klotski_Solver&quot;&gt;Klotski Solver&lt;/a&gt; utiliza algoritmos de búsqueda en profundidad (DFS) y backtracking para encontrar soluciones a tableros del rompecabezas Klotski."><a href="https://github.com/ArielParra/Klotski_Solver">Klotski Solver</a> uses DFS (Depth-First Search) and Backtracking algorithms to find solutions to Klotski puzzle boards.</span>
+        <a href="https://github.com/ArielParra/Klotski_Solver" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
-    <div class="card">
-      <img src="./portfolio/img/Play_Sound.png" alt="Play_Sound">
+    <div class="card" data-tags="cpp winapi">
+      <div class="project-header">
+        <span class="project-title">Play_Sound</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">C++</span>
+          <span class="project-tech">WinAPI</span>
+      </div>
+      <div class="project-preview">
+        <img src="./portfolio/img/Play_Sound.png" loading="lazy" alt="Play_Sound">
+      </div>
       <div class="center">
         <hr>
-        <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/Play_Sound&quot;&gt;Play_Sound&lt;/a&gt; Play_Sound is a reimplementation of the legacy WINAPI PlaySound()/PlaySoundA() functions, improving them by using a background process to run .wav sound files asynchronously." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/Play_Sound&quot;&gt;Play_Sound&lt;/a&gt; es una reimplementación de las funciones heredadas PlaySound()/PlaySoundA() de WINAPI, mejoradas mediante el uso de un proceso en segundo plano para ejecutar archivos de sonido .wav de forma asincrónica."><a href="https://github.com/ArielParra/Play_Sound">Play_Sound</a> Play_Sound is a reimplementation of the legacy WINAPI PlaySound()/PlaySoundA() functions, improving them by using a background process to run .wav sound files asynchronously.</span>
+        <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/Play_Sound&quot;&gt;Play_Sound&lt;/a&gt; is a reimplementation of the legacy WINAPI PlaySound()/PlaySoundA() functions, improving them by using a background process to run .wav sound files asynchronously." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/Play_Sound&quot;&gt;Play_Sound&lt;/a&gt; es una reimplementación de las funciones heredadas PlaySound()/PlaySoundA() de WINAPI, mejoradas mediante el uso de un proceso en segundo plano para ejecutar archivos de sonido .wav de forma asincrónica."><a href="https://github.com/ArielParra/Play_Sound">Play_Sound</a> is a reimplementation of the legacy WINAPI PlaySound()/PlaySoundA() functions, improving them by using a background process to run .wav sound files asynchronously.</span>
+        <a href="https://github.com/ArielParra/Play_Sound" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/ArielParra/MemoriaExtreem/refs/heads/main/demo.gif" alt="MemoriaExtreem">
+    <div class="card" data-tags="cpp">
+      <div class="project-header">
+        <span class="project-title">MemoriaExtreem</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">C++</span>
+      </div>
+      <div class="project-preview">
+        <img src="https://raw.githubusercontent.com/ArielParra/MemoriaExtreem/refs/heads/main/demo.gif" loading="lazy" alt="MemoriaExtreem">
+      </div>
       <div class="center">
         <hr>
         <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/MemoriaExtreem&quot;&gt;MemoriaExtreem&lt;/a&gt; is a memory game that allows you to load new words, display results in a file, and is compatible with multiple operating systems." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/MemoriaExtreem&quot;&gt;MemoriaExtreem&lt;/a&gt; es un juego de memoria que permite cargar nuevas palabras, mostrar resultados en un archivo, y es compatible con múltiples sistemas operativos."><a href="https://github.com/ArielParra/MemoriaExtreem">MemoriaExtreem</a> is a memory game that allows you to load new words, display results in a file, and is compatible with multiple operating systems.</span>
+        <a href="https://github.com/ArielParra/MemoriaExtreem" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/ArielParra/RR_and_BS_Simulator/refs/heads/main/demo.gif" alt="RR_and_BS_Simulator">
+    <div class="card" data-tags="cpp algorithms">
+      <div class="project-header">
+        <span class="project-title">RR & BS Simulator</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">C++</span>
+          <span class="project-tech"><span class="i18n" data-i18n-en="Algorithms" data-i18n-es="Algoritmos">Algorithms</span></span>
+      </div>
+      <div class="project-preview">
+        <img src="https://raw.githubusercontent.com/ArielParra/RR_and_BS_Simulator/refs/heads/main/demo.gif" loading="lazy" alt="RR & BS Simulator">
+      </div>
       <div class="center">
         <hr>
         <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/RR_and_BS_Simulator&quot;&gt;RR_and_BS_Simulator&lt;/a&gt; Process scheduling and memory management simulator in C++ (Round Robin and Buddy System), featuring a text interface to configure, monitor, and control the simulation." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/RR_and_BS_Simulator&quot;&gt;RR_and_BS_Simulator&lt;/a&gt; Simulador de planificación de procesos y gestión de memoria en C++ (Round Robin y Buddy System), con interfaz de texto para configurar, observar y controlar la simulación."><a href="https://github.com/ArielParra/RR_and_BS_Simulator">RR_and_BS_Simulator</a> Process scheduling and memory management simulator in C++ (Round Robin and Buddy System), featuring a text interface to configure, monitor, and control the simulation.</span>
+        <a href="https://github.com/ArielParra/RR_and_BS_Simulator" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/ArielParra/Page_Loader/refs/heads/main/gif.gif" alt="Page Loader">
+    <div class="card" data-tags="javascript browser-extension">
+      <div class="project-header">
+        <span class="project-title">Page Loader</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">JavaScript</span>
+          <span class="project-tech"><span class="i18n" data-i18n-en="Browser Extension" data-i18n-es="Extensión de Navegador">Browser Extension</span></span>
+      </div>
+      <div class="project-preview">
+        <img src="https://raw.githubusercontent.com/ArielParra/Page_Loader/refs/heads/main/gif.gif" loading="lazy" alt="Page Loader">
+      </div>
       <div class="center">
         <hr>
         <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/Page_Loader&quot;&gt;Page Loader&lt;/a&gt; is a lightweight, Manifest V3 browser extension for Chrome and Firefox that simulates the End key press to automatically scroll and load more content on infinite-scroll websites like Facebook, Twitter, Reddit, and more." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/Page_Loader&quot;&gt;Page Loader&lt;/a&gt; es una extensión ligera para navegadores basada en Manifest V3 para Chrome y Firefox que simula la tecla End para desplazarse automáticamente y cargar más contenido en sitios de scroll infinito como Facebook, Twitter, Reddit y otros."><a href="https://github.com/ArielParra/Page_Loader">Page Loader</a> is a lightweight, Manifest V3 browser extension for Chrome and Firefox that simulates the End key press to automatically scroll and load more content on infinite-scroll websites like Facebook, Twitter, Reddit, and more.</span>
+        <a href="https://github.com/ArielParra/Page_Loader" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/ArielParra/JSnake/refs/heads/main/demo.gif" alt="JSnake">
+    <div class="card" data-tags="javascript html css">
+      <div class="project-header">
+        <span class="project-title">JSnake</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">JavaScript</span>
+          <span class="project-tech">HTML</span>
+          <span class="project-tech">CSS</span>
+      </div>
+      <div class="project-preview">
+        <img src="https://raw.githubusercontent.com/ArielParra/JSnake/refs/heads/main/demo.gif" loading="lazy" alt="JSnake">
+      </div>
       <div class="center">
         <hr>
-        <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/JSnake&quot;&gt;JSnake&lt;/a&gt; Snake game built with JavaScript + HTML + CSS using the Nord color palette" data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/JSnake&quot;&gt;JSnake&lt;/a&gt; Juego de la serpiente construido con JavaScript + HTML + CSS utilizando la paleta de colores Nord."><a href="https://github.com/ArielParra/JSnake">JSnake</a> Snake game built with JavaScript + HTML + CSS using the Nord color palette</span>
+        <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/JSnake&quot;&gt;JSnake&lt;/a&gt; Snake game built with JavaScript + HTML + CSS using the Nord color palette." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/JSnake&quot;&gt;JSnake&lt;/a&gt; Juego de la serpiente construido con JavaScript + HTML + CSS utilizando la paleta de colores Nord."><a href="https://github.com/ArielParra/JSnake">JSnake</a> Snake game built with JavaScript + HTML + CSS using the Nord color palette.</span>
+        <a href="https://github.com/ArielParra/JSnake" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/ArielParra/C-hristmas_Tree/refs/heads/main/demo.gif" alt="C-hristmas_Tree">
+    <div class="card" data-tags="c">
+      <div class="project-header">
+        <span class="project-title">C-hristmas Tree</span>
+      </div>
+      <div class="project-techs">
+          <span class="project-tech">C</span>
+      </div>
+      <div class="project-preview">
+        <img src="https://raw.githubusercontent.com/ArielParra/C-hristmas_Tree/refs/heads/main/demo.gif" loading="lazy" alt="C-hristmas Tree">
+      </div>
       <div class="center">
         <hr>
         <span class="i18n" data-i18n-en="&lt;a href=&quot;https://github.com/ArielParra/C-hristmas_Tree&quot;&gt;C-hristmas_Tree&lt;/a&gt; The program displays an animated Christmas tree with colors, entirely made in the C programming language." data-i18n-es="&lt;a href=&quot;https://github.com/ArielParra/C-hristmas_Tree&quot;&gt;C-hristmas_Tree&lt;/a&gt; El programa muestra un árbol de Navidad animado y colorido, hecho completamente en lenguaje de programación C."><a href="https://github.com/ArielParra/C-hristmas_Tree">C-hristmas_Tree</a> The program displays an animated Christmas tree with colors, entirely made in the C programming language.</span>
+        <a href="https://github.com/ArielParra/C-hristmas_Tree" target="_blank" class="project-link"><span class="i18n" data-i18n-en="View Project" data-i18n-es="Ver Proyecto">View Project</span></a>
       </div>
     </div>
   </div><!-- container grid --> 

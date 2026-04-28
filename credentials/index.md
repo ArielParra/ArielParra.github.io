@@ -53,7 +53,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="education ai networks cloud language programming">
+    <div class="card" data-tags="education ai networks cloud language programming datascience">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Génie informatique (Computer Engineering)((/en))((es))Génie informatique (Ingeniería Informática)((/es))</span>
@@ -377,7 +377,6 @@ nav_current: 3
             <span class="credential-skill">((en))English((/en))((es))Inglés((/es))</span>
           <span class="credential-skill">((en))Listening((/en))((es))Comprensión Auditiva((/es))</span>
           <span class="credential-skill">((en))Reading((/en))((es))Comprensión Lectora((/es))</span>
-          <span class="credential-skill">((en))Speaking((/en))((es))Expresión Oral((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
