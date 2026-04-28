@@ -216,6 +216,7 @@ def generate_project_card(p):
     for t in techs:
         label = get_tech_label(t)
         tech_tags_html += f'          <span class="project-tech">{label}</span>\n'
+    tech_tags_html += '          <span class="techs-more"></span>\n'
 
     # Image
     image = p.get('image', '')
@@ -246,12 +247,11 @@ def generate_project_card(p):
       </div>
       <div class="project-techs">
 {tech_tags_html}      </div>{image_html}
-        <div class="project-meta">{date_html}{link_html}
-      <hr>
-      <div class="center">
-        
+      <div class="project-description justify">
         ((en)){desc_en}((/en))((es)){desc_es}((/es))
+        <span class="see-more"></span>
       </div>
+      <div class="project-meta">{date_html}{link_html}
       </div>
     </div>"""
     return card

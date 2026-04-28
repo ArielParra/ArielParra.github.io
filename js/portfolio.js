@@ -238,10 +238,160 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   updatePlaceholder();
+  truncateProjectDescriptions();
+  truncateTechs();
+
+  const seeMoreLinks = document.querySelectorAll('.project-description .see-more');
+  seeMoreLinks.forEach(link => {
+    link.addEventListener('click', () => toggleProjectDescription(link));
+  });
+
+  const moreIndicators = document.querySelectorAll('.techs-more');
+  moreIndicators.forEach(indicator => {
+    indicator.addEventListener('click', () => expandTechs(indicator));
+    indicator.style.cursor = 'pointer';
+  });
 
   // Re-render labels on language change
   window.addEventListener('languageChanged', () => {
     renderSelectedTechs();
     updatePlaceholder();
+    resetProjectDescriptions();
+    truncateTechs();
   });
 });
+
+/**
+ * @description Toggles project description between truncated and full view.
+ */
+function toggleProjectDescription(element) {
+  const container = element.closest('.project-description');
+  const isExpanded = container.classList.contains('expanded');
+  const textSpan = container.querySelector('span.i18n');
+  const lang = getPortfolioLang();
+
+  if (isExpanded) {
+    container.classList.remove('expanded');
+    element.textContent = '... ' + (lang === 'es' ? 'Ver más' : 'See more');
+    truncateProjectDescriptions();
+  } else {
+    container.classList.add('expanded');
+    element.textContent = lang === 'es' ? 'Ver menos' : 'See less';
+    if (textSpan) {
+      const fullText = container.getAttribute('data-full-text');
+      if (fullText) textSpan.innerHTML = fullText;
+    }
+  }
+}
+
+/**
+ * @description Truncates project descriptions to ~84 chars with "... See more".
+ */
+function truncateProjectDescriptions() {
+  const descriptions = document.querySelectorAll('.project-description.justify');
+  const MAX_CHARS = 82;
+
+  descriptions.forEach(container => {
+    if (container.classList.contains('expanded')) return;
+
+    const textSpan = container.querySelector('span.i18n');
+    const seeMoreLink = container.querySelector('.see-more');
+    if (!textSpan || !seeMoreLink) return;
+
+    const lang = getPortfolioLang();
+    const fullText = textSpan.getAttribute('data-i18n-' + lang) || textSpan.textContent;
+    const seeMoreText = lang === 'es' ? 'Ver más' : 'See more';
+
+    container.setAttribute('data-full-text', fullText);
+
+    if (fullText.length > MAX_CHARS) {
+      let truncated = fullText.substring(0, MAX_CHARS);
+      while (truncated.length > 0 && !truncated.match(/\s$/)) {
+        truncated = truncated.slice(0, -1);
+      }
+      truncated = truncated.trim();
+
+      textSpan.innerHTML = truncated;
+      seeMoreLink.textContent = '... ' + seeMoreText;
+      seeMoreLink.style.display = 'inline';
+    } else {
+      seeMoreLink.style.display = 'none';
+    }
+  });
+}
+
+/**
+ * @description Resets project descriptions on language change.
+ */
+function resetProjectDescriptions() {
+  const descriptions = document.querySelectorAll('.project-description.justify');
+  descriptions.forEach(container => {
+    const textSpan = container.querySelector('span.i18n');
+    const seeMoreLink = container.querySelector('.see-more');
+    const fullText = container.getAttribute('data-full-text');
+    if (textSpan && fullText) {
+      textSpan.innerHTML = fullText;
+    }
+    container.classList.remove('expanded');
+    if (seeMoreLink) {
+      seeMoreLink.textContent = '';
+      seeMoreLink.style.display = 'none';
+    }
+  });
+  truncateProjectDescriptions();
+}
+
+/**
+ * @description Truncates technology tags based on character width (~30 chars) and shows "+N more".
+ */
+function truncateTechs() {
+  const techContainers = document.querySelectorAll('.project-techs');
+  const MAX_CHARS_PER_LINE = 30;
+
+  techContainers.forEach(container => {
+    const techs = container.querySelectorAll('.project-tech');
+    const moreIndicator = container.querySelector('.techs-more');
+
+    if (!moreIndicator || techs.length <= 1) {
+      if (moreIndicator) moreIndicator.style.display = 'none';
+      return;
+    }
+
+    let currentLength = 0;
+    let techsToShow = 0;
+
+    techs.forEach((tech, index) => {
+      const techText = tech.textContent;
+      const techLength = techText.length + 2;
+
+      if (index === 0 || currentLength + techLength <= MAX_CHARS_PER_LINE) {
+        techsToShow = index + 1;
+        currentLength += techLength;
+        tech.style.display = '';
+      } else {
+        tech.style.display = 'none';
+      }
+    });
+
+    const extraCount = techs.length - techsToShow;
+    if (extraCount > 0 && moreIndicator) {
+      const lang = getPortfolioLang();
+      const label = lang === 'es' ? `+${extraCount} más` : `+${extraCount} more`;
+      moreIndicator.textContent = label;
+      moreIndicator.style.display = '';
+    } else if (moreIndicator) {
+      moreIndicator.style.display = 'none';
+    }
+  });
+}
+
+/**
+ * @description Expands hidden technology tags.
+ */
+function expandTechs(element) {
+  const container = element.closest('.project-techs');
+  const techs = container.querySelectorAll('.project-tech');
+  techs.forEach(tech => tech.style.display = '');
+  element.style.display = 'none';
+}
+

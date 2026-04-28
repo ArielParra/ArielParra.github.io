@@ -32,6 +32,17 @@
   border-radius: 6px;
 }
 
+.techs-more {
+  font-size: 0.75rem;
+  color: var(--link);
+  cursor: pointer;
+  padding: 0.2rem 0.2rem;
+}
+
+.techs-more:hover {
+  text-decoration: underline;
+}
+
 .project-preview {
   display: flex;
   margin-top: 0.2rem;
@@ -65,6 +76,38 @@
 .project-link:hover {
   background: var(--btn-hover_BG);
   color: var(--btn-hover_color);
+}
+
+.project-description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.project-description.justify {
+  text-align: justify;
+  min-height: 2.8rem;
+}
+
+.project-description.justify>span.i18n {
+  word-wrap: break-word;
+}
+
+.project-description.justify .see-more {
+  color: var(--link);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-description.justify .see-more:hover {
+  text-decoration: underline;
+}
+
+.project-description.justify.expanded>span.i18n {
+  white-space: normal;
+}
+
+.project-description.justify.expanded .see-more {
+  display: none;
 }
 
 .project-meta {

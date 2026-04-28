@@ -4,10 +4,20 @@
       "id": "tomin",
       "title": "Tomin",
       "date": "2025-04",
-      "technologies": ["flutter", "dart", "firebase", "python", "llm"],
+      "technologies": [
+        "flutter",
+        "dart",
+        "firebase",
+        "python",
+        "llm",
+        "test",
+        "2",
+        "3",
+        "4"
+      ],
       "description": {
-        "en": "[Tomin](https://github.com/ArielParra/Tomin) is a cross-platform expense-tracking app with an integrated LLM assistant. Built during the Talent Land Genius Arena hackathon, where it won 1st place among 75 teams.",
-        "es": "[Tomin](https://github.com/ArielParra/Tomin) es una aplicación multiplataforma de seguimiento de gastos con un asistente LLM integrado. Construida durante el hackathon Talent Land Genius Arena, donde ganó el 1er lugar entre 75 equipos."
+        "en": "Tomin is a cross-platform expense-tracking app with an integrated LLM assistant. Built during the Talent Land Genius Arena hackathon, where it won 1st place among 75 teams.",
+        "es": "Tomin es una aplicación multiplataforma de seguimiento de gastos con un asistente LLM integrado. Construida durante el hackathon Talent Land Genius Arena, donde ganó el 1er lugar entre 75 equipos."
       },
       "image": "https://raw.githubusercontent.com/ArielParra/Tomin/refs/heads/main/demo.gif",
       "link": "https://github.com/ArielParra/Tomin"
@@ -16,10 +26,16 @@
       "id": "cpc-gallos",
       "title": "CPC-GALLOS",
       "date": "2023-09",
-      "technologies": ["jekyll", "ruby", "html", "css", "markdown"],
+      "technologies": [
+        "jekyll",
+        "ruby",
+        "html",
+        "css",
+        "markdown"
+      ],
       "description": {
-        "en": "The [cpc-gallos](https://cpc-gallos.github.io/) website, \"Competitive Programming Club GALLOS\" made with Jekyll and Chirpy, admin by me.",
-        "es": "El sitio web de [cpc-gallos](https://cpc-gallos.github.io/), \"Club de Programación Competitiva GALLOS\", hecho con Jekyll y Chirpy, administrado por mí."
+        "en": "The cpc-gallos website, \"Competitive Programming Club GALLOS\" made with Jekyll and Chirpy, admin by me.",
+        "es": "El sitio web de cpc-gallos, \"Club de Programación Competitiva GALLOS\", hecho con Jekyll y Chirpy, administrado por mí."
       },
       "image": "./portfolio/img/cpc-gallos.png",
       "link": "https://cpc-gallos.github.io/"
@@ -28,10 +44,15 @@
       "id": "pcapsule",
       "title": "Pcapsule",
       "date": "2024-11",
-      "technologies": ["cpp", "libpcap", "raylib", "networking"],
+      "technologies": [
+        "cpp",
+        "libpcap",
+        "raylib",
+        "networking"
+      ],
       "description": {
-        "en": "[Pcapsule](https://github.com/ArielParra/Pcapsule) A network packet sniffer developed using libpcap and raylib in C++, allowing real-time capturing and analysis of IPv4 packets on both Windows and Linux.",
-        "es": "[Pcapsule](https://github.com/ArielParra/Pcapsule) es un sniffer de paquetes de red desarrollado con libpcap y raylib en C++, que permite la captura y análisis en tiempo real de paquetes IPv4 en Windows y Linux."
+        "en": "Pcapsule A network packet sniffer developed using libpcap and raylib in C++, allowing real-time capturing and analysis of IPv4 packets on both Windows and Linux.",
+        "es": "Pcapsule es un sniffer de paquetes de red desarrollado con libpcap y raylib en C++, que permite la captura y análisis en tiempo real de paquetes IPv4 en Windows y Linux."
       },
       "image": "https://raw.githubusercontent.com/ArielParra/Pcapsule/refs/heads/main/pcapsule.gif",
       "link": "https://github.com/ArielParra/Pcapsule"
@@ -40,10 +61,13 @@
       "id": "asm-piano",
       "title": "ASM Piano",
       "date": "2023-06",
-      "technologies": ["assembly", "dos"],
+      "technologies": [
+        "assembly",
+        "dos"
+      ],
       "description": {
-        "en": "[ASM Piano](https://github.com/ArielParra/ASM_Piano) 8086 ASM for DOS piano simulator with auto-play and manual key mode.",
-        "es": "[ASM Piano](https://github.com/ArielParra/ASM_Piano) simulador de piano en ASM 8086 para DOS con modo de reproducción automática y modo manual."
+        "en": "ASM Piano 8086 ASM for DOS piano simulator with auto-play and manual key mode.",
+        "es": "ASM Piano simulador de piano en ASM 8086 para DOS con modo de reproducción automática y modo manual."
       },
       "image": "https://raw.githubusercontent.com/ArielParra/ASM_Piano/refs/heads/main/demo.gif",
       "link": "https://github.com/ArielParra/ASM_Piano"
@@ -52,10 +76,13 @@
       "id": "klotski-solver",
       "title": "Klotski Solver",
       "date": "2024-05",
-      "technologies": ["cpp", "algorithms"],
+      "technologies": [
+        "cpp",
+        "algorithms"
+      ],
       "description": {
-        "en": "[Klotski Solver](https://github.com/ArielParra/Klotski_Solver) uses DFS (Depth-First Search) and Backtracking algorithms to find solutions to Klotski puzzle boards.",
-        "es": "[Klotski Solver](https://github.com/ArielParra/Klotski_Solver) utiliza algoritmos de búsqueda en profundidad (DFS) y backtracking para encontrar soluciones a tableros del rompecabezas Klotski."
+        "en": "Klotski Solver uses DFS (Depth-First Search) and Backtracking algorithms to find solutions to Klotski puzzle boards.",
+        "es": "Klotski Solver utiliza algoritmos de búsqueda en profundidad (DFS) y backtracking para encontrar soluciones a tableros del rompecabezas Klotski."
       },
       "image": "https://raw.githubusercontent.com/ArielParra/Klotski_Solver/refs/heads/main/KlotskiSolver-Demo.gif",
       "link": "https://github.com/ArielParra/Klotski_Solver"
@@ -64,10 +91,13 @@
       "id": "play-sound",
       "title": "Play_Sound",
       "date": "2024-03",
-      "technologies": ["cpp", "winapi"],
+      "technologies": [
+        "cpp",
+        "winapi"
+      ],
       "description": {
-        "en": "[Play_Sound](https://github.com/ArielParra/Play_Sound) is a reimplementation of the legacy WINAPI PlaySound()/PlaySoundA() functions, improving them by using a background process to run .wav sound files asynchronously.",
-        "es": "[Play_Sound](https://github.com/ArielParra/Play_Sound) es una reimplementación de las funciones heredadas PlaySound()/PlaySoundA() de WINAPI, mejoradas mediante el uso de un proceso en segundo plano para ejecutar archivos de sonido .wav de forma asincrónica."
+        "en": "Play_Sound is a reimplementation of the legacy WINAPI PlaySound()/PlaySoundA() functions, improving them by using a background process to run .wav sound files asynchronously.",
+        "es": "Play_Sound es una reimplementación de las funciones heredadas PlaySound()/PlaySoundA() de WINAPI, mejoradas mediante el uso de un proceso en segundo plano para ejecutar archivos de sonido .wav de forma asincrónica."
       },
       "image": "./portfolio/img/Play_Sound.png",
       "link": "https://github.com/ArielParra/Play_Sound"
@@ -76,10 +106,12 @@
       "id": "memoria-extreem",
       "title": "MemoriaExtreem",
       "date": "2023-05",
-      "technologies": ["cpp"],
+      "technologies": [
+        "cpp"
+      ],
       "description": {
-        "en": "[MemoriaExtreem](https://github.com/ArielParra/MemoriaExtreem) is a memory game that allows you to load new words, display results in a file, and is compatible with multiple operating systems.",
-        "es": "[MemoriaExtreem](https://github.com/ArielParra/MemoriaExtreem) es un juego de memoria que permite cargar nuevas palabras, mostrar resultados en un archivo, y es compatible con múltiples sistemas operativos."
+        "en": "MemoriaExtreem is a memory game that allows you to load new words, display results in a file, and is compatible with multiple operating systems.",
+        "es": "MemoriaExtreem es un juego de memoria que permite cargar nuevas palabras, mostrar resultados en un archivo, y es compatible con múltiples sistemas operativos."
       },
       "image": "https://raw.githubusercontent.com/ArielParra/MemoriaExtreem/refs/heads/main/demo.gif",
       "link": "https://github.com/ArielParra/MemoriaExtreem"
@@ -88,10 +120,13 @@
       "id": "rr-bs-simulator",
       "title": "RR & BS Simulator",
       "date": "2024-10",
-      "technologies": ["cpp", "algorithms"],
+      "technologies": [
+        "cpp",
+        "algorithms"
+      ],
       "description": {
-        "en": "[RR_and_BS_Simulator](https://github.com/ArielParra/RR_and_BS_Simulator) Process scheduling and memory management simulator in C++ (Round Robin and Buddy System), featuring a text interface to configure, monitor, and control the simulation.",
-        "es": "[RR_and_BS_Simulator](https://github.com/ArielParra/RR_and_BS_Simulator) Simulador de planificación de procesos y gestión de memoria en C++ (Round Robin y Buddy System), con interfaz de texto para configurar, observar y controlar la simulación."
+        "en": "RR_and_BS_Simulator Process scheduling and memory management simulator in C++ (Round Robin and Buddy System), featuring a text interface to configure, monitor, and control the simulation.",
+        "es": "RR_and_BS_Simulator Simulador de planificación de procesos y gestión de memoria en C++ (Round Robin y Buddy System), con interfaz de texto para configurar, observar y controlar la simulación."
       },
       "image": "https://raw.githubusercontent.com/ArielParra/RR_and_BS_Simulator/refs/heads/main/demo.gif",
       "link": "https://github.com/ArielParra/RR_and_BS_Simulator"
@@ -100,10 +135,13 @@
       "id": "page-loader",
       "title": "Page Loader",
       "date": "2024-08",
-      "technologies": ["javascript", "browser-extension"],
+      "technologies": [
+        "javascript",
+        "browser-extension"
+      ],
       "description": {
-        "en": "[Page Loader](https://github.com/ArielParra/Page_Loader) is a lightweight, Manifest V3 browser extension for Chrome and Firefox that simulates the End key press to automatically scroll and load more content on infinite-scroll websites like Facebook, Twitter, Reddit, and more.",
-        "es": "[Page Loader](https://github.com/ArielParra/Page_Loader) es una extensión ligera para navegadores basada en Manifest V3 para Chrome y Firefox que simula la tecla End para desplazarse automáticamente y cargar más contenido en sitios de scroll infinito como Facebook, Twitter, Reddit y otros."
+        "en": "Page Loader is a lightweight, Manifest V3 browser extension for Chrome and Firefox that simulates the End key press to automatically scroll and load more content on infinite-scroll websites like Facebook, Twitter, Reddit, and more.",
+        "es": "Page Loader es una extensión ligera para navegadores basada en Manifest V3 para Chrome y Firefox que simula la tecla End para desplazarse automáticamente y cargar más contenido en sitios de scroll infinito como Facebook, Twitter, Reddit y otros."
       },
       "image": "https://raw.githubusercontent.com/ArielParra/Page_Loader/refs/heads/main/gif.gif",
       "link": "https://github.com/ArielParra/Page_Loader"
@@ -112,10 +150,14 @@
       "id": "jsnake",
       "title": "JSnake",
       "date": "2024-02",
-      "technologies": ["javascript", "html", "css"],
+      "technologies": [
+        "javascript",
+        "html",
+        "css"
+      ],
       "description": {
-        "en": "[JSnake](https://github.com/ArielParra/JSnake) Snake game built with JavaScript + HTML + CSS using the Nord color palette.",
-        "es": "[JSnake](https://github.com/ArielParra/JSnake) Juego de la serpiente construido con JavaScript + HTML + CSS utilizando la paleta de colores Nord."
+        "en": "JSnake Snake game built with JavaScript + HTML + CSS using the Nord color palette.",
+        "es": "JSnake Juego de la serpiente construido con JavaScript + HTML + CSS utilizando la paleta de colores Nord."
       },
       "image": "https://raw.githubusercontent.com/ArielParra/JSnake/refs/heads/main/demo.gif",
       "link": "https://github.com/ArielParra/JSnake"
@@ -124,10 +166,12 @@
       "id": "christmas-tree",
       "title": "C-hristmas Tree",
       "date": "2023-12",
-      "technologies": ["c"],
+      "technologies": [
+        "c"
+      ],
       "description": {
-        "en": "[C-hristmas_Tree](https://github.com/ArielParra/C-hristmas_Tree) The program displays an animated Christmas tree with colors, entirely made in the C programming language.",
-        "es": "[C-hristmas_Tree](https://github.com/ArielParra/C-hristmas_Tree) El programa muestra un árbol de Navidad animado y colorido, hecho completamente en lenguaje de programación C."
+        "en": "C-hristmas_Tree The program displays an animated Christmas tree with colors, entirely made in the C programming language.",
+        "es": "C-hristmas_Tree El programa muestra un árbol de Navidad animado y colorido, hecho completamente en lenguaje de programación C."
       },
       "image": "https://raw.githubusercontent.com/ArielParra/C-hristmas_Tree/refs/heads/main/demo.gif",
       "link": "https://github.com/ArielParra/C-hristmas_Tree"
