@@ -135,13 +135,12 @@ class PortfolioManager(BaseManager):
       <div class="project-header">
         <span class="project-title">{title}</span>
       </div>
-      <div class="project-techs">
-{tech_tags_html}      </div>{image_html}
+      <div class="project-techs">{tech_tags_html}</div>
+      {image_html}
+      <div class="project-meta">{date_html}{link_html}</div>
       <div class="project-description justify">
         ((en)){desc_en}((/en))((es)){desc_es}((/es))
         <span class="see-more"></span>
-      </div>
-      <div class="project-meta">{date_html}{link_html}
       </div>
     </div>"""
         return card
