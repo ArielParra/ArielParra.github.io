@@ -37,7 +37,7 @@ nav_current: 3
           <span class="credential-skill">((en))Network Administration & Security((/en))((es))Administración de Redes y Seguridad((/es))</span>
           <span class="credential-skill">((en))Embedded Systems & Hardware Analysis((/en))((es))Sistemas Embebidos y Análisis de Hardware((/es))</span>
           <span class="credential-skill">((en))Agile Methodologies((/en))((es))Metodologías Ágiles((/es))</span>
-          <span class="credential-skill">((en))Cybersecurity Assurance((/en))((es))Garantía de Ciberseguridad((/es))</span>
+          <span class="credential-skill">((en))Cybersecurity Assurance((/en))((es))Aseguramiento de Ciberseguridad((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -61,13 +61,13 @@ nav_current: 3
           <span class="title-score">((en))ECTS C((/en))((es))ECTS C((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Machine Learning & Data Mining</span>
-          <span class="credential-skill">Cyber-Physical Systems</span>
-          <span class="credential-skill">Enterprise Network Architecture</span>
-          <span class="credential-skill">Cloud Computing</span>
-          <span class="credential-skill">Distributed Systems</span>
-          <span class="credential-skill">Knowledge Engineering</span>
-          <span class="credential-skill">French (FLE)</span>
+            <span class="credential-skill">((en))Machine Learning & Data Mining((/en))((es))Aprendizaje Automático y Minería de Datos((/es))</span>
+          <span class="credential-skill">((en))Cyber-Physical Systems((/en))((es))Sistemas Ciber-Físicos((/es))</span>
+          <span class="credential-skill">((en))Enterprise Network Architecture((/en))((es))Arquitectura de Redes Empresariales((/es))</span>
+          <span class="credential-skill">((en))Cloud Computing((/en))((es))Computación en la Nube((/es))</span>
+          <span class="credential-skill">((en))Distributed Systems((/en))((es))Sistemas Distribuidos((/es))</span>
+          <span class="credential-skill">((en))Knowledge Engineering((/en))((es))Ingeniería del Conocimiento((/es))</span>
+          <span class="credential-skill">((en))French (FLE)((/en))((es))Francés (FLE)((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -91,18 +91,11 @@ nav_current: 3
           <span class="title-score">((en))1301/1302 Activities((/en))((es))1301/1302 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Programming</span>
-          <span class="credential-skill">Back-end</span>
-          <span class="credential-skill">Java</span>
-          <span class="credential-skill">OOP</span>
-          <span class="credential-skill">Spring Boot</span>
-          <span class="credential-skill">Agile Methodologies</span>
-          <span class="credential-skill">Software Development Lifecycle</span>
-          <span class="credential-skill">Professional Soft Skills</span>
-          <span class="credential-skill">Entrepreneurship</span>
-          <span class="credential-skill">Software Engineering</span>
-          <span class="credential-skill">Back-end Development</span>
-          <span class="credential-skill">Professional Development</span>
+            <span class="credential-skill">((en))Java((/en))((es))Java((/es))</span>
+          <span class="credential-skill">((en))OOP((/en))((es))POO (Programación Orientada a Objetos)((/es))</span>
+          <span class="credential-skill">((en))Spring Boot((/en))((es))Spring Boot((/es))</span>
+          <span class="credential-skill">((en))Agile Methodologies((/en))((es))Metodologías Ágiles((/es))</span>
+          <span class="credential-skill">((en))Software Development Lifecycle((/en))((es))Ciclo de Vida del Desarrollo de Software((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -142,22 +135,21 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Cloud</span>
-          <span class="credential-skill">AWS</span>
-          <span class="credential-skill">Networking</span>
-          <span class="credential-skill">Security</span>
-          <span class="credential-skill">EC2</span>
-          <span class="credential-skill">S3</span>
-          <span class="credential-skill">Lambda</span>
-          <span class="credential-skill">RDS</span>
-          <span class="credential-skill">VPC</span>
-          <span class="credential-skill">IAM</span>
-          <span class="credential-skill">CloudWatch</span>
-          <span class="credential-skill">CloudFront</span>
-          <span class="credential-skill">Route 53</span>
-          <span class="credential-skill">CloudTrail</span>
-          <span class="credential-skill">CloudFormation</span>
-          <span class="credential-skill">CloudHSM</span>
+            <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
+          <span class="credential-skill">((en))AWS((/en))((es))AWS((/es))</span>
+          <span class="credential-skill">((en))Networking((/en))((es))Redes((/es))</span>
+          <span class="credential-skill">((en))Security((/en))((es))Seguridad((/es))</span>
+          <span class="credential-skill">((en))EC2((/en))((es))EC2((/es))</span>
+          <span class="credential-skill">((en))S3((/en))((es))S3((/es))</span>
+          <span class="credential-skill">((en))Lambda((/en))((es))Lambda((/es))</span>
+          <span class="credential-skill">((en))RDS((/en))((es))RDS((/es))</span>
+          <span class="credential-skill">((en))VPC((/en))((es))VPC((/es))</span>
+          <span class="credential-skill">((en))IAM((/en))((es))IAM((/es))</span>
+          <span class="credential-skill">((en))CloudWatch((/en))((es))CloudWatch((/es))</span>
+          <span class="credential-skill">((en))CloudFront((/en))((es))CloudFront((/es))</span>
+          <span class="credential-skill">((en))Route 53((/en))((es))Route 53((/es))</span>
+          <span class="credential-skill">((en))CloudTrail((/en))((es))CloudTrail((/es))</span>
+          <span class="credential-skill">((en))CloudFormation((/en))((es))CloudFormation((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -181,11 +173,11 @@ nav_current: 3
           <span class="title-score">((en))89/120((/en))((es))89/120((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">English</span>
-          <span class="credential-skill">Listening</span>
-          <span class="credential-skill">Reading</span>
-          <span class="credential-skill">Speaking</span>
-          <span class="credential-skill">Writing</span>
+            <span class="credential-skill">((en))English((/en))((es))Inglés((/es))</span>
+          <span class="credential-skill">((en))Listening((/en))((es))Comprensión Auditiva((/es))</span>
+          <span class="credential-skill">((en))Reading((/en))((es))Comprensión Lectora((/es))</span>
+          <span class="credential-skill">((en))Speaking((/en))((es))Expresión Oral((/es))</span>
+          <span class="credential-skill">((en))Writing((/en))((es))Expresión Escrita((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -209,14 +201,14 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">AI</span>
-          <span class="credential-skill">Cloud</span>
-          <span class="credential-skill">Machine Learning</span>
-          <span class="credential-skill">Generative AI</span>
-          <span class="credential-skill">Computer Vision</span>
-          <span class="credential-skill">Natural Language Processing (NLP)</span>
-          <span class="credential-skill">Azure AI Services</span>
-          <span class="credential-skill">Responsible AI</span>
+            <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
+          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
+          <span class="credential-skill">((en))Machine Learning((/en))((es))Aprendizaje Automático((/es))</span>
+          <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
+          <span class="credential-skill">((en))Computer Vision((/en))((es))Visión por Computadora((/es))</span>
+          <span class="credential-skill">((en))Natural Language Processing (NLP)((/en))((es))Procesamiento de Lenguaje Natural (PLN)((/es))</span>
+          <span class="credential-skill">((en))Azure AI Services((/en))((es))Servicios de IA de Azure((/es))</span>
+          <span class="credential-skill">((en))Responsible AI((/en))((es))IA Responsable((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -240,15 +232,15 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Generative AI</span>
-          <span class="credential-skill">Cloud</span>
-          <span class="credential-skill">OCI</span>
-          <span class="credential-skill">Large Language Models (LLMs)</span>
-          <span class="credential-skill">Retrieval-Augmented Generation (RAG)</span>
-          <span class="credential-skill">LangChain</span>
-          <span class="credential-skill">Vector database</span>
-          <span class="credential-skill">Semantic Search</span>
-          <span class="credential-skill">Python</span>
+            <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
+          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
+          <span class="credential-skill">((en))OCI((/en))((es))OCI((/es))</span>
+          <span class="credential-skill">((en))Large Language Models (LLMs)((/en))((es))Modelos de Lenguaje Grandes (LLMs)((/es))</span>
+          <span class="credential-skill">((en))Retrieval-Augmented Generation (RAG)((/en))((es))Generación Aumentada por Recuperación (RAG)((/es))</span>
+          <span class="credential-skill">((en))LangChain((/en))((es))LangChain((/es))</span>
+          <span class="credential-skill">((en))Vector Database((/en))((es))Base de Datos Vectorial((/es))</span>
+          <span class="credential-skill">((en))Semantic Search((/en))((es))Búsqueda Semántica((/es))</span>
+          <span class="credential-skill">((en))Python((/en))((es))Python((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -272,15 +264,14 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">AI</span>
-          <span class="credential-skill">Cloud</span>
-          <span class="credential-skill">OCI</span>
-          <span class="credential-skill">Oracle AI Services</span>
-          <span class="credential-skill">Oracle ML Services</span>
-          <span class="credential-skill">Machine Learning Concepts</span>
-          <span class="credential-skill">Deep Learning</span>
-          <span class="credential-skill">Oracle Generative AI</span>
-          <span class="credential-skill">AI Fundamentals</span>
+            <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
+          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
+          <span class="credential-skill">((en))OCI((/en))((es))OCI((/es))</span>
+          <span class="credential-skill">((en))Oracle AI/ML Services((/en))((es))Servicios de IA/ML de Oracle((/es))</span>
+          <span class="credential-skill">((en))Machine Learning Concepts((/en))((es))Conceptos de Aprendizaje Automático((/es))</span>
+          <span class="credential-skill">((en))Deep Learning((/en))((es))Aprendizaje Profundo((/es))</span>
+          <span class="credential-skill">((en))Oracle Generative AI((/en))((es))IA Generativa de Oracle((/es))</span>
+          <span class="credential-skill">((en))AI Fundamentals((/en))((es))Fundamentos de IA((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -304,14 +295,14 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">DevOps</span>
-          <span class="credential-skill">GitHub</span>
-          <span class="credential-skill">Git</span>
-          <span class="credential-skill">GitHub Actions</span>
-          <span class="credential-skill">CI/CD</span>
-          <span class="credential-skill">Project Management</span>
-          <span class="credential-skill">Collaborative Development</span>
-          <span class="credential-skill">Security & Privacy</span>
+            <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
+          <span class="credential-skill">((en))GitHub((/en))((es))GitHub((/es))</span>
+          <span class="credential-skill">((en))Git((/en))((es))Git((/es))</span>
+          <span class="credential-skill">((en))GitHub Actions((/en))((es))GitHub Actions((/es))</span>
+          <span class="credential-skill">((en))CI/CD((/en))((es))CI/CD((/es))</span>
+          <span class="credential-skill">((en))Project Management((/en))((es))Gestión de Proyectos((/es))</span>
+          <span class="credential-skill">((en))Collaborative Development((/en))((es))Desarrollo Colaborativo((/es))</span>
+          <span class="credential-skill">((en))Security & Privacy((/en))((es))Seguridad y Privacidad((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -335,15 +326,15 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Security</span>
-          <span class="credential-skill">Compliance</span>
-          <span class="credential-skill">Identity</span>
-          <span class="credential-skill">Cloud</span>
-          <span class="credential-skill">Microsoft Entra (Azure AD)</span>
-          <span class="credential-skill">Identity Management</span>
-          <span class="credential-skill">Cybersecurity Solutions</span>
-          <span class="credential-skill">Zero Trust Concepts</span>
-          <span class="credential-skill">Data Privacy</span>
+            <span class="credential-skill">((en))Security((/en))((es))Seguridad((/es))</span>
+          <span class="credential-skill">((en))Compliance((/en))((es))Cumplimiento Normativo((/es))</span>
+          <span class="credential-skill">((en))Identity((/en))((es))Identidad((/es))</span>
+          <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
+          <span class="credential-skill">((en))Microsoft Entra (Azure AD)((/en))((es))Microsoft Entra (Azure AD)((/es))</span>
+          <span class="credential-skill">((en))Identity Management((/en))((es))Gestión de Identidades((/es))</span>
+          <span class="credential-skill">((en))Cybersecurity Solutions((/en))((es))Soluciones de Ciberseguridad((/es))</span>
+          <span class="credential-skill">((en))Zero Trust Concepts((/en))((es))Conceptos de Confianza Cero((/es))</span>
+          <span class="credential-skill">((en))Data Privacy((/en))((es))Privacidad de Datos((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -383,9 +374,10 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">English</span>
-          <span class="credential-skill">Listening</span>
-          <span class="credential-skill">Reading</span>
+            <span class="credential-skill">((en))English((/en))((es))Inglés((/es))</span>
+          <span class="credential-skill">((en))Listening((/en))((es))Comprensión Auditiva((/es))</span>
+          <span class="credential-skill">((en))Reading((/en))((es))Comprensión Lectora((/es))</span>
+          <span class="credential-skill">((en))Speaking((/en))((es))Expresión Oral((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -409,14 +401,14 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Cloud</span>
-          <span class="credential-skill">AWS</span>
-          <span class="credential-skill">DevOps</span>
-          <span class="credential-skill">AWS Cloud Concepts</span>
-          <span class="credential-skill">Cloud Security & Compliance</span>
-          <span class="credential-skill">AWS Core Services</span>
-          <span class="credential-skill">Cloud Economics</span>
-          <span class="credential-skill">Infrastructure as a Service (IaaS)</span>
+            <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
+          <span class="credential-skill">((en))AWS((/en))((es))AWS((/es))</span>
+          <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
+          <span class="credential-skill">((en))AWS Cloud Concepts((/en))((es))Conceptos de Nube AWS((/es))</span>
+          <span class="credential-skill">((en))Cloud Security & Compliance((/en))((es))Seguridad y Cumplimiento en la Nube((/es))</span>
+          <span class="credential-skill">((en))AWS Core Services((/en))((es))Servicios Core de AWS((/es))</span>
+          <span class="credential-skill">((en))Cloud Economics((/en))((es))Economía de la Nube((/es))</span>
+          <span class="credential-skill">((en))Infrastructure as a Service (IaaS)((/en))((es))Infraestructura como Servicio (IaaS)((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -440,13 +432,13 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Cloud</span>
-          <span class="credential-skill">AWS</span>
-          <span class="credential-skill">Networking</span>
-          <span class="credential-skill">Cloud Computing Concepts</span>
-          <span class="credential-skill">AWS Global Infrastructure</span>
-          <span class="credential-skill">AWS Core Services</span>
-          <span class="credential-skill">Cloud Security Foundations</span>
+            <span class="credential-skill">((en))Cloud((/en))((es))Nube((/es))</span>
+          <span class="credential-skill">((en))AWS((/en))((es))AWS((/es))</span>
+          <span class="credential-skill">((en))Networking((/en))((es))Redes((/es))</span>
+          <span class="credential-skill">((en))Cloud Computing Concepts((/en))((es))Conceptos de Computación en la Nube((/es))</span>
+          <span class="credential-skill">((en))AWS Global Infrastructure((/en))((es))Infraestructura Global de AWS((/es))</span>
+          <span class="credential-skill">((en))AWS Core Services((/en))((es))Servicios Core de AWS((/es))</span>
+          <span class="credential-skill">((en))Cloud Security Foundations((/en))((es))Fundamentos de Seguridad en la Nube((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -470,10 +462,10 @@ nav_current: 3
           <span class="title-score">((en))79/100((/en))((es))79/100((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">English</span>
-          <span class="credential-skill">Listening</span>
-          <span class="credential-skill">Reading</span>
-          <span class="credential-skill">Speaking</span>
+            <span class="credential-skill">((en))English((/en))((es))Inglés((/es))</span>
+          <span class="credential-skill">((en))Listening((/en))((es))Comprensión Auditiva((/es))</span>
+          <span class="credential-skill">((en))Reading((/en))((es))Comprensión Lectora((/es))</span>
+          <span class="credential-skill">((en))Speaking((/en))((es))Expresión Oral((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -497,14 +489,14 @@ nav_current: 3
           <span class="title-score">((en))10 Problem Sets + Final Project Completed((/en))((es))10 Conjuntos de Problemas + Proyecto Final Completados((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Algorithms</span>
-          <span class="credential-skill">Data Structures</span>
-          <span class="credential-skill">C</span>
-          <span class="credential-skill">Python</span>
-          <span class="credential-skill">SQL</span>
-          <span class="credential-skill">HTML/CSS</span>
-          <span class="credential-skill">JavaScript</span>
-          <span class="credential-skill">Flask</span>
+            <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))C((/en))((es))C((/es))</span>
+          <span class="credential-skill">((en))Python((/en))((es))Python((/es))</span>
+          <span class="credential-skill">((en))SQL((/en))((es))SQL((/es))</span>
+          <span class="credential-skill">((en))HTML/CSS((/en))((es))HTML/CSS((/es))</span>
+          <span class="credential-skill">((en))JavaScript((/en))((es))JavaScript((/es))</span>
+          <span class="credential-skill">((en))Flask((/en))((es))Flask((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -528,10 +520,10 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">AI Foundations</span>
-          <span class="credential-skill">Productivity Tools</span>
-          <span class="credential-skill">Generative AI</span>
-          <span class="credential-skill">Digital Workflow Optimization</span>
+            <span class="credential-skill">((en))AI Foundations((/en))((es))Fundamentos de IA((/es))</span>
+          <span class="credential-skill">((en))Productivity Tools((/en))((es))Herramientas de Productividad((/es))</span>
+          <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
+          <span class="credential-skill">((en))Digital Workflow Optimization((/en))((es))Optimización de Flujos de Trabajo Digitales((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -555,11 +547,11 @@ nav_current: 3
           <span class="title-score">((en))90/90 Activities((/en))((es))90/90 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">ChatGPT Optimization</span>
-          <span class="credential-skill">Prompt Engineering</span>
-          <span class="credential-skill">AI-Powered Productivity</span>
-          <span class="credential-skill">Market Readiness</span>
-          <span class="credential-skill">Generative AI Tools</span>
+            <span class="credential-skill">((en))ChatGPT Optimization((/en))((es))Optimización con ChatGPT((/es))</span>
+          <span class="credential-skill">((en))Prompt Engineering((/en))((es))Ingeniería de Prompts((/es))</span>
+          <span class="credential-skill">((en))AI-Powered Productivity((/en))((es))Productividad con IA((/es))</span>
+          <span class="credential-skill">((en))Market Readiness((/en))((es))Preparación para el Mercado Laboral((/es))</span>
+          <span class="credential-skill">((en))Generative AI Tools((/en))((es))Herramientas de IA Generativa((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -583,12 +575,12 @@ nav_current: 3
           <span class="title-score">((en))408/408 Activities((/en))((es))408/408 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">MySQL Server</span>
-          <span class="credential-skill">Advanced SQL Queries</span>
-          <span class="credential-skill">Stored Procedures</span>
-          <span class="credential-skill">DML Commands</span>
-          <span class="credential-skill">Database Administration</span>
-          <span class="credential-skill">Security & Optimization</span>
+            <span class="credential-skill">((en))MySQL Server((/en))((es))MySQL Server((/es))</span>
+          <span class="credential-skill">((en))Advanced SQL Queries((/en))((es))Consultas SQL Avanzadas((/es))</span>
+          <span class="credential-skill">((en))Stored Procedures((/en))((es))Procedimientos Almacenados((/es))</span>
+          <span class="credential-skill">((en))DML Commands((/en))((es))Comandos DML((/es))</span>
+          <span class="credential-skill">((en))Database Administration((/en))((es))Administración de Bases de Datos((/es))</span>
+          <span class="credential-skill">((en))Security & Optimization((/en))((es))Seguridad y Optimización((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -612,10 +604,10 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Information Security Awareness</span>
-          <span class="credential-skill">Digital Risk Management</span>
-          <span class="credential-skill">Cyber Hygiene</span>
-          <span class="credential-skill">Workplace Security Best Practices</span>
+            <span class="credential-skill">((en))Information Security((/en))((es))Seguridad de la Información((/es))</span>
+          <span class="credential-skill">((en))Digital Risk Management((/en))((es))Gestión de Riesgos Digitales((/es))</span>
+          <span class="credential-skill">((en))Cyber Hygiene((/en))((es))Higiene Cibernética((/es))</span>
+          <span class="credential-skill">((en))Workplace Security Best Practices((/en))((es))Buenas Prácticas de Seguridad Laboral((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -631,33 +623,6 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate cybersecurity">
-      <div class="credential-header">
-        <div class="credential-title">
-          <span class="title-main">((en))Cybersecurity at Work((/en))((es))Ciberseguridad en el Trabajo((/es))</span>
-          <span class="title-rank">((en))Certificate of Completion((/en))((es))Constancia de Finalización((/es))</span>
-          <span class="title-score"></span>
-        </div>
-        <div class="credential-skills">
-            <span class="credential-skill">Information Security</span>
-          <span class="credential-skill">Digital Risk Management</span>
-          <span class="credential-skill">Cybersecurity Best Practices</span>
-          <span class="credential-skill">Workplace Security Awareness</span>
-          <span class="skills-more"></span>        </div>
-      </div>
-      <div class="credential-preview">
-        ![loading="lazy" alt="((en))Cybersecurity at Work image((/en))((es))Ciberseguridad en el Trabajo imagen((/es))"](./credentials/img/RPLC_CiberseguridadTrabajo.png)
-      </div>
-      <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Red por la Ciberseguridad((/en))((es))Emitido por: Red por la Ciberseguridad((/es))</span>
-        <span class="credential-date">((en))August 2024((/en))((es))Agosto 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
-      </div>
-      <div class="credential-description justify">
-        ((en))I validated my professional skills in digital protection through the 'Cybersecurity at Work' course. I demonstrated proficiency in identifying risks and implementing best security practices within corporate environments, as certified by the Red por la Ciberseguridad Academy.((/en))((es))Validé mis habilidades profesionales en protección digital a través del curso 'Ciberseguridad en el Trabajo'. Demostré competencia en la identificación de riesgos e implementación de mejores prácticas de seguridad en entornos corporativos, certificado por la Academia de la Red por la Ciberseguridad.((/es))
-        <span class="see-more"></span>
-      </div>
-    </div>
     <div class="card" data-tags="certificate ai">
       <div class="credential-header">
         <div class="credential-title">
@@ -666,10 +631,10 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Artificial Intelligence</span>
-          <span class="credential-skill">Workplace Productivity</span>
-          <span class="credential-skill">Generative AI</span>
-          <span class="credential-skill">Digital Security Awareness</span>
+            <span class="credential-skill">((en))Artificial Intelligence((/en))((es))Inteligencia Artificial((/es))</span>
+          <span class="credential-skill">((en))Workplace Productivity((/en))((es))Productividad Laboral((/es))</span>
+          <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
+          <span class="credential-skill">((en))Digital Security Awareness((/en))((es))Conciencia sobre Seguridad Digital((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -693,13 +658,13 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Data Structures</span>
-          <span class="credential-skill">Problem Solving</span>
-          <span class="credential-skill">control structures</span>
-          <span class="credential-skill">Arrays</span>
-          <span class="credential-skill">Strings</span>
-          <span class="credential-skill">Sorting</span>
-          <span class="credential-skill">Searching</span>
+            <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="credential-skill">((en))Control Structures((/en))((es))Estructuras de Control((/es))</span>
+          <span class="credential-skill">((en))Arrays((/en))((es))Arreglos((/es))</span>
+          <span class="credential-skill">((en))Strings((/en))((es))Cadenas((/es))</span>
+          <span class="credential-skill">((en))Sorting((/en))((es))Ordenamiento((/es))</span>
+          <span class="credential-skill">((en))Searching((/en))((es))Búsqueda((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -723,12 +688,12 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Cybersecurity</span>
-          <span class="credential-skill">Networking</span>
-          <span class="credential-skill">Network Security</span>
-          <span class="credential-skill">Threat & Vulnerability Management</span>
-          <span class="credential-skill">Information Security Awareness</span>
-          <span class="credential-skill">Risk Management</span>
+            <span class="credential-skill">((en))Cybersecurity((/en))((es))Ciberseguridad((/es))</span>
+          <span class="credential-skill">((en))Networking((/en))((es))Redes((/es))</span>
+          <span class="credential-skill">((en))Network Security((/en))((es))Seguridad de Redes((/es))</span>
+          <span class="credential-skill">((en))Threat & Vulnerability Management((/en))((es))Gestión de Amenazas y Vulnerabilidades((/es))</span>
+          <span class="credential-skill">((en))Information Security Awareness((/en))((es))Conciencia sobre Seguridad de la Información((/es))</span>
+          <span class="credential-skill">((en))Risk Management((/en))((es))Gestión de Riesgos((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -752,13 +717,13 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">AI</span>
-          <span class="credential-skill">Generative AI</span>
-          <span class="credential-skill">Machine Learning</span>
-          <span class="credential-skill">Prompt Engineering</span>
-          <span class="credential-skill">Microsoft Copilot</span>
-          <span class="credential-skill">Responsible AI</span>
-          <span class="credential-skill">AI for Business</span>
+            <span class="credential-skill">((en))AI((/en))((es))IA((/es))</span>
+          <span class="credential-skill">((en))Generative AI((/en))((es))IA Generativa((/es))</span>
+          <span class="credential-skill">((en))Machine Learning((/en))((es))Aprendizaje Automático((/es))</span>
+          <span class="credential-skill">((en))Prompt Engineering((/en))((es))Ingeniería de Prompts((/es))</span>
+          <span class="credential-skill">((en))Microsoft Copilot((/en))((es))Microsoft Copilot((/es))</span>
+          <span class="credential-skill">((en))Responsible AI((/en))((es))IA Responsable((/es))</span>
+          <span class="credential-skill">((en))AI for Business((/en))((es))IA para Negocios((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -782,14 +747,14 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">DevOps</span>
-          <span class="credential-skill">CI/CD</span>
-          <span class="credential-skill">GitLab</span>
-          <span class="credential-skill">YAML Pipeline Authoring</span>
-          <span class="credential-skill">GitLab Runners & Executors</span>
-          <span class="credential-skill">Docker Container Registry</span>
-          <span class="credential-skill">DevSecOps (Security Scanning)</span>
-          <span class="credential-skill">Auto DevOps</span>
+            <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
+          <span class="credential-skill">((en))CI/CD((/en))((es))CI/CD((/es))</span>
+          <span class="credential-skill">((en))GitLab((/en))((es))GitLab((/es))</span>
+          <span class="credential-skill">((en))YAML Pipeline Authoring((/en))((es))Creación de Pipelines en YAML((/es))</span>
+          <span class="credential-skill">((en))GitLab Runners & Executors((/en))((es))GitLab Runners y Ejecutores((/es))</span>
+          <span class="credential-skill">((en))Docker Container Registry((/en))((es))Registro de Contenedores Docker((/es))</span>
+          <span class="credential-skill">((en))DevSecOps (Security Scanning)((/en))((es))DevSecOps (Análisis de Seguridad)((/es))</span>
+          <span class="credential-skill">((en))Auto DevOps((/en))((es))Auto DevOps((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -813,11 +778,11 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">DevOps</span>
-          <span class="credential-skill">GitHub</span>
-          <span class="credential-skill">Git</span>
-          <span class="credential-skill">Workflow Automation</span>
-          <span class="credential-skill">Project Management</span>
+            <span class="credential-skill">((en))DevOps((/en))((es))DevOps((/es))</span>
+          <span class="credential-skill">((en))GitHub((/en))((es))GitHub((/es))</span>
+          <span class="credential-skill">((en))Git((/en))((es))Git((/es))</span>
+          <span class="credential-skill">((en))Workflow Automation((/en))((es))Automatización de Flujos de Trabajo((/es))</span>
+          <span class="credential-skill">((en))Project Management((/en))((es))Gestión de Proyectos((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -841,13 +806,13 @@ nav_current: 3
           <span class="title-score">((en))381/381 Activities((/en))((es))381/381 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Java</span>
-          <span class="credential-skill">Spring Boot 3</span>
-          <span class="credential-skill">Spring Data JPA</span>
-          <span class="credential-skill">REST API Development</span>
-          <span class="credential-skill">Java Lambdas & Streams</span>
-          <span class="credential-skill">Spring Security</span>
-          <span class="credential-skill">API Documentation</span>
+            <span class="credential-skill">((en))Java((/en))((es))Java((/es))</span>
+          <span class="credential-skill">((en))Spring Boot 3((/en))((es))Spring Boot 3((/es))</span>
+          <span class="credential-skill">((en))Spring Data JPA((/en))((es))Spring Data JPA((/es))</span>
+          <span class="credential-skill">((en))REST API Development((/en))((es))Desarrollo de APIs REST((/es))</span>
+          <span class="credential-skill">((en))Java Lambdas & Streams((/en))((es))Lambdas y Streams de Java((/es))</span>
+          <span class="credential-skill">((en))Spring Security((/en))((es))Spring Security((/es))</span>
+          <span class="credential-skill">((en))API Documentation((/en))((es))Documentación de APIs((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -871,11 +836,11 @@ nav_current: 3
           <span class="title-score">((en))206/207 Activities((/en))((es))206/207 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Java OOP</span>
-          <span class="credential-skill">Collections & Lists</span>
-          <span class="credential-skill">API Consumption</span>
-          <span class="credential-skill">Exception Handling</span>
-          <span class="credential-skill">File I/O</span>
+            <span class="credential-skill">((en))Java OOP((/en))((es))POO con Java((/es))</span>
+          <span class="credential-skill">((en))Collections & Lists((/en))((es))Colecciones y Listas((/es))</span>
+          <span class="credential-skill">((en))API Consumption((/en))((es))Consumo de APIs((/es))</span>
+          <span class="credential-skill">((en))Exception Handling((/en))((es))Manejo de Excepciones((/es))</span>
+          <span class="credential-skill">((en))File I/O((/en))((es))Entrada/Salida de Archivos((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -899,12 +864,12 @@ nav_current: 3
           <span class="title-score">((en))198/198 Activities((/en))((es))198/198 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Agile Fundamentals</span>
-          <span class="credential-skill">Entrepreneurship</span>
-          <span class="credential-skill">Business Planning</span>
-          <span class="credential-skill">Career Strategy</span>
-          <span class="credential-skill">Professional Protagonism</span>
-          <span class="credential-skill">Market Analysis</span>
+            <span class="credential-skill">((en))Agile Fundamentals((/en))((es))Fundamentos Ágiles((/es))</span>
+          <span class="credential-skill">((en))Entrepreneurship((/en))((es))Emprendimiento((/es))</span>
+          <span class="credential-skill">((en))Business Planning((/en))((es))Planificación de Negocios((/es))</span>
+          <span class="credential-skill">((en))Career Strategy((/en))((es))Estrategia de Carrera((/es))</span>
+          <span class="credential-skill">((en))Professional Protagonism((/en))((es))Protagonismo Profesional((/es))</span>
+          <span class="credential-skill">((en))Market Analysis((/en))((es))Análisis de Mercado((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -928,11 +893,11 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Microsoft SC-900</span>
-          <span class="credential-skill">Cloud Security Fundamentals</span>
-          <span class="credential-skill">Identity and Access Management (IAM)</span>
-          <span class="credential-skill">Compliance Management</span>
-          <span class="credential-skill">Security Operations</span>
+            <span class="credential-skill">((en))Microsoft SC-900((/en))((es))Microsoft SC-900((/es))</span>
+          <span class="credential-skill">((en))Cloud Security Fundamentals((/en))((es))Fundamentos de Seguridad en la Nube((/es))</span>
+          <span class="credential-skill">((en))Identity and Access Management (IAM)((/en))((es))Gestión de Identidades y Accesos (IAM)((/es))</span>
+          <span class="credential-skill">((en))Compliance Management((/en))((es))Gestión de Cumplimiento((/es))</span>
+          <span class="credential-skill">((en))Security Operations((/en))((es))Operaciones de Seguridad((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -956,12 +921,12 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Internet Computer Protocol (ICP)</span>
-          <span class="credential-skill">Web3</span>
-          <span class="credential-skill">TypeScript</span>
-          <span class="credential-skill">Azle Framework</span>
-          <span class="credential-skill">Smart Contracts</span>
-          <span class="credential-skill">Decentralized Applications (dApps)</span>
+            <span class="credential-skill">((en))Internet Computer Protocol (ICP)((/en))((es))Protocolo de Internet Computer (ICP)((/es))</span>
+          <span class="credential-skill">((en))Web3((/en))((es))Web3((/es))</span>
+          <span class="credential-skill">((en))TypeScript((/en))((es))TypeScript((/es))</span>
+          <span class="credential-skill">((en))Azle Framework((/en))((es))Framework Azle((/es))</span>
+          <span class="credential-skill">((en))Smart Contracts((/en))((es))Contratos Inteligentes((/es))</span>
+          <span class="credential-skill">((en))Decentralized Applications (dApps)((/en))((es))Aplicaciones Descentralizadas (dApps)((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -985,11 +950,11 @@ nav_current: 3
           <span class="title-score">((en))171/171 Activities((/en))((es))171/171 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Learning Strategies</span>
-          <span class="credential-skill">Personal Productivity</span>
-          <span class="credential-skill">LinkedIn Optimization</span>
-          <span class="credential-skill">Focus & Time Management</span>
-          <span class="credential-skill">Habit Building</span>
+            <span class="credential-skill">((en))Learning Strategies((/en))((es))Estrategias de Aprendizaje((/es))</span>
+          <span class="credential-skill">((en))Personal Productivity((/en))((es))Productividad Personal((/es))</span>
+          <span class="credential-skill">((en))LinkedIn Optimization((/en))((es))Optimización de LinkedIn((/es))</span>
+          <span class="credential-skill">((en))Focus & Time Management((/en))((es))Enfoque y Gestión del Tiempo((/es))</span>
+          <span class="credential-skill">((en))Habit Building((/en))((es))Construcción de Hábitos((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1013,14 +978,14 @@ nav_current: 3
           <span class="title-score">((en))345/345 Activities((/en))((es))345/345 Actividades((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Programming</span>
-          <span class="credential-skill">Web Development</span>
-          <span class="credential-skill">JavaScript Logic</span>
-          <span class="credential-skill">HTML5</span>
-          <span class="credential-skill">CSS3</span>
-          <span class="credential-skill">Responsive Design</span>
-          <span class="credential-skill">Git</span>
-          <span class="credential-skill">GitHub</span>
+            <span class="credential-skill">((en))Programming((/en))((es))Programación((/es))</span>
+          <span class="credential-skill">((en))Web Development((/en))((es))Desarrollo Web((/es))</span>
+          <span class="credential-skill">((en))JavaScript Logic((/en))((es))Lógica en JavaScript((/es))</span>
+          <span class="credential-skill">((en))HTML5((/en))((es))HTML5((/es))</span>
+          <span class="credential-skill">((en))CSS3((/en))((es))CSS3((/es))</span>
+          <span class="credential-skill">((en))Responsive Design((/en))((es))Diseño Responsivo((/es))</span>
+          <span class="credential-skill">((en))Git((/en))((es))Git((/es))</span>
+          <span class="credential-skill">((en))GitHub((/en))((es))GitHub((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1044,10 +1009,8 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Advanced Computing</span>
-          <span class="credential-skill">Digital Literacy</span>
-          <span class="credential-skill">Problem Solving</span>
-          <span class="credential-skill">Technological Competence</span>
+            <span class="credential-skill">((en))Advanced Computing((/en))((es))Computación Avanzada((/es))</span>
+          <span class="credential-skill">((en))Digital Literacy((/en))((es))Alfabetización Digital((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1071,10 +1034,10 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Artificial Intelligence</span>
-          <span class="credential-skill">Data Science</span>
-          <span class="credential-skill">Machine Learning</span>
-          <span class="credential-skill">Data Analysis</span>
+            <span class="credential-skill">((en))Artificial Intelligence((/en))((es))Inteligencia Artificial((/es))</span>
+          <span class="credential-skill">((en))Data Science((/en))((es))Ciencia de Datos((/es))</span>
+          <span class="credential-skill">((en))Machine Learning((/en))((es))Aprendizaje Automático((/es))</span>
+          <span class="credential-skill">((en))Data Analysis((/en))((es))Análisis de Datos((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1098,10 +1061,10 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Blockchain</span>
-          <span class="credential-skill">Solidity</span>
-          <span class="credential-skill">Smart Contracts</span>
-          <span class="credential-skill">Ethereum</span>
+            <span class="credential-skill">((en))Blockchain((/en))((es))Blockchain((/es))</span>
+          <span class="credential-skill">((en))Solidity((/en))((es))Solidity((/es))</span>
+          <span class="credential-skill">((en))Smart Contracts((/en))((es))Contratos Inteligentes((/es))</span>
+          <span class="credential-skill">((en))Ethereum((/en))((es))Ethereum((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1125,10 +1088,10 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Blockchain Consulting</span>
-          <span class="credential-skill">Web3 Strategy</span>
-          <span class="credential-skill">Decentralized Systems</span>
-          <span class="credential-skill">Enterprise Blockchain</span>
+            <span class="credential-skill">((en))Blockchain Consulting((/en))((es))Consultoría Blockchain((/es))</span>
+          <span class="credential-skill">((en))Web3 Strategy((/en))((es))Estrategia Web3((/es))</span>
+          <span class="credential-skill">((en))Decentralized Systems((/en))((es))Sistemas Descentralizados((/es))</span>
+          <span class="credential-skill">((en))Enterprise Blockchain((/en))((es))Blockchain Empresarial((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1152,11 +1115,11 @@ nav_current: 3
           <span class="title-score">((en))8/10((/en))((es))8/10((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Personal Finance</span>
-          <span class="credential-skill">Financial Planning</span>
-          <span class="credential-skill">Savings & Investment</span>
-          <span class="credential-skill">Consumer Credit Rights</span>
-          <span class="credential-skill">Insurance & Retirement</span>
+            <span class="credential-skill">((en))Personal Finance((/en))((es))Finanzas Personales((/es))</span>
+          <span class="credential-skill">((en))Financial Planning((/en))((es))Planificación Financiera((/es))</span>
+          <span class="credential-skill">((en))Savings & Investment((/en))((es))Ahorro e Inversión((/es))</span>
+          <span class="credential-skill">((en))Consumer Credit Rights((/en))((es))Derechos del Consumidor Crediticio((/es))</span>
+          <span class="credential-skill">((en))Insurance & Retirement((/en))((es))Seguros y Retiro((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1196,13 +1159,13 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">AWS Compute</span>
-          <span class="credential-skill">AWS Storage</span>
-          <span class="credential-skill">AWS Networking</span>
-          <span class="credential-skill">AWS database</span>
-          <span class="credential-skill">Cloud Security</span>
-          <span class="credential-skill">Cloud Architecture</span>
-          <span class="credential-skill">AWS Pricing & Support</span>
+            <span class="credential-skill">((en))AWS Compute((/en))((es))Cómputo en AWS((/es))</span>
+          <span class="credential-skill">((en))AWS Storage((/en))((es))Almacenamiento en AWS((/es))</span>
+          <span class="credential-skill">((en))AWS Networking((/en))((es))Redes en AWS((/es))</span>
+          <span class="credential-skill">((en))AWS Database((/en))((es))Base de Datos en AWS((/es))</span>
+          <span class="credential-skill">((en))Cloud Security((/en))((es))Seguridad en la Nube((/es))</span>
+          <span class="credential-skill">((en))Cloud Architecture((/en))((es))Arquitectura en la Nube((/es))</span>
+          <span class="credential-skill">((en))AWS Pricing & Support((/en))((es))Precios y Soporte de AWS((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1226,15 +1189,15 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">IBM Z</span>
-          <span class="credential-skill">Mainframes</span>
-          <span class="credential-skill">JCL (Job Control Language)</span>
-          <span class="credential-skill">MVS Commands</span>
-          <span class="credential-skill">Python</span>
-          <span class="credential-skill">z/OS UNIX (USS)</span>
-          <span class="credential-skill">IBM Z Open Automation Utilities</span>
-          <span class="credential-skill">Zowe</span>
-          <span class="credential-skill">Data Set Administration</span>
+            <span class="credential-skill">((en))IBM Z((/en))((es))IBM Z((/es))</span>
+          <span class="credential-skill">((en))Mainframes((/en))((es))Mainframes((/es))</span>
+          <span class="credential-skill">((en))JCL (Job Control Language)((/en))((es))JCL (Lenguaje de Control de Trabajos)((/es))</span>
+          <span class="credential-skill">((en))MVS Commands((/en))((es))Comandos MVS((/es))</span>
+          <span class="credential-skill">((en))Python((/en))((es))Python((/es))</span>
+          <span class="credential-skill">((en))z/OS UNIX (USS)((/en))((es))z/OS UNIX (USS)((/es))</span>
+          <span class="credential-skill">((en))IBM Z Open Automation Utilities((/en))((es))IBM Z Open Automation Utilities((/es))</span>
+          <span class="credential-skill">((en))Zowe((/en))((es))Zowe((/es))</span>
+          <span class="credential-skill">((en))Data Set Administration((/en))((es))Administración de Conjuntos de Datos((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1274,14 +1237,14 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Hackathon</span>
-          <span class="credential-skill">Team Leadership</span>
-          <span class="credential-skill">Mobile Development</span>
-          <span class="credential-skill">Flutter</span>
-          <span class="credential-skill">Firebase</span>
-          <span class="credential-skill">REST APIs</span>
-          <span class="credential-skill">Python</span>
-          <span class="credential-skill">LLM Integration</span>
+            <span class="credential-skill">((en))Hackathon((/en))((es))Hackathon((/es))</span>
+          <span class="credential-skill">((en))Team Leadership((/en))((es))Liderazgo de Equipo((/es))</span>
+          <span class="credential-skill">((en))Mobile Development((/en))((es))Desarrollo Móvil((/es))</span>
+          <span class="credential-skill">((en))Flutter((/en))((es))Flutter((/es))</span>
+          <span class="credential-skill">((en))Firebase((/en))((es))Firebase((/es))</span>
+          <span class="credential-skill">((en))REST APIs((/en))((es))APIs REST((/es))</span>
+          <span class="credential-skill">((en))Python((/en))((es))Python((/es))</span>
+          <span class="credential-skill">((en))LLM Integration((/en))((es))Integración de LLMs((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1305,12 +1268,12 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Competitive Programming</span>
-          <span class="credential-skill">Problem Solving</span>
-          <span class="credential-skill">Algorithms</span>
-          <span class="credential-skill">ICPC</span>
-          <span class="credential-skill">Data Structures</span>
-          <span class="credential-skill">Team Collaboration</span>
+            <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))ICPC((/en))((es))ICPC((/es))</span>
+          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))Team Collaboration((/en))((es))Colaboración en Equipo((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1334,12 +1297,12 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Competitive Programming</span>
-          <span class="credential-skill">Problem Solving</span>
-          <span class="credential-skill">ICPC</span>
-          <span class="credential-skill">Data Structures</span>
-          <span class="credential-skill">Algorithms</span>
-          <span class="credential-skill">Team Collaboration</span>
+            <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="credential-skill">((en))ICPC((/en))((es))ICPC((/es))</span>
+          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))Team Collaboration((/en))((es))Colaboración en Equipo((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1363,12 +1326,11 @@ nav_current: 3
           <span class="title-score">((en))Recognition((/en))((es))Reconocimiento((/es))</span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Public Speaking</span>
-          <span class="credential-skill">Career Development</span>
-          <span class="credential-skill">Technical Mentoring</span>
-          <span class="credential-skill">Career Coaching</span>
-          <span class="credential-skill">Interview Preparation</span>
-          <span class="credential-skill">Soft Skills</span>
+            <span class="credential-skill">((en))Public Speaking((/en))((es))Oratoria((/es))</span>
+          <span class="credential-skill">((en))Career Development((/en))((es))Desarrollo Profesional((/es))</span>
+          <span class="credential-skill">((en))Technical Mentoring((/en))((es))Mentoría Técnica((/es))</span>
+          <span class="credential-skill">((en))Interview Preparation((/en))((es))Preparación para Entrevistas((/es))</span>
+          <span class="credential-skill">((en))Soft Skills((/en))((es))Habilidades Blandas((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1392,11 +1354,11 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Leadership</span>
-          <span class="credential-skill">Project Management</span>
-          <span class="credential-skill">Algorithmic Competition Design</span>
-          <span class="credential-skill">Team Coordination</span>
-          <span class="credential-skill">Public Speaking</span>
+            <span class="credential-skill">((en))Leadership((/en))((es))Liderazgo((/es))</span>
+          <span class="credential-skill">((en))Project Management((/en))((es))Gestión de Proyectos((/es))</span>
+          <span class="credential-skill">((en))Algorithmic Competition Design((/en))((es))Diseño de Competencias Algorítmicas((/es))</span>
+          <span class="credential-skill">((en))Team Coordination((/en))((es))Coordinación de Equipo((/es))</span>
+          <span class="credential-skill">((en))Public Speaking((/en))((es))Oratoria((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1420,11 +1382,11 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Strategic Leadership</span>
-          <span class="credential-skill">Technical Mentoring</span>
-          <span class="credential-skill">Community Management</span>
-          <span class="credential-skill">Competitive Programming</span>
-          <span class="credential-skill">Team Coordination</span>
+            <span class="credential-skill">((en))Strategic Leadership((/en))((es))Liderazgo Estratégico((/es))</span>
+          <span class="credential-skill">((en))Technical Mentoring((/en))((es))Mentoría Técnica((/es))</span>
+          <span class="credential-skill">((en))Community Management((/en))((es))Gestión de Comunidad((/es))</span>
+          <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Team Coordination((/en))((es))Coordinación de Equipo((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1448,12 +1410,12 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Competitive Programming</span>
-          <span class="credential-skill">Problem Solving</span>
-          <span class="credential-skill">ICPC</span>
-          <span class="credential-skill">Data Structures</span>
-          <span class="credential-skill">Algorithms</span>
-          <span class="credential-skill">Team Collaboration</span>
+            <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="credential-skill">((en))ICPC((/en))((es))ICPC((/es))</span>
+          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))Team Collaboration((/en))((es))Colaboración en Equipo((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1477,11 +1439,11 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Competitive Programming</span>
-          <span class="credential-skill">Problem Solving</span>
-          <span class="credential-skill">Data Structures</span>
-          <span class="credential-skill">Algorithms</span>
-          <span class="credential-skill">Team Collaboration</span>
+            <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))Team Collaboration((/en))((es))Colaboración en Equipo((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
@@ -1505,11 +1467,11 @@ nav_current: 3
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">Competitive Programming</span>
-          <span class="credential-skill">Problem Solving</span>
-          <span class="credential-skill">Data Structures</span>
-          <span class="credential-skill">Algorithms</span>
-          <span class="credential-skill">Complexity Analysis</span>
+            <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))Complexity Analysis((/en))((es))Análisis de Complejidad((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
