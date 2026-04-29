@@ -22,8 +22,7 @@ class CredentialsManager(BaseManager):
         "certificate",
         "badge",
         "award",
-        "education",
-        "degree"]
+        "education"]
     TYPE_PRIORITY = {
         "education": 4,
         "certification": 3,
@@ -110,10 +109,10 @@ class CredentialsManager(BaseManager):
         level_es = input("Level/Rank (Spanish): ").strip()
 
         score = input("Score (optional): ").strip()
-        issued_on = input("Issued on (YYYY-MM): ").strip()
+        issued_on = input("Issued on (YYYY-MM or YYYY-MM-DD): ").strip()
         if issued_on:
-            if not re.match(r'^\d{4}-\d{2}$', issued_on):
-                print("Format: YYYY-MM (e.g., 2025-01)")
+            if not re.match(r'^\d{4}-\d{2}(-\d{2})?$', issued_on):
+                print("Format: YYYY-MM or YYYY-MM-DD (e.g., 2025-01 or 2025-01-15)")
                 return 1
 
         topics = self.prompt_topics()

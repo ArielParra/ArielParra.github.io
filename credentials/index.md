@@ -1025,6 +1025,32 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
+    <div class="card" data-tags="certificate blockchain ai">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Block Makers Program((/en))((es))Programa Block Makers((/es))</span>
+          <span class="title-rank"></span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Blockchain Development((/en))((es))Desarrollo en Blockchain((/es))</span>
+          <span class="credential-skill">((en))Artificial Intelligence Implementation((/en))((es))Implementación de Inteligencia Artificial((/es))</span>
+          <span class="credential-skill">((en))Smart Contracts Design((/en))((es))Diseño de Smart Contracts((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Block Makers Program image((/en))((es))Programa Block Makers imagen((/es))"](./credentials/img/BLOCKMAKERS_Programa2023.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Inadaptados / Blockdemy((/en))((es))Emitido por: Inadaptados / Blockdemy((/es))</span>
+        <span class="credential-date">((en))November 2023((/en))((es))Noviembre 2023((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Programa2023.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Comprehensive program covering key areas of Blockchain, Artificial Intelligence, and Smart Contracts((/en))((es))Programa integral que abarca las áreas de Blockchain, Inteligencia Artificial y Smart Contracts((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="certificate ai datascience">
       <div class="credential-header">
         <div class="credential-title">
@@ -1259,6 +1285,34 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
+    <div class="card" data-tags="award programming softskills">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))President of the Competitive Programming Club (Gallos)((/en))((es))Presidente del Club de Programación Competitiva (Gallos)((/es))</span>
+          <span class="title-rank"></span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Strategic Leadership((/en))((es))Liderazgo Estratégico((/es))</span>
+          <span class="credential-skill">((en))Technical Mentoring((/en))((es))Mentoría Técnica((/es))</span>
+          <span class="credential-skill">((en))Community Management((/en))((es))Gestión de Comunidad((/es))</span>
+          <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Team Coordination((/en))((es))Coordinación de Equipo((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))President of the Competitive Programming Club (Gallos) image((/en))((es))Presidente del Club de Programación Competitiva (Gallos) imagen((/es))"](./credentials/img/CPC-GALLOS_2025.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
+        <span class="credential-date">((en))December 2025((/en))((es))Diciembre 2025((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2025.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2025 semester. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2025. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
@@ -1320,6 +1374,31 @@ nav_current: 3
     <div class="card" data-tags="award softskills">
       <div class="credential-header">
         <div class="credential-title">
+          <span class="title-main">((en))2nd Kyu Grade in Kendo((/en))((es))Grado 2do Kyu en Kendo((/es))</span>
+          <span class="title-rank">((en))Intermediate Rank((/en))((es))Rango Intermedio((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Mental Discipline and Focus((/en))((es))Disciplina Mental y Enfoque((/es))</span>
+          <span class="credential-skill">((en))Sportsmanship and Ethics((/en))((es))Ética y Deportividad((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))2nd Kyu Grade in Kendo image((/en))((es))Grado 2do Kyu en Kendo imagen((/es))"](./credentials/img/AEKIA_Kendo_2kyu.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Asociación Estatal de Kendo e Iaido de Aguascalientes, A.C. (AEKIA)((/en))((es))Emitido por: Asociación Estatal de Kendo e Iaido de Aguascalientes, A.C. (AEKIA)((/es))</span>
+        <span class="credential-date">((en))May 2025((/en))((es))Mayo 2025((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/AEKIA_Kendo_2kyu.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Official 2nd Kyu rank awarded by the State Association of Kendo and Iaido of Aguascalientes, affiliated with the Mexican Kendo Federation (FMK), after demonstrating the required technical skills and requirements.((/en))((es))Grado oficial de 2do Kyu otorgado por la Asociación Estatal de Kendo e Iaido de Aguascalientes, afiliada a la Federación Mexicana de Kendo (FMK), tras haber demostrado las habilidades técnicas y requisitos establecidos.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award softskills">
+      <div class="credential-header">
+        <div class="credential-title">
           <span class="title-main">((en))Technical Job Interviews Workshop Instructor((/en))((es))Tallerista: Entrevistas Técnicas de Trabajo((/es))</span>
           <span class="title-rank">((en))XIX Congress of Exact Sciences((/en))((es))XIX Congreso de Ciencias Exactas((/es))</span>
           <span class="title-score">((en))Recognition((/en))((es))Reconocimiento((/es))</span>
@@ -1336,7 +1415,7 @@ nav_current: 3
         ![loading="lazy" alt="((en))Technical Job Interviews Workshop Instructor image((/en))((es))Tallerista: Entrevistas Técnicas de Trabajo imagen((/es))"](./credentials/img/UAA_TALLER_2025.jpg)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
         <span class="credential-date">((en))March 2025((/en))((es))Marzo 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_TALLER_2025.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -1364,7 +1443,7 @@ nav_current: 3
         ![loading="lazy" alt="((en))Programming Contest Organizer image((/en))((es))Organizador de Concurso de Programación imagen((/es))"](./credentials/img/UAA_CONCURSO_2025.jpg)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
         <span class="credential-date">((en))March 2025((/en))((es))Marzo 2025((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2025.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -1392,7 +1471,7 @@ nav_current: 3
         ![loading="lazy" alt="((en))President of the Competitive Programming Club (Gallos) image((/en))((es))Presidente del Club de Programación Competitiva (Gallos) imagen((/es))"](./credentials/img/CPC-GALLOS_2024.jpg)
       </div>
       <div class="credential-meta">
-        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes((/es))</span>
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
         <span class="credential-date">((en))December 2024((/en))((es))Diciembre 2024((/es))</span>
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2024.pdf){:target="_blank" class="credential-link"}
       </div>
@@ -1483,6 +1562,56 @@ nav_current: 3
       </div>
       <div class="credential-description justify">
         ((en))I validated my technical proficiency in algorithmic problem-solving by participating in the 2024 Meta Hacker Cup. I successfully reached Round 1, achieving a global ranking of 7,297th, which placed me within the top 32% of competitors worldwide in this high-level international programming competition.((/en))((es))Validé mi competencia técnica en la resolución de problemas algorítmicos al participar en el Meta Hacker Cup 2024. Alcancé con éxito la Ronda 1, obteniendo una clasificación global de 7,297, lo que me posicionó dentro del top 32% de los competidores a nivel mundial en esta competencia de programación internacional de alto nivel.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award softskills">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))High School Best GPA Recognition((/en))((es))Reconocimiento al Mejor Promedio del Bachillerato((/es))</span>
+          <span class="title-rank">((en))Academic Excellence Award((/en))((es))Reconocimiento a la Excelencia Académica((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Academic Dedication((/en))((es))Dedicación Académica((/es))</span>
+          <span class="credential-skill">((en))Continuous Improvement((/en))((es))Mejora Continua((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))High School Best GPA Recognition image((/en))((es))Reconocimiento al Mejor Promedio del Bachillerato imagen((/es))"](./credentials/img/BACHUAA_Mejor_Promedio_2021.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
+        <span class="credential-date">((en))March 2022((/en))((es))Marzo 2022((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BACHUAA_Mejor_Promedio_2021.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Official recognition signed by the Rector of the University for obtaining a 9.57 GPA, the highest in the group during the August – December 2021 semester of high school((/en))((es))Reconocimiento oficial firmado por el Rector de la Universidad por haber obtenido una calificación de 9.57, el mejor promedio de su grupo durante el semestre agosto – diciembre 2021 de bachillerato((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))First Place in Algebra Mathematics Skills Contest((/en))((es))Primer Lugar del concurso de Habilidades Matemáticas de Álgebra((/es))</span>
+          <span class="title-rank">((en))First Place((/en))((es))Primer Lugar((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Advanced Algebraic Reasoning((/en))((es))Razonamiento Algebraico Avanzado((/es))</span>
+          <span class="credential-skill">((en))Mathematical Proficiency((/en))((es))Competencia Matemática((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))First Place in Algebra Mathematics Skills Contest image((/en))((es))Primer Lugar del concurso de Habilidades Matemáticas de Álgebra imagen((/es))"](./credentials/img/BACHUAA_Algebra_2019.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
+        <span class="credential-date">((en))November 2019((/en))((es))Noviembre 2019((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BACHUAA_Algebra_2019.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Awarded for obtaining first place in the Algebra Mathematics Skills contest during the 'Jornadas del Centro de Educación Media' at UAA((/en))((es))Otorgado por haber obtenido el primer lugar en el concurso de Habilidades Matemáticas de ÁLGEBRA, en el marco de las Jornadas del Centro de Educación Media de la UAA((/es))
         <span class="see-more"></span>
       </div>
     </div>
