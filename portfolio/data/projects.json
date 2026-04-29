@@ -3,7 +3,7 @@
     {
       "id": "tomin",
       "title": "Tomin",
-      "date": "2025-04",
+      "date": "2025-04-09",
       "technologies": [
         "flutter",
         "dart",
@@ -16,7 +16,7 @@
         "es": "Tomin es una aplicación multiplataforma de seguimiento de gastos con un asistente LLM integrado. Construida durante el hackathon Talent Land Genius Arena, donde ganó el 1er lugar entre 75 equipos."
       },
       "image": "./portfolio/img/Tomin.gif",
-      "link": "https://github.com/ArielParra/Tomin"
+      "link": "https://www.linkedin.com/posts/parra-ariel_talentland2026-geniusarena-bancoazteca-ugcPost-7448973059698561024-jwJx"
     },
     {
       "id": "cpc-gallos",

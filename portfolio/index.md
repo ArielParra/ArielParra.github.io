@@ -42,7 +42,7 @@ nav_current: 2
       </div>
       <div class="project-meta">
         <span class="project-date">((en))April 2025((/en))((es))Abril 2025((/es))</span>
-        [((en))View Project((/en))((es))Ver Proyecto((/es))](https://github.com/ArielParra/Tomin){:target="_blank" class="project-link"}</div>
+        [((en))View Project((/en))((es))Ver Proyecto((/es))](https://www.linkedin.com/posts/parra-ariel_talentland2026-geniusarena-bancoazteca-ugcPost-7448973059698561024-jwJx){:target="_blank" class="project-link"}</div>
       <div class="project-description justify">
         ((en))Tomin is a cross-platform expense-tracking app with an integrated LLM assistant. Built during the Talent Land Genius Arena hackathon, where it won 1st place among 75 teams.((/en))((es))Tomin es una aplicación multiplataforma de seguimiento de gastos con un asistente LLM integrado. Construida durante el hackathon Talent Land Genius Arena, donde ganó el 1er lugar entre 75 equipos.((/es))
         <span class="see-more"></span>
