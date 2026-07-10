@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arielparra.github.io/portfolio/data/projects.schema.json",
+  "title": "Projects Schema",
+  "description": "Schema for the portfolio projects data",
+  "type": "object",
+  "properties": {
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "technologies": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "algorithms",
+                "assembly",
+                "browser-extension",
+                "c",
+                "cpp",
+                "css",
+                "dart",
+                "docker",
+                "dos",
+                "expo",
+                "express",
+                "firebase",
+                "flask",
+                "flutter",
+                "github",
+                "html",
+                "instaloader",
+                "java",
+                "javascript",
+                "jekyll",
+                "libpcap",
+                "linux",
+                "llm",
+                "makefile",
+                "markdown",
+                "networking",
+                "nodejs",
+                "phaser3",
+                "python",
+                "raylib",
+                "react-native",
+                "ruby",
+                "shell",
+                "spring",
+                "sql",
+                "styled-components",
+                "typescript",
+                "winapi"
+              ]
+            }
+          },
+          "description": {
+            "type": "object",
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "es": {
+                "type": "string"
+              }
+            },
+            "required": ["en", "es"]
+          },
+          "image": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "date",
+          "technologies",
+          "description",
+          "image",
+          "link"
+        ]
+      }
+    }
+  },
+  "required": ["projects"]
+}

@@ -1462,7 +1462,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Talent Hackathon 2026 1st Place Recognition image((/en))((es))Reconocimiento 1er Lugar Talent Hackathon 2026 imagen((/es))"](./credentials/img/UAA_Reconocimiento_Hackathon.jpg)
+        ![loading="lazy" alt="((en))Talent Hackathon 2026 1st Place Recognition image((/en))((es))Reconocimiento 1er Lugar Talent Hackathon 2026 imagen((/es))"](./credentials/img/UAA_Reconocimiento_Hackathon.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
