@@ -420,6 +420,9 @@ class CredentialsManager(BaseManager):
         lines.append("nav_current: 3")
         lines.append("---")
         lines.append("")
+        lines.append(
+            '<h1 class="sr-only">((en))Credentials((/en))((es))Acreditaciones((/es))</h1>')
+        lines.append("")
 
         prev_type = None
 
@@ -439,7 +442,7 @@ class CredentialsManager(BaseManager):
                 lines.append(" <hr>")
                 lines.append(' <div class="center">')
                 lines.append(
-                    " ### " +
+                    " ## " +
                     type_label +
                     ' <span class="section-count" data-type="' +
                     ctype +

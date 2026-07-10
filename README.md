@@ -7,14 +7,14 @@ Built with plain HTML, CSS, and JavaScript—following HTML5 standards without b
 ## Quick Start
 
 ```bash
-make              # Build all pages
+make              # Build changed pages incrementally
 make index        # Build specific page
 make clean        # Remove generated HTML
 ```
 
 ## Project Structure
 
-```
+```text
 ├── Makefile            # Build automation
 ├── *.md                # Source files with YAML frontmatter
 ├── scripts/            # Python build and management scripts
@@ -31,13 +31,15 @@ make clean        # Remove generated HTML
 ├── js/                 # JavaScript modules
 ├── portfolio/          # Portfolio page sources
 │   ├── data/
-│   │   └── projects.json      # All portfolio projects data
+│   │   ├── projects.json          # All portfolio projects data
+│   │   └── projects.schema.json   # JSON Schema for projects validation
 │   ├── index.md               # Source markdown
 │   └── index.html             # Generated output
 ├── contact/            # Contact page sources
 └── credentials/        # Credentials page sources
     ├── data/
-    │   └── credentials.json   # All credentials data (education, certs, etc.)
+    │   ├── credentials.json         # All credentials data (education, certs, etc.)
+    │   └── credentials.schema.json  # JSON Schema for credentials validation
     ├── docs/                  # PDF documentation files
     ├── img/                   # Credential images
     ├── index.md               # Source markdown
@@ -82,8 +84,10 @@ To maintain high code quality and standard compliance, the project includes an a
 - **HTML & CSS Validation**: Uses `scripts/validate.py` to check all generated HTML and CSS files against the official W3C Validation APIs (Nu HTML Checker & Jigsaw CSS Validator).
 - **JavaScript Linting**: Uses **ESLint** with a relaxed `airbnb-base` configuration tailored for a vanilla global-scope architecture.
 - **Python Linting**: Uses **Flake8** to enforce PEP8 standards and **Autopep8** for automatic formatting of the custom CLI tools.
+- **JSON Schema Validation**: Uses `scripts/validate_json.py` to validate `projects.json` and `credentials.json` against their respective schemas.
 
 Run the full validation suite using:
+
 ```bash
 make validate  # Validates HTML and CSS via W3C
 make lint      # Lints JS files via ESLint and Python files via Flake8
@@ -96,12 +100,15 @@ The site uses a JSON-based data source for credentials, processed into HTML by `
 ### credentials.json
 
 Contains all education records, certifications, certificates, and badges organized by type:
+
 - `type`: Category (education, certification, certificate, badge, award)
 - `issuer`: Issuing organization
 - `title`: Credential name (with i18n syntax)
 - `level`: Rank or level achieved
 - `score`: Achievement score
-- `issuedOn`: Date issued (YYYY-MM format)
+- `startedOn`: (Optional) Date started, useful for ongoing education (YYYY-MM format)
+- `issuedOn`: Date issued or completed (YYYY-MM format)
+- `expiresOn`: (Optional) Date credential expires (YYYY-MM format)
 - `topics`: Tags (cybersecurity, devops, ai, cloud, etc.)
 - `skills`: List of skills gained
 - `image`: Path to credential image
@@ -132,6 +139,7 @@ Similar to credentials, the portfolio uses a JSON-based data source, processed i
 ### projects.json
 
 Contains all your portfolio projects:
+
 - `id`: Unique identifier for the project
 - `title`: Project name
 - `date`: Project date (YYYY-MM format)

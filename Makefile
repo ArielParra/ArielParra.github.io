@@ -64,5 +64,7 @@ lint:
 	@echo "🎉 All JS files passed validation!"
 	$(PYTHON) -m flake8 scripts/ --extend-ignore=E501
 	@echo "🎉 All Python scripts passed validation!"
-
+	$(PYTHON) $(call FixPath,scripts/validate_json.py)
+	@echo "🎉 All JSON files passed validation!"
+	
 .PHONY: all clean index portfolio_md portfolio contact credentials_md credentials 404 validate lint

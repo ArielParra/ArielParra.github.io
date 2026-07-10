@@ -9,11 +9,13 @@ css: [theme, common, credentials]
 nav_current: 3
 ---
 
+<h1 class="sr-only">((en))Credentials((/en))((es))Acreditaciones((/es))</h1>
+
   <div class="container">
   <div class="card" data-tags="education">
  <hr>
  <div class="center">
- ### ((en))Education((/en))((es))Educación((/es)) <span class="section-count" data-type="education">0</span>
+ ## ((en))Education((/en))((es))Educación((/es)) <span class="section-count" data-type="education">0</span>
  <div class="credential-description center">
 ((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))
  </div>
@@ -117,7 +119,7 @@ nav_current: 3
   <div class="card" data-tags="certification">
  <hr>
  <div class="center">
- ### ((en))Certifications((/en))((es))Certificaciones((/es)) <span class="section-count" data-type="certification">0</span>
+ ## ((en))Certifications((/en))((es))Certificaciones((/es)) <span class="section-count" data-type="certification">0</span>
  <div class="credential-description center">
 ((en))Proctored exam-based credentials.((/en))((es))Acreditaciones basadas en exámenes.((/es))
  </div>
@@ -356,7 +358,7 @@ nav_current: 3
   <div class="card" data-tags="certificate">
  <hr>
  <div class="center">
- ### ((en))Certificates((/en))((es))Certificados((/es)) <span class="section-count" data-type="certificate">0</span>
+ ## ((en))Certificates((/en))((es))Certificados((/es)) <span class="section-count" data-type="certificate">0</span>
  <div class="credential-description center">
 ((en))Course completion certificates.((/en))((es))Certificados de finalización.((/es))
  </div>
@@ -1218,7 +1220,7 @@ nav_current: 3
   <div class="card" data-tags="badge">
  <hr>
  <div class="center">
- ### ((en))Badges((/en))((es))Insignias((/es)) <span class="section-count" data-type="badge">0</span>
+ ## ((en))Badges((/en))((es))Insignias((/es)) <span class="section-count" data-type="badge">0</span>
  <div class="credential-description center">
 ((en))Micro-credentials.((/en))((es))Micro-acreditaciones.((/es))
  </div>
@@ -1353,7 +1355,7 @@ nav_current: 3
   <div class="card" data-tags="award">
  <hr>
  <div class="center">
- ### ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es)) <span class="section-count" data-type="award">0</span>
+ ## ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es)) <span class="section-count" data-type="award">0</span>
  <div class="credential-description center">
 ((en))Honors and contest wins.((/en))((es))Honores y premios.((/es))
  </div>

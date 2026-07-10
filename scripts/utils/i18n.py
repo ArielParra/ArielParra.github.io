@@ -4,6 +4,7 @@ def get_i18n_field(value, page_lang='en'):
         return value.get(page_lang, value.get('en', ''))
     return value
 
+
 def get_i18n_tags(value):
     """Get i18n tags string from object or plain value."""
     if isinstance(value, dict):
@@ -17,6 +18,7 @@ def get_i18n_tags(value):
             return value
         return value
     return str(value) if value else ""
+
 
 def format_date_i18n(date_str):
     """Convert date like 2025-04 to April 2025 / Abril 2025."""
@@ -39,7 +41,7 @@ def format_date_i18n(date_str):
             month = int(parts[1])
         except ValueError:
             return date_str
-        
+
         en_month = en_months[month] if 1 <= month <= 12 else ""
         es_month = es_months[month] if 1 <= month <= 12 else ""
 

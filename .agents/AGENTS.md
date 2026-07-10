@@ -3,8 +3,10 @@
 ## Build Commands
 
 ```bash
-make              # Build all pages
+make              # Build changed pages incrementally
 make index        # Build specific page
+make validate     # Validates HTML and CSS via W3C
+make lint         # Lints JS, Python, and validates JSON schemas
 make clean        # Remove generated HTML
 ```
 
@@ -63,6 +65,8 @@ content here
 - `scripts/manage_portfolio.py` - CLI tool for portfolio.json
 - `scripts/manage_credentials.py` - CLI tool for credentials.json
 - `scripts/base_manager.py` - OOP base class for data managers
+- `scripts/validate.py` - W3C HTML/CSS Validator
+- `scripts/validate_json.py` - JSON schema validator
 - `style.css` - imports css/ folder (backward compatibility)
 - `css/` - modular CSS files
 - `js/` - JavaScript modules

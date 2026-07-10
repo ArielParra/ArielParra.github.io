@@ -185,6 +185,9 @@ class PortfolioManager(BaseManager):
         lines.append("nav_current: 2")
         lines.append("---")
         lines.append("")
+        lines.append(
+            '<h1 class="sr-only">((en))Portfolio((/en))((es))Portafolio((/es))</h1>')
+        lines.append("")
 
         # --- Build tech data JSON for autocomplete ---
         tech_data = []
@@ -203,7 +206,7 @@ class PortfolioManager(BaseManager):
         lines.append("  <hr>")
         lines.append('  <div class="center">')
         lines.append(
-            "  ### ((en))Filter by Technology((/en))((es))Filtrar por Tecnología((/es))")
+            "  ## ((en))Filter by Technology((/en))((es))Filtrar por Tecnología((/es))")
         lines.append(
             f'  <span id="tech-data" data-techs=\'{tech_data_json}\' style="display:none;"></span>')
         lines.append('  <div class="tech-search-wrapper">')
@@ -241,7 +244,7 @@ class PortfolioManager(BaseManager):
         sorted_by_title = sorted(
             projects, key=lambda p: p.get(
                 'title', '').lower())
-        
+
         # Then sort by date descending (newest first)
         sorted_projects = sorted(
             sorted_by_title, key=lambda p: p.get(
@@ -250,7 +253,8 @@ class PortfolioManager(BaseManager):
         data['projects'] = sorted_projects
         self.save_data(data)
 
-        print(f"Sorted {len(sorted_projects)} projects by date (newest first).")
+        print(
+            f"Sorted {len(sorted_projects)} projects by date (newest first).")
         return 0
 
     def cmd_list(self, args):

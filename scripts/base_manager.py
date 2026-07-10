@@ -108,4 +108,3 @@ class BaseManager:
             return 1
 
         return commands[command](args)
-
