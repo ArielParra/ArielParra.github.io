@@ -1,17 +1,117 @@
 /**
- * @description Updates the URL based on the selected checkboxes and radio buttons.
+ * @description Credential filter module: type/topic filtering, text search, URL sync, counters, and reset.
+ */
+
+const CREDENTIAL_TYPES = ["education", "certification", "certificate", "badge", "award"];
+
+// ---------------------------------------------------------------------------
+// Pure helpers
+// ---------------------------------------------------------------------------
+
+/**
+ * @description Returns the active filter state from the DOM.
+ * @returns {{ selectedType: string, selectedTopics: string[], searchTerm: string }}
+ */
+function getActiveFilters() {
+  const checkedRadio = document.querySelector("#filter-checks input[type=\"radio\"]:checked");
+  const checkedBoxes = document.querySelectorAll("#filter-checks input[type=\"checkbox\"]:checked");
+  const searchEl = document.getElementById("f-search");
+
+  return {
+    selectedType: checkedRadio ? checkedRadio.value.toLowerCase() : "all",
+    selectedTopics: Array.from(checkedBoxes).map((cb) => cb.value.toLowerCase()),
+    searchTerm: searchEl ? searchEl.value.trim().toLowerCase() : "",
+  };
+}
+
+/**
+ * @description Returns true if the card is a section header (no credential content).
+ * @param {Element} card
+ * @returns {boolean}
+ */
+function isHeaderCard(card) {
+  return !card.querySelector(".credential-header") && Boolean(card.querySelector(".section-count"));
+}
+
+/**
+ * @description Returns true if a card's data-tags match the given type and topics filters.
+ * @param {string[]} cardTags  Lowercase tag tokens from data-tags attribute.
+ * @param {string}   selectedType
+ * @param {string[]} selectedTopics
+ * @returns {boolean}
+ */
+function cardMatchesTypeAndTopics(cardTags, selectedType, selectedTopics) {
+  const matchesType = selectedType === "all" || cardTags.includes(selectedType);
+  const matchesTopics = selectedTopics.length === 0 || selectedTopics.some((t) => cardTags.includes(t));
+  return matchesType && matchesTopics;
+}
+
+/**
+ * @description Returns true if a credential card's visible text matches the search term.
+ * @param {Element} card
+ * @param {string}  searchTerm  Already lowercased and trimmed.
+ * @returns {boolean}
+ */
+function cardMatchesSearch(card, searchTerm) {
+  if (!searchTerm) return true;
+  const title = card.querySelector(".title-main")?.textContent?.toLowerCase() ?? "";
+  const issuer = card.querySelector(".credential-issuer")?.textContent?.toLowerCase() ?? "";
+  const description = card.querySelector(".credential-description")?.textContent?.toLowerCase() ?? "";
+  return title.includes(searchTerm) || issuer.includes(searchTerm) || description.includes(searchTerm);
+}
+
+// ---------------------------------------------------------------------------
+// Counter helpers
+// ---------------------------------------------------------------------------
+
+/**
+ * @description Accumulates per-type counts from an array of visible credential cards.
+ * @param {Element[]} visibleCredentialCards  Cards that passed all filters (headers excluded).
+ * @returns {Object.<string, number>}
+ */
+function buildTypeCounts(visibleCredentialCards) {
+  const counts = Object.fromEntries(CREDENTIAL_TYPES.map((t) => [t, 0]));
+  visibleCredentialCards.forEach((card) => {
+    const cardTags = (card.getAttribute("data-tags") ?? "").toLowerCase().split(" ");
+    const primaryType = cardTags.find((t) => Object.prototype.hasOwnProperty.call(counts, t));
+    if (primaryType) counts[primaryType]++;
+  });
+  return counts;
+}
+
+/**
+ * @description Pushes count values to all counter elements in the DOM.
+ * @param {Object.<string, number>} counts
+ * @param {number} total
+ */
+function updateCounterElements(counts, total) {
+  document.querySelectorAll(".section-count").forEach((el) => {
+    const type = el.getAttribute("data-type");
+    el.textContent = `(${counts[type] ?? 0})`;
+  });
+
+  document.querySelectorAll(".stat-count[data-type]").forEach((el) => {
+    const type = el.getAttribute("data-type");
+    el.textContent = counts[type] ?? 0;
+  });
+
+  const totalEl = document.getElementById("global-total-credentials");
+  if (totalEl) totalEl.textContent = total;
+}
+
+// ---------------------------------------------------------------------------
+// URL sync
+// ---------------------------------------------------------------------------
+
+/**
+ * @description Writes the current filter state to the URL query string (no page reload).
  */
 function updateURLfilters() {
-  const checkboxes = document.querySelectorAll("#filter-checks input[type=\"checkbox\"]:checked");
-  const radios = document.querySelectorAll("#filter-checks input[type=\"radio\"]:checked");
-
-  const selectedTags = Array.from(checkboxes).map((checkbox) => checkbox.value.toLowerCase());
-  const selectedType = radios.length ? radios[0].value.toLowerCase() : "all";
-
+  const { selectedType, selectedTopics, searchTerm } = getActiveFilters();
   const url = new URL(window.location);
 
-  if (selectedTags.length > 0) {
-    url.searchParams.set("tags", selectedTags.join(","));
+  if (selectedTopics.length > 0) {
+    url.searchParams.set("tags", selectedTopics.join(","));
   } else {
     url.searchParams.delete("tags");
   }
@@ -22,103 +122,120 @@ function updateURLfilters() {
     url.searchParams.delete("type");
   }
 
+  if (searchTerm) {
+    url.searchParams.set("search", searchTerm);
+  } else {
+    url.searchParams.delete("search");
+  }
+
   window.history.replaceState(null, "", url.toString());
 }
 
 /**
- * @description Sets filters based on the URL parameters and applies them on page load.
+ * @description Reads URL params and ticks the matching checkboxes, radios, and search input.
  */
 function setFiltersFromURL() {
   const url = new URL(window.location);
   const tags = url.searchParams.get("tags");
   const type = url.searchParams.get("type");
+  const search = url.searchParams.get("search");
 
   if (tags) {
-    const selectedTags = tags.split(",");
-    selectedTags.forEach((tag) => {
-      const checkbox = document.querySelector(`#filter-checks input[type="checkbox"][value="${tag}"]`);
-      if (checkbox) {
-        checkbox.checked = true;
-      }
+    tags.split(",").forEach((tag) => {
+      const checkbox = document.querySelector(
+        `#filter-checks input[type="checkbox"][value="${tag.toLowerCase()}"]`,
+      );
+      if (checkbox) checkbox.checked = true;
     });
   }
 
   if (type) {
     const radio = document.querySelector(`#filter-checks input[type="radio"][value="${type}"]`);
-    if (radio) {
-      radio.checked = true;
-    }
+    if (radio) radio.checked = true;
   }
+
+  const searchEl = document.getElementById("f-search");
+  if (searchEl && search) searchEl.value = search;
 
   filterCards();
 }
 
+// ---------------------------------------------------------------------------
+// Core filter
+// ---------------------------------------------------------------------------
+
 /**
- * @description Filters cards based on the selected checkboxes and radios within the card with id "filter-checks".
+ * @description Applies all active filters to credential cards and updates counters.
  */
 function filterCards() {
+  const { selectedType, selectedTopics, searchTerm } = getActiveFilters();
   const cards = document.querySelectorAll(".card:not(#filter-checks)");
-  const radios = document.querySelectorAll("#filter-checks input[type=\"radio\"]:checked");
-  const checkboxes = document.querySelectorAll("#filter-checks input[type=\"checkbox\"]:checked");
 
-  const selectedTags = Array.from(checkboxes).map((checkbox) => checkbox.value.toLowerCase());
-  const selectedType = radios.length ? radios[0].value.toLowerCase() : "all";
-
-  let totalCredentials = 0;
-  const counts = {
-    education: 0, certification: 0, certificate: 0, badge: 0, award: 0,
-  };
+  const visibleCredentialCards = [];
 
   cards.forEach((card) => {
-    const isHeader = card.querySelector(".credential-header") === null && card.querySelector(".section-count");
     const tagsAttr = card.getAttribute("data-tags");
     if (!tagsAttr) return;
-    const tagsInCard = tagsAttr.split(" ");
-    const tagsInCardLower = tagsInCard.map((t) => t.toLowerCase());
-    const selectedTypeLower = selectedType.toLowerCase();
 
-    const matchesType = selectedType === "all" || tagsInCardLower.includes(selectedTypeLower);
-    const matchesTags = selectedTags.length === 0 || selectedTags.some((tag) => tagsInCardLower.includes(tag.toLowerCase()));
+    const cardTags = tagsAttr.toLowerCase().split(" ");
+    const header = isHeaderCard(card);
 
-    if (matchesType && (selectedTags.length === 0 || matchesTags)) {
-      card.style.display = "";
-      if (isHeader) return;
-      totalCredentials++;
-      const primaryType = tagsInCardLower.find((t) => Object.prototype.hasOwnProperty.call(counts, t));
-      if (primaryType) counts[primaryType]++;
-    } else {
-      card.style.display = "none";
+    const visible = cardMatchesTypeAndTopics(cardTags, selectedType, selectedTopics)
+      && (header || cardMatchesSearch(card, searchTerm));
+
+    card.style.display = visible ? "" : "none";
+
+    if (visible && !header) {
+      visibleCredentialCards.push(card);
     }
   });
 
-  // Update section title counts
-  document.querySelectorAll(".section-count").forEach((el) => {
-    const type = el.getAttribute("data-type");
-    el.textContent = `(${counts[type] || 0})`;
-  });
-
-  // Update filter stats
-  document.querySelectorAll(".stat-count[data-type]").forEach((el) => {
-    const type = el.getAttribute("data-type");
-    el.textContent = counts[type] || 0;
-  });
-
-  // Update global total in filters
-  const totalEl = document.getElementById("global-total-credentials");
-  if (totalEl) totalEl.textContent = totalCredentials;
-
+  const counts = buildTypeCounts(visibleCredentialCards);
+  updateCounterElements(counts, visibleCredentialCards.length);
   updateURLfilters();
 }
 
+// ---------------------------------------------------------------------------
+// Reset
+// ---------------------------------------------------------------------------
+
 /**
- * @description Sets up event listeners and initializes filters based on the URL on page load.
+ * @description Resets all filters to their default state and re-applies filtering.
+ */
+function resetFilters() {
+  document.querySelectorAll("#filter-checks input[type=\"checkbox\"]").forEach((cb) => {
+    cb.checked = false;
+  });
+
+  const allRadio = document.querySelector("#filter-checks input[type=\"radio\"][value=\"all\"]");
+  if (allRadio) allRadio.checked = true;
+
+  const searchEl = document.getElementById("f-search");
+  if (searchEl) searchEl.value = "";
+
+  filterCards();
+}
+
+// ---------------------------------------------------------------------------
+// Init
+// ---------------------------------------------------------------------------
+
+/**
+ * @description Wires up all event listeners and restores filter state from the URL.
  */
 document.addEventListener("DOMContentLoaded", () => {
-  setFiltersFromURL();
-  // Add event listeners to checkboxes and radios
-  const inputs = document.querySelectorAll("#filter-checks input");
-  inputs.forEach((input) => {
+  // Attach listeners to all filter inputs (replaces inline onchange attributes)
+  document.querySelectorAll("#filter-checks input").forEach((input) => {
     input.addEventListener("change", filterCards);
   });
-  filterCards();
+
+  // Search input uses "input" event for live filtering
+  const searchEl = document.getElementById("f-search");
+  if (searchEl) searchEl.addEventListener("input", filterCards);
+
+  // Reset button
+  const resetBtn = document.getElementById("reset-btn");
+  if (resetBtn) resetBtn.addEventListener("click", resetFilters);
+
+  setFiltersFromURL();
 });

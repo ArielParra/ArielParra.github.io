@@ -32,16 +32,18 @@ class CredentialsManager(BaseManager):
         "badge": 1,
         "award": 0}
     TOPIC_OPTIONS = [
-        "cybersecurity",
-        "devops",
-        "networks",
-        "cloud",
-        "blockchain",
-        "programming",
-        "datascience",
         "ai",
-        "language",
-        "finance"]
+        "blockchain",
+        "cloud",
+        "cybersecurity",
+        "data-science",
+        "database",
+        "devops",
+        "finance",
+        "languages",
+        "networking",
+        "professional",
+        "programming"]
 
     def __init__(self):
         super().__init__(file_path=CREDENTIALS_FILE, data_key="credentials")

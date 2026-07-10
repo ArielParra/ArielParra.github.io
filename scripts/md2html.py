@@ -529,23 +529,23 @@ def generate_html(md_dict, md_content):
             "badge",
             "award"]
         topic_tag_text_value = [
-            "Language",
             "ai",
-            "backend",
             "blockchain",
             "cloud",
             "cybersecurity",
+            "data-science",
             "database",
-            "datascience",
             "devops",
             "finance",
-            "networks",
-            "programming",
-            "softskills",
-            "web3"]
+            "languages",
+            "networking",
+            "professional",
+            "programming"]
+        search_text = '<span class="i18n" data-i18n-en="Search" data-i18n-es="Buscar">Search</span>'
         filterType_text = '<span class="i18n" data-i18n-en="Filter by type" data-i18n-es="Filtrado por tipo">Filter by type</span>'
         filterTopic_text = '<span class="i18n" data-i18n-en="Filter by topic" data-i18n-es="Filtrado por tema">Filter by topic</span>'
         stats_text = '<span class="i18n" data-i18n-en="Stats" data-i18n-es="Estadísticas">Stats</span>'
+        reset_text = '<span class="i18n" data-i18n-en="↺ Clear filters" data-i18n-es="↺ Limpiar filtros">↺ Clear filters</span>'
         type_tag_text = [
             '<span class="i18n" data-i18n-en="All" data-i18n-es="Todos">All</span>',
             '<span class="i18n" data-i18n-en="Education" data-i18n-es="Educación">Education</span>',
@@ -554,24 +554,34 @@ def generate_html(md_dict, md_content):
             '<span class="i18n" data-i18n-en="Badges" data-i18n-es="Insignias">Badges</span>',
             '<span class="i18n" data-i18n-en="Awards" data-i18n-es="Premios">Awards</span>']
         topic_tag_text = [
-            '<span class="i18n" data-i18n-en="Language" data-i18n-es="Idioma">Language</span>',
             '<span class="i18n" data-i18n-en="AI" data-i18n-es="IA">AI</span>',
-            '<span class="i18n" data-i18n-en="Back-end" data-i18n-es="Back-end">Back-end</span>',
             '<span class="i18n" data-i18n-en="Blockchain" data-i18n-es="Blockchain">Blockchain</span>',
             '<span class="i18n" data-i18n-en="Cloud" data-i18n-es="Nube">Cloud</span>',
             '<span class="i18n" data-i18n-en="Cybersecurity" data-i18n-es="Ciberseguridad">Cybersecurity</span>',
-            '<span class="i18n" data-i18n-en="Database" data-i18n-es="Base de datos">Database</span>',
             '<span class="i18n" data-i18n-en="Data Science" data-i18n-es="Ciencia de Datos">Data Science</span>',
+            '<span class="i18n" data-i18n-en="Database" data-i18n-es="Base de datos">Database</span>',
             '<span class="i18n" data-i18n-en="DevOps" data-i18n-es="DevOps">DevOps</span>',
             '<span class="i18n" data-i18n-en="Finance" data-i18n-es="Finanzas">Finance</span>',
-            '<span class="i18n" data-i18n-en="Networks" data-i18n-es="Redes">Networks</span>',
-            '<span class="i18n" data-i18n-en="Programming" data-i18n-es="Programación">Programming</span>',
-            '<span class="i18n" data-i18n-en="Soft Skills" data-i18n-es="Habilidades blandas">Soft Skills</span>',
-            '<span class="i18n" data-i18n-en="Web3" data-i18n-es="Web3">Web3</span>']
+            '<span class="i18n" data-i18n-en="Languages" data-i18n-es="Idiomas">Languages</span>',
+            '<span class="i18n" data-i18n-en="Networking" data-i18n-es="Redes">Networking</span>',
+            '<span class="i18n" data-i18n-en="Professional" data-i18n-es="Profesional">Professional</span>',
+            '<span class="i18n" data-i18n-en="Programming" data-i18n-es="Programación">Programming</span>']
 
         html_content += f"""
 <div class="container max-width">
     <div class="card max-width" id="filter-checks">
+        <hr>
+        <div class="center">
+            <h4>{search_text}</h4>
+        </div>
+        <hr>
+        <div class="center">
+            <input type="text" id="f-search"
+                   data-i18n-placeholder-en="Title, issuer or description…"
+                   data-i18n-placeholder-es="Título, emisor o descripción…"
+                   placeholder="Title, issuer or description…"
+                   autocomplete="off">
+        </div>
         <hr>
         <div class="center">
             <h4>{filterType_text}</h4>
@@ -583,7 +593,7 @@ def generate_html(md_dict, md_content):
             tag_text = type_tag_text[idx] if idx < len(
                 type_tag_text) else tag_value.capitalize()
             html_content += f"""          <label><input type="radio" name="type" value="{tag_value}" {
-                'checked' if idx == 0 else ''} onchange="filterCards()"> {tag_text} </label>\n"""
+                'checked' if idx == 0 else ''}> {tag_text} </label>\n"""
 
         html_content += f"""        </div>
         <hr>
@@ -596,7 +606,7 @@ def generate_html(md_dict, md_content):
         for idx, tag_value in enumerate(topic_tag_text_value):
             tag_text = topic_tag_text[idx] if idx < len(
                 topic_tag_text) else tag_value.capitalize()
-            html_content += f"""          <label><input type="checkbox" value="{tag_value}" onchange="filterCards()"> {tag_text} </label>\n"""
+            html_content += f"""          <label><input type="checkbox" value="{tag_value}"> {tag_text} </label>\n"""
 
         html_content += f"""        </div>
         <hr>
@@ -613,6 +623,10 @@ def generate_html(md_dict, md_content):
                 <span class="stat-item" data-type="award"><span class="stat-label i18n" data-i18n-en="Awards" data-i18n-es="Premios">Awards</span>: <span class="stat-count" data-type="award">0</span></span>
                 <span class="stat-item total"><span class="stat-label">Total:</span> <span class="stat-count" id="global-total-credentials">0</span></span>
             </span>
+        </div>
+        <hr>
+        <div class="center">
+            <button type="button" id="reset-btn" class="credential-link">{reset_text}</button>
         </div>
     </div><!--filters card-->
 </div><!--filters container-->
