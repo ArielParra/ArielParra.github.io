@@ -1379,7 +1379,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Programming Contest Organizer image((/en))((es))Organizador de Concurso de Programación imagen((/es))"](./credentials/img/UAA_CONCURSO_2026.jpeg)
+        ![loading="lazy" alt="((en))Programming Contest Organizer image((/en))((es))Organizador de Concurso de Programación imagen((/es))"](./credentials/img/UAA_CONCURSO_2026.jpg)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
@@ -1404,12 +1404,12 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))1st Kyu Grade in Kendo image((/en))((es))Grado de 1er Kyu en Kendo imagen((/es))"](./credentials/img/AEKIA_Kendo_1kyu.png)
+        ![loading="lazy" alt="((en))1st Kyu Grade in Kendo image((/en))((es))Grado de 1er Kyu en Kendo imagen((/es))"](./credentials/img/AEKIA_Kendo_1kyu.jpg)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Asociación Estatal de Kendo e Iaido de Aguascalientes, A.C. (AEKIA)((/en))((es))Emitido por: Asociación Estatal de Kendo e Iaido de Aguascalientes, A.C. (AEKIA)((/es))</span>
         <span class="credential-date">((en))May 2026((/en))((es))Mayo 2026((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/img/AEKIA_Kendo_1kyu.pdf){:target="_blank" class="credential-link"}
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/AEKIA_Kendo_1kyu.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Official 1nd Kyu rank awarded by the State Association of Kendo and Iaido of Aguascalientes, affiliated with the Mexican Kendo Federation (FMK), after demonstrating the required technical skills and requirements.((/en))((es))Grado oficial de 1do Kyu otorgado por la Asociación Estatal de Kendo e Iaido de Aguascalientes, afiliada a la Federación Mexicana de Kendo (FMK), tras haber demostrado las habilidades técnicas y requisitos establecidos.((/es))
@@ -1793,7 +1793,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Outstanding GPA Recognition - Computer Systems Engineering image((/en))((es))Reconocimiento por Promedio Destacado - Ing. en Sistemas Computacionales imagen((/es))"](./credentials/img/UAA_Mejor_Promedio_2024.jpeg)
+        ![loading="lazy" alt="((en))Outstanding GPA Recognition - Computer Systems Engineering image((/en))((es))Reconocimiento por Promedio Destacado - Ing. en Sistemas Computacionales imagen((/es))"](./credentials/img/UAA_Mejor_Promedio_2024.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
@@ -1844,7 +1844,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Student Representative Counselor image((/en))((es))Consejero Representante Alumno imagen((/es))"](./credentials/img/BACHUAA_Consejero_Representante.jpeg)
+        ![loading="lazy" alt="((en))Student Representative Counselor image((/en))((es))Consejero Representante Alumno imagen((/es))"](./credentials/img/BACHUAA_Consejero_Representante.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
