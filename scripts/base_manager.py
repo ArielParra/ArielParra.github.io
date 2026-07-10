@@ -6,6 +6,8 @@ import json
 import sys
 from pathlib import Path
 
+from utils.cli import prompt_yesno
+
 
 class BaseManager:
     def __init__(self, file_path, data_key):
@@ -24,83 +26,6 @@ class BaseManager:
             json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"Saved to {self.file_path}")
 
-    def prompt_yesno(self, question):
-        while True:
-            ans = input(f"{question} [y/n]: ").strip().lower()
-            if ans in ('y', 'yes'):
-                return True
-            if ans in ('n', 'no'):
-                return False
-
-    def get_i18n_field(self, value, page_lang='en'):
-        """Extract value from i18n object or string"""
-        if isinstance(value, dict):
-            return value.get(page_lang, value.get('en', ''))
-        return value
-
-    def get_i18n_tags(self, value):
-        """Get i18n tags string from object or plain value"""
-        if isinstance(value, dict):
-            en = value.get('en', '')
-            es = value.get('es', en)
-            if en and es:
-                return f"((en)){en}((/en))((es)){es}((/es))"
-            return en
-        if isinstance(value, str):
-            if '((en))' in value or '((es))' in value:
-                return value
-            return value
-        return str(value) if value else ""
-
-    def format_date_i18n(self, date_str):
-        """Convert date like 2025-04 to April 2025 / Abril 2025"""
-        if not date_str:
-            return ""
-
-        en_months = [
-            "",
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"]
-        es_months = [
-            "",
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"]
-
-        parts = date_str.split("-")
-        if len(parts) >= 2:
-            year = parts[0]
-            try:
-                month = int(parts[1])
-            except BaseException:
-                return date_str
-            en_month = en_months[month] if 1 <= month <= 12 else ""
-            es_month = es_months[month] if 1 <= month <= 12 else ""
-
-            if en_month and es_month:
-                return f"((en)){en_month} {year}((/en))((es)){es_month} {year}((/es))"
-
-        return date_str
-
     def cmd_delete(self, args):
         data = self.load_data()
         items = data.get(self.data_key, [])
@@ -116,7 +41,7 @@ class BaseManager:
             print(f"{self.data_key.capitalize()[:-1]} '{item_id}' not found.")
             return 1
 
-        if self.prompt_yesno(f"Delete '{item_id}'?"):
+        if prompt_yesno(f"Delete '{item_id}'?"):
             data[self.data_key] = new_items
             self.save_data(data)
             print(f"Deleted '{item_id}'.")
@@ -153,8 +78,7 @@ class BaseManager:
         while i < len(sys.argv):
             arg = sys.argv[i]
             if arg.startswith('--'):
-                if i + \
-                        1 < len(sys.argv) and not sys.argv[i + 1].startswith('-'):
+                if i + 1 < len(sys.argv) and not sys.argv[i + 1].startswith('-'):
                     args[arg] = sys.argv[i + 1]
                     i += 2
                 else:
@@ -184,3 +108,4 @@ class BaseManager:
             return 1
 
         return commands[command](args)
+

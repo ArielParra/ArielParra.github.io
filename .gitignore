@@ -5,3 +5,7 @@ venv/
 .env
 node_modules/
 .DS_Store
+.agents/skills
+.kiro/specs/
+.kiro/skills/
+.kiro/execution-profiles.json

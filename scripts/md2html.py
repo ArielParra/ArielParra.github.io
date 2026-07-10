@@ -18,8 +18,6 @@ def parse_md(md_content):
         value = value.strip()
         if value.startswith('[') and value.endswith(']'):
             value = [v.strip() for v in value[1:-1].split(',')]
-        else:
-            value = value
         md_dict[key] = value
 
     if 'css' not in md_dict:
@@ -52,171 +50,174 @@ def extract_i18n_from_attr(attr_value):
     return (attr_value, None, None)
 
 
-def md_to_html_phase1(text):
-    # Process linked images: [![alt](url)](link){: target="_blank"}
-    def fix_linked_img(m):
-        full_match = m.group(0)
-        img_part = m.group(1)  # ![alt](url)
+def process_linked_image_match(m):
+    full_match = m.group(0)
+    img_part = m.group(1)  # ![alt](url)
 
-        img_alt_match = re.search(r'!\[([^\]]*)\]\(([^)]+)\)', img_part)
-        img_url = img_alt_match.group(2) if img_alt_match else ""
-        img_alt_raw = img_alt_match.group(1) if img_alt_match else "image"
+    img_alt_match = re.search(r'!\[([^\]]*)\]\(([^)]+)\)', img_part)
+    img_url = img_alt_match.group(2) if img_alt_match else ""
+    img_alt_raw = img_alt_match.group(1) if img_alt_match else "image"
 
-        # Extract alt attribute value
-        alt_match = re.search(r'alt="([^"]*)"', img_alt_raw)
-        img_alt = alt_match.group(1) if alt_match else ""
-        if not img_alt and not re.search(r'\w+="[^"]*"', img_alt_raw):
-            img_alt = img_alt_raw.strip()
+    # Extract alt attribute value
+    alt_match = re.search(r'alt="([^"]*)"', img_alt_raw)
+    img_alt = alt_match.group(1) if alt_match else ""
+    if not img_alt and not re.search(r'\w+="[^"]*"', img_alt_raw):
+        img_alt = img_alt_raw.strip()
 
-        # Check for i18n in alt
-        img_alt_plain, img_alt_en, img_alt_es = extract_i18n_from_attr(img_alt)
+    # Check for i18n in alt
+    img_alt_plain, img_alt_en, img_alt_es = extract_i18n_from_attr(img_alt)
 
-        other_img_attrs = []
-        title_val = ""
-        for attr_match in re.finditer(r'(\w+)="([^"]*)"', img_alt_raw):
-            key = attr_match.group(1)
-            val = attr_match.group(2)
-            if key == 'alt':
-                continue
-            elif key == 'title':
-                title_val = val
-            else:
-                other_img_attrs.append(attr_match.group(0))
-
-        title_plain, title_en, title_es = extract_i18n_from_attr(title_val)
-
-        # Find all ](...) patterns - the non-image one is the link URL
-        all_urls = re.findall(r'\]\(([^)]+)\)', full_match)
-        link_url = "#"
-        for url in reversed(all_urls):
-            url_lower = url.lower()
-            # Skip URLs that look like image paths (have img/ and common
-            # extensions)
-            if not (
-                'img/' in url or url.startswith('./img/') or url.startswith('/img/')) or (
-                url_lower.endswith(
-                    ('.png',
-                     '.jpg',
-                     '.jpeg',
-                     '.gif',
-                     '.webp',
-                     '.svg',
-                     '.ico')) and 'monero' in url_lower):
-                link_url = url
-                break
-
-        target_match = re.search(r'target="([^"]+)"', full_match)
-        target = target_match.group(1) if target_match else "_blank"
-
-        # Build img tag with i18n data attributes if applicable
-        img_parts = [f'<img src="{img_url}"']
-
-        if other_img_attrs:
-            img_parts.extend(other_img_attrs)
-
-        if img_alt_en and img_alt_es:
-            img_parts.append(f'data-i18n-alt-en="{html.escape(img_alt_en)}"')
-            img_parts.append(f'data-i18n-alt-es="{html.escape(img_alt_es)}"')
-            img_parts.append(f'alt="{img_alt_en}"')
-        elif img_alt:
-            img_parts.append(f'alt="{img_alt}"')
+    other_img_attrs = []
+    title_val = ""
+    for attr_match in re.finditer(r'(\w+)="([^"]*)"', img_alt_raw):
+        key = attr_match.group(1)
+        val = attr_match.group(2)
+        if key == 'alt':
+            continue
+        elif key == 'title':
+            title_val = val
         else:
-            img_parts.append('alt=""')
+            other_img_attrs.append(attr_match.group(0))
 
-        if title_en and title_es:
-            img_parts.append(f'data-i18n-title-en="{html.escape(title_en)}"')
-            img_parts.append(f'data-i18n-title-es="{html.escape(title_es)}"')
-            img_parts.append(f'title="{title_en}"')
-        elif title_val:
-            img_parts.append(f'title="{title_val}"')
+    title_plain, title_en, title_es = extract_i18n_from_attr(title_val)
 
-        img_tag = ' '.join(img_parts) + '>'
-        return f'<a href="{link_url}" target="{target}">{img_tag}</a>'
+    # Find all ](...) patterns - the non-image one is the link URL
+    all_urls = re.findall(r'\]\(([^)]+)\)', full_match)
+    link_url = "#"
+    for url in reversed(all_urls):
+        url_lower = url.lower()
+        # Skip URLs that look like image paths (have img/ and common
+        # extensions)
+        if not (
+            'img/' in url or url.startswith('./img/') or url.startswith('/img/')) or (
+            url_lower.endswith(
+                ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.ico')) and 'monero' in url_lower):
+            link_url = url
+            break
 
-    text = re.sub(
+    target_match = re.search(r'target="([^"]+)"', full_match)
+    target = target_match.group(1) if target_match else "_blank"
+
+    # Build img tag with i18n data attributes if applicable
+    img_parts = [f'<img src="{img_url}"']
+
+    if other_img_attrs:
+        img_parts.extend(other_img_attrs)
+
+    if img_alt_en and img_alt_es:
+        img_parts.append(f'data-i18n-alt-en="{html.escape(img_alt_en)}"')
+        img_parts.append(f'data-i18n-alt-es="{html.escape(img_alt_es)}"')
+        img_parts.append(f'alt="{img_alt_en}"')
+    elif img_alt:
+        img_parts.append(f'alt="{img_alt}"')
+    else:
+        img_parts.append('alt=""')
+
+    if title_en and title_es:
+        img_parts.append(f'data-i18n-title-en="{html.escape(title_en)}"')
+        img_parts.append(f'data-i18n-title-es="{html.escape(title_es)}"')
+        img_parts.append(f'title="{title_en}"')
+    elif title_val:
+        img_parts.append(f'title="{title_val}"')
+
+    img_tag = ' '.join(img_parts) + '>'
+    return f'<a href="{link_url}" target="{target}">{img_tag}</a>'
+
+
+def process_image_match(m):
+    alt_raw = m.group(1)
+    url = m.group(2)
+    attrs = m.group(3) or ""
+
+    # Extract alt value
+    alt_match = re.search(r'alt="([^"]*)"', alt_raw)
+    alt = alt_match.group(1) if alt_match else ""
+    if not alt and not re.search(r'\w+="[^"]*"', alt_raw):
+        alt = alt_raw.strip()
+
+    other_img_attrs = []
+    title_val = ""
+    for attr_match in re.finditer(r'(\w+)="([^"]*)"', alt_raw):
+        key = attr_match.group(1)
+        val = attr_match.group(2)
+        if key == 'alt':
+            continue
+        elif key == 'title':
+            title_val = val
+        else:
+            other_img_attrs.append(attr_match.group(0))
+
+    # Extract title from attrs {: title="..."}
+    title_match = re.search(r'title="([^"]+)"', attrs)
+    if title_match:
+        title_val = title_match.group(1)
+
+    # Check for i18n in alt
+    alt_plain, alt_en, alt_es = extract_i18n_from_attr(alt)
+
+    # Check for i18n in title
+    title_plain, title_en, title_es = extract_i18n_from_attr(title_val)
+
+    # Build img tag with i18n data attributes if applicable
+    img_parts = [f'<img src="{url}"']
+
+    if other_img_attrs:
+        img_parts.extend(other_img_attrs)
+
+    if alt_en and alt_es:
+        img_parts.append(f'data-i18n-alt-en="{html.escape(alt_en)}"')
+        img_parts.append(f'data-i18n-alt-es="{html.escape(alt_es)}"')
+        img_parts.append(f'alt="{alt_en}"')
+    elif alt:
+        img_parts.append(f'alt="{alt}"')
+    else:
+        img_parts.append('alt=""')
+
+    if title_en and title_es:
+        img_parts.append(f'data-i18n-title-en="{html.escape(title_en)}"')
+        img_parts.append(f'data-i18n-title-es="{html.escape(title_es)}"')
+        img_parts.append(f'title="{title_en}"')
+    elif title_val:
+        img_parts.append(f'title="{title_val}"')
+
+    return ' '.join(img_parts) + '>'
+
+
+def process_link_match(m):
+    text_content = m.group(1)
+    url = m.group(2)
+    attrs = m.group(3) or ""
+    # Extract all attributes from the {:...} block
+    attr_parts = [f'href="{url}"']
+    for attr_match in re.finditer(r'(\w+)="([^"]*)"', attrs):
+        key = attr_match.group(1)
+        val = attr_match.group(2)
+        attr_parts.append(f'{key}="{val}"')
+    return f'<a {" ".join(attr_parts)}>{text_content}</a>'
+
+
+def replace_linked_images(text):
+    return re.sub(
         r'\[(!?\[[^\]]*\]\([^)]+\))\]\(([^)]+)\)(?:\{:([^\}]*)\})?',
-        fix_linked_img,
+        process_linked_image_match,
         text)
 
-    # Process regular images: ![alt](url){: title="..."}
-    def fix_image(m):
-        alt_raw = m.group(1)
-        url = m.group(2)
-        attrs = m.group(3) or ""
 
-        # Extract alt value
-        alt_match = re.search(r'alt="([^"]*)"', alt_raw)
-        alt = alt_match.group(1) if alt_match else ""
-        if not alt and not re.search(r'\w+="[^"]*"', alt_raw):
-            alt = alt_raw.strip()
-
-        other_img_attrs = []
-        title_val = ""
-        for attr_match in re.finditer(r'(\w+)="([^"]*)"', alt_raw):
-            key = attr_match.group(1)
-            val = attr_match.group(2)
-            if key == 'alt':
-                continue
-            elif key == 'title':
-                title_val = val
-            else:
-                other_img_attrs.append(attr_match.group(0))
-
-        # Extract title from attrs {: title="..."}
-        title_match = re.search(r'title="([^"]+)"', attrs)
-        if title_match:
-            title_val = title_match.group(1)
-
-        # Check for i18n in alt
-        alt_plain, alt_en, alt_es = extract_i18n_from_attr(alt)
-
-        # Check for i18n in title
-        title_plain, title_en, title_es = extract_i18n_from_attr(title_val)
-
-        # Build img tag with i18n data attributes if applicable
-        img_parts = [f'<img src="{url}"']
-
-        if other_img_attrs:
-            img_parts.extend(other_img_attrs)
-
-        if alt_en and alt_es:
-            img_parts.append(f'data-i18n-alt-en="{html.escape(alt_en)}"')
-            img_parts.append(f'data-i18n-alt-es="{html.escape(alt_es)}"')
-            img_parts.append(f'alt="{alt_en}"')
-        elif alt:
-            img_parts.append(f'alt="{alt}"')
-        else:
-            img_parts.append('alt=""')
-
-        if title_en and title_es:
-            img_parts.append(f'data-i18n-title-en="{html.escape(title_en)}"')
-            img_parts.append(f'data-i18n-title-es="{html.escape(title_es)}"')
-            img_parts.append(f'title="{title_en}"')
-        elif title_val:
-            img_parts.append(f'title="{title_val}"')
-
-        return ' '.join(img_parts) + '>'
-
-    text = re.sub(
+def replace_images(text):
+    return re.sub(
         r'!\[([^\]]*)\]\(([^)]+)\)(?:\{:([^\}]*)\})?',
-        fix_image,
+        process_image_match,
         text)
 
-    # Process links: [text](url){: target="..." class="..."}
-    def fix_link(m):
-        text_content = m.group(1)
-        url = m.group(2)
-        attrs = m.group(3) or ""
-        # Extract all attributes from the {:...} block
-        attr_parts = [f'href="{url}"']
-        for attr_match in re.finditer(r'(\w+)="([^"]*)"', attrs):
-            key = attr_match.group(1)
-            val = attr_match.group(2)
-            attr_parts.append(f'{key}="{val}"')
-        return f'<a {" ".join(attr_parts)}>{text_content}</a>'
 
-    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)(?:\{:([^\}]*)\})?', fix_link, text)
+def replace_links(text):
+    return re.sub(r'\[([^\]]+)\]\(([^)]+)\)(?:\{:([^\}]*)\})?', process_link_match, text)
 
+
+def md_to_html_phase1(text):
+    text = replace_linked_images(text)
+    text = replace_images(text)
+    text = replace_links(text)
     return text
 
 

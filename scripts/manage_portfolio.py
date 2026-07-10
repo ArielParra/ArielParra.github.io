@@ -14,7 +14,8 @@ import re
 from pathlib import Path
 
 from base_manager import BaseManager
-
+from utils.i18n import format_date_i18n
+from utils.cli import prompt_yesno
 PROJECTS_FILE = Path(__file__).resolve().parent.parent / \
     "portfolio" / "data" / "projects.json"
 if not PROJECTS_FILE.exists():
@@ -111,8 +112,10 @@ class PortfolioManager(BaseManager):
         image = p.get('image', '')
         title = p.get('title', '')
         if image:
-            image_html = '\n      <div class="project-preview">\n        ![loading="lazy" alt="' + \
-                title + '"](' + image + ')\n      </div>'
+            image_html = f'''
+      <div class="project-preview">
+        ![loading="lazy" alt="{title}"]({image})
+      </div>'''
         else:
             image_html = ""
 
@@ -122,7 +125,7 @@ class PortfolioManager(BaseManager):
 
         # Date
         date_str = p.get('date', '')
-        date_formatted = self.format_date_i18n(date_str)
+        date_formatted = format_date_i18n(date_str)
         date_html = f'\n        <span class="project-date">{date_formatted}</span>' if date_formatted else ''
 
         # Link
@@ -302,7 +305,7 @@ class PortfolioManager(BaseManager):
         existing = data.get('projects', [])
         for i, p in enumerate(existing):
             if p.get('id') == pid:
-                if self.prompt_yesno(f"Project '{pid}' exists. Overwrite?"):
+                if prompt_yesno(f"Project '{pid}' exists. Overwrite?"):
                     existing[i] = new_project
                     print(f"Updated '{pid}'.")
                 else:

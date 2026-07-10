@@ -8,6 +8,8 @@ import re
 from pathlib import Path
 
 from base_manager import BaseManager
+from utils.i18n import format_date_i18n, get_i18n_field, get_i18n_tags
+from utils.cli import prompt_yesno
 
 CREDENTIALS_FILE = Path(__file__).resolve(
 ).parent.parent / "data" / "credentials.json"
@@ -159,7 +161,7 @@ class CredentialsManager(BaseManager):
         existing = data.get('credentials', [])
         for i, c in enumerate(existing):
             if c.get('id') == cred_id:
-                if self.prompt_yesno(
+                if prompt_yesno(
                         f"Credential '{cred_id}' exists. Overwrite?"):
                     existing[i] = new_cred
                     print(f"Updated '{cred_id}'.")
@@ -225,7 +227,7 @@ class CredentialsManager(BaseManager):
             cid = c.get('id', '')
             ctype = c.get('type', '')
             issued = c.get('issuedOn', '')
-            title = self.get_i18n_field(c.get('title', ''), 'en')
+            title = get_i18n_field(c.get('title', ''), 'en')
             print(f"{cid:<30} {ctype:<14} {issued:<10}")
             print(f"  {title}")
 
@@ -282,33 +284,32 @@ class CredentialsManager(BaseManager):
 
         skills_html = ""
         for s in c.get('skills', []):
-            skill_text = self.get_i18n_tags(s)
+            skill_text = get_i18n_tags(s)
             if skill_text:
-                skills_html += '          <span class="credential-skill">' + skill_text + '</span>\n'
+                skills_html += f'          <span class="credential-skill">{skill_text}</span>\n'
         if len(c.get('skills', [])) > 0:
             skills_html += '          <span class="skills-more"></span>'
 
         link_html = ""
         link = c.get('link', '')
-        issued_formatted = self.format_date_i18n(issued)
+        issued_formatted = format_date_i18n(issued)
         if link:
             if link.endswith('.pdf') or link.startswith('./'):
                 link_text = "((en))Verify((/en))((es))Verificar((/es)) PDF"
             else:
                 link_text = "((en))Verify credential((/en))((es))Verificar credencial((/es))"
-            link_html = '''
-        <span class="credential-date">''' + issued_formatted + '''</span>
-        [''' + link_text + '''](''' + link + '''){:target="_blank" class="credential-link"}'''
+            link_html = f'''
+        <span class="credential-date">{issued_formatted}</span>
+        [{link_text}]({link}){{:target="_blank" class="credential-link"}}'''
 
         image = c.get('image', '')
-        title_en = self.get_i18n_field(c.get('title', ''), 'en')
-        title_es = self.get_i18n_field(c.get('title', ''), 'es')
+        title_en = get_i18n_field(c.get('title', ''), 'en')
+        title_es = get_i18n_field(c.get('title', ''), 'es')
         if image:
-            alt_text = '((en))' + title_en + \
-                ' image((/en))((es))' + title_es + ' imagen((/es))'
-            image_html = '''
+            alt_text = f"((en)){title_en} image((/en))((es)){title_es} imagen((/es))"
+            image_html = f'''
       <div class="credential-preview">
-        ![loading="lazy" alt="''' + alt_text + '"](''' + image + ''')
+        ![loading="lazy" alt="{alt_text}"]({image})
       </div>'''
         else:
             image_html = ""
@@ -317,48 +318,45 @@ class CredentialsManager(BaseManager):
         desc_es = c.get('description', {}).get('es', '')
 
         issuer_en = c.get('issuer', '')
-        issuer_text = '((en))Issuer: ' + issuer_en + \
-            '((/en))((es))Emitido por: ' + issuer_en + '((/es))'
+        issuer_text = f"((en))Issuer: {issuer_en}((/en))((es))Emitido por: {issuer_en}((/es))"
 
         score = c.get('score', '')
         if score:
             if isinstance(score, dict):
-                score_text = f"((en)){score.get('en',
-                                                '')}((/en))((es)){score.get('es',
-                                                                            '')}((/es))"
+                score_en = score.get('en', '')
+                score_es = score.get('es', '')
+                score_text = f"((en)){score_en}((/en))((es)){score_es}((/es))"
             else:
-                score_text = '((en))' + score + \
-                    '((/en))((es))' + score + '((/es))'
+                score_text = f"((en)){score}((/en))((es)){score}((/es))"
         else:
             score_text = ''
 
-        level_en = self.get_i18n_field(c.get('level', ''), 'en')
-        level_es = self.get_i18n_field(c.get('level', ''), 'es')
+        level_en = get_i18n_field(c.get('level', ''), 'en')
+        level_es = get_i18n_field(c.get('level', ''), 'es')
         level = f"((en)){level_en}((/en))((es)){level_es}((/es))" if level_en or level_es else ""
         title = f"((en)){title_en}((/en))((es)){title_es}((/es))" if title_en or title_es else title_en
 
         topics = c.get('topics', [])
-        data_tags = ctype + (' ' + ' '.join(topics) if topics else '')
+        data_tags = f"{ctype} {' '.join(topics)}" if topics else ctype
 
-        card = '''    <div class="card" data-tags="''' + data_tags + '''">
+        return f'''    <div class="card" data-tags="{data_tags.strip()}">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">''' + title + '''</span>
-          <span class="title-rank">''' + level + '''</span>
-          <span class="title-score">''' + score_text + '''</span>
+          <span class="title-main">{title}</span>
+          <span class="title-rank">{level}</span>
+          <span class="title-score">{score_text}</span>
         </div>
         <div class="credential-skills">
-  ''' + skills_html + '''        </div>
-      </div>''' + image_html + '''
+{skills_html}        </div>
+      </div>{image_html}
       <div class="credential-meta">
-        <span class="credential-issuer">''' + issuer_text + '''</span>''' + link_html + '''
+        <span class="credential-issuer">{issuer_text}</span>{link_html}
       </div>
       <div class="credential-description justify">
-        ((en))''' + desc_en + '''((/en))((es))''' + desc_es + '''((/es))
+        ((en)){desc_en}((/en))((es)){desc_es}((/es))
         <span class="see-more"></span>
       </div>
     </div>'''
-        return card
 
     def cmd_generate(self, args):
         """Generate credentials/index.md from JSON"""
