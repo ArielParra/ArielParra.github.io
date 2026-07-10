@@ -1560,6 +1560,34 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
+    <div class="card" data-tags="award programming">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Meta Hacker Cup 2025((/en))((es))Meta Hacker Cup 2025((/es))</span>
+          <span class="title-rank">((en))Top 24 Mexico((/en))((es))Top 24 México((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))Complexity Analysis((/en))((es))Análisis de Complejidad((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Meta Hacker Cup 2025 image((/en))((es))Meta Hacker Cup 2025 imagen((/es))"](./credentials/img/Meta_Hacker_Cup_2025.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Meta((/en))((es))Emitido por: Meta((/es))</span>
+        <span class="credential-date">((en))October 2025((/en))((es))Octubre 2025((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.facebook.com/codingcompetitions/hacker-cup/2025/certificate/1022025052997781){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my technical proficiency in algorithmic problem-solving by participating in the 2025 Meta Hacker Cup. I successfully reached a national ranking in the top 24 of Mexico in this high-level international programming competition.((/en))((es))Validé mi competencia técnica en la resolución de problemas algorítmicos al participar en el Meta Hacker Cup 2025. Logré posicionarme dentro del top 24 de México en esta competencia de programación internacional de alto nivel.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="award programming professional">
       <div class="credential-header">
         <div class="credential-title">
@@ -1770,7 +1798,7 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Meta Hacker Cup 2024 - Round 1 image((/en))((es))Meta Hacker Cup 2024 - Ronda 1 imagen((/es))"](./credentials/img/MetaHackerCup-2024.png)
+        ![loading="lazy" alt="((en))Meta Hacker Cup 2024 - Round 1 image((/en))((es))Meta Hacker Cup 2024 - Ronda 1 imagen((/es))"](./credentials/img/Meta_Hacker_Cup_2024.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Meta((/en))((es))Emitido por: Meta((/es))</span>
