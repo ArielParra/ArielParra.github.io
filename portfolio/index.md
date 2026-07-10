@@ -61,10 +61,10 @@ nav_current: 2
 </div>
       
       <div class="project-preview">
-        ![loading="lazy" alt="ArielParra.github.io"](./portfolio/img/personal-website.png)
+        ![loading="lazy" alt="ArielParra.github.io"](img/screenshot.png)
       </div>
       <div class="project-meta">
-        <span class="project-date">((en))April 2026((/en))((es))Abril 2026((/es))</span>
+        <span class="project-date">((en))July 2026((/en))((es))Julio 2026((/es))</span>
         [((en))View Project((/en))((es))Ver Proyecto((/es))](https://github.com/ArielParra/ArielParra.github.io){:target="_blank" class="project-link"}</div>
       <div class="project-description justify">
         ((en))A lightweight, framework-free personal website and custom static site generator. Features a Python-based build system, automated W3C validation, and a CLI for managing portfolio and credential data.((/en))((es))Un sitio web personal ligero y sin frameworks con un generador de sitios estáticos personalizado. Incluye un sistema de construcción basado en Python, validación W3C automatizada y una CLI para gestionar datos del portafolio y credenciales.((/es))
@@ -81,7 +81,7 @@ nav_current: 2
 </div>
       
       <div class="project-preview">
-        ![loading="lazy" alt="ig_follows_analysis"](./portfolio/img/ig-analysis.png)
+        ![loading="lazy" alt="ig_follows_analysis"](./portfolio/img/ig_follows_analysis.png)
       </div>
       <div class="project-meta">
         <span class="project-date">((en))March 2026((/en))((es))Marzo 2026((/es))</span>
@@ -104,7 +104,7 @@ nav_current: 2
 </div>
       
       <div class="project-preview">
-        ![loading="lazy" alt="FLAIR-UTC-CODESPACE"](./portfolio/img/flair-codespace.png)
+        ![loading="lazy" alt="FLAIR-UTC-CODESPACE"](https://raw.githubusercontent.com/ArielParra/FLAIR-UTC-CODESPACE/refs/heads/main/img/Docker_WSL.png)
       </div>
       <div class="project-meta">
         <span class="project-date">((en))November 2025((/en))((es))Noviembre 2025((/es))</span>
@@ -127,7 +127,7 @@ nav_current: 2
 </div>
       
       <div class="project-preview">
-        ![loading="lazy" alt="TheWatchList"](./portfolio/img/TheWatchList.png)
+        ![loading="lazy" alt="TheWatchList"](./portfolio/img/TWL.png)
       </div>
       <div class="project-meta">
         <span class="project-date">((en))June 2025((/en))((es))Junio 2025((/es))</span>

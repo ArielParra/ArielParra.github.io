@@ -22,7 +22,7 @@
     {
       "id": "personal-website",
       "title": "ArielParra.github.io",
-      "date": "2026-04",
+      "date": "2026-07",
       "technologies": [
         "python",
         "html",
@@ -34,7 +34,7 @@
         "en": "A lightweight, framework-free personal website and custom static site generator. Features a Python-based build system, automated W3C validation, and a CLI for managing portfolio and credential data.",
         "es": "Un sitio web personal ligero y sin frameworks con un generador de sitios estáticos personalizado. Incluye un sistema de construcción basado en Python, validación W3C automatizada y una CLI para gestionar datos del portafolio y credenciales."
       },
-      "image": "./portfolio/img/personal-website.png",
+      "image": "img/screenshot.png",
       "link": "https://github.com/ArielParra/ArielParra.github.io"
     },
     {
@@ -49,7 +49,7 @@
         "en": "A proof-of-concept social media intelligence tool that analyzes Instagram following patterns.",
         "es": "Una herramienta de inteligencia de redes sociales (prueba de concepto) que analiza patrones de seguimiento en Instagram."
       },
-      "image": "./portfolio/img/ig-analysis.png",
+      "image": "./portfolio/img/ig_follows_analysis.png",
       "link": "https://github.com/ArielParra/ig_follows_analysis"
     },
     {
@@ -67,7 +67,7 @@
         "en": "A reproducible development environment using Docker for the FLAIR C++ robotics framework. Includes custom X11 GUI passthrough configurations and automated setup scripts for Ubuntu and Debian environments.",
         "es": "Un entorno de desarrollo reproducible utilizando Docker para el framework de robótica FLAIR C++. Incluye configuraciones personalizadas para la transmisión de interfaz gráfica X11 y scripts de configuración automatizados para entornos Ubuntu y Debian."
       },
-      "image": "./portfolio/img/flair-codespace.png",
+      "image": "https://raw.githubusercontent.com/ArielParra/FLAIR-UTC-CODESPACE/refs/heads/main/img/Docker_WSL.png",
       "link": "https://github.com/ArielParra/FLAIR-UTC-CODESPACE"
     },
     {
@@ -85,7 +85,7 @@
         "en": "A cross-platform movie tracking application built with React Native and Expo. Integrates TMDB API for discovery and Firebase Firestore for real-time synchronization of watchlists.",
         "es": "Una aplicación multiplataforma para el seguimiento de películas construida con React Native y Expo. Integra la API de TMDB para búsqueda y Firebase Firestore para la sincronización en tiempo real de listas de seguimiento."
       },
-      "image": "./portfolio/img/TheWatchList.png",
+      "image": "./portfolio/img/TWL.png",
       "link": "https://github.com/ArielParra/TheWatchList"
     },
     {

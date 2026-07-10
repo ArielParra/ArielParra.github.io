@@ -1,8 +1,8 @@
-ifdef OS
+ifdef OS # WINDOWS
 	PYTHON := python.exe
 	NPX := npx.exe
 	FixPath = $(subst /,\,$1)
-else
+else # NIX
 	PYTHON := python
 	NPX := npx
 	FixPath = $1
@@ -10,32 +10,44 @@ endif
 
 script := scripts/md2html.py
 
-all: index portfolio_md portfolio contact credentials_md credentials 404
+all: index portfolio contact credentials 404
 
-index:
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./index.md) $(call FixPath,./index.html)
+# Index
+index: index.html
+index.html: index.md $(script)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
 
-portfolio_md:
+# Portfolio
+portfolio_md: portfolio/index.md
+portfolio: portfolio/index.html
+portfolio/index.html: portfolio/index.md $(script)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
+
+portfolio/index.md: portfolio/data/projects.json scripts/manage_portfolio.py
 	@echo "Generating portfolio/index.md file..."
 	$(PYTHON) $(call FixPath,scripts/manage_portfolio.py) generate
 
-portfolio:
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./portfolio/index.md) $(call FixPath,./portfolio/index.html)
+# Contact
+contact: contact/index.html
+contact/index.html: contact/index.md $(script)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
 
-contact:
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./contact/index.md) $(call FixPath,./contact/index.html)
+# Credentials
+credentials_md: credentials/index.md
+credentials: credentials/index.html
+credentials/index.html: credentials/index.md $(script)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
 
-credentials_md: 
+credentials/index.md: credentials/data/credentials.json scripts/manage_credentials.py
 	@echo "Sorting credentials.json..."
 	$(PYTHON) $(call FixPath,scripts/manage_credentials.py) sort
 	@echo "Generating credentials/index.md file..."
 	$(PYTHON) $(call FixPath,scripts/manage_credentials.py) generate
 
-credentials:
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./credentials/index.md) $(call FixPath,./credentials/index.html)
-
-404:
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,./404.md) $(call FixPath,./404.html)
+# 404
+404: 404.html
+404.html: 404.md $(script)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
 
 clean:
 	rm -f $(call FixPath,./index.html)
