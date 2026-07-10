@@ -3,7 +3,7 @@
     {
       "id": "tomin",
       "title": "Tomin",
-      "date": "2025-04-09",
+      "date": "2026-04-09",
       "technologies": [
         "flutter",
         "dart",
@@ -19,22 +19,123 @@
       "link": "https://www.linkedin.com/posts/parra-ariel_talentland2026-geniusarena-bancoazteca-ugcPost-7448973059698561024-jwJx"
     },
     {
-      "id": "cpc-gallos",
-      "title": "CPC-GALLOS",
-      "date": "2023-09",
+      "id": "personal-website",
+      "title": "ArielParra.github.io",
+      "date": "2026-04",
       "technologies": [
-        "jekyll",
-        "ruby",
+        "python",
         "html",
         "css",
-        "markdown"
+        "javascript",
+        "makefile"
       ],
       "description": {
-        "en": "The cpc-gallos website, \"Competitive Programming Club GALLOS\" made with Jekyll and Chirpy, admin by me.",
-        "es": "El sitio web de cpc-gallos, \"Club de Programación Competitiva GALLOS\", hecho con Jekyll y Chirpy, administrado por mí."
+        "en": "A lightweight, framework-free personal website and custom static site generator. Features a Python-based build system, automated W3C validation, and a CLI for managing portfolio and credential data.",
+        "es": "Un sitio web personal ligero y sin frameworks con un generador de sitios estáticos personalizado. Incluye un sistema de construcción basado en Python, validación W3C automatizada y una CLI para gestionar datos del portafolio y credenciales."
       },
-      "image": "./portfolio/img/cpc-gallos.png",
-      "link": "https://cpc-gallos.github.io/"
+      "image": "./portfolio/img/personal-website.png",
+      "link": "https://github.com/ArielParra/ArielParra.github.io"
+    },
+    {
+      "id": "ig-follows-analysis",
+      "title": "ig_follows_analysis",
+      "date": "2026-03",
+      "technologies": [
+        "python",
+        "instaloader"
+      ],
+      "description": {
+        "en": "A proof-of-concept social media intelligence tool that analyzes Instagram following patterns.",
+        "es": "Una herramienta de inteligencia de redes sociales (prueba de concepto) que analiza patrones de seguimiento en Instagram."
+      },
+      "image": "./portfolio/img/ig-analysis.png",
+      "link": "https://github.com/ArielParra/ig_follows_analysis"
+    },
+    {
+      "id": "flair-utc-codespace",
+      "title": "FLAIR-UTC-CODESPACE",
+      "date": "2025-11",
+      "technologies": [
+        "docker",
+        "shell",
+        "cpp",
+        "linux",
+        "github"
+      ],
+      "description": {
+        "en": "A reproducible development environment using Docker for the FLAIR C++ robotics framework. Includes custom X11 GUI passthrough configurations and automated setup scripts for Ubuntu and Debian environments.",
+        "es": "Un entorno de desarrollo reproducible utilizando Docker para el framework de robótica FLAIR C++. Incluye configuraciones personalizadas para la transmisión de interfaz gráfica X11 y scripts de configuración automatizados para entornos Ubuntu y Debian."
+      },
+      "image": "./portfolio/img/flair-codespace.png",
+      "link": "https://github.com/ArielParra/FLAIR-UTC-CODESPACE"
+    },
+    {
+      "id": "the-watchlist",
+      "title": "TheWatchList",
+      "date": "2025-06",
+      "technologies": [
+        "typescript",
+        "react-native",
+        "expo",
+        "firebase",
+        "styled-components"
+      ],
+      "description": {
+        "en": "A cross-platform movie tracking application built with React Native and Expo. Integrates TMDB API for discovery and Firebase Firestore for real-time synchronization of watchlists.",
+        "es": "Una aplicación multiplataforma para el seguimiento de películas construida con React Native y Expo. Integra la API de TMDB para búsqueda y Firebase Firestore para la sincronización en tiempo real de listas de seguimiento."
+      },
+      "image": "./portfolio/img/TheWatchList.png",
+      "link": "https://github.com/ArielParra/TheWatchList"
+    },
+    {
+      "id": "adventure-time-game",
+      "title": "AdventureTime_OnlineGame",
+      "date": "2025-05",
+      "technologies": [
+        "phaser3",
+        "nodejs",
+        "express",
+        "javascript",
+        "html",
+        "css"
+      ],
+      "description": {
+        "en": "A 2D web-based platformer inspired by the Adventure Time universe. Developed as a collaborative academic project, it features a custom menu system, multiple progressive levels, real-time scoring, and local data persistence using localStorage.",
+        "es": "Un juego de plataformas web en 2D inspirado en el universo de Adventure Time. Desarrollado como un proyecto académico colaborativo, cuenta con un sistema de menús personalizado, múltiples niveles progresivos, puntuación en tiempo real y persistencia de datos mediante localStorage."
+      },
+      "image": "https://github.com/MiguelAngelBatres/AdventureTime_OnlineGame/raw/main/atdemo1.gif",
+      "link": "https://github.com/MiguelAngelBatres/AdventureTime_OnlineGame"
+    },
+    {
+      "id": "interactive-mexico-map",
+      "title": "Interactive_Mexico_Map",
+      "date": "2025-04",
+      "technologies": [
+        "javascript",
+        "html"
+      ],
+      "description": {
+        "en": "An interactive map of Mexico built using HTML + JS. This project highlights states on hover and displays information on click using plain JavaScript.",
+        "es": "Un mapa interactivo de México construido con HTML + JS. Este proyecto resalta los estados al pasar el cursor y muestra información al hacer clic utilizando JavaScript puro."
+      },
+      "image": "https://raw.githubusercontent.com/ArielParra/Interactive_Mexico_Map/refs/heads/main/demo.gif",
+      "link": "https://github.com/ArielParra/Interactive_Mexico_Map"
+    },
+    {
+      "id": "jsnake",
+      "title": "JSnake",
+      "date": "2024-12",
+      "technologies": [
+        "javascript",
+        "html",
+        "css"
+      ],
+      "description": {
+        "en": "JSnake Snake game built with JavaScript + HTML + CSS using the Nord color palette.",
+        "es": "JSnake Juego de la serpiente construido con JavaScript + HTML + CSS utilizando la paleta de colores Nord."
+      },
+      "image": "https://raw.githubusercontent.com/ArielParra/JSnake/refs/heads/main/demo.gif",
+      "link": "https://github.com/ArielParra/JSnake"
     },
     {
       "id": "pcapsule",
@@ -54,19 +155,19 @@
       "link": "https://github.com/ArielParra/Pcapsule"
     },
     {
-      "id": "asm-piano",
-      "title": "ASM Piano",
-      "date": "2023-06",
+      "id": "page-loader",
+      "title": "Page Loader",
+      "date": "2024-07",
       "technologies": [
-        "assembly",
-        "dos"
+        "javascript",
+        "browser-extension"
       ],
       "description": {
-        "en": "ASM Piano 8086 ASM for DOS piano simulator with auto-play and manual key mode.",
-        "es": "ASM Piano simulador de piano en ASM 8086 para DOS con modo de reproducción automática y modo manual."
+        "en": "Page Loader is a lightweight, Manifest V3 browser extension for Chrome and Firefox that simulates the End key press to automatically scroll and load more content on infinite-scroll websites like Facebook, Twitter, Reddit, and more.",
+        "es": "Page Loader es una extensión ligera para navegadores basada en Manifest V3 para Chrome y Firefox que simula la tecla End para desplazarse automáticamente y cargar más contenido en sitios de scroll infinito como Facebook, Twitter, Reddit y otros."
       },
-      "image": "https://raw.githubusercontent.com/ArielParra/ASM_Piano/refs/heads/main/demo.gif",
-      "link": "https://github.com/ArielParra/ASM_Piano"
+      "image": "https://raw.githubusercontent.com/ArielParra/Page_Loader/refs/heads/main/gif.gif",
+      "link": "https://github.com/ArielParra/Page_Loader"
     },
     {
       "id": "klotski-solver",
@@ -99,6 +200,54 @@
       "link": "https://github.com/ArielParra/Play_Sound"
     },
     {
+      "id": "rr-bs-simulator",
+      "title": "RR & BS Simulator",
+      "date": "2024-03",
+      "technologies": [
+        "cpp",
+        "algorithms"
+      ],
+      "description": {
+        "en": "RR_and_BS_Simulator Process scheduling and memory management simulator in C++ (Round Robin and Buddy System), featuring a text interface to configure, monitor, and control the simulation.",
+        "es": "RR_and_BS_Simulator Simulador de planificación de procesos y gestión de memoria en C++ (Round Robin y Buddy System), con interfaz de texto para configurar, observar y controlar la simulación."
+      },
+      "image": "https://raw.githubusercontent.com/ArielParra/RR_and_BS_Simulator/refs/heads/main/demo.gif",
+      "link": "https://github.com/ArielParra/RR_and_BS_Simulator"
+    },
+    {
+      "id": "cpc-gallos",
+      "title": "CPC-GALLOS",
+      "date": "2023-09",
+      "technologies": [
+        "jekyll",
+        "ruby",
+        "html",
+        "css",
+        "markdown"
+      ],
+      "description": {
+        "en": "The cpc-gallos website, \"Competitive Programming Club GALLOS\" made with Jekyll and Chirpy, admin by me.",
+        "es": "El sitio web de cpc-gallos, \"Club de Programación Competitiva GALLOS\", hecho con Jekyll y Chirpy, administrado por mí."
+      },
+      "image": "./portfolio/img/cpc-gallos.png",
+      "link": "https://cpc-gallos.github.io/"
+    },
+    {
+      "id": "asm-piano",
+      "title": "ASM Piano",
+      "date": "2023-06",
+      "technologies": [
+        "assembly",
+        "dos"
+      ],
+      "description": {
+        "en": "ASM Piano 8086 ASM for DOS piano simulator with auto-play and manual key mode.",
+        "es": "ASM Piano simulador de piano en ASM 8086 para DOS con modo de reproducción automática y modo manual."
+      },
+      "image": "https://raw.githubusercontent.com/ArielParra/ASM_Piano/refs/heads/main/demo.gif",
+      "link": "https://github.com/ArielParra/ASM_Piano"
+    },
+    {
       "id": "memoria-extreem",
       "title": "MemoriaExtreem",
       "date": "2023-05",
@@ -113,55 +262,9 @@
       "link": "https://github.com/ArielParra/MemoriaExtreem"
     },
     {
-      "id": "rr-bs-simulator",
-      "title": "RR & BS Simulator",
-      "date": "2024-10",
-      "technologies": [
-        "cpp",
-        "algorithms"
-      ],
-      "description": {
-        "en": "RR_and_BS_Simulator Process scheduling and memory management simulator in C++ (Round Robin and Buddy System), featuring a text interface to configure, monitor, and control the simulation.",
-        "es": "RR_and_BS_Simulator Simulador de planificación de procesos y gestión de memoria en C++ (Round Robin y Buddy System), con interfaz de texto para configurar, observar y controlar la simulación."
-      },
-      "image": "https://raw.githubusercontent.com/ArielParra/RR_and_BS_Simulator/refs/heads/main/demo.gif",
-      "link": "https://github.com/ArielParra/RR_and_BS_Simulator"
-    },
-    {
-      "id": "page-loader",
-      "title": "Page Loader",
-      "date": "2024-08",
-      "technologies": [
-        "javascript",
-        "browser-extension"
-      ],
-      "description": {
-        "en": "Page Loader is a lightweight, Manifest V3 browser extension for Chrome and Firefox that simulates the End key press to automatically scroll and load more content on infinite-scroll websites like Facebook, Twitter, Reddit, and more.",
-        "es": "Page Loader es una extensión ligera para navegadores basada en Manifest V3 para Chrome y Firefox que simula la tecla End para desplazarse automáticamente y cargar más contenido en sitios de scroll infinito como Facebook, Twitter, Reddit y otros."
-      },
-      "image": "https://raw.githubusercontent.com/ArielParra/Page_Loader/refs/heads/main/gif.gif",
-      "link": "https://github.com/ArielParra/Page_Loader"
-    },
-    {
-      "id": "jsnake",
-      "title": "JSnake",
-      "date": "2024-02",
-      "technologies": [
-        "javascript",
-        "html",
-        "css"
-      ],
-      "description": {
-        "en": "JSnake Snake game built with JavaScript + HTML + CSS using the Nord color palette.",
-        "es": "JSnake Juego de la serpiente construido con JavaScript + HTML + CSS utilizando la paleta de colores Nord."
-      },
-      "image": "https://raw.githubusercontent.com/ArielParra/JSnake/refs/heads/main/demo.gif",
-      "link": "https://github.com/ArielParra/JSnake"
-    },
-    {
       "id": "christmas-tree",
       "title": "C-hristmas Tree",
-      "date": "2023-12",
+      "date": "2022-12",
       "technologies": [
         "c"
       ],

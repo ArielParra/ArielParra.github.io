@@ -366,6 +366,58 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
+    <div class="card" data-tags="certificate ai">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Fundamentals of AI Engineering((/en))((es))Fundamentos de Ingeniería de IA((/es))</span>
+          <span class="title-rank"></span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Artificial Intelligence((/en))((es))Inteligencia Artificial((/es))</span>
+          <span class="credential-skill">((en))AI Engineering((/en))((es))Ingeniería de IA((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Fundamentals of AI Engineering image((/en))((es))Fundamentos de Ingeniería de IA imagen((/es))"](./credentials/img/ITF_Introduccion_IA.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Iberoamerican Technology Foundation (ITF)((/en))((es))Emitido por: Iberoamerican Technology Foundation (ITF)((/es))</span>
+        <span class="credential-date">((en))July 2026((/en))((es))Julio 2026((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://campus.iberotech.org/pluginfile.php/1/tool_certificate/issues/1783550268/3545633578AP.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I completed the first phase of the 'From Mexico to San Francisco: Train in AI and Live an International Experience' program, where I learned the fundamentals of AI Engineering. This program strengthened my AI skills and prepared me for the Salesforce Agent learning path.((/en))((es))Completé la primera fase del programa 'De México a San Francisco: Fórmate en IA y vive una experiencia internacional', donde aprendí los fundamentos de la Ingeniería de Inteligencia Artificial. Este programa fortaleció mis habilidades en IA y me preparó para la ruta de aprendizaje de Salesforce Agent.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate programming">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Mendix Rapid Developer Certification((/en))((es))Certificación Mendix Rapid Developer((/es))</span>
+          <span class="title-rank">((en))Rapid Developer((/en))((es))Desarrollador Rapid((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Low-Code Development((/en))((es))Desarrollo Low-Code((/es))</span>
+          <span class="credential-skill">((en))Rapid Application Development (RAD)((/en))((es))Desarrollo Rápido de Aplicaciones (RAD)((/es))</span>
+          <span class="credential-skill">((en))Domain Modeling((/en))((es))Modelado de Dominio((/es))</span>
+          <span class="credential-skill">((en))Visual Logic((/en))((es))Lógica Visual((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Mendix Rapid Developer Certification image((/en))((es))Certificación Mendix Rapid Developer imagen((/es))"](./credentials/img/MendixRapidDeveloperCertification-110296.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Mendix((/en))((es))Emitido por: Mendix((/es))</span>
+        <span class="credential-date">((en))May 2026((/en))((es))Mayo 2026((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/MendixRapidDeveloperCertification-110296.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my knowledge, skills, and experience required to build applications on the Mendix platform by achieving the Rapid Developer Certification (Certificate Number: 110296). I demonstrated proficiency in low-code development methodologies, domain modeling, and the implementation of custom visual logic.((/en))((es))Validé mis conocimientos, habilidades y experiencia necesarios para construir aplicaciones en la plataforma Mendix al obtener la Certificación Rapid Developer (Número de Certificado: 110296). Demostré competencia en metodologías de desarrollo low-code, modelado de dominio y la implementación de lógica visual personalizada.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="certificate language">
       <div class="credential-header">
         <div class="credential-title">
@@ -526,12 +578,12 @@ nav_current: 3
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))Artificial Intelligence and Productivity image((/en))((es))Inteligencia Artificial y Productividad imagen((/es))"](./credentials/img/754_arielemilio_parra_EN.png)
+        ![loading="lazy" alt="((en))Artificial Intelligence and Productivity image((/en))((es))Inteligencia Artificial y Productividad imagen((/es))"](./credentials/img/Santander_OA_754_arielemilio_parra_EN.png)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Santander Open Academy / Google((/en))((es))Emitido por: Santander Open Academy / Google((/es))</span>
         <span class="credential-date">((en))December 2024((/en))((es))Diciembre 2024((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/754_arielemilio_parra_EN.pdf){:target="_blank" class="credential-link"}
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_OA_754_arielemilio_parra_EN.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))I validated my knowledge of artificial intelligence and its application to productivity through this course developed by Google. I completed 2 hours of specialized training across 2 modules , focusing on leveraging AI tools to optimize daily professional workflows.((/en))((es))Validé mis conocimientos sobre inteligencia artificial y su aplicación a la productividad a través de este curso desarrollado por Google. Completé 2 horas de formación especializada en 2 módulos , enfocándome en el aprovechamiento de herramientas de IA para optimizar flujos de trabajo profesionales diarios.((/es))
@@ -1179,6 +1231,63 @@ nav_current: 3
     <div class="card" data-tags="badge cloud">
       <div class="credential-header">
         <div class="credential-title">
+          <span class="title-main">((en))AWS Academy Graduate - Cloud Foundations - Training Badge((/en))((es))AWS Academy Graduate - Cloud Foundations - Insignia de Entrenamiento((/es))</span>
+          <span class="title-rank">((en))Training Badge((/en))((es))Insignia de Entrenamiento((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))AWS Architecture((/en))((es))Arquitectura en AWS((/es))</span>
+          <span class="credential-skill">((en))AWS Cloud((/en))((es))Nube de AWS((/es))</span>
+          <span class="credential-skill">((en))AWS Core Services((/en))((es))Servicios Principales de AWS((/es))</span>
+          <span class="credential-skill">((en))AWS Pricing((/en))((es))Precios de AWS((/es))</span>
+          <span class="credential-skill">((en))AWS Support((/en))((es))Soporte de AWS((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))AWS Academy Graduate - Cloud Foundations - Training Badge image((/en))((es))AWS Academy Graduate - Cloud Foundations - Insignia de Entrenamiento imagen((/es))"](./credentials/img/AWS_Academy_Cloud_Foundations.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Amazon Web Services((/en))((es))Emitido por: Amazon Web Services((/es))</span>
+        <span class="credential-date">((en))May 2026((/en))((es))Mayo 2026((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/ec845f5e-0ccc-4328-88fe-b2f51e38fe75/public_url){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my foundational knowledge of cloud concepts through the AWS Academy Cloud Foundations course. I demonstrated proficiency in core AWS services and cloud architecture, as well as essential concepts of pricing and support within the Amazon Web Services ecosystem.((/en))((es))Validé mis conocimientos fundamentales de los conceptos de la nube a través del curso AWS Academy Cloud Foundations. Demostré competencia en servicios principales de AWS y arquitectura en la nube, así como conceptos esenciales de costos y soporte dentro del ecosistema de Amazon Web Services.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="badge programming">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Python Essentials 1((/en))((es))Python Essentials 1((/es))</span>
+          <span class="title-rank"></span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Algorithmic Thinking((/en))((es))Pensamiento Algorítmico((/es))</span>
+          <span class="credential-skill">((en))Analytical Thinking((/en))((es))Pensamiento Analítico((/es))</span>
+          <span class="credential-skill">((en))Basic Python Programming((/en))((es))Programación Básica en Python((/es))</span>
+          <span class="credential-skill">((en))Best Practices in Programming((/en))((es))Mejores Prácticas de Programación((/es))</span>
+          <span class="credential-skill">((en))Computer Programming((/en))((es))Programación Informática((/es))</span>
+          <span class="credential-skill">((en))Design, Develop, and Debug Scripts((/en))((es))Diseñar, Desarrollar y Depurar Scripts((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Python Essentials 1 image((/en))((es))Python Essentials 1 imagen((/es))"](./credentials/img/CISCO_python_essentials_1.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Cisco & OpenEDG Python Institute((/en))((es))Emitido por: Cisco & OpenEDG Python Institute((/es))</span>
+        <span class="credential-date">((en))May 2025((/en))((es))Mayo 2025((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/01e3d4eb-99d6-43b8-bad9-233babf7b30d/public_url){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I validated my fundamental knowledge of computer programming through the Python Essentials 1 course by Cisco and OpenEDG Python Institute. I demonstrated proficiency in the syntax and semantics of the Python language, as well as the ability to design, develop, and debug scripts using the Python Standard Library.((/en))((es))Validé mis conocimientos fundamentales de programación informática a través del curso Python Essentials 1 de Cisco y OpenEDG Python Institute. Demostré competencia en la sintaxis y semántica del lenguaje Python, así como la capacidad para diseñar, desarrollar y depurar scripts utilizando la Biblioteca Estándar de Python.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="badge cloud">
+      <div class="credential-header">
+        <div class="credential-title">
           <span class="title-main">((en))AWS Knowledge: Cloud Essentials((/en))((es))AWS Knowledge: Cloud Essentials((/es))</span>
           <span class="title-rank">((en))Training Badge((/en))((es))Insignia de Entrenamiento((/es))</span>
           <span class="title-score"></span>
@@ -1254,6 +1363,59 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
+    <div class="card" data-tags="award softskills programming">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Programming Contest Organizer((/en))((es))Organizador de Concurso de Programación((/es))</span>
+          <span class="title-rank">((en))XX Congress of Exact Sciences((/en))((es))XX Congreso de Ciencias Exactas((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Leadership((/en))((es))Liderazgo((/es))</span>
+          <span class="credential-skill">((en))Project Management((/en))((es))Gestión de Proyectos((/es))</span>
+          <span class="credential-skill">((en))Algorithmic Competition Design((/en))((es))Diseño de Competencias Algorítmicas((/es))</span>
+          <span class="credential-skill">((en))Team Coordination((/en))((es))Coordinación de Equipo((/es))</span>
+          <span class="credential-skill">((en))Public Speaking((/en))((es))Oratoria((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Programming Contest Organizer image((/en))((es))Organizador de Concurso de Programación imagen((/es))"](./credentials/img/UAA_CONCURSO_2026.jpeg)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
+        <span class="credential-date">((en))May 2026((/en))((es))Mayo 2026((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2026.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I was recognized by the Universidad Autónoma de Aguascalientes and the Department of Electronic Systems for my leadership in organizing and directing the programming contest during the XX Congress of Exact Sciences. I managed the competition logistics and execution on May 26, 2026, fostering technical growth within the university community.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes y el Departamento de Sistemas Electrónicos por mi liderazgo en la organización y dirección del concurso de programación durante el XX Congreso de Ciencias Exactas. Gestioné la logística y ejecución de la competencia el 26 de mayo de 2026, fomentando el crecimiento técnico dentro de la comunidad universitaria.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award softskills">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))1st Kyu Grade in Kendo((/en))((es))Grado de 1er Kyu en Kendo((/es))</span>
+          <span class="title-rank">((en))Intermediate Rank((/en))((es))Rango Intermedio((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Mental Discipline and Focus((/en))((es))Disciplina Mental y Enfoque((/es))</span>
+          <span class="credential-skill">((en))Sportsmanship and Ethics((/en))((es))Ética y Deportividad((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))1st Kyu Grade in Kendo image((/en))((es))Grado de 1er Kyu en Kendo imagen((/es))"](./credentials/img/AEKIA_Kendo_1kyu.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Asociación Estatal de Kendo e Iaido de Aguascalientes, A.C. (AEKIA)((/en))((es))Emitido por: Asociación Estatal de Kendo e Iaido de Aguascalientes, A.C. (AEKIA)((/es))</span>
+        <span class="credential-date">((en))May 2026((/en))((es))Mayo 2026((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/img/AEKIA_Kendo_1kyu.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Official 1nd Kyu rank awarded by the State Association of Kendo and Iaido of Aguascalientes, affiliated with the Mexican Kendo Federation (FMK), after demonstrating the required technical skills and requirements.((/en))((es))Grado oficial de 1do Kyu otorgado por la Asociación Estatal de Kendo e Iaido de Aguascalientes, afiliada a la Federación Mexicana de Kendo (FMK), tras haber demostrado las habilidades técnicas y requisitos establecidos.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
@@ -1288,28 +1450,53 @@ nav_current: 3
     <div class="card" data-tags="award programming softskills">
       <div class="credential-header">
         <div class="credential-title">
-          <span class="title-main">((en))President of the Competitive Programming Club (Gallos)((/en))((es))Presidente del Club de Programación Competitiva (Gallos)((/es))</span>
-          <span class="title-rank"></span>
+          <span class="title-main">((en))Talent Hackathon 2026 1st Place Recognition((/en))((es))Reconocimiento 1er Lugar Talent Hackathon 2026((/es))</span>
+          <span class="title-rank">((en))University Recognition((/en))((es))Reconocimiento Universitario((/es))</span>
           <span class="title-score"></span>
         </div>
         <div class="credential-skills">
-            <span class="credential-skill">((en))Strategic Leadership((/en))((es))Liderazgo Estratégico((/es))</span>
-          <span class="credential-skill">((en))Technical Mentoring((/en))((es))Mentoría Técnica((/es))</span>
-          <span class="credential-skill">((en))Community Management((/en))((es))Gestión de Comunidad((/es))</span>
-          <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
-          <span class="credential-skill">((en))Team Coordination((/en))((es))Coordinación de Equipo((/es))</span>
+            <span class="credential-skill">((en))Academic Excellence((/en))((es))Excelencia Académica((/es))</span>
+          <span class="credential-skill">((en))Dedication((/en))((es))Dedicación((/es))</span>
+          <span class="credential-skill">((en))Hackathon((/en))((es))Hackathon((/es))</span>
+          <span class="credential-skill">((en))Innovation((/en))((es))Innovación((/es))</span>
           <span class="skills-more"></span>        </div>
       </div>
       <div class="credential-preview">
-        ![loading="lazy" alt="((en))President of the Competitive Programming Club (Gallos) image((/en))((es))Presidente del Club de Programación Competitiva (Gallos) imagen((/es))"](./credentials/img/CPC-GALLOS_2025.png)
+        ![loading="lazy" alt="((en))Talent Hackathon 2026 1st Place Recognition image((/en))((es))Reconocimiento 1er Lugar Talent Hackathon 2026 imagen((/es))"](./credentials/img/UAA_Reconocimiento_Hackathon.jpg)
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
-        <span class="credential-date">((en))December 2025((/en))((es))Diciembre 2025((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2025.pdf){:target="_blank" class="credential-link"}
+        <span class="credential-date">((en))April 2026((/en))((es))Abril 2026((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_Reconocimiento_Hackathon.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2025 semester. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2025. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))
+        ((en))Official recognition granted by the Universidad Autónoma de Aguascalientes, acknowledging my talent, dedication, and excellence for winning first place in the Talent Hackathon 2026. This academic award complements the national victory achieved as the team leader of D3LT4.((/en))((es))Reconocimiento oficial otorgado por la Universidad Autónoma de Aguascalientes, que reconoce mi talento, dedicación y excelencia por haber obtenido el primer lugar en el Talent Hackathon 2026. Este galardón académico complementa la victoria nacional lograda como líder del equipo D3LT4.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award softskills">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))L'Oréal Brandstorm 2026 Certificate of Recognition((/en))((es))Certificado de Reconocimiento L'Oréal Brandstorm 2026((/es))</span>
+          <span class="title-rank">((en))Youth Innovation Competition((/en))((es))Competencia de Innovación Juvenil((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Innovation((/en))((es))Innovación((/es))</span>
+          <span class="credential-skill">((en))Business Strategy((/en))((es))Estrategia de Negocios((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))L'Oréal Brandstorm 2026 Certificate of Recognition image((/en))((es))Certificado de Reconocimiento L'Oréal Brandstorm 2026 imagen((/es))"](./credentials/img/LOREAL_Ariel_Emilio_Parra_Martinez_112919811565.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: L'Oréal((/en))((es))Emitido por: L'Oréal((/es))</span>
+        <span class="credential-date">2026</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/LOREAL_Ariel_Emilio_Parra_Martinez_112919811565.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Certificate of recognition awarded by Jean-Claude Le Grand, L'Oréal Chief Human Relations Officer, for participating in L'Oréal Brandstorm 2026, recognized as the only EOCCS certified youth innovation competition.((/en))((es))Certificado de reconocimiento otorgado por Jean-Claude Le Grand, Director de Relaciones Humanas de L'Oréal, por participar en L'Oréal Brandstorm 2026, reconocida como la única competencia de innovación juvenil certificada por EOCCS.((/es))
         <span class="see-more"></span>
       </div>
     </div>
@@ -1368,6 +1555,34 @@ nav_current: 3
       </div>
       <div class="credential-description justify">
         ((en))I earned an Honorable Mention at the 2025 ICPC Gran Premio de México, representing the Universidad Autónoma de Aguascalientes. This achievement validates my technical proficiency in algorithmic problem-solving and my ability to collaborate effectively in high-pressure competitive programming environments.((/en))((es))Obtuve una Mención Honorífica en el ICPC Gran Premio de México 2025, representando a la Universidad Autónoma de Aguascalientes. Este logro valida mi competencia técnica en la resolución de problemas algorítmicos y mi capacidad para colaborar eficazmente en entornos de programación competitiva de alta presión.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award programming softskills">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))President of the Competitive Programming Club (Gallos)((/en))((es))Presidente del Club de Programación Competitiva (Gallos)((/es))</span>
+          <span class="title-rank"></span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Strategic Leadership((/en))((es))Liderazgo Estratégico((/es))</span>
+          <span class="credential-skill">((en))Technical Mentoring((/en))((es))Mentoría Técnica((/es))</span>
+          <span class="credential-skill">((en))Community Management((/en))((es))Gestión de Comunidad((/es))</span>
+          <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Team Coordination((/en))((es))Coordinación de Equipo((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))President of the Competitive Programming Club (Gallos) image((/en))((es))Presidente del Club de Programación Competitiva (Gallos) imagen((/es))"](./credentials/img/CPC-GALLOS_2025.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
+        <span class="credential-date">((en))July 2025((/en))((es))Julio 2025((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2025.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2025 semester. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2025. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))
         <span class="see-more"></span>
       </div>
     </div>
@@ -1568,6 +1783,31 @@ nav_current: 3
     <div class="card" data-tags="award softskills">
       <div class="credential-header">
         <div class="credential-title">
+          <span class="title-main">((en))Outstanding GPA Recognition - Computer Systems Engineering((/en))((es))Reconocimiento por Promedio Destacado - Ing. en Sistemas Computacionales((/es))</span>
+          <span class="title-rank">((en))Academic Excellence Award((/en))((es))Reconocimiento a la Excelencia Académica((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Academic Dedication((/en))((es))Dedicación Académica((/es))</span>
+          <span class="credential-skill">((en))Continuous Improvement((/en))((es))Mejora Continua((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Outstanding GPA Recognition - Computer Systems Engineering image((/en))((es))Reconocimiento por Promedio Destacado - Ing. en Sistemas Computacionales imagen((/es))"](./credentials/img/UAA_Mejor_Promedio_2024.jpeg)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
+        <span class="credential-date">((en))September 2024((/en))((es))Septiembre 2024((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_Mejor_Promedio_2024.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Official recognition signed by the Rector of the University for obtaining a 9.6 GPA during the January - June 2024 semester of the Computer Systems Engineering program.((/en))((es))Reconocimiento oficial firmado por la Rectora de la Universidad por haber obtenido un promedio de 9.6 durante el semestre enero - junio 2024 de la carrera de Ing. en Sistemas Computacionales.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award softskills">
+      <div class="credential-header">
+        <div class="credential-title">
           <span class="title-main">((en))High School Best GPA Recognition((/en))((es))Reconocimiento al Mejor Promedio del Bachillerato((/es))</span>
           <span class="title-rank">((en))Academic Excellence Award((/en))((es))Reconocimiento a la Excelencia Académica((/es))</span>
           <span class="title-score"></span>
@@ -1587,6 +1827,32 @@ nav_current: 3
       </div>
       <div class="credential-description justify">
         ((en))Official recognition signed by the Rector of the University for obtaining a 9.57 GPA, the highest in the group during the August – December 2021 semester of high school((/en))((es))Reconocimiento oficial firmado por el Rector de la Universidad por haber obtenido una calificación de 9.57, el mejor promedio de su grupo durante el semestre agosto – diciembre 2021 de bachillerato((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award softskills">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Student Representative Counselor((/en))((es))Consejero Representante Alumno((/es))</span>
+          <span class="title-rank">((en))Student Leadership Role((/en))((es))Rol de Liderazgo Estudiantil((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+            <span class="credential-skill">((en))Student Leadership((/en))((es))Liderazgo Estudiantil((/es))</span>
+          <span class="credential-skill">((en))Effective Communication((/en))((es))Comunicación Efectiva((/es))</span>
+          <span class="credential-skill">((en))Responsibility((/en))((es))Responsabilidad((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Student Representative Counselor image((/en))((es))Consejero Representante Alumno imagen((/es))"](./credentials/img/BACHUAA_Consejero_Representante.jpeg)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
+        <span class="credential-date">((en))August 2021((/en))((es))Agosto 2021((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BACHUAA_Consejero_Representante.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Official appointment as Student Representative Counselor for the High School Center's Board of Representatives at the Universidad Autónoma de Aguascalientes. The oath of office was taken during a solemn session on August 27, 2021.((/en))((es))Nombramiento oficial como Consejero Representante Alumno del H. Consejo de Representantes del Centro de Educación Media de la Universidad Autónoma de Aguascalientes. La toma de protesta se llevó a cabo en sesión solemne el 27 de agosto de 2021.((/es))
         <span class="see-more"></span>
       </div>
     </div>

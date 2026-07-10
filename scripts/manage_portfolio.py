@@ -234,13 +234,20 @@ class PortfolioManager(BaseManager):
             print("No projects to sort.")
             return 0
 
-        sorted_projects = sorted(
+        # Sort by title first so that identical dates are ordered alphabetically
+        sorted_by_title = sorted(
             projects, key=lambda p: p.get(
                 'title', '').lower())
+        
+        # Then sort by date descending (newest first)
+        sorted_projects = sorted(
+            sorted_by_title, key=lambda p: p.get(
+                'date', ''), reverse=True)
+
         data['projects'] = sorted_projects
         self.save_data(data)
 
-        print(f"Sorted {len(sorted_projects)} projects alphabetically.")
+        print(f"Sorted {len(sorted_projects)} projects by date (newest first).")
         return 0
 
     def cmd_list(self, args):
