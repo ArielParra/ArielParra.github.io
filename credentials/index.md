@@ -23,12 +23,12 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
-    <div class="card" data-tags="education programming cybersecurity database networks cloud softskills">
+    <div class="card" data-tags="education programming cybersecurity database networking cloud professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))B.Sc. in Computer Systems Engineering((/en))((es))Ingeniería en Sistemas Computacionales((/es))</span>
           <span class="title-rank">((en))Bachelor of Science Degree((/en))((es))Título de Licenciatura((/es))</span>
-          <span class="title-score">((en))9.34 / 10.0((/en))((es))9.34 / 10.0((/es))</span>
+          <span class="title-score">((en))9.33 / 10.0((/en))((es))9.33 / 10.0((/es))</span>
         </div>
         <div class="credential-skills">
           <span class="credential-skill">((en))Software Architecture & Design((/en))((es))Arquitectura y Diseño de Software((/es))</span>
@@ -45,15 +45,15 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))</span>
-        <span class="credential-date">2026</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.uaa.mx/descubretucarrera/ccb/ing-en-sistemas-computacionales/plan.pdf){:target="_blank" class="credential-link"}
+        <span class="credential-date">((en))August 2022((/en))((es))Agosto 2022((/es)) – ((en))January 2027((/en))((es))Enero 2027((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_Constancia_Estudios_Ariel_Parra_2026.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))Currently in 8th semester out of 9. Comprehensive training in design, implementation, and automation of complex systems. Relevant coursework: Algorithms & Data Structures, Operating Systems, and Databases. As Founder and President of CPC-GALLOS, I lead 20+ members in algorithmic training, coordinating participation in Meta Hacker Cup and ICPC Gran Premio de México.((/en))((es))Cursando actualmente el 8vo semestre de 9 Formación integral en diseño, implementación y automatización de sistemas complejos. Materias relevantes: Estructuras de Datos y Algoritmos, Sistemas Operativos y Bases de Datos. Como Fundador y Presidente de CPC-GALLOS, lidero a más de 20 miembros en entrenamiento algorítmico, coordinando la participación en Meta Hacker Cup e ICPC Gran Premio de México.((/es))
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="education ai networks cloud language programming datascience">
+    <div class="card" data-tags="education ai networking cloud languages programming data-science">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Génie informatique (Computer Engineering)((/en))((es))Génie informatique (Ingeniería Informática)((/es))</span>
@@ -75,8 +75,8 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Université de Technologie de Compiègne (UTC)((/en))((es))Emitido por: Université de Technologie de Compiègne (UTC)((/es))</span>
-        <span class="credential-date">((en))September 2025((/en))((es))Septiembre 2025((/es))</span>
-        [((en))Verify((/en))((es))Verificar((/es)) PDF](https://www.utc.fr/wp-content/uploads/sites/28/2021/01/gi2021-web.pdf){:target="_blank" class="credential-link"}
+        <span class="credential-date">((en))September 2025((/en))((es))Septiembre 2025((/es)) – ((en))January 2026((/en))((es))Enero 2026((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UTC_Attestation_Ariel_PARRA.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
         ((en))International exchange at UTC France, ranked as the [2nd best post-baccalaureate engineering school by Le Figaro](https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-post-bac/). Relevant coursework: Computer Networks, Machine Learning, and French (FLE). Served as Vice President of UTCode, ranking 1st in the Hauts-de-France region at SWERC 2025 (ICPC).((/en))((es))Intercambio internacional en la UTC Francia, reconocida como la [2da mejor escuela de ingeniería post-bac según Le Figaro](https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-post-bac/). Materias relevantes: Redes de Computadoras, Machine Learning y Francés (FLE). Me desempeñé como Vicepresidente de UTCode, logrando el 1er lugar en la región de Hauts-de-France en SWERC 2025 (ICPC).((/es))
@@ -103,7 +103,7 @@ nav_current: 3
       </div>
       <div class="credential-meta">
         <span class="credential-issuer">((en))Issuer: Oracle / Alura Latam((/en))((es))Emitido por: Oracle / Alura Latam((/es))</span>
-        <span class="credential-date">((en))May 2024((/en))((es))Mayo 2024((/es))</span>
+        <span class="credential-date">((en))January 2024((/en))((es))Enero 2024((/es)) – ((en))May 2024((/en))((es))Mayo 2024((/es))</span>
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/program/certificate/80f90beb-02e0-48ae-a5a4-c097d226c28e){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
@@ -165,7 +165,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certification language">
+    <div class="card" data-tags="certification languages">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))TOEFL iBT((/en))((es))TOEFL iBT((/es))</span>
@@ -418,7 +418,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate language">
+    <div class="card" data-tags="certificate languages">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))GoFluent English((/en))((es))GoFluent English((/es))</span>
@@ -505,7 +505,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate language">
+    <div class="card" data-tags="certificate languages">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))EF SET English Certificate((/en))((es))EF SET English Certificate((/es))</span>
@@ -731,7 +731,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate cybersecurity networks">
+    <div class="card" data-tags="certificate cybersecurity networking">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Career Essentials in Cybersecurity((/en))((es))Career Essentials in Cybersecurity((/es))</span>
@@ -849,7 +849,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate programming backend">
+    <div class="card" data-tags="certificate programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Java and Spring Boot G6 - ONE((/en))((es))Java y Spring Boot G6 - ONE((/es))</span>
@@ -907,7 +907,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate softskills">
+    <div class="card" data-tags="certificate professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Entrepreneurship, Agility and Professional Protagonism G6 - ONE((/en))((es))Emprendimiento, Agilidad y Protagonismo Profesional G6 - ONE((/es))</span>
@@ -964,7 +964,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate blockchain web3">
+    <div class="card" data-tags="certificate blockchain">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))ICP Developer Azle((/en))((es))ICP Developer Azle((/es))</span>
@@ -993,7 +993,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate softskills">
+    <div class="card" data-tags="certificate professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Professional Development G6 - ONE((/en))((es))Desarrollo Personal G6 - ONE((/es))</span>
@@ -1103,7 +1103,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate ai datascience">
+    <div class="card" data-tags="certificate ai data-science">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Artificial Intelligence and Data Science((/en))((es))Inteligencia Artificial y Data Science((/es))</span>
@@ -1157,7 +1157,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="certificate blockchain web3">
+    <div class="card" data-tags="certificate blockchain">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Blockchain Consultant Professional((/en))((es))Blockchain Consultant Professional((/es))</span>
@@ -1363,7 +1363,7 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
-    <div class="card" data-tags="award softskills programming">
+    <div class="card" data-tags="award professional programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Programming Contest Organizer((/en))((es))Organizador de Concurso de Programación((/es))</span>
@@ -1391,7 +1391,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award softskills">
+    <div class="card" data-tags="award professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))1st Kyu Grade in Kendo((/en))((es))Grado de 1er Kyu en Kendo((/es))</span>
@@ -1447,7 +1447,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award programming softskills">
+    <div class="card" data-tags="award programming professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Talent Hackathon 2026 1st Place Recognition((/en))((es))Reconocimiento 1er Lugar Talent Hackathon 2026((/es))</span>
@@ -1474,7 +1474,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award softskills">
+    <div class="card" data-tags="award professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))L'Oréal Brandstorm 2026 Certificate of Recognition((/en))((es))Certificado de Reconocimiento L'Oréal Brandstorm 2026((/es))</span>
@@ -1558,7 +1558,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award programming softskills">
+    <div class="card" data-tags="award programming professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))President of the Competitive Programming Club (Gallos)((/en))((es))Presidente del Club de Programación Competitiva (Gallos)((/es))</span>
@@ -1586,7 +1586,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award softskills">
+    <div class="card" data-tags="award professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))2nd Kyu Grade in Kendo((/en))((es))Grado 2do Kyu en Kendo((/es))</span>
@@ -1611,7 +1611,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award softskills">
+    <div class="card" data-tags="award professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Technical Job Interviews Workshop Instructor((/en))((es))Tallerista: Entrevistas Técnicas de Trabajo((/es))</span>
@@ -1639,7 +1639,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award softskills programming">
+    <div class="card" data-tags="award professional programming">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Programming Contest Organizer((/en))((es))Organizador de Concurso de Programación((/es))</span>
@@ -1667,7 +1667,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award programming softskills">
+    <div class="card" data-tags="award programming professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))President of the Competitive Programming Club (Gallos)((/en))((es))Presidente del Club de Programación Competitiva (Gallos)((/es))</span>
@@ -1780,7 +1780,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award softskills">
+    <div class="card" data-tags="award professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Outstanding GPA Recognition - Computer Systems Engineering((/en))((es))Reconocimiento por Promedio Destacado - Ing. en Sistemas Computacionales((/es))</span>
@@ -1805,7 +1805,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award softskills">
+    <div class="card" data-tags="award professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))High School Best GPA Recognition((/en))((es))Reconocimiento al Mejor Promedio del Bachillerato((/es))</span>
@@ -1830,7 +1830,7 @@ nav_current: 3
         <span class="see-more"></span>
       </div>
     </div>
-    <div class="card" data-tags="award softskills">
+    <div class="card" data-tags="award professional">
       <div class="credential-header">
         <div class="credential-title">
           <span class="title-main">((en))Student Representative Counselor((/en))((es))Consejero Representante Alumno((/es))</span>

@@ -113,6 +113,12 @@ class CredentialsManager(BaseManager):
         level_es = input("Level/Rank (Spanish): ").strip()
 
         score = input("Score (optional): ").strip()
+        started_on = ""
+        if ctype == "education":
+            started_on = input("Started on (YYYY-MM or YYYY-MM-DD): ").strip()
+            if started_on and not re.match(r'^\d{4}-\d{2}(-\d{2})?$', started_on):
+                print("Format: YYYY-MM or YYYY-MM-DD (e.g., 2022-08)")
+                return 1
         issued_on = input("Issued on (YYYY-MM or YYYY-MM-DD): ").strip()
         if issued_on:
             if not re.match(r'^\d{4}-\d{2}(-\d{2})?$', issued_on):
@@ -149,7 +155,9 @@ class CredentialsManager(BaseManager):
             "title": {"en": title_en, "es": title_es},
             "level": {"en": level_en, "es": level_es} if level_en else "",
             "score": score,
+            "startedOn": started_on,
             "issuedOn": issued_on,
+            "expiresOn": "",
             "topics": topics,
             "skills": [{"en": e.strip(), "es": s.strip() if i < len(skills_es.split(',')) and skills_es else e.strip()} for i, (e, s) in enumerate(zip(skills_en.split(','), (skills_es.split(',') if skills_es else skills_en.split(','))))] if skills_en else [],
             "image": image,
@@ -295,13 +303,19 @@ class CredentialsManager(BaseManager):
         link_html = ""
         link = c.get('link', '')
         issued_formatted = format_date_i18n(issued)
+        started = c.get('startedOn', '')
+        if ctype == 'education' and started:
+            started_formatted = format_date_i18n(started)
+            date_range = f"{started_formatted} – {issued_formatted}"
+        else:
+            date_range = issued_formatted
         if link:
             if link.endswith('.pdf') or link.startswith('./'):
                 link_text = "((en))Verify((/en))((es))Verificar((/es)) PDF"
             else:
                 link_text = "((en))Verify credential((/en))((es))Verificar credencial((/es))"
             link_html = f'''
-        <span class="credential-date">{issued_formatted}</span>
+        <span class="credential-date">{date_range}</span>
         [{link_text}]({link}){{:target="_blank" class="credential-link"}}'''
 
         image = c.get('image', '')
