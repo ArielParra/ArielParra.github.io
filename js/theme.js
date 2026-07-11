@@ -44,6 +44,9 @@ function browserPrefersLight() {
  */
 document.addEventListener("DOMContentLoaded", () => {
   const themeButton = document.getElementById("themeButton");
+  if (themeButton) {
+    themeButton.addEventListener("click", () => toggleTheme(themeButton));
+  }
   let theme;
   if (cookieExists("theme")) {
     theme = getCookie("theme");

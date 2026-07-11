@@ -11,6 +11,7 @@
   <!--metadatas-->
   <meta   charset="UTF-8">
   <meta   name="viewport"        content="width=device-width, initial-scale=1">
+  <meta   http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
   <meta   name="keywords"        data-i18n-keywords-en="Ariel Parra, 404" data-i18n-keywords-es="Ariel Parra, 404" content="Ariel Parra, 404">
   <meta   name="description"     data-i18n-description-en="Ariel Parra 404 error page" data-i18n-description-es="Página de error 404 de Ariel Parra" content="Ariel Parra 404 error page">
   <meta   name="author"          content="Ariel Parra">
@@ -40,9 +41,9 @@
 <body>
 
   <div class="container">
-    <button type="button" onclick="toggleMenu(this)"  id="menuButton"   data-nav-shown="true"><span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span></button>
-    <button type="button" onclick="langButton(this)"  id="langButton"  data-i18n-title-en="Change language to" data-i18n-title-es="Cambiar idioma a" title="Change language to"><span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span></button>
-    <button type="button" onclick="toggleTheme(this)" id="themeButton" data-i18n-title-en="Change color theme to" data-i18n-title-es="Cambiar tema de color a" title="Change color theme to"> 🌗 </button>
+    <button type="button" id="menuButton"   data-nav-shown="true" aria-label="Toggle menu"><span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span></button>
+    <button type="button" id="langButton"  data-i18n-title-en="Change language to" data-i18n-title-es="Cambiar idioma a" title="Change language to" aria-label="Toggle language"><span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span></button>
+    <button type="button" id="themeButton" data-i18n-title-en="Change color theme to" data-i18n-title-es="Cambiar tema de color a" title="Change color theme to" aria-label="Toggle theme"> 🌗 </button>
   </div><!-- Buttons -->
 
   <nav>

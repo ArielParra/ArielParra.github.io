@@ -5,7 +5,6 @@ Usage:
   manage_portfolio.py generate    Generate portfolio/index.md from JSON
   manage_portfolio.py sort        Sort projects in JSON
   manage_portfolio.py list        List all projects
-  manage_portfolio.py add         Add a new project interactively
   manage_portfolio.py delete <id> Delete a project by ID
 """
 import json
@@ -14,8 +13,7 @@ import re
 from pathlib import Path
 
 from base_manager import BaseManager
-from utils.i18n import format_date_i18n
-from utils.cli import prompt_yesno
+from i18n import format_date_i18n
 PROJECTS_FILE = Path(__file__).resolve().parent.parent / \
     "portfolio" / "data" / "projects.json"
 if not PROJECTS_FILE.exists():
@@ -67,25 +65,6 @@ class PortfolioManager(BaseManager):
 
     def generate_id(self, title):
         return re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
-
-    def prompt_technologies(self):
-        print("\nTechnologies (comma-separated, choose from):")
-        for i, t in enumerate(self.TECH_OPTIONS, 1):
-            print(f"  {i}) {t}")
-        while True:
-            inp = input("Technologies []: ").strip()
-            if not inp:
-                return []
-            techs = []
-            for part in inp.split(','):
-                part = part.strip()
-                if part.isdigit() and 1 <= int(part) <= len(self.TECH_OPTIONS):
-                    techs.append(self.TECH_OPTIONS[int(part) - 1])
-                elif part.lower() in self.TECH_OPTIONS:
-                    techs.append(part.lower())
-                else:
-                    techs.append(part.lower())
-            return list(dict.fromkeys(techs))  # dedupe preserving order
 
     def get_tech_label(self, tech):
         """Return i18n tag string for a technology label."""
@@ -276,52 +255,6 @@ class PortfolioManager(BaseManager):
             print(f"{pid:<25} {title:<20} {techs}")
 
         print(f"\nTotal: {len(projects)} project(s)")
-        return 0
-
-    def cmd_add(self, args):
-        data = self.load_data()
-        print("\n=== Add New Project ===")
-
-        title = input("Title: ").strip()
-        if not title:
-            print("Title required.")
-            return 1
-
-        pid = input(f"ID [{self.generate_id(title)}]: ").strip(
-        ) or self.generate_id(title)
-        techs = self.prompt_technologies()
-
-        desc_en = input("Description (English): ").strip()
-        desc_es = input("Description (Spanish): ").strip()
-
-        image = input("Image URL/path: ").strip()
-        link = input("Project URL: ").strip()
-
-        new_project = {
-            "id": pid,
-            "title": title,
-            "technologies": techs,
-            "description": {"en": desc_en, "es": desc_es},
-            "image": image,
-            "link": link
-        }
-
-        existing = data.get('projects', [])
-        for i, p in enumerate(existing):
-            if p.get('id') == pid:
-                if prompt_yesno(f"Project '{pid}' exists. Overwrite?"):
-                    existing[i] = new_project
-                    print(f"Updated '{pid}'.")
-                else:
-                    print("Aborted.")
-                    return 0
-                break
-        else:
-            existing.append(new_project)
-            print(f"Added '{pid}'.")
-
-        data['projects'] = existing
-        self.save_data(data)
         return 0
 
     def cmd_get(self, args):

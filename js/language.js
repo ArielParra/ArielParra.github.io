@@ -133,6 +133,10 @@ function getDefaultLanguage() {
  * @description Initialize language on page load.
  */
 document.addEventListener("DOMContentLoaded", () => {
+  const langBtnElem = document.getElementById("langButton");
+  if (langBtnElem) {
+    langBtnElem.addEventListener("click", () => langButton(langBtnElem));
+  }
   let lang = getDefaultLanguage();
   if (lang !== "es") lang = "en";
   if (cookieExists("language")) {

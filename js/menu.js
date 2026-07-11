@@ -98,6 +98,9 @@ function showMenu(button) {
  */
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.getElementById("menuButton");
+  if (menuButton) {
+    menuButton.addEventListener("click", () => toggleMenu(menuButton));
+  }
 
   function updateMenuButtonText() {
     const i18nSpan = menuButton.querySelector(".i18n");

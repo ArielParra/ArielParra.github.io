@@ -6,8 +6,6 @@ import json
 import sys
 from pathlib import Path
 
-from utils.cli import prompt_yesno
-
 
 class BaseManager:
     def __init__(self, file_path, data_key):
@@ -41,19 +39,12 @@ class BaseManager:
             print(f"{self.data_key.capitalize()[:-1]} '{item_id}' not found.")
             return 1
 
-        if prompt_yesno(f"Delete '{item_id}'?"):
-            data[self.data_key] = new_items
-            self.save_data(data)
-            print(f"Deleted '{item_id}'.")
-        else:
-            print("Aborted.")
-            return 0
+        data[self.data_key] = new_items
+        self.save_data(data)
+        print(f"Deleted '{item_id}'.")
         return 0
 
     # These should be overridden by child classes
-    def cmd_add(self, args):
-        raise NotImplementedError
-
     def cmd_list(self, args):
         raise NotImplementedError
 
@@ -69,7 +60,7 @@ class BaseManager:
     def run(self):
         """Generic command dispatcher for CLI"""
         if len(sys.argv) < 2:
-            print("Commands: generate, sort, list, add, delete, get")
+            print("Commands: generate, sort, list, delete, get")
             return 0
 
         command = sys.argv[1]
@@ -95,7 +86,6 @@ class BaseManager:
                 i += 1
 
         commands = {
-            'add': self.cmd_add,
             'list': self.cmd_list,
             'get': self.cmd_get,
             'delete': self.cmd_delete,
