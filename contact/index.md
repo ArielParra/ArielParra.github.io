@@ -25,10 +25,10 @@ nav_current: 4
       <div class="center">
         <hr>
         ((en))
-        email: [arielemilioparra@gmail.com](mailto:arielemilioparra@gmail.com)
+        email: [arielemilioparra@gmail.com](mailto:arielemilioparra+website@gmail.com)
         ((/en))
         ((es))
-        correo: [arielemilioparra@gmail.com](mailto:arielemilioparra@gmail.com)
+        correo: [arielemilioparra@gmail.com](mailto:arielemilioparra+sitioweb@gmail.com)
         ((/es))
       </div>
     </div>
@@ -41,6 +41,30 @@ nav_current: 4
         ((/en))
         ((es))
         LinkedIn: [Ariel Emilio Parra Martínez](https://www.linkedin.com/in/parra-ariel/)
+        ((/es))
+      </div>
+    </div>
+    <div class="card">
+      ![alt="Codeforces" title="Codeforces" height="38"](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Codeforces_logo.svg/1280px-Codeforces_logo.svg.png)
+      <div class="center">
+        <hr>
+        ((en))
+        Codeforces: [ravary](https://codeforces.com/profile/ravary)
+        ((/en))
+        ((es))
+        Codeforces: [ravary](https://codeforces.com/profile/ravary)
+        ((/es))
+      </div>
+    </div>
+    <div class="card">
+      ![alt="GitHub" title="GitHub"  height="38"](./contact/img/GitHub_Lockup_White.png)
+      <div class="center">
+        <hr>
+        ((en))
+        GitHub: [ArielParra](https://github.com/ArielParra/)
+        ((/en))
+        ((es))
+        GitHub: [ArielParra](https://github.com/ArielParra/)
         ((/es))
       </div>
     </div>

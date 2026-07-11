@@ -138,6 +138,7 @@ function resetDescriptions() {
     }
   });
   truncateDescriptions();
+  truncateSkills();
 }
 
 /**

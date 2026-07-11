@@ -25,6 +25,9 @@ function applyLanguage(language) {
   document.querySelectorAll("[data-i18n-title-en]").forEach((el) => {
     el.setAttribute("title", el.getAttribute(`data-i18n-title-${language}`));
   });
+  document.querySelectorAll("[data-i18n-placeholder-en]").forEach((el) => {
+    el.setAttribute("placeholder", el.getAttribute(`data-i18n-placeholder-${language}`));
+  });
 
   // Update page title
 
