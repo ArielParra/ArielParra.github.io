@@ -1813,6 +1813,34 @@ nav_current: 3
     <div class="card" data-tags="award professional">
       <div class="credential-header">
         <div class="credential-title">
+          <span class="title-main">((en))Xbox Ambassador((/en))((es))Xbox Ambassador((/es))</span>
+          <span class="title-rank">((en))Volunteer((/en))((es))Volunteer((/es))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Customer Service((/en))((es))Servicio al Cliente((/es))</span>
+          <span class="credential-skill">((en))Technical Troubleshooting((/en))((es))Solución de Problemas Técnicos((/es))</span>
+          <span class="credential-skill">((en))Community Management((/en))((es))Gestión de Comunidad((/es))</span>
+          <span class="credential-skill">((en))Conflict Resolution((/en))((es))Resolución de Conflictos((/es))</span>
+          <span class="credential-skill">((en))Team Collaboration((/en))((es))Trabajo en Equipo((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Xbox Ambassador image((/en))((es))Xbox Ambassador imagen((/es))"](./credentials/img/XBOX_Ambassador.jpg)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Microsoft((/en))((es))Emitido por: Microsoft((/es))</span>
+        <span class="credential-date">((en))October 2024((/en))((es))Octubre 2024((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.xbox.com/es-MX/play/user/ravary212){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        ((en))Supported the global Xbox community by assisting players with platform questions, promoting positive online interactions, participating in community events, and providing product feedback. Developed skills in customer support, communication, teamwork, problem solving, and community moderation while contributing to a welcoming gaming environment.((/en))((es))Apoyé a la comunidad global de Xbox asistiendo a jugadores con dudas sobre la plataforma, promoviendo interacciones positivas en línea, participando en eventos de la comunidad y brindando comentarios sobre productos. Desarrollé habilidades en soporte al cliente, comunicación, trabajo en equipo y resolución de problemas, contribuyendo a un entorno de juego inclusivo.((/es))
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award professional">
+      <div class="credential-header">
+        <div class="credential-title">
           <span class="title-main">((en))Outstanding GPA Recognition - Computer Systems Engineering((/en))((es))Reconocimiento por Promedio Destacado - Ing. en Sistemas Computacionales((/es))</span>
           <span class="title-rank">((en))Academic Excellence Award((/en))((es))Reconocimiento a la Excelencia Académica((/es))</span>
           <span class="title-score"></span>
