@@ -96,7 +96,7 @@ def main():
 
     # HTML Files
     html_files = list(root_dir.rglob("*.html"))
-    html_files = [f for f in html_files if "node_modules" not in str(f)]
+    html_files = [f for f in html_files if "node_modules" not in str(f) and "templates" not in str(f)]
 
     # CSS Files
     css_files = list(root_dir.rglob("*.css"))

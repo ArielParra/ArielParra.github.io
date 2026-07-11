@@ -7,41 +7,45 @@
   <!--fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   <!--metadatas-->
-  <meta   charset="UTF-8">
-  <meta   name="viewport"        content="width=device-width, initial-scale=1">
-  <meta   http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
-  <meta   name="keywords"        data-i18n-keywords-en="Ariel Parra, website" data-i18n-keywords-es="Ariel Parra, sitio web" content="Ariel Parra, website">
-  <meta   name="description"     data-i18n-description-en="Ariel Parra Website!" data-i18n-description-es="¡Sitio web de Ariel Parra!" content="Ariel Parra Website!">
-  <meta   name="author"          content="Ariel Parra">
-  <title> Ariel Parra </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+  <meta name="keywords" data-i18n-keywords-en="Ariel Parra, website" data-i18n-keywords-es="Ariel Parra, sitio web" content="Ariel Parra, website">
+  <meta name="description" data-i18n-description-en="Ariel Parra Website!" data-i18n-description-es="¡Sitio web de Ariel Parra!" content="Ariel Parra Website!">
+  <meta name="author" content="Ariel Parra">
+  <title>Ariel Parra</title>
+
   <!-- CSS files -->
-  <link   rel="stylesheet"       href="./css/theme.css"  >
-  <link   rel="stylesheet"       href="./css/common.css" >
+  <link rel="stylesheet" href="./css/theme.css"  >
+  <link rel="stylesheet" href="./css/common.css" >
+
   <!-- Java Scripts preloads -->
-  <link   rel="preload"          href="./js/cookies.js"  as="script">
-  <link   rel="preload"          href="./js/language.js" as="script">
-  <link   rel="preload"          href="./js/theme.js"    as="script">
-  <link   rel="preload"          href="./js/menu.js"     as="script">
-  <link   rel="preload"          href="./js/favicon.js"  as="script">
-  <link   rel="preload"          href="./js/debug.js"    as="script">
+  <link rel="preload" href="./js/cookies.js"  as="script">
+  <link rel="preload" href="./js/language.js" as="script">
+  <link rel="preload" href="./js/theme.js"    as="script">
+  <link rel="preload" href="./js/menu.js"     as="script">
+  <link rel="preload" href="./js/favicon.js"  as="script">
+  <link rel="preload" href="./js/debug.js"    as="script">
+
   <!-- Java Scripts defers -->
-  <script defer                  src ="./js/cookies.js">  </script>
-  <script defer                  src ="./js/language.js"> </script>
-  <script defer                  src ="./js/theme.js">    </script>
-  <script defer                  src ="./js/menu.js">     </script>
-  <script defer                  src ="./js/favicon.js">  </script>
-  <script defer                  src ="./js/debug.js">    </script>
+  <script defer src="./js/cookies.js">  </script>
+  <script defer src="./js/language.js"> </script>
+  <script defer src="./js/theme.js">    </script>
+  <script defer src="./js/menu.js">     </script>
+  <script defer src="./js/favicon.js">  </script>
+  <script defer src="./js/debug.js">    </script>
+
   <!-- Favicons -->
-  <link   rel="apple-touch-icon" href="./img/apple-touch-icon.png" sizes="180x180">
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" sizes="180x180">
 </head>
 
 <body>
 
   <div class="container">
-    <button type="button" id="menuButton"   data-nav-shown="true" aria-label="Toggle menu"><span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span></button>
-    <button type="button" id="langButton"  data-i18n-title-en="Change language to" data-i18n-title-es="Cambiar idioma a" title="Change language to" aria-label="Toggle language"><span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span></button>
+    <button type="button" id="menuButton" data-nav-shown="true" aria-label="Toggle menu"><span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span></button>
+    <button type="button" id="langButton" data-i18n-title-en="Change language to" data-i18n-title-es="Cambiar idioma a" title="Change language to" aria-label="Toggle language"><span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span></button>
     <button type="button" id="themeButton" data-i18n-title-en="Change color theme to" data-i18n-title-es="Cambiar tema de color a" title="Change color theme to" aria-label="Toggle theme"> 🌗 </button>
   </div><!-- Buttons -->
 
@@ -51,6 +55,9 @@
     <a href="./credentials/" class="NotCurrent" title="         "> <span><span class="i18n" data-i18n-en="credentials" data-i18n-es="acreditaciones">credentials</span></span></a>
     <a href="./contact/"     class="NotCurrent" title="         "> <span><span class="i18n" data-i18n-en="contact" data-i18n-es="contacto">contact</span>              </span></a>
   </nav>
+
+
+
 
 
 <div class="container">
@@ -151,5 +158,6 @@
 <!-- lang button 
 <div class="container"> <button type="button" onclick="langButton()">lang</button></div>
 -->
+
 </body>
 </html>
