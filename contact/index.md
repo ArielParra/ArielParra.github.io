@@ -45,18 +45,6 @@ nav_current: 4
       </div>
     </div>
     <div class="card">
-      ![alt="Codeforces" title="Codeforces" height="38"](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Codeforces_logo.svg/1280px-Codeforces_logo.svg.png)
-      <div class="center">
-        <hr>
-        ((en))
-        Codeforces: [ravary](https://codeforces.com/profile/ravary)
-        ((/en))
-        ((es))
-        Codeforces: [ravary](https://codeforces.com/profile/ravary)
-        ((/es))
-      </div>
-    </div>
-    <div class="card">
       ![alt="GitHub" title="GitHub"  height="38"](./contact/img/GitHub_Lockup_White.png)
       <div class="center">
         <hr>
@@ -65,6 +53,18 @@ nav_current: 4
         ((/en))
         ((es))
         GitHub: [ArielParra](https://github.com/ArielParra/)
+        ((/es))
+      </div>
+    </div>
+    <div class="card">
+      ![alt="Codeforces" title="Codeforces" height="38"](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Codeforces_logo.svg/1280px-Codeforces_logo.svg.png)
+      <div class="center">
+        <hr>
+        ((en))
+        Codeforces: [ravary](https://codeforces.com/profile/ravary)
+        ((/en))
+        ((es))
+        Codeforces: [ravary](https://codeforces.com/profile/ravary)
         ((/es))
       </div>
     </div>

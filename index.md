@@ -89,7 +89,7 @@ nav_current: 1
         </div>
         <hr>
         <p>
-        ((en))"Knowledge is power"((/en))((es))"El conocimiento es poder"((/es))- Francis Bacon
+        ((en))Knowledge is power((/en))((es))El conocimiento es poder((/es)) - Francis Bacon
         </p>
         <div class="column">
             **((en))Technical((/en))((es))Habilidades Técnicas((/es)):**

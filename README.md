@@ -88,7 +88,9 @@ content here
 
 To maintain high code quality and standard compliance, the project includes an automated linting and validation pipeline:
 
-- **HTML & CSS Validation**: Uses `scripts/validate.py` to check all generated HTML and CSS files against the official W3C Validation APIs (Nu HTML Checker & Jigsaw CSS Validator).
+- **HTML & CSS Validation**: Uses `scripts/validate.py` to check all generated HTML and CSS files against the official W3C Validation APIs (Nu HTML Checker & Jigsaw CSS Validator). Gracefully handles rate limits.
+- **Lighthouse Auditing**: Uses Google's Lighthouse (`npx lighthouse`) to automatically audit performance, accessibility, best practices, and SEO. Generates an HTML report during validation.
+- **Cross-Browser UI Testing**: Uses **Playwright** (`test_firefox.py`) to run headless tests in the Firefox Gecko engine, ensuring perfect layout stability and zero console errors across different browsers.
 - **JavaScript Linting**: Uses **ESLint** with a relaxed `airbnb-base` configuration tailored for a vanilla global-scope architecture.
 - **Python Linting**: Uses **Flake8** to enforce PEP8 standards and **Autopep8** for automatic formatting of the custom CLI tools.
 - **JSON Schema Validation**: Uses `scripts/validate_json.py` to validate `projects.json` and `credentials.json` against their respective schemas.
@@ -96,8 +98,8 @@ To maintain high code quality and standard compliance, the project includes an a
 Run the full validation suite using:
 
 ```bash
-make validate  # Validates HTML and CSS via W3C
-make lint      # Lints JS files via ESLint and Python files via Flake8
+make validate  # Validates HTML/CSS via W3C and runs Lighthouse
+make lint      # Lints JS via ESLint, Python via Flake8, and validates JSON schemas
 ```
 
 ## Credentials Management
