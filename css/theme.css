@@ -47,7 +47,7 @@
   --border: var(--gray2);
   --text: var(--white);
 
-  --HTML_BG: var(--black);
+  --HTML_BG: #7e838e; /* intermediate background color */
   --card_BG: var(--gray3);
 
   --hr: var(--text);
@@ -71,6 +71,11 @@
   --nav-a-hover_BG: var(--white);
   --nav-a-hover-span_color: var(--card_BG);
 
+}
+
+/* Apply actual dark background when theme is set */
+.theme-dark {
+  --HTML_BG: var(--black);
 }
 
 /*Default style is dark mode, only need change light colors*/
