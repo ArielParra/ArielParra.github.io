@@ -180,7 +180,7 @@ class PortfolioManager(BaseManager):
         tech_data_json = json.dumps(tech_data, ensure_ascii=False)
 
         # --- Filter card ---
-        lines.append('  <div class="container">')
+        lines.append('  <div class="container" style="position: relative; z-index: 10;">')
         lines.append('  <div class="card" id="filter-techs">')
         lines.append("  <hr>")
         lines.append('  <div class="center">')

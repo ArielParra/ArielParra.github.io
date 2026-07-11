@@ -10,7 +10,7 @@ nav_current: 2
 
 <h1 class="sr-only">((en))Portfolio((/en))((es))Portafolio((/es))</h1>
 
-  <div class="container">
+  <div class="container" style="position: relative; z-index: 10;">
   <div class="card" id="filter-techs">
   <hr>
   <div class="center">
