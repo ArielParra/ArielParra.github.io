@@ -20,7 +20,7 @@
   /* Typography */
   --font-body: 'Inter', sans-serif;
   --font-display: 'Pixelify Sans', cursive;
-  
+
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-lg: 1.125rem;
@@ -76,7 +76,7 @@
 /*Default style is dark mode, only need change light colors*/
 .theme-light {
 
-  --border: var(--gray3);
+  --border: var(--gray2);
   --text: var(--black);
 
   --HTML_BG: var(--white);

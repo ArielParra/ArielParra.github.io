@@ -176,6 +176,27 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   display: none;
   z-index: 100;
+  scrollbar-width: thin;
+  scrollbar-color: var(--aqua) var(--card_BG);
+}
+
+#tech-suggestions::-webkit-scrollbar {
+  width: 12px;
+}
+
+#tech-suggestions::-webkit-scrollbar-track {
+  background: var(--card_BG);
+  border-radius: 0 0 6px 0;
+}
+
+#tech-suggestions::-webkit-scrollbar-thumb {
+  background: var(--aqua);
+  border-radius: 6px;
+  border: 3px solid var(--card_BG);
+}
+
+#tech-suggestions::-webkit-scrollbar-thumb:hover {
+  background: var(--a-href-hover);
 }
 
 .tech-suggestion {
@@ -184,6 +205,15 @@
   color: var(--text);
   cursor: pointer;
   transition: background-color 0.15s;
+  border-bottom: 1px solid var(--button_border);
+}
+
+.tech-suggestion:last-child {
+  border-bottom: none;
+}
+
+.tech-suggestion:nth-child(even) {
+  background: var(--button_BG); /* Using button_BG which is slightly different than card_BG to alternate */
 }
 
 .tech-suggestion:hover {
