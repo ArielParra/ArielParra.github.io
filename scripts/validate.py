@@ -45,7 +45,7 @@ def validate_html(file_path):
             return len(errors) == 0
     except Exception as e:
         if "429" in str(e):
-            print(f"\n  ⚠️  WARNING: W3C HTML Validator rate limit reached (HTTP Error 429).")
+            print("\n  ⚠️  WARNING: W3C HTML Validator rate limit reached (HTTP Error 429).")
             print("  Skipping remaining HTML files. Please wait a while before running validation again.")
             return "429"
         print(f"  ❌ Failed to connect or validate: {e}")
@@ -93,7 +93,7 @@ def validate_css(file_path):
             return False
     except Exception as e:
         if "429" in str(e):
-            print(f"\n  ⚠️  WARNING: W3C CSS Validator rate limit reached (HTTP Error 429).")
+            print("\n  ⚠️  WARNING: W3C CSS Validator rate limit reached (HTTP Error 429).")
             print("  Skipping remaining CSS files. Please wait a while before running validation again.")
             return "429"
         print(f"  ❌ Failed to connect or validate: {e}")
@@ -115,7 +115,7 @@ def main():
 
     print("=== HTML Validation ===")
     for f in html_files:
-        time.sleep(3) # Avoid W3C 429 Too Many Requests rate limit
+        time.sleep(3)  # Avoid W3C 429 Too Many Requests rate limit
         res = validate_html(f)
         if res == "429":
             all_passed = False
@@ -125,7 +125,7 @@ def main():
 
     print("\n=== CSS Validation ===")
     for f in css_files:
-        time.sleep(3) # Avoid W3C 429 Too Many Requests rate limit
+        time.sleep(3)  # Avoid W3C 429 Too Many Requests rate limit
         res = validate_css(f)
         if res == "429":
             all_passed = False

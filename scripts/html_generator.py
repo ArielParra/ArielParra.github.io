@@ -61,7 +61,6 @@ def generate_html(md_dict, md_content):
 
     max_href_length = max(len(item["href"]) for item in nav_items)
     max_class_length = max(len("current"), len("NotCurrent"))
-    max_title_length = max(len(item["title"]) for item in nav_items)
     max_label_length = max(len(item["label"]) for item in nav_items)
 
     nav_html = ""
