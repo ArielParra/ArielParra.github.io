@@ -76,7 +76,7 @@ def generate_html(md_dict, md_content):
             html_content += f'  <script defer                  src ="./js/{js_file}.js"> {space_padding_js(js_file)}</script>\n'
 
     html_content += """  <!-- Favicons -->
-  <link   rel="apple-touch-icon" href="./img/ArielParra.jpg"   type="image/webp" sizes="180x180">
+  <link   rel="apple-touch-icon" href="./img/apple-touch-icon.png" sizes="180x180">
 </head>
 
 <body>

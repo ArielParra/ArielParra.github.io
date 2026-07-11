@@ -172,3 +172,4 @@ After adding or modifying projects in `projects.json`, run `generate` to rebuild
 
 - Unknown Pleasures visualization for 404 page, originally from [Max Halford/procedural-art](https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html)
 - 88x31 Button Maker by [sadgrl](https://goblin-heart.net/sadgrl/projects/88x31-button-maker)
+- Favicon Space Invader imagery inspired by Taito and French street artist Invader under fair use, made using [LibreSprite](https://libresprite.github.io/)

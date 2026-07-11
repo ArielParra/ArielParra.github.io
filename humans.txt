@@ -8,12 +8,17 @@
 
   Max Halford for the unknown_pleasures script used for my 404 page, recovered from:
   https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html
-  
+  sadgrl's 88x31 Button Maker at:
+  https://sadgrlonline.github.io/88x31-button-maker/
+  Favicon imagery inspired by Taito's classic Space Invaders and the French street artist Invader under fair use. Made using LibreSprite: https://libresprite.github.io/
 
 /* SITE */
   Last update: 2026-07-11
   Standards: W3 HTML5, W3 CSS3
-  Software: VSCode, git
+  Software: VSCodium, git, Python 3.14, LibreSprite, ImageMagick
+  Host: GitHub Pages
+  Repository: https://github.com/ArielParra/ArielParra.github.io
 
 /* CONTACT */
+  https://arielparra.github.io/contact
   
