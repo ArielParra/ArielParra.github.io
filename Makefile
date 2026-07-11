@@ -68,6 +68,14 @@ clean:
 
 validate:
 	$(PYTHON) $(call FixPath,scripts/validate.py)
+	@echo "Running Lighthouse..."
+	$(PYTHON) -m http.server 8000 & \
+	PID=$$! ; \
+	sleep 2 ; \
+	${NPX} -y lighthouse http://localhost:8000/ --output html --output-path ./lighthouse-report.html --chrome-flags="--headless --no-sandbox" ; \
+	RESULT=$$? ; \
+	kill $$PID ; \
+	exit $$RESULT
 
 lint:
 	${NPX} eslint "js/**/*.js"

@@ -8,6 +8,7 @@ import urllib.request
 import urllib.parse
 from pathlib import Path
 import sys
+import time
 
 
 def validate_html(file_path):
@@ -43,6 +44,10 @@ def validate_html(file_path):
 
             return len(errors) == 0
     except Exception as e:
+        if "429" in str(e):
+            print(f"\n  ⚠️  WARNING: W3C HTML Validator rate limit reached (HTTP Error 429).")
+            print("  Skipping remaining HTML files. Please wait a while before running validation again.")
+            return "429"
         print(f"  ❌ Failed to connect or validate: {e}")
         return False
 
@@ -87,6 +92,10 @@ def validate_css(file_path):
 
             return False
     except Exception as e:
+        if "429" in str(e):
+            print(f"\n  ⚠️  WARNING: W3C CSS Validator rate limit reached (HTTP Error 429).")
+            print("  Skipping remaining CSS files. Please wait a while before running validation again.")
+            return "429"
         print(f"  ❌ Failed to connect or validate: {e}")
         return False
 
@@ -96,7 +105,7 @@ def main():
 
     # HTML Files
     html_files = list(root_dir.rglob("*.html"))
-    html_files = [f for f in html_files if "node_modules" not in str(f) and "templates" not in str(f)]
+    html_files = [f for f in html_files if "node_modules" not in str(f) and "templates" not in str(f) and "lighthouse-report.html" not in str(f)]
 
     # CSS Files
     css_files = list(root_dir.rglob("*.css"))
@@ -106,14 +115,22 @@ def main():
 
     print("=== HTML Validation ===")
     for f in html_files:
-
-        if not validate_html(f):
+        time.sleep(3) # Avoid W3C 429 Too Many Requests rate limit
+        res = validate_html(f)
+        if res == "429":
+            all_passed = False
+            break
+        elif not res:
             all_passed = False
 
     print("\n=== CSS Validation ===")
     for f in css_files:
-
-        if not validate_css(f):
+        time.sleep(3) # Avoid W3C 429 Too Many Requests rate limit
+        res = validate_css(f)
+        if res == "429":
+            all_passed = False
+            break
+        elif not res:
             all_passed = False
 
     if all_passed:

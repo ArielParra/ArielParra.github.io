@@ -9,3 +9,5 @@ node_modules/
 .kiro/specs/
 .kiro/skills/
 .kiro/execution-profiles.json
+lighthouse-report.html
+lighthouse-report.json
