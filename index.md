@@ -11,7 +11,7 @@ nav_current: 1
 <div class="container">
     <div class="card">
         <hr>
-        ![alt="((en))My photo((/en))((es))mi foto((/es))" title="((en))me((/en))((es))yo((/es))"](./img/ArielParra.jpg)
+        ![width="4068" height="4068" alt="((en))My photo((/en))((es))mi foto((/es))" title="((en))me((/en))((es))yo((/es))"](./img/ArielParra.jpg)
         <hr>
         <div class="center">
             # ((en))Hello, I'm((/en))((es))Hola, soy((/es))
@@ -108,13 +108,13 @@ nav_current: 1
     </div>
 </div>
 <footer>
-    [![class="img-88x31" alt="((en))Linkback((/en))((es))Enlace((/es))" title="HTTP Secure = HTTPS"](./img/88x31_arielparra_github_io.png)](https://arielparra.github.io/){:target="_blank"}
-    [![class="img-88x31" alt="Github" title="Github"](./img/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}
-    [![class="img-88x31" alt="email" title="arielemilioparra@gmail.com"](./img/88x31_email.png)](mailto:arielemilioparra@gmail.com/){:target="_blank"}
-    [![class="img-88x31" alt="Nord color pallete" title="Nord theme website"](./img/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}
-    ![alt="((en))Made in Mexico!((/en))((es))¡Hecho en México!((/es))" title="((en))Made in Mexico((/en))((es))Hecho en México((/es))" class="img-88x31"](./img/88x31_Mexico.png)
-    [![class="img-88x31" alt="Valid CSS" title="Valid CSS"](./img/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io){:target="_blank"}
-    [![class="img-88x31" alt="Valid HTML" title="Valid HTML"](./img/88x31_valid-html.png)](https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io){:target="_blank"}  
+    [![class="img-88x31" width="88" height="31" alt="((en))Linkback((/en))((es))Enlace((/es))" title="HTTP Secure = HTTPS"](./img/88x31_arielparra_github_io.png)](https://arielparra.github.io/){:target="_blank"}
+    [![class="img-88x31" width="88" height="31" alt="Github" title="Github"](./img/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}
+    [![class="img-88x31" width="88" height="31" alt="email" title="arielemilioparra@gmail.com"](./img/88x31_email.png)](mailto:arielemilioparra@gmail.com/){:target="_blank"}
+    [![class="img-88x31" width="88" height="31" alt="Nord color pallete" title="Nord theme website"](./img/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}
+    ![width="88" height="31" alt="((en))Made in Mexico!((/en))((es))¡Hecho en México!((/es))" title="((en))Made in Mexico((/en))((es))Hecho en México((/es))" class="img-88x31"](./img/88x31_Mexico.png)
+    [![class="img-88x31" width="88" height="31" alt="Valid CSS" title="Valid CSS"](./img/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io){:target="_blank"}
+    [![class="img-88x31" width="88" height="31" alt="Valid HTML" title="Valid HTML"](./img/88x31_valid-html.png)](https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io){:target="_blank"}  
 </footer>
 <!-- made with love -->
 <div class="container">

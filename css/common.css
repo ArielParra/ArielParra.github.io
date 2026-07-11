@@ -25,12 +25,6 @@ html {
   height: auto;
 }
 
-body {
-  opacity: 0;
-  transform: translateY(-20px);
-  animation: fadeInFromBottom 500ms ease forwards;
-}
-
 @keyframes fadeInFromBottom {
 
   /* load in animation */
@@ -122,6 +116,9 @@ nav {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInFromBottom 500ms ease forwards;
 }
 
 nav>a {
@@ -238,6 +235,9 @@ input:checked {
   justify-content: center;
   max-width: 60rem;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInFromBottom 500ms ease forwards;
 }
 
 .max-width {

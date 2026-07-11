@@ -23,13 +23,13 @@ def generate_html(md_dict, md_content):
                   "title": "Home Page",
                   "label": '<span class="i18n" data-i18n-en="~/" data-i18n-es="~/">~/</span>'},
                  {"href": portfolio_path,
-                  "title": "",
+                  "title": "Portfolio Page",
                   "label": '<span class="i18n" data-i18n-en="portfolio" data-i18n-es="portafolio">portfolio</span>'},
                  {"href": credentials_path,
-                  "title": "",
+                  "title": "Credentials Page",
                   "label": '<span class="i18n" data-i18n-en="credentials" data-i18n-es="acreditaciones">credentials</span>'},
                  {"href": contact_path,
-                  "title": "",
+                  "title": "Contact Page",
                   "label": '<span class="i18n" data-i18n-en="contact" data-i18n-es="contacto">contact</span>'},
                  ]
 
@@ -71,9 +71,7 @@ def generate_html(md_dict, md_content):
                      " " * (max_href_length - len(item["href"])) +
                      f' class="{class_name}"' +
                      " " * (max_class_length - len(class_name)) +
-                     f' title="{item["title"]}' +
-                     " " * (max_title_length - len(item["title"])) +
-                     f'"> <span>{item["label"]}' +
+                     f' title="{item["title"]}"> <span>{item["label"]}' +
                      " " * (max_label_length - len(item["label"])) +
                      '</span></a>\n')
 
