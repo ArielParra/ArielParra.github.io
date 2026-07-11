@@ -7,13 +7,15 @@ make              # Build changed pages incrementally
 make index        # Build specific page
 make validate     # Validates HTML and CSS via W3C
 make lint         # Lints JS, Python, and validates JSON schemas
+make sitemap      # Update sitemap.xml timestamps
+make humans       # Update humans.txt timestamp
 make clean        # Remove generated HTML
 ```
 
 ## Architecture
 
 - **Source**: `*.md` files with YAML frontmatter (`---key: value---`)
-- **Generator**: `scripts/md2html.py` - custom Python converter (no dependencies)
+- **Generator**: `scripts/md2html.py` (orchestrator), `scripts/md_parser.py`, `scripts/html_generator.py` - custom Python converter
 - **Output**: Static HTML in same directory
 
 ## Markdown Format
@@ -61,7 +63,11 @@ content here
 
 ## Key Files
 
-- `scripts/md2html.py` - HTML generator
+- `scripts/md2html.py` - HTML generator orchestrator
+- `scripts/md_parser.py` - Markdown to HTML parsing logic
+- `scripts/html_generator.py` - HTML template assembly
+- `scripts/generate_sitemap.py` - Generates `sitemap.xml`
+- `scripts/update_humans.py` - Updates `humans.txt` date
 - `scripts/manage_portfolio.py` - CLI tool for portfolio.json
 - `scripts/manage_credentials.py` - CLI tool for credentials.json
 - `scripts/base_manager.py` - OOP base class for data managers

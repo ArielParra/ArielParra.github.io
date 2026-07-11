@@ -9,6 +9,8 @@ Built with plain HTML, CSS, and JavaScript—following HTML5 standards without b
 ```bash
 make              # Build changed pages incrementally
 make index        # Build specific page
+make sitemap      # Update sitemap.xml
+make humans       # Update humans.txt
 make clean        # Remove generated HTML
 ```
 
@@ -18,7 +20,12 @@ make clean        # Remove generated HTML
 ├── Makefile            # Build automation
 ├── *.md                # Source files with YAML frontmatter
 ├── scripts/            # Python build and management scripts
-│   ├── md2html.py             # Python static site generator
+│   ├── md2html.py             # Orchestrator for the static site generator
+│   ├── md_parser.py           # Markdown parsing logic
+│   ├── html_generator.py      # HTML generation logic
+│   ├── i18n.py                # Internationalization helper
+│   ├── generate_sitemap.py    # Auto-updates sitemap.xml dates
+│   ├── update_humans.py       # Auto-updates humans.txt date
 │   ├── manage_portfolio.py    # CLI tool to manage portfolio JSON
 │   ├── manage_credentials.py  # CLI tool to manage credentials JSON
 │   └── base_manager.py        # OOP Base class for CLI tools
@@ -71,7 +78,7 @@ content here
 
 - **No dependencies for core website**: Vanilla HTML, CSS, JavaScript
 - **Lightweight**: No frameworks, no bundlers for the frontend.
-- **Custom site generator**: Python-based `md2html.py`
+- **Custom site generator**: Python-based generator (`md2html.py`, `md_parser.py`, `html_generator.py`)
 - **Theming**: Manual light/dark mode support
 - **Internationalization**: Auto language detection
 - **Responsive**: Custom mobile-first design
@@ -120,7 +127,6 @@ Contains all education records, certifications, certificates, and badges organiz
 A CLI tool for managing credentials data:
 
 ```bash
-python scripts/manage_credentials.py add          # Add new credential (interactive)
 python scripts/manage_credentials.py list        # List all credentials
 python scripts/manage_credentials.py list --sort year    # Sort by year
 python scripts/manage_credentials.py list --type certification  # Filter by type
@@ -153,7 +159,6 @@ Contains all your portfolio projects:
 A CLI tool for managing portfolio data:
 
 ```bash
-python scripts/manage_portfolio.py add          # Add new project (interactive)
 python scripts/manage_portfolio.py list         # List all projects
 python scripts/manage_portfolio.py get <id>     # View specific project
 python scripts/manage_portfolio.py delete <id>  # Delete project

@@ -10,7 +10,7 @@ endif
 
 script := scripts/md2html.py
 
-all: index portfolio contact credentials 404
+all: index portfolio contact credentials 404 sitemap humans
 
 # Index
 index: index.html
@@ -49,6 +49,16 @@ credentials/index.md: credentials/data/credentials.json scripts/manage_credentia
 404.html: 404.md $(script)
 	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
 
+# Sitemap
+sitemap:
+	@echo "Generating sitemap.xml..."
+	$(PYTHON) $(call FixPath,scripts/generate_sitemap.py)
+
+# Humans.txt
+humans:
+	@echo "Updating humans.txt..."
+	$(PYTHON) $(call FixPath,scripts/update_humans.py)
+
 clean:
 	rm -f $(call FixPath,./index.html)
 	rm -f $(call FixPath,./portfolio/index.html)
@@ -67,4 +77,4 @@ lint:
 	$(PYTHON) $(call FixPath,scripts/validate_json.py)
 	@echo "🎉 All JSON files passed validation!"
 	
-.PHONY: all clean index portfolio_md portfolio contact credentials_md credentials 404 validate lint
+.PHONY: all clean index portfolio_md portfolio contact credentials_md credentials 404 sitemap humans validate lint

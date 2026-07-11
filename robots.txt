@@ -1,6 +1,6 @@
-# Disallow all web crawlers from accessing the site
+# Allow all web crawlers to access the site
 User-agent: *
-Disallow: /
+Allow: /
 
 # Sitemap location
-Sitemap: /sitemap.xml
+Sitemap: https://ArielParra.github.io/sitemap.xml
