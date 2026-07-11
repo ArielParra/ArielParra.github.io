@@ -48,7 +48,6 @@ def main():
             all_passed = False
 
     if all_passed:
-        print("🎉 All JSON files passed schema validation!")
         sys.exit(0)
     else:
         print("⚠️  Some JSON files failed validation.")
