@@ -11,7 +11,7 @@ nav_current: 1
 <div class="container">
     <div class="card">
         <hr>
-        ![alt="((en))My photo((/en))((es))mi foto((/es))" title="((en))me((/en))((es))yo((/es))"](./img/ArielParra.jpg)   
+        ![alt="((en))My photo((/en))((es))mi foto((/es))" title="((en))me((/en))((es))yo((/es))"](./img/ArielParra.jpg)
         <hr>
         <div class="center">
             # ((en))Hello, I'm((/en))((es))Hola, soy((/es))
@@ -24,20 +24,20 @@ nav_current: 1
             <p></p>
             ## ((en))Here you will find my portfolio of digital applications and projects, my credentials, my contact information, and more about my professional journey.((/en))((es))Aquí encontrarás mi portafolio de aplicaciones digitales y proyectos, mis acreditaciones, mi información de contacto y más sobre mi trayectoria profesional.((/es))
         </div>
-    </div> 
+    </div>
     <div class="card">
         <hr>
         <div class="center">
             ### About me
-        </div> 
+        </div>
         <hr>
         <div class="justify">
             <p>
             ((en))
-            Hi, I'm **Ariel Emilio Parra Martínez**, a 22-year-old Systems Engineering student at *Universidad Autónoma de Aguascalientes* with a cumulative average of 9.34/10 (equivalent to 3.7 GPA). I'm passionate about programming, especially in **C and C++**. I have been using **Linux** as my daily driver for over four years.
+            Hi, I'm **Ariel Emilio Parra Martínez**, a 22-year-old Systems Engineering student at *Universidad Autónoma de Aguascalientes* with a cumulative average of 9.33/10 (equivalent to 3.7 GPA). I'm passionate about programming, especially in **C and C++**. I have been using **Linux** as my daily driver for over four years.
             ((/en))
             ((es))
-            Hola, soy **Ariel Emilio Parra Martínez**, un estudiante de Ingeniería en Sistemas Computacionales de 22 años en la *Universidad Autónoma de Aguascalientes*, con un promedio general de 9.34/10 (equivalente a 3.7 GPA). Me apasiona la programación, especialmente en **C y C++**. He estado usando **Linux** como mi sistema operativo principal durante más de cuatro años.
+            Hola, soy **Ariel Emilio Parra Martínez**, un estudiante de Ingeniería en Sistemas Computacionales de 22 años en la *Universidad Autónoma de Aguascalientes*, con un promedio general de 9.33/10 (equivalente a 3.7/4.0 GPA). Me apasiona la programación, especialmente en **C y C++**. He estado usando **Linux** como mi sistema operativo principal durante más de cuatro años.
             ((/es))
             </p>
             <p>
@@ -57,7 +57,7 @@ nav_current: 1
             ((/es))
             </p>
         </div>
-    </div> 
+    </div>
     <div class="card">
         <div class="center">
             ### Philosophy
@@ -81,7 +81,7 @@ nav_current: 1
             ((/es))
             </p>
         </div>
-    </div> 
+    </div>
     <div class="card">
         <hr>
         <div class="center">
@@ -105,15 +105,15 @@ nav_current: 1
             - ((en))French (Conversational)((/en))((es))Francés (Conversacional)((/es))
             - ((en))Portuguese (Basic)((/en))((es))Portugués (Básico)((/es))
         </div>
-    </div> 
-</div> 
+    </div>
+</div>
 <footer>
     [![class="img-88x31" alt="((en))Linkback((/en))((es))Enlace((/es))" title="HTTP Secure = HTTPS"](./img/88x31_arielparra_github_io.png)](https://arielparra.github.io/){:target="_blank"}
-    [![class="img-88x31" alt="Github" title="Github"](./img/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}   
-    [![class="img-88x31" alt="email" title="arielemilioparra@gmail.com"](./img/88x31_email.png)](mailto:arielemilioparra@gmail.com/){:target="_blank"}   
-    [![class="img-88x31" alt="Nord color pallete" title="Nord theme website"](./img/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}    
-    ![alt="((en))Made in Mexico!((/en))((es))¡Hecho en México!((/es))" title="((en))Made in Mexico((/en))((es))Hecho en México((/es))" class="img-88x31"](./img/88x31_Mexico.png)   
-    [![class="img-88x31" alt="Valid CSS" title="Valid CSS"](./img/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io){:target="_blank"}    
+    [![class="img-88x31" alt="Github" title="Github"](./img/88x31_github.png)](https://github.com/ArielParra/){:target="_blank"}
+    [![class="img-88x31" alt="email" title="arielemilioparra@gmail.com"](./img/88x31_email.png)](mailto:arielemilioparra@gmail.com/){:target="_blank"}
+    [![class="img-88x31" alt="Nord color pallete" title="Nord theme website"](./img/88x31_nord.png)](https://www.nordtheme.com){:target="_blank"}
+    ![alt="((en))Made in Mexico!((/en))((es))¡Hecho en México!((/es))" title="((en))Made in Mexico((/en))((es))Hecho en México((/es))" class="img-88x31"](./img/88x31_Mexico.png)
+    [![class="img-88x31" alt="Valid CSS" title="Valid CSS"](./img/88x31_valid-css.png)](https://jigsaw.w3.org/css-validator/validator?uri=arielparra.github.io){:target="_blank"}
     [![class="img-88x31" alt="Valid HTML" title="Valid HTML"](./img/88x31_valid-html.png)](https://validator.w3.org/nu/?doc=https%3A%2F%2Farielparra.github.io){:target="_blank"}  
 </footer>
 <!-- made with love -->
