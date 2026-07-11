@@ -26,8 +26,9 @@ def validate_html(file_path):
             result = json.loads(response.read().decode('utf-8'))
             messages = result.get('messages', [])
             errors = [m for m in messages if m.get('type') == 'error']
-            warnings = [m for m in messages if m.get(
-                'type') == 'info' and m.get('subType') == 'warning']
+            warnings = [m for m in messages if m.get('type') == 'info' and m.get('subType') == 'warning']
+            # Filter out false-positive CSP warnings caused by validating local files without an origin
+            warnings = [m for m in warnings if "Content Security Policy" not in m.get('message', '')]
 
             if not errors and not warnings:
                 print("  ✅ Passed")

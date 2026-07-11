@@ -176,6 +176,16 @@ function displaySVG() {
  */
 document.addEventListener("DOMContentLoaded", () => {
   displaySVG();
+  
+  const btnSVG = document.getElementById("exportSVG");
+  if (btnSVG) {
+    btnSVG.addEventListener("click", function() { exportSVG(this); });
+  }
+
+  const btnPNG = document.getElementById("exportPNG");
+  if (btnPNG) {
+    btnPNG.addEventListener("click", function() { exportPNG(this); });
+  }
 });
 
 /**
