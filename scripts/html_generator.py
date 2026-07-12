@@ -24,7 +24,7 @@ def generate_html(md_dict, md_content, language='en'):
         if lang_code == language:
             lang_links += f'<button type="button" style="background-color: var(--btn-hover_BG); border-color: var(--btn-hover_border); pointer-events: none;">{lang_code.upper()}</button>\n'
         else:
-            lang_links += f'<button type="button" onclick="window.location.href=\'{href}\'" title="Change language to {lang_code.upper()}">{lang_code.upper()}</button>\n'
+            lang_links += f'<button type="button" onclick="changeLanguage(\'{lang_code}\', \'{href}\')" title="Change language to {lang_code.upper()}">{lang_code.upper()}</button>\n'
 
     title_content = extract_translation(md_dict.get('title', ''), language)
     keys_raw = ', '.join(md_dict.get('keywords', []))
@@ -199,8 +199,10 @@ def generate_html(md_dict, md_content, language='en'):
         redirect_script = """
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-        var lang = navigator.language || navigator.userLanguage;
-        var langCode = lang.substring(0, 2);
+        var savedLang = getCookie('language');
+        var browserLang = navigator.language || navigator.userLanguage;
+        var langCode = savedLang || browserLang.substring(0, 2);
+        
         if (!document.cookie.includes('langRedirected=true')) {
             document.cookie = "langRedirected=true; path=/; max-age=86400";
             if (langCode === 'es') window.location.replace('es/');
