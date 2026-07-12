@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ language }}" translate="no">
+<html lang="{{ language }}" translate="no" class="notranslate">
 
 <head>
   <base href="{{ base_href }}">
@@ -15,6 +15,7 @@
   <meta name="keywords" content="{{ keys_content }}">
   <meta name="description" content="{{ desc_content }}">
   <meta name="author" content="Ariel Parra">
+  <meta name="google" content="notranslate">
   <title>{{ title_content }}</title>
 
   <!-- CSS files -->
@@ -30,6 +31,7 @@
   <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" sizes="180x180">
 
 {{ redirect_script }}
+{{ json_ld }}
 </head>
 
 <body>

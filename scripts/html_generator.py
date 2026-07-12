@@ -58,9 +58,8 @@ def generate_html(md_dict, md_content, language='en'):
         return " " * (max(len(cf) for cf in md_dict['css']) - len(css_file))
 
     css_links = ""
-    for css_file in md_dict['css']:
-        if css_file:
-            css_links += f'  <link rel="stylesheet" href="./css/{css_file}.css" {space_padding(css_file)}>\n'
+    for css_file in md_dict.get('css', []):
+        css_links += f'<link rel="stylesheet" href="{base_href}css/{css_file}.min.css">\n{space_padding(css_file)}'
 
     def space_padding_js(js_file):
         if not md_dict['js']:
@@ -68,16 +67,16 @@ def generate_html(md_dict, md_content, language='en'):
         return " " * (max(len(jf) for jf in md_dict['js']) - len(js_file))
 
     js_preloads = ""
-    for js_file in md_dict['js']:
+    for js_file in md_dict.get('js', []):
         if js_file:
-            js_preloads += f'  <link rel="preload" href="./js/{js_file}.js" {space_padding_js(js_file)}as="script">\n'
+            js_preloads += f'  <link rel="preload" href="{base_href}js/{js_file}.min.js" {space_padding_js(js_file)}as="script">\n'
 
     js_defers = ""
-    for js_file in md_dict['js']:
+    for js_file in md_dict.get('js', []):
         if js_file == "main":
-            js_defers += f'  <script defer src="./{js_file}.js">    {space_padding_js(js_file)}</script>\n'
+            js_defers += f'  <script defer src="{base_href}{js_file}.min.js">    {space_padding_js(js_file)}</script>\n'
         else:
-            js_defers += f'  <script defer src="./js/{js_file}.js"> {space_padding_js(js_file)}</script>\n'
+            js_defers += f'  <script defer src="{base_href}js/{js_file}.min.js"> {space_padding_js(js_file)}</script>\n'
 
     max_href_length = max(len(item["href"]) for item in nav_items)
     max_class_length = max(len("current"), len("NotCurrent"))
@@ -220,6 +219,26 @@ def generate_html(md_dict, md_content, language='en'):
     with open(template_path, 'r', encoding='utf-8') as f:
         html_template = f.read()
 
+    json_ld = f"""
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {{
+      "@type": "Person",
+      "name": "Ariel Parra",
+      "url": "https://ArielParra.github.io",
+      "image": "https://ArielParra.github.io/img/ArielParra.jpg",
+      "description": "{html.escape(desc_content)}",
+      "sameAs": [
+        "https://github.com/ArielParra",
+        "https://www.linkedin.com/in/arielparra/"
+      ]
+    }}
+  }}
+  </script>
+"""
+
     # Apply variables
     replacements = {
         "language": language,
@@ -237,7 +256,8 @@ def generate_html(md_dict, md_content, language='en'):
         "lang_links": lang_links.rstrip('\n'),
         "lbl_hide_menu": html.escape(lbl_hide_menu),
         "lbl_show_menu": html.escape(lbl_show_menu),
-        "redirect_script": redirect_script.strip('\n')
+        "redirect_script": redirect_script.strip('\n'),
+        "json_ld": json_ld.strip('\n')
     }
 
     for key, val in replacements.items():

@@ -14,8 +14,8 @@ nav_current: 2
   <div class="card" id="filter-techs">
   <hr>
   <div class="center">
-  ## ((en))Filter by Technology((/en))((es))Filtrar por Tecnología((/es))
-  <span id="tech-data" data-techs='[{"value": "flutter", "en": "Flutter", "es": "Flutter"}, {"value": "dart", "en": "Dart", "es": "Dart"}, {"value": "firebase", "en": "Firebase", "es": "Firebase"}, {"value": "python", "en": "Python", "es": "Python"}, {"value": "llm", "en": "LLM", "es": "LLM"}, {"value": "html", "en": "HTML", "es": "HTML"}, {"value": "css", "en": "CSS", "es": "CSS"}, {"value": "javascript", "en": "JavaScript", "es": "JavaScript"}, {"value": "makefile", "en": "makefile", "es": "makefile"}, {"value": "instaloader", "en": "instaloader", "es": "instaloader"}, {"value": "docker", "en": "docker", "es": "docker"}, {"value": "shell", "en": "shell", "es": "shell"}, {"value": "cpp", "en": "C++", "es": "C++"}, {"value": "linux", "en": "linux", "es": "linux"}, {"value": "github", "en": "github", "es": "github"}, {"value": "typescript", "en": "TypeScript", "es": "TypeScript"}, {"value": "react-native", "en": "react-native", "es": "react-native"}, {"value": "expo", "en": "expo", "es": "expo"}, {"value": "styled-components", "en": "styled-components", "es": "styled-components"}, {"value": "phaser3", "en": "phaser3", "es": "phaser3"}, {"value": "nodejs", "en": "nodejs", "es": "nodejs"}, {"value": "express", "en": "express", "es": "express"}, {"value": "libpcap", "en": "Libpcap", "es": "Libpcap"}, {"value": "raylib", "en": "Raylib", "es": "Raylib"}, {"value": "networking", "en": "Networking", "es": "Redes"}, {"value": "browser-extension", "en": "Browser Extension", "es": "Extensión de Navegador"}, {"value": "algorithms", "en": "Algorithms", "es": "Algoritmos"}, {"value": "winapi", "en": "WinAPI", "es": "WinAPI"}, {"value": "jekyll", "en": "Jekyll", "es": "Jekyll"}, {"value": "ruby", "en": "Ruby", "es": "Ruby"}, {"value": "markdown", "en": "Markdown", "es": "Markdown"}, {"value": "assembly", "en": "Assembly", "es": "Assembly"}, {"value": "dos", "en": "DOS", "es": "DOS"}, {"value": "c", "en": "C", "es": "C"}]' style="display:none;"></span>
+  ## ((en))Filter by Technology((/en))((es))Filtrar por Tecnología((/es))((fr))Filtrer par technologie((/fr))((pt))Filtrar por tecnologia((/pt))
+  <span id="tech-data" data-techs='[{"value": "flutter", "en": "Flutter", "es": "Flutter", "fr": "Flutter", "pt": "Flutter"}, {"value": "dart", "en": "Dart", "es": "Dart", "fr": "Dart", "pt": "Dart"}, {"value": "firebase", "en": "Firebase", "es": "Firebase", "fr": "Firebase", "pt": "Firebase"}, {"value": "python", "en": "Python", "es": "Python", "fr": "Python", "pt": "Python"}, {"value": "llm", "en": "LLM", "es": "LLM", "fr": "LLM", "pt": "LLM"}, {"value": "html", "en": "HTML", "es": "HTML", "fr": "HTML", "pt": "HTML"}, {"value": "css", "en": "CSS", "es": "CSS", "fr": "CSS", "pt": "CSS"}, {"value": "javascript", "en": "JavaScript", "es": "JavaScript", "fr": "JavaScript", "pt": "JavaScript"}, {"value": "makefile", "en": "makefile", "es": "makefile", "fr": "makefile", "pt": "makefile"}, {"value": "instaloader", "en": "instaloader", "es": "instaloader", "fr": "instaloader", "pt": "instaloader"}, {"value": "docker", "en": "docker", "es": "docker", "fr": "docker", "pt": "docker"}, {"value": "shell", "en": "shell", "es": "shell", "fr": "shell", "pt": "shell"}, {"value": "cpp", "en": "C++", "es": "C++", "fr": "C++", "pt": "C++"}, {"value": "linux", "en": "linux", "es": "linux", "fr": "linux", "pt": "linux"}, {"value": "github", "en": "github", "es": "github", "fr": "github", "pt": "github"}, {"value": "typescript", "en": "TypeScript", "es": "TypeScript", "fr": "TypeScript", "pt": "TypeScript"}, {"value": "react-native", "en": "react-native", "es": "react-native", "fr": "react-native", "pt": "react-native"}, {"value": "expo", "en": "expo", "es": "expo", "fr": "expo", "pt": "expo"}, {"value": "styled-components", "en": "styled-components", "es": "styled-components", "fr": "styled-components", "pt": "styled-components"}, {"value": "phaser3", "en": "phaser3", "es": "phaser3", "fr": "phaser3", "pt": "phaser3"}, {"value": "nodejs", "en": "nodejs", "es": "nodejs", "fr": "nodejs", "pt": "nodejs"}, {"value": "express", "en": "express", "es": "express", "fr": "express", "pt": "express"}, {"value": "libpcap", "en": "Libpcap", "es": "Libpcap", "fr": "Libpcap", "pt": "Libpcap"}, {"value": "raylib", "en": "Raylib", "es": "Raylib", "fr": "Raylib", "pt": "Raylib"}, {"value": "networking", "en": "Networking", "es": "Redes", "fr": "Réseaux", "pt": "Redes"}, {"value": "browser-extension", "en": "Browser Extension", "es": "Extensión de Navegador", "fr": "Extension de Navigateur", "pt": "Extensão de Navegador"}, {"value": "algorithms", "en": "Algorithms", "es": "Algoritmos", "fr": "Algorithmes", "pt": "Algoritmos"}, {"value": "winapi", "en": "WinAPI", "es": "WinAPI", "fr": "WinAPI", "pt": "WinAPI"}, {"value": "jekyll", "en": "Jekyll", "es": "Jekyll", "fr": "Jekyll", "pt": "Jekyll"}, {"value": "ruby", "en": "Ruby", "es": "Ruby", "fr": "Ruby", "pt": "Ruby"}, {"value": "markdown", "en": "Markdown", "es": "Markdown", "fr": "Markdown", "pt": "Markdown"}, {"value": "assembly", "en": "Assembly", "es": "Assembly", "fr": "Assembly", "pt": "Assembly"}, {"value": "dos", "en": "DOS", "es": "DOS", "fr": "DOS", "pt": "DOS"}, {"value": "c", "en": "C", "es": "C", "fr": "C", "pt": "C"}]' style="display:none;"></span>
   <div class="tech-search-wrapper">
     <input type="text" id="tech-search" placeholder="Search technology..." data-placeholder-en="Search technology..." data-placeholder-es="Buscar tecnología..." data-placeholder-fr="Rechercher une technologie..." data-placeholder-pt="Pesquisar tecnologia..." autocomplete="off">
     <div id="tech-suggestions"></div>
@@ -211,7 +211,7 @@ nav_current: 2
       <div class="project-techs">          <span class="project-tech">C++</span>
           <span class="project-tech">Libpcap</span>
           <span class="project-tech">Raylib</span>
-          <span class="project-tech">((en))Networking((/en))((es))Redes((/es))</span>
+          <span class="project-tech">((en))Networking((/en))((es))Redes((/es))((fr))Réseaux((/fr))((pt))Redes((/pt))</span>
           <span class="techs-more"></span>
 </div>
       
@@ -231,7 +231,7 @@ nav_current: 2
         <span class="project-title">Page Loader</span>
       </div>
       <div class="project-techs">          <span class="project-tech">JavaScript</span>
-          <span class="project-tech">((en))Browser Extension((/en))((es))Extensión de Navegador((/es))</span>
+          <span class="project-tech">((en))Browser Extension((/en))((es))Extensión de Navegador((/es))((fr))Extension de Navigateur((/fr))((pt))Extensão de Navegador((/pt))</span>
           <span class="techs-more"></span>
 </div>
       
@@ -251,7 +251,7 @@ nav_current: 2
         <span class="project-title">Klotski Solver</span>
       </div>
       <div class="project-techs">          <span class="project-tech">C++</span>
-          <span class="project-tech">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="project-tech">((en))Algorithms((/en))((es))Algoritmos((/es))((fr))Algorithmes((/fr))((pt))Algoritmos((/pt))</span>
           <span class="techs-more"></span>
 </div>
       
@@ -291,7 +291,7 @@ nav_current: 2
         <span class="project-title">RR & BS Simulator</span>
       </div>
       <div class="project-techs">          <span class="project-tech">C++</span>
-          <span class="project-tech">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="project-tech">((en))Algorithms((/en))((es))Algoritmos((/es))((fr))Algorithmes((/fr))((pt))Algoritmos((/pt))</span>
           <span class="techs-more"></span>
 </div>
       

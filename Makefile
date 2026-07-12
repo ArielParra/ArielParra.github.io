@@ -11,7 +11,7 @@ endif
 script := scripts/md2html.py
 
 LANGS := es fr pt
-all: en_all $(LANGS) sitemap humans
+all: minify en_all $(LANGS) sitemap humans
 
 en_all: index portfolio contact credentials 404
 
@@ -76,6 +76,11 @@ $(eval $(call BUILD_LANG,es))
 $(eval $(call BUILD_LANG,fr))
 $(eval $(call BUILD_LANG,pt))
 
+# Minify
+minify:
+	@echo "Minifying CSS and JS..."
+	$(PYTHON) $(call FixPath,scripts/minify_all.py)
+
 # Sitemap
 sitemap:
 	@echo "Generating sitemap.xml..."
@@ -95,6 +100,8 @@ clean:
 	rm -rf $(call FixPath,./es)
 	rm -rf $(call FixPath,./fr)
 	rm -rf $(call FixPath,./pt)
+	rm -f $(call FixPath,css/*.min.css)
+	rm -f $(call FixPath,js/*.min.js)
 
 validate:
 	$(PYTHON) $(call FixPath,scripts/validate.py)
