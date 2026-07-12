@@ -36,7 +36,7 @@ def main():
         lines.append(f'        <changefreq>{page["freq"]}</changefreq>')
         lines.append(f'        <priority>{page["priority"]}</priority>')
         lines.append('    </url>')
-        
+
         # Other languages
         for lang in ['es', 'fr', 'pt']:
             lang_path = f"{lang}/{page['path']}"
