@@ -8,19 +8,30 @@
 function toggleCredentialDescription(element) {
   const container = element.closest(".credential-description");
   const isExpanded = container.classList.contains("expanded");
-  const textSpan = container.querySelector("span.i18n");
+  const textSpan = container.querySelector("span.desc-text");
   const lang = getCurrentSiteLanguage();
+
+  const TEXT_SEE_MORE = {
+    en: "See more", es: "Ver más", fr: "Voir plus", pt: "Ver mais",
+  };
+  const TEXT_SEE_LESS = {
+    en: "See less", es: "Ver menos", fr: "Voir moins", pt: "Ver menos",
+  };
 
   if (isExpanded) {
     container.classList.remove("expanded");
-    element.textContent = `... ${lang === "es" ? "Ver más" : "See more"}`;
+    element.textContent = `... ${TEXT_SEE_MORE[lang] || TEXT_SEE_MORE.en}`;
     truncateDescriptions();
   } else {
     container.classList.add("expanded");
-    element.textContent = lang === "es" ? "Ver menos" : "See less";
+    element.textContent = TEXT_SEE_LESS[lang] || TEXT_SEE_LESS.en;
     if (textSpan) {
-      const fullText = container.getAttribute("data-full-text");
-      if (fullText) textSpan.innerHTML = fullText;
+      let fullText = container.getAttribute("data-full-text");
+      if (!fullText) {
+        fullText = textSpan.textContent;
+        container.setAttribute("data-full-text", fullText);
+      }
+      textSpan.innerHTML = fullText;
     }
   }
 }
@@ -83,15 +94,20 @@ function truncateDescriptions() {
   const MAX_CHARS = 84;
 
   descriptions.forEach((container) => {
-    const textSpan = container.querySelector("span.i18n");
+    const textSpan = container.querySelector("span.desc-text");
     const seeMoreLink = container.querySelector(".see-more");
     if (!textSpan || !seeMoreLink) return;
 
     const lang = getCurrentSiteLanguage();
-    const fullText = textSpan.getAttribute(`data-i18n-${lang}`) || textSpan.textContent;
-    const seeMoreText = lang === "es" ? "Ver más" : "See more";
+    let fullText = container.getAttribute("data-full-text");
+    if (!fullText) {
+      fullText = textSpan.textContent;
+      container.setAttribute("data-full-text", fullText);
+    }
 
-    container.setAttribute("data-full-text", fullText);
+    const TEXT_SEE_MORE = {
+      en: "See more", es: "Ver más", fr: "Voir plus", pt: "Ver mais",
+    };
 
     if (fullText.length > MAX_CHARS) {
       let truncated = fullText.substring(0, MAX_CHARS);
@@ -101,7 +117,7 @@ function truncateDescriptions() {
       truncated = truncated.trim();
 
       textSpan.innerHTML = truncated;
-      seeMoreLink.textContent = `... ${seeMoreText}`;
+      seeMoreLink.textContent = `... ${TEXT_SEE_MORE[lang] || TEXT_SEE_MORE.en}`;
       seeMoreLink.style.display = "inline";
     } else {
       seeMoreLink.style.display = "none";
@@ -125,7 +141,7 @@ function expandSkills(element) {
 function resetDescriptions() {
   const descriptions = document.querySelectorAll(".credential-description.justify");
   descriptions.forEach((container) => {
-    const textSpan = container.querySelector("span.i18n");
+    const textSpan = container.querySelector("span.desc-text");
     const seeMoreLink = container.querySelector(".see-more");
     const fullText = container.getAttribute("data-full-text");
     if (textSpan && fullText) {

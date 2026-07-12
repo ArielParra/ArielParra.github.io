@@ -11,3 +11,14 @@ node_modules/
 .kiro/execution-profiles.json
 lighthouse-report.html
 lighthouse-report.json
+
+# Generated HTML and output folders
+/index.html
+/404.html
+/portfolio/index.html
+/contact/index.html
+/credentials/index.html
+/es/
+/fr/
+/pt/
+/sitemap.xml

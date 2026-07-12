@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ language }}" data-i18n-title-en="{{ title_en }}" data-i18n-title-es="{{ title_es }}">
+<html lang="{{ language }}" translate="no">
 
 <head>
   <base href="{{ base_href }}">
@@ -12,8 +12,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="{{ csp }}">
-  <meta name="keywords" data-i18n-keywords-en="{{ keys_en }}" data-i18n-keywords-es="{{ keys_es }}" content="{{ keys_content }}">
-  <meta name="description" data-i18n-description-en="{{ desc_en }}" data-i18n-description-es="{{ desc_es }}" content="{{ desc_content }}">
+  <meta name="keywords" content="{{ keys_content }}">
+  <meta name="description" content="{{ desc_content }}">
   <meta name="author" content="Ariel Parra">
   <title>{{ title_content }}</title>
 
@@ -28,14 +28,18 @@
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" sizes="180x180">
+
+{{ redirect_script }}
 </head>
 
 <body>
 
   <div class="container">
-    <button type="button" id="menuButton" data-nav-shown="true"><span class="i18n" data-i18n-en="Hide Menu" data-i18n-es="Mostrar Menú">Hide Menu</span></button>
-    <button type="button" id="langButton" data-i18n-title-en="Change language to" data-i18n-title-es="Cambiar idioma a" title="Change language to"><span class="i18n" data-i18n-en="Español" data-i18n-es="English">Español</span></button>
-    <button type="button" id="themeButton" data-i18n-title-en="Change color theme to" data-i18n-title-es="Cambiar tema de color a" title="Change color theme to" aria-label="Toggle theme"> 🌗 </button>
+    <button type="button" id="menuButton" data-nav-shown="true" data-text-hide="{{ lbl_hide_menu }}" data-text-show="{{ lbl_show_menu }}"><span>{{ lbl_hide_menu }}</span></button>
+    <div id="langLinks" style="display: contents;">
+{{ lang_links }}
+    </div>
+    <button type="button" id="themeButton" title="Toggle theme" aria-label="Toggle theme"> 🌗 </button>
   </div><!-- Buttons -->
 
   <nav>

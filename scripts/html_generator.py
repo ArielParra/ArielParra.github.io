@@ -1,42 +1,60 @@
 import html
 import os
-from md_parser import get_translations, extract_translation, md_to_html
+from md_parser import extract_translation, md_to_html
 
 
-def generate_html(md_dict, md_content):
-    language = md_dict.get('lang', 'en')
-    portfolio_path = "./portfolio/"
-    credentials_path = "./credentials/"
-    contact_path = "./contact/"
-    home_path = "./"
+def generate_html(md_dict, md_content, language='en'):
+    # base_href adjustment for nested language folders
+    base_href_original = md_dict.get('base_href', './')
+    if language == 'en':
+        base_href = base_href_original
+    else:
+        if base_href_original == './':
+            base_href = '../'
+        else:
+            base_href = '../' + base_href_original
 
-    title_en, title_es = get_translations(md_dict['title'])
-    desc_en, desc_es = get_translations(md_dict['description'])
-    keys_raw = ', '.join(md_dict['keywords'])
-    keys_en, keys_es = get_translations(keys_raw)
+    nav_current = int(md_dict.get('nav_current', 1))
+    current_path_map = {1: "", 2: "portfolio/", 3: "credentials/", 4: "contact/"}
+    current_page_path = current_path_map.get(nav_current, "")
 
-    title_content = extract_translation(md_dict['title'], language)
+    lang_links = ""
+    for lang_code in ['en', 'es', 'fr', 'pt']:
+        href = current_page_path if lang_code == 'en' else f"{lang_code}/{current_page_path}"
+        if lang_code == language:
+            lang_links += f'<button type="button" style="background-color: var(--btn-hover_BG); border-color: var(--btn-hover_border); pointer-events: none;">{lang_code.upper()}</button>\n'
+        else:
+            lang_links += f'<button type="button" onclick="window.location.href=\'{href}\'" title="Change language to {lang_code.upper()}">{lang_code.upper()}</button>\n'
+
+    title_content = extract_translation(md_dict.get('title', ''), language)
+    keys_raw = ', '.join(md_dict.get('keywords', []))
     keys_content = extract_translation(keys_raw, language)
-    desc_content = extract_translation(md_dict['description'], language)
+    desc_content = extract_translation(md_dict.get('description', ''), language)
 
-    nav_items = [{"href": home_path,
+    # Translations for nav items
+    lbl_portfolio = extract_translation("((en))portfolio((/en))((es))portafolio((/es))((fr))portfolio((/fr))((pt))portfólio((/pt))", language)
+    lbl_credentials = extract_translation("((en))credentials((/en))((es))acreditaciones((/es))((fr))accréditations((/fr))((pt))credenciais((/pt))", language)
+    lbl_contact = extract_translation("((en))contact((/en))((es))contacto((/es))((fr))contact((/fr))((pt))contato((/pt))", language)
+
+    nav_items = [{"href": "./" if language == 'en' else f"{language}/",
                   "title": "Home Page",
-                  "label": '<span class="i18n" data-i18n-en="~/" data-i18n-es="~/">~/</span>'},
-                 {"href": portfolio_path,
+                  "label": "~/"},
+                 {"href": "portfolio/" if language == 'en' else f"{language}/portfolio/",
                   "title": "Portfolio Page",
-                  "label": '<span class="i18n" data-i18n-en="portfolio" data-i18n-es="portafolio">portfolio</span>'},
-                 {"href": credentials_path,
+                  "label": lbl_portfolio},
+                 {"href": "credentials/" if language == 'en' else f"{language}/credentials/",
                   "title": "Credentials Page",
-                  "label": '<span class="i18n" data-i18n-en="credentials" data-i18n-es="acreditaciones">credentials</span>'},
-                 {"href": contact_path,
+                  "label": lbl_credentials},
+                 {"href": "contact/" if language == 'en' else f"{language}/contact/",
                   "title": "Contact Page",
-                  "label": '<span class="i18n" data-i18n-en="contact" data-i18n-es="contacto">contact</span>'},
+                  "label": lbl_contact},
                  ]
 
-    nav_current = int(md_dict['nav_current'])
-    csp = "default-src 'self'; script-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
+    csp = "default-src 'self'; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
 
     def space_padding(css_file):
+        if not md_dict['css']:
+            return ""
         return " " * (max(len(cf) for cf in md_dict['css']) - len(css_file))
 
     css_links = ""
@@ -45,6 +63,8 @@ def generate_html(md_dict, md_content):
             css_links += f'  <link rel="stylesheet" href="./css/{css_file}.css" {space_padding(css_file)}>\n'
 
     def space_padding_js(js_file):
+        if not md_dict['js']:
+            return ""
         return " " * (max(len(jf) for jf in md_dict['js']) - len(js_file))
 
     js_preloads = ""
@@ -78,13 +98,39 @@ def generate_html(md_dict, md_content):
     if nav_current == 3:
         type_tag_text_value = ["all", "education", "certification", "certificate", "badge", "award"]
         topic_tag_text_value = ["programming", "cloud", "devops", "ai", "cybersecurity", "data-science", "database", "networking", "professional", "languages", "finance", "blockchain"]
-        search_text = '<span class="i18n" data-i18n-en="Search" data-i18n-es="Buscar">Search</span>'
-        filterType_text = '<span class="i18n" data-i18n-en="Filter by type" data-i18n-es="Filtrado por tipo">Filter by type</span>'
-        filterTopic_text = '<span class="i18n" data-i18n-en="Filter by topic" data-i18n-es="Filtrado por tema">Filter by topic</span>'
-        stats_text = '<span class="i18n" data-i18n-en="Stats" data-i18n-es="Estadísticas">Stats</span>'
-        reset_text = '<span class="i18n" data-i18n-en="↺ Clear filters" data-i18n-es="↺ Limpiar filtros">↺ Clear filters</span>'
-        type_tag_text = ['<span class="i18n" data-i18n-en="All" data-i18n-es="Todos">All</span>', '<span class="i18n" data-i18n-en="Education" data-i18n-es="Educación">Education</span>', '<span class="i18n" data-i18n-en="Certifications" data-i18n-es="Certificaciones">Certifications</span>', '<span class="i18n" data-i18n-en="Certificates" data-i18n-es="Certificados">Certificates</span>', '<span class="i18n" data-i18n-en="Badges" data-i18n-es="Insignias">Badges</span>', '<span class="i18n" data-i18n-en="Awards" data-i18n-es="Premios">Awards</span>']
-        topic_tag_text = ['<span class="i18n" data-i18n-en="Programming" data-i18n-es="Programación">Programming</span>', '<span class="i18n" data-i18n-en="Cloud" data-i18n-es="Nube">Cloud</span>', '<span class="i18n" data-i18n-en="DevOps" data-i18n-es="DevOps">DevOps</span>', '<span class="i18n" data-i18n-en="AI" data-i18n-es="IA">AI</span>', '<span class="i18n" data-i18n-en="Cybersecurity" data-i18n-es="Ciberseguridad">Cybersecurity</span>', '<span class="i18n" data-i18n-en="Data Science" data-i18n-es="Ciencia de Datos">Data Science</span>', '<span class="i18n" data-i18n-en="Database" data-i18n-es="Base de datos">Database</span>', '<span class="i18n" data-i18n-en="Networking" data-i18n-es="Redes">Networking</span>', '<span class="i18n" data-i18n-en="Professional" data-i18n-es="Profesional">Professional</span>', '<span class="i18n" data-i18n-en="Languages" data-i18n-es="Idiomas">Languages</span>', '<span class="i18n" data-i18n-en="Finance" data-i18n-es="Finanzas">Finance</span>', '<span class="i18n" data-i18n-en="Blockchain" data-i18n-es="Blockchain">Blockchain</span>']
+
+        search_text = extract_translation("((en))Search((/en))((es))Buscar((/es))((fr))Chercher((/fr))((pt))Pesquisar((/pt))", language)
+        filterType_text = extract_translation("((en))Filter by type((/en))((es))Filtrado por tipo((/es))((fr))Filtrer par type((/fr))((pt))Filtrar por tipo((/pt))", language)
+        filterTopic_text = extract_translation("((en))Filter by topic((/en))((es))Filtrado por tema((/es))((fr))Filtrer par sujet((/fr))((pt))Filtrar por tópico((/pt))", language)
+        stats_text = extract_translation("((en))Stats((/en))((es))Estadísticas((/es))((fr))Statistiques((/fr))((pt))Estatísticas((/pt))", language)
+        reset_text = extract_translation("((en))↺ Clear filters((/en))((es))↺ Limpiar filtros((/es))((fr))↺ Effacer les filtres((/fr))((pt))↺ Limpar filtros((/pt))", language)
+        search_placeholder = extract_translation("((en))Title, issuer or description…((/en))((es))Título, emisor o descripción…((/es))((fr))Titre, émetteur ou description…((/fr))((pt))Título, emissor ou descrição…((/pt))", language)
+
+        type_tag_text = [
+            extract_translation("((en))All((/en))((es))Todos((/es))((fr))Tous((/fr))((pt))Todos((/pt))", language),
+            extract_translation("((en))Education((/en))((es))Educación((/es))((fr))Éducation((/fr))((pt))Educação((/pt))", language),
+            extract_translation("((en))Certifications((/en))((es))Certificaciones((/es))((fr))Certifications((/fr))((pt))Certificações((/pt))", language),
+            extract_translation("((en))Certificates((/en))((es))Certificados((/es))((fr))Certificats((/fr))((pt))Certificados((/pt))", language),
+            extract_translation("((en))Badges((/en))((es))Insignias((/es))((fr))Insignes((/fr))((pt))Emblemas((/pt))", language),
+            extract_translation("((en))Awards((/en))((es))Premios((/es))((fr))Prix((/fr))((pt))Prêmios((/pt))", language)
+        ]
+
+        topic_tag_text = [
+            extract_translation("((en))Programming((/en))((es))Programación((/es))((fr))Programmation((/fr))((pt))Programação((/pt))", language),
+            extract_translation("((en))Cloud((/en))((es))Nube((/es))((fr))Nuage((/fr))((pt))Nuvem((/pt))", language),
+            extract_translation("((en))DevOps((/en))((es))DevOps((/es))((fr))DevOps((/fr))((pt))DevOps((/pt))", language),
+            extract_translation("((en))AI((/en))((es))IA((/es))((fr))IA((/fr))((pt))IA((/pt))", language),
+            extract_translation("((en))Cybersecurity((/en))((es))Ciberseguridad((/es))((fr))Cybersécurité((/fr))((pt))Cibersegurança((/pt))", language),
+            extract_translation("((en))Data Science((/en))((es))Ciencia de Datos((/es))((fr))Science des Données((/fr))((pt))Ciência de Dados((/pt))", language),
+            extract_translation("((en))Database((/en))((es))Base de datos((/es))((fr))Base de données((/fr))((pt))Banco de dados((/pt))", language),
+            extract_translation("((en))Networking((/en))((es))Redes((/es))((fr))Réseaux((/fr))((pt))Redes((/pt))", language),
+            extract_translation("((en))Professional((/en))((es))Profesional((/es))((fr))Professionnel((/fr))((pt))Profissional((/pt))", language),
+            extract_translation("((en))Languages((/en))((es))Idiomas((/es))((fr))Langues((/fr))((pt))Idiomas((/pt))", language),
+            extract_translation("((en))Finance((/en))((es))Finanzas((/es))((fr))Finance((/fr))((pt))Finanças((/pt))", language),
+            extract_translation("((en))Blockchain((/en))((es))Blockchain((/es))((fr))Blockchain((/fr))((pt))Blockchain((/pt))", language)
+        ]
+
+        lbl_total = extract_translation("((en))Total((/en))((es))Total((/es))((fr))Total((/fr))((pt))Total((/pt))", language)
 
         credentials_filters += f"""
 <div class="container max-width">
@@ -96,10 +142,8 @@ def generate_html(md_dict, md_content):
         <hr>
         <div class="center">
             <input type="text" id="f-search" name="search"
-                   data-i18n-placeholder-en="Title, issuer or description…"
-                   data-i18n-placeholder-es="Título, emisor o descripción…"
-                   placeholder="Title, issuer or description…"
-                   autocomplete="off" aria-label="Search credentials">
+                   placeholder="{search_placeholder}"
+                   autocomplete="off" aria-label="{search_text}">
         </div>
         <hr>
         <div class="center">
@@ -133,12 +177,12 @@ def generate_html(md_dict, md_content):
         <hr>
         <div class="center">
             <span class="credential-counts" aria-live="polite">
-                <span class="stat-item" data-type="education"><span class="stat-label i18n" data-i18n-en="Education" data-i18n-es="Educación">Education</span>: <span class="stat-count" data-type="education">0</span></span>
-                <span class="stat-item" data-type="certification"><span class="stat-label i18n" data-i18n-en="Certifications" data-i18n-es="Certificaciones">Certifications</span>: <span class="stat-count" data-type="certification">0</span></span>
-                <span class="stat-item" data-type="certificate"><span class="stat-label i18n" data-i18n-en="Certificates" data-i18n-es="Certificados">Certificates</span>: <span class="stat-count" data-type="certificate">0</span></span>
-                <span class="stat-item" data-type="badge"><span class="stat-label i18n" data-i18n-en="Badges" data-i18n-es="Insignias">Badges</span>: <span class="stat-count" data-type="badge">0</span></span>
-                <span class="stat-item" data-type="award"><span class="stat-label i18n" data-i18n-en="Awards" data-i18n-es="Premios">Awards</span>: <span class="stat-count" data-type="award">0</span></span>
-                <span class="stat-item total"><span class="stat-label">Total:</span> <span class="stat-count" id="global-total-credentials">0</span></span>
+                <span class="stat-item" data-type="education"><span class="stat-label">{type_tag_text[1]}</span>: <span class="stat-count" data-type="education">0</span></span>
+                <span class="stat-item" data-type="certification"><span class="stat-label">{type_tag_text[2]}</span>: <span class="stat-count" data-type="certification">0</span></span>
+                <span class="stat-item" data-type="certificate"><span class="stat-label">{type_tag_text[3]}</span>: <span class="stat-count" data-type="certificate">0</span></span>
+                <span class="stat-item" data-type="badge"><span class="stat-label">{type_tag_text[4]}</span>: <span class="stat-count" data-type="badge">0</span></span>
+                <span class="stat-item" data-type="award"><span class="stat-label">{type_tag_text[5]}</span>: <span class="stat-count" data-type="award">0</span></span>
+                <span class="stat-item total"><span class="stat-label">{lbl_total}:</span> <span class="stat-count" id="global-total-credentials">0</span></span>
             </span>
         </div>
         <hr>
@@ -150,6 +194,26 @@ def generate_html(md_dict, md_content):
 """
 
     main_content = md_to_html(md_content, language)
+    lbl_hide_menu = extract_translation("((en))Hide Menu((/en))((es))Ocultar Menú((/es))((fr))Masquer le menu((/fr))((pt))Ocultar Menu((/pt))", language)
+    lbl_show_menu = extract_translation("((en))Show Menu((/en))((es))Mostrar Menú((/es))((fr))Afficher le menu((/fr))((pt))Mostrar Menu((/pt))", language)
+
+    # Initial redirection script for English home page
+    redirect_script = ""
+    if language == 'en' and nav_current == 1:
+        redirect_script = """
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var lang = navigator.language || navigator.userLanguage;
+        var langCode = lang.substring(0, 2);
+        if (!document.cookie.includes('langRedirected=true')) {
+            document.cookie = "langRedirected=true; path=/; max-age=86400";
+            if (langCode === 'es') window.location.replace('es/');
+            if (langCode === 'fr') window.location.replace('fr/');
+            if (langCode === 'pt') window.location.replace('pt/');
+        }
+    });
+  </script>
+"""
 
     # Read the template from templates/base.html
     template_path = os.path.join(os.path.dirname(__file__), "..", "templates", "base.html")
@@ -159,15 +223,9 @@ def generate_html(md_dict, md_content):
     # Apply variables
     replacements = {
         "language": language,
-        "title_en": html.escape(title_en),
-        "title_es": html.escape(title_es),
-        "base_href": md_dict['base_href'],
+        "base_href": base_href,
         "csp": csp,
-        "keys_en": html.escape(keys_en),
-        "keys_es": html.escape(keys_es),
         "keys_content": html.escape(keys_content),
-        "desc_en": html.escape(desc_en),
-        "desc_es": html.escape(desc_es),
         "desc_content": html.escape(desc_content),
         "title_content": html.escape(title_content),
         "css_links": css_links.rstrip('\n'),
@@ -175,7 +233,11 @@ def generate_html(md_dict, md_content):
         "js_defers": js_defers.rstrip('\n'),
         "nav_html": nav_html.rstrip('\n'),
         "credentials_filters": credentials_filters,
-        "main_content": main_content
+        "main_content": main_content,
+        "lang_links": lang_links.rstrip('\n'),
+        "lbl_hide_menu": html.escape(lbl_hide_menu),
+        "lbl_show_menu": html.escape(lbl_show_menu),
+        "redirect_script": redirect_script.strip('\n')
     }
 
     for key, val in replacements.items():

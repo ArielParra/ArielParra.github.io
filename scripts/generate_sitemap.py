@@ -29,12 +29,23 @@ def main():
         else:
             lastmod = datetime.datetime.now().strftime("%Y-%m-%d")
 
+        # English (default route)
         lines.append('    <url>')
         lines.append(f'        <loc>{base_url}{page["path"]}</loc>')
         lines.append(f'        <lastmod>{lastmod}</lastmod>')
         lines.append(f'        <changefreq>{page["freq"]}</changefreq>')
         lines.append(f'        <priority>{page["priority"]}</priority>')
         lines.append('    </url>')
+        
+        # Other languages
+        for lang in ['es', 'fr', 'pt']:
+            lang_path = f"{lang}/{page['path']}"
+            lines.append('    <url>')
+            lines.append(f'        <loc>{base_url}{lang_path}</loc>')
+            lines.append(f'        <lastmod>{lastmod}</lastmod>')
+            lines.append(f'        <changefreq>{page["freq"]}</changefreq>')
+            lines.append(f'        <priority>{float(page["priority"]) - 0.1:.1f}</priority>')
+            lines.append('    </url>')
 
     lines.append('</urlset>')
 

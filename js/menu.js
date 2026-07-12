@@ -37,15 +37,9 @@ function hideMenu(button, animation) {
     elem.style.pointerEvents = "none";
   }
 
-  const i18nSpan = button.querySelector(".i18n");
-  if (i18nSpan) {
-    const lang = getCurrentSiteLanguage();
-    const showText = lang === "es" ? "Mostrar Menú" : "Show Menu";
-    i18nSpan.setAttribute("data-i18n-en", "Show Menu");
-    i18nSpan.setAttribute("data-i18n-es", "Mostrar Menú");
-    i18nSpan.innerHTML = showText;
-  } else {
-    button.textContent = getCurrentSiteLanguage() === "es" ? "Mostrar Menú" : "Show Menu";
+  const span = button.querySelector("span");
+  if (span) {
+    span.innerHTML = button.getAttribute("data-text-show");
   }
 
   setCookie("menuStatus", "hidden", 30);
@@ -78,13 +72,11 @@ function showMenu(button) {
     }, 500);
   }
 
-  const i18nSpan = button.querySelector(".i18n");
-  if (i18nSpan) {
-    const lang = getCurrentSiteLanguage();
-    i18nSpan.innerHTML = i18nSpan.getAttribute(`data-i18n-${lang}`);
-  } else {
-    button.textContent = getCurrentSiteLanguage() === "es" ? "Ocultar Menú" : "Hide Menu";
+  const span = button.querySelector("span");
+  if (span) {
+    span.innerHTML = button.getAttribute("data-text-hide");
   }
+
   setCookie("menuStatus", "shown", 30);
 
   setTimeout(() => {
@@ -102,16 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
     menuButton.addEventListener("click", () => toggleMenu(menuButton));
   }
 
-  function updateMenuButtonText() {
-    const i18nSpan = menuButton.querySelector(".i18n");
-    if (i18nSpan) {
-      const lang = getCurrentSiteLanguage();
-      i18nSpan.innerHTML = i18nSpan.getAttribute(`data-i18n-${lang}`);
-    }
-  }
-
-  updateMenuButtonText();
-
   // Check if the 'menuStatus' cookie exists
   if (cookieExists("menuStatus")) {
     const menuStatus = getCookie("menuStatus");
@@ -119,13 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Check the status and update the button text accordingly
     if (menuStatus === "hidden") {
       hideMenu(menuButton, false);
-      const i18nSpan = menuButton.querySelector(".i18n");
-      if (i18nSpan) {
-        const lang = getCurrentSiteLanguage();
-        const showText = lang === "es" ? "Mostrar Menú" : "Show Menu";
-        i18nSpan.setAttribute("data-i18n-en", "Show Menu");
-        i18nSpan.setAttribute("data-i18n-es", "Mostrar Menú");
-        i18nSpan.innerHTML = showText;
+      const span = menuButton.querySelector("span");
+      if (span) {
+        span.innerHTML = menuButton.getAttribute("data-text-show");
       }
     }
   }

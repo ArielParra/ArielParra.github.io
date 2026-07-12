@@ -234,7 +234,7 @@ class CredentialsManager(BaseManager):
         <span class="credential-issuer">{issuer_text}</span>{link_html}
       </div>
       <div class="credential-description justify">
-        ((en)){desc_en}((/en))((es)){desc_es}((/es))
+        <span class="desc-text">((en)){desc_en}((/en))((es)){desc_es}((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>'''
@@ -253,20 +253,20 @@ class CredentialsManager(BaseManager):
 
         TYPE_LABELS = {
             "education": (
-                "((en))Education((/en))((es))Educación((/es))",
-                "((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))"),
+                "((en))Education((/en))((es))Educación((/es))((fr))Éducation((/fr))((pt))Educação((/pt))",
+                "((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))((fr))Parcours académique et diplômes.((/fr))((pt))Formação acadêmica e diplomas.((/pt))"),
             "certification": (
-                "((en))Certifications((/en))((es))Certificaciones((/es))",
-                "((en))Proctored exam-based credentials.((/en))((es))Acreditaciones basadas en exámenes.((/es))"),
+                "((en))Certifications((/en))((es))Certificaciones((/es))((fr))Certifications((/fr))((pt))Certificações((/pt))",
+                "((en))Proctored exam-based credentials.((/en))((es))Acreditaciones basadas en exámenes.((/es))((fr))Diplômes basés sur des examens.((/fr))((pt))Credenciais baseadas em exames.((/pt))"),
             "certificate": (
-                "((en))Certificates((/en))((es))Certificados((/es))",
-                "((en))Course completion certificates.((/en))((es))Certificados de finalización.((/es))"),
+                "((en))Certificates((/en))((es))Certificados((/es))((fr))Certificats((/fr))((pt))Certificados((/pt))",
+                "((en))Course completion certificates.((/en))((es))Certificados de finalización.((/es))((fr))Certificats de fin de cours.((/fr))((pt))Certificados de conclusão de curso.((/pt))"),
             "badge": (
-                "((en))Badges((/en))((es))Insignias((/es))",
-                "((en))Micro-credentials.((/en))((es))Micro-acreditaciones.((/es))"),
+                "((en))Badges((/en))((es))Insignias((/es))((fr))Badges((/fr))((pt))Emblemas((/pt))",
+                "((en))Micro-credentials.((/en))((es))Micro-acreditaciones.((/es))((fr))Micro-certifications.((/fr))((pt))Microcredenciais.((/pt))"),
             "award": (
-                "((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))",
-                "((en))Honors and contest wins.((/en))((es))Honores y premios.((/es))"),
+                "((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))((fr))Prix et Distinctions((/fr))((pt))Prêmios e Honrarias((/pt))",
+                "((en))Honors and contest wins.((/en))((es))Honores y premios.((/es))((fr))Honneurs et prix.((/fr))((pt))Honrarias e prêmios.((/pt))"),
         }
 
         lines = []
@@ -275,10 +275,10 @@ class CredentialsManager(BaseManager):
         lines.append("lang: en")
         lines.append("base_href: ../")
         lines.append(
-            "keywords: [Ariel Parra, certifications, certificates, badges, achievements, degree, diploma]")
-        lines.append("description: Ariel Parra multiple achievements")
+            "keywords: [((en))Ariel Parra, certifications, certificates, badges, achievements, degree, diploma((/en))((es))Ariel Parra, certificaciones, certificados, insignias, logros, título, diploma((/es))((fr))Ariel Parra, certifications, certificats, badges, réalisations, diplôme((/fr))((pt))Ariel Parra, certificações, certificados, emblemas, conquistas, diploma((/pt))]")
+        lines.append("description: ((en))Ariel Parra multiple achievements((/en))((es))Logros múltiples de Ariel Parra((/es))((fr))Réalisations multiples d'Ariel Parra((/fr))((pt))Múltiplas conquistas de Ariel Parra((/pt))")
         lines.append(
-            "title: ((en))achievements((/en))((es))acreditaciones((/es))")
+            "title: ((en))achievements((/en))((es))acreditaciones((/es))((fr))réalisations((/fr))((pt))conquistas((/pt))")
         lines.append(
             "js: [cookies, language, theme, menu, favicon, tags, credentials]")
         lines.append("css: [theme, common, credentials]")

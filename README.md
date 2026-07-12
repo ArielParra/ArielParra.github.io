@@ -80,7 +80,7 @@ content here
 - **Lightweight**: No frameworks, no bundlers for the frontend.
 - **Custom site generator**: Python-based generator (`md2html.py`, `md_parser.py`, `html_generator.py`)
 - **Theming**: Manual light/dark mode support
-- **Internationalization**: Auto language detection
+- **Internationalization**: Auto language detection and full translation support for the 4 most spoken languages in the Americas (North and South America) and transatlantic connections to Europe and the rest of the world (English, Spanish, French, and Portuguese).
 - **Responsive**: Custom mobile-first design
 - **Animated**: Subtle CSS animations
 
@@ -122,7 +122,7 @@ Contains all education records, certifications, certificates, and badges organiz
 - `skills`: List of skills gained
 - `image`: Path to credential image
 - `link`: Verification URL or PDF
-- `description`: Bilingual description (en/es)
+- `description`: Multilingual description (en/es/fr/pt)
 
 ### manage_credentials.py
 
@@ -152,7 +152,7 @@ Contains all your portfolio projects:
 - `title`: Project name
 - `date`: Project date (YYYY-MM format)
 - `technologies`: Array of technology tags used in the project
-- `description`: Bilingual description (en/es)
+- `description`: Multilingual description (en/es/fr/pt)
 - `image`: Path or URL to project preview image/gif
 - `link`: URL to the project repository or live demo
 

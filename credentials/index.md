@@ -1,9 +1,9 @@
 ---
 lang: en
 base_href: ../
-keywords: [Ariel Parra, certifications, certificates, badges, achievements, degree, diploma]
-description: Ariel Parra multiple achievements
-title: ((en))achievements((/en))((es))acreditaciones((/es))
+keywords: [((en))Ariel Parra, certifications, certificates, badges, achievements, degree, diploma((/en))((es))Ariel Parra, certificaciones, certificados, insignias, logros, título, diploma((/es))((fr))Ariel Parra, certifications, certificats, badges, réalisations, diplôme((/fr))((pt))Ariel Parra, certificações, certificados, emblemas, conquistas, diploma((/pt))]
+description: ((en))Ariel Parra multiple achievements((/en))((es))Logros múltiples de Ariel Parra((/es))((fr))Réalisations multiples d'Ariel Parra((/fr))((pt))Múltiplas conquistas de Ariel Parra((/pt))
+title: ((en))achievements((/en))((es))acreditaciones((/es))((fr))réalisations((/fr))((pt))conquistas((/pt))
 js: [cookies, language, theme, menu, favicon, tags, credentials]
 css: [theme, common, credentials]
 nav_current: 3
@@ -15,9 +15,9 @@ nav_current: 3
   <div class="card" data-tags="education">
  <hr>
  <div class="center">
- ## ((en))Education((/en))((es))Educación((/es)) <span class="section-count" data-type="education">0</span>
+ ## ((en))Education((/en))((es))Educación((/es))((fr))Éducation((/fr))((pt))Educação((/pt)) <span class="section-count" data-type="education">0</span>
  <div class="credential-description center">
-((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))
+((en))Academic background and degrees.((/en))((es))Antecedentes académicos y títulos.((/es))((fr))Parcours académique et diplômes.((/fr))((pt))Formação acadêmica e diplomas.((/pt))
  </div>
  </div>
  <hr>
@@ -51,7 +51,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_Constancia_Estudios_Ariel_Parra_2026.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Currently in 8th semester out of 9. Comprehensive training in design, implementation, and automation of complex systems. Relevant coursework: Algorithms & Data Structures, Operating Systems, and Databases. As Founder and President of CPC-GALLOS, I lead 20+ members in algorithmic training, coordinating participation in Meta Hacker Cup and ICPC Gran Premio de México.((/en))((es))Cursando actualmente el 8vo semestre de 9 Formación integral en diseño, implementación y automatización de sistemas complejos. Materias relevantes: Estructuras de Datos y Algoritmos, Sistemas Operativos y Bases de Datos. Como Fundador y Presidente de CPC-GALLOS, lidero a más de 20 miembros en entrenamiento algorítmico, coordinando la participación en Meta Hacker Cup e ICPC Gran Premio de México.((/es))
+        <span class="desc-text">((en))Currently in 8th semester out of 9. Comprehensive training in design, implementation, and automation of complex systems. Relevant coursework: Algorithms & Data Structures, Operating Systems, and Databases. As Founder and President of CPC-GALLOS, I lead 20+ members in algorithmic training, coordinating participation in Meta Hacker Cup and ICPC Gran Premio de México.((/en))((es))Cursando actualmente el 8vo semestre de 9 Formación integral en diseño, implementación y automatización de sistemas complejos. Materias relevantes: Estructuras de Datos y Algoritmos, Sistemas Operativos y Bases de Datos. Como Fundador y Presidente de CPC-GALLOS, lidero a más de 20 miembros en entrenamiento algorítmico, coordinando la participación en Meta Hacker Cup e ICPC Gran Premio de México.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -81,7 +81,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UTC_Attestation_Ariel_PARRA.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))International exchange at UTC France, ranked as the [2nd best post-baccalaureate engineering school by Le Figaro](https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-post-bac/). Relevant coursework: Computer Networks, Machine Learning, and French (FLE). Served as Vice President of UTCode, ranking 1st in the Hauts-de-France region at SWERC 2025 (ICPC).((/en))((es))Intercambio internacional en la UTC Francia, reconocida como la [2da mejor escuela de ingeniería post-bac según Le Figaro](https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-post-bac/). Materias relevantes: Redes de Computadoras, Machine Learning y Francés (FLE). Me desempeñé como Vicepresidente de UTCode, logrando el 1er lugar en la región de Hauts-de-France en SWERC 2025 (ICPC).((/es))
+        <span class="desc-text">((en))International exchange at UTC France, ranked as the [2nd best post-baccalaureate engineering school by Le Figaro](https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-post-bac/). Relevant coursework: Computer Networks, Machine Learning, and French (FLE). Served as Vice President of UTCode, ranking 1st in the Hauts-de-France region at SWERC 2025 (ICPC).((/en))((es))Intercambio internacional en la UTC Francia, reconocida como la [2da mejor escuela de ingeniería post-bac según Le Figaro](https://etudiant.lefigaro.fr/etudes/ecoles-ingenieurs/classement-post-bac/). Materias relevantes: Redes de Computadoras, Machine Learning y Francés (FLE). Me desempeñé como Vicepresidente de UTCode, logrando el 1er lugar en la región de Hauts-de-France en SWERC 2025 (ICPC).((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -109,7 +109,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/program/certificate/80f90beb-02e0-48ae-a5a4-c097d226c28e){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I successfully completed the comprehensive Oracle Next Education (ONE) program. This journey involved 286 hours of intensive training across 6 specialized tracks, including Back-end with Java, Agile methodologies, and professional development, completing over 1,300 technical and soft skills activities.((/en))((es))Completé con éxito el programa integral Oracle Next Education (ONE). Esta trayectoria implicó 286 horas de formación intensiva a través de 6 rutas especializadas, incluyendo Back-end con Java, metodologías ágiles y desarrollo profesional, realizando más de 1,300 actividades técnicas y de habilidades blandas.((/es))
+        <span class="desc-text">((en))I successfully completed the comprehensive Oracle Next Education (ONE) program. This journey involved 286 hours of intensive training across 6 specialized tracks, including Back-end with Java, Agile methodologies, and professional development, completing over 1,300 technical and soft skills activities.((/en))((es))Completé con éxito el programa integral Oracle Next Education (ONE). Esta trayectoria implicó 286 horas de formación intensiva a través de 6 rutas especializadas, incluyendo Back-end con Java, metodologías ágiles y desarrollo profesional, realizando más de 1,300 actividades técnicas y de habilidades blandas.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -119,9 +119,9 @@ nav_current: 3
   <div class="card" data-tags="certification">
  <hr>
  <div class="center">
- ## ((en))Certifications((/en))((es))Certificaciones((/es)) <span class="section-count" data-type="certification">0</span>
+ ## ((en))Certifications((/en))((es))Certificaciones((/es))((fr))Certifications((/fr))((pt))Certificações((/pt)) <span class="section-count" data-type="certification">0</span>
  <div class="credential-description center">
-((en))Proctored exam-based credentials.((/en))((es))Acreditaciones basadas en exámenes.((/es))
+((en))Proctored exam-based credentials.((/en))((es))Acreditaciones basadas en exámenes.((/es))((fr))Diplômes basés sur des examens.((/fr))((pt))Credenciais baseadas em exames.((/pt))
  </div>
  </div>
  <hr>
@@ -163,7 +163,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/c3534c43-4770-43e1-9d13-c98260a0cb00/){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Validated my knowledge of IT services and their uses in the AWS Cloud. I demonstrated cloud fluency and foundational AWS knowledge. I'm able to identify essential AWS services necessary to set up AWS-focused projects.((/en))((es))Demuestre fluidez en la nube y conocimientos básicos de AWS. Puedo identificar los servicios esenciales de AWS necesarios para configurar proyectos enfocados en AWS.((/es))
+        <span class="desc-text">((en))Validated my knowledge of IT services and their uses in the AWS Cloud. I demonstrated cloud fluency and foundational AWS knowledge. I'm able to identify essential AWS services necessary to set up AWS-focused projects.((/en))((es))Demuestre fluidez en la nube y conocimientos básicos de AWS. Puedo identificar los servicios esenciales de AWS necesarios para configurar proyectos enfocados en AWS.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -191,7 +191,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/TOEFL_IBT_AEPM_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))The TOEFL iBT assesses the ability of non-native speakers to use and understand English at the university level. With a total score of 89/120 (CEFR B2), I demonstrated 'Advanced' proficiency in Reading and Listening (24/30 each) and 'High-Intermediate' proficiency in Speaking and Writing.((/en))((es))El TOEFL iBT evalúa la capacidad de hablantes no nativos para utilizar y entender el inglés a nivel universitario. Con un puntaje total de 89/120 (MCER B2), demostré una competencia 'Avanzada' en Lectura y Escucha (24/30 cada una) y una competencia 'Intermedio-Alto' en Habla y Escritura.((/es))
+        <span class="desc-text">((en))The TOEFL iBT assesses the ability of non-native speakers to use and understand English at the university level. With a total score of 89/120 (CEFR B2), I demonstrated 'Advanced' proficiency in Reading and Listening (24/30 each) and 'High-Intermediate' proficiency in Speaking and Writing.((/en))((es))El TOEFL iBT evalúa la capacidad de hablantes no nativos para utilizar y entender el inglés a nivel universitario. Con un puntaje total de 89/120 (MCER B2), demostré una competencia 'Avanzada' en Lectura y Escucha (24/30 cada una) y una competencia 'Intermedio-Alto' en Habla y Escritura.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -222,7 +222,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/7B85BE1673D5720D){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational knowledge of Machine Learning and AI workloads on Azure. I demonstrated proficiency in describing features of computer vision, NLP, and generative AI, while identifying core AI concepts and ethical responsibilities.((/en))((es))Validé mi conocimiento fundamental sobre cargas de trabajo de Machine Learning e Inteligencia Artificial en Azure. Demostré competencia al describir características de visión computacional, NLP e IA generativa, además de identificar conceptos esenciales y responsabilidades éticas de la IA.((/es))
+        <span class="desc-text">((en))I validated my foundational knowledge of Machine Learning and AI workloads on Azure. I demonstrated proficiency in describing features of computer vision, NLP, and generative AI, while identifying core AI concepts and ethical responsibilities.((/en))((es))Validé mi conocimiento fundamental sobre cargas de trabajo de Machine Learning e Inteligencia Artificial en Azure. Demostré competencia al describir características de visión computacional, NLP e IA generativa, además de identificar conceptos esenciales y responsabilidades éticas de la IA.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -254,7 +254,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=7DD090751D80D1CE9EC6B1DA78D457443D935A64E485A8C85C1FE63E7C05DD0A){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in Large Language Models (LLMs) and the OCI Generative AI Service. I demonstrated the ability to build, evaluate, and deploy LLM applications using advanced techniques such as Retrieval-Augmented Generation (RAG), Semantic Search, and LangChain.((/en))((es))Validé mi experiencia en modelos de lenguaje de gran tamaño (LLMs) y el servicio de IA generativa de OCI. Demostré la capacidad para construir, evaluar y desplegar aplicaciones de LLM utilizando técnicas avanzadas como Generación Aumentada por Recuperación (RAG), búsqueda semántica y LangChain.((/es))
+        <span class="desc-text">((en))I validated my expertise in Large Language Models (LLMs) and the OCI Generative AI Service. I demonstrated the ability to build, evaluate, and deploy LLM applications using advanced techniques such as Retrieval-Augmented Generation (RAG), Semantic Search, and LangChain.((/en))((es))Validé mi experiencia en modelos de lenguaje de gran tamaño (LLMs) y el servicio de IA generativa de OCI. Demostré la capacidad para construir, evaluar y desplegar aplicaciones de LLM utilizando técnicas avanzadas como Generación Aumentada por Recuperación (RAG), búsqueda semántica y LangChain.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -285,7 +285,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://catalog-education.oracle.com/pls/certview/sharebadge?id=30992A10499F1A0197793FF82B04E2513DC2F17E1B28756FB0B6EE8F8B29D9A2){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational knowledge of AI, Machine Learning, and Deep Learning concepts within Oracle Cloud Infrastructure. I demonstrated proficiency in using Oracle AI/ML services and understanding the core principles of Oracle Generative AI.((/en))((es))Validé mi conocimiento fundamental en conceptos de IA, Machine Learning y Deep Learning dentro de Oracle Cloud Infrastructure. Demostré competencia en el uso de los servicios de IA/ML de Oracle y en la comprensión de los principios básicos de la IA generativa de Oracle.((/es))
+        <span class="desc-text">((en))I validated my foundational knowledge of AI, Machine Learning, and Deep Learning concepts within Oracle Cloud Infrastructure. I demonstrated proficiency in using Oracle AI/ML services and understanding the core principles of Oracle Generative AI.((/en))((es))Validé mi conocimiento fundamental en conceptos de IA, Machine Learning y Deep Learning dentro de Oracle Cloud Infrastructure. Demostré competencia en el uso de los servicios de IA/ML de Oracle y en la comprensión de los principios básicos de la IA generativa de Oracle.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -316,7 +316,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f024c37b-a271-4588-b5b3-bafbdb7cd661/){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my subject matter expertise in GitHub, covering entry-level skills in repositories, branching, and project management, as well as modern development workflows including GitHub Actions and CI/CD pipelines.((/en))((es))Validé mi experiencia técnica en GitHub, cubriendo habilidades esenciales en repositorios, manejo de ramas y gestión de proyectos, además de flujos de trabajo modernos como GitHub Actions y tuberías de CI/CD.((/es))
+        <span class="desc-text">((en))I validated my subject matter expertise in GitHub, covering entry-level skills in repositories, branching, and project management, as well as modern development workflows including GitHub Actions and CI/CD pipelines.((/en))((es))Validé mi experiencia técnica en GitHub, cubriendo habilidades esenciales en repositorios, manejo de ramas y gestión de proyectos, además de flujos de trabajo modernos como GitHub Actions y tuberías de CI/CD.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -348,7 +348,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://learn.microsoft.com/api/credentials/share/en-us/ArielParra/D4A8CCF36FAC1D6E){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in the core concepts of security, compliance, and identity within Microsoft ecosystem. I demonstrated proficiency in describing the capabilities of Microsoft Entra and Microsoft's comprehensive security and compliance solutions.((/en))((es))Validé mi experiencia en los conceptos fundamentales de seguridad, cumplimiento e identidad dentro del ecosistema de Microsoft. Demostré competencia al describir las capacidades de Microsoft Entra y las soluciones integrales de seguridad y cumplimiento de Microsoft.((/es))
+        <span class="desc-text">((en))I validated my expertise in the core concepts of security, compliance, and identity within Microsoft ecosystem. I demonstrated proficiency in describing the capabilities of Microsoft Entra and Microsoft's comprehensive security and compliance solutions.((/en))((es))Validé mi experiencia en los conceptos fundamentales de seguridad, cumplimiento e identidad dentro del ecosistema de Microsoft. Demostré competencia al describir las capacidades de Microsoft Entra y las soluciones integrales de seguridad y cumplimiento de Microsoft.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -358,9 +358,9 @@ nav_current: 3
   <div class="card" data-tags="certificate">
  <hr>
  <div class="center">
- ## ((en))Certificates((/en))((es))Certificados((/es)) <span class="section-count" data-type="certificate">0</span>
+ ## ((en))Certificates((/en))((es))Certificados((/es))((fr))Certificats((/fr))((pt))Certificados((/pt)) <span class="section-count" data-type="certificate">0</span>
  <div class="credential-description center">
-((en))Course completion certificates.((/en))((es))Certificados de finalización.((/es))
+((en))Course completion certificates.((/en))((es))Certificados de finalización.((/es))((fr))Certificats de fin de cours.((/fr))((pt))Certificados de conclusão de curso.((/pt))
  </div>
  </div>
  <hr>
@@ -389,7 +389,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://campus.iberotech.org/pluginfile.php/1/tool_certificate/issues/1783550268/3545633578AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I completed the first phase of the 'From Mexico to San Francisco: Train in AI and Live an International Experience' program, where I learned the fundamentals of AI Engineering. This program strengthened my AI skills and prepared me for the Salesforce Agent learning path.((/en))((es))Completé la primera fase del programa 'De México a San Francisco: Fórmate en IA y vive una experiencia internacional', donde aprendí los fundamentos de la Ingeniería de Inteligencia Artificial. Este programa fortaleció mis habilidades en IA y me preparó para la ruta de aprendizaje de Salesforce Agent.((/es))
+        <span class="desc-text">((en))I completed the first phase of the 'From Mexico to San Francisco: Train in AI and Live an International Experience' program, where I learned the fundamentals of AI Engineering. This program strengthened my AI skills and prepared me for the Salesforce Agent learning path.((/en))((es))Completé la primera fase del programa 'De México a San Francisco: Fórmate en IA y vive una experiencia internacional', donde aprendí los fundamentos de la Ingeniería de Inteligencia Artificial. Este programa fortaleció mis habilidades en IA y me preparó para la ruta de aprendizaje de Salesforce Agent.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -416,7 +416,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/MendixRapidDeveloperCertification-110296.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my knowledge, skills, and experience required to build applications on the Mendix platform by achieving the Rapid Developer Certification (Certificate Number: 110296). I demonstrated proficiency in low-code development methodologies, domain modeling, and the implementation of custom visual logic.((/en))((es))Validé mis conocimientos, habilidades y experiencia necesarios para construir aplicaciones en la plataforma Mendix al obtener la Certificación Rapid Developer (Número de Certificado: 110296). Demostré competencia en metodologías de desarrollo low-code, modelado de dominio y la implementación de lógica visual personalizada.((/es))
+        <span class="desc-text">((en))I validated my knowledge, skills, and experience required to build applications on the Mendix platform by achieving the Rapid Developer Certification (Certificate Number: 110296). I demonstrated proficiency in low-code development methodologies, domain modeling, and the implementation of custom visual logic.((/en))((es))Validé mis conocimientos, habilidades y experiencia necesarios para construir aplicaciones en la plataforma Mendix al obtener la Certificación Rapid Developer (Número de Certificado: 110296). Demostré competencia en metodologías de desarrollo low-code, modelado de dominio y la implementación de lógica visual personalizada.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -442,7 +442,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/GoFluent_English_C2_Certificate.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my proficiency at the C2 level. According to the CEFR framework, this level reflects the ability to understand spoken language at native speed and read complex and abstract texts with ease, using the language with precision and flexibility.((/en))((es))Validé mi competencia al nivel C2. Según el marco del MCER, este nivel refleja la capacidad de comprender el lenguaje hablado a velocidad nativa y leer textos complejos y abstractos con facilidad, usando el idioma con precisión y flexibilidad.((/es))
+        <span class="desc-text">((en))I validated my proficiency at the C2 level. According to the CEFR framework, this level reflects the ability to understand spoken language at native speed and read complex and abstract texts with ease, using the language with precision and flexibility.((/en))((es))Validé mi competencia al nivel C2. Según el marco del MCER, este nivel refleja la capacidad de comprender el lenguaje hablado a velocidad nativa y leer textos complejos y abstractos con facilidad, usando el idioma con precisión y flexibilidad.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -473,7 +473,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_AWS_Cloud_Practitioner_Essentials.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational knowledge of the AWS Cloud platform through this comprehensive learning path (10h 44m). I demonstrated a solid understanding of basic cloud concepts, security, compliance, and the core services offered by Amazon Web Services.((/en))((es))Validé mi conocimiento fundamental de la plataforma AWS Cloud a través de esta ruta de aprendizaje integral (10h 44m). Demostré una sólida comprensión de los conceptos básicos de la nube, seguridad, cumplimiento y los servicios principales que ofrece Amazon Web Services.((/es))
+        <span class="desc-text">((en))I validated my foundational knowledge of the AWS Cloud platform through this comprehensive learning path (10h 44m). I demonstrated a solid understanding of basic cloud concepts, security, compliance, and the core services offered by Amazon Web Services.((/en))((es))Validé mi conocimiento fundamental de la plataforma AWS Cloud a través de esta ruta de aprendizaje integral (10h 44m). Demostré una sólida comprensión de los conceptos básicos de la nube, seguridad, cumplimiento y los servicios principales que ofrece Amazon Web Services.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -503,7 +503,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_Fundamentos_de_Nube_AWS.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational knowledge of the AWS Cloud platform through this specialized learning path (2h 21m). I demonstrated a clear understanding of cloud computing principles, the AWS global infrastructure, and the core services provided by the platform.((/en))((es))Validé mi conocimiento fundamental de la plataforma AWS Cloud a través de esta ruta de aprendizaje especializada (2h 21m). Demostré una comprensión clara de los principios de computación en la nube, la infraestructura global de AWS y los servicios principales proporcionados por la plataforma.((/es))
+        <span class="desc-text">((en))I validated my foundational knowledge of the AWS Cloud platform through this specialized learning path (2h 21m). I demonstrated a clear understanding of cloud computing principles, the AWS global infrastructure, and the core services provided by the platform.((/en))((es))Validé mi conocimiento fundamental de la plataforma AWS Cloud a través de esta ruta de aprendizaje especializada (2h 21m). Demostré una comprensión clara de los principios de computación en la nube, la infraestructura global de AWS y los servicios principales proporcionados por la plataforma.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -530,7 +530,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cert.efset.org/en/akd3bm){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my English proficiency at the C2 level with an overall score of 79/100. According to the CEFR framework, this level reflects the ability to understand spoken language at native speed and read complex and abstract texts with ease, using the language with precision and flexibility.((/en))((es))Validé mi competencia en inglés al nivel C2 con un puntaje global de 79/100. Según el marco del MCER, este nivel refleja la capacidad de comprender el lenguaje hablado a velocidad nativa y leer textos complejos y abstractos con facilidad, usando el idioma con precisión y flexibilidad.((/es))
+        <span class="desc-text">((en))I validated my English proficiency at the C2 level with an overall score of 79/100. According to the CEFR framework, this level reflects the ability to understand spoken language at native speed and read complex and abstract texts with ease, using the language with precision and flexibility.((/en))((es))Validé mi competencia en inglés al nivel C2 con un puntaje global de 79/100. Según el marco del MCER, este nivel refleja la capacidad de comprender el lenguaje hablado a velocidad nativa y leer textos complejos y abstractos con facilidad, usando el idioma con precisión y flexibilidad.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -561,7 +561,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://cs50.harvard.edu/certificates/6a94da73-3357-4f5f-873a-8bfee1a53acd){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational knowledge of computer science and the art of programming through this Harvard University course. I successfully completed ten intensive problem sets and a final project, demonstrating proficiency in low-level programming with C, web development with Python and SQL, and core algorithmic thinking.((/en))((es))Validé mis conocimientos fundamentales de la ciencia de la computación y el arte de la programación a través de este curso de la Universidad de Harvard. Completé con éxito diez conjuntos de problemas intensivos y un proyecto final, demostrando competencia en programación de bajo nivel con C, desarrollo web con Python y SQL, y pensamiento algorítmico central.((/es))
+        <span class="desc-text">((en))I validated my foundational knowledge of computer science and the art of programming through this Harvard University course. I successfully completed ten intensive problem sets and a final project, demonstrating proficiency in low-level programming with C, web development with Python and SQL, and core algorithmic thinking.((/en))((es))Validé mis conocimientos fundamentales de la ciencia de la computación y el arte de la programación a través de este curso de la Universidad de Harvard. Completé con éxito diez conjuntos de problemas intensivos y un proyecto final, demostrando competencia en programación de bajo nivel con C, desarrollo web con Python y SQL, y pensamiento algorítmico central.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -588,7 +588,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Santander_OA_754_arielemilio_parra_EN.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my knowledge of artificial intelligence and its application to productivity through this course developed by Google. I completed 2 hours of specialized training across 2 modules , focusing on leveraging AI tools to optimize daily professional workflows.((/en))((es))Validé mis conocimientos sobre inteligencia artificial y su aplicación a la productividad a través de este curso desarrollado por Google. Completé 2 horas de formación especializada en 2 módulos , enfocándome en el aprovechamiento de herramientas de IA para optimizar flujos de trabajo profesionales diarios.((/es))
+        <span class="desc-text">((en))I validated my knowledge of artificial intelligence and its application to productivity through this course developed by Google. I completed 2 hours of specialized training across 2 modules , focusing on leveraging AI tools to optimize daily professional workflows.((/en))((es))Validé mis conocimientos sobre inteligencia artificial y su aplicación a la productividad a través de este curso desarrollado por Google. Completé 2 horas de formación especializada en 2 módulos , enfocándome en el aprovechamiento de herramientas de IA para optimizar flujos de trabajo profesionales diarios.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -616,7 +616,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/bd61f356-6b68-41b1-b9c6-8c607ecbbb3f){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in Generative AI through the Oracle Next Education program. I completed 3 specialized courses (25h) and 90 activities focusing on optimizing ChatGPT results, enhancing professional productivity with AI, and preparing for the AI-driven job market.((/en))((es))Validé mi experiencia en IA Generativa a través del programa Oracle Next Education. Completé 3 cursos especializados (25h) y 90 actividades enfocadas en la optimización de resultados en ChatGPT, la mejora de la productividad profesional con IA y la preparación para el mercado laboral impulsado por la IA.((/es))
+        <span class="desc-text">((en))I validated my expertise in Generative AI through the Oracle Next Education program. I completed 3 specialized courses (25h) and 90 activities focusing on optimizing ChatGPT results, enhancing professional productivity with AI, and preparing for the AI-driven job market.((/en))((es))Validé mi experiencia en IA Generativa a través del programa Oracle Next Education. Completé 3 cursos especializados (25h) y 90 actividades enfocadas en la optimización de resultados en ChatGPT, la mejora de la productividad profesional con IA y la preparación para el mercado laboral impulsado por la IA.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -645,7 +645,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/4f5b1c64-9851-4115-9bad-a402d2c9289a){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in database management and SQL with MySQL through the Oracle Next Education program. I completed 7 specialized courses (80h) covering advanced queries, stored procedures, DML operations, and database administration, focusing on security and performance optimization.((/en))((es))Validé mi experiencia en gestión de bases de datos y SQL con MySQL a través del programa Oracle Next Education. Completé 7 cursos especializados (80h) que abarcan consultas avanzadas, procedimientos almacenados, operaciones DML y administración de bases de datos, con un enfoque en seguridad y optimización de rendimiento.((/es))
+        <span class="desc-text">((en))I validated my expertise in database management and SQL with MySQL through the Oracle Next Education program. I completed 7 specialized courses (80h) covering advanced queries, stored procedures, DML operations, and database administration, focusing on security and performance optimization.((/en))((es))Validé mi experiencia en gestión de bases de datos y SQL con MySQL a través del programa Oracle Next Education. Completé 7 cursos especializados (80h) que abarcan consultas avanzadas, procedimientos almacenados, operaciones DML y administración de bases de datos, con un enfoque en seguridad y optimización de rendimiento.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -672,7 +672,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724039304/1593919640AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my professional competence in digital protection through the 'Cybersecurity at Work' course. I demonstrated proficiency in identifying risks and implementing best security practices within corporate environments, as certified by the Red por la Ciberseguridad Academy.((/en))((es))Validé mi competencia profesional en protección digital a través del curso 'Ciberseguridad en el Trabajo'. Demostré suficiencia en la identificación de riesgos e implementación de mejores prácticas de seguridad en entornos corporativos, certificado por la Academia de la Red por la Ciberseguridad.((/es))
+        <span class="desc-text">((en))I validated my professional competence in digital protection through the 'Cybersecurity at Work' course. I demonstrated proficiency in identifying risks and implementing best security practices within corporate environments, as certified by the Red por la Ciberseguridad Academy.((/en))((es))Validé mi competencia profesional en protección digital a través del curso 'Ciberseguridad en el Trabajo'. Demostré suficiencia en la identificación de riesgos e implementación de mejores prácticas de seguridad en entornos corporativos, certificado por la Academia de la Red por la Ciberseguridad.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -699,7 +699,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1724038728/3923002801AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my skills in applying artificial intelligence within professional environments through this 6-hour course developed by Microsoft and Red por la Ciberseguridad. I focused on leveraging AI tools to enhance workplace productivity and operational efficiency.((/en))((es))Validé mis habilidades en la aplicación de inteligencia artificial dentro de entornos profesionales a través de este curso de 6 horas desarrollado por Microsoft y la Red por la Ciberseguridad. Me enfoqué en el aprovechamiento de herramientas de IA para mejorar la productividad laboral y la eficiencia operativa.((/es))
+        <span class="desc-text">((en))I validated my skills in applying artificial intelligence within professional environments through this 6-hour course developed by Microsoft and Red por la Ciberseguridad. I focused on leveraging AI tools to enhance workplace productivity and operational efficiency.((/en))((es))Validé mis habilidades en la aplicación de inteligencia artificial dentro de entornos profesionales a través de este curso de 6 horas desarrollado por Microsoft y la Red por la Ciberseguridad. Me enfoqué en el aprovechamiento de herramientas de IA para mejorar la productividad laboral y la eficiencia operativa.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -729,7 +729,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.hackerrank.com/certificates/610bac95af9a){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational technical skills through the HackerRank Skills Certification. I demonstrated proficiency in core Data Structures such as Arrays and Strings, as well as essential Algorithms including Sorting and Searching.((/en))((es))Validé mis habilidades técnicas fundamentales a través de la Certificación de Habilidades de HackerRank. Demostré competencia en estructuras de datos básicas como arreglos y cadenas, así como en algoritmos esenciales incluyendo ordenamiento y búsqueda.((/es))
+        <span class="desc-text">((en))I validated my foundational technical skills through the HackerRank Skills Certification. I demonstrated proficiency in core Data Structures such as Arrays and Strings, as well as essential Algorithms including Sorting and Searching.((/en))((es))Validé mis habilidades técnicas fundamentales a través de la Certificación de Habilidades de HackerRank. Demostré competencia en estructuras de datos básicas como arreglos y cadenas, así como en algoritmos esenciales incluyendo ordenamiento y búsqueda.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -758,7 +758,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/c6d4100d5d3e6ff21724a72cc1b339bd2a8834132a078fd1765a01f87ffeeddd){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational expertise in cybersecurity through this professional learning path, which included passing a final exam and completing 4 courses (6h 8m). I demonstrated proficiency in threat and vulnerability management, information security awareness, and core security principles.((/en))((es))Validé mi experiencia fundamental en ciberseguridad a través de esta ruta de aprendizaje profesional, que incluyó aprobar un examen final y completar 4 cursos (6h 8m). Demostré competencia en la gestión de amenazas y vulnerabilidades, concientización sobre seguridad de la información y principios básicos de seguridad.((/es))
+        <span class="desc-text">((en))I validated my foundational expertise in cybersecurity through this professional learning path, which included passing a final exam and completing 4 courses (6h 8m). I demonstrated proficiency in threat and vulnerability management, information security awareness, and core security principles.((/en))((es))Validé mi experiencia fundamental en ciberseguridad a través de esta ruta de aprendizaje profesional, que incluyó aprobar un examen final y completar 4 cursos (6h 8m). Demostré competencia en la gestión de amenazas y vulnerabilidades, concientización sobre seguridad de la información y principios básicos de seguridad.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -788,7 +788,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.linkedin.com/learning/certificates/9f11e384a2b4e8f1fe73b9b607571e15acd7966ef12c389123e1c108bef46e4b){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in generative AI through this professional learning path, which included passing a final exam and completing 5 courses (4h 18m). I demonstrated proficiency in prompt engineering, the use of Microsoft Copilot, and the application of responsible AI principles in business contexts.((/en))((es))Validé mi experiencia en IA generativa a través de esta ruta de aprendizaje profesional, que incluyó aprobar un examen final y completar 5 cursos (4h 18m). Demostré competencia en ingeniería de prompts, el uso de Microsoft Copilot y la aplicación de principios de IA responsable en contextos empresariales.((/es))
+        <span class="desc-text">((en))I validated my expertise in generative AI through this professional learning path, which included passing a final exam and completing 5 courses (4h 18m). I demonstrated proficiency in prompt engineering, the use of Microsoft Copilot, and the application of responsible AI principles in business contexts.((/en))((es))Validé mi experiencia en IA generativa a través de esta ruta de aprendizaje profesional, que incluyó aprobar un examen final y completar 5 cursos (4h 18m). Demostré competencia en ingeniería de prompts, el uso de Microsoft Copilot y la aplicación de principios de IA responsable en contextos empresariales.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -819,7 +819,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://university.gitlab.com/c/MZpIncDnSvC0trsqE2EJeg){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational expertise in GitLab CI/CD, covering the full lifecycle of automated pipelines. I demonstrated proficiency in authoring YAML configurations, configuring scalable GitLab Runners, managing container registries, and implementing security scanners within the DevSecOps workflow.((/en))((es))Validé mi experiencia fundamental en GitLab CI/CD, cubriendo el ciclo completo de tuberías automatizadas. Demostré competencia en la creación de configuraciones YAML, configuración de GitLab Runners escalables, gestión de registros de contenedores e implementación de escáneres de seguridad dentro del flujo de trabajo DevSecOps.((/es))
+        <span class="desc-text">((en))I validated my foundational expertise in GitLab CI/CD, covering the full lifecycle of automated pipelines. I demonstrated proficiency in authoring YAML configurations, configuring scalable GitLab Runners, managing container registries, and implementing security scanners within the DevSecOps workflow.((/en))((es))Validé mi experiencia fundamental en GitLab CI/CD, cubriendo el ciclo completo de tuberías automatizadas. Demostré competencia en la creación de configuraciones YAML, configuración de GitLab Runners escalables, gestión de registros de contenedores e implementación de escáneres de seguridad dentro del flujo de trabajo DevSecOps.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -847,7 +847,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://lnkd.in/d8q5GMah){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my professional expertise in GitHub through this learning path, which included passing a final exam and completing 4 courses (4h 20m). I demonstrated proficiency in core GitHub workflows, collaboration tools, and essential skills for modern software development.((/en))((es))Validé mi experiencia profesional en GitHub a través de esta ruta de aprendizaje, que incluyó aprobar un examen final y completar 4 cursos (4h 20m). Demostré competencia en los flujos de trabajo principales de GitHub, herramientas de colaboración y habilidades esenciales para el desarrollo de software moderno.((/es))
+        <span class="desc-text">((en))I validated my professional expertise in GitHub through this learning path, which included passing a final exam and completing 4 courses (4h 20m). I demonstrated proficiency in core GitHub workflows, collaboration tools, and essential skills for modern software development.((/en))((es))Validé mi experiencia profesional en GitHub a través de esta ruta de aprendizaje, que incluyó aprobar un examen final y completar 4 cursos (4h 20m). Demostré competencia en los flujos de trabajo principales de GitHub, herramientas de colaboración y habilidades esenciales para el desarrollo de software moderno.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -877,7 +877,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/15067c81-6f13-4035-a820-9a0d77ec7279){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in modern Back-end development with Java and Spring Boot 3 through the Oracle Next Education program. I completed 8 courses (104h) and 381 activities, mastering REST API creation, database persistence with JPA, security implementation, and professional documentation.((/en))((es))Validé mi experiencia en desarrollo Back-end moderno con Java y Spring Boot 3 a través del programa Oracle Next Education. Completé 8 cursos (104h) y 381 actividades, dominando la creación de APIs REST, persistencia de datos con JPA, implementación de seguridad y documentación profesional.((/es))
+        <span class="desc-text">((en))I validated my expertise in modern Back-end development with Java and Spring Boot 3 through the Oracle Next Education program. I completed 8 courses (104h) and 381 activities, mastering REST API creation, database persistence with JPA, security implementation, and professional documentation.((/en))((es))Validé mi experiencia en desarrollo Back-end moderno con Java y Spring Boot 3 a través del programa Oracle Next Education. Completé 8 cursos (104h) y 381 actividades, dominando la creación de APIs REST, persistencia de datos con JPA, implementación de seguridad y documentación profesional.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -905,7 +905,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/f45675e9-f450-4305-b003-3fc56339d4da){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in Object-Oriented Programming with Java through the Oracle Next Education program. I completed 5 courses (46h) and 206 activities, mastering core concepts such as inheritance, polymorphism, API integration, and file management, culminating in the Currency Converter challenge.((/en))((es))Validé mi experiencia en Programación Orientada a Objetos con Java a través del programa Oracle Next Education. Completé 5 cursos (46h) y 206 actividades, dominando conceptos clave como herencia, polimorfismo, integración de APIs y manejo de archivos, culminando con el desafío del Conversor de Monedas.((/es))
+        <span class="desc-text">((en))I validated my expertise in Object-Oriented Programming with Java through the Oracle Next Education program. I completed 5 courses (46h) and 206 activities, mastering core concepts such as inheritance, polymorphism, API integration, and file management, culminating in the Currency Converter challenge.((/en))((es))Validé mi experiencia en Programación Orientada a Objetos con Java a través del programa Oracle Next Education. Completé 5 cursos (46h) y 206 actividades, dominando conceptos clave como herencia, polimorfismo, integración de APIs y manejo de archivos, culminando con el desafío del Conversor de Monedas.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -934,7 +934,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/340af97d-1823-4d60-91b5-93f17e629a68){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in agile methodologies and business strategy through the Oracle Next Education program. I completed 6 courses (39h) and 198 activities focused on career development, agile transformation, and the transition from business ideas to formal business plans.((/en))((es))Validé mi experiencia en metodologías ágiles y estrategia de negocios a través del programa Oracle Next Education. Completé 6 cursos (39h) y 198 actividades enfocadas en el desarrollo de carrera, la transformación ágil y la transición de ideas de negocio a planes de negocio formales.((/es))
+        <span class="desc-text">((en))I validated my expertise in agile methodologies and business strategy through the Oracle Next Education program. I completed 6 courses (39h) and 198 activities focused on career development, agile transformation, and the transition from business ideas to formal business plans.((/en))((es))Validé mi experiencia en metodologías ágiles y estrategia de negocios a través del programa Oracle Next Education. Completé 6 cursos (39h) y 198 actividades enfocadas en el desarrollo de carrera, la transformación ágil y la transición de ideas de negocio a planes de negocio formales.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -962,7 +962,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](https://academia.redporlaciberseguridad.org/pluginfile.php/1/tool_certificate/issues/1711245522/0939970957AP.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational knowledge of security, compliance, and identity through the 'Operation Aleph' program. I demonstrated proficiency in Microsoft SC-900 concepts, covering the fundamental principles of security operations and cloud environment protection.((/en))((es))Validé mis conocimientos fundamentales sobre seguridad, cumplimiento e identidad a través del programa 'Operación Aleph'. Demostré competencia en los conceptos de Microsoft SC-900, cubriendo los principios fundamentales de operaciones de seguridad y protección de entornos en la nube.((/es))
+        <span class="desc-text">((en))I validated my foundational knowledge of security, compliance, and identity through the 'Operation Aleph' program. I demonstrated proficiency in Microsoft SC-900 concepts, covering the fundamental principles of security operations and cloud environment protection.((/en))((es))Validé mis conocimientos fundamentales sobre seguridad, cumplimiento e identidad a través del programa 'Operación Aleph'. Demostré competencia en los conceptos de Microsoft SC-900, cubriendo los principios fundamentales de operaciones de seguridad y protección de entornos en la nube.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -991,7 +991,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ICP_Developer_Azle.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise as a developer on the Internet Computer protocol using the Azle framework. I completed an intensive training program focused on building decentralized applications with TypeScript, fulfilling all technical requirements within the ICP Hub Latam community.((/en))((es))Validé mi experiencia como desarrollador en el protocolo Internet Computer utilizando el framework Azle. Completé un programa de entrenamiento intensivo enfocado en la construcción de aplicaciones descentralizadas con TypeScript, cumpliendo con todos los requerimientos técnicos dentro de la comunidad de ICP Hub Latam.((/es))
+        <span class="desc-text">((en))I validated my expertise as a developer on the Internet Computer protocol using the Azle framework. I completed an intensive training program focused on building decentralized applications with TypeScript, fulfilling all technical requirements within the ICP Hub Latam community.((/en))((es))Validé mi experiencia como desarrollador en el protocolo Internet Computer utilizando el framework Azle. Completé un programa de entrenamiento intensivo enfocado en la construcción de aplicaciones descentralizadas con TypeScript, cumpliendo con todos los requerimientos técnicos dentro de la comunidad de ICP Hub Latam.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1019,7 +1019,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/bcff9a4c-f197-42e1-adc6-abfa2117b6cf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my professional soft skills through the Oracle Next Education program. I completed 4 courses (35h) and 171 activities focused on meta-learning techniques, productivity habits, focus strategies for daily results, and professional branding on LinkedIn.((/en))((es))Validé mi habilidades blandas profesionales a través del programa Oracle Next Education. Completé 4 cursos (35h) y 171 actividades enfocadas en técnicas de meta-aprendizaje, hábitos de productividad, estrategias de enfoque para resultados diarios y marca profesional en LinkedIn.((/es))
+        <span class="desc-text">((en))I validated my professional soft skills through the Oracle Next Education program. I completed 4 courses (35h) and 171 activities focused on meta-learning techniques, productivity habits, focus strategies for daily results, and professional branding on LinkedIn.((/en))((es))Validé mi habilidades blandas profesionales a través del programa Oracle Next Education. Completé 4 cursos (35h) y 171 actividades enfocadas en técnicas de meta-aprendizaje, hábitos de productividad, estrategias de enfoque para resultados diarios y marca profesional en LinkedIn.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1050,7 +1050,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://app.aluracursos.com/degree/certificate/d44473bf-6dfd-4589-a589-7a657958ca62){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational programming skills through the Oracle Next Education program. I completed 7 courses (62h) covering JavaScript logic, advanced HTML5/CSS3 styling, and version control with Git, successfully finishing 345 activities.((/en))((es))Validé mis habilidades fundamentales de programación a través del programa Oracle Next Education. Completé 7 cursos (62h) que cubren lógica de JavaScript, maquetación avanzada con HTML5/CSS3 y control de versiones con Git, finalizando con éxito 345 actividades.((/es))
+        <span class="desc-text">((en))I validated my foundational programming skills through the Oracle Next Education program. I completed 7 courses (62h) covering JavaScript logic, advanced HTML5/CSS3 styling, and version control with Git, successfully finishing 345 activities.((/en))((es))Validé mis habilidades fundamentales de programación a través del programa Oracle Next Education. Completé 7 cursos (62h) que cubren lógica de JavaScript, maquetación avanzada con HTML5/CSS3 y control de versiones con Git, finalizando con éxito 345 actividades.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1075,7 +1075,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Compu_Cuantrix_nivel_avanzado.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my advanced computing skills through the Compu Cuantrix program by Televisa Foundation. This certification recognizes the mastery of complex technological tools and digital competencies required for high-level professional environments.((/en))((es))Validé mis habilidades de computación avanzada a través del programa Compu Cuantrix de Fundación Televisa. Esta certificación reconoce el dominio de herramientas tecnológicas complejas y competencias digitales requeridas para entornos profesionales de alto nivel.((/es))
+        <span class="desc-text">((en))I validated my advanced computing skills through the Compu Cuantrix program by Televisa Foundation. This certification recognizes the mastery of complex technological tools and digital competencies required for high-level professional environments.((/en))((es))Validé mis habilidades de computación avanzada a través del programa Compu Cuantrix de Fundación Televisa. Esta certificación reconoce el dominio de herramientas tecnológicas complejas y competencias digitales requeridas para entornos profesionales de alto nivel.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1101,7 +1101,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Programa2023.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Comprehensive program covering key areas of Blockchain, Artificial Intelligence, and Smart Contracts((/en))((es))Programa integral que abarca las áreas de Blockchain, Inteligencia Artificial y Smart Contracts((/es))
+        <span class="desc-text">((en))Comprehensive program covering key areas of Blockchain, Artificial Intelligence, and Smart Contracts((/en))((es))Programa integral que abarca las áreas de Blockchain, Inteligencia Artificial y Smart Contracts((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1128,7 +1128,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Inteligencia_Artificial.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in AI and Data Science through the Blockmakers program, supported by INCYTEA. I completed intensive training focused on fundamental AI concepts and data-driven decision-making.((/en))((es))Validé mi experiencia en IA y Ciencia de Datos a través del programa Blockmakers, respaldado por el INCYTEA. Completé una formación intensiva centrada en conceptos fundamentales de IA y toma de decisiones basada en datos.((/es))
+        <span class="desc-text">((en))I validated my expertise in AI and Data Science through the Blockmakers program, supported by INCYTEA. I completed intensive training focused on fundamental AI concepts and data-driven decision-making.((/en))((es))Validé mi experiencia en IA y Ciencia de Datos a través del programa Blockmakers, respaldado por el INCYTEA. Completé una formación intensiva centrada en conceptos fundamentales de IA y toma de decisiones basada en datos.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1155,7 +1155,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Solidity_Bootcamp.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I completed an intensive Solidity Bootcamp focused on blockchain development. I demonstrated the ability to program smart contracts and understand decentralized infrastructure.((/en))((es))Completé un bootcamp intensivo de Solidity enfocado en el desarrollo de blockchain. Demostré la capacidad de programar contratos inteligentes y comprender la infraestructura descentralizada.((/es))
+        <span class="desc-text">((en))I completed an intensive Solidity Bootcamp focused on blockchain development. I demonstrated the ability to program smart contracts and understand decentralized infrastructure.((/en))((es))Completé un bootcamp intensivo de Solidity enfocado en el desarrollo de blockchain. Demostré la capacidad de programar contratos inteligentes y comprender la infraestructura descentralizada.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1182,7 +1182,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BLOCKMAKERS_Blockchain.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my professional skills as a Blockchain Consultant. I demonstrated a deep understanding of blockchain ecosystems and their strategic application in professional and technological environments.((/en))((es))Validé mis habilidades profesionales como Consultor Blockchain. Demostré una comprensión profunda de los ecosistemas blockchain y su aplicación estratégica en entornos profesionales y tecnológicos.((/es))
+        <span class="desc-text">((en))I validated my professional skills as a Blockchain Consultant. I demonstrated a deep understanding of blockchain ecosystems and their strategic application in professional and technological environments.((/en))((es))Validé mis habilidades profesionales como Consultor Blockchain. Demostré una comprensión profunda de los ecosistemas blockchain y su aplicación estratégica en entornos profesionales y tecnológicos.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1210,7 +1210,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Diploma_CONDUSEF.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my expertise in personal finance through this 150-hour comprehensive diploma program (Generation 43). I demonstrated proficiency in financial planning, investment strategies, credit management, and user protection within the Mexican financial system.((/en))((es))Validé mi experiencia en finanzas personales a través de este diplomado integral de 150 horas (Generación 43). Demostré competencia en planeación financiera, estrategias de inversión, gestión de crédito y protección al usuario dentro del sistema financiero mexicano.((/es))
+        <span class="desc-text">((en))I validated my expertise in personal finance through this 150-hour comprehensive diploma program (Generation 43). I demonstrated proficiency in financial planning, investment strategies, credit management, and user protection within the Mexican financial system.((/en))((es))Validé mi experiencia en finanzas personales a través de este diplomado integral de 150 horas (Generación 43). Demostré competencia en planeación financiera, estrategias de inversión, gestión de crédito y protección al usuario dentro del sistema financiero mexicano.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1220,9 +1220,9 @@ nav_current: 3
   <div class="card" data-tags="badge">
  <hr>
  <div class="center">
- ## ((en))Badges((/en))((es))Insignias((/es)) <span class="section-count" data-type="badge">0</span>
+ ## ((en))Badges((/en))((es))Insignias((/es))((fr))Badges((/fr))((pt))Emblemas((/pt)) <span class="section-count" data-type="badge">0</span>
  <div class="credential-description center">
-((en))Micro-credentials.((/en))((es))Micro-acreditaciones.((/es))
+((en))Micro-credentials.((/en))((es))Micro-acreditaciones.((/es))((fr))Micro-certifications.((/fr))((pt))Microcredenciais.((/pt))
  </div>
  </div>
  <hr>
@@ -1254,7 +1254,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/ec845f5e-0ccc-4328-88fe-b2f51e38fe75/public_url){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational knowledge of cloud concepts through the AWS Academy Cloud Foundations course. I demonstrated proficiency in core AWS services and cloud architecture, as well as essential concepts of pricing and support within the Amazon Web Services ecosystem.((/en))((es))Validé mis conocimientos fundamentales de los conceptos de la nube a través del curso AWS Academy Cloud Foundations. Demostré competencia en servicios principales de AWS y arquitectura en la nube, así como conceptos esenciales de costos y soporte dentro del ecosistema de Amazon Web Services.((/es))
+        <span class="desc-text">((en))I validated my foundational knowledge of cloud concepts through the AWS Academy Cloud Foundations course. I demonstrated proficiency in core AWS services and cloud architecture, as well as essential concepts of pricing and support within the Amazon Web Services ecosystem.((/en))((es))Validé mis conocimientos fundamentales de los conceptos de la nube a través del curso AWS Academy Cloud Foundations. Demostré competencia en servicios principales de AWS y arquitectura en la nube, así como conceptos esenciales de costos y soporte dentro del ecosistema de Amazon Web Services.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1283,7 +1283,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/01e3d4eb-99d6-43b8-bad9-233babf7b30d/public_url){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my fundamental knowledge of computer programming through the Python Essentials 1 course by Cisco and OpenEDG Python Institute. I demonstrated proficiency in the syntax and semantics of the Python language, as well as the ability to design, develop, and debug scripts using the Python Standard Library.((/en))((es))Validé mis conocimientos fundamentales de programación informática a través del curso Python Essentials 1 de Cisco y OpenEDG Python Institute. Demostré competencia en la sintaxis y semántica del lenguaje Python, así como la capacidad para diseñar, desarrollar y depurar scripts utilizando la Biblioteca Estándar de Python.((/es))
+        <span class="desc-text">((en))I validated my fundamental knowledge of computer programming through the Python Essentials 1 course by Cisco and OpenEDG Python Institute. I demonstrated proficiency in the syntax and semantics of the Python language, as well as the ability to design, develop, and debug scripts using the Python Standard Library.((/en))((es))Validé mis conocimientos fundamentales de programación informática a través del curso Python Essentials 1 de Cisco y OpenEDG Python Institute. Demostré competencia en la sintaxis y semántica del lenguaje Python, así como la capacidad para diseñar, desarrollar y depurar scripts utilizando la Biblioteca Estándar de Python.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1313,7 +1313,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/afd4033e-db74-41f2-ae6a-87ff9dc0520e){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my foundational knowledge of AWS Cloud concepts through the AWS Training and Certification program. I demonstrated proficiency in core services including Compute, Storage, Networking, and Databases, as well as essential concepts of security, architecture, and pricing within the Amazon Web Services ecosystem.((/en))((es))Validé mis conocimientos fundamentales de los conceptos de la nube de AWS a través del programa de AWS Training and Certification. Demostré competencia en servicios principales incluyendo Cómputo, Almacenamiento, Redes y Bases de Datos, así como conceptos esenciales de seguridad, arquitectura y costos dentro del ecosistema de Amazon Web Services.((/es))
+        <span class="desc-text">((en))I validated my foundational knowledge of AWS Cloud concepts through the AWS Training and Certification program. I demonstrated proficiency in core services including Compute, Storage, Networking, and Databases, as well as essential concepts of security, architecture, and pricing within the Amazon Web Services ecosystem.((/en))((es))Validé mis conocimientos fundamentales de los conceptos de la nube de AWS a través del programa de AWS Training and Certification. Demostré competencia en servicios principales incluyendo Cómputo, Almacenamiento, Redes y Bases de Datos, así como conceptos esenciales de seguridad, arquitectura y costos dentro del ecosistema de Amazon Web Services.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1345,7 +1345,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.credly.com/badges/f3c74190-7d85-403c-aeaa-9b4a104cf2c0){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my fundamental IBM Z skills and concepts through the IBM Z Xplore platform. I demonstrated proficiency in performing everyday tasks in a mainframe environment, including data set administration, formulating MVS commands, managing JCL, and orchestrating actions through Python and Open Automation Utilities.((/en))((es))Validé mis habilidades y conceptos fundamentales de IBM Z a través de la plataforma IBM Z Xplore. Demostré competencia en la ejecución de tareas cotidianas en entornos mainframe, incluyendo la administración de conjuntos de datos, formulación de comandos MVS, gestión de JCL y orquestación de acciones mediante Python y Open Automation Utilities.((/es))
+        <span class="desc-text">((en))I validated my fundamental IBM Z skills and concepts through the IBM Z Xplore platform. I demonstrated proficiency in performing everyday tasks in a mainframe environment, including data set administration, formulating MVS commands, managing JCL, and orchestrating actions through Python and Open Automation Utilities.((/en))((es))Validé mis habilidades y conceptos fundamentales de IBM Z a través de la plataforma IBM Z Xplore. Demostré competencia en la ejecución de tareas cotidianas en entornos mainframe, incluyendo la administración de conjuntos de datos, formulación de comandos MVS, gestión de JCL y orquestación de acciones mediante Python y Open Automation Utilities.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1355,9 +1355,9 @@ nav_current: 3
   <div class="card" data-tags="award">
  <hr>
  <div class="center">
- ## ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es)) <span class="section-count" data-type="award">0</span>
+ ## ((en))Awards and Honors((/en))((es))Premios y Reconocimientos((/es))((fr))Prix et Distinctions((/fr))((pt))Prêmios e Honrarias((/pt)) <span class="section-count" data-type="award">0</span>
  <div class="credential-description center">
-((en))Honors and contest wins.((/en))((es))Honores y premios.((/es))
+((en))Honors and contest wins.((/en))((es))Honores y premios.((/es))((fr))Honneurs et prix.((/fr))((pt))Honrarias e prêmios.((/pt))
  </div>
  </div>
  <hr>
@@ -1389,7 +1389,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2026.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I was recognized by the Universidad Autónoma de Aguascalientes and the Department of Electronic Systems for my leadership in organizing and directing the programming contest during the XX Congress of Exact Sciences. I managed the competition logistics and execution on May 26, 2026, fostering technical growth within the university community.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes y el Departamento de Sistemas Electrónicos por mi liderazgo en la organización y dirección del concurso de programación durante el XX Congreso de Ciencias Exactas. Gestioné la logística y ejecución de la competencia el 26 de mayo de 2026, fomentando el crecimiento técnico dentro de la comunidad universitaria.((/es))
+        <span class="desc-text">((en))I was recognized by the Universidad Autónoma de Aguascalientes and the Department of Electronic Systems for my leadership in organizing and directing the programming contest during the XX Congress of Exact Sciences. I managed the competition logistics and execution on May 26, 2026, fostering technical growth within the university community.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes y el Departamento de Sistemas Electrónicos por mi liderazgo en la organización y dirección del concurso de programación durante el XX Congreso de Ciencias Exactas. Gestioné la logística y ejecución de la competencia el 26 de mayo de 2026, fomentando el crecimiento técnico dentro de la comunidad universitaria.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1414,7 +1414,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/AEKIA_Kendo_1kyu.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Official 1nd Kyu rank awarded by the State Association of Kendo and Iaido of Aguascalientes, affiliated with the Mexican Kendo Federation (FMK), after demonstrating the required technical skills and requirements.((/en))((es))Grado oficial de 1do Kyu otorgado por la Asociación Estatal de Kendo e Iaido de Aguascalientes, afiliada a la Federación Mexicana de Kendo (FMK), tras haber demostrado las habilidades técnicas y requisitos establecidos.((/es))
+        <span class="desc-text">((en))Official 1nd Kyu rank awarded by the State Association of Kendo and Iaido of Aguascalientes, affiliated with the Mexican Kendo Federation (FMK), after demonstrating the required technical skills and requirements.((/en))((es))Grado oficial de 1do Kyu otorgado por la Asociación Estatal de Kendo e Iaido de Aguascalientes, afiliada a la Federación Mexicana de Kendo (FMK), tras haber demostrado las habilidades técnicas y requisitos establecidos.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1445,7 +1445,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Talent_Land_Hackathon_Genius_Arena_2026_Winner.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Won 1st place among 75 teams at Talent Land Genius Arena as team leader of D3LT4. Architected Tomin, a cross-platform expense-tracking app with an integrated LLM assistant, achieving a 40% increase in user engagement during MVP testing. Coordinated sprint planning, task delegation, and live demo under a 72-hour hackathon constraint.((/en))((es))Ganador del 1er lugar entre 75 equipos en Talent Land Genius Arena como líder del equipo D3LT4. Diseñó Tomin, una aplicación multiplataforma de seguimiento de gastos con un asistente LLM integrado, logrando un aumento del 40% en el compromiso del usuario durante las pruebas del MVP. Coordinó la planificación de sprints, la delegación de tareas y la demostración en vivo bajo una restricción de hackathon de 72 horas.((/es))
+        <span class="desc-text">((en))Won 1st place among 75 teams at Talent Land Genius Arena as team leader of D3LT4. Architected Tomin, a cross-platform expense-tracking app with an integrated LLM assistant, achieving a 40% increase in user engagement during MVP testing. Coordinated sprint planning, task delegation, and live demo under a 72-hour hackathon constraint.((/en))((es))Ganador del 1er lugar entre 75 equipos en Talent Land Genius Arena como líder del equipo D3LT4. Diseñó Tomin, una aplicación multiplataforma de seguimiento de gastos con un asistente LLM integrado, logrando un aumento del 40% en el compromiso del usuario durante las pruebas del MVP. Coordinó la planificación de sprints, la delegación de tareas y la demostración en vivo bajo una restricción de hackathon de 72 horas.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1472,7 +1472,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_Reconocimiento_Hackathon.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Official recognition granted by the Universidad Autónoma de Aguascalientes, acknowledging my talent, dedication, and excellence for winning first place in the Talent Hackathon 2026. This academic award complements the national victory achieved as the team leader of D3LT4.((/en))((es))Reconocimiento oficial otorgado por la Universidad Autónoma de Aguascalientes, que reconoce mi talento, dedicación y excelencia por haber obtenido el primer lugar en el Talent Hackathon 2026. Este galardón académico complementa la victoria nacional lograda como líder del equipo D3LT4.((/es))
+        <span class="desc-text">((en))Official recognition granted by the Universidad Autónoma de Aguascalientes, acknowledging my talent, dedication, and excellence for winning first place in the Talent Hackathon 2026. This academic award complements the national victory achieved as the team leader of D3LT4.((/en))((es))Reconocimiento oficial otorgado por la Universidad Autónoma de Aguascalientes, que reconoce mi talento, dedicación y excelencia por haber obtenido el primer lugar en el Talent Hackathon 2026. Este galardón académico complementa la victoria nacional lograda como líder del equipo D3LT4.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1498,7 +1498,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/LOREAL_Ariel_Emilio_Parra_Martinez_112919811565.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Certificate of recognition awarded by Jean-Claude Le Grand, L'Oréal Chief Human Relations Officer, for participating in L'Oréal Brandstorm 2026, recognized as the only EOCCS certified youth innovation competition.((/en))((es))Certificado de reconocimiento otorgado por Jean-Claude Le Grand, Director de Relaciones Humanas de L'Oréal, por participar en L'Oréal Brandstorm 2026, reconocida como la única competencia de innovación juvenil certificada por EOCCS.((/es))
+        <span class="desc-text">((en))Certificate of recognition awarded by Jean-Claude Le Grand, L'Oréal Chief Human Relations Officer, for participating in L'Oréal Brandstorm 2026, recognized as the only EOCCS certified youth innovation competition.((/en))((es))Certificado de reconocimiento otorgado por Jean-Claude Le Grand, Director de Relaciones Humanas de L'Oréal, por participar en L'Oréal Brandstorm 2026, reconocida como la única competencia de innovación juvenil certificada por EOCCS.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1527,7 +1527,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025_SWERC_AEPM_UTC.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Ranked Mention at the 2025 SWERC (ICPC Southwestern Europe Regional Contest). Ranked 67th out of 142 teams. Placed 15th among 46 French teams and 1st in the Hauts-de-France region.((/en))((es))Mención Honorifica en el SWERC del ICPC 2025. Clasificado en el puesto 67 de 142 equipos. Clasificado en el puesto 15 de 46 equipos franceses y 1er lugar en la región de Hauts-de-France.((/es))
+        <span class="desc-text">((en))Ranked Mention at the 2025 SWERC (ICPC Southwestern Europe Regional Contest). Ranked 67th out of 142 teams. Placed 15th among 46 French teams and 1st in the Hauts-de-France region.((/en))((es))Mención Honorifica en el SWERC del ICPC 2025. Clasificado en el puesto 67 de 142 equipos. Clasificado en el puesto 15 de 46 equipos franceses y 1er lugar en la región de Hauts-de-France.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1556,7 +1556,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2025-ICPC_Gran_Premio_de_Mexico-Ariel_Emilio_Parra_Martinez-HONORABLE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I earned an Honorable Mention at the 2025 ICPC Gran Premio de México, representing the Universidad Autónoma de Aguascalientes. This achievement validates my technical proficiency in algorithmic problem-solving and my ability to collaborate effectively in high-pressure competitive programming environments.((/en))((es))Obtuve una Mención Honorífica en el ICPC Gran Premio de México 2025, representando a la Universidad Autónoma de Aguascalientes. Este logro valida mi competencia técnica en la resolución de problemas algorítmicos y mi capacidad para colaborar eficazmente en entornos de programación competitiva de alta presión.((/es))
+        <span class="desc-text">((en))I earned an Honorable Mention at the 2025 ICPC Gran Premio de México, representing the Universidad Autónoma de Aguascalientes. This achievement validates my technical proficiency in algorithmic problem-solving and my ability to collaborate effectively in high-pressure competitive programming environments.((/en))((es))Obtuve una Mención Honorífica en el ICPC Gran Premio de México 2025, representando a la Universidad Autónoma de Aguascalientes. Este logro valida mi competencia técnica en la resolución de problemas algorítmicos y mi capacidad para colaborar eficazmente en entornos de programación competitiva de alta presión.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1584,7 +1584,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.facebook.com/codingcompetitions/hacker-cup/2025/certificate/1022025052997781){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my technical proficiency in algorithmic problem-solving by participating in the 2025 Meta Hacker Cup. I successfully reached a national ranking in the top 24 of Mexico in this high-level international programming competition.((/en))((es))Validé mi competencia técnica en la resolución de problemas algorítmicos al participar en el Meta Hacker Cup 2025. Logré posicionarme dentro del top 24 de México en esta competencia de programación internacional de alto nivel.((/es))
+        <span class="desc-text">((en))I validated my technical proficiency in algorithmic problem-solving by participating in the 2025 Meta Hacker Cup. I successfully reached a national ranking in the top 24 of Mexico in this high-level international programming competition.((/en))((es))Validé mi competencia técnica en la resolución de problemas algorítmicos al participar en el Meta Hacker Cup 2025. Logré posicionarme dentro del top 24 de México en esta competencia de programación internacional de alto nivel.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1612,7 +1612,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2025 semester. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2025. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))
+        <span class="desc-text">((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2025 semester. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2025. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1637,7 +1637,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/AEKIA_Kendo_2kyu.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Official 2nd Kyu rank awarded by the State Association of Kendo and Iaido of Aguascalientes, affiliated with the Mexican Kendo Federation (FMK), after demonstrating the required technical skills and requirements.((/en))((es))Grado oficial de 2do Kyu otorgado por la Asociación Estatal de Kendo e Iaido de Aguascalientes, afiliada a la Federación Mexicana de Kendo (FMK), tras haber demostrado las habilidades técnicas y requisitos establecidos.((/es))
+        <span class="desc-text">((en))Official 2nd Kyu rank awarded by the State Association of Kendo and Iaido of Aguascalientes, affiliated with the Mexican Kendo Federation (FMK), after demonstrating the required technical skills and requirements.((/en))((es))Grado oficial de 2do Kyu otorgado por la Asociación Estatal de Kendo e Iaido de Aguascalientes, afiliada a la Federación Mexicana de Kendo (FMK), tras haber demostrado las habilidades técnicas y requisitos establecidos.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1665,7 +1665,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_TALLER_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I was recognized by the Universidad Autónoma de Aguascalientes and the Center for Basic Sciences for my contribution as a workshop instructor during the XIX Congress of Exact Sciences. I designed and delivered the 'Technical Job Interviews' workshop, sharing strategies and technical knowledge to help students navigate professional selection processes.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes y el Centro de Ciencias Básicas por mi contribución como tallerista durante el XIX Congreso de Ciencias Exactas. Diseñé e impartí el taller 'Entrevistas Técnicas de Trabajo', compartiendo estrategias y conocimientos técnicos para ayudar a los estudiantes a navegar procesos de selección profesional.((/es))
+        <span class="desc-text">((en))I was recognized by the Universidad Autónoma de Aguascalientes and the Center for Basic Sciences for my contribution as a workshop instructor during the XIX Congress of Exact Sciences. I designed and delivered the 'Technical Job Interviews' workshop, sharing strategies and technical knowledge to help students navigate professional selection processes.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes y el Centro de Ciencias Básicas por mi contribución como tallerista durante el XIX Congreso de Ciencias Exactas. Diseñé e impartí el taller 'Entrevistas Técnicas de Trabajo', compartiendo estrategias y conocimientos técnicos para ayudar a los estudiantes a navegar procesos de selección profesional.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1693,7 +1693,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_CONCURSO_2025.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I was recognized by the Universidad Autónoma de Aguascalientes and the Department of Electronic Systems for my leadership in organizing and directing the programming contest during the XIX Congress of Exact Sciences. I managed the competition logistics and execution on March 27, 2025, fostering technical growth within the university community.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes y el Departamento de Sistemas Electrónicos por mi liderazgo en la organización y dirección del concurso de programación durante el XIX Congreso de Ciencias Exactas. Gestioné la logística y ejecución de la competencia el 27 de marzo de 2025, fomentando el crecimiento técnico dentro de la comunidad universitaria.((/es))
+        <span class="desc-text">((en))I was recognized by the Universidad Autónoma de Aguascalientes and the Department of Electronic Systems for my leadership in organizing and directing the programming contest during the XIX Congress of Exact Sciences. I managed the competition logistics and execution on March 27, 2025, fostering technical growth within the university community.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes y el Departamento de Sistemas Electrónicos por mi liderazgo en la organización y dirección del concurso de programación durante el XIX Congreso de Ciencias Exactas. Gestioné la logística y ejecución de la competencia el 27 de marzo de 2025, fomentando el crecimiento técnico dentro de la comunidad universitaria.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1721,7 +1721,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CPC-GALLOS_2024.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2024 semester. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2024. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))
+        <span class="desc-text">((en))I was recognized by the Universidad Autónoma de Aguascalientes for my leadership and commitment as the President of the competitive programming club Γα=Ω5 (Gallos) during the August-December 2024 semester. I managed club activities, mentored members in algorithmic problem solving, and fostered a collaborative environment for technical growth.((/en))((es))Fui reconocido por la Universidad Autónoma de Aguascalientes por mi liderazgo y compromiso como Presidente del club de programación competitiva Γα=Ω5 (Gallos) durante el semestre agosto-diciembre 2024. Gestioné las actividades del club, brindé mentoría en resolución de problemas algorítmicos y fomenté un entorno colaborativo para el crecimiento técnico.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1750,7 +1750,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2024-ICPC_Gran_Premio_de_Mexico-Ariel_Parra_PLACE.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I received an Honorable Mention at the 2024 ICPC Gran Premio de México representing the Universidad Autónoma de Aguascalientes with the team 'HoneyCrisps'. This recognition validates my technical skills in competitive programming and algorithmic problem solving during the competition held from April to October 2024.((/en))((es))Recibí una Mención Honorífica en el ICPC Gran Premio de México 2024 representando a la Universidad Autónoma de Aguascalientes con el equipo 'HoneyCrisps'. Este reconocimiento valida mis habilidades técnicas en programación competitiva y resolución de problemas algorítmicos durante la competencia celebrada de abril a octubre de 2024.((/es))
+        <span class="desc-text">((en))I received an Honorable Mention at the 2024 ICPC Gran Premio de México representing the Universidad Autónoma de Aguascalientes with the team 'HoneyCrisps'. This recognition validates my technical skills in competitive programming and algorithmic problem solving during the competition held from April to October 2024.((/en))((es))Recibí una Mención Honorífica en el ICPC Gran Premio de México 2024 representando a la Universidad Autónoma de Aguascalientes con el equipo 'HoneyCrisps'. Este reconocimiento valida mis habilidades técnicas en programación competitiva y resolución de problemas algorítmicos durante la competencia celebrada de abril a octubre de 2024.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1778,7 +1778,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ANIEI-Ariel_Emilio_Parra_Martinez.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my competitive programming skills by participating in the 19th National Programming Contest during the XXXVII National and XXIII International Congress of Informatics and Computing (ANIEI 2024). The event was held at the Centro Universitario de Tonalá (UDG), focusing on the intersection of AI, reality, and virtual environments.((/en))((es))Validé mis habilidades en programación competitiva mediante mi participación en el 19º Concurso Nacional de Programación dentro del XXXVII Congreso Nacional y XXIII Congreso Internacional de Informática y Computación (ANIEI 2024). El evento se llevó a cabo en el Centro Universitario de Tonalá (UDG), con un enfoque en la intersección de la IA, la realidad y los entornos virtuales.((/es))
+        <span class="desc-text">((en))I validated my competitive programming skills by participating in the 19th National Programming Contest during the XXXVII National and XXIII International Congress of Informatics and Computing (ANIEI 2024). The event was held at the Centro Universitario de Tonalá (UDG), focusing on the intersection of AI, reality, and virtual environments.((/en))((es))Validé mis habilidades en programación competitiva mediante mi participación en el 19º Concurso Nacional de Programación dentro del XXXVII Congreso Nacional y XXIII Congreso Internacional de Informática y Computación (ANIEI 2024). El evento se llevó a cabo en el Centro Universitario de Tonalá (UDG), con un enfoque en la intersección de la IA, la realidad y los entornos virtuales.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1806,7 +1806,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1022025052997781){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))I validated my technical proficiency in algorithmic problem-solving by participating in the 2024 Meta Hacker Cup. I successfully reached Round 1, achieving a global ranking of 7,297th, which placed me within the top 32% of competitors worldwide in this high-level international programming competition.((/en))((es))Validé mi competencia técnica en la resolución de problemas algorítmicos al participar en el Meta Hacker Cup 2024. Alcancé con éxito la Ronda 1, obteniendo una clasificación global de 7,297, lo que me posicionó dentro del top 32% de los competidores a nivel mundial en esta competencia de programación internacional de alto nivel.((/es))
+        <span class="desc-text">((en))I validated my technical proficiency in algorithmic problem-solving by participating in the 2024 Meta Hacker Cup. I successfully reached Round 1, achieving a global ranking of 7,297th, which placed me within the top 32% of competitors worldwide in this high-level international programming competition.((/en))((es))Validé mi competencia técnica en la resolución de problemas algorítmicos al participar en el Meta Hacker Cup 2024. Alcancé con éxito la Ronda 1, obteniendo una clasificación global de 7,297, lo que me posicionó dentro del top 32% de los competidores a nivel mundial en esta competencia de programación internacional de alto nivel.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1834,7 +1834,7 @@ nav_current: 3
         [((en))Verify credential((/en))((es))Verificar credencial((/es))](https://www.xbox.com/en-US/play/user/ravary212){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Supported the global Xbox community by assisting players with platform questions, promoting positive online interactions, participating in community events, and providing product feedback. Developed skills in customer support, communication, teamwork, problem solving, and community moderation while contributing to a welcoming gaming environment.((/en))((es))Apoyé a la comunidad global de Xbox asistiendo a jugadores con dudas sobre la plataforma, promoviendo interacciones positivas en línea, participando en eventos de la comunidad y brindando comentarios sobre productos. Desarrollé habilidades en soporte al cliente, comunicación, trabajo en equipo y resolución de problemas, contribuyendo a un entorno de juego inclusivo.((/es))
+        <span class="desc-text">((en))Supported the global Xbox community by assisting players with platform questions, promoting positive online interactions, participating in community events, and providing product feedback. Developed skills in customer support, communication, teamwork, problem solving, and community moderation while contributing to a welcoming gaming environment.((/en))((es))Apoyé a la comunidad global de Xbox asistiendo a jugadores con dudas sobre la plataforma, promoviendo interacciones positivas en línea, participando en eventos de la comunidad y brindando comentarios sobre productos. Desarrollé habilidades en soporte al cliente, comunicación, trabajo en equipo y resolución de problemas, contribuyendo a un entorno de juego inclusivo.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1859,7 +1859,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_Mejor_Promedio_2024.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Official recognition signed by the Rector of the University for obtaining a 9.6 GPA during the January - June 2024 semester of the Computer Systems Engineering program.((/en))((es))Reconocimiento oficial firmado por la Rectora de la Universidad por haber obtenido un promedio de 9.6 durante el semestre enero - junio 2024 de la carrera de Ing. en Sistemas Computacionales.((/es))
+        <span class="desc-text">((en))Official recognition signed by the Rector of the University for obtaining a 9.6 GPA during the January - June 2024 semester of the Computer Systems Engineering program.((/en))((es))Reconocimiento oficial firmado por la Rectora de la Universidad por haber obtenido un promedio de 9.6 durante el semestre enero - junio 2024 de la carrera de Ing. en Sistemas Computacionales.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1884,7 +1884,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BACHUAA_Mejor_Promedio_2021.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Official recognition signed by the Rector of the University for obtaining a 9.57 GPA, the highest in the group during the August – December 2021 semester of high school((/en))((es))Reconocimiento oficial firmado por el Rector de la Universidad por haber obtenido una calificación de 9.57, el mejor promedio de su grupo durante el semestre agosto – diciembre 2021 de bachillerato((/es))
+        <span class="desc-text">((en))Official recognition signed by the Rector of the University for obtaining a 9.57 GPA, the highest in the group during the August – December 2021 semester of high school((/en))((es))Reconocimiento oficial firmado por el Rector de la Universidad por haber obtenido una calificación de 9.57, el mejor promedio de su grupo durante el semestre agosto – diciembre 2021 de bachillerato((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1910,7 +1910,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BACHUAA_Consejero_Representante.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Official appointment as Student Representative Counselor for the High School Center's Board of Representatives at the Universidad Autónoma de Aguascalientes. The oath of office was taken during a solemn session on August 27, 2021.((/en))((es))Nombramiento oficial como Consejero Representante Alumno del H. Consejo de Representantes del Centro de Educación Media de la Universidad Autónoma de Aguascalientes. La toma de protesta se llevó a cabo en sesión solemne el 27 de agosto de 2021.((/es))
+        <span class="desc-text">((en))Official appointment as Student Representative Counselor for the High School Center's Board of Representatives at the Universidad Autónoma de Aguascalientes. The oath of office was taken during a solemn session on August 27, 2021.((/en))((es))Nombramiento oficial como Consejero Representante Alumno del H. Consejo de Representantes del Centro de Educación Media de la Universidad Autónoma de Aguascalientes. La toma de protesta se llevó a cabo en sesión solemne el 27 de agosto de 2021.((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>
@@ -1935,7 +1935,7 @@ nav_current: 3
         [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/BACHUAA_Algebra_2019.pdf){:target="_blank" class="credential-link"}
       </div>
       <div class="credential-description justify">
-        ((en))Awarded for obtaining first place in the Algebra Mathematics Skills contest during the 'Jornadas del Centro de Educación Media' at UAA((/en))((es))Otorgado por haber obtenido el primer lugar en el concurso de Habilidades Matemáticas de ÁLGEBRA, en el marco de las Jornadas del Centro de Educación Media de la UAA((/es))
+        <span class="desc-text">((en))Awarded for obtaining first place in the Algebra Mathematics Skills contest during the 'Jornadas del Centro de Educación Media' at UAA((/en))((es))Otorgado por haber obtenido el primer lugar en el concurso de Habilidades Matemáticas de ÁLGEBRA, en el marco de las Jornadas del Centro de Educación Media de la UAA((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>

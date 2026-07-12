@@ -10,18 +10,21 @@ endif
 
 script := scripts/md2html.py
 
-all: index portfolio contact credentials 404 sitemap humans
+LANGS := es fr pt
+all: en_all $(LANGS) sitemap humans
+
+en_all: index portfolio contact credentials 404
 
 # Index
 index: index.html
 index.html: index.md $(script)
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@) --lang en
 
 # Portfolio
 portfolio_md: portfolio/index.md
 portfolio: portfolio/index.html
 portfolio/index.html: portfolio/index.md $(script)
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@) --lang en
 
 portfolio/index.md: portfolio/data/projects.json scripts/manage_portfolio.py
 	@echo "Generating portfolio/index.md file..."
@@ -30,13 +33,13 @@ portfolio/index.md: portfolio/data/projects.json scripts/manage_portfolio.py
 # Contact
 contact: contact/index.html
 contact/index.html: contact/index.md $(script)
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@) --lang en
 
 # Credentials
 credentials_md: credentials/index.md
 credentials: credentials/index.html
 credentials/index.html: credentials/index.md $(script)
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@) --lang en
 
 credentials/index.md: credentials/data/credentials.json scripts/manage_credentials.py
 	@echo "Sorting credentials.json..."
@@ -47,7 +50,31 @@ credentials/index.md: credentials/data/credentials.json scripts/manage_credentia
 # 404
 404: 404.html
 404.html: 404.md $(script)
-	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@)
+	$(PYTHON) $(call FixPath,$(script)) $(call FixPath,$<) $(call FixPath,$@) --lang en
+
+# Other Languages
+define BUILD_LANG
+$(1): $(1)/index.html $(1)/portfolio/index.html $(1)/contact/index.html $(1)/credentials/index.html $(1)/404.html
+
+$(1)/index.html: index.md $$(script)
+	$$(PYTHON) $$(call FixPath,$$(script)) $$(call FixPath,$$<) $$(call FixPath,$$@) --lang $(1)
+
+$(1)/portfolio/index.html: portfolio/index.md $$(script)
+	$$(PYTHON) $$(call FixPath,$$(script)) $$(call FixPath,$$<) $$(call FixPath,$$@) --lang $(1)
+
+$(1)/contact/index.html: contact/index.md $$(script)
+	$$(PYTHON) $$(call FixPath,$$(script)) $$(call FixPath,$$<) $$(call FixPath,$$@) --lang $(1)
+
+$(1)/credentials/index.html: credentials/index.md $$(script)
+	$$(PYTHON) $$(call FixPath,$$(script)) $$(call FixPath,$$<) $$(call FixPath,$$@) --lang $(1)
+
+$(1)/404.html: 404.md $$(script)
+	$$(PYTHON) $$(call FixPath,$$(script)) $$(call FixPath,$$<) $$(call FixPath,$$@) --lang $(1)
+endef
+
+$(eval $(call BUILD_LANG,es))
+$(eval $(call BUILD_LANG,fr))
+$(eval $(call BUILD_LANG,pt))
 
 # Sitemap
 sitemap:
@@ -65,6 +92,9 @@ clean:
 	rm -f $(call FixPath,./contact/index.html)
 	rm -f $(call FixPath,./credentials/index.html)
 	rm -f $(call FixPath,./404.html)
+	rm -rf $(call FixPath,./es)
+	rm -rf $(call FixPath,./fr)
+	rm -rf $(call FixPath,./pt)
 
 validate:
 	$(PYTHON) $(call FixPath,scripts/validate.py)
@@ -85,4 +115,4 @@ lint:
 	$(PYTHON) $(call FixPath,scripts/validate_json.py)
 	@echo "🎉 All JSON files passed validation!"
 	
-.PHONY: all clean index portfolio_md portfolio contact credentials_md credentials 404 sitemap humans validate lint
+.PHONY: all clean en_all index portfolio_md portfolio contact credentials_md credentials 404 sitemap humans validate lint es fr pt

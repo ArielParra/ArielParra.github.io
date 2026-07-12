@@ -2,6 +2,7 @@
 Author: Ariel Parra
 """
 import argparse
+import os
 from md_parser import parse_md
 from html_generator import generate_html
 
@@ -10,6 +11,7 @@ def main():
     parser = argparse.ArgumentParser(description='Convert Markdown to HTML.')
     parser.add_argument('input_file', type=str, help='Input markdown file')
     parser.add_argument('output_file', type=str, help='Output HTML file')
+    parser.add_argument('--lang', type=str, default='en', help='Target language (en, es, fr, pt)')
     args = parser.parse_args()
 
     with open(args.input_file, 'r', encoding='utf-8') as f:
@@ -24,7 +26,10 @@ def main():
             "Invalid markdown format. Ensure the file starts with a header block delimited by '---'.")
 
     md_dict = parse_md(md_header)
-    html_content = generate_html(md_dict, md_content)
+    html_content = generate_html(md_dict, md_content, args.lang)
+
+    # Create directories if they do not exist
+    os.makedirs(os.path.dirname(os.path.abspath(args.output_file)), exist_ok=True)
 
     with open(args.output_file, 'w', encoding='utf-8') as f:
         f.write(html_content)

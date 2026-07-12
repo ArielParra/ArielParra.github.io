@@ -199,9 +199,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function updatePlaceholder() {
     if (!input) return;
     const lang = getPortfolioLang();
-    input.placeholder = lang === "es"
-      ? (input.getAttribute("data-placeholder-es") || "Buscar tecnología...")
-      : (input.getAttribute("data-placeholder-en") || "Search technology...");
+    const placeholders = {
+      en: input.getAttribute("data-placeholder-en") || "Search technology...",
+      es: input.getAttribute("data-placeholder-es") || "Buscar tecnología...",
+      fr: input.getAttribute("data-placeholder-fr") || "Rechercher une technologie...",
+      pt: input.getAttribute("data-placeholder-pt") || "Pesquisar tecnologia...",
+    };
+    input.placeholder = placeholders[lang] || placeholders.en;
   }
 
   updatePlaceholder();
@@ -228,19 +232,36 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleProjectDescription(element) {
   const container = element.closest(".project-description");
   const isExpanded = container.classList.contains("expanded");
-  const textSpan = container.querySelector("span.i18n");
+  const textSpan = container.querySelector("span.desc-text");
   const lang = getPortfolioLang();
+
+  const TEXT_SEE_MORE = {
+    en: "See more",
+    es: "Ver más",
+    fr: "Voir plus",
+    pt: "Ver mais",
+  };
+  const TEXT_SEE_LESS = {
+    en: "See less",
+    es: "Ver menos",
+    fr: "Voir moins",
+    pt: "Ver menos",
+  };
 
   if (isExpanded) {
     container.classList.remove("expanded");
-    element.textContent = `... ${lang === "es" ? "Ver más" : "See more"}`;
+    element.textContent = `... ${TEXT_SEE_MORE[lang] || TEXT_SEE_MORE.en}`;
     truncateProjectDescriptions();
   } else {
     container.classList.add("expanded");
-    element.textContent = lang === "es" ? "Ver menos" : "See less";
+    element.textContent = TEXT_SEE_LESS[lang] || TEXT_SEE_LESS.en;
     if (textSpan) {
-      const fullText = container.getAttribute("data-full-text");
-      if (fullText) textSpan.innerHTML = fullText;
+      let fullText = container.getAttribute("data-full-text");
+      if (!fullText) {
+        fullText = textSpan.textContent;
+        container.setAttribute("data-full-text", fullText);
+      }
+      textSpan.innerHTML = fullText;
     }
   }
 }
@@ -252,13 +273,23 @@ function truncateProjectDescriptions() {
   descriptions.forEach((container) => {
     if (container.classList.contains("expanded")) return;
 
-    const textSpan = container.querySelector("span.i18n");
+    const textSpan = container.querySelector("span.desc-text");
     const seeMoreLink = container.querySelector(".see-more");
     if (!textSpan || !seeMoreLink) return;
 
     const lang = getPortfolioLang();
-    const fullText = textSpan.getAttribute(`data-i18n-${lang}`) || textSpan.textContent;
-    container.setAttribute("data-full-text", fullText);
+    let fullText = container.getAttribute("data-full-text");
+    if (!fullText) {
+      fullText = textSpan.textContent;
+      container.setAttribute("data-full-text", fullText);
+    }
+
+    const TEXT_SEE_MORE = {
+      en: "See more",
+      es: "Ver más",
+      fr: "Voir plus",
+      pt: "Ver mais",
+    };
 
     if (fullText.length > MAX_CHARS) {
       let truncated = fullText.substring(0, MAX_CHARS);
@@ -266,7 +297,7 @@ function truncateProjectDescriptions() {
         truncated = truncated.slice(0, -1);
       }
       textSpan.innerHTML = truncated.trim();
-      seeMoreLink.textContent = `... ${lang === "es" ? "Ver más" : "See more"}`;
+      seeMoreLink.textContent = `... ${TEXT_SEE_MORE[lang] || TEXT_SEE_MORE.en}`;
       seeMoreLink.style.display = "inline";
     } else {
       seeMoreLink.style.display = "none";
@@ -277,7 +308,7 @@ function truncateProjectDescriptions() {
 function resetProjectDescriptions() {
   const descriptions = document.querySelectorAll(".project-description.justify");
   descriptions.forEach((container) => {
-    const textSpan = container.querySelector("span.i18n");
+    const textSpan = container.querySelector("span.desc-text");
     const seeMoreLink = container.querySelector(".see-more");
     const fullText = container.getAttribute("data-full-text");
     if (textSpan && fullText) textSpan.innerHTML = fullText;

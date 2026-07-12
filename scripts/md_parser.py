@@ -1,5 +1,6 @@
 import re
-import html
+
+LANGUAGES = ['en', 'es', 'fr', 'pt']
 
 
 def parse_md(md_content):
@@ -23,19 +24,39 @@ def parse_md(md_content):
     return md_dict
 
 
-def extract_i18n_from_attr(attr_value):
-    en_match = re.search(r'\(\(en\)\)(.*?)\(\(/en\)\)', attr_value)
-    es_match = re.search(r'\(\(es\)\)(.*?)\(\(/es\)\)', attr_value)
-    if en_match and es_match:
-        prefix = attr_value[:en_match.start()]
-        suffix = attr_value[es_match.end():]
-        en_content = prefix + en_match.group(1) + suffix
-        es_content = prefix + es_match.group(1) + suffix
-        return ('', en_content, es_content)
-    return (attr_value, None, None)
+def extract_translation(text, lang):
+    if isinstance(text, dict):
+        return text.get(lang, text.get('en', ''))
+    if not isinstance(text, str):
+        return text
+
+    # Find contiguous language blocks (allowing whitespace between them)
+    pattern = re.compile(r'(?:\s*\(\((?:en|es|fr|pt)\)\).*?\(\(/(?:en|es|fr|pt)\)\)\s*)+', re.DOTALL)
+
+    def replacer(match):
+        full_text = match.group(0)
+
+        # Preserve leading and trailing whitespace
+        match_leading = re.match(r'^\s*', full_text).group(0)
+        match_trailing = re.search(r'\s*$', full_text).group(0)
+
+        blocks = re.findall(r'\(\((en|es|fr|pt)\)\)(.*?)\(\(/\1\)\)', full_text, re.DOTALL)
+        lang_dict = {lang_key: content for lang_key, content in blocks}
+
+        content = ""
+        if lang in lang_dict:
+            content = lang_dict[lang]
+        elif 'en' in lang_dict:
+            content = lang_dict['en']
+        elif blocks:
+            content = blocks[0][1]
+
+        return match_leading + content + match_trailing
+
+    return pattern.sub(replacer, text)
 
 
-def process_linked_image_match(m):
+def process_linked_image_match(m, page_lang):
     full_match = m.group(0)
     img_part = m.group(1)
 
@@ -48,7 +69,7 @@ def process_linked_image_match(m):
     if not img_alt and not re.search(r'\w+="[^"]*"', img_alt_raw):
         img_alt = img_alt_raw.strip()
 
-    img_alt_plain, img_alt_en, img_alt_es = extract_i18n_from_attr(img_alt)
+    img_alt_translated = extract_translation(img_alt, page_lang)
 
     other_img_attrs = []
     title_val = ""
@@ -62,7 +83,7 @@ def process_linked_image_match(m):
         else:
             other_img_attrs.append(attr_match.group(0))
 
-    title_plain, title_en, title_es = extract_i18n_from_attr(title_val)
+    title_translated = extract_translation(title_val, page_lang)
 
     all_urls = re.findall(r'\]\(([^)]+)\)', full_match)
     link_url = "#"
@@ -83,27 +104,15 @@ def process_linked_image_match(m):
     if other_img_attrs:
         img_parts.extend(other_img_attrs)
 
-    if img_alt_en and img_alt_es:
-        img_parts.append(f'data-i18n-alt-en="{html.escape(img_alt_en)}"')
-        img_parts.append(f'data-i18n-alt-es="{html.escape(img_alt_es)}"')
-        img_parts.append(f'alt="{img_alt_en}"')
-    elif img_alt:
-        img_parts.append(f'alt="{img_alt}"')
-    else:
-        img_parts.append('alt=""')
-
-    if title_en and title_es:
-        img_parts.append(f'data-i18n-title-en="{html.escape(title_en)}"')
-        img_parts.append(f'data-i18n-title-es="{html.escape(title_es)}"')
-        img_parts.append(f'title="{title_en}"')
-    elif title_val:
-        img_parts.append(f'title="{title_val}"')
+    img_parts.append(f'alt="{img_alt_translated}"')
+    if title_translated:
+        img_parts.append(f'title="{title_translated}"')
 
     img_tag = ' '.join(img_parts) + '>'
     return f'<a href="{link_url}" target="{target}">{img_tag}</a>'
 
 
-def process_image_match(m):
+def process_image_match(m, page_lang):
     alt_raw = m.group(1)
     url = m.group(2)
     attrs = m.group(3) or ""
@@ -129,29 +138,17 @@ def process_image_match(m):
     if title_match:
         title_val = title_match.group(1)
 
-    alt_plain, alt_en, alt_es = extract_i18n_from_attr(alt)
-    title_plain, title_en, title_es = extract_i18n_from_attr(title_val)
+    alt_translated = extract_translation(alt, page_lang)
+    title_translated = extract_translation(title_val, page_lang)
 
     img_parts = [f'<img src="{url}"']
 
     if other_img_attrs:
         img_parts.extend(other_img_attrs)
 
-    if alt_en and alt_es:
-        img_parts.append(f'data-i18n-alt-en="{html.escape(alt_en)}"')
-        img_parts.append(f'data-i18n-alt-es="{html.escape(alt_es)}"')
-        img_parts.append(f'alt="{alt_en}"')
-    elif alt:
-        img_parts.append(f'alt="{alt}"')
-    else:
-        img_parts.append('alt=""')
-
-    if title_en and title_es:
-        img_parts.append(f'data-i18n-title-en="{html.escape(title_en)}"')
-        img_parts.append(f'data-i18n-title-es="{html.escape(title_es)}"')
-        img_parts.append(f'title="{title_en}"')
-    elif title_val:
-        img_parts.append(f'title="{title_val}"')
+    img_parts.append(f'alt="{alt_translated}"')
+    if title_translated:
+        img_parts.append(f'title="{title_translated}"')
 
     return ' '.join(img_parts) + '>'
 
@@ -168,17 +165,17 @@ def process_link_match(m):
     return f'<a {" ".join(attr_parts)}>{text_content}</a>'
 
 
-def replace_linked_images(text):
+def replace_linked_images(text, page_lang):
     return re.sub(
         r'\[(!?\[[^\]]*\]\([^)]+\))\]\(([^)]+)\)(?:\{:([^\}]*)\})?',
-        process_linked_image_match,
+        lambda m: process_linked_image_match(m, page_lang),
         text)
 
 
-def replace_images(text):
+def replace_images(text, page_lang):
     return re.sub(
         r'!\[([^\]]*)\]\(([^)]+)\)(?:\{:([^\}]*)\})?',
-        process_image_match,
+        lambda m: process_image_match(m, page_lang),
         text)
 
 
@@ -186,9 +183,9 @@ def replace_links(text):
     return re.sub(r'\[([^\]]+)\]\(([^)]+)\)(?:\{:([^\}]*)\})?', process_link_match, text)
 
 
-def md_to_html_phase1(text):
-    text = replace_linked_images(text)
-    text = replace_images(text)
+def md_to_html_phase1(text, page_lang):
+    text = replace_linked_images(text, page_lang)
+    text = replace_images(text, page_lang)
     text = replace_links(text)
     return text
 
@@ -225,111 +222,12 @@ def md_to_html_phase2(text):
     return text
 
 
-def get_translations(text):
-    if isinstance(text, dict):
-        return text.get('en', ''), text.get('es', '')
-    if not isinstance(text, str):
-        return text, text
-    pattern = re.compile(r'\(\((en|es)\)\)(.*?)\(\(/\1\)\)', re.DOTALL)
-    matches = pattern.findall(text)
-    if not matches:
-        return text, text
-
-    results = {'en': text, 'es': text}
-    for lang_key, content in matches:
-        results[lang_key] = content
-    return results['en'], results['es']
-
-
-def extract_translation(text, lang):
-    if isinstance(text, dict):
-        return text.get(lang, text.get('en', ''))
-    if not isinstance(text, str):
-        return text
-    pattern = re.compile(r'\(\((en|es)\)\)(.*?)\(\(/\1\)\)', re.DOTALL)
-    matches = pattern.findall(text)
-    if not matches:
-        return text
-    for lang_key, content in matches:
-        if lang_key == lang:
-            return content
-    return text
-
-
 def md_to_html(md_content, page_lang):
-    md_content = md_to_html_phase1(md_content)
+    md_content = md_to_html_phase1(md_content, page_lang)
 
-    def is_inside_attribute(text, pos):
-        before = text[:pos]
-        last_unquoted_eq = -1
-        in_quote = False
-        for i in range(len(before)):
-            if before[i] == '"':
-                in_quote = not in_quote
-            elif before[i] == '=' and not in_quote:
-                last_unquoted_eq = i
+    # Handle language blocks in the text
+    md_content = extract_translation(md_content, page_lang)
 
-        if last_unquoted_eq == -1:
-            return False
-
-        after_eq = before[last_unquoted_eq + 1:]
-        return after_eq.count('"') % 2 == 1
-
-    pattern = re.compile(r'\(\((en|es)\)\)(.*?)\(\(/\1\)\)', re.DOTALL)
-
-    parts = []
-    last_pos = 0
-    matches = list(pattern.finditer(md_content))
-
-    i = 0
-    while i < len(matches):
-        m = matches[i]
-
-        if is_inside_attribute(md_content, m.start()):
-            i += 1
-            continue
-
-        parts.append(('text', md_content[last_pos:m.start()]))
-
-        lang = m.group(1)
-        content = m.group(2)
-        complement = 'es' if lang == 'en' else 'en'
-
-        if i + 1 < len(matches):
-            next_m = matches[i + 1]
-            if next_m.group(
-                    1) == complement and md_content[m.end():next_m.start()].strip() == "":
-                en_text = content if lang == 'en' else next_m.group(2)
-                es_text = next_m.group(2) if lang == 'en' else content
-                parts.append(('i18n', (en_text, es_text)))
-                last_pos = next_m.end()
-                i += 2
-                continue
-
-        parts.append(('single', (lang, content)))
-        last_pos = m.end()
-        i += 1
-
-    parts.append(('text', md_content[last_pos:]))
-
-    final_html = []
-    for ptype, val in parts:
-        if ptype == 'text':
-            final_html.append(val)
-        elif ptype == 'i18n':
-            en_text, es_text = val
-            en_html = md_to_html_phase2(en_text).strip()
-            es_html = md_to_html_phase2(es_text).strip()
-            display_html = en_html if page_lang == 'en' else es_html
-            en_attr = html.escape(en_html, quote=True)
-            es_attr = html.escape(es_html, quote=True)
-            final_html.append(
-                f'<span class="i18n" data-i18n-en="{en_attr}" data-i18n-es="{es_attr}">{display_html}</span>')
-        elif ptype == 'single':
-            lang, content = val
-            final_html.append(md_to_html_phase2(content).strip())
-
-    result = "".join(final_html)
-    result = md_to_html_phase2(result)
+    result = md_to_html_phase2(md_content)
 
     return result

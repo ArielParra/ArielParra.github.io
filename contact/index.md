@@ -1,8 +1,8 @@
 ---
 base_href: ../
-keywords: [((en))Ariel Parra, contact((/en))((es))Ariel Parra, contacto((/es))]
-description: ((en))Ariel Parra contact information((/en))((es))Información de contacto de Ariel Parra((/es))
-title: ((en))contact((/en))((es))contacto((/es))
+keywords: [((en))Ariel Parra, contact((/en))((es))Ariel Parra, contacto((/es))((fr))Ariel Parra, contact((/fr))((pt))Ariel Parra, contato((/pt))]
+description: ((en))Ariel Parra contact information((/en))((es))Información de contacto de Ariel Parra((/es))((fr))Coordonnées d'Ariel Parra((/fr))((pt))Informações de contato de Ariel Parra((/pt))
+title: ((en))contact((/en))((es))contacto((/es))((fr))contact((/fr))((pt))contato((/pt))
 js: [cookies, language, theme, menu, favicon]
 css: [theme, common]
 nav_current: 4
@@ -18,6 +18,12 @@ nav_current: 4
         ((es))
         Discord: ravarygamer212#1500
         ((/es))
+        ((fr))
+        Discord : ravarygamer212#1500
+        ((/fr))
+        ((pt))
+        Discord: ravarygamer212#1500
+        ((/pt))
       </div>
     </div>
     <div class="card">
@@ -30,6 +36,12 @@ nav_current: 4
         ((es))
         correo: [arielemilioparra@gmail.com](mailto:arielemilioparra+sitioweb@gmail.com)
         ((/es))
+        ((fr))
+        e-mail : [arielemilioparra@gmail.com](mailto:arielemilioparra+website@gmail.com)
+        ((/fr))
+        ((pt))
+        e-mail: [arielemilioparra@gmail.com](mailto:arielemilioparra+website@gmail.com)
+        ((/pt))
       </div>
     </div>
     <div class="card">
@@ -42,6 +54,12 @@ nav_current: 4
         ((es))
         LinkedIn: [Ariel Emilio Parra Martínez](https://www.linkedin.com/in/parra-ariel/)
         ((/es))
+        ((fr))
+        LinkedIn : [Ariel Emilio Parra Martínez](https://www.linkedin.com/in/parra-ariel/)
+        ((/fr))
+        ((pt))
+        LinkedIn: [Ariel Emilio Parra Martínez](https://www.linkedin.com/in/parra-ariel/)
+        ((/pt))
       </div>
     </div>
     <div class="card">
@@ -54,6 +72,12 @@ nav_current: 4
         ((es))
         GitHub: [ArielParra](https://github.com/ArielParra/)
         ((/es))
+        ((fr))
+        GitHub : [ArielParra](https://github.com/ArielParra/)
+        ((/fr))
+        ((pt))
+        GitHub: [ArielParra](https://github.com/ArielParra/)
+        ((/pt))
       </div>
     </div>
     <div class="card">
@@ -66,6 +90,12 @@ nav_current: 4
         ((es))
         Codeforces: [ravary](https://codeforces.com/profile/ravary)
         ((/es))
+        ((fr))
+        Codeforces : [ravary](https://codeforces.com/profile/ravary)
+        ((/fr))
+        ((pt))
+        Codeforces: [ravary](https://codeforces.com/profile/ravary)
+        ((/pt))
       </div>
     </div>
   </div><!-- container -->

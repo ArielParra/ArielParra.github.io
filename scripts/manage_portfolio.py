@@ -121,7 +121,7 @@ class PortfolioManager(BaseManager):
       {image_html}
       <div class="project-meta">{date_html}{link_html}</div>
       <div class="project-description justify">
-        ((en)){desc_en}((/en))((es)){desc_es}((/es))
+        <span class="desc-text">((en)){desc_en}((/en))((es)){desc_es}((/es))</span>
         <span class="see-more"></span>
       </div>
     </div>"""
@@ -154,10 +154,10 @@ class PortfolioManager(BaseManager):
         lines.append("---")
         lines.append("base_href: ../")
         lines.append(
-            "keywords: [((en))Ariel Parra, portfolio((/en))((es))Ariel Parra, portafolio((/es))]")
+            "keywords: [((en))Ariel Parra, portfolio((/en))((es))Ariel Parra, portafolio((/es))((fr))Ariel Parra, portefeuille((/fr))((pt))Ariel Parra, portfólio((/pt))]")
         lines.append(
-            "description: ((en))Ariel Parra portfolio((/en))((es))Portafolio de Ariel Parra((/es))")
-        lines.append("title: ((en))portfolio((/en))((es))portafolio((/es))")
+            "description: ((en))Ariel Parra portfolio((/en))((es))Portafolio de Ariel Parra((/es))((fr))Portefeuille d'Ariel Parra((/fr))((pt))Portfólio de Ariel Parra((/pt))")
+        lines.append("title: ((en))portfolio((/en))((es))portafolio((/es))((fr))portefeuille((/fr))((pt))portfólio((/pt))")
         lines.append(
             "js: [cookies, language, theme, menu, favicon, portfolio]")
         lines.append("css: [theme, common, portfolio]")
@@ -189,7 +189,7 @@ class PortfolioManager(BaseManager):
         lines.append(
             f'  <span id="tech-data" data-techs=\'{tech_data_json}\' style="display:none;"></span>')
         lines.append('  <div class="tech-search-wrapper">')
-        lines.append('    <input type="text" id="tech-search" placeholder="Search technology..." data-placeholder-en="Search technology..." data-placeholder-es="Buscar tecnología..." autocomplete="off">')
+        lines.append('    <input type="text" id="tech-search" placeholder="Search technology..." data-placeholder-en="Search technology..." data-placeholder-es="Buscar tecnología..." data-placeholder-fr="Rechercher une technologie..." data-placeholder-pt="Pesquisar tecnologia..." autocomplete="off">')
         lines.append('    <div id="tech-suggestions"></div>')
         lines.append("  <hr>")
         lines.append("  </div>")
