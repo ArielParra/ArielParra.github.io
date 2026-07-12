@@ -23,7 +23,7 @@ def main():
         npx_cmd = "npx.exe" if os.name == 'nt' else "npx"
         try:
             with open(out_file, "w", encoding="utf-8") as out:
-                subprocess.run([npx_cmd, "minify", f], stdout=out, check=True)
+                subprocess.run([npx_cmd, "-y", "minify", f], stdout=out, check=True)
         except Exception as e:
             print(f"Error minifying {f}: {e}")
             sys.exit(1)

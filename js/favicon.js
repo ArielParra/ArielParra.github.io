@@ -38,17 +38,11 @@ function animateFavicon() {
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
-  const ua = navigator.userAgent;
-  const isFirefox = ua.toLowerCase().indexOf("firefox") !== -1;
-  if (!isFirefox) {
-    // For Chromium/webkit or other browsers that do not support gif as favicons
-    setInterval(animateFavicon, 800);
-  } else {
-    // For Firefox
-    const link = document.createElement("link");
-    link.rel = "icon";
-    link.href = "./img/favicon.gif";
-    link.type = "image/gif";
-    document.head.appendChild(link);
-  }
+  // Firefox used to support gif favincons but now all browsers dont support it
+  setInterval(animateFavicon, 800);
+  const link = document.createElement("link");
+  link.rel = "icon";
+  link.href = "./img/favicon.gif";
+  link.type = "image/gif";
+  document.head.appendChild(link);
 });
