@@ -71,7 +71,7 @@ content here
 ## i18n Syntax
 
 ```markdown
-((en))English text((/en))((es))Texto en español((/es))
+((en))English text((/en))((es))Texto en español((/es))((fr))Texte en français((/fr))((pt))Texto em português((/pt))
 ```
 
 ## Features

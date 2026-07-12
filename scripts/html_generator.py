@@ -202,7 +202,7 @@ def generate_html(md_dict, md_content, language='en'):
         var savedLang = getCookie('language');
         var browserLang = navigator.language || navigator.userLanguage;
         var langCode = savedLang || browserLang.substring(0, 2);
-        
+
         if (!document.cookie.includes('langRedirected=true')) {
             document.cookie = "langRedirected=true; path=/; max-age=86400";
             if (langCode === 'es') window.location.replace('es/');
