@@ -1,6 +1,6 @@
 # Ariel Parra Website
 
-A simple, lightweight personal website. Previously hosted at arielparra.tech.
+A lightweight, dependency-free personal website built with vanilla HTML/CSS/JS. Features a custom Python static site generator, dark mode, and built-in i18n supporting the 4 major languages of the Americas and transatlantic connections (EN, ES, FR, PT).
 
 Built with plain HTML, CSS, and JavaScript—following HTML5 standards without bloated frameworks. Features custom mobile responsiveness, auto language detection, design, animations, and a Python-based static site generator.
 
