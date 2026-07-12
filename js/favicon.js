@@ -38,11 +38,6 @@ function animateFavicon() {
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
-  // Firefox used to support gif favincons but now all browsers dont support it
+  // Animates using base64 swapping since GIF favicons have inconsistent browser support
   setInterval(animateFavicon, 800);
-  const link = document.createElement("link");
-  link.rel = "icon";
-  link.href = "./img/favicon.gif";
-  link.type = "image/gif";
-  document.head.appendChild(link);
 });
