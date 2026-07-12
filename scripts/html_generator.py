@@ -59,7 +59,7 @@ def generate_html(md_dict, md_content, language='en'):
 
     css_links = ""
     for css_file in md_dict.get('css', []):
-        css_links += f'<link rel="stylesheet" href="{base_href}css/{css_file}.min.css">\n{space_padding(css_file)}'
+        css_links += f'<link rel="stylesheet" href="./css/{css_file}.min.css">\n{space_padding(css_file)}'
 
     def space_padding_js(js_file):
         if not md_dict['js']:
@@ -69,14 +69,11 @@ def generate_html(md_dict, md_content, language='en'):
     js_preloads = ""
     for js_file in md_dict.get('js', []):
         if js_file:
-            js_preloads += f'  <link rel="preload" href="{base_href}js/{js_file}.min.js" {space_padding_js(js_file)}as="script">\n'
+            js_preloads += f'  <link rel="preload" href="./js/{js_file}.min.js" {space_padding_js(js_file)}as="script">\n'
 
     js_defers = ""
     for js_file in md_dict.get('js', []):
-        if js_file == "main":
-            js_defers += f'  <script defer src="{base_href}{js_file}.min.js">    {space_padding_js(js_file)}</script>\n'
-        else:
-            js_defers += f'  <script defer src="{base_href}js/{js_file}.min.js"> {space_padding_js(js_file)}</script>\n'
+        js_defers += f'  <script defer src="./js/{js_file}.min.js"> {space_padding_js(js_file)}</script>\n'
 
     max_href_length = max(len(item["href"]) for item in nav_items)
     max_class_length = max(len("current"), len("NotCurrent"))
@@ -193,8 +190,8 @@ def generate_html(md_dict, md_content, language='en'):
 """
 
     main_content = md_to_html(md_content, language)
-    lbl_hide_menu = extract_translation("((en))Hide Menu((/en))((es))Ocultar Menú((/es))((fr))Masquer le menu((/fr))((pt))Ocultar Menu((/pt))", language)
-    lbl_show_menu = extract_translation("((en))Show Menu((/en))((es))Mostrar Menú((/es))((fr))Afficher le menu((/fr))((pt))Mostrar Menu((/pt))", language)
+    lbl_hide_menu = extract_translation("((en))Hide Menu((/en))((es))Ocultar Menú((/es))((fr))Masquer menu((/fr))((pt))Ocultar Menu((/pt))", language)
+    lbl_show_menu = extract_translation("((en))Show Menu((/en))((es))Mostrar Menú((/es))((fr))Afficher menu((/fr))((pt))Mostrar Menu((/pt))", language)
 
     # Initial redirection script for English home page
     redirect_script = ""

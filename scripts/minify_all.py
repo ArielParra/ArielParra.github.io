@@ -22,8 +22,10 @@ def main():
         # Use npx minify
         npx_cmd = "npx.exe" if os.name == 'nt' else "npx"
         try:
-            with open(out_file, "w", encoding="utf-8") as out:
-                subprocess.run([npx_cmd, "-y", "minify", f], stdout=out, check=True)
+            if f.endswith(".css"):
+                subprocess.run([npx_cmd, "-y", "cleancss", "-o", out_file, f], check=True)
+            else:
+                subprocess.run([npx_cmd, "-y", "terser", f, "-o", out_file], check=True)
         except Exception as e:
             print(f"Error minifying {f}: {e}")
             sys.exit(1)
