@@ -4,6 +4,8 @@ __pycache__/
 venv/
 .env
 node_modules/
+*.min.css
+*.min.js
 .DS_Store
 .agents/skills
 .kiro/specs/

@@ -115,7 +115,7 @@ validate:
 	exit $$RESULT
 
 lint:
-	${NPX} eslint "js/**/*.js"
+	${NPX} eslint "js/**/*.js" --ignore-pattern "*.min.js"
 	@echo "🎉 All JS files passed validation!"
 	$(PYTHON) -m flake8 scripts/ --extend-ignore=E501
 	@echo "🎉 All Python scripts passed validation!"
