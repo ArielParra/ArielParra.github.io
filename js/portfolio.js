@@ -54,7 +54,10 @@ class DOMRenderer {
 
   static getTechLabel(tech) {
     const lang = typeof getCurrentSiteLanguage === "function" ? getCurrentSiteLanguage() : (document.documentElement.lang || "en");
-    return lang === "es" ? tech.es : tech.en;
+    if (lang === "es") return tech.es || tech.en;
+    if (lang === "fr") return tech.fr || tech.en;
+    if (lang === "pt") return tech.pt || tech.en;
+    return tech.en;
   }
 
   static updateURL(selectedTechs) {

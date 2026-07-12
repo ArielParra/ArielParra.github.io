@@ -178,7 +178,7 @@ class CredentialsManager(BaseManager):
             if link.endswith('.pdf') or link.startswith('./'):
                 link_text = "((en))Verify((/en))((es))Verificar((/es)) PDF"
             else:
-                link_text = "((en))Verify credential((/en))((es))Verificar credencial((/es))"
+                link_text = "((en))Verify credential((/en))((es))Verificar credencial((/es))((fr))Vérifier le diplôme((/fr))((pt))Verificar credencial((/pt))"
             link_html = f'''
         <span class="credential-date">{date_range}</span>
         [{link_text}]({link}){{:target="_blank" class="credential-link"}}'''
@@ -186,8 +186,10 @@ class CredentialsManager(BaseManager):
         image = c.get('image', '')
         title_en = get_i18n_field(c.get('title', ''), 'en')
         title_es = get_i18n_field(c.get('title', ''), 'es')
+        title_fr = get_i18n_field(c.get('title', ''), 'fr')
+        title_pt = get_i18n_field(c.get('title', ''), 'pt')
         if image:
-            alt_text = f"((en)){title_en} image((/en))((es)){title_es} imagen((/es))"
+            alt_text = f"((en)){title_en} image((/en))((es)){title_es} imagen((/es))((fr)){title_fr} image((/fr))((pt)){title_pt} imagem((/pt))"
             image_html = f'''
       <div class="credential-preview">
         ![loading="lazy" alt="{alt_text}"]({image})
@@ -197,25 +199,31 @@ class CredentialsManager(BaseManager):
 
         desc_en = c.get('description', {}).get('en', '')
         desc_es = c.get('description', {}).get('es', '')
+        desc_fr = c.get('description', {}).get('fr', '')
+        desc_pt = c.get('description', {}).get('pt', '')
 
         issuer_en = c.get('issuer', '')
-        issuer_text = f"((en))Issuer: {issuer_en}((/en))((es))Emitido por: {issuer_en}((/es))"
+        issuer_text = f"((en))Issuer: {issuer_en}((/en))((es))Emitido por: {issuer_en}((/es))((fr))Délivré par: {issuer_en}((/fr))((pt))Emitido por: {issuer_en}((/pt))"
 
         score = c.get('score', '')
         if score:
             if isinstance(score, dict):
                 score_en = score.get('en', '')
                 score_es = score.get('es', '')
-                score_text = f"((en)){score_en}((/en))((es)){score_es}((/es))"
+                score_fr = score.get('fr', '')
+                score_pt = score.get('pt', '')
+                score_text = f"((en)){score_en}((/en))((es)){score_es}((/es))((fr)){score_fr}((/fr))((pt)){score_pt}((/pt))"
             else:
-                score_text = f"((en)){score}((/en))((es)){score}((/es))"
+                score_text = f"((en)){score}((/en))((es)){score}((/es))((fr)){score}((/fr))((pt)){score}((/pt))"
         else:
             score_text = ''
 
         level_en = get_i18n_field(c.get('level', ''), 'en')
         level_es = get_i18n_field(c.get('level', ''), 'es')
-        level = f"((en)){level_en}((/en))((es)){level_es}((/es))" if level_en or level_es else ""
-        title = f"((en)){title_en}((/en))((es)){title_es}((/es))" if title_en or title_es else title_en
+        level_fr = get_i18n_field(c.get('level', ''), 'fr')
+        level_pt = get_i18n_field(c.get('level', ''), 'pt')
+        level = f"((en)){level_en}((/en))((es)){level_es}((/es))((fr)){level_fr}((/fr))((pt)){level_pt}((/pt))" if level_en or level_es or level_fr or level_pt else ""
+        title = f"((en)){title_en}((/en))((es)){title_es}((/es))((fr)){title_fr}((/fr))((pt)){title_pt}((/pt))" if title_en or title_es or title_fr or title_pt else title_en
 
         topics = c.get('topics', [])
         data_tags = f"{ctype} {' '.join(topics)}" if topics else ctype
@@ -234,7 +242,7 @@ class CredentialsManager(BaseManager):
         <span class="credential-issuer">{issuer_text}</span>{link_html}
       </div>
       <div class="credential-description justify">
-        <span class="desc-text">((en)){desc_en}((/en))((es)){desc_es}((/es))</span>
+        <span class="desc-text">((en)){desc_en}((/en))((es)){desc_es}((/es))((fr)){desc_fr}((/fr))((pt)){desc_pt}((/pt))</span>
         <span class="see-more"></span>
       </div>
     </div>'''

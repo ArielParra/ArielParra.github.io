@@ -53,9 +53,9 @@ class PortfolioManager(BaseManager):
         "libpcap": "Libpcap",
         "winapi": "WinAPI",
         "llm": "LLM",
-        "algorithms": {"en": "Algorithms", "es": "Algoritmos"},
-        "networking": {"en": "Networking", "es": "Redes"},
-        "browser-extension": {"en": "Browser Extension", "es": "Extensión de Navegador"},
+        "algorithms": {"en": "Algorithms", "es": "Algoritmos", "fr": "Algorithmes", "pt": "Algoritmos"},
+        "networking": {"en": "Networking", "es": "Redes", "fr": "Réseaux", "pt": "Redes"},
+        "browser-extension": {"en": "Browser Extension", "es": "Extensión de Navegador", "fr": "Extension de Navigateur", "pt": "Extensão de Navegador"},
         "dos": "DOS",
         "markdown": "Markdown",
     }
@@ -72,7 +72,9 @@ class PortfolioManager(BaseManager):
         if isinstance(label, dict):
             en = label.get("en", tech)
             es = label.get("es", tech)
-            return f"((en)){en}((/en))((es)){es}((/es))"
+            fr = label.get("fr", tech)
+            pt = label.get("pt", tech)
+            return f"((en)){en}((/en))((es)){es}((/es))((fr)){fr}((/fr))((pt)){pt}((/pt))"
         return label
 
     def generate_project_card(self, p):
@@ -101,6 +103,8 @@ class PortfolioManager(BaseManager):
         # Description
         desc_en = p.get('description', {}).get('en', '')
         desc_es = p.get('description', {}).get('es', '')
+        desc_fr = p.get('description', {}).get('fr', '')
+        desc_pt = p.get('description', {}).get('pt', '')
 
         # Date
         date_str = p.get('date', '')
@@ -111,7 +115,7 @@ class PortfolioManager(BaseManager):
         link = p.get('link', '')
         link_html = ""
         if link:
-            link_html = f'\n        [((en))View Project((/en))((es))Ver Proyecto((/es))]({link}){{:target="_blank" class="project-link"}}'
+            link_html = f'\n        [((en))View Project((/en))((es))Ver Proyecto((/es))((fr))Voir le Projet((/fr))((pt))Ver Projeto((/pt))]({link}){{:target="_blank" class="project-link"}}'
 
         card = f"""    <div class="card" data-tags="{data_tags}">
       <div class="project-header">
@@ -121,7 +125,7 @@ class PortfolioManager(BaseManager):
       {image_html}
       <div class="project-meta">{date_html}{link_html}</div>
       <div class="project-description justify">
-        <span class="desc-text">((en)){desc_en}((/en))((es)){desc_es}((/es))</span>
+        <span class="desc-text">((en)){desc_en}((/en))((es)){desc_es}((/es))((fr)){desc_fr}((/fr))((pt)){desc_pt}((/pt))</span>
         <span class="see-more"></span>
       </div>
     </div>"""
@@ -174,9 +178,9 @@ class PortfolioManager(BaseManager):
             label = self.TECH_LABELS.get(tech, tech)
             if isinstance(label, dict):
                 tech_data.append({"value": tech, "en": label.get(
-                    "en", tech), "es": label.get("es", tech)})
+                    "en", tech), "es": label.get("es", tech), "fr": label.get("fr", tech), "pt": label.get("pt", tech)})
             else:
-                tech_data.append({"value": tech, "en": label, "es": label})
+                tech_data.append({"value": tech, "en": label, "es": label, "fr": label, "pt": label})
         tech_data_json = json.dumps(tech_data, ensure_ascii=False)
 
         # --- Filter card ---
@@ -185,7 +189,7 @@ class PortfolioManager(BaseManager):
         lines.append("  <hr>")
         lines.append('  <div class="center">')
         lines.append(
-            "  ## ((en))Filter by Technology((/en))((es))Filtrar por Tecnología((/es))")
+            "  ## ((en))Filter by Technology((/en))((es))Filtrar por Tecnología((/es))((fr))Filtrer par technologie((/fr))((pt))Filtrar por tecnologia((/pt))")
         lines.append(
             f'  <span id="tech-data" data-techs=\'{tech_data_json}\' style="display:none;"></span>')
         lines.append('  <div class="tech-search-wrapper">')
