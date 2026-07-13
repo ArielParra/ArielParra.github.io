@@ -14,6 +14,7 @@ js/*.min.js
 .kiro/execution-profiles.json
 lighthouse-report.html
 lighthouse-report.json
+.vscode/    
 
 # Generated HTML and output folders
 /index.html

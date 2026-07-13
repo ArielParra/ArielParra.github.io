@@ -76,7 +76,7 @@ Every `.md` source file begins with a YAML-like block between `---` delimiters:
 
 ```markdown
 ---
-title: ((en))Page Title((/en))((es))Título((/es))
+title: ((en))Page Title((/en))((es))Título((/es))((fr))Titre((/fr))((pt))Título((/pt))
 lang: en
 base_href: ./
 nav_current: 1          # 1=home, 2=portfolio, 3=credentials, 4=contact
@@ -86,13 +86,13 @@ css: [theme, common]
 ```
 
 ### i18n Syntax
-Bilingual strings use inline tags — always provide both languages:
+Multilingual strings use inline tags — always provide all supported languages (en, es, fr, pt):
 
 ```
-((en))English text((/en))((es))Texto en español((/es))
+((en))English text((/en))((es))Texto en español((/es))((fr))Texte en français((/fr))((pt))Texto em português((/pt))
 ```
 
-The generator wraps paired blocks in `<span class="i18n" data-i18n-en="..." data-i18n-es="...">`.
+The generator wraps paired blocks in `<span class="i18n" data-i18n-en="..." data-i18n-es="..." data-i18n-fr="..." data-i18n-pt="...">`.
 `language.js` swaps content at runtime based on cookie or browser preference.
 
 ### CSS Architecture

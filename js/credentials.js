@@ -75,10 +75,13 @@ function truncateSkills() {
     const extraCount = skills.length - skillsToShow;
     if (extraCount > 0 && moreIndicator) {
       const lang = getCurrentSiteLanguage();
-      const label = lang === "es"
-        ? (moreIndicator.getAttribute("data-i18n-more-es") || `+${extraCount} más`)
-        : (moreIndicator.getAttribute("data-i18n-more-en") || `+${extraCount} more`);
-      moreIndicator.textContent = label;
+      const TEXT_MORE = {
+        en: `+${extraCount} more`,
+        es: `+${extraCount} más`,
+        fr: `+${extraCount} plus`,
+        pt: `+${extraCount} mais`,
+      };
+      moreIndicator.textContent = TEXT_MORE[lang] || TEXT_MORE.en;
       moreIndicator.style.display = "";
     } else if (moreIndicator) {
       moreIndicator.style.display = "none";

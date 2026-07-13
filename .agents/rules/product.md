@@ -4,13 +4,13 @@ Ariel Parra's personal website — a lightweight, framework-free portfolio hoste
 
 ## Purpose
 
-Showcases the owner's portfolio projects, credentials (certifications, education, awards), and contact information. Supports English/Spanish bilingual content with auto language detection.
+Showcases the owner's portfolio projects, credentials (certifications, education, awards), and contact information. Supports multilingual content (English, Spanish, French, Portuguese) with auto language detection.
 
 ## Key Principles
 
 - **KISS philosophy**: No frontend frameworks, no bundlers, no unnecessary dependencies
 - **Vanilla stack**: Plain HTML, CSS, and JavaScript only for the frontend
-- **Bilingual by default**: Every user-facing string must support both English (`en`) and Spanish (`es`)
+- **Multilingual by default**: Every user-facing string must support English (`en`), Spanish (`es`), French (`fr`), and Portuguese (`pt`)
 - **Standards-compliant**: HTML and CSS must pass W3C validation; JS must pass ESLint (airbnb-base)
 - **Privacy-respecting**: Minimal external requests; no analytics or tracking
 
