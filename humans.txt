@@ -13,7 +13,7 @@
   Favicon imagery inspired by Taito's classic Space Invaders and the French street artist Invader under fair use. Made using LibreSprite: https://libresprite.github.io/
 
 /* SITE */
-  Last update: 2026-07-12
+  Last update: 2026-07-13
   Standards: W3 HTML5, W3 CSS3
   Software: VSCodium, git, Python 3.14, LibreSprite, ImageMagick
   Host: GitHub Pages

@@ -47,7 +47,8 @@
   --border: var(--gray2);
   --text: var(--white);
 
-  --HTML_BG: #7e838e; /* intermediate background color */
+  --HTML_BG: #7e838e;
+  /* intermediate background color */
   --card_BG: var(--gray3);
 
   --hr: var(--text);
@@ -62,7 +63,7 @@
 
   --a-focus: var(--cyan);
   /*outline when tab is pressed*/
-  --a-href: var(--aqua);
+  --a-href: var(--cyan);
   --a-href-hover: var(--magenta);
   --link: var(--a-href);
   --link-hover: var(--a-href-hover);

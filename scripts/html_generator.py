@@ -200,14 +200,19 @@ def generate_html(md_dict, md_content, language='en'):
   <script>
     document.addEventListener("DOMContentLoaded", function() {
         var savedLang = getCookie('language');
-        var browserLang = navigator.language || navigator.userLanguage;
-        var langCode = savedLang || browserLang.substring(0, 2);
-
-        if (!document.cookie.includes('langRedirected=true')) {
-            document.cookie = "langRedirected=true; path=/; max-age=86400";
-            if (langCode === 'es') window.location.replace('es/');
-            if (langCode === 'fr') window.location.replace('fr/');
-            if (langCode === 'pt') window.location.replace('pt/');
+        if (savedLang) {
+            if (savedLang === 'es') window.location.replace('es/');
+            else if (savedLang === 'fr') window.location.replace('fr/');
+            else if (savedLang === 'pt') window.location.replace('pt/');
+        } else {
+            if (!document.cookie.includes('langRedirected=true')) {
+                document.cookie = "langRedirected=true; path=/; max-age=86400";
+                var browserLang = navigator.language || navigator.userLanguage;
+                var langCode = browserLang.substring(0, 2);
+                if (langCode === 'es') window.location.replace('es/');
+                else if (langCode === 'fr') window.location.replace('fr/');
+                else if (langCode === 'pt') window.location.replace('pt/');
+            }
         }
     });
   </script>
