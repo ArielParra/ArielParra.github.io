@@ -26,7 +26,7 @@
   display: inline-block;
   font-size: 0.75rem;
   color: var(--text);
-  background: var(--card_BG);
+  background: var(--card-bg);
   border: 1px solid var(--text);
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
@@ -51,7 +51,7 @@
   align-items: center;
   overflow: hidden;
   border-radius: 6px;
-  background: var(--HTML_BG);
+  background: var(--html-bg);
 }
 
 .project-preview img {
@@ -66,16 +66,16 @@
   font-size: 0.8rem;
   text-align: center;
   padding: 0.2rem 0.4rem;
-  background: var(--button_BG);
-  border: 1px solid var(--button_border);
+  background: var(--button-bg);
+  border: 1px solid var(--button-border);
   border-radius: 4px;
   color: var(--text);
   text-decoration: none;
 }
 
 .project-link:hover {
-  background: var(--btn-hover_BG);
-  color: var(--btn-hover_color);
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-color);
 }
 
 .project-description {
@@ -140,9 +140,9 @@
   box-sizing: border-box;
   padding: 0.5rem 0.75rem;
   font-size: 0.9rem;
-  border: 2px solid var(--button_border);
+  border: 2px solid var(--button-border);
   border-radius: 6px;
-  background: var(--HTML_BG);
+  background: var(--html-bg);
   color: var(--text);
   outline: none;
   transition: border-color 0.2s;
@@ -150,7 +150,7 @@
 }
 
 #tech-search:focus {
-  border-color: var(--nav-a-hover_BG);
+  border-color: var(--nav-hover-bg);
 }
 
 #tech-search::placeholder {
@@ -169,15 +169,15 @@
   max-width: 18rem;
   max-height: 12rem;
   overflow-y: auto;
-  background: var(--card_BG);
-  border: 1px solid var(--button_border);
+  background: var(--card-bg);
+  border: 1px solid var(--button-border);
   border-top: none;
   border-radius: 0 0 6px 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   display: none;
   z-index: 100;
   scrollbar-width: thin;
-  scrollbar-color: var(--aqua) var(--card_BG);
+  scrollbar-color: var(--aqua) var(--card-bg);
 }
 
 #tech-suggestions::-webkit-scrollbar {
@@ -185,14 +185,14 @@
 }
 
 #tech-suggestions::-webkit-scrollbar-track {
-  background: var(--card_BG);
+  background: var(--card-bg);
   border-radius: 0 0 6px 0;
 }
 
 #tech-suggestions::-webkit-scrollbar-thumb {
   background: var(--aqua);
   border-radius: 6px;
-  border: 3px solid var(--card_BG);
+  border: 3px solid var(--card-bg);
 }
 
 #tech-suggestions::-webkit-scrollbar-thumb:hover {
@@ -205,7 +205,7 @@
   color: var(--text);
   cursor: pointer;
   transition: background-color 0.15s;
-  border-bottom: 1px solid var(--button_border);
+  border-bottom: 1px solid var(--button-border);
 }
 
 .tech-suggestion:last-child {
@@ -213,12 +213,12 @@
 }
 
 .tech-suggestion:nth-child(even) {
-  background: var(--button_BG); /* Using button_BG which is slightly different than card_BG to alternate */
+  background: var(--button-bg); /* Using button_BG which is slightly different than card_BG to alternate */
 }
 
 .tech-suggestion:hover {
-  background: var(--nav-a-hover_BG);
-  color: var(--nav-a-hover-span_color);
+  background: var(--nav-hover-bg);
+  color: var(--nav-hover-span-color);
 }
 
 /* --- Selected Tech Chips --- */
@@ -237,8 +237,8 @@
   gap: 0.3rem;
   font-size: 0.8rem;
   color: var(--text);
-  background: var(--nav-a-current_BG);
-  border: 1px solid var(--button_border);
+  background: var(--nav-current-bg);
+  border: 1px solid var(--button-border);
   padding: 0.2rem 0.5rem;
   border-radius: 12px;
   animation: chipIn 0.2s ease;

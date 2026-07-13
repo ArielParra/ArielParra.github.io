@@ -89,7 +89,7 @@ function showMenu(button) {
  * @description Initializes the menu status.
  */
 document.addEventListener("DOMContentLoaded", () => {
-  const menuButton = document.getElementById("menuButton");
+  const menuButton = document.getElementById("menu-button");
   if (menuButton) {
     menuButton.addEventListener("click", () => toggleMenu(menuButton));
   }

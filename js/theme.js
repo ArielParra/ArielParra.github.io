@@ -43,7 +43,7 @@ function browserPrefersLight() {
  * @description Initializes the theme of the website.
  */
 document.addEventListener("DOMContentLoaded", () => {
-  const themeButton = document.getElementById("themeButton");
+  const themeButton = document.getElementById("theme-button");
   if (themeButton) {
     themeButton.addEventListener("click", () => toggleTheme(themeButton));
   }

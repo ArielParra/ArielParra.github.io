@@ -47,19 +47,19 @@
   --border: var(--gray2);
   --text: var(--white);
 
-  --HTML_BG: #7e838e;
+  --html-bg: #7e838e;
   /* intermediate background color */
-  --card_BG: var(--gray3);
+  --card-bg: var(--gray3);
 
   --hr: var(--text);
 
-  --button_BG: var(--gray4);
-  --button_border: var(--card_BG);
-  --button_color: var(--text);
+  --button-bg: var(--gray4);
+  --button-border: var(--card-bg);
+  --button-color: var(--text);
 
-  --btn-hover_border: var(--gray4);
-  --btn-hover_BG: var(--card_BG);
-  --btn-hover_color: var(--text);
+  --btn-hover-border: var(--gray4);
+  --btn-hover-bg: var(--card-bg);
+  --btn-hover-color: var(--text);
 
   --a-focus: var(--cyan);
   /*outline when tab is pressed*/
@@ -68,15 +68,15 @@
   --link: var(--a-href);
   --link-hover: var(--a-href-hover);
 
-  --nav-a-current_BG: var(--gray4);
-  --nav-a-hover_BG: var(--white);
-  --nav-a-hover-span_color: var(--card_BG);
+  --nav-current-bg: var(--gray4);
+  --nav-hover-bg: var(--white);
+  --nav-hover-span-color: var(--card-bg);
 
 }
 
 /* Apply actual dark background when theme is set */
 .theme-dark {
-  --HTML_BG: var(--black);
+  --html-bg: var(--black);
 }
 
 /*Default style is dark mode, only need change light colors*/
@@ -85,18 +85,18 @@
   --border: var(--gray2);
   --text: var(--black);
 
-  --HTML_BG: var(--white);
-  --card_BG: var(--cyan);
+  --html-bg: var(--white);
+  --card-bg: var(--cyan);
 
   --hr: var(--border);
 
-  --button_BG: var(--blue);
-  --button_border: var(--border);
-  --button_color: var(--white);
+  --button-bg: var(--blue);
+  --button-border: var(--border);
+  --button-color: var(--white);
 
-  --btn-hover_border: var(--blue);
-  --btn-hover_BG: var(--gray4);
-  --btn-hover_color: var(--white);
+  --btn-hover-border: var(--blue);
+  --btn-hover-bg: var(--gray4);
+  --btn-hover-color: var(--white);
 
   --a-focus: var(--black);
   --a-href: var(--white);
@@ -104,8 +104,8 @@
   --link: var(--a-href);
   --link-hover: var(--a-href-hover);
 
-  --nav-a-current_BG: var(--gray5);
-  --nav-a-hover_BG: var(--gray4);
-  --nav-a-hover-span_color: var(--white);
+  --nav-current-bg: var(--gray5);
+  --nav-hover-bg: var(--gray4);
+  --nav-hover-span-color: var(--white);
 
 }

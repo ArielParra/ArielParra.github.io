@@ -1,4 +1,4 @@
-// joySVG.js an Unknown Pleasures style svg generator, Forked from: https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html
+// joy-svg.js an Unknown Pleasures style svg generator, Forked from: https://github.com/MaxHalford/procedural-art/blob/master/3_unknown_pleasures.html
 /*
 The MIT License (MIT)
 
@@ -90,7 +90,7 @@ function exportSVG(button) {
   const computedStyles = getComputedStyle(document.documentElement);
 
   // Replace CSS variables in the SVG content
-  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--HTML_BG\)/g, computedStyles.getPropertyValue("--HTML_BG"));
+  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--html-bg\)/g, computedStyles.getPropertyValue("--html-bg"));
   clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--text\)/g, computedStyles.getPropertyValue("--text"));
 
   const svgContent = new XMLSerializer().serializeToString(clonedSvg);
@@ -203,7 +203,7 @@ function exportPNG(button) {
   const computedStyles = getComputedStyle(document.documentElement);
 
   // Replace CSS variables in the SVG content
-  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--HTML_BG\)/g, computedStyles.getPropertyValue("--HTML_BG"));
+  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--html-bg\)/g, computedStyles.getPropertyValue("--html-bg"));
   clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--text\)/g, computedStyles.getPropertyValue("--text"));
 
   const svgContent = new XMLSerializer().serializeToString(clonedSvg);

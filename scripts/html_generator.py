@@ -22,7 +22,7 @@ def generate_html(md_dict, md_content, language='en'):
     for lang_code in ['en', 'es', 'fr', 'pt']:
         href = current_page_path if lang_code == 'en' else f"{lang_code}/{current_page_path}"
         if lang_code == language:
-            lang_links += f'<button type="button" style="background-color: var(--btn-hover_BG); border-color: var(--btn-hover_border); pointer-events: none;">{lang_code.upper()}</button>\n'
+            lang_links += f'<button type="button" style="background-color: var(--btn-hover-bg); border-color: var(--btn-hover-border); pointer-events: none;">{lang_code.upper()}</button>\n'
         else:
             lang_links += f'<button type="button" onclick="changeLanguage(\'{lang_code}\', \'{base_href}{href}\')" title="Change language to {lang_code.upper()}">{lang_code.upper()}</button>\n'
 

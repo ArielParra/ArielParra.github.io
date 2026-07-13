@@ -30,7 +30,7 @@
 │   ├── credentials.js          # Credentials page: filter, search, stats
 │   ├── portfolio.js            # Portfolio page: tag filtering
 │   ├── tags.js                 # Shared tag filter logic
-│   ├── joySVG.js               # 404 page animated visualization
+│   ├── joy-svg.js              # 404 page animated visualization
 │   └── debug.js                # Development helpers
 │
 ├── scripts/                    # Python build and data management tools
