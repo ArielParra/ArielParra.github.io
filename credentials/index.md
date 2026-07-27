@@ -368,6 +368,32 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
+    <div class="card" data-tags="certificate languages professional">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Portuguese for Orientation DRI UFU 2026-3((/en))((es))Portugués para Ambientación DRI UFU 2026-3((/es))((fr))Portugais pour l'orientation DRI UFU 2026-3((/fr))((pt))Português para Ambientação DRI UFU 2026-3((/pt))</span>
+          <span class="title-rank">((en))Beginner Level((/en))((es))Nivel Principiante((/es))((fr))Niveau débutant((/fr))((pt))Nível Inicial((/pt))</span>
+          <span class="title-score">((en))40h((/en))((es))40h((/es))((fr))40h((/fr))((pt))40h((/pt))</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Portuguese Language Proficiency((/en))((es))Competencia en Lengua Portuguesa((/es))</span>
+          <span class="credential-skill">((en))Intercultural Communication((/en))((es))Comunicación Intercultural((/es))</span>
+          <span class="credential-skill">((en))Academic Mobility Preparation((/en))((es))Preparación para la Movilidad Académica((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Portuguese for Orientation DRI UFU 2026-3 image((/en))((es))Portugués para Ambientación DRI UFU 2026-3 imagen((/es))((fr))Portugais pour l'orientation DRI UFU 2026-3 image((/fr))((pt))Português para Ambientação DRI UFU 2026-3 imagem((/pt))"](credentials/img/UFU_Certificado_PAMB.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidade Federal de Uberlândia (UFU)((/en))((es))Emitido por: Universidade Federal de Uberlândia (UFU)((/es))((fr))Délivré par: Universidade Federal de Uberlândia (UFU)((/fr))((pt))Emitido por: Universidade Federal de Uberlândia (UFU)((/pt))</span>
+        <span class="credential-date">((en))July 2026((/en))((es))Julio 2026((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))((fr))Vérifier le diplôme((/fr))((pt))Verificar credencial((/pt))](https://siex.proexc.ufu.br/relatorio/certificado/report/eyJwYXJhbWV0ZXJzIjp7ImNlcnRpZmljYWRvX2lkIjoiMTQ2MjMwNyIsImFjYW9faWQiOjMwMDcyfSwicmVwb3J0X25hbWUiOiJjZXJ0aWZpY2Fkb19mcmVudGUiLCJjb250ZW50X2Rpc3Bvc2l0aW9uIjoiaW5saW5lIiwiZmlsZW5hbWUiOiJDZXJ0aWZpY2Fkby5wZGYiLCJjb250ZW50X3R5cGUiOiJhcHBsaWNhdGlvbi9wZGYiLCJvdXRwdXQiOiJwZGYiLCJoZWlnaHQiOiI1MDAiLCJ3aWR0aCI6IjEwMCUifQ==){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        <span class="desc-text">((en))Online Portuguese course for beginners (40 hours) organized by the International Relations Directorate (DRI) at Universidade Federal de Uberlândia (UFU), designed for international students undergoing academic mobility.((/en))((es))Curso en línea de Portugués para principiantes (40 horas) promovido por la Diretoria de Relações Internacionais (DRI) de la Universidade Federal de Uberlândia (UFU), destinado a estudiantes internacionales en movilidad académica.((/es))((fr))Cours de portugais en ligne pour débutants (40h) promu par la Direction des Relations Internationales (DRI) de l'Universidade Federal de Uberlândia (UFU), destiné aux étudiants internationaux en mobilité académique.((/fr))((pt))Curso on-line de Português para iniciantes (40 horas) promovido pela Diretoria de Relações Internacionais (DRI) da Universidade Federal de Uberlândia (UFU), destinado a estudantes internacionais em mobilidade acadêmica.((/pt))</span>
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="certificate ai">
       <div class="credential-header">
         <div class="credential-title">
