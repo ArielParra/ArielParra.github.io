@@ -26,12 +26,12 @@ function toggleCredentialDescription(element) {
     container.classList.add("expanded");
     element.textContent = TEXT_SEE_LESS[lang] || TEXT_SEE_LESS.en;
     if (textSpan) {
-      let fullText = container.getAttribute("data-full-text");
-      if (!fullText) {
-        fullText = textSpan.textContent;
-        container.setAttribute("data-full-text", fullText);
+      let fullHTML = container.getAttribute("data-full-html");
+      if (!fullHTML) {
+        fullHTML = textSpan.innerHTML;
+        container.setAttribute("data-full-html", fullHTML);
       }
-      textSpan.innerHTML = fullText;
+      textSpan.innerHTML = fullHTML;
     }
   }
 }
@@ -107,6 +107,11 @@ function truncateDescriptions() {
       fullText = textSpan.textContent;
       container.setAttribute("data-full-text", fullText);
     }
+    let fullHTML = container.getAttribute("data-full-html");
+    if (!fullHTML) {
+      fullHTML = textSpan.innerHTML;
+      container.setAttribute("data-full-html", fullHTML);
+    }
 
     const TEXT_SEE_MORE = {
       en: "See more", es: "Ver más", fr: "Voir plus", pt: "Ver mais",
@@ -146,9 +151,9 @@ function resetDescriptions() {
   descriptions.forEach((container) => {
     const textSpan = container.querySelector("span.desc-text");
     const seeMoreLink = container.querySelector(".see-more");
-    const fullText = container.getAttribute("data-full-text");
-    if (textSpan && fullText) {
-      textSpan.innerHTML = fullText;
+    const fullHTML = container.getAttribute("data-full-html");
+    if (textSpan && fullHTML) {
+      textSpan.innerHTML = fullHTML;
     }
     container.classList.remove("expanded");
     if (seeMoreLink) {
