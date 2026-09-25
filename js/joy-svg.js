@@ -90,8 +90,8 @@ function exportSVG(button) {
   const computedStyles = getComputedStyle(document.documentElement);
 
   // Replace CSS variables in the SVG content
-  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--html-bg\)/g, computedStyles.getPropertyValue("--html-bg"));
-  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--text\)/g, computedStyles.getPropertyValue("--text"));
+  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--html-bg\)/g, computedStyles.getPropertyValue("--html-bg").trim());
+  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--text\)/g, computedStyles.getPropertyValue("--text").trim());
 
   const svgContent = new XMLSerializer().serializeToString(clonedSvg);
   const blob = new Blob([svgContent], { type: "image/svg+xml;charset=utf-8" });
@@ -203,23 +203,29 @@ function exportPNG(button) {
   const computedStyles = getComputedStyle(document.documentElement);
 
   // Replace CSS variables in the SVG content
-  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--html-bg\)/g, computedStyles.getPropertyValue("--html-bg"));
-  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--text\)/g, computedStyles.getPropertyValue("--text"));
+  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--html-bg\)/g, computedStyles.getPropertyValue("--html-bg").trim());
+  clonedSvg.innerHTML = clonedSvg.innerHTML.replace(/var\(--text\)/g, computedStyles.getPropertyValue("--text").trim());
 
   const svgContent = new XMLSerializer().serializeToString(clonedSvg);
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");
 
-  const svgBlob = new Blob([svgContent], { type: "image/svg+xml;charset=utf-8" });
-  const url = URL.createObjectURL(svgBlob);
-
   const image = new Image();
-  image.onload = function () {
-    canvas.width = image.width;
-    canvas.height = image.height;
-    ctx.drawImage(image, 0, 0);
+  let url = "";
 
-    URL.revokeObjectURL(url);
+  const cleanup = () => {
+    if (url && url.startsWith("blob:")) {
+      URL.revokeObjectURL(url);
+    }
+    setTimeout(() => {
+      button.disabled = false;
+    }, 500);
+  };
+
+  image.onload = function () {
+    canvas.width = image.width || 625;
+    canvas.height = image.height || 593;
+    ctx.drawImage(image, 0, 0);
 
     // Create a temporary anchor element and trigger a click to download the PNG
     const a = document.createElement("a");
@@ -229,10 +235,25 @@ function exportPNG(button) {
     a.click();
     document.body.removeChild(a);
 
-    // Enable the button after a short delay
-    setTimeout(() => {
-      button.disabled = false;
-    }, 500);
+    cleanup();
   };
+
+  image.onerror = function () {
+    // If blob URL fails (e.g. CSP blocks blob:), fall back to data URI
+    if (url && url.startsWith("blob:")) {
+      URL.revokeObjectURL(url);
+      url = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgContent)}`;
+      image.src = url;
+    } else {
+      cleanup();
+    }
+  };
+
+  try {
+    const svgBlob = new Blob([svgContent], { type: "image/svg+xml;charset=utf-8" });
+    url = URL.createObjectURL(svgBlob);
+  } catch (e) {
+    url = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgContent)}`;
+  }
   image.src = url;
 }

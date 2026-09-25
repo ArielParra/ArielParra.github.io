@@ -52,7 +52,7 @@ def generate_html(md_dict, md_content, language='en'):
                   "label": lbl_contact},
                  ]
 
-    csp = "default-src 'self'; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
+    csp = "default-src 'self'; script-src 'self' 'unsafe-inline'; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
 
     def space_padding(css_file):
         if not md_dict['css']:
