@@ -6,7 +6,9 @@ from md_parser import extract_translation, md_to_html
 def generate_html(md_dict, md_content, language='en'):
     # base_href adjustment for nested language folders
     base_href_original = md_dict.get('base_href', './')
-    if language == 'en':
+    if base_href_original.startswith('/'):
+        base_href = base_href_original
+    elif language == 'en':
         base_href = base_href_original
     else:
         if base_href_original == './':
@@ -15,7 +17,7 @@ def generate_html(md_dict, md_content, language='en'):
             base_href = '../' + base_href_original
 
     nav_current = int(md_dict.get('nav_current', 1))
-    current_path_map = {1: "", 2: "portfolio/", 3: "credentials/", 4: "contact/"}
+    current_path_map = {0: "404.html", 1: "", 2: "portfolio/", 3: "credentials/", 4: "contact/"}
     current_page_path = current_path_map.get(nav_current, "")
 
     lang_links = ""
