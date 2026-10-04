@@ -368,6 +368,33 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
+    <div class="card" data-tags="certificate professional">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Brain Hack: Transform Your Mindset((/en))((es))Brain Hack: Transforma tu mentalidad((/es))((fr))Brain Hack : Transformez votre état d'esprit((/fr))((pt))Brain Hack: Transforme sua mentalidade((/pt))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))((fr))Certificat d'achèvement((/fr))((pt))Certificado de Conclusão((/pt))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Growth Mindset((/en))((es))Mentalidad de Crecimiento((/es))</span>
+          <span class="credential-skill">((en))Entrepreneurial Thinking((/en))((es))Pensamiento Emprendedor((/es))</span>
+          <span class="credential-skill">((en))Adaptability((/en))((es))Adaptabilidad((/es))</span>
+          <span class="credential-skill">((en))Continuous Learning((/en))((es))Aprendizaje Continuo((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Brain Hack: Transform Your Mindset image((/en))((es))Brain Hack: Transforma tu mentalidad imagen((/es))((fr))Brain Hack : Transformez votre état d'esprit image((/fr))((pt))Brain Hack: Transforme sua mentalidade imagem((/pt))"](./credentials/img/TrepCamp_ITF_Brain_Hack.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: TrepCamp / Iberoamerican Technology Foundation (ITF)((/en))((es))Emitido por: TrepCamp / Iberoamerican Technology Foundation (ITF)((/es))((fr))Délivré par: TrepCamp / Iberoamerican Technology Foundation (ITF)((/fr))((pt))Emitido por: TrepCamp / Iberoamerican Technology Foundation (ITF)((/pt))</span>
+        <span class="credential-date">((en))August 2026((/en))((es))Agosto 2026((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))((fr))Vérifier le diplôme((/fr))((pt))Verificar credencial((/pt))](https://app.kajabi.com/certificates/020117eb){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        <span class="desc-text">((en))Completed the 'Brain Hack: Transform Your Mindset' course by TrepCamp, sponsored by the Iberoamerican Technology Foundation (ITF). Trained adaptive thinking and entrepreneurial mindset to question, learn, and adapt in constantly evolving environments, turning learning into action for personal and professional growth.((/en))((es))Completé con éxito el curso 'Brain Hack: Transforma tu mentalidad' de TrepCamp, patrocinado por la Iberoamerican Technology Foundation (ITF). Entrené el pensamiento adaptativo y la mentalidad emprendedora para cuestionar, aprender y adaptarse ante entornos de cambio constante, convirtiendo el aprendizaje en acción para el crecimiento personal y profesional.((/es))((fr))J'ai complété avec succès le cours « Brain Hack : Transformez votre état d'esprit » de TrepCamp, sponsorisé par l'Iberoamerican Technology Foundation (ITF). J'ai entraîné la pensée adaptative et l'état d'esprit entrepreneurial pour questionner, apprendre et s'adapter dans des environnements en constante évolution, transformant l'apprentissage en action.((/fr))((pt))Concluí com sucesso o curso 'Brain Hack: Transforme sua mentalidade' da TrepCamp, patrocinado pela Iberoamerican Technology Foundation (ITF). Treinei o pensamento adaptativo e a mentalidade empreendedora para questionar, aprender e se adaptar em ambientes em constante mudança, transformando o aprendizado em ação.((/pt))</span>
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="certificate languages professional">
       <div class="credential-header">
         <div class="credential-title">
@@ -1382,6 +1409,35 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
+    <div class="card" data-tags="badge ai programming devops">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Claude Code 101((/en))((es))Claude Code 101((/es))((fr))Claude Code 101((/fr))((pt))Claude Code 101((/pt))</span>
+          <span class="title-rank">((en))Course Completion Badge((/en))((es))Insignia de Finalización de Curso((/es))((fr))Badge de fin de cours((/fr))((pt))Distintivo de Conclusão de Curso((/pt))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Claude Code((/en))((es))Claude Code((/es))</span>
+          <span class="credential-skill">((en))Agentic AI & Coding Agents((/en))((es))IA Agéntica y Agentes de Código((/es))</span>
+          <span class="credential-skill">((en))Model Context Protocol (MCP)((/en))((es))Protocolo de Contexto de Modelo (MCP)((/es))</span>
+          <span class="credential-skill">((en))Context Management((/en))((es))Gestión de Contexto((/es))</span>
+          <span class="credential-skill">((en))Subagents & Skills((/en))((es))Subagentes y Habilidades((/es))</span>
+          <span class="credential-skill">((en))Developer Tooling & Workflows((/en))((es))Herramientas y Flujos para Desarrolladores((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Claude Code 101 image((/en))((es))Claude Code 101 imagen((/es))((fr))Claude Code 101 image((/fr))((pt))Claude Code 101 imagem((/pt))"](./credentials/img/claude-academy-badge-claude-code-101.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Claude Academy((/en))((es))Emitido por: Claude Academy((/es))((fr))Délivré par: Claude Academy((/fr))((pt))Emitido por: Claude Academy((/pt))</span>
+        <span class="credential-date">((en))October 2026((/en))((es))Octubre 2026((/es))</span>
+        [((en))Verify credential((/en))((es))Verificar credencial((/es))((fr))Vérifier le diplôme((/fr))((pt))Verificar credencial((/pt))](https://academy.claude.com/verify/fe1134a0ad28e19efaa2522c6862eef8){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        <span class="desc-text">((en))Completed the Claude Code 101 course by Claude Academy (Anthropic), mastering agentic software development with Claude Code. Validated skills across core agentic workflows (Explore-Plan-Code-Commit), context management, CLAUDE.md configuration, subagents, custom skills, Model Context Protocol (MCP) integrations, and developer hooks. - **Evidence:** [PDF Badge](./credentials/docs/claude-academy-badge-claude-code-101.pdf)((/en))((es))Completé el curso Claude Code 101 de Claude Academy (Anthropic), dominando el desarrollo de software agéntico con Claude Code. Validé habilidades en flujos de trabajo agénticos (Explorar-Planificar-Codificar-Confirmar), gestión de contexto, configuración de CLAUDE.md, subagentes, habilidades personalizadas, integraciones de Model Context Protocol (MCP) y hooks para desarrolladores. - **Evidencia:** [Insignia PDF](./credentials/docs/claude-academy-badge-claude-code-101.pdf)((/es))((fr))J'ai terminé le cours Claude Code 101 de Claude Academy (Anthropic), maîtrisant le développement logiciel agentique avec Claude Code. Compétences validées sur les flux de travail agentiques (Explorer-Planifier-Coder-Valider), la gestion du contexte, la configuration de CLAUDE.md, les sous-agents, les compétences personnalisées, les intégrations du protocole de contexte de modèle (MCP) et les hooks de développement. - **Preuve:** [Badge PDF](./credentials/docs/claude-academy-badge-claude-code-101.pdf)((/fr))((pt))Concluí o curso Claude Code 101 da Claude Academy (Anthropic), dominando o desenvolvimento de software agêntico com Claude Code. Validei habilidades em fluxos de trabalho agênticos (Explorar-Planejar-Codificar-Commit), gerenciamento de contexto, configuração do CLAUDE.md, subagentes, habilidades personalizadas, integrações de Model Context Protocol (MCP) e hooks de desenvolvimento. - **Evidência:** [Distintivo PDF](./credentials/docs/claude-academy-badge-claude-code-101.pdf)((/pt))</span>
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="badge cloud">
       <div class="credential-header">
         <div class="credential-title">
@@ -2087,6 +2143,34 @@ nav_current: 3
       </div>
       <div class="credential-description justify">
         <span class="desc-text">((en))Supported the global Xbox community by assisting players with platform questions, promoting positive online interactions, participating in community events, and providing product feedback. Developed skills in customer support, communication, teamwork, problem solving, and community moderation while contributing to a welcoming gaming environment.((/en))((es))Apoyé a la comunidad global de Xbox asistiendo a jugadores con dudas sobre la plataforma, promoviendo interacciones positivas en línea, participando en eventos de la comunidad y brindando comentarios sobre productos. Desarrollé habilidades en soporte al cliente, comunicación, trabajo en equipo y resolución de problemas, contribuyendo a un entorno de juego inclusivo.((/es))((fr))Soutenir la communauté Xbox mondiale en aidant les joueurs à répondre à leurs questions sur la plateforme, en promouvant des interactions positives en ligne, en participant à des événements communautaires et en fournissant des commentaires sur les produits. Compétences développées en support client, communication, travail d'équipe, résolution de problèmes et modération de communauté tout en contribuant à un environnement de jeu accueillant.((/fr))((pt))Apoiei a comunidade global do Xbox auxiliando os jogadores com dúvidas sobre a plataforma, promovendo interações online positivas, participando de eventos da comunidade e fornecendo feedback sobre o produto. Desenvolvi habilidades em suporte ao cliente, comunicação, trabalho em equipe, resolução de problemas e moderação da comunidade, contribuindo para um ambiente de jogo acolhedor.((/pt))</span>
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="award programming professional">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))1st Place - Programming Contest((/en))((es))1er Lugar - Concurso de Programación((/es))((fr))1ère place - Concours de programmation((/fr))((pt))1º Lugar - Concurso de Programação((/pt))</span>
+          <span class="title-rank">((en))XVIII Congress of Exact Sciences((/en))((es))XVIII Congreso de Ciencias Exactas((/es))((fr))XVIIIème Congrès des Sciences Exactes((/fr))((pt))XVIII Congresso de Ciências Exatas((/pt))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="credential-skill">((en))Team Collaboration((/en))((es))Colaboración en Equipo((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))1st Place - Programming Contest image((/en))((es))1er Lugar - Concurso de Programación imagen((/es))((fr))1ère place - Concours de programmation image((/fr))((pt))1º Lugar - Concurso de Programação imagem((/pt))"](./credentials/img/UAA_HoneyCrisps2.jpg)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Universidad Autónoma de Aguascalientes (UAA)((/en))((es))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/es))((fr))Délivré par: Universidad Autónoma de Aguascalientes (UAA)((/fr))((pt))Emitido por: Universidad Autónoma de Aguascalientes (UAA)((/pt))</span>
+        <span class="credential-date">((en))September 2024((/en))((es))Septiembre 2024((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/UAA_HoneyCrisps2.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        <span class="desc-text">((en))Won 1st place in the Programming Contest at the XVIII Congress of Exact Sciences at UAA with the team 'HoneyCrisps 2' alongside fellow CPC Gallos club leaders. This was the first and only programming contest in which I participated as a student during the Congress of Exact Sciences, as I went on to organize the subsequent two editions (XIX and XX). - **Evidence:** [Instagram](https://www.instagram.com/p/C_0yNOHtgIc/)((/en))((es))Obtuve el 1er lugar en el Concurso de Programación del XVIII Congreso de Ciencias Exactas de la UAA con el equipo 'HoneyCrisps 2' junto a líderes del club CPC Gallos. Fue el primer y único concurso de programación en el que participé como estudiante en el Congreso de Ciencias Exactas, ya que en las dos ediciones siguientes (XIX y XX) me correspondió liderar su organización. - **Evidencias:** [Instagram](https://www.instagram.com/p/C_0yNOHtgIc/)((/es))((fr))Remporté la 1ère place au concours de programmation du XVIIIe Congrès des Sciences Exactes de l'UAA avec l'équipe « HoneyCrisps 2 » aux côtés des dirigeants du club CPC Gallos. C'était le premier et unique concours de programmation auquel j'ai participé en tant qu'étudiant lors du Congrès des Sciences Exactes, puisque j'ai ensuite dirigé l'organisation des deux éditions suivantes (XIX et XX). - **Preuves:** [Instagram](https://www.instagram.com/p/C_0yNOHtgIc/)((/fr))((pt))Conquistei o 1º lugar no Concurso de Programação do XVIII Congresso de Ciências Exatas da UAA com a equipe 'HoneyCrisps 2' ao lado dos líderes do clube CPC Gallos. Foi o primeiro e único concurso de programação do qual participei como estudante no Congresso de Ciências Exatas, visto que nas duas edições seguintes (XIX e XX) fiquei responsável pela organização. - **Evidências:** [Instagram](https://www.instagram.com/p/C_0yNOHtgIc/)((/pt))</span>
         <span class="see-more"></span>
       </div>
     </div>
