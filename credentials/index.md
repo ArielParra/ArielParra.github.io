@@ -1573,6 +1573,35 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
+    <div class="card" data-tags="award programming cybersecurity database networking professional">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Outstanding Performance Testimony - EGEL in Computer Engineering((/en))((es))Testimonio de Desempeño Sobresaliente - EGEL en Ingeniería Computacional((/es))((fr))Témoignage de Performance Exceptionnelle - EGEL en Génie Informatique((/fr))((pt))Testemunho de Desempenho Sobressalente - EGEL em Engenharia de Computação((/pt))</span>
+          <span class="title-rank">((en))Outstanding Performance (DSS)((/en))((es))Desempeño Sobresaliente (DSS)((/es))((fr))Performance Exceptionnelle (DSS)((/fr))((pt))Desempenho Sobressalente (DSS)((/pt))</span>
+          <span class="title-score">((en))Outstanding (DSS)((/en))((es))Sobresaliente (DSS)((/es))((fr))Exceptionnel (DSS)((/fr))((pt))Sobressalente (DSS)((/pt))</span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Software Engineering & Architecture((/en))((es))Ingeniería de Software y Arquitectura((/es))</span>
+          <span class="credential-skill">((en))Computer Networks & Distributed Systems((/en))((es))Redes de Computadoras y Sistemas Distribuidos((/es))</span>
+          <span class="credential-skill">((en))Information Security & Cybersecurity((/en))((es))Seguridad de la Información y Ciberseguridad((/es))</span>
+          <span class="credential-skill">((en))Database Management & Data Modeling((/en))((es))Gestión de Bases de Datos y Modelado de Datos((/es))</span>
+          <span class="credential-skill">((en))Operating Systems & Hardware Architecture((/en))((es))Sistemas Operativos y Arquitectura de Hardware((/es))</span>
+          <span class="credential-skill">((en))Algorithmic Problem Solving((/en))((es))Resolución Algorítmica de Problemas((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Outstanding Performance Testimony - EGEL in Computer Engineering image((/en))((es))Testimonio de Desempeño Sobresaliente - EGEL en Ingeniería Computacional imagen((/es))((fr))Témoignage de Performance Exceptionnelle - EGEL en Génie Informatique image((/fr))((pt))Testemunho de Desempenho Sobressalente - EGEL em Engenharia de Computação imagem((/pt))"](./credentials/img/CENEVAL_tes_dss.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Centro Nacional de Evaluación para la Educación Superior (CENEVAL)((/en))((es))Emitido por: Centro Nacional de Evaluación para la Educación Superior (CENEVAL)((/es))((fr))Délivré par: Centro Nacional de Evaluación para la Educación Superior (CENEVAL)((/fr))((pt))Emitido por: Centro Nacional de Evaluación para la Educación Superior (CENEVAL)((/pt))</span>
+        <span class="credential-date">((en))October 2026((/en))((es))Octubre 2026((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/CENEVAL_tes_dss.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        <span class="desc-text">((en))Awarded the Testimonio de Desempeño Sobresaliente (Outstanding Performance Testimony) by the Centro Nacional de Evaluación para la Educación Superior (CENEVAL) for achieving the highest performance tier in the national exit examination (EGEL) for the Bachelor's Degree in Computer Engineering.((/en))((es))Otorgado el Testimonio de Desempeño Sobresaliente por el Centro Nacional de Evaluación para la Educación Superior (CENEVAL) al alcanzar el nivel máximo de desempeño en el Examen General para el Egreso de la Licenciatura (EGEL) en Ingeniería Computacional.((/es))((fr))Attribution du Testimonio de Desempeño Sobresaliente (Témoignage de performance exceptionnelle) par le Centre national d'évaluation de l'enseignement supérieur (CENEVAL) pour avoir atteint le niveau de performance le plus élevé à l'examen national de fin d'études (EGEL) en génie informatique.((/fr))((pt))Concedido o Testemunho de Desempenho Sobressalente pelo Centro Nacional de Avaliação para a Educação Superior (CENEVAL) por atingir o nível máximo de desempenho no Exame Geral de Conclusão da Graduação (EGEL) em Engenharia de Computação.((/pt))</span>
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="award programming">
       <div class="credential-header">
         <div class="credential-title">
