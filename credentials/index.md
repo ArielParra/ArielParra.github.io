@@ -371,6 +371,33 @@ nav_current: 3
     <div class="card" data-tags="certificate professional">
       <div class="credential-header">
         <div class="credential-title">
+          <span class="title-main">((en))Scrum Fundamentals Certified (SFC™)((/en))((es))Scrum Fundamentals Certified (SFC™)((/es))((fr))Scrum Fundamentals Certified (SFC™)((/fr))((pt))Scrum Fundamentals Certified (SFC™)((/pt))</span>
+          <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))((fr))Certificat d'achèvement((/fr))((pt))Certificado de Conclusão((/pt))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Scrum((/en))((es))Scrum((/es))</span>
+          <span class="credential-skill">((en))Agile Methodologies((/en))((es))Metodologías Ágiles((/es))</span>
+          <span class="credential-skill">((en))Sprint Planning((/en))((es))Planificación de Sprints((/es))</span>
+          <span class="credential-skill">((en))Project Management((/en))((es))Gestión de Proyectos((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Scrum Fundamentals Certified (SFC™) image((/en))((es))Scrum Fundamentals Certified (SFC™) imagen((/es))((fr))Scrum Fundamentals Certified (SFC™) image((/fr))((pt))Scrum Fundamentals Certified (SFC™) imagem((/pt))"](./credentials/img/ScrumStudy_ScrumFundamentalsCertified.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: SCRUMstudy((/en))((es))Emitido por: SCRUMstudy((/es))((fr))Délivré par: SCRUMstudy((/fr))((pt))Emitido por: SCRUMstudy((/pt))</span>
+        <span class="credential-date">((en))October 2026((/en))((es))Octubre 2026((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/ScrumStudy_ScrumFundamentalsCertified.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        <span class="desc-text">((en))Successfully passed the certification exam for Scrum Fundamentals Certified (SFC™) by SCRUMstudy. Validated fundamental knowledge of Scrum principles, aspects, processes, and Agile delivery framework according to the SBOK® Guide.((/en))((es))Aprobé con éxito el examen de certificación Scrum Fundamentals Certified (SFC™) de SCRUMstudy. Validé conocimientos fundamentales de los principios, aspectos y procesos de Scrum, así como del marco de trabajo ágil según la Guía SBOK®.((/es))((fr))J'ai réussi l'examen de certification Scrum Fundamentals Certified (SFC™) délivré par SCRUMstudy. J'ai validé des connaissances fondamentales sur les principes, aspects et processus Scrum, ainsi que sur le cadre Agile conformément au guide SBOK®.((/fr))((pt))Fui aprovado com sucesso no exame de certificação Scrum Fundamentals Certified (SFC™) da SCRUMstudy. Validei conhecimentos fundamentais sobre os princípios, aspectos e processos do Scrum, bem como sobre a metodologia ágil de acordo com o Guia SBOK®.((/pt))</span>
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate professional">
+      <div class="credential-header">
+        <div class="credential-title">
           <span class="title-main">((en))Brain Hack: Transform Your Mindset((/en))((es))Brain Hack: Transforma tu mentalidad((/es))((fr))Brain Hack : Transformez votre état d'esprit((/fr))((pt))Brain Hack: Transforme sua mentalidade((/pt))</span>
           <span class="title-rank">((en))Certificate of Completion((/en))((es))Certificado de Finalización((/es))((fr))Certificat d'achèvement((/fr))((pt))Certificado de Conclusão((/pt))</span>
           <span class="title-score"></span>
@@ -557,6 +584,33 @@ nav_current: 3
       </div>
       <div class="credential-description justify">
         <span class="desc-text">((en))Validated foundational knowledge of the AWS Cloud platform through this specialized learning path (2h 21m). I demonstrated a clear understanding of cloud computing principles, the AWS global infrastructure, and the core services provided by the platform.((/en))((es))Validé mi conocimiento fundamental de la plataforma AWS Cloud a través de esta ruta de aprendizaje especializada (2h 21m). Demostré una comprensión clara de los principios de computación en la nube, la infraestructura global de AWS y los servicios principales proporcionados por la plataforma.((/es))((fr))J'ai validé mes connaissances fondamentales de la plateforme AWS Cloud grâce à ce parcours d'apprentissage spécialisé (2h 21m). J'ai démontré une compréhension claire des principes du cloud computing, de l'infrastructure mondiale AWS et des services de base fournis par la plateforme.((/fr))((pt))Validei meu conhecimento básico da plataforma AWS Cloud por meio deste caminho de aprendizagem especializado (2h 21m). Demonstrei uma compreensão clara dos princípios da computação em nuvem, da infraestrutura global da AWS e dos principais serviços fornecidos pela plataforma.((/pt))</span>
+        <span class="see-more"></span>
+      </div>
+    </div>
+    <div class="card" data-tags="certificate programming">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Python Programming Basics((/en))((es))Fundamentos de Programación en Python((/es))((fr))Bases de la programmation Python((/fr))((pt))Fundamentos de Programação em Python((/pt))</span>
+          <span class="title-rank">((en))Course Certificate((/en))((es))Certificado de Curso((/es))((fr))Certificat de cours((/fr))((pt))Certificado de Curso((/pt))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Python((/en))((es))Python((/es))</span>
+          <span class="credential-skill">((en))Basic Python Programming((/en))((es))Programación Básica en Python((/es))</span>
+          <span class="credential-skill">((en))Algorithmic Thinking((/en))((es))Pensamiento Algorítmico((/es))</span>
+          <span class="credential-skill">((en))Scripting((/en))((es))Scripting((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Python Programming Basics image((/en))((es))Fundamentos de Programación en Python imagen((/es))((fr))Bases de la programmation Python image((/fr))((pt))Fundamentos de Programação em Python imagem((/pt))"](./credentials/img/Huaweii_Python_Programming_Basics.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: Huawei((/en))((es))Emitido por: Huawei((/es))((fr))Délivré par: Huawei((/fr))((pt))Emitido por: Huawei((/pt))</span>
+        <span class="credential-date">((en))March 2025((/en))((es))Marzo 2025((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/Huaweii_Python_Programming_Basics.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        <span class="desc-text">((en))Completed and passed the course assessment for 'Python Programming Basics' offered by Huawei Talent Online. Validated fundamental competencies in Python syntax, data structures, algorithms, and script development.((/en))((es))Completé y aprobé con éxito la evaluación del curso 'Python Programming Basics' impartido por Huawei Talent Online. Validé competencias fundamentales en la sintaxis de Python, estructuras de datos, algoritmos y desarrollo de scripts.((/es))((fr))J'ai réussi avec succès l'évaluation du cours « Python Programming Basics » dispensé par Huawei Talent Online. J'ai validé des compétences fondamentales en syntaxe Python, structures de données, algorithmes et conception de scripts.((/fr))((pt))Concluí e fui aprovado com sucesso na avaliação do curso 'Python Programming Basics' oferecido pela Huawei Talent Online. Validei competências fundamentais na sintaxe do Python, estruturas de dados, algoritmos e criação de scripts.((/pt))</span>
         <span class="see-more"></span>
       </div>
     </div>
