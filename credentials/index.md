@@ -1627,6 +1627,35 @@ nav_current: 3
  </div><!--container Elements-->
 
   <div class="container grid max-width">
+    <div class="card" data-tags="award programming">
+      <div class="credential-header">
+        <div class="credential-title">
+          <span class="title-main">((en))Gran Premio de México 2026((/en))((es))Gran Premio de México 2026((/es))((fr))Gran Premio de México 2026((/fr))((pt))Gran Premio de México 2026((/pt))</span>
+          <span class="title-rank">((en))Honorable Mention((/en))((es))Mención Honorífica((/es))((fr))Mention honorable((/fr))((pt))Menção Honrosa((/pt))</span>
+          <span class="title-score"></span>
+        </div>
+        <div class="credential-skills">
+          <span class="credential-skill">((en))Competitive Programming((/en))((es))Programación Competitiva((/es))</span>
+          <span class="credential-skill">((en))Problem Solving((/en))((es))Resolución de Problemas((/es))</span>
+          <span class="credential-skill">((en))ICPC((/en))((es))ICPC((/es))</span>
+          <span class="credential-skill">((en))Data Structures((/en))((es))Estructuras de Datos((/es))</span>
+          <span class="credential-skill">((en))Algorithms((/en))((es))Algoritmos((/es))</span>
+          <span class="credential-skill">((en))Team Collaboration((/en))((es))Colaboración en Equipo((/es))</span>
+          <span class="skills-more"></span>        </div>
+      </div>
+      <div class="credential-preview">
+        ![loading="lazy" alt="((en))Gran Premio de México 2026 image((/en))((es))Gran Premio de México 2026 imagen((/es))((fr))Gran Premio de México 2026 image((/fr))((pt))Gran Premio de México 2026 imagem((/pt))"](./credentials/img/2027-ICPC_Gran_Premio_de_Mexico-Ariel_Parra-HONOR.png)
+      </div>
+      <div class="credential-meta">
+        <span class="credential-issuer">((en))Issuer: International Collegiate Programming Contest (ICPC)((/en))((es))Emitido por: International Collegiate Programming Contest (ICPC)((/es))((fr))Délivré par: International Collegiate Programming Contest (ICPC)((/fr))((pt))Emitido por: International Collegiate Programming Contest (ICPC)((/pt))</span>
+        <span class="credential-date">((en))November 2026((/en))((es))Noviembre 2026((/es))</span>
+        [((en))Verify((/en))((es))Verificar((/es)) PDF](./credentials/docs/2027-ICPC_Gran_Premio_de_Mexico-Ariel_Parra-HONOR.pdf){:target="_blank" class="credential-link"}
+      </div>
+      <div class="credential-description justify">
+        <span class="desc-text">((en))Earned an Honorable Mention at the 2026 ICPC Gran Premio de México, representing the Universidad Autónoma de Aguascalientes with the team '#include&lt;gallos&gt;'. This achievement validates my technical proficiency in algorithmic problem-solving and my ability to collaborate effectively in high-pressure competitive programming environments.((/en))((es))Obtuve una Mención Honorífica en el ICPC Gran Premio de México 2026, representando a la Universidad Autónoma de Aguascalientes con el equipo '#include&lt;gallos&gt;'. Este logro valida mi competencia técnica en la resolución de problemas algorítmicos y mi capacidad para colaborar eficazmente en entornos de programación competitiva de alta presión.((/es))((fr))J'ai obtenu une mention honorable au Gran Premio ICPC de México 2026, en représentant l'Universidad Autónoma de Aguascalientes avec l'équipe « #include&lt;gallos&gt; ». Cette réussite valide mes compétences techniques en résolution de problèmes algorithmiques et ma capacité à collaborer efficacement dans des environnements de programmation compétitifs sous haute pression.((/fr))((pt))Recebi Menção Honrosa no ICPC Gran Premio de México 2026, representando a Universidade Autônoma de Aguascalientes com a equipe '#include&lt;gallos&gt;'. Essa conquista valida minha proficiência técnica na resolução de problemas algorítmicos e minha capacidade de colaborar de forma eficaz em ambientes de programação competitivos de alta pressão.((/pt))</span>
+        <span class="see-more"></span>
+      </div>
+    </div>
     <div class="card" data-tags="award programming cybersecurity database networking professional">
       <div class="credential-header">
         <div class="credential-title">
