@@ -5,6 +5,8 @@
 ```bash
 make              # Build changed pages incrementally
 make index        # Build specific page
+make sync         # Sync credentials.json and projects.json from ../Curricularium/private/career-data.tex
+make recover      # Recover/backfill ../Curricularium/private/career-data.tex from website JSONs
 make validate     # Validates HTML and CSS via W3C
 make lint         # Lints JS, Python, and validates JSON schemas
 make sitemap      # Update sitemap.xml timestamps
@@ -73,6 +75,7 @@ content here
 - `scripts/base_manager.py` - OOP base class for data managers
 - `scripts/validate.py` - W3C HTML/CSS Validator
 - `scripts/validate_json.py` - JSON schema validator
+- `scripts/sync_curricularium.py` - Syncs canonical career facts from Curricularium and recovers `career-data.tex` from JSONs
 - `style.css` - imports css/ folder (backward compatibility)
 - `css/` - modular CSS files
 - `js/` - JavaScript modules

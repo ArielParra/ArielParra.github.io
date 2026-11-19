@@ -103,6 +103,12 @@ clean:
 	rm -f $(call FixPath,css/*.min.css)
 	rm -f $(call FixPath,js/*.min.js)
 
+sync:
+	$(PYTHON) $(call FixPath,scripts/sync_curricularium.py)
+
+recover:
+	$(PYTHON) $(call FixPath,scripts/sync_curricularium.py) --recover
+
 validate:
 	$(PYTHON) $(call FixPath,scripts/validate.py)
 	@echo "Running Lighthouse..."
